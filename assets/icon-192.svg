@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="35" fill="#4CAF50"/>
+  <g transform="translate(29, 42.4)">
+    <!-- Mountain -->
+    <polygon points="67,13.4 20.099999999999998,100.5 113.89999999999999,100.5" fill="#FFFFFF" opacity="0.95"/>
+    <!-- Snow cap -->
+    <polygon points="67,13.4 50.92,42.88 83.08,42.88" fill="#E8F5E9"/>
+    <!-- Small mountain -->
+    <polygon points="100.5,46.9 73.7,100.5 127.3,100.5" fill="#FFFFFF" opacity="0.7"/>
+    <!-- Sun -->
+    <circle cx="26.8" cy="33.5" r="10.72" fill="#FFD54F"/>
+  </g>
+</svg>

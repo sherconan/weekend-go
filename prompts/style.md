@@ -1,0 +1,1 @@
+Cute cartoon travel illustration in a warm, colorful kawaii postcard style. Soft rounded shapes, cheerful palette, gentle shading, inviting and cozy atmosphere. No text, no words, no letters, no watermarks. Studio Ghibli meets travel postcard aesthetic. Landscape orientation 16:9.

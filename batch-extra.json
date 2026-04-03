@@ -1,0 +1,563 @@
+{
+  "jobs": 6,
+  "tasks": [
+    {
+      "id": "olympic-forest",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A vast green urban forest park with a winding jogging path, cute cartoon runners in colorful sportswear with water bottles, a shimmering Olympic lake in the background, fluffy clouds, energetic morning atmosphere",
+      "image": "assets/images/dest-olympic-forest.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "xiangshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A mountain hillside on fire with blazing red and orange maple leaves in peak autumn, tiny cute characters in cozy scarves snapping photos, a stone pagoda peeking through the colorful canopy, golden light",
+      "image": "assets/images/dest-xiangshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "botanical-garden",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A giant glass greenhouse dome filled with tropical flowers in every color, a tiny botanist with a magnifying glass examining a giant blooming lotus, butterflies and hummingbirds hovering, warm golden light inside",
+      "image": "assets/images/dest-botanical-garden.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shisanling",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A grand imperial tomb avenue lined with enormous stone animal statues — lions, camels, elephants — a tiny tourist walking between them in awe, misty green hills behind, overcast dramatic sky",
+      "image": "assets/images/dest-shisanling.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "juyongguan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A cheerful old steam train passing through an arched tunnel of blooming wisteria and wildflowers, the Great Wall visible on the mountain ridge above, passengers waving from windows, spring morning light",
+      "image": "assets/images/dest-juyongguan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shihuadong",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A magical underground cave glittering with enormous stalactites and stalagmites lit in soft purple and blue light, tiny cave explorers with helmets and torches, crystal clear underground pool reflecting the formations",
+      "image": "assets/images/dest-shihuadong.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "tianjin-wudadao",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A charming European-style boulevard lined with colorful Victorian and Art Deco mansions, a cute couple riding a tandem bicycle, cobblestone streets, blooming flower boxes on every window, golden afternoon light",
+      "image": "assets/images/dest-tianjin-wudadao.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "tianjin-eye",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A giant glowing Ferris wheel straddling a wide river bridge at dusk, gondolas with tiny happy passengers, city lights reflecting in the water below, a gradient sunset sky from orange to purple",
+      "image": "assets/images/dest-tianjin-eye.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "panshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic mountain with winding stone staircases zigzagging up between ancient pines and rocky outcrops, a Taoist temple clinging to the clifftop, wispy clouds drifting past, misty morning atmosphere",
+      "image": "assets/images/dest-panshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "zhili-governor",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A magnificent Qing dynasty governor's yamen with grand red gates, carved stone lions at the entrance, a tiny official in period costume, red lanterns hanging in rows, courtyard with scholar's rock",
+      "image": "assets/images/dest-zhili-governor.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "qingxiling",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A serene tree-lined sacred road leading to a grand imperial mausoleum, blossoming cherry trees on both sides, stone spirit tablets glowing in golden hour light, a deer grazing peacefully nearby",
+      "image": "assets/images/dest-qingxiling.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yishuihu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A stunning jade-green lake nestled between dramatic limestone cliffs, a wooden rowboat with a family inside, crystal clear water revealing smooth pebbles below, a waterfall cascading down the cliff face",
+      "image": "assets/images/dest-yishuihu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "changyu-chateau",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A European-style castle winery surrounded by rows of lush green grape vines stretching to the horizon, a cute wine taster with a big glass, harvest baskets of purple grapes, warm golden sunset",
+      "image": "assets/images/dest-changyu-chateau.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yuyang-ski",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A lively ski resort with colorful ski runs dotted with cute skiers and snowboarders, a gondola lift rising over snowy pines, a cozy glowing lodge at the base, snowflakes drifting in crisp winter air",
+      "image": "assets/images/dest-yuyang-ski.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shiyuanpark",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A futuristic botanical expo park with striking flower-shaped pavilions in silver and green, a giant glass greenhouse, colorful garden beds in geometric patterns, families strolling with balloons, bright sunny day",
+      "image": "assets/images/dest-shiyuanpark.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "pinggu-peach",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A vast valley of peach trees in full bloom, pink blossoms as far as the eye can see, a tiny couple in a pink sea of flowers, petals swirling in a gentle breeze, a clear blue spring sky above",
+      "image": "assets/images/dest-pinggu-peach.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shuanglongxia",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A tiny red forest train chugging through a lush green canyon, passengers hanging out of windows with cameras, tall fern-covered cliffs on both sides, a sparkling stream below, dappled sunlight",
+      "image": "assets/images/dest-shuanglongxia.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "jingxi-gudao",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "An ancient stone-paved mountain road worn smooth by centuries of camel caravans, a lone hiker with a walking stick, old stone mile markers along the path, misty mountain views, a weathered stone arch gateway",
+      "image": "assets/images/dest-jingxi-gudao.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "duijiuyu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A natural canyon with sculpted water-polished boulders and smooth stone pools, tiny children splashing in a crystal stream, wildflowers on the rocky banks, soft summer light filtering between gorge walls",
+      "image": "assets/images/dest-duijiuyu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "daxing-zoo",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A safari park with a cute open-top jeep surrounded by a giraffe, lions, and zebras, a tiny wide-eyed family inside, lush savanna landscape, birds soaring overhead, bright sunny day",
+      "image": "assets/images/dest-daxing-zoo.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "grand-canal",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A scenic riverside path along a historic grand canal, cute cyclists on colorful bikes, weeping willows trailing in the water, a traditional wooden canal boat passing by, warm golden afternoon light",
+      "image": "assets/images/dest-grand-canal.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shunyi-water",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "An Olympic rowing venue with a wide glassy lake, tiny kayakers in bright-colored boats racing across the water, a finish line banner, cheering crowd on the banks, blue sky reflecting in the calm surface",
+      "image": "assets/images/dest-shunyi-water.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "jiaozhuanghu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "An underground tunnel network from WWII with tiny cartoon soldiers peeking out of trapdoors hidden under a millstone and haystack, a cozy village above ground, chickens running around, warm educational atmosphere",
+      "image": "assets/images/dest-jiaozhuanghu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shanhaiguan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "The Great Wall dramatically marching down to meet the crashing ocean waves at a rocky shore, a bold fortress gate with red banners, seagulls circling, sunrise light painting the wall gold over the sea",
+      "image": "assets/images/dest-shanhaiguan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "nuanquan-zhangjiakou",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic nighttime spectacle of a blacksmith flinging ladles of molten iron against a stone wall, explosions of golden and orange sparks cascading like a fireworks display, a dark ancient town courtyard, wide-eyed crowd watching in awe",
+      "image": "assets/images/dest-nuanquan-zhangjiakou.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yajishan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A Taoist temple with red walls and golden roofs perched dramatically on a rocky mountain summit, incense smoke spiraling upward, prayer flags fluttering, a pilgrim climbing stone steps cut into the cliff, misty valleys below",
+      "image": "assets/images/dest-yajishan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "nanhaizi",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A peaceful wetland park with a herd of cute Pere David's deer grazing by a reed-fringed lake, white egrets wading in the shallows, a wooden birdwatching tower, soft morning mist, tranquil nature reserve atmosphere",
+      "image": "assets/images/dest-nanhaizi.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "jiankou",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic ruined section of wild Great Wall with crumbling towers and missing battlements, an adventurous hiker on the steep ridge, autumn forest ablaze with red and orange below, misty mountains stretching to the horizon",
+      "image": "assets/images/dest-jiankou.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "hongzunyu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A cheerful mountain stream restaurant area with clear water rushing over stones, round tanks full of rainbow trout, a cute chef grilling fish by the water, families at outdoor picnic tables under bamboo awnings, lush green valley",
+      "image": "assets/images/dest-hongzunyu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "songshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A pristine old-growth forest with massive ancient trees, shafts of golden light breaking through the dense canopy, a tiny naturalist with binoculars spotting a rare bird, a mossy wooden boardwalk winding through the undergrowth",
+      "image": "assets/images/dest-songshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "baiyangdian",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dreamy lotus lake stretching to the horizon with giant pink lotus flowers in full bloom, a cheerful ferryman in a flat-bottomed reed boat, ducks swimming between the stalks, a golden sunset reflecting on the still water",
+      "image": "assets/images/dest-baiyangdian.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "science-museum",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A bright futuristic science museum interior with a giant hanging model of the solar system, kids in lab coats pressing buttons on glowing interactive exhibits, a cute robot guide waving, colorful STEM displays everywhere",
+      "image": "assets/images/dest-science-museum.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "fangshan-geopark",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic karst landscape with towering limestone formations rising from green forest, a cartoon geologist with a hammer and magnifying glass examining a fossil rock face, interpretive signs, a wooden viewing platform",
+      "image": "assets/images/dest-fangshan-geopark.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "kunminghu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A traditional painted dragon boat gliding across Kunming Lake, the ornate Summer Palace and Longevity Hill reflected in the glassy water, pink lotus flowers floating nearby, a willow tree trailing its branches, gentle summer breeze",
+      "image": "assets/images/dest-kunminghu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "badaling-zoo",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A safari bus full of excited visitors driving through a park with tigers and lions roaming freely, the Great Wall visible on the ridge in the background, a playful lion cub peering up at the bus, golden afternoon light",
+      "image": "assets/images/dest-badaling-zoo.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "huairou-studio",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A sprawling open-air film studio backlot with elaborate ancient palace sets and period street facades, a tiny movie director with a megaphone, costumed extras in imperial robes, a camera crane overhead, behind-the-scenes fun",
+      "image": "assets/images/dest-huairou-studio.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yanqing-apricot",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Rolling hills blanketed in white apricot blossoms as far as the eye can see, a couple on a bicycle built for two riding through a snowy-white flower tunnel, petals drifting like snowflakes, fresh spring morning light",
+      "image": "assets/images/dest-yanqing-apricot.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yinshan-pagoda",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A cluster of ancient weathered stone pagodas of different heights rising from a forested mountainside, autumn golden trees surrounding them, a monk sweeping fallen leaves, misty mountain peaks behind, peaceful and timeless",
+      "image": "assets/images/dest-yinshan-pagoda.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "bailixia",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic narrow canyon with towering sheer cliffs on both sides, a turquoise river rushing through the bottom, tiny adventurers on a cable car crossing high above, lush ferns clinging to the cliff walls, dramatic light from above",
+      "image": "assets/images/dest-bailixia.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "wanlong-ski",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A high-speed ski slope with an Olympic ski racer carving through fresh powder, the five Olympic rings displayed on a snowy hillside, a packed stadium of cheering fans, colorful national flags, celebration confetti in crisp winter air",
+      "image": "assets/images/dest-wanlong-ski.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "gubeikou",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "An ancient border pass with crumbling old wall towers and a stone gateway, a lone guard post with a watchman silhouette, wildflowers growing from old battlements, mountains folding into the distance, haunting twilight atmosphere",
+      "image": "assets/images/dest-gubeikou.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shenglianshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A Taoist cliff temple with colorful prayer flags and carved reliefs built directly into a sheer rock face, stone steps cut into the cliff, incense burners smoking below, a pilgrim climbing with offerings, dramatic rocky scenery",
+      "image": "assets/images/dest-shenglianshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shangfangshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A forested mountain with ancient Buddhist caves carved into limestone cliffs, glowing Buddha figures inside, a stone staircase leading up to a temple gate with red lanterns, ancient pine trees clinging to the rocks, serene atmosphere",
+      "image": "assets/images/dest-shangfangshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "xiongan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A gleaming brand-new city skyline with futuristic curved architecture, wide tree-lined boulevards, autonomous vehicles gliding silently, a giant glass civic center, sparkling fountains in a central plaza, optimistic bright blue sky",
+      "image": "assets/images/dest-xiongan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shijingshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A retro amusement park with a classic roller coaster, a spinning tea cup ride, colorful carousel with horses, children with cotton candy and balloons, a quirky fairy tale castle entrance gate, festive lights and cheerful music",
+      "image": "assets/images/dest-shijingshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yongdinghe",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A scenic riverside cycling path along a restored river corridor, cute cyclists in bright helmets, wildflower meadows on the banks, a modern cable-stay bridge in the distance, sunset painting the water gold, dragonflies hovering",
+      "image": "assets/images/dest-yongdinghe.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "simatai-reservoir",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A secluded mountain reservoir with mirror-clear water reflecting the Simatai Great Wall on the ridge above, a family picnicking on a grassy bank, a red-and-white checkered blanket with snacks, ducks paddling near the shore",
+      "image": "assets/images/dest-simatai-reservoir.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beijing-botanical",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A magical cherry blossom tunnel in a botanical garden, cotton-candy pink blossoms forming a canopy over a curving path, tiny visitors walking under a snowfall of petals, a stone bridge over a lily pond, spring morning light",
+      "image": "assets/images/dest-beijing-botanical.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "dajingmen",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A massive ancient stone frontier gate with bold Chinese calligraphy carved above the arch, camel caravans carved in stone nearby, a dramatic mountain backdrop, a tiny traveler standing at the gate feeling the history, golden sunset light",
+      "image": "assets/images/dest-dajingmen.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "happy-valley",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A thrilling theme park with a giant loop-the-loop roller coaster, splashing water ride, colorful cartoon mascots waving, excited visitors with their hands in the air, fireworks above the park gate at dusk, festive energy",
+      "image": "assets/images/dest-happy-valley.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "universal-studios",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Universal Studios Beijing with the iconic globe entrance glowing at night, Transformers and Harry Potter characters waving at guests, a massive themed hotel in the background, fairy lights everywhere, magical excited crowd atmosphere",
+      "image": "assets/images/dest-universal-studios.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yudaokou",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A vast imperial grassland hunting ground with golden autumn grasses, a herd of sika deer grazing near a pine forest, hot air balloons floating above, a traditional hunting lodge, dramatic cloud formations over the open plateau",
+      "image": "assets/images/dest-yudaokou.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beidaihe-coast",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A cheerful beach resort scene with turquoise waves, colorful beach umbrellas and lounge chairs, children building sandcastles, a cute lifeguard tower with a red flag, a seaside boardwalk with ice cream stands, bright summer day",
+      "image": "assets/images/dest-beidaihe-coast.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "tangshan-nanhu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A beautifully transformed post-industrial park with a shimmering lake where old coal mines once stood, modern pavilions reflected in the water, cyclists on tree-lined paths, blooming flowers, a phoenix sculpture symbolizing renewal",
+      "image": "assets/images/dest-tangshan-nanhu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "lingshan-pool",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A pristine alpine lake at high altitude ringed by rocky peaks, a tiny hiker sitting by the crystal-clear water with boots off, clouds reflected perfectly in the still surface, rare alpine wildflowers on the rocky shore",
+      "image": "assets/images/dest-lingshan-pool.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "heilongtan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dramatic dark pool at the base of a tall thundering waterfall, mist rising from the churning water, lush ferns and mossy rocks surrounding the pool, a rainbow arching in the spray, a tiny explorer peering over a rock",
+      "image": "assets/images/dest-heilongtan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "jumahe",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A lively natural river swimming hole with happy families splashing in clear shallow water, kids jumping off flat rocks, colorful inner tubes floating downstream, willow trees providing shade, a summer countryside picnic vibe",
+      "image": "assets/images/dest-jumahe.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "guihuamu",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A surreal landscape of ancient petrified tree trunks turning to colorful stone, a curious paleontologist character with a brush carefully uncovering a fossil log, informative signs, otherworldly grey and red rock formations under a big sky",
+      "image": "assets/images/dest-guihuamu.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "chengde-temples",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A grand Tibetan-style temple complex with white stupas and golden rooftops rising dramatically on a hillside, colorful prayer flags strung between towers, monks in saffron robes, mountains behind, clouds at eye level, majestic atmosphere",
+      "image": "assets/images/dest-chengde-temples.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "ming-wall",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A tree-lined promenade along a restored Ming dynasty city wall, cherry blossoms in full pink bloom arching over the ancient brick ramparts, couples strolling and taking photos, soft spring light, fallen petals carpeting the path",
+      "image": "assets/images/dest-ming-wall.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "longqingxia-ice",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "A dazzling canyon gorge filled with enormous ice lantern sculptures glowing in neon red, blue, and gold, a boat gliding through the ice wonderland, tiny visitors in puffy winter coats admiring a giant glowing ice dragon, magical winter night",
+      "image": "assets/images/dest-longqingxia-ice.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "simatai-wall",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "The Great Wall of China at night under a starry sky with dramatic lighting, ancient watchtowers glowing with warm lanterns, a lone brave tiny hiker with headlamp on the steep wall, moonlit misty mountains, mysterious and majestic atmosphere",
+      "image": "assets/images/dest-simatai-wall.webp",
+      "ar": "16:9"
+    }
+  ]
+}
