@@ -13,7 +13,8 @@ const state = {
   },
   compareList: [],
   chatOpen: false,
-  detailOpen: null
+  detailOpen: null,
+  sortBy: 'default'
 };
 
 // ========== DOM Refs ==========
@@ -56,8 +57,25 @@ function bindFilterEvents() {
 
 function clearFilters() {
   state.filters = { duration: [], transport: [], themes: [], budget: [] };
+  state.sortBy = 'default';
   $$('.filter-tag').forEach(tag => tag.classList.remove('active'));
+  $$('.sort-btn').forEach(b => b.classList.toggle('active', b.dataset.sort === 'default'));
   applyFilters();
+}
+
+const BUDGET_ORDER = { "200以下": 100, "200-500": 350, "500-1000": 750, "1000以上": 1500 };
+
+function sortDestinations(sortBy) {
+  state.sortBy = sortBy;
+  $$('.sort-btn').forEach(b => b.classList.toggle('active', b.dataset.sort === sortBy));
+  applyFilters();
+}
+
+function getXhsHeat(dest) {
+  if (typeof XHS_HEAT !== 'undefined' && XHS_HEAT[dest.name]) {
+    return XHS_HEAT[dest.name].heat;
+  }
+  return 30;
 }
 
 function applyFilters() {
@@ -84,6 +102,13 @@ function applyFilters() {
 
     return true;
   });
+
+  // Sort
+  const sortBy = state.sortBy || 'default';
+  if (sortBy === 'distance') filtered.sort((a, b) => a.distance - b.distance);
+  else if (sortBy === 'rating') filtered.sort((a, b) => b.rating - a.rating);
+  else if (sortBy === 'budget') filtered.sort((a, b) => (BUDGET_ORDER[a.budget] || 500) - (BUDGET_ORDER[b.budget] || 500));
+  else if (sortBy === 'xhsHeat') filtered.sort((a, b) => getXhsHeat(b) - getXhsHeat(a));
 
   renderDestinations(filtered);
   updateFilterActiveTags();
@@ -142,7 +167,8 @@ function renderDestinations(destinations) {
     const hasImage = imgPath || sceneURL;
     const fallbackStyle = !hasImage ? `background: ${dest.gradient};` : '';
     const imgSrc = imgPath || sceneURL || '';
-    const coverStyle = hasImage ? '' : fallbackStyle;
+    const xhsH = getXhsHeat(dest);
+    const xhsBadge = xhsH >= 70 ? `<span class="dest-card-badge badge-hot">&#x1F525; ${xhsH}</span>` : '';
 
     return `
     <div class="dest-card fade-up" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
@@ -158,6 +184,7 @@ function renderDestinations(destinations) {
           <span class="dest-card-badge">${dest.distanceText}</span>
           <span class="dest-card-badge">${dest.duration[0]}</span>
           <span class="dest-card-badge badge-rating">&#9733; ${dest.rating}</span>
+          ${xhsBadge}
         </div>
       </div>
       <div class="dest-card-body">
@@ -204,76 +231,100 @@ function openDetail(id) {
   const overlay = $('.modal-overlay');
   const modal = overlay.querySelector('.modal');
 
-  modal.innerHTML = `
-    <div class="modal-cover">
-      <div class="modal-cover-bg" style="background: ${dest.gradient}"></div>
-      <div class="modal-cover-overlay"></div>
-      <div class="modal-cover-content">
-        <h2>${dest.name}</h2>
-        <p>${dest.subtitle}</p>
-      </div>
-      <button class="modal-close" onclick="closeDetail()">&#x2715;</button>
-    </div>
-    <div class="modal-meta">
-      <div class="modal-meta-item">
-        <span class="icon">&#x1F4CD;</span>
-        距北京 ${dest.distanceText}
-      </div>
-      <div class="modal-meta-item">
-        <span class="icon">&#x23F1;</span>
-        ${dest.duration.join(' / ')}
-      </div>
-      <div class="modal-meta-item">
-        <span class="icon">&#x1F698;</span>
-        ${dest.transport.join(' / ')}
-      </div>
-      <div class="modal-meta-item">
-        <span class="icon">&#x1F4B0;</span>
-        ${dest.budgetText}
-      </div>
-      <div class="modal-meta-item">
-        <span class="icon">&#x2B50;</span>
-        ${dest.rating} 分
-      </div>
-    </div>
-    <div class="modal-body">
-      <div class="modal-tags">
-        ${dest.themes.map(t => `<span class="modal-tag">${t}</span>`).join('')}
-        <span class="modal-tag">${dest.bestSeason}</span>
-        <span class="modal-tag">${dest.highlight}</span>
-      </div>
+  const imgPath = typeof getDestImage === 'function' ? getDestImage(dest) : null;
+  const coverBg = imgPath
+    ? `background-image: url('${imgPath}'); background-size: cover; background-position: center;`
+    : `background: ${dest.gradient};`;
 
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: var(--green-50); color: var(--green-600)">&#x1F30D;</span> 概览</h3>
+  const xhs = typeof XHS_HEAT !== 'undefined' ? XHS_HEAT[dest.name] : null;
+  const heatBar = xhs ? `
+    <div class="modal-heat">
+      <div class="modal-heat-label">&#x1F525; 小红书声量</div>
+      <div class="modal-heat-bar"><div class="modal-heat-fill" style="width: ${xhs.heat}%"></div></div>
+      <div class="modal-heat-info">${xhs.notes} 篇笔记 &middot; ${xhs.trending}</div>
+    </div>` : '';
+
+  // Format content with line breaks
+  const fmt = (text) => text ? text.split('\n').map(line => {
+    line = line.trim();
+    if (!line) return '';
+    if (/^\d+[\.\、]/.test(line)) {
+      return `<div class="content-item">${line}</div>`;
+    }
+    return `<p>${line}</p>`;
+  }).join('') : '';
+
+  modal.innerHTML = `
+    <div class="modal-hero" style="${coverBg}">
+      <div class="modal-hero-overlay"></div>
+      <button class="modal-close" onclick="closeDetail()">&#x2715;</button>
+      <div class="modal-hero-content">
+        <div class="modal-hero-badges">
+          ${dest.themes.map(t => `<span class="modal-hero-badge">${t}</span>`).join('')}
+        </div>
+        <h2 class="modal-hero-title">${dest.name}</h2>
+        <p class="modal-hero-subtitle">${dest.subtitle}</p>
+        <div class="modal-hero-stats">
+          <span>&#x1F4CD; ${dest.distanceText}</span>
+          <span>&#x23F1; ${dest.duration[0]}</span>
+          <span>&#x2B50; ${dest.rating}</span>
+          <span>&#x1F4B0; ${dest.budgetText}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-body-new">
+      ${heatBar}
+
+      <div class="modal-intro">
         <p>${dest.overview}</p>
       </div>
 
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: var(--blue-50); color: var(--blue-500)">&#x1F697;</span> 怎么去</h3>
-        <div class="content">${dest.howToGet}</div>
+      <div class="modal-cards-row">
+        <div class="modal-info-card">
+          <div class="modal-info-card-header" style="background: linear-gradient(135deg, #E8F5E9, #C8E6C9)">
+            <span class="modal-info-card-icon">&#x1F3AF;</span>
+            <h4>推荐怎么玩</h4>
+          </div>
+          <div class="modal-info-card-body">${fmt(dest.whatToDo)}</div>
+        </div>
+
+        <div class="modal-info-card">
+          <div class="modal-info-card-header" style="background: linear-gradient(135deg, #FFF3E0, #FFE0B2)">
+            <span class="modal-info-card-icon">&#x1F37D;</span>
+            <h4>必吃美食</h4>
+          </div>
+          <div class="modal-info-card-body">${fmt(dest.whereToEat)}</div>
+        </div>
       </div>
 
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: var(--coral-light); color: var(--coral)">&#x1F3AF;</span> 玩什么</h3>
-        <div class="content">${dest.whatToDo}</div>
+      <div class="modal-detail-sections">
+        <details class="modal-details" open>
+          <summary>&#x1F697; 交通攻略</summary>
+          <div class="modal-details-body">${fmt(dest.howToGet)}</div>
+        </details>
+
+        <details class="modal-details">
+          <summary>&#x1F3E8; 住宿推荐</summary>
+          <div class="modal-details-body">${fmt(dest.whereToStay)}</div>
+        </details>
+
+        <details class="modal-details">
+          <summary>&#x1F4A1; 出行贴士</summary>
+          <div class="modal-details-body">${fmt(dest.tips)}</div>
+        </details>
       </div>
 
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: #FFF3E0; color: #FB8C00">&#x1F37D;</span> 吃什么</h3>
-        <div class="content">${dest.whereToEat}</div>
-      </div>
-
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: #F3E5F5; color: #AB47BC">&#x1F3E8;</span> 住哪里</h3>
-        <div class="content">${dest.whereToStay}</div>
-      </div>
-
-      <div class="modal-section">
-        <h3><span class="section-icon" style="background: #FFF8E1; color: #FFA000">&#x1F4A1;</span> 小贴士</h3>
-        <div class="content">${dest.tips}</div>
+      <div class="modal-highlight">
+        <span class="modal-highlight-icon">&#x2728;</span>
+        <div>
+          <strong>${dest.highlight}</strong>
+          <span class="modal-highlight-season">${dest.bestSeason}</span>
+        </div>
       </div>
     </div>
-    <div class="modal-cta">
+
+    <div class="modal-cta-new">
       <button class="btn btn--primary" onclick="toggleCompare(${dest.id}); closeDetail();">
         &#x2B; 加入对比
       </button>
