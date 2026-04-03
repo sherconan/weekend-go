@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周末去哪儿 - 北京周边游决策助手</title>
+  <meta name="description" content="帮你从「不知道去哪」到「就去这儿」的北京周边游决策助手">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x26F0;</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4CAF50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="周末去哪儿">
+  <link rel="apple-touch-icon" href="assets/icon-192.svg">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">&#x26F0;</div>
+        周末去哪儿
+      </a>
+      <div class="nav-actions">
+        <button class="nav-btn" onclick="scrollToSection('filters')">筛选</button>
+        <button class="nav-btn" onclick="scrollToSection('destinations')">目的地</button>
+        <button class="nav-btn nav-btn--primary" onclick="openChat()">我想聊一聊</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        &#x1F331; 北京周边游 &middot; 2026 春季版
+      </div>
+      <h1>这个周末，去哪儿好？</h1>
+      <p>不用翻遍小红书和攻略。告诉我们你的偏好，从 100 个精选目的地中，帮你找到最合适的那一个。</p>
+      <div class="hero-actions">
+        <button class="btn btn--primary" onclick="scrollToSection('filters')">
+          &#x1F50D; 开始筛选
+        </button>
+        <button class="btn btn--secondary" onclick="openChat()">
+          &#x1F4AC; 我想聊一聊
+        </button>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">100</div>
+          <div class="stat-label">精选目的地</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15-280</div>
+          <div class="stat-label">公里范围</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">元起 / 人均</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section" id="filters">
+    <div class="container">
+      <div class="filter-inner">
+        <div class="filter-header" onclick="toggleFilters()">
+          <div class="filter-header-left">
+            <span class="filter-header-icon">&#x1F50D;</span>
+            <span class="filter-header-title">筛选目的地</span>
+            <span class="filter-active-tags"></span>
+          </div>
+          <div class="filter-header-right">
+            <div class="filter-count">共 <strong>100</strong> 个目的地</div>
+            <span class="filter-toggle-icon">&#x25BC;</span>
+          </div>
+        </div>
+        <div class="filter-body collapsed">
+          <div class="filter-row">
+            <span class="filter-label">时长</span>
+            <div class="filter-tags">
+              <button class="filter-tag" data-category="duration" data-value="半日游">半日游</button>
+              <button class="filter-tag" data-category="duration" data-value="一日往返">一日往返</button>
+              <button class="filter-tag" data-category="duration" data-value="两日一夜">两日一夜</button>
+              <button class="filter-tag" data-category="duration" data-value="三日两夜">三日两夜</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <span class="filter-label">交通</span>
+            <div class="filter-tags">
+              <button class="filter-tag" data-category="transport" data-value="自驾">自驾</button>
+              <button class="filter-tag" data-category="transport" data-value="高铁">高铁</button>
+              <button class="filter-tag" data-category="transport" data-value="公交可达">公交可达</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <span class="filter-label">主题</span>
+            <div class="filter-tags">
+              <button class="filter-tag" data-category="themes" data-value="露营">露营</button>
+              <button class="filter-tag" data-category="themes" data-value="古镇">古镇</button>
+              <button class="filter-tag" data-category="themes" data-value="爬山">爬山</button>
+              <button class="filter-tag" data-category="themes" data-value="温泉">温泉</button>
+              <button class="filter-tag" data-category="themes" data-value="亲子">亲子</button>
+              <button class="filter-tag" data-category="themes" data-value="美食">美食</button>
+              <button class="filter-tag" data-category="themes" data-value="赏花">赏花</button>
+              <button class="filter-tag" data-category="themes" data-value="历史">历史</button>
+              <button class="filter-tag" data-category="themes" data-value="度假">度假</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <span class="filter-label">预算</span>
+            <div class="filter-tags">
+              <button class="filter-tag" data-category="budget" data-value="200以下">200 以下</button>
+              <button class="filter-tag" data-category="budget" data-value="200-500">200-500</button>
+              <button class="filter-tag" data-category="budget" data-value="500-1000">500-1000</button>
+              <button class="filter-tag" data-category="budget" data-value="1000以上">1000+</button>
+            </div>
+          </div>
+          <div class="filter-actions">
+            <button class="filter-clear" onclick="clearFilters()">清除筛选</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section class="destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">探索目的地</h2>
+        <span style="font-size: 14px; color: var(--text-muted);">点击卡片查看详情</span>
+      </div>
+      <div class="destinations-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" onclick="if(event.target===this)closeDetail()">
+    <div class="modal">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- Compare Bar -->
+  <div class="compare-bar">
+    <div class="compare-bar-inner">
+      <div class="compare-bar-items"></div>
+      <div class="compare-bar-actions">
+        <button class="btn btn--primary btn--small" onclick="openCompareModal()">开始对比</button>
+        <button class="btn btn--secondary btn--small" onclick="clearCompare()">清除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compare Modal -->
+  <div class="compare-modal" onclick="if(event.target===this)closeCompareModal()">
+    <div class="compare-content">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- Chat Widget -->
+  <button class="chat-fab" title="我想聊一聊">
+    &#x1F4AC;
+  </button>
+
+  <div class="chat-panel">
+    <div class="chat-header">
+      <div class="chat-header-title">
+        <div class="chat-avatar">&#x26F0;</div>
+        <div class="chat-header-info">
+          <h4>聊一聊去哪儿</h4>
+          <div class="status">在线</div>
+        </div>
+      </div>
+      <button class="chat-close-btn" onclick="closeChat()">&#x2715;</button>
+    </div>
+    <div class="chat-messages">
+      <div class="chat-message chat-message--ai">
+        <div class="chat-bubble">
+          你好！我是你的周末出行顾问 &#x1F44B;<br><br>
+          告诉我你的需求，比如：<br>
+          &#x2022; 想去什么类型的地方<br>
+          &#x2022; 大概的预算<br>
+          &#x2022; 几个人一起<br><br>
+          我来帮你推荐最合适的目的地！
+        </div>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <button class="chat-suggestion">这周末带女朋友去哪好？</button>
+      <button class="chat-suggestion">人少又好看的地方？</button>
+      <button class="chat-suggestion">带孩子去哪合适？</button>
+      <button class="chat-suggestion">穷游推荐</button>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" placeholder="问我任何关于周末出行的问题..." />
+      <button class="chat-send">&#x27A4;</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/data-extra.js"></script>
+  <script src="js/visuals.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

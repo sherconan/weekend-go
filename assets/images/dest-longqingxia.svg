@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'Arial', 'Helvetica', sans-serif; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#87CEEB"/>
+  <polygon points="0,0 100,0 80,500 0,500" fill="#6C9A8B"/><polygon points="800,0 700,0 720,500 800,500" fill="#5D8A7B"/><g transform="translate(400,35) scale(0.5)">
+    <ellipse cx="0" cy="0" rx="40" ry="25" fill="#fff" opacity="0.9"/>
+    <ellipse cx="-30" cy="5" rx="25" ry="18" fill="#fff" opacity="0.9"/>
+    <ellipse cx="30" cy="5" rx="28" ry="20" fill="#fff" opacity="0.9"/>
+    <ellipse cx="15" cy="-10" rx="20" ry="15" fill="#fff" opacity="0.9"/>
+  </g><rect x="0" y="350" width="800" height="150" fill="#5DADE2"/>
+    <path d="M0,365 Q50,358 100,365 Q150,372 200,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M200,365 Q250,358 300,365 Q350,372 400,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M400,365 Q450,358 500,365 Q550,372 600,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M600,365 Q650,358 700,365 Q750,372 800,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M800,365 Q850,358 900,365 Q950,372 1000,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M80,200 Q120,150 160,200" fill="#27AE60"/><path d="M640,180 Q680,130 720,180" fill="#27AE60"/><g transform="translate(400, 360)">
+      <path d="M-50,0 Q-55,20 -40,20 L40,20 Q55,20 50,0 Z" fill="#C0392B"/>
+      <rect x="-35" y="-25" width="70" height="28" rx="3" fill="#fff"/>
+      <rect x="-40" y="-30" width="80" height="5" rx="2" fill="#E74C3C"/>
+    </g><g transform="translate(360, 330)">
+      <ellipse cx="0" cy="5" rx="7" ry="10" fill="#F39C12"/>
+      <circle cx="0" cy="-6" r="8" fill="#FFEAA7"/>
+      <path d="M-4,-7 Q-2,-5 0,-7" fill="none" stroke="#333" stroke-width="1.2"/>
+      <path d="M2,-7 Q4,-5 6,-7" fill="none" stroke="#333" stroke-width="1.2"/>
+      <path d="M-2,-2 Q0,0 2,-2" fill="none" stroke="#333" stroke-width="1"/>
+      <ellipse cx="0" cy="-14" rx="10" ry="3" fill="#2C3E50"/>
+      <rect x="-6" y="-22" width="12" height="10" rx="2" fill="#2C3E50"/>
+      <g transform="translate(8, 5) rotate(45)">
+        <polygon points="0,0 15,-5 15,5" fill="#888"/>
+      </g>
+    </g><text x="345" y="315" font-size="10" fill="#333" opacity="0.5">z</text>
+      <text x="335" y="305" font-size="14" fill="#333" opacity="0.4">Z</text><g transform="scale(0.45)">
+    <!-- body -->
+    <ellipse cx="410" cy="357" rx="14" ry="20" fill="#3498DB"/>
+    <!-- legs -->
+    <line x1="403" y1="374" x2="401" y2="390" stroke="#3498DB" stroke-width="5" stroke-linecap="round"/>
+    <line x1="417" y1="374" x2="419" y2="390" stroke="#3498DB" stroke-width="5" stroke-linecap="round"/>
+    <!-- arms -->
+    <line x1="398" y1="347" x2="392" y2="362" stroke="#3498DB" stroke-width="5" stroke-linecap="round"/><line x1="422" y1="347" x2="428" y2="362" stroke="#3498DB" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="410" cy="322" r="16" fill="#FFEAA7"/>
+    <!-- hair -->
+    <ellipse cx="410" cy="310" rx="16" ry="8" fill="#333"/>
+    <circle cx="404" cy="316" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="404" cy="316" r="1.5" fill="#333"/>
+      <circle cx="416" cy="316" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="416" cy="316" r="1.5" fill="#333"/>
+    <ellipse cx="410" cy="328" rx="6" ry="8" fill="#333"/>
+    <!-- blush -->
+    <circle cx="400" cy="323" r="3" fill="#FF9999" opacity="0.4"/>
+    <circle cx="420" cy="323" r="3" fill="#FF9999" opacity="0.4"/>
+  </g><g transform="scale(0.45)">
+    <!-- body -->
+    <ellipse cx="430" cy="355" rx="14" ry="20" fill="#E74C3C"/>
+    <!-- legs -->
+    <line x1="423" y1="372" x2="421" y2="388" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/>
+    <line x1="437" y1="372" x2="439" y2="388" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/>
+    <!-- arms -->
+    <line x1="418" y1="345" x2="412" y2="360" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/><line x1="442" y1="345" x2="448" y2="360" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="430" cy="320" r="16" fill="#FFEAA7"/>
+    <!-- hair -->
+    <ellipse cx="430" cy="308" rx="16" ry="8" fill="#333"/>
+    <circle cx="424" cy="314" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="424" cy="314" r="1.5" fill="#333"/>
+      <circle cx="436" cy="314" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="436" cy="314" r="1.5" fill="#333"/>
+    <ellipse cx="430" cy="326" rx="6" ry="8" fill="#333"/>
+    <!-- blush -->
+    <circle cx="420" cy="321" r="3" fill="#FF9999" opacity="0.4"/>
+    <circle cx="440" cy="321" r="3" fill="#FF9999" opacity="0.4"/>
+  </g><g transform="scale(0.45)">
+    <!-- body -->
+    <ellipse cx="450" cy="357" rx="14" ry="20" fill="#2ECC71"/>
+    <!-- legs -->
+    <line x1="443" y1="374" x2="441" y2="390" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/>
+    <line x1="457" y1="374" x2="459" y2="390" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/>
+    <!-- arms -->
+    <line x1="438" y1="347" x2="432" y2="362" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/><line x1="462" y1="347" x2="468" y2="362" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="450" cy="322" r="16" fill="#FFEAA7"/>
+    <!-- hair -->
+    <ellipse cx="450" cy="310" rx="16" ry="8" fill="#333"/>
+    <circle cx="444" cy="316" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="444" cy="316" r="1.5" fill="#333"/>
+      <circle cx="456" cy="316" r="3" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <circle cx="456" cy="316" r="1.5" fill="#333"/>
+    <ellipse cx="450" cy="328" rx="6" ry="8" fill="#333"/>
+    <!-- blush -->
+    <circle cx="440" cy="323" r="3" fill="#FF9999" opacity="0.4"/>
+    <circle cx="460" cy="323" r="3" fill="#FF9999" opacity="0.4"/>
+  </g><text x="435" y="310" text-anchor="middle" font-size="10" fill="#E74C3C" font-weight="bold">LOOK! LOOK!</text><path d="M700,100 Q695,200 700,300" fill="none" stroke="#85C1E9" stroke-width="5" opacity="0.6"/>
+</svg>

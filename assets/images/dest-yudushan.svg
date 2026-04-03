@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      text { font-family: 'Arial', 'Helvetica', sans-serif; }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="#87CEEB"/>
+  <g transform="translate(100,40) scale(0.7)">
+    <ellipse cx="0" cy="0" rx="40" ry="25" fill="#fff" opacity="0.9"/>
+    <ellipse cx="-30" cy="5" rx="25" ry="18" fill="#fff" opacity="0.9"/>
+    <ellipse cx="30" cy="5" rx="28" ry="20" fill="#fff" opacity="0.9"/>
+    <ellipse cx="15" cy="-10" rx="20" ry="15" fill="#fff" opacity="0.9"/>
+  </g><g transform="translate(550,50) scale(1)">
+    <ellipse cx="0" cy="0" rx="40" ry="25" fill="#fff" opacity="0.9"/>
+    <ellipse cx="-30" cy="5" rx="25" ry="18" fill="#fff" opacity="0.9"/>
+    <ellipse cx="30" cy="5" rx="28" ry="20" fill="#fff" opacity="0.9"/>
+    <ellipse cx="15" cy="-10" rx="20" ry="15" fill="#fff" opacity="0.9"/>
+  </g><polygon points="200,170 50,350 350,350" fill="#6C9A8B"/>
+    <polygon points="200,170 155,224 245,224" fill="#fff" opacity="0.6"/><polygon points="600,150 425,350 775,350" fill="#5D8A7B"/>
+    <polygon points="600,150 547.5,210 652.5,210" fill="#fff" opacity="0.6"/><rect x="0" y="350" width="800" height="150" fill="#48C9B0"/>
+    <path d="M0,365 Q50,358 100,365 Q150,372 200,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M200,365 Q250,358 300,365 Q350,372 400,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M400,365 Q450,358 500,365 Q550,372 600,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M600,365 Q650,358 700,365 Q750,372 800,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><path d="M800,365 Q850,358 900,365 Q950,372 1000,365" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/><rect x="95" y="315" width="10" height="35" fill="#8B4513" rx="2"/>
+    <ellipse cx="100" cy="305" rx="25" ry="30" fill="#27AE60"/>
+    <ellipse cx="85" cy="320" rx="18" ry="22" fill="#27AE60"/>
+    <ellipse cx="115" cy="320" rx="18" ry="22" fill="#27AE60"/><rect x="695" y="305" width="10" height="40" fill="#8B4513" rx="2"/>
+    <ellipse cx="700" cy="295" rx="25" ry="30" fill="#2ECC71"/>
+    <ellipse cx="685" cy="310" rx="18" ry="22" fill="#2ECC71"/>
+    <ellipse cx="715" cy="310" rx="18" ry="22" fill="#2ECC71"/><g transform="translate(350, 310)">
+      <ellipse cx="0" cy="5" rx="25" ry="15" fill="#D2691E"/>
+      <ellipse cx="-25" cy="15" rx="10" ry="8" fill="#C4A882"/>
+      <path d="M-28,5 Q-35,-5 -30,-15 M-30,-10 L-36,-15" fill="none" stroke="#8B4513" stroke-width="2"/>
+      <path d="M-22,5 Q-15,-5 -20,-15 M-20,-10 L-14,-15" fill="none" stroke="#8B4513" stroke-width="2"/>
+      <circle cx="-28" cy="12" r="2.5" fill="#fff" stroke="#333" stroke-width="1"/>
+      <circle cx="-28" cy="12" r="1.2" fill="#333"/>
+      <ellipse cx="-25" cy="19" rx="2" ry="3" fill="#333"/>
+      <line x1="-15" y1="18" x2="-15" y2="40" stroke="#C4A882" stroke-width="4"/>
+      <line x1="-5" y1="18" x2="-5" y2="40" stroke="#C4A882" stroke-width="4"/>
+      <line x1="10" y1="18" x2="10" y2="40" stroke="#C4A882" stroke-width="4"/>
+      <line x1="20" y1="18" x2="20" y2="40" stroke="#C4A882" stroke-width="4"/>
+      <circle cx="5" cy="0" r="2" fill="#fff" opacity="0.5"/>
+      <circle cx="-10" cy="3" r="1.5" fill="#fff" opacity="0.5"/>
+      <circle cx="15" cy="5" r="2" fill="#fff" opacity="0.5"/>
+      <ellipse cx="25" cy="0" rx="5" ry="4" fill="#fff"/>
+    </g><g transform="translate(325, 370) scale(1, -0.6)" opacity="0.4">
+      <ellipse cx="0" cy="0" rx="10" ry="8" fill="#C4A882"/>
+      <circle cx="-3" cy="-2" r="2" fill="#333"/>
+    </g><g>
+      <path d="M315,355 Q310,340 305,358" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <path d="M340,352 Q345,335 350,355" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <path d="M325,350 Q322,335 320,352" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle cx="310" cy="348" r="3" fill="#fff" opacity="0.5"/>
+      <circle cx="345" cy="345" r="4" fill="#fff" opacity="0.4"/>
+    </g><text x="350" y="290" text-anchor="middle" font-size="18" fill="#E74C3C" font-weight="bold">!!</text><line x1="310" y1="300" x2="300" y2="295" stroke="#333" stroke-width="1.5" opacity="0.5"/>
+      <line x1="310" y1="310" x2="298" y2="312" stroke="#333" stroke-width="1.5" opacity="0.5"/>
+      <line x1="312" y1="320" x2="300" y2="325" stroke="#333" stroke-width="1.5" opacity="0.5"/>
+</svg>

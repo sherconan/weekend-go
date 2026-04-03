@@ -1,0 +1,27 @@
+{
+  "name": "周末去哪儿 - 北京周边游决策助手",
+  "short_name": "周末去哪儿",
+  "description": "帮你从「不知道去哪」到「就去这儿」的北京周边游决策助手",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FAFBF8",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "assets/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "lifestyle"],
+  "screenshots": []
+}
