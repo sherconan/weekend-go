@@ -139,15 +139,15 @@ function renderDestinations(destinations) {
   grid.innerHTML = destinations.map((dest, i) => {
     const imgPath = typeof getDestImage === 'function' ? getDestImage(dest) : null;
     const sceneURL = typeof getSceneDataURL === 'function' ? getSceneDataURL(dest) : '';
-    const coverStyle = imgPath
-      ? `background-image: url('${imgPath}'); background-size: cover; background-position: center;`
-      : sceneURL
-        ? `background-image: url(&quot;${sceneURL}&quot;); background-size: cover;`
-        : `background: ${dest.gradient};`;
+    const hasImage = imgPath || sceneURL;
+    const fallbackStyle = !hasImage ? `background: ${dest.gradient};` : '';
+    const imgSrc = imgPath || sceneURL || '';
+    const coverStyle = hasImage ? '' : fallbackStyle;
 
     return `
     <div class="dest-card fade-up" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
-      <div class="dest-card-cover" style="${coverStyle}">
+      <div class="dest-card-cover" style="${fallbackStyle}">
+        ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async">` : ''}
         <div class="dest-card-cover-overlay"></div>
         <div class="dest-card-cover-content">
           <span class="dest-card-source">${dest.source}</span>
