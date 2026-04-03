@@ -1,0 +1,329 @@
+{
+  "jobs": 36,
+  "tasks": [
+    {
+      "id": "baicaopan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Baicaopan alpine meadow in Beijing, lush green rolling hills dotted with wildflowers in yellow and purple, cute cartoon hikers with tiny backpacks walking forest trails, birch trees with white trunks, misty mountain peaks in the background, bright sunny day, pastel color palette, Studio Ghibli inspired style",
+      "image": "assets/images/dest-baicaopan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "baipusi",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Baipusi temple in Beijing western mountains, ancient Buddhist temple nestled among lush green trees, a cascading white waterfall tumbling over mossy rocks, cute cartoon monks in orange robes, stone steps winding up the hill, lotus flowers floating in a pond, soft morning light filtering through trees, warm pastel colors",
+      "image": "assets/images/dest-baipusi.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beidaihe-coast",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beidaihe's azure coastline, sparkling turquoise sea with gentle waves, golden sandy beach with cute cartoon families building sandcastles, colorful beach umbrellas, seagulls soaring overhead, distant sailing boats on the horizon, summer vacation atmosphere, bright cheerful colors, crystal clear water",
+      "image": "assets/images/dest-beidaihe-coast.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "olympic-tower",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beijing Olympic Tower at dusk, five intertwined towers glowing with colorful LED lights in Olympic ring colors, cute cartoon tourists taking photos, modern plaza with fountains, city skyline in the background, fireworks in the night sky, vibrant urban atmosphere, neon reflections on the ground",
+      "image": "assets/images/dest-olympic-tower.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "water-cube-park",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beijing Water Cube water park, iconic blue bubble-shaped building transformed into a splashing water playground, cute cartoon kids in swimsuits sliding down colorful water slides, wave pool with tiny swimmers, rainbow-colored tubes and flumes, bright summer sky with fluffy clouds, joyful splashing water everywhere",
+      "image": "assets/images/dest-water-cube-park.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beijing-planetarium",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beijing Planetarium at night, silver dome gleaming under a star-filled sky, cute cartoon children pointing at constellations through telescope, glowing star projections inside the dome visible through windows, planets and moons floating magically around the building, deep purple and midnight blue sky with the Milky Way",
+      "image": "assets/images/dest-beijing-planetarium.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beijing-safari",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beijing Wildlife Zoo, open safari buses driving past friendly cartoon giraffes and zebras grazing on savanna, cute cartoon pandas eating bamboo in a lush enclosure, lions lounging lazily in sunshine, colorful tropical birds perched on branches, happy visitors waving from safari vehicles, lush green landscape",
+      "image": "assets/images/dest-beijing-safari.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "botanical-peony-festival",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Beijing Botanical Garden Peony Festival, thousands of blooming peonies in vivid pink, red, white and purple, cute cartoon couples posing for photos among flower beds, traditional pavilion surrounded by peony blossoms, butterflies and bees dancing between flowers, soft spring light, petals drifting in the breeze",
+      "image": "assets/images/dest-botanical-peony-festival.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "beijing-botanical-old",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of old Beijing Botanical Garden in spring, cherry blossom trees in full pink bloom lining winding paths, cute cartoon families having picnics under flowering trees, a conservatory greenhouse with tropical plants, koi fish in a tranquil pond, traditional Chinese garden elements, warm spring sunshine filtering through blossoms",
+      "image": "assets/images/dest-beijing-botanical-old.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "caijiaWa-rose",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of CaijiaWa Rose Garden, endless rows of blooming roses in red, pink, orange and white stretching to the horizon, cute cartoon lovers walking hand in hand through rose archways, a rustic windmill in the background, rose petal confetti floating in the air, warm golden afternoon light, romantic pastoral atmosphere",
+      "image": "assets/images/dest-caijiaWa-rose.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "shisanling-reservoir",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Shisanling Reservoir in Changping, calm glassy lake reflecting the surrounding green mountains, cute cartoon kayakers and paddleboarders on the water, weeping willows trailing branches in the lake, distant Ming dynasty mountains in the mist, colorful dragonflies hovering over the water, peaceful summer afternoon",
+      "image": "assets/images/dest-shisanling-reservoir.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "chengde-temples",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Chengde Eight Outer Temples, magnificent Tibetan-style Buddhist temples on hillsides, the Potala Palace replica with golden roofs gleaming in sunlight, cute cartoon pilgrims with prayer wheels, prayer flags fluttering colorfully between temples, mountains covered in pine forest, clear blue sky with white clouds",
+      "image": "assets/images/dest-chengde-temples.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "chongli-wanlong-ski",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Chongli Wanlong Ski Resort, snowy mountain slopes with ski runs winding down, cute cartoon skiers in colorful suits carving turns through fresh powder, ski lifts carrying tiny skiers up the mountain, snow-dusted pine trees, a cozy ski lodge with smoke from chimney, bright winter blue sky, Olympic mountain backdrop",
+      "image": "assets/images/dest-chongli-wanlong-ski.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "chunhui-hotspring",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Chunhui Hot Spring resort, steaming open-air mineral pools surrounded by Japanese-style garden, cute cartoon couples soaking in outdoor onsen pools, snow falling gently in winter, bamboo fences and stone lanterns, mineral water glowing turquoise blue, steam rising in the cold air, cozy warm atmosphere",
+      "image": "assets/images/dest-chunhui-hotspring.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "donglingshan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Donglingshan mountain, the highest peak in Beijing area, alpine tundra landscape above the treeline with low shrubs turning red in autumn, cute cartoon hikers reaching the summit with arms raised in triumph, panoramic views of endless mountain ranges, wind-blown grasses, golden autumn colors, vast sky",
+      "image": "assets/images/dest-donglingshan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yunju-temple",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Yunju Temple in Fangshan, ancient Buddhist pagodas rising among pine trees, rows of stone Buddhist carvings and tablets lining stone paths, cute cartoon visitors burning incense at the main hall, temple bells hanging from eaves, autumn maple trees in red and gold, serene peaceful atmosphere, golden morning light",
+      "image": "assets/images/dest-yunju-temple.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "simatai-reservoir",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Simatai Reservoir near Gubei Water Town, a hidden emerald lake nestled between rugged mountains, the silhouette of Simatai Great Wall visible on the ridge above, cute cartoon fishermen in small wooden boats, reflections of mountains in still water, reeds swaying gently, wild ducks swimming, tranquil atmosphere",
+      "image": "assets/images/dest-simatai-reservoir.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "forbidden-city-cafe",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Forbidden City Corner Tower Cafe, iconic watchtower with triple-eaved roofs reflected in the palace moat, cute cartoon visitors sipping tea and coffee at outdoor tables, imperial red walls framing the view, golden glazed tiles gleaming in sunlight, weeping willows by the moat, ducks swimming peacefully",
+      "image": "assets/images/dest-forbidden-city-cafe.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "huailai-winery",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Huailai winery near Beijing, rolling vineyard hillsides with rows of grapevines stretching to the horizon, a French chateau-style winery building with terracotta roof, cute cartoon visitors on wine tasting tours with glasses of red and white wine, grape clusters hanging ripe and purple, golden autumn vineyard glow",
+      "image": "assets/images/dest-huailai-winery.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "huangcaoliang",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Huangcaoliang highland in Beijing, sweeping ridgeline covered in golden meadow grass and autumn shrubs, cute cartoon hikers silhouetted against dramatic sunset sky, wind turbines spinning on distant ridges, sea of clouds filling the valleys below, cool mountain breeze, wide open plateau, stunning panoramic views",
+      "image": "assets/images/dest-huangcaoliang.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "dule-temple",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Dule Temple in Jizhou, one of China's oldest wooden structures with a magnificent multi-story pavilion, the giant Avalokitesvara statue visible through the upper windows, cute cartoon visitors marveling at ancient architecture, stone lions at the entrance, ancient ginkgo trees with golden leaves, misty morning atmosphere",
+      "image": "assets/images/dest-dule-temple.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "juyongguan-flower-train",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Juyongguan flower train, a colorful train winding through mountain valleys filled with blooming wildflowers, apricot blossoms and rapeseed flowers in yellow and white carpeting the hillsides, the Great Wall visible on the mountain ridges, cute cartoon passengers leaning out windows to see flowers, spring mountain scenery",
+      "image": "assets/images/dest-juyongguan-flower-train.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "bailixia-canyon",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Bailixia canyon in Laishui, dramatic narrow canyon with sheer limestone cliffs rising hundreds of meters, a crystal clear turquoise stream flowing through the gorge, cute cartoon hikers walking on boardwalks along the cliffside, ancient trees clinging to rocky walls, waterfalls cascading from above, dramatic light shafts",
+      "image": "assets/images/dest-bailixia-canyon.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "lingshan-tianchi",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Lingshan Tianchi alpine lake, a crystal clear mountain lake sitting in a volcanic crater at high altitude, surrounded by rocky peaks and alpine meadows with summer wildflowers, cute cartoon hikers resting by the lake shore, perfect reflection of blue sky and clouds in still water, crisp clean mountain air",
+      "image": "assets/images/dest-lingshan-tianchi.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "longmenjian",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Longmenjian ravine, a hidden gem valley with sheer cliff walls draped in green moss and ferns, a rushing mountain stream with stepping stones crossing it, cute cartoon adventurers exploring the narrow gorge, ancient stone formations and natural rock bridges, dappled sunlight filtering through overhanging cliffs, misty waterfall",
+      "image": "assets/images/dest-longmenjian.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "miyun-heishansi",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Miyun Heishansi temple, a remote hilltop temple with black weathered stone walls emerging from dense forest, ancient gnarled pine trees framing the temple gate, cute cartoon pilgrims climbing steep stone steps, incense smoke drifting in the mountain breeze, valley panorama below, golden prayer flags, peaceful solitude",
+      "image": "assets/images/dest-miyun-heishansi.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "miyun-peach-valley",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Miyun Peach Blossom Valley in spring, a narrow mountain valley absolutely filled with blooming peach trees in pink and white, fallen petals carpeting the stream banks, cute cartoon families picnicking under blossom trees, a rustic old stone bridge over a clear stream, petals drifting like pink snow in the breeze",
+      "image": "assets/images/dest-miyun-peach-valley.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "birdsnest-watercube",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Bird's Nest stadium and Water Cube at golden hour, iconic Olympic landmarks glowing warm orange in the sunset, cute cartoon tourists taking selfies in the Olympic plaza, the geometric steel lattice of Bird's Nest contrasting with the bubble-shaped blue Water Cube, fountain jets catching the golden light, Olympic rings",
+      "image": "assets/images/dest-birdsnest-watercube.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "pinggu-canyon",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Pinggu Canyon, a dramatic gorge with red sandstone cliffs plunging into a jade-green river, cute cartoon rafters on inflatable boats navigating the rapids, rope bridges spanning the canyon, lush vegetation clinging to cliff faces, spray from waterfalls catching rainbow light, thrilling adventure atmosphere, bright summer day",
+      "image": "assets/images/dest-pinggu-canyon.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "pinggu-laotaishan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Laotaishan in Pinggu, ancient rocky summit with traditional stone temple complex at the peak, colorful prayer flags fluttering in the mountain wind, cute cartoon hikers at the summit pavilion enjoying panoramic views of Pinggu valley and peach orchards below, morning clouds swirling around the peaks",
+      "image": "assets/images/dest-pinggu-laotaishan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "world-park",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of World Park in Beijing, miniature replicas of world landmarks dotting a colorful theme park, tiny Eiffel Tower next to mini Pyramids next to small Colosseum, cute cartoon tourists with cameras visiting each miniature monument, globe sculpture at the entrance, flower gardens between attractions, festive international atmosphere",
+      "image": "assets/images/dest-world-park.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "longqingxia-ice-festival",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Longqingxia Ice Lantern Festival in Yanqing, a magical winter wonderland of giant ice sculptures illuminated in rainbow colors, ice dragons and phoenixes glowing purple and gold, cute cartoon families wandering through glowing ice archways and tunnels, frozen lake reflecting the colorful lights, falling snowflakes, pure winter magic",
+      "image": "assets/images/dest-longqingxia-ice-festival.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yanqihu-international",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Yanqi Lake International Convention Center, futuristic crescent-shaped conference buildings reflected in the vast calm lake, cute cartoon diplomats strolling on lakeside promenades, mountains covered in autumn foliage surrounding the lake, modernist architecture with Chinese garden elements, lotus flowers in the shallows, serene grandeur",
+      "image": "assets/images/dest-yanqihu-international.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "yaoqiaoyu-village",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Yaoqiaoyu ancient village near the Great Wall, stone-walled courtyard houses nestled in a narrow mountain valley, an ancient stone arch bridge over a clear stream, cute cartoon visitors exploring traditional Ming-dynasty village architecture, chickens roaming the lanes, persimmon trees heavy with orange fruit, autumn village life",
+      "image": "assets/images/dest-yaoqiaoyu-village.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "zhangjiakou-nuanquan",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of Nuanquan ancient town in Zhangjiakou, famous for its traditional shadow puppetry, red paper-cut decorations and lanterns hanging between old merchant houses on a cobblestone street, cute cartoon artisans demonstrating shadow puppet craft, steaming hot springs in the town square, winter festival atmosphere with snow dusting rooftops",
+      "image": "assets/images/dest-zhangjiakou-nuanquan.webp",
+      "ar": "16:9"
+    },
+    {
+      "id": "china-garden-museum",
+      "promptFiles": [
+        "prompts/style.md"
+      ],
+      "prompt": "Kawaii cartoon scene of China Garden Museum in Beijing, a stunning collection of traditional Chinese garden styles under one roof, classical Suzhou-style garden with pavilions over reflecting pools, rock formations and bonsai trees, covered walkways with lattice windows, cute cartoon visitors appreciating garden art, lotus blooms in summer ponds, serene elegance",
+      "image": "assets/images/dest-china-garden-museum.webp",
+      "ar": "16:9"
+    }
+  ]
+}
