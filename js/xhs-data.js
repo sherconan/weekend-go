@@ -75,12 +75,6 @@ const XHS_HEAT = {
     trending: "周末遛娃、春季樱花、马拉松备赛、北五环绿肺",
     tier: "A"
   },
-  "延庆龙庆峡冰灯节": {
-    heat: 80,
-    notes: "4万+",
-    trending: "冬季冰灯节、冰雕艺术节、北京冬日打卡首选（季节性爆款）",
-    tier: "A"
-  },
   "承德避暑山庄": {
     heat: 79,
     notes: "18万+",
@@ -137,12 +131,6 @@ const XHS_HEAT = {
   },
 
   // ===== Tier B: 中等热度 (50-69) =====
-  "北京植物园（原北植）": {
-    heat: 68,
-    notes: "5万+",
-    trending: "春季桃花节、樱花打卡、植物科普、卧佛寺",
-    tier: "B"
-  },
   "雾灵山": {
     heat: 67,
     notes: "7万+",
@@ -171,12 +159,6 @@ const XHS_HEAT = {
     heat: 63,
     notes: "5万+",
     trending: "地下宫殿、明朝历史、石像路攻略、冷门景点",
-    tier: "B"
-  },
-  "北戴河蔚蓝海岸": {
-    heat: 62,
-    notes: "2万+",
-    trending: "海边度假、亲海泳场、夏季避暑",
     tier: "B"
   },
   "龙庆峡": {
@@ -379,12 +361,6 @@ const XHS_HEAT = {
     trending: "松树奇观、门头沟古寺、汉服写真",
     tier: "C"
   },
-  "涞水野三坡百里峡": {
-    heat: 32,
-    notes: "5000+",
-    trending: "峡谷徒步、绝壁奇观、河北野游",
-    tier: "C"
-  },
   "怀柔影视城": {
     heat: 31,
     notes: "3000+",
@@ -447,12 +423,6 @@ const XHS_HEAT = {
     trending: "海淀登山、城市近郊、俯瞰北京、爬山健身",
     tier: "D"
   },
-  "承德外八庙": {
-    heat: 25,
-    notes: "3000+",
-    trending: "避暑山庄联游、藏传佛教建筑",
-    tier: "D"
-  },
   "保定直隶总督署": {
     heat: 24,
     notes: "6000+",
@@ -499,12 +469,6 @@ const XHS_HEAT = {
     heat: 21,
     notes: "1500+",
     trending: "春季赏杏花、延庆农业景观（季节性）",
-    tier: "D"
-  },
-  "灵山天池": {
-    heat: 20,
-    notes: "2000+",
-    trending: "高山天池、灵山登顶奖励",
     tier: "D"
   },
   "银山塔林": {
@@ -561,22 +525,10 @@ const XHS_HEAT = {
     trending: "地质博物馆、科普游、联合国认证",
     tier: "D"
   },
-  "崇礼万龙滑雪场": {
-    heat: 16,
-    notes: "4000+",
-    trending: "专业雪道、冬奥赛场、高级滑手首选",
-    tier: "D"
-  },
   "永定河生态走廊": {
     heat: 15,
     notes: "1500+",
     trending: "骑行绿道、永定河复流、城市自然",
-    tier: "D"
-  },
-  "古北水镇附近司马台水库": {
-    heat: 14,
-    notes: "600+",
-    trending: "司马台长城辅助游、钓鱼",
     tier: "D"
   },
   "密云古北口": {
@@ -615,12 +567,6 @@ const XHS_HEAT = {
     trending: "新区打卡、城市规划参观、政策热点",
     tier: "D"
   },
-  "张家口暖泉古镇": {
-    heat: 10,
-    notes: "500+",
-    trending: "与蔚县打树花联游、古镇民俗",
-    tier: "D"
-  }
 };
 
 // 分级统计
@@ -630,4 +576,355 @@ const XHS_TIER_SUMMARY = {
   B: Object.entries(XHS_HEAT).filter(([, v]) => v.tier === "B").map(([k]) => k),
   C: Object.entries(XHS_HEAT).filter(([, v]) => v.tier === "C").map(([k]) => k),
   D: Object.entries(XHS_HEAT).filter(([, v]) => v.tier === "D").map(([k]) => k),
+  // ===== 新增北京周边目的地 =====
+  "灵水举人村": {
+    heat: 38,
+    notes: "1万+",
+    trending: "举人古村、京西古村、秋季银杏柿子",
+    tier: "C"
+  },
+  "水峪村": {
+    heat: 22,
+    notes: "3000+",
+    trending: "石板古村、明清民居、房山深山",
+    tier: "D"
+  },
+  "琉璃渠村": {
+    heat: 31,
+    notes: "5000+",
+    trending: "皇家琉璃、门头沟古村、故宫同款琉璃",
+    tier: "C"
+  },
+  "白河峡谷": {
+    heat: 55,
+    notes: "5万+",
+    trending: "峡谷漂流、密云夏日、北京最长峡谷",
+    tier: "B"
+  },
+  "幽谷神潭": {
+    heat: 28,
+    notes: "4000+",
+    trending: "怀柔峡谷、多级瀑布、小众秘境",
+    tier: "C"
+  },
+  "云蒙峡": {
+    heat: 42,
+    notes: "1.5万+",
+    trending: "密云峡谷、冰瀑奇观、亲子徒步",
+    tier: "C"
+  },
+  "桃源仙谷": {
+    heat: 35,
+    notes: "8000+",
+    trending: "春季桃花、怀柔秘境、花谷徒步",
+    tier: "C"
+  },
+  "官厅水库": {
+    heat: 48,
+    notes: "2万+",
+    trending: "帆船运动、风筝冲浪、北京最大水库",
+    tier: "C"
+  },
+  "怀柔水库": {
+    heat: 32,
+    notes: "6000+",
+    trending: "城边垂钓、野餐胜地、怀柔周边",
+    tier: "C"
+  },
+  "不老屯水库": {
+    heat: 18,
+    notes: "2000+",
+    trending: "深山钓鱼、密云秘境、原生态水库",
+    tier: "D"
+  },
+  "云蒙山": {
+    heat: 62,
+    notes: "8万+",
+    trending: "北京小黄山、云海日出、奇峰怪石",
+    tier: "B"
+  },
+  "海坨山": {
+    heat: 57,
+    notes: "6万+",
+    trending: "北京第二高峰、亚高山草甸、野长城徒步",
+    tier: "B"
+  },
+  "百花山": {
+    heat: 65,
+    notes: "10万+",
+    trending: "亚高山花海、夏季花期、北京最大花海",
+    tier: "B"
+  },
+  "怀北滑雪场": {
+    heat: 60,
+    notes: "7万+",
+    trending: "北京最近滑雪场、冬季周末、亲子滑雪",
+    tier: "B"
+  },
+  "军都山滑雪场": {
+    heat: 38,
+    notes: "1万+",
+    trending: "昌平滑雪、新手雪场、性价比滑雪",
+    tier: "C"
+  },
+  "房山十渡攀岩": {
+    heat: 45,
+    notes: "2万+",
+    trending: "华北攀岩圣地、500条线路、户外运动",
+    tier: "C"
+  },
+  "琉璃厂文化街": {
+    heat: 52,
+    notes: "3万+",
+    trending: "荣宝斋、文房四宝、北京文化街",
+    tier: "B"
+  },
+  "潘家园旧货市场": {
+    heat: 68,
+    notes: "15万+",
+    trending: "捡漏、旧书古玩、周末早市、北京烟火",
+    tier: "B"
+  },
+  "798艺术区": {
+    heat: 75,
+    notes: "20万+",
+    trending: "当代艺术、工业风打卡、UCCA、咖啡馆",
+    tier: "A"
+  },
+  "首钢园": {
+    heat: 72,
+    notes: "18万+",
+    trending: "工业遗址、冬奥遗产、高炉夜景、城市打卡",
+    tier: "A"
+  },
+  "国贸CBD观景": {
+    heat: 58,
+    notes: "6万+",
+    trending: "北京天际线、CBD夜景、城市摄影",
+    tier: "B"
+  },
+  "鸟巢水立方夜景": {
+    heat: 70,
+    notes: "16万+",
+    trending: "奥运地标、灯光秀、北京夜景打卡",
+    tier: "A"
+  },
+  "前门大栅栏": {
+    heat: 65,
+    notes: "10万+",
+    trending: "老北京小吃、同仁堂、胡同文化",
+    tier: "B"
+  },
+  "延庆野鸭湖湿地": {
+    heat: 44,
+    notes: "1.8万+",
+    trending: "候鸟天堂、天鹅观鸟、北京最大湿地",
+    tier: "C"
+  },
+  "汉石桥湿地": {
+    heat: 35,
+    notes: "8000+",
+    trending: "苇海泛舟、顺义湿地、观鸟摄影",
+    tier: "C"
+  },
+  "翠湖湿地公园": {
+    heat: 48,
+    notes: "2万+",
+    trending: "海淀观鸟、限额保护、城市湿地秘境",
+    tier: "C"
+  },
+  "天津古文化街": {
+    heat: 68,
+    notes: "14万+",
+    trending: "高铁30分钟、天津非遗、狗不理包子、泥人张",
+    tier: "B"
+  },
+  "保定腰山王氏庄园": {
+    heat: 22,
+    notes: "3000+",
+    trending: "北方乔家大院、清代庄园、保定古建筑",
+    tier: "D"
+  },
+  "蓝调庄园温泉": {
+    heat: 55,
+    notes: "5万+",
+    trending: "顺义温泉、雪景泡汤、五星度假村",
+    tier: "B"
+  },
+  "九华山庄温泉": {
+    heat: 60,
+    notes: "7万+",
+    trending: "百个温泉池、昌平温泉、冬季星空泡汤",
+    tier: "B"
+  },
+  "柏峪村": {
+    heat: 18,
+    notes: "2000+",
+    trending: "明代军屯、门头沟深山、秋柿古村",
+    tier: "D"
+  },
+  "平谷金海湖骑行": {
+    heat: 45,
+    notes: "2万+",
+    trending: "环湖骑行、桃花节骑行、平谷户外",
+    tier: "C"
+  },
+  "什刹海": {
+    heat: 78,
+    notes: "25万+",
+    trending: "老北京胡同、荷花季、后海夜生活、银锭桥",
+    tier: "A"
+  },
+  "北海公园": {
+    heat: 72,
+    notes: "18万+",
+    trending: "千年皇家园林、白塔倒影、荷花季",
+    tier: "A"
+  },
+  "圆明园遗址": {
+    heat: 70,
+    notes: "16万+",
+    trending: "西洋楼废墟、荷花节、历史遗址摄影",
+    tier: "A"
+  },
+  "密云司马台野长城": {
+    heat: 75,
+    notes: "20万+",
+    trending: "中国长城之最、最险野长城、长城摄影",
+    tier: "A"
+  },
+  "南锣鼓巷": {
+    heat: 72,
+    notes: "18万+",
+    trending: "元代胡同、北京文创、胡同美食",
+    tier: "A"
+  },
+  "门头沟斋堂川古村群": {
+    heat: 52,
+    notes: "3万+",
+    trending: "爨底下连游、古村群、京西秋游路线",
+    tier: "B"
+  },
+  "天津意式风情区": {
+    heat: 62,
+    notes: "8万+",
+    trending: "百年意大利租界、巴洛克建筑、天津打卡",
+    tier: "B"
+  },
+  "昌平十三陵水库环湖": {
+    heat: 40,
+    notes: "1.2万+",
+    trending: "环湖骑行、皇陵露营、春季桃花",
+    tier: "C"
+  },
+  "北京国家大剧院": {
+    heat: 65,
+    notes: "10万+",
+    trending: "水上蛋壳、顶级演出、夜景倒影摄影",
+    tier: "B"
+  },
+  "顺义减河公园骑行": {
+    heat: 35,
+    notes: "8000+",
+    trending: "50公里绿道骑行、亲子骑行、顺义公园",
+    tier: "C"
+  },
+  "房山天开花海": {
+    heat: 48,
+    notes: "2万+",
+    trending: "薰衣草花海、夏季避暑、房山网红花田",
+    tier: "C"
+  },
+  "密云溪翁庄鱼街": {
+    heat: 50,
+    notes: "3万+",
+    trending: "密云水库野生鱼、吃鱼一条街、北京周边美食",
+    tier: "B"
+  },
+  "崇礼云顶雪场": {
+    heat: 78,
+    notes: "25万+",
+    trending: "冬奥主赛场、崇礼最好雪场、华北粉雪",
+    tier: "A"
+  },
+  "承德双塔山": {
+    heat: 32,
+    notes: "6000+",
+    trending: "承德奇景、石峰古塔、千古之谜",
+    tier: "C"
+  },
+  "平谷四座楼野外徒步": {
+    heat: 40,
+    notes: "1.2万+",
+    trending: "北京硬核徒步、原始森林、燕山秘境",
+    tier: "C"
+  },
+  "北京科技馆": {
+    heat: 62,
+    notes: "8万+",
+    trending: "亲子必去、互动科技、国家科技馆",
+    tier: "B"
+  },
+  "顺义葡萄小镇": {
+    heat: 38,
+    notes: "1万+",
+    trending: "秋季采摘、葡萄酒体验、顺义亲子",
+    tier: "C"
+  },
+  "通州运河文化带": {
+    heat: 45,
+    notes: "2万+",
+    trending: "京杭大运河、燃灯塔、城市副中心",
+    tier: "C"
+  },
+  "延庆冰雪嘉年华": {
+    heat: 55,
+    notes: "5万+",
+    trending: "北京冰雪节、冰雕展、冬奥城市",
+    tier: "B"
+  },
+  "门头沟京西古道徒步": {
+    heat: 48,
+    notes: "2万+",
+    trending: "千年古道、王平古道、历史寻访徒步",
+    tier: "C"
+  },
+  "密云不老屯温泉": {
+    heat: 35,
+    notes: "8000+",
+    trending: "深山温泉、密云星空泡汤、疗愈度假",
+    tier: "C"
+  },
+  "延庆佛爷顶": {
+    heat: 42,
+    notes: "1.5万+",
+    trending: "云海日出、延庆摄影、气象站打卡",
+    tier: "C"
+  },
+  "延庆野鸭湖骑行": {
+    heat: 38,
+    notes: "1万+",
+    trending: "湿地骑行、候鸟骑行、延庆户外",
+    tier: "C"
+  },
+  "昌平碓臼峪爬山": {
+    heat: 52,
+    notes: "3万+",
+    trending: "峡谷溯溪、夏季戏水、亲子爬山",
+    tier: "B"
+  },
+  "怀柔慕田峪长城南段": {
+    heat: 45,
+    notes: "2万+",
+    trending: "慕田峪人少段、秋季色叶长城、摄影圣地",
+    tier: "C"
+  },
+  "北京颐和园昆明湖冬游": {
+    heat: 48,
+    notes: "2万+",
+    trending: "冬日颐和园、冰面冰车、皇家冬景",
+    tier: "C"
+  }
+
 };
+

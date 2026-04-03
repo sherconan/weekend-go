@@ -2,6 +2,12 @@
 if (typeof DESTINATIONS_EXTRA !== 'undefined') {
   DESTINATIONS.push(...DESTINATIONS_EXTRA);
 }
+if (typeof DESTINATIONS_EXTRA2 !== 'undefined') {
+  // Deduplicate by name
+  const existingNames = new Set(DESTINATIONS.map(d => d.name));
+  const unique = DESTINATIONS_EXTRA2.filter(d => !existingNames.has(d.name));
+  DESTINATIONS.push(...unique.slice(0, 150 - DESTINATIONS.length));
+}
 
 // ========== State ==========
 const state = {
