@@ -147,7 +147,7 @@ function renderDestinations(destinations) {
     return `
     <div class="dest-card fade-up" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
       <div class="dest-card-cover" style="${fallbackStyle}">
-        ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async">` : ''}
+        ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.style.background='${dest.gradient}'">` : ''}
         <div class="dest-card-cover-overlay"></div>
         <div class="dest-card-cover-content">
           <span class="dest-card-source">${dest.source}</span>
