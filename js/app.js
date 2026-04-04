@@ -1,12 +1,56 @@
-// ========== Merge Destinations ==========
-if (typeof DESTINATIONS_EXTRA !== 'undefined') {
-  DESTINATIONS.push(...DESTINATIONS_EXTRA);
+// ========== City Data Registry ==========
+function buildBeijingDestinations() {
+  const dests = [...DESTINATIONS];
+  if (typeof DESTINATIONS_EXTRA !== 'undefined') dests.push(...DESTINATIONS_EXTRA);
+  if (typeof DESTINATIONS_EXTRA2 !== 'undefined') {
+    const names = new Set(dests.map(d => d.name));
+    dests.push(...DESTINATIONS_EXTRA2.filter(d => !names.has(d.name)));
+  }
+  if (typeof DESTINATIONS_BJ500 !== 'undefined') {
+    const names = new Set(dests.map(d => d.name));
+    dests.push(...DESTINATIONS_BJ500.filter(d => !names.has(d.name)));
+  }
+  if (typeof DESTINATIONS_BJ_EXPAND !== 'undefined') {
+    const names = new Set(dests.map(d => d.name));
+    dests.push(...DESTINATIONS_BJ_EXPAND.filter(d => !names.has(d.name)));
+  }
+  return dests;
 }
-if (typeof DESTINATIONS_EXTRA2 !== 'undefined') {
-  // Deduplicate by name
-  const existingNames = new Set(DESTINATIONS.map(d => d.name));
-  const unique = DESTINATIONS_EXTRA2.filter(d => !existingNames.has(d.name));
-  DESTINATIONS.push(...unique.slice(0, 150 - DESTINATIONS.length));
+
+const CITY_DATA = {
+  beijing: { build: buildBeijingDestinations, label: '北京周边游', badge: '\u{1F331} 北京周边游 \u00B7 2026 春季版', desc: '从北京出发，500公里范围内的精选目的地。' },
+  shenzhen: { build: () => typeof DESTINATIONS_SZ !== 'undefined' ? [...DESTINATIONS_SZ] : [], label: '深圳周边游', badge: '\u{1F3D6} 深圳周边游 \u00B7 2026 春季版', desc: '从深圳出发，海滩、美食、古镇，应有尽有。' },
+  weihai: { build: () => typeof DESTINATIONS_WH !== 'undefined' ? [...DESTINATIONS_WH] : [], label: '威海周边游', badge: '\u{1F30A} 威海周边游 \u00B7 2026 春季版', desc: '从威海出发，海鲜、海景、韩国风情。' },
+};
+
+let currentCity = 'beijing';
+let ACTIVE_DESTINATIONS = buildBeijingDestinations();
+
+function switchCity(city) {
+  if (!CITY_DATA[city]) return;
+  currentCity = city;
+  const cityInfo = CITY_DATA[city];
+  ACTIVE_DESTINATIONS = cityInfo.build();
+
+  // Update UI
+  document.querySelectorAll('.city-btn').forEach(b => b.classList.toggle('active', b.dataset.city === city));
+  const badge = document.getElementById('hero-badge');
+  if (badge) badge.innerHTML = cityInfo.badge;
+  const desc = document.getElementById('hero-desc');
+  if (desc) desc.textContent = cityInfo.desc;
+
+  // Update stats
+  const statCount = document.getElementById('stat-count');
+  const statRange = document.getElementById('stat-range');
+  if (statCount) statCount.textContent = ACTIVE_DESTINATIONS.length;
+  if (statRange) {
+    const dists = ACTIVE_DESTINATIONS.map(d => d.distance).sort((a,b) => a-b);
+    statRange.textContent = dists.length > 0 ? `${dists[0]}-${dists[dists.length-1]}` : '0';
+  }
+
+  // Reset filters and re-render
+  clearFilters();
+  updateCollectionProgress();
 }
 
 // ========== State ==========
@@ -15,7 +59,8 @@ const state = {
     duration: [],
     transport: [],
     themes: [],
-    budget: []
+    budget: [],
+    visited: []
   },
   compareList: [],
   chatOpen: false,
@@ -29,11 +74,12 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // ========== Initialize ==========
 document.addEventListener('DOMContentLoaded', () => {
-  renderDestinations(DESTINATIONS);
+  renderDestinations(ACTIVE_DESTINATIONS);
   bindFilterEvents();
   bindChatEvents();
   bindCompareEvents();
   initScrollAnimations();
+  updateCollectionProgress();
 });
 
 // ========== Filtering ==========
@@ -62,7 +108,7 @@ function bindFilterEvents() {
 }
 
 function clearFilters() {
-  state.filters = { duration: [], transport: [], themes: [], budget: [] };
+  state.filters = { duration: [], transport: [], themes: [], budget: [], visited: [] };
   state.sortBy = 'default';
   $$('.filter-tag').forEach(tag => tag.classList.remove('active'));
   $$('.sort-btn').forEach(b => b.classList.toggle('active', b.dataset.sort === 'default'));
@@ -78,14 +124,19 @@ function sortDestinations(sortBy) {
 }
 
 function getXhsHeat(dest) {
-  if (typeof XHS_HEAT !== 'undefined' && XHS_HEAT[dest.name]) {
-    return XHS_HEAT[dest.name].heat;
-  }
+  // Check city-specific XHS data first, then fallback to global
+  const cityHeatMap = {
+    shenzhen: typeof XHS_HEAT_SZ !== 'undefined' ? XHS_HEAT_SZ : null,
+    weihai: typeof XHS_HEAT_WH !== 'undefined' ? XHS_HEAT_WH : null,
+  };
+  const cityHeat = cityHeatMap[currentCity];
+  if (cityHeat && cityHeat[dest.name]) return cityHeat[dest.name].heat;
+  if (typeof XHS_HEAT !== 'undefined' && XHS_HEAT[dest.name]) return XHS_HEAT[dest.name].heat;
   return 30;
 }
 
 function applyFilters() {
-  const filtered = DESTINATIONS.filter(dest => {
+  const filtered = ACTIVE_DESTINATIONS.filter(dest => {
     // Duration filter
     if (state.filters.duration.length > 0) {
       if (!dest.duration.some(d => state.filters.duration.includes(d))) return false;
@@ -106,6 +157,12 @@ function applyFilters() {
       if (!state.filters.budget.includes(dest.budget)) return false;
     }
 
+    // Visited filter
+    if (state.filters.visited.length > 0) {
+      if (state.filters.visited.includes('还没玩过') && isVisited(dest.id)) return false;
+      if (state.filters.visited.includes('已打卡') && !isVisited(dest.id)) return false;
+    }
+
     return true;
   });
 
@@ -124,7 +181,7 @@ function applyFilters() {
   if (countEl) {
     const total = Object.values(state.filters).flat().length;
     if (total === 0) {
-      countEl.innerHTML = `共 <strong>${DESTINATIONS.length}</strong> 个目的地`;
+      countEl.innerHTML = `共 <strong>${ACTIVE_DESTINATIONS.length}</strong> 个目的地`;
     } else {
       countEl.innerHTML = `筛选出 <strong>${filtered.length}</strong> 个目的地`;
     }
@@ -176,10 +233,19 @@ function renderDestinations(destinations) {
     const xhsH = getXhsHeat(dest);
     const xhsBadge = xhsH >= 70 ? `<span class="dest-card-badge badge-hot">&#x1F525; ${xhsH}</span>` : '';
 
+    const visited = typeof isVisited === 'function' && isVisited(dest.id);
+    const visitedClass = visited ? ' visited' : '';
+    const stampClass = visited ? ' stamped' : '';
+    // Generate unique stamp overlay for visited destinations
+    const stampOverlay = visited && typeof getStampDataURL === 'function'
+      ? `<img class="dest-card-stamp-overlay" src="${getStampDataURL(dest)}" alt="已打卡">`
+      : '';
+
     return `
-    <div class="dest-card fade-up" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
+    <div class="dest-card fade-up${visitedClass}" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
       <div class="dest-card-cover" style="${fallbackStyle}">
         ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.style.background='${dest.gradient}'">` : ''}
+        ${stampOverlay}
         <div class="dest-card-cover-overlay"></div>
         <div class="dest-card-cover-content">
           <span class="dest-card-source">${dest.source}</span>
@@ -201,9 +267,14 @@ function renderDestinations(destinations) {
         </div>
         <div class="dest-card-footer">
           <span class="dest-card-budget">${dest.budgetText}</span>
-          <button class="dest-card-compare-btn" data-id="${dest.id}" title="加入对比" onclick="event.stopPropagation(); toggleCompare(${dest.id})">
-            <span class="compare-icon">&#x2B;</span> 对比
-          </button>
+          <div class="dest-card-footer-actions">
+            <button class="stamp-btn${stampClass}" data-id="${dest.id}" data-name="${dest.name}" onclick="event.stopPropagation(); handleStampClick(event, +this.dataset.id, this.dataset.name)">
+              <span class="stamp-btn-icon">${visited ? '&#x2714;' : '&#x1F3AB;'}</span> ${visited ? '已打卡' : '玩过'}
+            </button>
+            <button class="dest-card-compare-btn" data-id="${dest.id}" title="加入对比" onclick="event.stopPropagation(); toggleCompare(${dest.id})">
+              <span class="compare-icon">&#x2B;</span> 对比
+            </button>
+          </div>
         </div>
       </div>
     </div>`;
@@ -231,7 +302,7 @@ function renderDestinations(destinations) {
 
 // ========== Detail Modal ==========
 function openDetail(id) {
-  const dest = DESTINATIONS.find(d => d.id === id);
+  const dest = ACTIVE_DESTINATIONS.find(d => d.id === id);
   if (!dest) return;
 
   const overlay = $('.modal-overlay');
@@ -260,9 +331,16 @@ function openDetail(id) {
     return `<p>${line}</p>`;
   }).join('') : '';
 
+  const modalVisited = typeof isVisited === 'function' && isVisited(dest.id);
+  const modalStampImg = modalVisited && typeof getStampDataURL === 'function' ? getStampDataURL(dest) : null;
+  const modalStampOverlay = modalStampImg
+    ? `<img class="modal-stamp-overlay" src="${modalStampImg}" alt="已打卡">`
+    : '';
+
   modal.innerHTML = `
     <div class="modal-hero" style="${coverBg}">
       <div class="modal-hero-overlay"></div>
+      ${modalStampOverlay}
       <button class="modal-close" onclick="closeDetail()">&#x2715;</button>
       <div class="modal-hero-content">
         <div class="modal-hero-badges">
@@ -331,13 +409,16 @@ function openDetail(id) {
     </div>
 
     <div class="modal-cta-new">
-      <button class="btn btn--primary" onclick="toggleCompare(${dest.id}); closeDetail();">
-        &#x2B; 加入对比
+      <button class="modal-stamp-btn${typeof isVisited === 'function' && isVisited(dest.id) ? ' stamped' : ''}" data-id="${dest.id}" data-name="${dest.name}" onclick="event.stopPropagation(); handleStampClick(event, +this.dataset.id, this.dataset.name)">
+        ${typeof isVisited === 'function' && isVisited(dest.id) ? '&#x2714; 已打卡' : '&#x1F3AB; 玩过'}
+      </button>
+      <button class="btn btn--secondary" onclick="toggleCompare(${dest.id}); closeDetail();">
+        &#x2B; 对比
       </button>
       <button class="btn btn--secondary" onclick="openChatWithDest('${dest.name}')">
         &#x1F4AC; 聊一聊
       </button>
-      <button class="btn btn--secondary" onclick="shareDest(DESTINATIONS.find(d=>d.id===${dest.id}))">
+      <button class="btn btn--secondary" onclick="shareDest(ACTIVE_DESTINATIONS.find(d=>d.id===${dest.id}))">
         &#x1F4E4; 分享
       </button>
     </div>
@@ -417,7 +498,7 @@ function updateCompareBar() {
   bar.classList.add('active');
 
   itemsEl.innerHTML = state.compareList.map(id => {
-    const dest = DESTINATIONS.find(d => d.id === id);
+    const dest = ACTIVE_DESTINATIONS.find(d => d.id === id);
     return `
       <div class="compare-bar-item">
         ${dest.name}
@@ -430,7 +511,7 @@ function updateCompareBar() {
 function openCompareModal() {
   if (state.compareList.length < 2) return;
 
-  const dests = state.compareList.map(id => DESTINATIONS.find(d => d.id === id));
+  const dests = state.compareList.map(id => ACTIVE_DESTINATIONS.find(d => d.id === id));
   const modal = $('.compare-modal');
 
   const rows = [
