@@ -150,6 +150,49 @@ a { text-decoration: none; color: inherit; }
   color: white;
 }
 
+/* City Selector */
+.city-selector {
+  display: flex;
+  gap: 2px;
+  background: var(--bg);
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid var(--border);
+}
+
+.city-btn {
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.city-btn:hover {
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+.city-btn.active {
+  background: var(--green-600);
+  color: white;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+@media (max-width: 640px) {
+  .city-selector {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+  .city-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
 /* ========== Hero ========== */
 .hero {
   padding: 100px 0 60px;
@@ -668,6 +711,12 @@ a { text-decoration: none; color: inherit; }
   justify-content: space-between;
   padding-top: 12px;
   border-top: 1px solid var(--border-light);
+}
+
+.dest-card-footer-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .dest-card-budget {
@@ -1232,6 +1281,10 @@ a { text-decoration: none; color: inherit; }
   gap: 12px;
 }
 
+.section-header .section-title {
+  margin-right: auto;
+}
+
 /* ========== Compare Panel ========== */
 .compare-bar {
   position: fixed;
@@ -1753,4 +1806,359 @@ a { text-decoration: none; color: inherit; }
 .toast.show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ========== Stamp Collection System ========== */
+
+/* Collection progress bar in section header */
+.collection-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.collection-progress-bar {
+  width: 120px;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.collection-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-500), var(--coral));
+  border-radius: 3px;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.collection-progress-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* Visited card styling - prominent green border + glow */
+.dest-card.visited {
+  border: 3px solid var(--green-500);
+  box-shadow: 0 0 0 2px var(--green-100), 0 0 12px rgba(76, 175, 80, 0.2), var(--shadow-sm);
+}
+
+.dest-card.visited:hover {
+  box-shadow: 0 0 0 2px var(--green-100), 0 0 20px rgba(76, 175, 80, 0.3), var(--shadow-xl);
+}
+
+/* Stamp overlay on visited card cover - multiply blend + bright filter */
+.dest-card-stamp-overlay {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 110px;
+  height: auto;
+  z-index: 3;
+  opacity: 0.88;
+  pointer-events: none;
+  transform: rotate(-12deg);
+  animation: stampAppear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  mix-blend-mode: multiply;
+  filter: brightness(0.85) contrast(2.2) saturate(1.8) drop-shadow(0 1px 3px rgba(0,0,0,0.2));
+}
+
+/* SVG fallback stamps */
+.dest-card-stamp-overlay[src^="data:"] {
+  width: 64px;
+  filter: brightness(0.9) contrast(2) saturate(1.5) drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+}
+
+@keyframes stampAppear {
+  from { transform: scale(2.5) rotate(20deg); opacity: 0; }
+  to { transform: rotate(-12deg); opacity: 0.95; }
+}
+
+/* Stamp button on card */
+.stamp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.stamp-btn:hover {
+  border-color: var(--green-500);
+  color: var(--green-600);
+  background: var(--green-50);
+}
+
+.stamp-btn.stamped {
+  background: var(--green-600);
+  color: white;
+  border-color: var(--green-600);
+}
+
+.stamp-btn.stamped:hover {
+  background: var(--green-500);
+}
+
+.stamp-btn-icon {
+  font-size: 13px;
+}
+
+/* ========== Stamp Confirm Modal ========== */
+.stamp-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.stamp-confirm-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.stamp-confirm-modal {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stamp-confirm-overlay.active .stamp-confirm-modal {
+  transform: translateY(0) scale(1);
+}
+
+.stamp-confirm-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.stamp-preview {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.stamp-preview img {
+  max-width: 240px;
+  height: auto;
+  transform: rotate(-5deg);
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+  mix-blend-mode: multiply;
+}
+
+.stamp-preview svg {
+  transform: rotate(-5deg);
+  opacity: 0.85;
+}
+
+.stamp-confirm-modal h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.stamp-confirm-modal p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.stamp-confirm-hint {
+  font-size: 13px !important;
+  color: var(--text-muted) !important;
+  margin-bottom: 20px !important;
+}
+
+.stamp-confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.stamp-confirm-actions .btn {
+  min-width: 120px;
+}
+
+/* ========== Stamp Animation ========== */
+.stamp-animation-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.stamp-animation-overlay.active {
+  opacity: 1;
+}
+
+.stamp-animation-overlay.fade-out {
+  opacity: 0;
+}
+
+.stamp-animation-content {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stamp-seal {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(4) rotate(30deg);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.stamp-seal.stamped {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* Confetti particles */
+.stamp-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stamp-particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  opacity: 0;
+  animation: particleBurst 0.8s cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0s) forwards;
+}
+
+@keyframes particleBurst {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(0.3);
+  }
+}
+
+/* ========== Filter: "还没玩过" tag ========== */
+.filter-tag[data-category="visited"] {
+  /* same style, distinguished by icon */
+}
+
+.filter-tag[data-category="visited"].active {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: white;
+}
+
+/* ========== Modal stamp button ========== */
+/* Stamp overlay in modal hero */
+.modal-stamp-overlay {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 140px;
+  height: auto;
+  z-index: 5;
+  opacity: 0.88;
+  pointer-events: none;
+  transform: rotate(-12deg);
+  animation: stampAppear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  mix-blend-mode: multiply;
+  filter: brightness(0.85) contrast(2.2) saturate(1.8) drop-shadow(0 1px 3px rgba(0,0,0,0.2));
+}
+
+.modal-stamp-overlay[src^="data:"] {
+  width: 80px;
+}
+
+.modal-stamp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid var(--green-500);
+  background: white;
+  color: var(--green-600);
+}
+
+.modal-stamp-btn:hover {
+  background: var(--green-50);
+  transform: translateY(-1px);
+}
+
+.modal-stamp-btn.stamped {
+  background: var(--green-600);
+  color: white;
+  border-color: var(--green-600);
+}
+
+.modal-stamp-btn.stamped:hover {
+  background: var(--green-500);
+  border-color: var(--green-500);
+}
+
+/* Mobile adjustments for stamp */
+@media (max-width: 640px) {
+  .collection-progress-bar {
+    width: 80px;
+  }
+
+  .collection-progress-text {
+    font-size: 11px;
+  }
+
+  .stamp-seal {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stamp-seal-name {
+    font-size: 16px;
+    max-width: 110px;
+  }
 }
