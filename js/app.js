@@ -14,6 +14,10 @@ function buildBeijingDestinations() {
     const names = new Set(dests.map(d => d.name));
     dests.push(...DESTINATIONS_BJ_EXPAND.filter(d => !names.has(d.name)));
   }
+  if (typeof DESTINATIONS_BJ_HIDDEN !== 'undefined') {
+    const names = new Set(dests.map(d => d.name));
+    dests.push(...DESTINATIONS_BJ_HIDDEN.filter(d => !names.has(d.name)));
+  }
   return dests;
 }
 
