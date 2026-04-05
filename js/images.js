@@ -186,6 +186,12 @@ const DEST_IMAGES = {
   "遥桥峪村": "assets/images/dest-yaoqiaoyu-village.webp",
   "张家口暖泉古镇": "assets/images/dest-zhangjiakou-nuanquan.webp",
   "中国园林博物馆": "assets/images/dest-china-garden-museum.webp",
+  "涞水野三坡百里峡": "assets/images/dest-bailixia.webp",
+  "北京植物园（原北植）": "assets/images/dest-beijing-botanical.webp",
+  "灵山天池": "assets/images/dest-lingshan-pool.webp",
+  "延庆龙庆峡冰灯节": "assets/images/dest-longqingxia-ice.webp",
+  "张家口暖泉古镇": "assets/images/dest-nuanquan-zhangjiakou.webp",
+  "崇礼万龙滑雪场": "assets/images/dest-wanlong-ski.webp",
 };
 
 function getDestImage(dest) {
