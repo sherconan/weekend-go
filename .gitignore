@@ -1,2 +1,8 @@
 node_modules/
 *.ts
+*.js
+*.sh
+*.md
+*.log
+PROJECT-HANDOFF.md
+gen-remaining-sz-stamps.sh
