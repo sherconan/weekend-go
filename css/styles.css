@@ -2190,115 +2190,132 @@ a { text-decoration: none; color: inherit; }
 
 .otherside-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
 
-.legend-card {
-  height: 360px;
-  perspective: 1200px;
+/* Legend card reuses dest-card structure with dark overlay */
+.legend-dest-card {
   cursor: pointer;
+  border: 1px solid rgba(99, 60, 180, 0.25) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
 }
 
-.legend-card-inner {
+.legend-dest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(99, 60, 180, 0.3) !important;
+  border-color: rgba(180, 120, 255, 0.4) !important;
+}
+
+.legend-cover {
   position: relative;
+  min-height: 200px;
+}
+
+.legend-card-img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 20px;
 }
 
-.legend-card.is-flipped .legend-card-inner {
-  transform: rotateY(180deg);
+.legend-cover-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 5, 30, 0.25) 0%,
+    rgba(10, 5, 30, 0.7) 100%
+  ) !important;
 }
 
-.legend-face {
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+.legend-vibe-source {
+  background: rgba(99, 60, 180, 0.75) !important;
+  color: #E0CFFF !important;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.legend-front { background: #162230; }
-
-.legend-img-wrap { position: absolute; inset: 0; }
-
-.legend-img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+.legend-card-name {
+  color: #F0E6D6 !important;
 }
 
-.legend-img-fallback {
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, #1a1a3e, #2d1b4e);
-  z-index: -1;
+.legend-card-subtitle {
+  color: rgba(240, 230, 214, 0.65) !important;
 }
 
-.legend-front-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,12,30,0.65) 70%, rgba(10,12,30,0.96) 100%);
-  display: flex; flex-direction: column; justify-content: space-between; padding: 20px;
+.legend-badge-easter {
+  background: rgba(76, 175, 80, 0.2) !important;
+  color: #A5D6A7 !important;
+  border: 1px solid rgba(76, 175, 80, 0.35) !important;
 }
 
-.legend-vibe-badge {
-  display: flex; align-items: center; gap: 6px;
-  background: rgba(99,60,180,0.7); border: 1px solid rgba(180,120,255,0.3);
-  border-radius: 999px; padding: 5px 14px; font-size: 12px; color: #E0CFFF;
-  align-self: flex-start; backdrop-filter: blur(8px);
+/* Legend card body dark style */
+.legend-card-body {
+  background: #111828 !important;
+  border-top: 1px solid rgba(99, 60, 180, 0.2);
 }
 
-.legend-front-info { display: flex; flex-direction: column; gap: 6px; }
-.legend-name { font-size: 24px; font-weight: 700; color: #F0E6D6; letter-spacing: 1px; }
-.legend-subtitle { font-size: 13px; color: rgba(240,230,214,0.6); line-height: 1.5; }
-.legend-flip-hint { font-size: 11px; color: rgba(240,230,214,0.35); text-align: right; }
-
-.legend-back {
-  background: linear-gradient(145deg, #1C1040 0%, #0F1D2F 100%);
-  border: 1px solid rgba(99,60,180,0.3);
-  transform: rotateY(180deg);
+.legend-story-block {
+  margin-bottom: 10px;
 }
 
-.legend-back-content {
-  padding: 24px; height: 100%; box-sizing: border-box;
-  display: flex; flex-direction: column; justify-content: space-between;
+.legend-story-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(180, 120, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
-.legend-back-header { display: flex; flex-direction: column; gap: 4px; }
-.legend-back-vibe { font-size: 12px; color: rgba(180,120,255,0.8); }
-.legend-back-name { font-size: 22px; font-weight: 700; color: #E8D5C4; letter-spacing: 1px; }
-.legend-back-addr { font-size: 12px; color: rgba(232,213,196,0.45); }
-
-.legend-story-preview {
-  font-size: 14px; color: rgba(232,213,196,0.72); line-height: 1.7;
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+.legend-story-text {
+  color: rgba(232, 213, 196, 0.82) !important;
+  font-size: 13px !important;
+  line-height: 1.7 !important;
 }
 
-.legend-themes { display: flex; flex-wrap: wrap; gap: 8px; }
-.legend-theme-chip {
-  font-size: 11px; color: rgba(180,120,255,0.8);
-  background: rgba(99,60,180,0.15); border: 1px solid rgba(99,60,180,0.3);
-  border-radius: 999px; padding: 3px 10px;
+.legend-theme-tag {
+  background: rgba(99, 60, 180, 0.18) !important;
+  color: rgba(180, 120, 255, 0.85) !important;
+  border: 1px solid rgba(99, 60, 180, 0.3) !important;
 }
 
-.legend-rating-row { display: flex; align-items: center; gap: 5px; }
-.legend-rating-star { color: #F5C842; font-size: 16px; }
-.legend-rating-val { font-size: 18px; font-weight: 700; color: #F5C842; }
-.legend-rating-label { font-size: 12px; color: rgba(232,213,196,0.4); }
-
-.legend-back-actions { display: flex; gap: 10px; }
-
-.legend-action-story, .legend-action-linked {
-  flex: 1; padding: 10px; border-radius: 12px;
-  font-size: 13px; font-weight: 600; border: none; cursor: pointer;
+.legend-card-footer {
+  border-top: 1px solid rgba(99, 60, 180, 0.15) !important;
 }
 
-.legend-action-story {
-  background: rgba(99,60,180,0.5); border: 1px solid rgba(180,120,255,0.4); color: #E0CFFF;
+.legend-rating-display {
+  color: rgba(232, 213, 196, 0.5) !important;
+  font-size: 12px !important;
 }
-.legend-action-linked {
-  background: rgba(76,175,80,0.2); border: 1px solid rgba(76,175,80,0.4); color: #A5D6A7;
+
+.legend-read-btn, .legend-day-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.legend-read-btn {
+  background: rgba(99, 60, 180, 0.5);
+  color: #E0CFFF;
+}
+
+.legend-read-btn:hover {
+  background: rgba(99, 60, 180, 0.75);
+}
+
+.legend-day-btn {
+  background: rgba(76, 175, 80, 0.2);
+  color: #A5D6A7;
+}
+
+.legend-day-btn:hover {
+  background: rgba(76, 175, 80, 0.35);
 }
 
 .legend-modal-overlay {
