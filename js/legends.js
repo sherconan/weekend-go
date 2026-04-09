@@ -1406,6 +1406,216 @@ const LEGENDS_DATA = [
   }
 ];
 
+// ========== Legend Stamp System ==========
+const LEGEND_STAMP_KEY = 'weekendgo_legend_stamps';
+
+function getLegendStamps() {
+  try { return JSON.parse(localStorage.getItem(LEGEND_STAMP_KEY) || '{}'); }
+  catch { return {}; }
+}
+
+function saveLegendStamps(stamps) {
+  localStorage.setItem(LEGEND_STAMP_KEY, JSON.stringify(stamps));
+}
+
+function isLegendStamped(legendId) {
+  return !!getLegendStamps()[legendId];
+}
+
+function getLegendStampCount() {
+  return Object.keys(getLegendStamps()).length;
+}
+
+function markLegendStamped(legendId, legendName) {
+  const stamps = getLegendStamps();
+  stamps[legendId] = { name: legendName, date: new Date().toISOString() };
+  saveLegendStamps(stamps);
+  updateLegendStampUI();
+  playLegendStampAnimation(legendId, legendName);
+}
+
+function unmarkLegendStamped(legendId) {
+  const stamps = getLegendStamps();
+  delete stamps[legendId];
+  saveLegendStamps(stamps);
+  updateLegendStampUI();
+}
+
+function updateLegendStampUI() {
+  // Update counter in header
+  const counter = document.getElementById('legend-stamp-counter');
+  if (counter) {
+    const count = getLegendStampCount();
+    const total = LEGENDS_DATA.length;
+    counter.textContent = `🌙 已打卡 ${count}/${total}`;
+  }
+  // Update card stamp badges
+  LEGENDS_DATA.forEach(l => {
+    const card = document.querySelector(`.lc-card[data-legend-id="${l.id}"]`);
+    if (!card) return;
+    const stamped = isLegendStamped(l.id);
+    card.classList.toggle('lc-stamped', stamped);
+    // Update stamp button text on card
+    const btn = card.querySelector('.lc-stamp-btn');
+    if (btn) {
+      btn.innerHTML = stamped ? '☽ 已打卡' : '☽ 打卡';
+      btn.classList.toggle('lc-stamp-btn--done', stamped);
+    }
+  });
+  // Update modal stamp button if open
+  const modalBtn = document.querySelector('.legend-modal-stamp-btn');
+  if (modalBtn) {
+    const legendId = modalBtn.dataset.legendId;
+    const stamped = isLegendStamped(legendId);
+    modalBtn.innerHTML = stamped ? '☽ 已打卡' : '☽ 打卡到此一游';
+    modalBtn.classList.toggle('legend-modal-stamp-btn--done', stamped);
+  }
+}
+
+function handleLegendStampClick(e, legendId, legendName) {
+  e.stopPropagation();
+  if (isLegendStamped(legendId)) {
+    showLegendUnstampConfirm(legendId, legendName);
+  } else {
+    showLegendStampConfirm(legendId, legendName);
+  }
+}
+
+function showLegendStampConfirm(legendId, legendName) {
+  const existing = document.querySelector('.stamp-confirm-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'stamp-confirm-overlay';
+  overlay.innerHTML = `
+    <div class="stamp-confirm-modal" style="background:#111A28;border:1px solid rgba(99,60,180,0.4);">
+      <div class="stamp-confirm-icon" style="font-size:48px;">🌙</div>
+      <h3 style="color:#E0CFFF;">确认打卡</h3>
+      <p style="color:rgba(232,213,196,0.7);">你探访过 <strong style="color:#E0CFFF;">${legendName}</strong> 吗？</p>
+      <p class="stamp-confirm-hint" style="color:rgba(180,120,255,0.5);">打卡后记录在你的暗夜图鉴中</p>
+      <div class="stamp-confirm-actions">
+        <button class="btn btn--secondary btn--small stamp-confirm-cancel" style="background:rgba(99,60,180,0.2);color:#E0CFFF;border-color:rgba(99,60,180,0.4);">还没去过</button>
+        <button class="btn btn--primary btn--small stamp-confirm-ok" style="background:rgba(99,60,180,0.6);color:#fff;border-color:rgba(180,120,255,0.5);">打卡！去过了 ☽</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('active'));
+
+  overlay.querySelector('.stamp-confirm-cancel').onclick = () => {
+    overlay.classList.remove('active');
+    setTimeout(() => overlay.remove(), 300);
+  };
+  overlay.querySelector('.stamp-confirm-ok').onclick = () => {
+    overlay.classList.remove('active');
+    setTimeout(() => overlay.remove(), 300);
+    markLegendStamped(legendId, legendName);
+  };
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('active');
+      setTimeout(() => overlay.remove(), 300);
+    }
+  });
+}
+
+function showLegendUnstampConfirm(legendId, legendName) {
+  const existing = document.querySelector('.stamp-confirm-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'stamp-confirm-overlay';
+  overlay.innerHTML = `
+    <div class="stamp-confirm-modal" style="background:#111A28;border:1px solid rgba(99,60,180,0.4);">
+      <div class="stamp-confirm-icon" style="font-size:48px;">🤔</div>
+      <h3 style="color:#E0CFFF;">取消打卡？</h3>
+      <p style="color:rgba(232,213,196,0.7);">确定要移除 <strong style="color:#E0CFFF;">${legendName}</strong> 的打卡吗？</p>
+      <div class="stamp-confirm-actions">
+        <button class="btn btn--secondary btn--small stamp-confirm-cancel" style="background:rgba(99,60,180,0.2);color:#E0CFFF;border-color:rgba(99,60,180,0.4);">保留</button>
+        <button class="btn btn--primary btn--small stamp-confirm-ok" style="background:rgba(180,40,40,0.6);color:#fff;border-color:rgba(220,60,60,0.5);">移除打卡</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('active'));
+
+  overlay.querySelector('.stamp-confirm-cancel').onclick = () => {
+    overlay.classList.remove('active');
+    setTimeout(() => overlay.remove(), 300);
+  };
+  overlay.querySelector('.stamp-confirm-ok').onclick = () => {
+    overlay.classList.remove('active');
+    setTimeout(() => overlay.remove(), 300);
+    unmarkLegendStamped(legendId);
+  };
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('active');
+      setTimeout(() => overlay.remove(), 300);
+    }
+  });
+}
+
+function playLegendStampAnimation(legendId, legendName) {
+  const existing = document.querySelector('.stamp-animation-overlay');
+  if (existing) existing.remove();
+
+  const legend = LEGENDS_DATA.find(l => l.id === legendId);
+  const icon = legend ? legend.vibeIcon : '🌙';
+
+  const overlay = document.createElement('div');
+  overlay.className = 'stamp-animation-overlay';
+  overlay.innerHTML = `
+    <div class="stamp-animation-content">
+      <div class="stamp-seal" style="border-color:rgba(180,120,255,0.5);">
+        <div style="font-size:64px;margin-bottom:8px;">${icon}</div>
+        <div style="color:#E0CFFF;font-size:14px;font-weight:700;letter-spacing:2px;">☽ 已打卡 ☽</div>
+        <div style="color:rgba(180,120,255,0.7);font-size:13px;margin-top:4px;">${legendName}</div>
+      </div>
+      <div class="stamp-particles"></div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Purple-themed particles
+  const particlesEl = overlay.querySelector('.stamp-particles');
+  const colors = ['#9C27B0', '#7B1FA2', '#AB47BC', '#CE93D8', '#4A148C', '#E1BEE7'];
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.className = 'stamp-particle';
+    const angle = Math.random() * Math.PI * 2;
+    const dist = 80 + Math.random() * 200;
+    p.style.setProperty('--x', `${Math.cos(angle) * dist}px`);
+    p.style.setProperty('--y', `${Math.sin(angle) * dist}px`);
+    p.style.setProperty('--r', `${Math.random() * 720}deg`);
+    p.style.setProperty('--delay', `${Math.random() * 0.3}s`);
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    const sz = 4 + Math.random() * 8;
+    p.style.width = sz + 'px';
+    p.style.height = sz + 'px';
+    p.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    particlesEl.appendChild(p);
+  }
+
+  requestAnimationFrame(() => {
+    overlay.classList.add('active');
+    setTimeout(() => overlay.querySelector('.stamp-seal').classList.add('stamped'), 100);
+  });
+
+  setTimeout(() => {
+    overlay.classList.add('fade-out');
+    setTimeout(() => overlay.remove(), 500);
+  }, 2200);
+
+  overlay.addEventListener('click', () => {
+    overlay.classList.add('fade-out');
+    setTimeout(() => overlay.remove(), 500);
+  });
+}
+
 // Render legend cards — fully independent lc-* classes, zero dest-card dependency
 let _legendsRendered = false;
 function renderLegends() {
@@ -1414,8 +1624,10 @@ function renderLegends() {
   if (_legendsRendered) return;
   _legendsRendered = true;
 
-  grid.innerHTML = LEGENDS_DATA.map((l, i) => `
-    <div class="lc-card fade-up" data-legend-id="${l.id}"
+  grid.innerHTML = LEGENDS_DATA.map((l, i) => {
+    const stamped = isLegendStamped(l.id);
+    return `
+    <div class="lc-card fade-up${stamped ? ' lc-stamped' : ''}" data-legend-id="${l.id}"
          style="transition-delay:${Math.min(i, 8) * 60}ms"
          onclick="openLegendStory('${l.id}', event)">
 
@@ -1424,6 +1636,7 @@ function renderLegends() {
              onerror="this.style.display='none'"
              loading="lazy" alt="${l.name}">
         <div class="lc-cover-overlay"></div>
+        ${stamped ? '<div class="lc-stamp-mark">☽</div>' : ''}
         <div class="lc-cover-content">
           <span class="lc-vibe-badge">${l.vibeIcon} ${l.vibe}</span>
           <h3 class="lc-name">${l.name}</h3>
@@ -1447,13 +1660,14 @@ function renderLegends() {
         <div class="lc-footer">
           <span class="lc-rating">🌑 神秘指数 ${l.rating}</span>
           <div class="lc-actions">
+            <button class="lc-stamp-btn${stamped ? ' lc-stamp-btn--done' : ''}" onclick="handleLegendStampClick(event, '${l.id}', '${l.name.replace(/'/g, "\\'")}')">${stamped ? '☽ 已打卡' : '☽ 打卡'}</button>
             <button class="lc-read-btn" onclick="openLegendStory('${l.id}', event)">读完整故事</button>
             ${l.linkedDestId ? `<button class="lc-day-btn" onclick="goToLinkedDest(${l.linkedDestId}, event)">✨ 日间</button>` : ''}
           </div>
         </div>
       </div>
     </div>
-  `).join('');
+  `;}).join('');
 
   // Make cards visible — directly add class after render, staggered by transition-delay
   requestAnimationFrame(() => {
@@ -1461,6 +1675,9 @@ function renderLegends() {
       grid.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
     });
   });
+
+  // Initialize stamp counter
+  updateLegendStampUI();
 }
 
 function openLegendStory(id, e) {
@@ -1480,6 +1697,13 @@ function openLegendStory(id, e) {
     <img class="legend-modal-img" src="${legend.image}" onerror="this.style.display='none'" alt="${legend.name}">
     <p class="legend-modal-text">${legend.story}</p>
     <div class="legend-modal-themes">${legend.themes.map(t => `<span class="legend-theme-chip">${t}</span>`).join('')}</div>
+    <div class="legend-modal-stamp-area">
+      <button class="legend-modal-stamp-btn${isLegendStamped(legend.id) ? ' legend-modal-stamp-btn--done' : ''}"
+              data-legend-id="${legend.id}"
+              onclick="handleLegendStampClick(event, '${legend.id}', '${legend.name.replace(/'/g, "\\'")}')">
+        ${isLegendStamped(legend.id) ? '☽ 已打卡' : '☽ 打卡到此一游'}
+      </button>
+    </div>
     ${legend.linkedDestId ? `
       <div class="legend-easter-egg">
         <div class="easter-hint">✨ 这个地方在白天模式也有记录</div>
