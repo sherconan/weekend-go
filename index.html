@@ -31,6 +31,7 @@
         </div>
         <button class="nav-btn" onclick="scrollToSection('filters')">筛选</button>
         <button class="nav-btn nav-btn--primary" onclick="openChat()">我想聊一聊</button>
+        <button class="world-flip-btn" id="world-flip-btn" onclick="flipWorld()">🌑 另一面</button>
       </div>
     </div>
   </nav>
@@ -139,24 +140,28 @@
     </div>
   </section>
 
-  <!-- 另一面 Section -->
-  <section class="otherside-section" id="otherside">
-    <div class="container">
-      <div class="otherside-header">
-        <div class="otherside-header-left">
-          <div class="otherside-moon-icon">🌑</div>
-          <div>
-            <h2 class="otherside-title">另一面</h2>
-            <p class="otherside-subtitle">都市传说 · 这座城市的另一面</p>
-          </div>
+  <!-- Night World Overlay (full page, shown when mode=night) -->
+  <div id="night-world" class="night-world" aria-hidden="true">
+    <div class="night-world-inner">
+      <div class="night-hero">
+        <div class="night-hero-glow"></div>
+        <div class="night-hero-content">
+          <div class="night-hero-moon">🌑</div>
+          <h1 class="night-hero-title">另一面</h1>
+          <p class="night-hero-sub">都市传说 · 这座城市不为人知的那一面</p>
+          <p class="night-hero-desc">每一个去处都有它的白天与黑夜。翻开背面，这里藏着那些只在深夜才能感受到的故事。</p>
         </div>
-        <div class="otherside-hint">点击卡片翻面</div>
       </div>
-      <div class="otherside-grid" id="otherside-grid">
-        <!-- Rendered by legends.js -->
+      <div class="container">
+        <div class="night-grid-header">
+          <h2 class="night-grid-title">北京 · 10个传说</h2>
+        </div>
+        <div class="night-dest-grid" id="otherside-grid">
+          <!-- Rendered by legends.js -->
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Legend Story Modal -->
   <div class="legend-modal-overlay" onclick="closeLegendModal()">

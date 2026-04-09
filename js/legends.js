@@ -145,16 +145,11 @@ const LEGENDS_DATA = [
 ];
 
 // Render legend cards — same structure as day dest-card, story goes first
+let _legendsRendered = false;
 function renderLegends() {
   const grid = document.getElementById('otherside-grid');
-  if (!grid) return;
-
-  const currentCity = window.currentCity || 'beijing';
-  if (currentCity !== 'beijing') {
-    const sec = document.getElementById('otherside');
-    if (sec) sec.style.display = 'none';
-    return;
-  }
+  if (!grid || _legendsRendered) return;
+  _legendsRendered = true;
 
   grid.innerHTML = LEGENDS_DATA.map((l, i) => `
     <div class="dest-card legend-dest-card fade-up" data-legend-id="${l.id}"
@@ -250,17 +245,59 @@ function goToLinkedDest(destId, e) {
   document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Re-render when city changes
+// ===== World Flip =====
+let _nightMode = false;
+
+function flipWorld() {
+  _nightMode = !_nightMode;
+  const nightWorld = document.getElementById('night-world');
+  const flipBtn = document.getElementById('world-flip-btn');
+  const body = document.body;
+
+  if (_nightMode) {
+    // Entering night mode
+    nightWorld.classList.add('is-visible');
+    // Force reflow then animate in
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        nightWorld.classList.add('is-active');
+        body.classList.add('night-mode');
+      });
+    });
+    if (flipBtn) flipBtn.textContent = '☀️ 白天';
+    nightWorld.scrollTop = 0;
+    // Render legends if not yet done
+    renderLegends();
+  } else {
+    // Exiting night mode
+    nightWorld.classList.remove('is-active');
+    body.classList.remove('night-mode');
+    if (flipBtn) flipBtn.textContent = '🌑 另一面';
+    setTimeout(() => {
+      nightWorld.classList.remove('is-visible');
+    }, 400);
+  }
+}
+
+// Hide the night world on city switch if not beijing
 const _origSwitchCity = window.switchCity;
 window.switchCity = function(city) {
   _origSwitchCity && _origSwitchCity(city);
-  const section = document.getElementById('otherside');
-  if (section) section.style.display = city === 'beijing' ? '' : 'none';
+  if (city !== 'beijing' && _nightMode) {
+    flipWorld(); // exit night mode for non-BJ cities
+  }
+  // Hide flip btn for non-BJ cities
+  const btn = document.getElementById('world-flip-btn');
+  if (btn) btn.style.display = city === 'beijing' ? '' : 'none';
 };
 
 // Init
-document.addEventListener('DOMContentLoaded', () => {
-  renderLegends();
-});
-// Also init if DOM already loaded
-if (document.readyState !== 'loading') renderLegends();
+function initLegends() {
+  // Hide flip btn for non-BJ default city
+  const currentCity = window.currentCity || 'beijing';
+  const btn = document.getElementById('world-flip-btn');
+  if (btn && currentCity !== 'beijing') btn.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', initLegends);
+if (document.readyState !== 'loading') initLegends();
