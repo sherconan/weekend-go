@@ -1455,19 +1455,12 @@ function renderLegends() {
     </div>
   `).join('');
 
-  // Animate cards into view with IntersectionObserver on the night-world scroll container
-  const nightWorld = document.getElementById('night-world');
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    },
-    { root: nightWorld, threshold: 0.05, rootMargin: '0px 0px 40px 0px' }
-  );
-  grid.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  // Make cards visible — directly add class after render, staggered by transition-delay
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      grid.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+    });
+  });
 }
 
 function openLegendStory(id, e) {
