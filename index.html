@@ -157,6 +157,42 @@
           <h2 class="night-grid-title">北京 · 100个传说</h2>
           <span class="legend-stamp-counter" id="legend-stamp-counter">🌙 已打卡 0/100</span>
         </div>
+
+        <!-- Legend Filters -->
+        <div class="legend-filter-bar" id="legend-filter-bar">
+          <div class="legend-search-row">
+            <div class="legend-search-box">
+              <span class="legend-search-icon">🔍</span>
+              <input type="text" class="legend-search-input" id="legend-search-input"
+                     placeholder="搜索传说名称或地址…" oninput="filterLegends()">
+            </div>
+            <div class="legend-result-counter" id="legend-result-counter">显示 100/100 个传说</div>
+          </div>
+
+          <div class="legend-vibe-chips" id="legend-vibe-chips">
+            <button class="legend-vibe-chip active" data-vibe="全部" onclick="setLegendVibe(this)">全部</button>
+            <button class="legend-vibe-chip" data-vibe="皇城秘史" onclick="setLegendVibe(this)">🏯 皇城秘史</button>
+            <button class="legend-vibe-chip" data-vibe="都市传说" onclick="setLegendVibe(this)">👻 都市传说</button>
+            <button class="legend-vibe-chip" data-vibe="寺庙禁地" onclick="setLegendVibe(this)">🛕 寺庙禁地</button>
+            <button class="legend-vibe-chip" data-vibe="胡同秘闻" onclick="setLegendVibe(this)">🏚️ 胡同秘闻</button>
+            <button class="legend-vibe-chip" data-vibe="冷战秘史" onclick="setLegendVibe(this)">🕳️ 冷战秘史</button>
+            <button class="legend-vibe-chip" data-vibe="郊区古迹" onclick="setLegendVibe(this)">🌲 郊区古迹</button>
+            <button class="legend-vibe-chip" data-vibe="风水秘闻" onclick="setLegendVibe(this)">🌀 风水秘闻</button>
+            <button class="legend-vibe-chip" data-vibe="灵异目击" onclick="setLegendVibe(this)">👁️ 灵异目击</button>
+            <button class="legend-vibe-chip" data-vibe="历史秘辛" onclick="setLegendVibe(this)">🩸 历史秘辛</button>
+            <button class="legend-vibe-chip" data-vibe="神秘预言" onclick="setLegendVibe(this)">🔮 神秘预言</button>
+            <button class="legend-vibe-chip" data-vibe="城市秘境" onclick="setLegendVibe(this)">🗝️ 城市秘境</button>
+          </div>
+
+          <div class="legend-sort-row">
+            <span class="legend-sort-label">排序</span>
+            <button class="legend-sort-btn active" data-sort="default" onclick="setLegendSort(this)">默认</button>
+            <button class="legend-sort-btn" data-sort="rating" onclick="setLegendSort(this)">神秘指数高→低</button>
+            <button class="legend-sort-btn" data-sort="xhsHeat" onclick="setLegendSort(this)">小红书热度</button>
+            <button class="legend-sort-btn" data-sort="easter" onclick="setLegendSort(this)">只看彩蛋</button>
+          </div>
+        </div>
+
         <div class="night-dest-grid" id="otherside-grid">
           <!-- Rendered by legends.js -->
         </div>

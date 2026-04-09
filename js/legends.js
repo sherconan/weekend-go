@@ -2116,71 +2116,140 @@ function playLegendStampAnimation(legendId, legendName) {
   });
 }
 
-// Render legend cards — fully independent lc-* classes, zero dest-card dependency
-let _legendsRendered = false;
-function renderLegends() {
-  const grid = document.getElementById('otherside-grid');
-  if (!grid) return;
-  if (_legendsRendered) return;
-  _legendsRendered = true;
+// ===== Legend Filter / Sort State =====
+let _legendActiveVibe = '全部';
+let _legendActiveSort = 'default';
 
-  grid.innerHTML = LEGENDS_DATA.map((l, i) => {
-    const stamped = isLegendStamped(l.id);
-    return `
-    <div class="lc-card fade-up${stamped ? ' lc-stamped' : ''}" data-legend-id="${l.id}"
-         style="transition-delay:${Math.min(i, 8) * 60}ms"
-         onclick="openLegendStory('${l.id}', event)">
+function setLegendVibe(btn) {
+  _legendActiveVibe = btn.dataset.vibe;
+  document.querySelectorAll('.legend-vibe-chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  filterLegends();
+}
 
-      <div class="lc-cover">
-        <img class="lc-cover-img" src="${l.image}"
-             onerror="this.style.display='none'"
-             loading="lazy" alt="${l.name}">
-        <div class="lc-cover-overlay"></div>
-        ${stamped ? '<div class="lc-stamp-mark">☽</div>' : ''}
-        <div class="lc-cover-content">
-          <span class="lc-vibe-badge">${l.vibeIcon} ${l.vibe}</span>
-          <h3 class="lc-name">${l.name}</h3>
-          <p class="lc-subtitle">${l.subtitle}</p>
-        </div>
-        <div class="lc-badges">
-          <span class="lc-badge">📍 ${l.address}</span>
-          <span class="lc-badge lc-badge--rating">★ ${l.rating} 神秘指数</span>
-          ${l.difficulty ? `<span class="lc-badge lc-badge--difficulty">${l.difficulty === '容易到达' ? '🚶' : l.difficulty === '需要预约' ? '📋' : l.difficulty === '已封闭仅外观' ? '🚫' : '🥾'} ${l.difficulty}</span>` : ''}
-          ${l.xhsHeat ? `<span class="lc-badge lc-badge--heat lc-heat-${l.xhsHeat.tier.toLowerCase()}">🔥 ${l.xhsHeat.tier}</span>` : ''}
-          ${l.linkedDestId ? '<span class="lc-badge lc-badge--easter">✨ 彩蛋</span>' : ''}
-        </div>
+function setLegendSort(btn) {
+  _legendActiveSort = btn.dataset.sort;
+  document.querySelectorAll('.legend-sort-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterLegends();
+}
+
+function getFilteredLegends() {
+  const searchVal = (document.getElementById('legend-search-input')?.value || '').trim().toLowerCase();
+  let results = LEGENDS_DATA.filter(l => {
+    // Vibe filter
+    if (_legendActiveVibe !== '全部' && l.vibe !== _legendActiveVibe) return false;
+    // Search filter
+    if (searchVal && !l.name.toLowerCase().includes(searchVal) && !l.address.toLowerCase().includes(searchVal)) return false;
+    return true;
+  });
+
+  // Sort
+  switch (_legendActiveSort) {
+    case 'rating':
+      results = results.slice().sort((a, b) => b.rating - a.rating);
+      break;
+    case 'xhsHeat':
+      const tierOrder = { S: 4, A: 3, B: 2, C: 1 };
+      results = results.slice().sort((a, b) => {
+        const ta = a.xhsHeat ? tierOrder[a.xhsHeat.tier] || 0 : 0;
+        const tb = b.xhsHeat ? tierOrder[b.xhsHeat.tier] || 0 : 0;
+        if (tb !== ta) return tb - ta;
+        return (b.xhsHeat?.heat || 0) - (a.xhsHeat?.heat || 0);
+      });
+      break;
+    case 'easter':
+      results = results.filter(l => !!l.linkedDestId);
+      break;
+  }
+  return results;
+}
+
+function filterLegends() {
+  const filtered = getFilteredLegends();
+  const total = LEGENDS_DATA.length;
+  // Update counter
+  const counter = document.getElementById('legend-result-counter');
+  if (counter) counter.textContent = `显示 ${filtered.length}/${total} 个传说`;
+
+  renderLegendCards(filtered);
+}
+
+function renderLegendCard(l, i) {
+  const stamped = isLegendStamped(l.id);
+  return `
+  <div class="lc-card fade-up${stamped ? ' lc-stamped' : ''}" data-legend-id="${l.id}"
+       style="transition-delay:${Math.min(i, 8) * 60}ms"
+       onclick="openLegendStory('${l.id}', event)">
+
+    <div class="lc-cover">
+      <img class="lc-cover-img" src="${l.image}"
+           onerror="this.style.display='none'"
+           loading="lazy" alt="${l.name}">
+      <div class="lc-cover-overlay"></div>
+      ${stamped ? '<div class="lc-stamp-mark">☽</div>' : ''}
+      <div class="lc-cover-content">
+        <span class="lc-vibe-badge">${l.vibeIcon} ${l.vibe}</span>
+        <h3 class="lc-name">${l.name}</h3>
+        <p class="lc-subtitle">${l.subtitle}</p>
       </div>
+      <div class="lc-badges">
+        <span class="lc-badge">📍 ${l.address}</span>
+        <span class="lc-badge lc-badge--rating">★ ${l.rating} 神秘指数</span>
+        ${l.difficulty ? `<span class="lc-badge lc-badge--difficulty">${l.difficulty === '容易到达' ? '🚶' : l.difficulty === '需要预约' ? '📋' : l.difficulty === '已封闭仅外观' ? '🚫' : '🥾'} ${l.difficulty}</span>` : ''}
+        ${l.xhsHeat ? `<span class="lc-badge lc-badge--heat lc-heat-${l.xhsHeat.tier.toLowerCase()}">🔥 ${l.xhsHeat.tier}</span>` : ''}
+        ${l.linkedDestId ? '<span class="lc-badge lc-badge--easter">✨ 彩蛋</span>' : ''}
+      </div>
+    </div>
 
-      <div class="lc-body">
-        <div class="lc-story-block">
-          <div class="lc-story-label">📖 传说</div>
-          <p class="lc-story-text">${l.storyBrief}</p>
-        </div>
-        ${l.bestTime ? `<div class="lc-best-time">🕐 最佳探访: ${l.bestTime}</div>` : ''}
-        <div class="lc-themes">
-          ${l.themes.map(t => `<span class="lc-theme">${t}</span>`).join('')}
-        </div>
-        <div class="lc-footer">
-          <span class="lc-rating">🌑 神秘指数 ${l.rating}</span>
-          <div class="lc-actions">
-            <button class="lc-stamp-btn${stamped ? ' lc-stamp-btn--done' : ''}" onclick="handleLegendStampClick(event, '${l.id}', '${l.name.replace(/'/g, "\\'")}')">${stamped ? '☽ 已打卡' : '☽ 打卡'}</button>
-            <button class="lc-read-btn" onclick="openLegendStory('${l.id}', event)">读完整故事</button>
-            ${l.linkedDestId ? `<button class="lc-day-btn" onclick="goToLinkedDest(${l.linkedDestId}, event)">✨ 日间</button>` : ''}
-          </div>
+    <div class="lc-body">
+      <div class="lc-story-block">
+        <div class="lc-story-label">📖 传说</div>
+        <p class="lc-story-text">${l.storyBrief}</p>
+      </div>
+      ${l.bestTime ? `<div class="lc-best-time">🕐 最佳探访: ${l.bestTime}</div>` : ''}
+      <div class="lc-themes">
+        ${l.themes.map(t => `<span class="lc-theme">${t}</span>`).join('')}
+      </div>
+      <div class="lc-footer">
+        <span class="lc-rating">🌑 神秘指数 ${l.rating}</span>
+        <div class="lc-actions">
+          <button class="lc-stamp-btn${stamped ? ' lc-stamp-btn--done' : ''}" onclick="handleLegendStampClick(event, '${l.id}', '${l.name.replace(/'/g, "\\'")}')">${stamped ? '☽ 已打卡' : '☽ 打卡'}</button>
+          <button class="lc-read-btn" onclick="openLegendStory('${l.id}', event)">读完整故事</button>
+          ${l.linkedDestId ? `<button class="lc-day-btn" onclick="goToLinkedDest(${l.linkedDestId}, event)">✨ 日间</button>` : ''}
         </div>
       </div>
     </div>
-  `;}).join('');
+  </div>
+`;
+}
 
-  // Make cards visible — directly add class after render, staggered by transition-delay
+function renderLegendCards(legends) {
+  const grid = document.getElementById('otherside-grid');
+  if (!grid) return;
+
+  if (legends.length === 0) {
+    grid.innerHTML = '<div class="legend-empty-state">🌑 没有找到匹配的传说</div>';
+  } else {
+    grid.innerHTML = legends.map((l, i) => renderLegendCard(l, i)).join('');
+  }
+
+  // Make cards visible
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       grid.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
     });
   });
 
-  // Initialize stamp counter
   updateLegendStampUI();
+}
+
+// Render legend cards — fully independent lc-* classes, zero dest-card dependency
+let _legendsRendered = false;
+function renderLegends() {
+  if (_legendsRendered) return;
+  _legendsRendered = true;
+  filterLegends();
 }
 
 function openLegendStory(id, e) {
