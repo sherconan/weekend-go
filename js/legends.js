@@ -144,67 +144,65 @@ const LEGENDS_DATA = [
   }
 ];
 
-// Render legend cards
+// Render legend cards — same structure as day dest-card, story goes first
 function renderLegends() {
   const grid = document.getElementById('otherside-grid');
   if (!grid) return;
 
-  // Only show for Beijing (default city)
   const currentCity = window.currentCity || 'beijing';
   if (currentCity !== 'beijing') {
-    document.getElementById('otherside')?.style?.setProperty('display', 'none');
+    const sec = document.getElementById('otherside');
+    if (sec) sec.style.display = 'none';
     return;
   }
 
-  grid.innerHTML = LEGENDS_DATA.map(l => `
-    <div class="legend-card" data-id="${l.id}" onclick="flipLegendCard(this, '${l.id}')">
-      <div class="legend-card-inner">
-        <!-- Front -->
-        <div class="legend-face legend-front">
-          <div class="legend-img-wrap">
-            <img class="legend-img" src="${l.image}" onerror="this.style.display='none'" loading="lazy" alt="${l.name}">
-            <div class="legend-img-fallback"></div>
-          </div>
-          <div class="legend-front-overlay">
-            <div class="legend-vibe-badge">
-              <span>${l.vibeIcon}</span>
-              <span>${l.vibe}</span>
-            </div>
-            <div class="legend-front-info">
-              <div class="legend-name">${l.name}</div>
-              <div class="legend-subtitle">${l.subtitle}</div>
-            </div>
-            <div class="legend-flip-hint">点击翻面 ↻</div>
-          </div>
+  grid.innerHTML = LEGENDS_DATA.map((l, i) => `
+    <div class="dest-card legend-dest-card fade-up" data-legend-id="${l.id}"
+         style="transition-delay: ${Math.min(i, 8) * 60}ms"
+         onclick="openLegendStory('${l.id}', event)">
+
+      <!-- Cover (same as dest-card-cover) -->
+      <div class="dest-card-cover legend-cover" style="background: linear-gradient(135deg, #1C1040, #0F1D2F);">
+        <img class="dest-card-img legend-card-img" src="${l.image}"
+             onerror="this.style.display='none'"
+             loading="lazy" alt="${l.name}">
+        <div class="dest-card-cover-overlay legend-cover-overlay"></div>
+        <div class="dest-card-cover-content">
+          <span class="dest-card-source legend-vibe-source">${l.vibeIcon} ${l.vibe}</span>
+          <h3 class="dest-card-name legend-card-name">${l.name}</h3>
+          <p class="dest-card-subtitle legend-card-subtitle">${l.subtitle}</p>
         </div>
-        <!-- Back -->
-        <div class="legend-face legend-back">
-          <div class="legend-back-content">
-            <div class="legend-back-header">
-              <div class="legend-back-vibe">${l.vibeIcon} ${l.vibe}</div>
-              <div class="legend-back-name">${l.name}</div>
-              <div class="legend-back-addr">📍 ${l.address}</div>
-            </div>
-            <div class="legend-story-preview">${l.storyBrief}</div>
-            <div class="legend-themes">${l.themes.map(t => `<span class="legend-theme-chip">${t}</span>`).join('')}</div>
-            <div class="legend-rating-row">
-              <span class="legend-rating-star">★</span>
-              <span class="legend-rating-val">${l.rating}</span>
-              <span class="legend-rating-label">神秘指数</span>
-            </div>
-            <div class="legend-back-actions">
-              <button class="legend-action-story" onclick="openLegendStory('${l.id}', event)">读完整故事</button>
-              ${l.linkedDestId ? `<button class="legend-action-linked" onclick="goToLinkedDest(${l.linkedDestId}, event)">✨ 日间版本</button>` : ''}
-            </div>
+        <div class="dest-card-badges">
+          <span class="dest-card-badge">📍 ${l.address}</span>
+          <span class="dest-card-badge badge-rating">★ ${l.rating} 神秘指数</span>
+          ${l.linkedDestId ? '<span class="dest-card-badge legend-badge-easter">✨ 彩蛋</span>' : ''}
+        </div>
+      </div>
+
+      <!-- Body (same as dest-card-body) -->
+      <div class="dest-card-body legend-card-body">
+        <!-- Story first, prominent -->
+        <div class="legend-story-block">
+          <div class="legend-story-label">📖 传说</div>
+          <div class="dest-card-desc legend-story-text">${l.storyBrief}</div>
+        </div>
+
+        <!-- Theme tags (same as dest-card-tags) -->
+        <div class="dest-card-tags">
+          ${l.themes.map(t => `<span class="dest-card-tag tag-theme legend-theme-tag">${t}</span>`).join('')}
+        </div>
+
+        <!-- Footer -->
+        <div class="dest-card-footer legend-card-footer">
+          <span class="dest-card-budget legend-rating-display">🌑 神秘指数 ${l.rating}</span>
+          <div class="dest-card-footer-actions">
+            <button class="legend-read-btn" onclick="openLegendStory('${l.id}', event)">读完整故事</button>
+            ${l.linkedDestId ? `<button class="legend-day-btn" onclick="goToLinkedDest(${l.linkedDestId}, event)">✨ 日间</button>` : ''}
           </div>
         </div>
       </div>
     </div>
   `).join('');
-}
-
-function flipLegendCard(el, id) {
-  el.classList.toggle('is-flipped');
 }
 
 function openLegendStory(id, e) {
