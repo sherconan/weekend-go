@@ -22,6 +22,10 @@ function buildBeijingDestinations() {
     const names = new Set(dests.map(d => d.name));
     dests.push(...DESTINATIONS_BJ_TALES.filter(d => !names.has(d.name)));
   }
+  if (typeof DESTINATIONS_BJ_2026 !== 'undefined') {
+    const names = new Set(dests.map(d => d.name));
+    dests.push(...DESTINATIONS_BJ_2026.filter(d => !names.has(d.name)));
+  }
   return dests;
 }
 

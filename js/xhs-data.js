@@ -2920,6 +2920,128 @@ const XHS_HEAT = {
     tier: "C"
   },
 
+  // ===== 2025-2026 北京新热门 =====
+  "北京SKP": {
+    heat: 88,
+    notes: "25万+",
+    trending: "SKP-S沉浸式、奢侈品打卡、甄选超市、大望路",
+    tier: "A"
+  },
+  "合生汇": {
+    heat: 85,
+    notes: "20万+",
+    trending: "21区BLOCK、网红美食排队、九龙山、潮流街区",
+    tier: "A"
+  },
+  "华熙LIVE·五棵松": {
+    heat: 82,
+    notes: "15万+",
+    trending: "演唱会散场、精酿酒吧、HI-UP、冰上运动",
+    tier: "A"
+  },
+  "西单更新场": {
+    heat: 80,
+    notes: "18万+",
+    trending: "下沉广场拍照、独立设计师、Z世代、先锋商业",
+    tier: "A"
+  },
+  "THE BOX朝外": {
+    heat: 78,
+    notes: "12万+",
+    trending: "LED天幕、空中花园、2024新商场、朝阳门首店",
+    tier: "A"
+  },
+  "大悦春风里": {
+    heat: 62,
+    notes: "8万+",
+    trending: "南城商业、亲子乐园、西红门、大兴周末",
+    tier: "B"
+  },
+  "湾里": {
+    heat: 65,
+    notes: "5万+",
+    trending: "通州新地标、运河商务区、室内滑雪、2025新开",
+    tier: "B"
+  },
+  "北京太古坊": {
+    heat: 58,
+    notes: "3万+",
+    trending: "太古新项目、精品餐饮、艺术画廊、2026开业",
+    tier: "B"
+  },
+  "菖蒲河公园": {
+    heat: 86,
+    notes: "22万+",
+    trending: "红墙拍照、汉服打卡、故宫旁免费、隐藏秘境",
+    tier: "A"
+  },
+  "镇罗营梨花谷": {
+    heat: 55,
+    notes: "3万+",
+    trending: "梨花花海、平谷赏花、春季新热点、小众徒步",
+    tier: "B"
+  },
+  "友谊花园": {
+    heat: 60,
+    notes: "5万+",
+    trending: "花园商业、疗愈空间、拍照打卡、精品咖啡",
+    tier: "B"
+  },
+  "当代MOMA": {
+    heat: 72,
+    notes: "10万+",
+    trending: "建筑大师、百老汇电影、库布里克书店、东直门文艺",
+    tier: "A"
+  },
+  "大吉巷": {
+    heat: 58,
+    notes: "4万+",
+    trending: "胡同改造、独立小店、手作体验、新式胡同",
+    tier: "B"
+  },
+  "泰康空间": {
+    heat: 52,
+    notes: "3万+",
+    trending: "当代艺术、798画廊、免费展览、学术策展",
+    tier: "B"
+  },
+  "望京小腰": {
+    heat: 83,
+    notes: "18万+",
+    trending: "深夜烧烤、羊腰子、望京夜生活、韩式烤肉",
+    tier: "A"
+  },
+  "护国寺街": {
+    heat: 75,
+    notes: "12万+",
+    trending: "豆汁焦圈、老北京小吃、传统美食、胡同串联",
+    tier: "A"
+  },
+  "鼓楼东大街": {
+    heat: 87,
+    notes: "25万+",
+    trending: "独立咖啡、精酿酒吧、vintage古着、Live house",
+    tier: "A"
+  },
+  "五道口": {
+    heat: 70,
+    notes: "10万+",
+    trending: "宇宙中心、枣糕王、韩国料理、清华周边",
+    tier: "A"
+  },
+  "Red1卡丁车": {
+    heat: 74,
+    notes: "8万+",
+    trending: "室内卡丁车、团建约会、速度体验、网红打卡",
+    tier: "A"
+  },
+  "亮马河国际风情水岸": {
+    heat: 91,
+    notes: "35万+",
+    trending: "夜间打卡、河畔灯光、皮划艇、蓝色港湾、北京塞纳河",
+    tier: "S"
+  },
+
 };
 
 
