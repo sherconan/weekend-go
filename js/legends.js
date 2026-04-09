@@ -1454,6 +1454,20 @@ function renderLegends() {
       </div>
     </div>
   `).join('');
+
+  // Animate cards into view with IntersectionObserver on the night-world scroll container
+  const nightWorld = document.getElementById('night-world');
+  const obs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { root: nightWorld, threshold: 0.05, rootMargin: '0px 0px 40px 0px' }
+  );
+  grid.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 }
 
 function openLegendStory(id, e) {
