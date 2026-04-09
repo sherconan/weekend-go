@@ -514,6 +514,9 @@ const DEST_IMAGES = {
   "张家口翠云山": "assets/images/dest-bj-366.webp",
 // --- Batch generated images ---
   "承德磬锤峰": "assets/images/dest-bj-367.webp",
+// --- Batch generated images ---
+  "秦皇岛板厂峪长城": "assets/images/dest-bj-368.webp",
+  "唐山开滦矿山公园": "assets/images/dest-bj-369.webp",
 };
 
 function getDestImage(dest) {
