@@ -507,6 +507,9 @@ const DEST_IMAGES = {
   "颐和园十七孔桥金光穿洞": "assets/images/dest-bj-619.webp",
 // --- Batch generated images ---
   "石家庄西柏坡": "assets/images/dest-bj-361.webp",
+// --- Batch generated images ---
+  "石家庄抱犊寨": "assets/images/dest-bj-362.webp",
+  "沧州吴桥杂技": "assets/images/dest-bj-365.webp",
 };
 
 function getDestImage(dest) {
