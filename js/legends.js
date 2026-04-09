@@ -2161,6 +2161,9 @@ function getFilteredLegends() {
     case 'easter':
       results = results.filter(l => !!l.linkedDestId);
       break;
+    case 'stamped':
+      results = results.filter(l => isLegendStamped(l.id));
+      break;
   }
   return results;
 }
