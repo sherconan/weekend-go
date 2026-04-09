@@ -505,6 +505,8 @@ const DEST_IMAGES = {
   "天安门城楼内部探秘": "assets/images/dest-bj-617.webp",
   "故宫角楼雪景": "assets/images/dest-bj-618.webp",
   "颐和园十七孔桥金光穿洞": "assets/images/dest-bj-619.webp",
+// --- Batch generated images ---
+  "石家庄西柏坡": "assets/images/dest-bj-361.webp",
 };
 
 function getDestImage(dest) {
