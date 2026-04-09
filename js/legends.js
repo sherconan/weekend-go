@@ -2373,6 +2373,12 @@ window.switchCity = function(city) {
   if (btn) btn.style.display = city === 'beijing' ? '' : 'none';
 };
 
+// Random legend — opens a random legend story
+function randomLegend() {
+  const idx = Math.floor(Math.random() * LEGENDS_DATA.length);
+  openLegendStory(LEGENDS_DATA[idx].id, { stopPropagation: () => {} });
+}
+
 // Init
 function initLegends() {
   // Hide flip btn for non-BJ default city
