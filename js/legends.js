@@ -14,7 +14,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '封印', '龙'],
     rating: 4.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-001.webp',
-    linkedDestId: 531
+    linkedDestId: 531,
+    visitTips: ['建议工作日前往，游客较少', '地铁站内可远观井口位置，注意观察B口附近', '夜间探访需结伴，周边胡同灯光较暗'],
+    bestTime: '秋冬傍晚',
+    nearbyFood: [{ name: '北新桥卤煮', perCapita: 35 }, { name: '东四牛肉面', perCapita: 28 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 82, notes: '12.6万篇笔记', trending: '锁龙井探秘', tier: 'A' }
   },
   {
     id: 'l-bj-002',
@@ -28,7 +33,12 @@ const LEGENDS_DATA = [
     themes: ['历史秘辛', '刑场', '冤魂'],
     rating: 4.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-002.webp',
-    linkedDestId: 537
+    linkedDestId: 537,
+    visitTips: ['菜市口地铁站D口出即到', '建议白天先了解历史背景再夜间感受', '周边已完全商业化，需靠想象还原旧貌'],
+    bestTime: '傍晚时分',
+    nearbyFood: [{ name: '南来顺饭庄', perCapita: 65 }, { name: '老磁器口豆汁店', perCapita: 15 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 68, notes: '5.2万篇笔记', trending: '菜市口历史', tier: 'B' }
   },
   {
     id: 'l-bj-003',
@@ -42,7 +52,12 @@ const LEGENDS_DATA = [
     themes: ['历史秘辛', '废墟', '宫廷'],
     rating: 4.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-003.webp',
-    linkedDestId: 585
+    linkedDestId: 585,
+    visitTips: ['推荐购买联票含西洋楼景区', '月圆之夜人多需提前购票', '带手电筒方便观察废墟细节'],
+    bestTime: '月圆之夜',
+    nearbyFood: [{ name: '圆明园东门烤鸭店', perCapita: 88 }, { name: '五道口枣糕王', perCapita: 12 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 91, notes: '45.3万篇笔记', trending: '圆明园月色', tier: 'S' }
   },
   {
     id: 'l-bj-004',
@@ -56,7 +71,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '鬼市', '古玩'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-004.webp',
-    linkedDestId: 570
+    linkedDestId: 570,
+    visitTips: ['每周三凌晨2-5点开市，务必提前确认', '带现金和手电筒，摊位不支持扫码', '砍价是基本功，开价通常3-5倍'],
+    bestTime: '凌晨2-5点',
+    nearbyFood: [{ name: '潘家园早点摊', perCapita: 15 }, { name: '十里河天娇小吃', perCapita: 25 }],
+    difficulty: '需要早起',
+    xhsHeat: { heat: 58, notes: '3.8万篇笔记', trending: '北京鬼市淘宝', tier: 'B' }
   },
   {
     id: 'l-bj-005',
@@ -70,7 +90,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '故宫', '宫廷'],
     rating: 4.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-005.webp',
-    linkedDestId: 581
+    linkedDestId: 581,
+    visitTips: ['故宫4点清场，无法夜间探访', '重点关注御花园和延禧宫区域', '建议请讲解员了解宫廷秘史'],
+    bestTime: '冬季下午3点后',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '故宫冰窖餐厅', perCapita: 78 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 95, notes: '186万篇笔记', trending: '故宫灵异', tier: 'S' }
   },
   {
     id: 'l-bj-006',
@@ -84,7 +109,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '历史', '诅咒'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-006.webp',
-    linkedDestId: 587
+    linkedDestId: 587,
+    visitTips: ['门票40元，建议购买含花园联票', '不要触摸藏字碑，遵守景区规定', '后花园是精华所在，预留1小时'],
+    bestTime: '秋季午后',
+    nearbyFood: [{ name: '什刹海九门小吃', perCapita: 55 }, { name: '烤肉季', perCapita: 95 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 78, notes: '28.5万篇笔记', trending: '恭王府风水', tier: 'A' }
   },
   {
     id: 'l-bj-007',
@@ -98,7 +128,12 @@ const LEGENDS_DATA = [
     themes: ['城市秘境', '冷战', '地下'],
     rating: 4.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-007.webp',
-    linkedDestId: 546
+    linkedDestId: 546,
+    visitTips: ['目前大部分区域不对外开放', '可在前门大栅栏地区寻找旧入口痕迹', '建议查阅相关纪录片做功课'],
+    bestTime: '全年均可',
+    nearbyFood: [{ name: '都一处烧麦', perCapita: 75 }, { name: '前门大碗茶', perCapita: 20 }],
+    difficulty: '已封闭仅外观',
+    xhsHeat: { heat: 72, notes: '8.9万篇笔记', trending: '北京地下城探秘', tier: 'A' }
   },
   {
     id: 'l-bj-008',
@@ -112,7 +147,12 @@ const LEGENDS_DATA = [
     themes: ['历史秘辛', '帝陵', '诅咒'],
     rating: 4.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-008.webp',
-    linkedDestId: 42
+    linkedDestId: 42,
+    visitTips: ['定陵地宫可入内参观，门票60元', '地宫内温度较低，建议带外套', '十三陵景区较大，建议自驾前往'],
+    bestTime: '春秋两季',
+    nearbyFood: [{ name: '十三陵水库鱼庄', perCapita: 85 }, { name: '昌平涮羊肉', perCapita: 70 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 75, notes: '15.2万篇笔记', trending: '定陵诅咒', tier: 'A' }
   },
   {
     id: 'l-bj-009',
@@ -126,7 +166,12 @@ const LEGENDS_DATA = [
     themes: ['神秘预言', '道教', '命运'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-009.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['道观内禁止喧哗和随意拍照', '每年正月有"摸石猴"民俗活动', '建议请道士讲解观内历史'],
+    bestTime: '正月初一至十五',
+    nearbyFood: [{ name: '白云观素斋', perCapita: 45 }, { name: '西便门涮肉', perCapita: 80 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 45, notes: '2.1万篇笔记', trending: '白云观祈福', tier: 'C' }
   },
   {
     id: 'l-bj-010',
@@ -140,7 +185,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '地铁', '幽灵'],
     rating: 4.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-010.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['东直门站是13号线和2号线换乘站', '末班车后站台清空，无法实地验证传说', '建议在运营时间内感受换乘通道氛围'],
+    bestTime: '深夜末班车前',
+    nearbyFood: [{ name: '簋街胡大饭馆', perCapita: 120 }, { name: '东直门卤煮', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 63, notes: '4.5万篇笔记', trending: '北京地铁灵异', tier: 'B' }
   },
   // ===== l-bj-011 ~ l-bj-050 =====
   {
@@ -155,7 +205,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '后宫', '冤魂'],
     rating: 4.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-011.webp',
-    linkedDestId: 581
+    linkedDestId: 581,
+    visitTips: ['珍妃井在宁寿宫北端，跟随故宫东路线路', '井口有铁栏围护，可近距离观看', '建议下午游客减少时前往'],
+    bestTime: '冬季下午',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '景山前街驴打滚', perCapita: 15 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 80, notes: '22.3万篇笔记', trending: '珍妃井故事', tier: 'A' }
   },
   {
     id: 'l-bj-012',
@@ -169,7 +224,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '亡国', '殉国'],
     rating: 4.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-012.webp',
-    linkedDestId: 580
+    linkedDestId: 580,
+    visitTips: ['景山公园门票2元，性价比极高', '东坡崇祯自缢处有标识牌', '登顶可俯瞰故宫全景，建议日落前往'],
+    bestTime: '三月十九日前后',
+    nearbyFood: [{ name: '景山东街炸酱面', perCapita: 25 }, { name: '地安门小吃店', perCapita: 35 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 70, notes: '18.7万篇笔记', trending: '景山崇祯', tier: 'A' }
   },
   {
     id: 'l-bj-013',
@@ -183,7 +243,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '诡异建筑', '风水'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-013.webp',
-    linkedDestId: 330
+    linkedDestId: 330,
+    visitTips: ['延禧宫在故宫东六宫区域', '灵沼轩外观保存较好可拍照', '周边有故宫文物医院可一并参观'],
+    bestTime: '春夏午后',
+    nearbyFood: [{ name: '故宫冰窖餐厅', perCapita: 78 }, { name: '东华门小吃街', perCapita: 30 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 73, notes: '9.8万篇笔记', trending: '延禧宫烂尾楼', tier: 'A' }
   },
   {
     id: 'l-bj-014',
@@ -197,7 +262,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '凶宅', '失踪'],
     rating: 4.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-014.webp',
-    linkedDestId: 530
+    linkedDestId: 530,
+    visitTips: ['目前已修缮完毕，外观可拍照', '建筑内部不对外开放', '朝阳门内大街沿线还有其他民国建筑'],
+    bestTime: '傍晚或阴天',
+    nearbyFood: [{ name: '朝内小街涮肉', perCapita: 90 }, { name: '东四十条炒肝', perCapita: 20 }],
+    difficulty: '已封闭仅外观',
+    xhsHeat: { heat: 92, notes: '38.6万篇笔记', trending: '朝内81号凶宅', tier: 'S' }
   },
   {
     id: 'l-bj-015',
@@ -211,7 +281,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '神兽', '镇物'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-015.webp',
-    linkedDestId: 584
+    linkedDestId: 584,
+    visitTips: ['铜牛在昆明湖东堤，十七孔桥北侧', '阴雨天或晨雾时最易观察"流泪"现象', '颐和园门票30元，联票60元'],
+    bestTime: '阴雨天清晨',
+    nearbyFood: [{ name: '颐和园听鹂馆', perCapita: 120 }, { name: '西苑饭庄', perCapita: 85 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.2万篇笔记', trending: '颐和园铜牛', tier: 'B' }
   },
   {
     id: 'l-bj-016',
@@ -225,7 +300,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '会馆', '戏曲'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-016.webp',
-    linkedDestId: 533
+    linkedDestId: 533,
+    visitTips: ['湖广会馆现为北京戏曲博物馆', '每周有京剧演出，可提前购票', '建议夜场演出后在馆内多停留感受氛围'],
+    bestTime: '夜间演出时段',
+    nearbyFood: [{ name: '虎坊桥涮羊肉', perCapita: 75 }, { name: '纪晓岚故居旁卤煮', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 48, notes: '1.8万篇笔记', trending: '湖广会馆京剧', tier: 'C' }
   },
   {
     id: 'l-bj-017',
@@ -239,7 +319,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '藏传佛教', '僧侣'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-017.webp',
-    linkedDestId: 586
+    linkedDestId: 586,
+    visitTips: ['雍和宫香火旺盛，建议错峰前往', '主殿弥勒大佛不允许拍照', '初一十五人流量极大，工作日更佳'],
+    bestTime: '工作日上午',
+    nearbyFood: [{ name: '雍和宫素面', perCapita: 25 }, { name: '五道营胡同咖啡馆', perCapita: 45 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 85, notes: '35.2万篇笔记', trending: '雍和宫祈福', tier: 'A' }
   },
   {
     id: 'l-bj-018',
@@ -253,7 +338,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '王府', '迷阵'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-018.webp',
-    linkedDestId: 535
+    linkedDestId: 535,
+    visitTips: ['礼王府现为国家机关办公区，不对外开放', '可在西黄城根南街外围观看建筑外观', '周边有多座王府遗迹可串联探访'],
+    bestTime: '午后散步时',
+    nearbyFood: [{ name: '西四包子铺', perCapita: 20 }, { name: '西什库教堂附近面馆', perCapita: 35 }],
+    difficulty: '已封闭仅外观',
+    xhsHeat: { heat: 42, notes: '1.2万篇笔记', trending: '北京王府探秘', tier: 'C' }
   },
   {
     id: 'l-bj-019',
@@ -267,7 +357,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '帝陵', '石兽'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-019.webp',
-    linkedDestId: 42
+    linkedDestId: 42,
+    visitTips: ['神路位于十三陵景区南端，免费开放', '月圆之夜适合夜间摄影', '石像生共12对24尊，建议逐一观赏'],
+    bestTime: '农历十五月圆夜',
+    nearbyFood: [{ name: '十三陵农家院', perCapita: 60 }, { name: '昌平城区涮肉馆', perCapita: 70 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 50, notes: '2.5万篇笔记', trending: '十三陵石像生', tier: 'B' }
   },
   {
     id: 'l-bj-020',
@@ -281,7 +376,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '古树', '预兆'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-020.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['潭柘寺门票55元，自驾约1.5小时', '帝王树在毗卢殿前，秋季金黄最美', '石鱼在龙王殿内，需排队触摸'],
+    bestTime: '秋季（10-11月）',
+    nearbyFood: [{ name: '潭柘寺素斋', perCapita: 40 }, { name: '门头沟妙峰山农家饭', perCapita: 55 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 62, notes: '6.8万篇笔记', trending: '潭柘寺银杏', tier: 'B' }
   },
   {
     id: 'l-bj-021',
@@ -295,7 +395,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '密道', '机关'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-021.webp',
-    linkedDestId: 582
+    linkedDestId: 582,
+    visitTips: ['九龙壁在宁寿宫区域，需走故宫东路', '注意观察第三条龙腹部的"假砖"', '旁边有珍宝馆，建议一并游览'],
+    bestTime: '上午光线最佳',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '北池子大街小吃', perCapita: 25 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 65, notes: '7.5万篇笔记', trending: '故宫九龙壁秘密', tier: 'B' }
   },
   {
     id: 'l-bj-022',
@@ -309,7 +414,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '铸钟', '冤魂'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-022.webp',
-    linkedDestId: 549
+    linkedDestId: 549,
+    visitTips: ['钟楼门票20元，可登顶', '钟楼与鼓楼相距约100米，建议一起参观', '日落时分登顶可俯瞰中轴线全景'],
+    bestTime: '傍晚日落时',
+    nearbyFood: [{ name: '姚记炒肝', perCapita: 25 }, { name: '鼓楼馒头店', perCapita: 10 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 72, notes: '12.1万篇笔记', trending: '钟鼓楼日落', tier: 'A' }
   },
   {
     id: 'l-bj-023',
@@ -323,7 +433,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '鼓楼', '元代'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-023.webp',
-    linkedDestId: 550
+    linkedDestId: 550,
+    visitTips: ['鼓楼与钟楼建议联票参观', '鼓楼每日有击鼓表演，注意演出时间', '登楼台阶陡峭，注意安全'],
+    bestTime: '击鼓表演时段',
+    nearbyFood: [{ name: '鼓楼大街火锅', perCapita: 85 }, { name: '后海烤串', perCapita: 50 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 68, notes: '10.3万篇笔记', trending: '鼓楼击鼓', tier: 'B' }
   },
   {
     id: 'l-bj-024',
@@ -337,7 +452,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '国子监', '书生'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-024.webp',
-    linkedDestId: 551
+    linkedDestId: 551,
+    visitTips: ['国子监门票30元，与孔庙联票', '辟雍大殿是精华，建议请导览', '周边成贤街氛围极佳，适合慢逛'],
+    bestTime: '深秋工作日',
+    nearbyFood: [{ name: '国子监街糖葫芦', perCapita: 10 }, { name: '成贤街面馆', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 60, notes: '5.8万篇笔记', trending: '国子监读书', tier: 'B' }
   },
   {
     id: 'l-bj-025',
@@ -351,7 +471,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '建筑', '鲁班'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-025.webp',
-    linkedDestId: 618
+    linkedDestId: 618,
+    visitTips: ['角楼是故宫外拍摄最佳机位之一', '护城河边的角楼咖啡可近距离欣赏', '日落和雪景是最佳拍摄时机'],
+    bestTime: '日落或雪后',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '东华门夜市小吃', perCapita: 35 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 88, notes: '52.6万篇笔记', trending: '故宫角楼日落', tier: 'A' }
   },
   {
     id: 'l-bj-026',
@@ -365,7 +490,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '地铁', '监控'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-026.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['西单地铁站是1号线和4号线换乘站', '传说多发生在深夜末班车时段', '换乘通道较长，可留意氛围'],
+    bestTime: '末班车前后',
+    nearbyFood: [{ name: '西单商场美食层', perCapita: 50 }, { name: '华天延吉冷面', perCapita: 35 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 38, notes: '0.9万篇笔记', trending: '西单地铁传说', tier: 'C' }
   },
   {
     id: 'l-bj-027',
@@ -379,7 +509,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '诅咒', '丁香'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-027.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['法源寺在宣武门外，免费开放', '每年4月丁香花盛开是最佳时节', '寺内环境清幽，适合静心'],
+    bestTime: '4月丁香花期',
+    nearbyFood: [{ name: '牛街清真小吃', perCapita: 30 }, { name: '输入胡同涮肉', perCapita: 75 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 52, notes: '3.5万篇笔记', trending: '法源寺丁香', tier: 'B' }
   },
   {
     id: 'l-bj-028',
@@ -393,7 +528,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '历史惨案', '回声'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-028.webp',
-    linkedDestId: 543
+    linkedDestId: 543,
+    visitTips: ['现为社科院法学所，部分区域可参观', '三·一八惨案纪念碑在院内', '建筑为民国风格，适合拍照'],
+    bestTime: '工作日白天',
+    nearbyFood: [{ name: '张自忠路涮肉', perCapita: 80 }, { name: '东四清真寺旁烧饼', perCapita: 15 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 40, notes: '1.5万篇笔记', trending: '段祺瑞执政府', tier: 'C' }
   },
   {
     id: 'l-bj-029',
@@ -407,7 +547,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '龙脉', '中轴线'],
     rating: 4.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-029.webp',
-    linkedDestId: 611
+    linkedDestId: 611,
+    visitTips: ['中轴线全长7.8公里，建议骑行体验', '从永定门到钟楼依次串联', '2024年已成功申遗，关注度大增'],
+    bestTime: '春秋晴天',
+    nearbyFood: [{ name: '前门全聚德', perCapita: 150 }, { name: '天坛东门豆汁', perCapita: 10 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 86, notes: '42.1万篇笔记', trending: '北京中轴线', tier: 'A' }
   },
   {
     id: 'l-bj-030',
@@ -421,7 +566,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '天文', '风水'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-030.webp',
-    linkedDestId: 619
+    linkedDestId: 619,
+    visitTips: ['冬至前后15天内可观"金光穿洞"', '建议下午3点半到达抢占机位', '需携带长焦镜头拍摄'],
+    bestTime: '冬至前后日落',
+    nearbyFood: [{ name: '颐和园听鹂馆', perCapita: 120 }, { name: '玉泉山脚农家菜', perCapita: 65 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 90, notes: '56.3万篇笔记', trending: '十七孔桥金光穿洞', tier: 'S' }
   },
   {
     id: 'l-bj-031',
@@ -435,7 +585,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '地铁', '军事'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-031.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['1号线全线均可体验', '传说中的废弃站位于苹果园以西', '可在复兴门站观察环线和1号线的关系'],
+    bestTime: '夜间末班车',
+    nearbyFood: [{ name: '复兴门百万庄涮肉', perCapita: 70 }, { name: '西单卤煮吕', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 45, notes: '2.0万篇笔记', trending: '北京地铁废弃站', tier: 'C' }
   },
   {
     id: 'l-bj-032',
@@ -449,7 +604,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '石碑', '辽代'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-032.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['戒台寺门票45元，距市区约35公里', '寺内松柏古老，建议预留半天', '传说石碑在后殿区域'],
+    bestTime: '秋季午后',
+    nearbyFood: [{ name: '戒台寺素斋', perCapita: 35 }, { name: '潭柘寺路边农家饭', perCapita: 50 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 35, notes: '1.0万篇笔记', trending: '戒台寺秋色', tier: 'C' }
   },
   {
     id: 'l-bj-033',
@@ -463,7 +623,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '前门', '隧道'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-033.webp',
-    linkedDestId: 539
+    linkedDestId: 539,
+    visitTips: ['前门大栅栏商业街可自由探访', '注意观察老建筑的地下入口痕迹', '瑞蚨祥、同仁堂等老字号都值得进入'],
+    bestTime: '傍晚华灯初上',
+    nearbyFood: [{ name: '便宜坊烤鸭', perCapita: 110 }, { name: '门框胡同卤煮', perCapita: 28 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.6万篇笔记', trending: '前门地下通道', tier: 'B' }
   },
   {
     id: 'l-bj-034',
@@ -477,7 +642,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '香山', '坠崖'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-034.webp',
-    linkedDestId: 621
+    linkedDestId: 621,
+    visitTips: ['香山公园门票10元，鬼见愁在最高峰', '上山建议走南路，约1.5小时', '秋季红叶季人流极大需早到'],
+    bestTime: '深秋红叶季',
+    nearbyFood: [{ name: '香山饭店', perCapita: 120 }, { name: '植物园门口小吃', perCapita: 30 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 78, notes: '25.8万篇笔记', trending: '香山红叶', tier: 'A' }
   },
   {
     id: 'l-bj-035',
@@ -491,7 +661,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '公墓', '地下'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-035.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['八宝山革命公墓需提前预约', '参观时注意保持肃穆', '地下区域不对外开放'],
+    bestTime: '清明前后',
+    nearbyFood: [{ name: '八宝山地铁站周边快餐', perCapita: 30 }, { name: '玉泉路涮肉', perCapita: 65 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 32, notes: '0.8万篇笔记', trending: '八宝山名人墓', tier: 'D' }
   },
   {
     id: 'l-bj-036',
@@ -505,7 +680,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '地宫', '宝藏'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-036.webp',
-    linkedDestId: 332
+    linkedDestId: 332,
+    visitTips: ['铜雀在万寿山后山区域', '颐和园后山游客少，适合静心探索', '建议走苏州街到后山一线'],
+    bestTime: '春季午后',
+    nearbyFood: [{ name: '颐和园听鹂馆', perCapita: 120 }, { name: '万寿路附近兰州拉面', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 40, notes: '1.3万篇笔记', trending: '颐和园后山', tier: 'C' }
   },
   {
     id: 'l-bj-037',
@@ -519,7 +699,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '天坛', '声学'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-037.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['天坛公园门票15元，回音壁在皇穹宇院内', '需站在特定位置才能体验回音效果', '建议避开旅行团高峰时段'],
+    bestTime: '清晨开园时',
+    nearbyFood: [{ name: '天坛东门豆汁', perCapita: 10 }, { name: '磁器口卤煮', perCapita: 28 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 82, notes: '30.5万篇笔记', trending: '天坛回音壁', tier: 'A' }
   },
   {
     id: 'l-bj-038',
@@ -533,7 +718,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '碉堡', '军事'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-038.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['西山碉堡群分布在多个山头', '需要一定的野外徒步能力', '建议结伴前往，带好饮用水'],
+    bestTime: '春秋徒步季',
+    nearbyFood: [{ name: '西山农家院', perCapita: 60 }, { name: '香山脚下面馆', perCapita: 30 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 28, notes: '0.5万篇笔记', trending: '西山碉堡探险', tier: 'D' }
   },
   {
     id: 'l-bj-039',
@@ -547,7 +737,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '镇物', '元代'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-039.webp',
-    linkedDestId: 583
+    linkedDestId: 583,
+    visitTips: ['北海公园门票10元，白塔在琼华岛上', '需另购琼华岛门票10元', '日落时白塔剪影非常适合拍照'],
+    bestTime: '日落时分',
+    nearbyFood: [{ name: '北海仿膳饭庄', perCapita: 150 }, { name: '荷花市场小吃', perCapita: 40 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 75, notes: '18.9万篇笔记', trending: '北海白塔日落', tier: 'A' }
   },
   {
     id: 'l-bj-040',
@@ -561,7 +756,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '鬼楼', '乱葬岗'],
     rating: 4.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-040.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['劲松小区为普通居民区，请勿打扰居民', '传说中的鬼楼已拆除重建', '可在周边感受老北京居住区氛围'],
+    bestTime: '傍晚散步时',
+    nearbyFood: [{ name: '劲松桥涮肉', perCapita: 75 }, { name: '潘家园早市小吃', perCapita: 20 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.0万篇笔记', trending: '劲松鬼楼', tier: 'B' }
   },
   {
     id: 'l-bj-041',
@@ -575,7 +775,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '白塔', '地宫'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-041.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['妙应寺白塔门票20元', '白塔不可登临，仅外观参观', '地宫遗址在白塔基座内部'],
+    bestTime: '冬季晴天',
+    nearbyFood: [{ name: '阜成门涮肉', perCapita: 80 }, { name: '白塔寺旁驴肉火烧', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 48, notes: '2.2万篇笔记', trending: '妙应寺白塔', tier: 'C' }
   },
   {
     id: 'l-bj-042',
@@ -589,7 +794,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '溶洞', '暗河'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-042.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['银狐洞位于房山区，距市区约60公里', '洞内恒温14℃，需带外套', '地下暗河漂流需提前预约'],
+    bestTime: '夏季避暑',
+    nearbyFood: [{ name: '房山农家菜', perCapita: 55 }, { name: '周口店路边烧烤', perCapita: 40 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 35, notes: '1.1万篇笔记', trending: '银狐洞漂流', tier: 'C' }
   },
   {
     id: 'l-bj-043',
@@ -603,7 +813,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '水怪', '什刹海'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-043.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['什刹海免费开放，环湖步道约3公里', '夜间酒吧街热闹但嘈杂', '建议清晨或深秋傍晚前往更有氛围'],
+    bestTime: '深秋傍晚',
+    nearbyFood: [{ name: '烤肉季', perCapita: 95 }, { name: '爆肚冯', perCapita: 40 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 80, notes: '35.8万篇笔记', trending: '什刹海夜景', tier: 'A' }
   },
   {
     id: 'l-bj-044',
@@ -617,7 +832,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '笛声', '竹林'],
     rating: 3.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-044.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['紫竹院公园免费，全天开放', '竹林深处在公园西北角', '建议月夜前往体验笛声传说'],
+    bestTime: '月夜',
+    nearbyFood: [{ name: '紫竹桥涮肉', perCapita: 70 }, { name: '国家图书馆附近咖啡', perCapita: 40 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 42, notes: '1.5万篇笔记', trending: '紫竹院竹林', tier: 'C' }
   },
   {
     id: 'l-bj-045',
@@ -631,7 +851,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '古道', '驮队'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-045.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['京西古道位于门头沟，需自驾或包车', '马蹄窝在峰口庵段最密集', '全程约6公里，需穿徒步鞋'],
+    bestTime: '春秋两季',
+    nearbyFood: [{ name: '门头沟农家院', perCapita: 60 }, { name: '妙峰山下铜锅涮肉', perCapita: 70 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 52, notes: '3.8万篇笔记', trending: '京西古道徒步', tier: 'B' }
   },
   {
     id: 'l-bj-046',
@@ -645,7 +870,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '铁路', '七七事变'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-046.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['永定河铁路桥在丰台区卢沟桥附近', '桥体老旧，请勿攀爬', '建议在安全距离外拍照观赏'],
+    bestTime: '雾天傍晚',
+    nearbyFood: [{ name: '卢沟桥晓月饭庄', perCapita: 65 }, { name: '宛平城小吃', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 30, notes: '0.6万篇笔记', trending: '永定河老桥', tier: 'D' }
   },
   {
     id: 'l-bj-047',
@@ -659,7 +889,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '石经', '末法'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-047.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['云居寺门票40元，距市区约75公里', '石经馆是核心看点，建议请导览', '地宫内珍藏唐辽石经板'],
+    bestTime: '春秋晴天',
+    nearbyFood: [{ name: '房山农家炖菜', perCapita: 50 }, { name: '云居寺素斋', perCapita: 35 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 45, notes: '2.3万篇笔记', trending: '云居寺石经', tier: 'C' }
   },
   {
     id: 'l-bj-048',
@@ -673,7 +908,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '高塔', '次声波'],
     rating: 3.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-048.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['中央电视塔门票90元，可登塔观景', '旋转餐厅可在238米高空用餐', '夜间塔身灯光变幻值得远观'],
+    bestTime: '夜间远观',
+    nearbyFood: [{ name: '央视塔旋转餐厅', perCapita: 200 }, { name: '玉渊潭公园小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 50, notes: '2.8万篇笔记', trending: '中央电视塔夜景', tier: 'B' }
   },
   {
     id: 'l-bj-049',
@@ -687,7 +927,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '龙脉', '城市规划'],
     rating: 3.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-049.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['东四路口在东城区，地铁5号线/6号线可达', '注意观察四个角的建筑走向', '周边有多条值得探索的胡同'],
+    bestTime: '午后漫步',
+    nearbyFood: [{ name: '东四卤煮', perCapita: 25 }, { name: '隆福寺小吃', perCapita: 35 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 35, notes: '0.8万篇笔记', trending: '东四胡同', tier: 'C' }
   },
   {
     id: 'l-bj-050',
@@ -701,7 +946,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '立交桥', '风水'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-050.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['西直门立交桥是北京最复杂的立交之一', '建议驾车或打车体验"迷路"感', '周边有北京展览馆等建筑可拍照'],
+    bestTime: '夜间灯火通明时',
+    nearbyFood: [{ name: '西直门凯德MALL美食', perCapita: 60 }, { name: '动物园批发市场小吃', perCapita: 20 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.5万篇笔记', trending: '西直门立交桥', tier: 'B' }
   },
   // ===== l-bj-051 ~ l-bj-100 =====
   {
@@ -716,7 +966,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '故宫猫', '冷宫'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-051.webp',
-    linkedDestId: 330
+    linkedDestId: 330,
+    visitTips: ['故宫冷宫区域部分开放', '猫是故宫的"编外员工"，不要投喂人类食物', '故宫文创店有猫主题周边'],
+    bestTime: '午后暖阳时',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '故宫冰窖餐厅', perCapita: 78 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 88, notes: '62.3万篇笔记', trending: '故宫猫', tier: 'A' }
   },
   {
     id: 'l-bj-052',
@@ -730,7 +985,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '佛塔', '佛光'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-052.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['通州燃灯塔在通州北运河畔', '夜间塔身有灯光照明效果最佳', '可结合大运河森林公园一同游览'],
+    bestTime: '夜间',
+    nearbyFood: [{ name: '通州小楼饭店', perCapita: 75 }, { name: '运河边烤鱼', perCapita: 55 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 45, notes: '2.0万篇笔记', trending: '通州燃灯塔', tier: 'C' }
   },
   {
     id: 'l-bj-053',
@@ -744,7 +1004,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '水库', '淹没'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-053.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['密云水库不允许游泳和垂钓', '环库公路自驾风景极佳', '建议在水库南岸远眺'],
+    bestTime: '秋季晴天',
+    nearbyFood: [{ name: '密云水库鱼', perCapita: 90 }, { name: '古北水镇农家菜', perCapita: 70 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 58, notes: '4.2万篇笔记', trending: '密云水库秋色', tier: 'B' }
   },
   {
     id: 'l-bj-054',
@@ -758,7 +1023,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '传位', '密匣'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-054.webp',
-    linkedDestId: 330
+    linkedDestId: 330,
+    visitTips: ['太和殿在故宫中轴线上，必经之地', '"正大光明"匾在乾清宫，注意区分', '建议了解秘密立储制度后再参观'],
+    bestTime: '上午光线最佳',
+    nearbyFood: [{ name: '故宫冰窖餐厅', perCapita: 78 }, { name: '景山前街小吃', perCapita: 25 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 85, notes: '45.6万篇笔记', trending: '故宫正大光明', tier: 'A' }
   },
   {
     id: 'l-bj-055',
@@ -772,7 +1042,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '公墓', '名人'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-055.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['万安公墓需提前联系管理处', '墓区请保持肃穆和尊重', '多位名人长眠于此，可查询墓位分布图'],
+    bestTime: '清明前后',
+    nearbyFood: [{ name: '香山路边农家菜', perCapita: 55 }, { name: '植物园附近面馆', perCapita: 30 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 25, notes: '0.4万篇笔记', trending: '万安公墓名人', tier: 'D' }
   },
   {
     id: 'l-bj-056',
@@ -786,7 +1061,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '古树', '宫女'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-056.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['大觉寺门票20元，距市区约30公里', '千年玉兰在四宜堂前，4月初绽放', '寺内品茶赏花是经典体验'],
+    bestTime: '4月玉兰花期',
+    nearbyFood: [{ name: '大觉寺明慧茶院', perCapita: 80 }, { name: '北安河农家饭', perCapita: 50 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 68, notes: '8.5万篇笔记', trending: '大觉寺玉兰', tier: 'B' }
   },
   {
     id: 'l-bj-057',
@@ -800,7 +1080,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '公交车', '经典'],
     rating: 4.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-057.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['375路已改线，原线路无法体验', '可在德胜门一带回忆旧站点', '传说版本众多，建议多方对比了解'],
+    bestTime: '深夜感受氛围',
+    nearbyFood: [{ name: '德胜门涮肉', perCapita: 80 }, { name: '新街口小吃街', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 85, notes: '28.9万篇笔记', trending: '375路公交灵异', tier: 'A' }
   },
   {
     id: 'l-bj-058',
@@ -814,7 +1099,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '天安门', '五行'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-058.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['天安门城楼门票15元', '登城楼可俯瞰广场和长安街', '安检严格，轻装前往'],
+    bestTime: '国庆或重大节日',
+    nearbyFood: [{ name: '前门全聚德', perCapita: 150 }, { name: '大栅栏爆肚', perCapita: 35 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 78, notes: '22.5万篇笔记', trending: '天安门城楼', tier: 'A' }
   },
   {
     id: 'l-bj-059',
@@ -828,7 +1118,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '苏州街', '幻影'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-059.webp',
-    linkedDestId: 332
+    linkedDestId: 332,
+    visitTips: ['苏州街在颐和园内北侧', '需单独购票乘船体验', '傍晚人少氛围最佳'],
+    bestTime: '傍晚日落时',
+    nearbyFood: [{ name: '颐和园听鹂馆', perCapita: 120 }, { name: '颐和园北门小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.8万篇笔记', trending: '颐和园苏州街', tier: 'B' }
   },
   {
     id: 'l-bj-060',
@@ -842,7 +1137,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '城门', '幻影'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-060.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['地安门原址在地安门大街南端', '城门已拆除，仅存地名', '可结合什刹海和鼓楼一起游览'],
+    bestTime: '午后散步',
+    nearbyFood: [{ name: '地安门小吃', perCapita: 30 }, { name: '护国寺小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 38, notes: '1.0万篇笔记', trending: '地安门旧址', tier: 'C' }
   },
   {
     id: 'l-bj-061',
@@ -856,7 +1156,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '迷宫', '圆明园'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-061.webp',
-    linkedDestId: 585
+    linkedDestId: 585,
+    visitTips: ['万花阵在圆明园长春园景区内', '迷宫不大，约10分钟可走完', '中心观景台可俯瞰全迷宫'],
+    bestTime: '春夏午后',
+    nearbyFood: [{ name: '圆明园东门小吃', perCapita: 25 }, { name: '五道口韩料', perCapita: 55 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 62, notes: '5.5万篇笔记', trending: '圆明园迷宫', tier: 'B' }
   },
   {
     id: 'l-bj-062',
@@ -870,7 +1175,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '经书', '佛火'],
     rating: 3.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-062.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['拈花寺目前正在修缮中', '外观可从街面观看', '周边什刹海区域适合散步'],
+    bestTime: '修缮完工后',
+    nearbyFood: [{ name: '什刹海九门小吃', perCapita: 55 }, { name: '鸦儿胡同面馆', perCapita: 30 }],
+    difficulty: '已封闭仅外观',
+    xhsHeat: { heat: 22, notes: '0.3万篇笔记', trending: '拈花寺修缮', tier: 'D' }
   },
   {
     id: 'l-bj-063',
@@ -884,7 +1194,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '失踪', '封院'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-063.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['南锣鼓巷全天开放，免费', '建议避开周末和节假日', '46号具体位置需自行寻找'],
+    bestTime: '工作日傍晚',
+    nearbyFood: [{ name: '文宇奶酪', perCapita: 15 }, { name: '南锣鼓巷创意小吃', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 75, notes: '85.2万篇笔记', trending: '南锣鼓巷', tier: 'A' }
   },
   {
     id: 'l-bj-064',
@@ -898,7 +1213,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '永定河', '蛟龙'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-064.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['永定河在丰台至门头沟段', '雨季水量大时请远离河岸', '建议在安全的观景平台远眺'],
+    bestTime: '枯水期冬季',
+    nearbyFood: [{ name: '卢沟桥附近农家菜', perCapita: 55 }, { name: '门头沟涮肉', perCapita: 70 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 28, notes: '0.5万篇笔记', trending: '永定河探秘', tier: 'D' }
   },
   {
     id: 'l-bj-065',
@@ -912,7 +1232,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '现代建筑', '商业'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-065.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['望京SOHO是开放式商业区，免费参观', '三座建筑造型独特，适合拍照', '地下商场有丰富餐饮'],
+    bestTime: '夜间灯光亮起时',
+    nearbyFood: [{ name: '望京SOHO地下美食', perCapita: 50 }, { name: '望京韩国料理', perCapita: 80 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 65, notes: '12.5万篇笔记', trending: '望京SOHO建筑', tier: 'B' }
   },
   {
     id: 'l-bj-066',
@@ -926,7 +1251,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '道教', '地府'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-066.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['东岳庙门票10元，朝阳门外', '七十六司塑像在东西配殿', '建议请导览了解各司职能'],
+    bestTime: '庙会期间（春节）',
+    nearbyFood: [{ name: '朝外大街美食', perCapita: 50 }, { name: '神路街小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 42, notes: '1.8万篇笔记', trending: '东岳庙七十六司', tier: 'C' }
   },
   {
     id: 'l-bj-067',
@@ -940,7 +1270,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '时间', '三里屯'],
     rating: 3.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-067.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['三里屯脏街已拆除改造', '新三里屯太古里保留了部分氛围', '夜生活丰富，适合夜间探访'],
+    bestTime: '深夜',
+    nearbyFood: [{ name: '三里屯太古里餐饮', perCapita: 100 }, { name: '工体西路烧烤', perCapita: 60 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 72, notes: '55.8万篇笔记', trending: '三里屯夜生活', tier: 'A' }
   },
   {
     id: 'l-bj-068',
@@ -954,7 +1289,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '妙峰山', '奇观'],
     rating: 3.8,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-068.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['妙峰山距市区约70公里', '每年农历四月有传统庙会', '山路较陡，建议穿登山鞋'],
+    bestTime: '农历四月庙会',
+    nearbyFood: [{ name: '妙峰山农家饭', perCapita: 55 }, { name: '担礼村铜锅涮肉', perCapita: 65 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 48, notes: '2.5万篇笔记', trending: '妙峰山金顶', tier: 'C' }
   },
   {
     id: 'l-bj-069',
@@ -968,7 +1308,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '酒店', '民国'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-069.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['北京饭店是营业酒店，大堂可进入', '8楼传说仅为坊间流传', '建议在一楼咖啡厅感受历史氛围'],
+    bestTime: '午后茶歇时',
+    nearbyFood: [{ name: '北京饭店谭家菜', perCapita: 500 }, { name: '王府井小吃街', perCapita: 50 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 45, notes: '2.0万篇笔记', trending: '北京饭店', tier: 'C' }
   },
   {
     id: 'l-bj-070',
@@ -982,7 +1327,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '悬棺', '未解之谜'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-070.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['十渡景区距市区约100公里', '悬棺在仙峰谷景区内', '需要一定体力攀爬观赏'],
+    bestTime: '春秋两季',
+    nearbyFood: [{ name: '十渡农家院烤虹鳟鱼', perCapita: 75 }, { name: '十渡漂流站小吃', perCapita: 30 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 55, notes: '8.5万篇笔记', trending: '十渡蹦极漂流', tier: 'B' }
   },
   {
     id: 'l-bj-071',
@@ -996,7 +1346,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '地铁', '防御'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-071.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['2号线是北京第一条环线', '建议坐完整一圈体验', '复兴门和建国门换乘站是关键节点'],
+    bestTime: '夜间非高峰',
+    nearbyFood: [{ name: '建国门涮肉', perCapita: 80 }, { name: '复兴门百万庄小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 40, notes: '1.2万篇笔记', trending: '地铁2号线环线', tier: 'C' }
   },
   {
     id: 'l-bj-072',
@@ -1010,7 +1365,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '后海', '倒影'],
     rating: 3.9,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-072.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['后海银锭桥是最佳观赏点', '需要极好的天气才能看到西山', '冬季空气通透时概率最高'],
+    bestTime: '冬季晴天清晨',
+    nearbyFood: [{ name: '烤肉季', perCapita: 95 }, { name: '银锭桥边咖啡', perCapita: 45 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 70, notes: '15.2万篇笔记', trending: '后海银锭观山', tier: 'A' }
   },
   {
     id: 'l-bj-073',
@@ -1024,7 +1384,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '阴阳', '温差'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-073.webp',
-    linkedDestId: 330
+    linkedDestId: 330,
+    visitTips: ['阴阳道在故宫东六宫和西六宫之间', '注意观察地面砖石的颜色差异', '跟随正规导游可获得更多信息'],
+    bestTime: '午后阳光斜射时',
+    nearbyFood: [{ name: '故宫角楼咖啡', perCapita: 45 }, { name: '东华门小吃', perCapita: 30 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 70, notes: '8.2万篇笔记', trending: '故宫阴阳道', tier: 'A' }
   },
   {
     id: 'l-bj-074',
@@ -1038,7 +1403,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '地铁站', '地下'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-074.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['北京西站是大型火车站，可自由进入', '传说中的地下层不对外开放', '建议在候车大厅观察建筑结构'],
+    bestTime: '深夜候车时',
+    nearbyFood: [{ name: '西站南广场快餐', perCapita: 30 }, { name: '莲花池公园附近面馆', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 35, notes: '0.8万篇笔记', trending: '北京西站', tier: 'C' }
   },
   {
     id: 'l-bj-075',
@@ -1052,7 +1422,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '古塔', '振动'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-075.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['天宁寺塔在广安门外', '砖塔不可攀登，仅外观参观', '建议在晨曦或黄昏时拍摄'],
+    bestTime: '黄昏光线',
+    nearbyFood: [{ name: '广安门涮肉', perCapita: 70 }, { name: '天宁寺旁小面馆', perCapita: 20 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 30, notes: '0.6万篇笔记', trending: '天宁寺塔', tier: 'D' }
   },
   {
     id: 'l-bj-076',
@@ -1066,7 +1441,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '末代皇后', '花香'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-076.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['帽儿胡同免费开放，全天可进入', '婉容旧居（35号）目前不开放内部', '胡同两端有可园和文煜宅可参观'],
+    bestTime: '午后胡同漫步',
+    nearbyFood: [{ name: '帽儿胡同小吃', perCapita: 20 }, { name: '南锣鼓巷文宇奶酪', perCapita: 15 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 58, notes: '5.2万篇笔记', trending: '帽儿胡同', tier: 'B' }
   },
   {
     id: 'l-bj-077',
@@ -1080,7 +1460,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '龙脉', '城市'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-077.webp',
-    linkedDestId: 612
+    linkedDestId: 612,
+    visitTips: ['双龙布局需从高空俯瞰才能理解', '建议先了解北京城市规划史', '景山万春亭是最佳观察中轴线的地点'],
+    bestTime: '晴天登高时',
+    nearbyFood: [{ name: '景山公园附近小吃', perCapita: 25 }, { name: '北海仿膳', perCapita: 150 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 55, notes: '3.5万篇笔记', trending: '北京双龙布局', tier: 'B' }
   },
   {
     id: 'l-bj-078',
@@ -1094,7 +1479,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '帝王', '死因'],
     rating: 4.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-078.webp',
-    linkedDestId: 585
+    linkedDestId: 585,
+    visitTips: ['雍正暴亡之谜无实地可探访', '可在故宫雍正寝宫区域感受历史', '建议阅读相关历史书籍做功课'],
+    bestTime: '全年均可',
+    nearbyFood: [{ name: '故宫冰窖餐厅', perCapita: 78 }, { name: '景山前街小吃', perCapita: 25 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 48, notes: '2.5万篇笔记', trending: '雍正死因', tier: 'C' }
   },
   {
     id: 'l-bj-079',
@@ -1108,7 +1498,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '纪晓岚', '鬼灯'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-079.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['虎坊桥区域在宣武门以南', '附近有纪晓岚故居可参观', '晚间经过可感受老城区氛围'],
+    bestTime: '傍晚',
+    nearbyFood: [{ name: '虎坊桥涮肉', perCapita: 75 }, { name: '纪晓岚故居旁小吃', perCapita: 20 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 32, notes: '0.7万篇笔记', trending: '虎坊桥传说', tier: 'D' }
   },
   {
     id: 'l-bj-080',
@@ -1122,7 +1517,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '舍利', '佛教'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-080.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['灵光寺在八大处公园内，门票10元', '佛牙舍利塔需购买联票参观', '每年佛诞日（农历四月初八）有法会'],
+    bestTime: '佛诞日法会',
+    nearbyFood: [{ name: '八大处素斋', perCapita: 40 }, { name: '模式口涮肉', perCapita: 65 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 52, notes: '3.2万篇笔记', trending: '灵光寺舍利', tier: 'B' }
   },
   {
     id: 'l-bj-081',
@@ -1136,7 +1536,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '鬼门', '禁忌'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-081.webp',
-    linkedDestId: 330
+    linkedDestId: 330,
+    visitTips: ['故宫"鬼门"传说涉及多个偏殿', '故宫北门（神武门）出口区域氛围独特', '建议闭馆前最后一批进入感受'],
+    bestTime: '闭馆前1小时',
+    nearbyFood: [{ name: '神武门外小吃', perCapita: 25 }, { name: '景山西街咖啡', perCapita: 40 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 72, notes: '10.5万篇笔记', trending: '故宫鬼门', tier: 'A' }
   },
   {
     id: 'l-bj-082',
@@ -1150,7 +1555,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '爱情', '花香'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-082.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['百花深处胡同在新街口地区', '胡同内居民仍在生活，请保持安静', '陈升《北京一夜》MV取景地'],
+    bestTime: '秋季午后',
+    nearbyFood: [{ name: '新街口涮肉', perCapita: 70 }, { name: '护国寺小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 62, notes: '6.8万篇笔记', trending: '百花深处胡同', tier: 'B' }
   },
   {
     id: 'l-bj-083',
@@ -1164,7 +1574,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '天文', '客星'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-083.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['古观象台门票20元，建国门立交桥旁', '台上保存有清代天文仪器', '建议傍晚前往，可同时看日落和星空'],
+    bestTime: '傍晚日落',
+    nearbyFood: [{ name: '建国门涮肉', perCapita: 80 }, { name: '日坛公园附近小吃', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 48, notes: '2.8万篇笔记', trending: '古观象台', tier: 'C' }
   },
   {
     id: 'l-bj-084',
@@ -1178,7 +1593,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '高楼', '灯光'],
     rating: 3.6,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-084.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['国贸三期是CBD地标，商场可自由进入', '80层观景台可俯瞰北京', '建议夜间从东三环远观灯光'],
+    bestTime: '深夜远观',
+    nearbyFood: [{ name: '国贸商城美食', perCapita: 120 }, { name: '大望路小吃', perCapita: 35 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 58, notes: '8.2万篇笔记', trending: '国贸夜景', tier: 'B' }
   },
   {
     id: 'l-bj-085',
@@ -1192,7 +1612,12 @@ const LEGENDS_DATA = [
     themes: ['皇城秘史', '长廊', '彩画'],
     rating: 3.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-085.webp',
-    linkedDestId: 332
+    linkedDestId: 332,
+    visitTips: ['颐和园长廊全长728米，14000余幅彩画', '建议缓步观赏并注意画面细节', '雨天长廊内别有韵味'],
+    bestTime: '雨天或淡季',
+    nearbyFood: [{ name: '颐和园听鹂馆', perCapita: 120 }, { name: '颐和园南门小吃', perCapita: 25 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 75, notes: '22.5万篇笔记', trending: '颐和园长廊', tier: 'A' }
   },
   {
     id: 'l-bj-086',
@@ -1206,7 +1631,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '使馆区', '冷战'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-086.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['亮马河近年经过改造，沿河步道完善', '夜间河岸灯光适合散步', '传说多为老北京坊间流传'],
+    bestTime: '夜间河岸散步',
+    nearbyFood: [{ name: '亮马桥外交公寓餐厅', perCapita: 150 }, { name: '三里屯太古里美食', perCapita: 90 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 65, notes: '15.8万篇笔记', trending: '亮马河夜景', tier: 'B' }
   },
   {
     id: 'l-bj-087',
@@ -1220,7 +1650,12 @@ const LEGENDS_DATA = [
     themes: ['寺庙禁地', '班禅', '藏传佛教'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-087.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['西黄寺门票免费，需提前预约', '清净化城塔是六世班禅衣冠塔', '寺内藏传佛教文物丰富'],
+    bestTime: '秋季午后',
+    nearbyFood: [{ name: '安定门涮肉', perCapita: 70 }, { name: '鼓楼大街小吃', perCapita: 30 }],
+    difficulty: '需要预约',
+    xhsHeat: { heat: 30, notes: '0.6万篇笔记', trending: '西黄寺', tier: 'D' }
   },
   {
     id: 'l-bj-088',
@@ -1234,7 +1669,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '铸钟', '冤魂'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-088.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['铸钟胡同在鼓楼西侧', '胡同内有铸钟厂遗址标识', '建议与鼓楼、钟楼串联游览'],
+    bestTime: '深夜静谧时',
+    nearbyFood: [{ name: '鼓楼东大街小吃', perCapita: 30 }, { name: '什刹海酒吧区', perCapita: 60 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 35, notes: '0.9万篇笔记', trending: '铸钟胡同', tier: 'C' }
   },
   {
     id: 'l-bj-089',
@@ -1248,7 +1688,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '水库', '溺水'],
     rating: 4.4,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-089.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['十三陵水库有观景台可远眺', '水库周边禁止野泳', '自驾环湖路线风景优美'],
+    bestTime: '夏季傍晚',
+    nearbyFood: [{ name: '水库鱼庄', perCapita: 85 }, { name: '昌平城区小吃', perCapita: 30 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 42, notes: '1.5万篇笔记', trending: '十三陵水库', tier: 'C' }
   },
   {
     id: 'l-bj-090',
@@ -1262,7 +1707,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '溶洞', '地心'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-090.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['石花洞门票70元，距市区约50公里', '洞内常年13℃，需带外套', '全程约2公里，有导游讲解'],
+    bestTime: '夏季避暑',
+    nearbyFood: [{ name: '房山农家菜', perCapita: 55 }, { name: '石花洞景区小吃', perCapita: 25 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 45, notes: '2.2万篇笔记', trending: '石花洞溶洞', tier: 'C' }
   },
   {
     id: 'l-bj-091',
@@ -1276,7 +1726,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '鸟巢', '风水'],
     rating: 3.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-091.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['鸟巢外观免费参观，内部门票50元', '夜间灯光效果最佳', '奥林匹克公园可步行串联水立方'],
+    bestTime: '夜间灯光秀',
+    nearbyFood: [{ name: '奥体中心美食城', perCapita: 50 }, { name: '北辰西路餐厅', perCapita: 80 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 82, notes: '52.3万篇笔记', trending: '鸟巢夜景', tier: 'A' }
   },
   {
     id: 'l-bj-092',
@@ -1290,7 +1745,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '动物', '佛法'],
     rating: 3.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-092.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['大觉寺后山区域人少', '注意观察动物（松鼠、鸟类）的行为', '寺内明慧茶院可品茶休息'],
+    bestTime: '春秋清晨',
+    nearbyFood: [{ name: '大觉寺明慧茶院', perCapita: 80 }, { name: '北安河农家菜', perCapita: 50 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 25, notes: '0.4万篇笔记', trending: '大觉寺后山', tier: 'D' }
   },
   {
     id: 'l-bj-093',
@@ -1304,7 +1764,12 @@ const LEGENDS_DATA = [
     themes: ['冷战秘史', '大栅栏', '地下'],
     rating: 4.0,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-093.webp',
-    linkedDestId: 548
+    linkedDestId: 548,
+    visitTips: ['前门大栅栏商业街全天开放', '注意观察老字号店铺的地下入口', '可结合前门步行街一同游览'],
+    bestTime: '傍晚华灯初上',
+    nearbyFood: [{ name: '都一处烧麦', perCapita: 75 }, { name: '全聚德前门店', perCapita: 150 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 58, notes: '12.5万篇笔记', trending: '大栅栏老字号', tier: 'B' }
   },
   {
     id: 'l-bj-094',
@@ -1318,7 +1783,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '灵山', '佛光'],
     rating: 3.7,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-094.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['灵山海拔2303米，是北京最高峰', '登顶需要良好体力，约4-6小时', '高海拔紫外线强，做好防晒'],
+    bestTime: '夏季晴天清晨',
+    nearbyFood: [{ name: '灵山脚下农家院', perCapita: 60 }, { name: '门头沟涮肉', perCapita: 70 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 52, notes: '5.8万篇笔记', trending: '灵山佛光', tier: 'B' }
   },
   {
     id: 'l-bj-095',
@@ -1332,7 +1802,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '医院', '地下'],
     rating: 4.1,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-095.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['协和医院为正常运营医院', '老楼在东单院区', '请勿在医院内进行探险活动'],
+    bestTime: '全年均可（外观）',
+    nearbyFood: [{ name: '东单涮肉', perCapita: 75 }, { name: '王府井小吃', perCapita: 40 }],
+    difficulty: '已封闭仅外观',
+    xhsHeat: { heat: 55, notes: '3.5万篇笔记', trending: '协和医院老楼', tier: 'B' }
   },
   {
     id: 'l-bj-096',
@@ -1346,7 +1821,12 @@ const LEGENDS_DATA = [
     themes: ['胡同秘闻', '烟袋斜街', '时间'],
     rating: 4.3,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-096.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['烟袋斜街在什刹海北岸', '全长232米，各种特色小店', '建议从鼓楼方向进入'],
+    bestTime: '傍晚逛店时',
+    nearbyFood: [{ name: '烟袋斜街小吃', perCapita: 25 }, { name: '后海烤串', perCapita: 50 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 68, notes: '12.8万篇笔记', trending: '烟袋斜街', tier: 'B' }
   },
   {
     id: 'l-bj-097',
@@ -1360,7 +1840,12 @@ const LEGENDS_DATA = [
     themes: ['灵异目击', '圆明园', '幻影'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-097.webp',
-    linkedDestId: 585
+    linkedDestId: 585,
+    visitTips: ['福海在圆明园长春园内', '需乘船游览才能体验湖面氛围', '建议傍晚或晨雾时前往'],
+    bestTime: '晨雾或傍晚',
+    nearbyFood: [{ name: '圆明园附近小吃', perCapita: 25 }, { name: '清华西门外餐厅', perCapita: 50 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 50, notes: '3.0万篇笔记', trending: '圆明园福海', tier: 'B' }
   },
   {
     id: 'l-bj-098',
@@ -1374,7 +1859,12 @@ const LEGENDS_DATA = [
     themes: ['郊区古迹', '龙王', '求雨'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-098.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['黑龙潭在密云区，距市区约100公里', '雨季水量充沛时景色最佳', '步道湿滑需穿防滑鞋'],
+    bestTime: '夏季雨后',
+    nearbyFood: [{ name: '密云农家菜', perCapita: 60 }, { name: '黑龙潭景区小吃', perCapita: 25 }],
+    difficulty: '需徒步',
+    xhsHeat: { heat: 38, notes: '1.2万篇笔记', trending: '黑龙潭瀑布', tier: 'C' }
   },
   {
     id: 'l-bj-099',
@@ -1388,7 +1878,12 @@ const LEGENDS_DATA = [
     themes: ['都市传说', '地铁', '出口'],
     rating: 4.2,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-099.webp',
-    linkedDestId: 586
+    linkedDestId: 586,
+    visitTips: ['雍和宫地铁站5号线和2号线换乘', '传说中的"多余出口"在站内', '注意观察站内结构和通道'],
+    bestTime: '非高峰时段',
+    nearbyFood: [{ name: '雍和宫素面', perCapita: 25 }, { name: '五道营咖啡馆', perCapita: 45 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 40, notes: '1.0万篇笔记', trending: '雍和宫地铁', tier: 'C' }
   },
   {
     id: 'l-bj-100',
@@ -1402,7 +1897,12 @@ const LEGENDS_DATA = [
     themes: ['风水秘闻', '九门', '规矩'],
     rating: 4.5,
     image: 'https://sherconan.github.io/weekend-go/assets/legends/l-bj-100.webp',
-    linkedDestId: null
+    linkedDestId: null,
+    visitTips: ['九门对应的城门遗址分布在二环沿线', '建议骑行二环一圈寻访各门遗址', '德胜门箭楼是保存最完好的'],
+    bestTime: '春秋骑行季',
+    nearbyFood: [{ name: '德胜门涮肉', perCapita: 80 }, { name: '前门大碗茶', perCapita: 20 }],
+    difficulty: '容易到达',
+    xhsHeat: { heat: 45, notes: '2.5万篇笔记', trending: '北京九门', tier: 'C' }
   }
 ];
 
@@ -1645,6 +2145,8 @@ function renderLegends() {
         <div class="lc-badges">
           <span class="lc-badge">📍 ${l.address}</span>
           <span class="lc-badge lc-badge--rating">★ ${l.rating} 神秘指数</span>
+          ${l.difficulty ? `<span class="lc-badge lc-badge--difficulty">${l.difficulty === '容易到达' ? '🚶' : l.difficulty === '需要预约' ? '📋' : l.difficulty === '已封闭仅外观' ? '🚫' : '🥾'} ${l.difficulty}</span>` : ''}
+          ${l.xhsHeat ? `<span class="lc-badge lc-badge--heat lc-heat-${l.xhsHeat.tier.toLowerCase()}">🔥 ${l.xhsHeat.tier}</span>` : ''}
           ${l.linkedDestId ? '<span class="lc-badge lc-badge--easter">✨ 彩蛋</span>' : ''}
         </div>
       </div>
@@ -1654,6 +2156,7 @@ function renderLegends() {
           <div class="lc-story-label">📖 传说</div>
           <p class="lc-story-text">${l.storyBrief}</p>
         </div>
+        ${l.bestTime ? `<div class="lc-best-time">🕐 最佳探访: ${l.bestTime}</div>` : ''}
         <div class="lc-themes">
           ${l.themes.map(t => `<span class="lc-theme">${t}</span>`).join('')}
         </div>
@@ -1697,6 +2200,29 @@ function openLegendStory(id, e) {
     <img class="legend-modal-img" src="${legend.image}" onerror="this.style.display='none'" alt="${legend.name}">
     <p class="legend-modal-text">${legend.story}</p>
     <div class="legend-modal-themes">${legend.themes.map(t => `<span class="legend-theme-chip">${t}</span>`).join('')}</div>
+    ${legend.difficulty || legend.bestTime || legend.xhsHeat ? `
+    <div class="legend-modal-meta">
+      ${legend.difficulty ? `<div class="legend-meta-item"><span class="legend-meta-icon">${legend.difficulty === '容易到达' ? '🚶' : legend.difficulty === '需要预约' ? '📋' : legend.difficulty === '已封闭仅外观' ? '🚫' : '🥾'}</span><span class="legend-meta-label">探访难度</span><span class="legend-meta-value">${legend.difficulty}</span></div>` : ''}
+      ${legend.bestTime ? `<div class="legend-meta-item"><span class="legend-meta-icon">🕐</span><span class="legend-meta-label">最佳时间</span><span class="legend-meta-value">${legend.bestTime}</span></div>` : ''}
+      ${legend.xhsHeat ? `<div class="legend-meta-item"><span class="legend-meta-icon">🔥</span><span class="legend-meta-label">小红书热度</span><span class="legend-meta-value"><span class="legend-heat-badge legend-heat-${legend.xhsHeat.tier.toLowerCase()}">${legend.xhsHeat.tier}</span> ${legend.xhsHeat.notes} · ${legend.xhsHeat.trending}</span></div>` : ''}
+    </div>
+    ` : ''}
+    ${legend.visitTips && legend.visitTips.length ? `
+    <div class="legend-modal-section">
+      <div class="legend-section-title">📌 探访贴士</div>
+      <ul class="legend-tips-list">
+        ${legend.visitTips.map(tip => `<li>${tip}</li>`).join('')}
+      </ul>
+    </div>
+    ` : ''}
+    ${legend.nearbyFood && legend.nearbyFood.length ? `
+    <div class="legend-modal-section">
+      <div class="legend-section-title">🍜 附近美食</div>
+      <div class="legend-food-list">
+        ${legend.nearbyFood.map(f => `<div class="legend-food-item"><span class="legend-food-name">${f.name}</span><span class="legend-food-price">人均¥${f.perCapita}</span></div>`).join('')}
+      </div>
+    </div>
+    ` : ''}
     <div class="legend-modal-stamp-area">
       <button class="legend-modal-stamp-btn${isLegendStamped(legend.id) ? ' legend-modal-stamp-btn--done' : ''}"
               data-legend-id="${legend.id}"
