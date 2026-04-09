@@ -2277,6 +2277,163 @@ body.night-mode .nav-logo {
   text-transform: uppercase;
 }
 
+/* ===== Legend Filter Bar ===== */
+
+.legend-filter-bar {
+  padding: 20px 0 16px;
+}
+
+.legend-search-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.legend-search-box {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  position: relative;
+}
+
+.legend-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.legend-search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  background: rgba(99, 60, 180, 0.12);
+  border: 1px solid rgba(99, 60, 180, 0.25);
+  border-radius: 10px;
+  color: #e0d0ff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+
+.legend-search-input::placeholder {
+  color: rgba(180, 120, 255, 0.4);
+}
+
+.legend-search-input:focus {
+  border-color: rgba(180, 120, 255, 0.5);
+  background: rgba(99, 60, 180, 0.18);
+}
+
+.legend-result-counter {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(180, 120, 255, 0.6);
+  white-space: nowrap;
+}
+
+.legend-vibe-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.legend-vibe-chip {
+  padding: 6px 14px;
+  background: rgba(99, 60, 180, 0.1);
+  border: 1px solid rgba(99, 60, 180, 0.2);
+  border-radius: 20px;
+  color: rgba(200, 160, 255, 0.7);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.legend-vibe-chip:hover {
+  background: rgba(99, 60, 180, 0.2);
+  border-color: rgba(180, 120, 255, 0.4);
+  color: #d4b8ff;
+}
+
+.legend-vibe-chip.active {
+  background: rgba(140, 80, 220, 0.3);
+  border-color: rgba(180, 120, 255, 0.6);
+  color: #e0d0ff;
+  box-shadow: 0 0 12px rgba(140, 80, 220, 0.2);
+}
+
+.legend-sort-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.legend-sort-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(180, 120, 255, 0.5);
+  margin-right: 4px;
+}
+
+.legend-sort-btn {
+  padding: 5px 12px;
+  background: transparent;
+  border: 1px solid rgba(99, 60, 180, 0.15);
+  border-radius: 6px;
+  color: rgba(200, 160, 255, 0.6);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.legend-sort-btn:hover {
+  border-color: rgba(180, 120, 255, 0.35);
+  color: #d4b8ff;
+}
+
+.legend-sort-btn.active {
+  background: rgba(140, 80, 220, 0.2);
+  border-color: rgba(180, 120, 255, 0.5);
+  color: #e0d0ff;
+}
+
+.legend-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 16px;
+  color: rgba(180, 120, 255, 0.5);
+}
+
+/* Mobile adjustments for legend filters */
+@media (max-width: 640px) {
+  .legend-search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .legend-search-box {
+    max-width: none;
+  }
+  .legend-result-counter {
+    text-align: center;
+  }
+  .legend-vibe-chips {
+    gap: 6px;
+  }
+  .legend-vibe-chip {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
 .night-dest-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
