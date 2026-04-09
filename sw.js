@@ -1,11 +1,24 @@
-const CACHE_NAME = 'weekend-go-v1';
+const CACHE_NAME = 'weekend-go-v8';
 const ASSETS = [
   '/',
   '/index.html',
   '/css/styles.css',
   '/js/data.js',
+  '/js/data-extra.js',
+  '/js/data-extra2.js',
+  '/js/data-beijing-500.js',
+  '/js/data-beijing-expand.js',
+  '/js/data-beijing-hidden.js',
+  '/js/data-beijing-tales.js',
+  '/js/data-beijing-new2026.js',
+  '/js/data-shenzhen.js',
+  '/js/data-weihai.js',
+  '/js/xhs-data.js',
   '/js/visuals.js',
   '/js/images.js',
+  '/js/stamp-designs.js',
+  '/js/stamp.js',
+  '/js/legends.js',
   '/js/app.js',
   '/manifest.json'
 ];
