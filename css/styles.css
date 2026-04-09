@@ -2394,6 +2394,28 @@ body.night-mode .nav-logo {
   border: 1px solid rgba(76, 175, 80, 0.35);
 }
 
+.lc-badge--difficulty {
+  background: rgba(100, 181, 246, 0.15);
+  color: #90CAF9;
+  border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.lc-badge--heat {
+  font-weight: 700;
+  border: 1px solid rgba(255, 87, 34, 0.4);
+}
+.lc-heat-s { background: rgba(255, 23, 68, 0.25); color: #FF5252; border-color: rgba(255, 23, 68, 0.5); }
+.lc-heat-a { background: rgba(255, 152, 0, 0.2); color: #FFB74D; border-color: rgba(255, 152, 0, 0.4); }
+.lc-heat-b { background: rgba(255, 235, 59, 0.15); color: #FFF176; border-color: rgba(255, 235, 59, 0.3); }
+.lc-heat-c { background: rgba(158, 158, 158, 0.15); color: #BDBDBD; border-color: rgba(158, 158, 158, 0.3); }
+.lc-heat-d { background: rgba(120, 120, 120, 0.1); color: #9E9E9E; border-color: rgba(120, 120, 120, 0.25); }
+
+.lc-best-time {
+  font-size: 12px;
+  color: rgba(180, 120, 255, 0.7);
+  padding: 4px 0;
+}
+
 /* Body */
 .lc-body {
   background: #111828;
@@ -2497,6 +2519,71 @@ body.night-mode .nav-logo {
 .legend-modal-img { width: 100%; height: 220px; object-fit: cover; border-radius: 16px; margin-bottom: 24px; display: block; }
 .legend-modal-text { font-size: 16px; color: rgba(232,213,196,0.82); line-height: 2; margin-bottom: 20px; }
 .legend-modal-themes { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+
+/* Legend modal enriched sections */
+.legend-modal-meta {
+  display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;
+  padding: 16px; background: rgba(255,255,255,0.03); border-radius: 12px;
+  border: 1px solid rgba(180,120,255,0.12);
+}
+.legend-meta-item {
+  display: flex; align-items: center; gap: 8px; font-size: 13px;
+  flex: 1 1 auto; min-width: 180px;
+}
+.legend-meta-icon { font-size: 16px; flex-shrink: 0; }
+.legend-meta-label { color: rgba(232,213,196,0.45); white-space: nowrap; }
+.legend-meta-value { color: rgba(232,213,196,0.82); }
+
+.legend-heat-badge {
+  display: inline-block; padding: 1px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 700; letter-spacing: 1px; margin-right: 4px;
+}
+.legend-heat-s { background: rgba(255,23,68,0.25); color: #FF5252; }
+.legend-heat-a { background: rgba(255,152,0,0.2); color: #FFB74D; }
+.legend-heat-b { background: rgba(255,235,59,0.15); color: #FFF176; }
+.legend-heat-c { background: rgba(158,158,158,0.15); color: #BDBDBD; }
+.legend-heat-d { background: rgba(120,120,120,0.1); color: #9E9E9E; }
+
+.legend-modal-section {
+  margin-bottom: 20px; padding: 16px;
+  background: rgba(255,255,255,0.03); border-radius: 12px;
+  border: 1px solid rgba(180,120,255,0.1);
+}
+.legend-section-title {
+  font-size: 14px; font-weight: 700; color: #E0CFFF;
+  margin-bottom: 12px; letter-spacing: 0.5px;
+}
+.legend-tips-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.legend-tips-list li {
+  font-size: 13px; color: rgba(232,213,196,0.72); line-height: 1.6;
+  padding-left: 16px; position: relative;
+}
+.legend-tips-list li::before {
+  content: '▸'; position: absolute; left: 0;
+  color: rgba(180,120,255,0.6);
+}
+
+.legend-food-list {
+  display: flex; flex-direction: column; gap: 8px;
+}
+.legend-food-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; background: rgba(255,255,255,0.03);
+  border-radius: 8px; border: 1px solid rgba(180,120,255,0.08);
+}
+.legend-food-name { font-size: 13px; color: rgba(232,213,196,0.82); }
+.legend-food-price {
+  font-size: 12px; color: rgba(180,120,255,0.7); font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .legend-modal-meta { flex-direction: column; gap: 8px; }
+  .legend-meta-item { min-width: unset; }
+}
 
 .legend-easter-egg {
   background: rgba(76,175,80,0.08); border: 1px solid rgba(76,175,80,0.25);
