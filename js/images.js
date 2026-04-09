@@ -510,6 +510,8 @@ const DEST_IMAGES = {
 // --- Batch generated images ---
   "石家庄抱犊寨": "assets/images/dest-bj-362.webp",
   "沧州吴桥杂技": "assets/images/dest-bj-365.webp",
+// --- Batch generated images ---
+  "张家口翠云山": "assets/images/dest-bj-366.webp",
 };
 
 function getDestImage(dest) {
