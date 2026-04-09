@@ -2266,11 +2266,12 @@ body.night-mode .nav-logo {
 }
 
 .night-grid-title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  color: rgba(180, 120, 255, 0.7);
+  color: rgba(180, 120, 255, 0.6);
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .night-dest-grid {
@@ -2283,14 +2284,16 @@ body.night-mode .nav-logo {
 /* Legend card reuses dest-card structure with dark overlay */
 .legend-dest-card {
   cursor: pointer;
-  border: 1px solid rgba(99, 60, 180, 0.25) !important;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
+  background: #1a2535 !important;
+  border: 1px solid rgba(99, 60, 180, 0.35) !important;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(99,60,180,0) !important;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s !important;
 }
 
 .legend-dest-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(99, 60, 180, 0.3) !important;
-  border-color: rgba(180, 120, 255, 0.4) !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(99, 60, 180, 0.25) !important;
+  border-color: rgba(180, 120, 255, 0.55) !important;
 }
 
 .legend-cover {
@@ -2338,8 +2341,8 @@ body.night-mode .nav-logo {
 
 /* Legend card body dark style */
 .legend-card-body {
-  background: #111828 !important;
-  border-top: 1px solid rgba(99, 60, 180, 0.2);
+  background: #1a2535 !important;
+  border-top: 1px solid rgba(99, 60, 180, 0.25);
 }
 
 .legend-story-block {
@@ -2359,6 +2362,19 @@ body.night-mode .nav-logo {
   color: rgba(232, 213, 196, 0.82) !important;
   font-size: 13px !important;
   line-height: 1.7 !important;
+}
+
+/* Override all text colors inside legend card body */
+.legend-dest-card .dest-card-desc,
+.legend-dest-card .dest-card-name,
+.legend-dest-card .dest-card-subtitle,
+.legend-dest-card .dest-card-budget,
+.legend-dest-card .dest-card-source {
+  color: rgba(232, 213, 196, 0.75) !important;
+}
+
+.legend-dest-card .dest-card-footer {
+  border-top-color: rgba(99, 60, 180, 0.15) !important;
 }
 
 .legend-theme-tag {
