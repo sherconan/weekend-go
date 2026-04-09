@@ -139,6 +139,32 @@
     </div>
   </section>
 
+  <!-- 另一面 Section -->
+  <section class="otherside-section" id="otherside">
+    <div class="container">
+      <div class="otherside-header">
+        <div class="otherside-header-left">
+          <div class="otherside-moon-icon">🌑</div>
+          <div>
+            <h2 class="otherside-title">另一面</h2>
+            <p class="otherside-subtitle">都市传说 · 这座城市的另一面</p>
+          </div>
+        </div>
+        <div class="otherside-hint">点击卡片翻面</div>
+      </div>
+      <div class="otherside-grid" id="otherside-grid">
+        <!-- Rendered by legends.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Legend Story Modal -->
+  <div class="legend-modal-overlay" onclick="closeLegendModal()">
+    <div class="legend-modal" onclick="event.stopPropagation()">
+      <div id="legend-modal-content"></div>
+    </div>
+  </div>
+
   <!-- Destinations Grid -->
   <section class="destinations-section" id="destinations">
     <div class="container">
@@ -241,6 +267,7 @@
   <script src="js/stamp-designs.js"></script>
   <script src="js/stamp.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/legends.js"></script>
 
 </body>
 </html>
