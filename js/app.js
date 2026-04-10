@@ -243,7 +243,6 @@ function renderDestinations(destinations) {
     const fallbackStyle = !hasImage ? `background: ${dest.gradient};` : '';
     const imgSrc = imgPath || sceneURL || '';
     const xhsH = getXhsHeat(dest);
-    const xhsBadge = xhsH >= 70 ? `<span class="dest-card-badge badge-hot">&#x1F525; ${xhsH}</span>` : '';
 
     const visited = typeof isVisited === 'function' && isVisited(dest.id);
     const visitedClass = visited ? ' visited' : '';
@@ -252,6 +251,42 @@ function renderDestinations(destinations) {
     const stampOverlay = visited && typeof getStampDataURL === 'function'
       ? `<img class="dest-card-stamp-overlay" src="${getStampDataURL(dest)}" alt="已打卡">`
       : '';
+
+    // Transport icon mapping
+    const transportIcons = { '自驾': '\u{1F697}', '高铁': '\u{1F685}', '公交可达': '\u{1F68C}' };
+    const mainTransport = dest.transport[0] || '';
+    const transportIcon = transportIcons[mainTransport] || '\u{1F6A9}';
+
+    // Theme icon mapping
+    const themeIcons = {
+      '露营': '\u{26FA}', '古镇': '\u{1F3EF}', '爬山': '\u{26F0}', '温泉': '\u{2668}',
+      '亲子': '\u{1F476}', '美食': '\u{1F37D}', '赏花': '\u{1F338}', '历史': '\u{1F3DB}',
+      '度假': '\u{1F334}', '红叶': '\u{1F341}', '海滩': '\u{1F3D6}', '文艺': '\u{1F3A8}',
+      '徒步': '\u{1F6B6}', '拍照': '\u{1F4F7}', '滑雪': '\u{26F7}', '漂流': '\u{1F6F6}',
+      '寺庙': '\u{1F6D5}', '博物馆': '\u{1F3DB}', '购物': '\u{1F6CD}', '夜景': '\u{1F303}',
+      '宗教': '\u{1F54C}', '采摘': '\u{1F347}', '动物': '\u{1F43E}', '星空': '\u{1F320}',
+    };
+
+    // Rating stars
+    const fullStars = Math.floor(dest.rating);
+    const hasHalf = dest.rating - fullStars >= 0.3;
+    const starsHtml = Array.from({length: 5}, (_, idx) => {
+      if (idx < fullStars) return '<span class="dest-card-rating-star">\u2605</span>';
+      if (idx === fullStars && hasHalf) return '<span class="dest-card-rating-star">\u2605</span>';
+      return '<span class="dest-card-rating-star empty">\u2606</span>';
+    }).join('');
+
+    // XHS heat bar (shown if heat >= 40)
+    const heatClass = xhsH >= 70 ? 'heat-high' : xhsH >= 50 ? 'heat-mid' : 'heat-low';
+    const heatBar = xhsH >= 40 ? `
+      <div class="dest-card-heat">
+        <span class="dest-card-heat-label">\u{1F525} \u5C0F\u7EA2\u4E66</span>
+        <div class="dest-card-heat-bar"><div class="dest-card-heat-fill ${heatClass}" style="width:${xhsH}%"></div></div>
+        <span class="dest-card-heat-value">${xhsH}</span>
+      </div>` : '';
+
+    // Hot badge on cover (only for very hot)
+    const hotBadge = xhsH >= 80 ? `<span class="dest-card-badge badge-hot">\u{1F525} \u5C0F\u7EA2\u4E66\u7206\u6B3E</span>` : '';
 
     return `
     <div class="dest-card fade-up${visitedClass}" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
@@ -265,26 +300,33 @@ function renderDestinations(destinations) {
           <p class="dest-card-subtitle">${dest.subtitle}</p>
         </div>
         <div class="dest-card-badges">
-          <span class="dest-card-badge">${dest.distanceText}</span>
-          <span class="dest-card-badge">${dest.duration[0]}</span>
-          <span class="dest-card-badge badge-rating">&#9733; ${dest.rating}</span>
-          ${xhsBadge}
+          <span class="dest-card-badge">\u{1F4CD} ${dest.distanceText}</span>
+          <span class="dest-card-badge badge-rating">${starsHtml} <span class="dest-card-rating-value">${dest.rating}</span></span>
+          ${hotBadge}
         </div>
       </div>
       <div class="dest-card-body">
+        <div class="dest-card-meta">
+          <span class="dest-card-meta-item"><span class="dest-card-meta-icon">${transportIcon}</span> ${mainTransport}</span>
+          <span class="dest-card-meta-item"><span class="dest-card-meta-icon">\u{23F1}</span> ${dest.duration[0]}</span>
+          <span class="dest-card-meta-item"><span class="dest-card-meta-icon">\u{1F4B0}</span> ${dest.budgetText}</span>
+        </div>
         <div class="dest-card-desc">${dest.description}</div>
+        ${heatBar}
         <div class="dest-card-tags">
-          ${dest.transport.map(t => `<span class="dest-card-tag tag-transport">${t}</span>`).join('')}
-          ${dest.themes.map(t => `<span class="dest-card-tag tag-theme">${t}</span>`).join('')}
+          ${dest.transport.slice(1).map(t => `<span class="dest-card-tag tag-transport">${transportIcons[t] || '\u{1F6A9}'} ${t}</span>`).join('')}
+          ${dest.themes.map(t => `<span class="dest-card-tag tag-theme">${themeIcons[t] || '\u{1F3AF}'} ${t}</span>`).join('')}
         </div>
         <div class="dest-card-footer">
-          <span class="dest-card-budget">${dest.budgetText}</span>
+          <div class="dest-card-footer-left">
+            <span class="dest-card-budget">${dest.budgetText}</span>
+          </div>
           <div class="dest-card-footer-actions">
             <button class="stamp-btn${stampClass}" data-id="${dest.id}" data-name="${dest.name}" onclick="event.stopPropagation(); handleStampClick(event, +this.dataset.id, this.dataset.name)">
-              <span class="stamp-btn-icon">${visited ? '&#x2714;' : '&#x1F3AB;'}</span> ${visited ? '已打卡' : '玩过'}
+              <span class="stamp-btn-icon">${visited ? '\u2714' : '\u{1F3AB}'}</span> ${visited ? '\u5DF2\u6253\u5361' : '\u73A9\u8FC7'}
             </button>
-            <button class="dest-card-compare-btn" data-id="${dest.id}" title="加入对比" onclick="event.stopPropagation(); toggleCompare(${dest.id})">
-              <span class="compare-icon">&#x2B;</span> 对比
+            <button class="dest-card-compare-btn" data-id="${dest.id}" title="\u52A0\u5165\u5BF9\u6BD4" onclick="event.stopPropagation(); toggleCompare(${dest.id})">
+              <span class="compare-icon">&#x2B;</span> \u5BF9\u6BD4
             </button>
           </div>
         </div>
