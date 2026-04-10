@@ -2185,7 +2185,7 @@ function renderLegendCard(l, i) {
        style="transition-delay:${Math.min(i, 8) * 60}ms"
        onclick="openLegendStory('${l.id}', event)">
 
-    <div class="lc-cover">
+    <div class="lc-cover" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
       <img class="lc-cover-img" src="${l.image}"
            onerror="this.style.display='none'"
            loading="lazy" alt="${l.name}">
@@ -2322,11 +2322,12 @@ function goToLinkedDest(destId, e) {
   e && e.stopPropagation();
   closeLegendModal();
   // Find and open the destination in the main app
-  if (typeof openDetail === 'function') {
-    const dest = (window.allDestinations || []).find(d => d.id === destId);
-    if (dest) { openDetail(dest); return; }
+  if (typeof openDetail === 'function' && typeof ACTIVE_DESTINATIONS !== 'undefined') {
+    const dest = ACTIVE_DESTINATIONS.find(d => d.id === destId);
+    if (dest) { openDetail(dest.id); return; }
   }
-  // Fallback: scroll to destinations section
+  // Fallback: scroll to destinations section and flip back to day mode
+  if (_nightMode) flipWorld();
   document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
 }
 

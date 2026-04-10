@@ -757,13 +757,13 @@ function scrollToSection(id) {
 // ========== PWA Service Worker ==========
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
   });
 }
 
 // ========== Share ==========
 function shareDest(dest) {
-  const text = `${dest.name} - ${dest.subtitle}\n距离北京${dest.distanceText}，${dest.duration[0]}，人均${dest.budgetText}\n⭐ ${dest.rating} | ${dest.themes.join('·')}\n\n来自「周末去哪儿」`;
+  const text = `${dest.name} - ${dest.subtitle}\n距离${dest.distanceText}，${dest.duration[0]}，人均${dest.budgetText}\n⭐ ${dest.rating} | ${dest.themes.join('·')}\n\n来自「周末去哪儿」`;
 
   if (navigator.share) {
     navigator.share({ title: `周末去哪儿 | ${dest.name}`, text, url: window.location.href }).catch(() => {});
