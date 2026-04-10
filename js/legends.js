@@ -2188,7 +2188,7 @@ function renderLegendCard(l, i) {
     <div class="lc-cover" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
       <img class="lc-cover-img" src="${l.image}"
            onerror="this.style.display='none'"
-           loading="lazy" alt="${l.name}">
+           loading="lazy" decoding="async" width="400" height="300" alt="${l.name}">
       <div class="lc-cover-overlay"></div>
       ${stamped ? '<div class="lc-stamp-mark">☽</div>' : ''}
       <div class="lc-cover-content">
@@ -2237,6 +2237,15 @@ function renderLegendCards(legends) {
     grid.innerHTML = legends.map((l, i) => renderLegendCard(l, i)).join('');
   }
 
+  // Fade-in images on load
+  grid.querySelectorAll('.lc-cover-img').forEach(img => {
+    if (img.complete && img.naturalWidth > 0) {
+      img.style.opacity = '1';
+    } else {
+      img.addEventListener('load', () => { img.style.opacity = '1'; }, { once: true });
+    }
+  });
+
   // Make cards visible
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
@@ -2269,7 +2278,7 @@ function openLegendStory(id, e) {
     <div class="legend-modal-vibe">${legend.vibeIcon} ${legend.vibe}</div>
     <h2 class="legend-modal-name">${legend.name}</h2>
     <div class="legend-modal-addr">📍 ${legend.address}</div>
-    <img class="legend-modal-img" src="${legend.image}" onerror="this.style.display='none'" alt="${legend.name}">
+    <img class="legend-modal-img" src="${legend.image}" onerror="this.style.display='none'" loading="lazy" decoding="async" alt="${legend.name}">
     <p class="legend-modal-text">${legend.story}</p>
     <div class="legend-modal-themes">${legend.themes.map(t => `<span class="legend-theme-chip">${t}</span>`).join('')}</div>
     ${legend.difficulty || legend.bestTime || legend.xhsHeat ? `

@@ -256,7 +256,7 @@ function renderDestinations(destinations) {
     return `
     <div class="dest-card fade-up${visitedClass}" data-id="${dest.id}" style="transition-delay: ${Math.min(i, 8) * 60}ms">
       <div class="dest-card-cover" style="${fallbackStyle}">
-        ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.style.background='${dest.gradient}'">` : ''}
+        ${hasImage ? `<img class="dest-card-img" src="${imgSrc}" alt="${dest.name}" loading="lazy" decoding="async" width="400" height="280" onerror="this.remove();this.parentElement.style.background='${dest.gradient}'">` : ''}
         ${stampOverlay}
         <div class="dest-card-cover-overlay"></div>
         <div class="dest-card-cover-content">
@@ -291,6 +291,15 @@ function renderDestinations(destinations) {
       </div>
     </div>`;
   }).join('');
+
+  // Fade-in images on load
+  grid.querySelectorAll('.dest-card-img').forEach(img => {
+    if (img.complete && img.naturalWidth > 0) {
+      img.style.opacity = '1';
+    } else {
+      img.addEventListener('load', () => { img.style.opacity = '1'; }, { once: true });
+    }
+  });
 
   // Bind card click
   grid.querySelectorAll('.dest-card').forEach(card => {
