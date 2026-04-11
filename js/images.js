@@ -604,6 +604,15 @@ const LEGEND_IMAGES = {
   "西直门立交桥的风水阵": "assets/legends/l-bj-050.webp",
   "故宫冷宫区的猫": "assets/legends/l-bj-051.webp",
   "密云水库的水下村庄": "assets/legends/l-bj-053.webp",
+  "故宫太和殿的\"正大光明\"匾": "assets/legends/l-bj-054.webp",
+  "万安公墓的名人灵异": "assets/legends/l-bj-055.webp",
+  "大觉寺的千年玉兰": "assets/legends/l-bj-056.webp",
+  "375路公交车事件": "assets/legends/l-bj-057.webp",
+  "天安门城楼的\"阴阳眼\"": "assets/legends/l-bj-058.webp",
+  "颐和园苏州街的夜市幻影": "assets/legends/l-bj-059.webp",
+  "圆明园迷宫\"万花阵\"": "assets/legends/l-bj-061.webp",
+  "拈花寺的焚经异象": "assets/legends/l-bj-062.webp",
+  "永定河的\"无底洞\"": "assets/legends/l-bj-064.webp",
 };
 
 function getDestImage(dest) {
