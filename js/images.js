@@ -594,6 +594,16 @@ const LEGEND_IMAGES = {
   "西山无名碉堡群": "assets/legends/l-bj-038.webp",
   "北海白塔的镇城之宝": "assets/legends/l-bj-039.webp",
   "劲松鬼楼": "assets/legends/l-bj-040.webp",
+  "北京地下城": "assets/legends/l-bj-007.webp",
+  "银狐洞的地下暗河": "assets/legends/l-bj-042.webp",
+  "什刹海的水怪传说": "assets/legends/l-bj-043.webp",
+  "紫竹院的午夜笛声": "assets/legends/l-bj-044.webp",
+  "京西古道的马蹄窝": "assets/legends/l-bj-045.webp",
+  "永定河铁路桥的幽灵列车": "assets/legends/l-bj-046.webp",
+  "东四路口的拐弯抹角": "assets/legends/l-bj-049.webp",
+  "西直门立交桥的风水阵": "assets/legends/l-bj-050.webp",
+  "故宫冷宫区的猫": "assets/legends/l-bj-051.webp",
+  "密云水库的水下村庄": "assets/legends/l-bj-053.webp",
 };
 
 function getDestImage(dest) {
