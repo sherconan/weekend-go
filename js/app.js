@@ -86,10 +86,10 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // ========== Initialize ==========
 document.addEventListener('DOMContentLoaded', () => {
-  renderDestinations(ACTIVE_DESTINATIONS);
   bindFilterEvents();
   bindChatEvents();
   bindCompareEvents();
+  applyFilters(); // renders destinations and updates filter count accurately
   initScrollAnimations();
   updateCollectionProgress();
 });
@@ -575,7 +575,7 @@ function updateCompareBar() {
 function openCompareModal() {
   if (state.compareList.length < 2) return;
 
-  const dests = state.compareList.map(id => ACTIVE_DESTINATIONS.find(d => d.id === id));
+  const dests = state.compareList.map(id => ACTIVE_DESTINATIONS.find(d => d.id === id)).filter(Boolean);
   const modal = $('.compare-modal');
 
   const rows = [

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'weekend-go-v9';
+const CACHE_NAME = 'weekend-go-v10';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v1';
 const MAX_IMAGE_CACHE = 80; // max images to cache
 const ASSETS = [

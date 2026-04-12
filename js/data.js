@@ -939,8 +939,10 @@ function matchAIResponse(input) {
     return AI_RESPONSES.family;
   }
 
-  // 智能匹配目的地
-  const matched = DESTINATIONS.filter(d =>
+  // 智能匹配目的地 (use all active destinations if available, else fallback to base)
+  const searchPool = (typeof ACTIVE_DESTINATIONS !== 'undefined' && ACTIVE_DESTINATIONS.length > 0)
+    ? ACTIVE_DESTINATIONS : DESTINATIONS;
+  const matched = searchPool.filter(d =>
     text.includes(d.name) ||
     d.themes.some(t => text.includes(t)) ||
     d.transport.some(t => text.includes(t))
