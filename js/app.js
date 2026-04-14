@@ -483,13 +483,14 @@ function openDetail(id) {
           </div>
           <div class="modal-xhs-voices-grid">
             ${voices.map(v => `
-              <a class="xhs-voice-card" href="${v.url}" target="_blank" rel="noopener">
-                <div class="xhs-voice-cover" style="background-image: url('${v.cover}')"></div>
+              <a class="xhs-voice-card${v.cover ? '' : ' xhs-voice-card--text'}" href="${v.url}" target="_blank" rel="noopener">
+                ${v.cover ? `<div class="xhs-voice-cover" style="background-image: url('${v.cover}')"></div>` : ''}
                 <div class="xhs-voice-body">
                   <div class="xhs-voice-title">${v.title}</div>
+                  ${v.excerpt ? `<div class="xhs-voice-excerpt">${v.excerpt}</div>` : ''}
                   <div class="xhs-voice-meta">
                     <span class="xhs-voice-author">${v.author}</span>
-                    <span class="xhs-voice-likes">&#x2764; ${v.likes.toLocaleString()}</span>
+                    <span class="xhs-voice-likes">&#x2764; ${(v.likes||0).toLocaleString()}</span>
                   </div>
                 </div>
               </a>

@@ -3206,3 +3206,19 @@ body.night-mode .nav-logo {
   .modal-xhs-voices-grid { grid-template-columns: 1fr; }
   .xhs-voice-cover { aspect-ratio: 16/9; }
 }
+
+/* text-only xhs card variant */
+.xhs-voice-card--text {
+  background: linear-gradient(135deg, #FFE4E8 0%, #FFF0F3 100%);
+  min-height: 140px;
+}
+.xhs-voice-excerpt {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #6b6b70;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 2px 0;
+}
