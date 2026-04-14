@@ -1,7 +1,7 @@
 // 小红书真实笔记（Top 3 按点赞数排序）
 // 数据抓取自 xiaohongshu-skills/xhs-explore
 // 字段：title 标题 / author 作者 / likes 点赞数 / cover 本地封面 / url 跳转链接
-// 入口数量：92
+// 入口数量：97
 
 const XHS_VOICES = {
   "北京环球影城": [
@@ -2118,6 +2118,121 @@ const XHS_VOICES = {
       "likes": 3083,
       "cover": "assets/xhs/021f27fd-3.webp",
       "url": "https://www.xiaohongshu.com/explore/67f14ba70000000009017e1e?xsec_token=ABQ8DZWcbuVqFI6eYCUbHkZYWLSqGKvxuQfe1toQJdiGU=&xsec_source=pc_feed"
+    }
+  ],
+  "香山红叶隧道": [
+    {
+      "title": "一个人爬完香山后做的攻略",
+      "author": "一半明白一半混乱",
+      "likes": 3485,
+      "cover": "assets/xhs/8e7c25b0-1.webp",
+      "url": "https://www.xiaohongshu.com/explore/681546d5000000002301d49f?xsec_token=AB_uck4n-ixPRCCPVwkQsflaXYVhXgAk18shcKNCBjY8w=&xsec_source=pc_feed"
+    },
+    {
+      "title": "香山公园赏红叶最佳路线🍁 值得收藏！",
+      "author": "趣行地图：历史寻踪",
+      "likes": 1857,
+      "cover": "assets/xhs/8e7c25b0-2.webp",
+      "url": "https://www.xiaohongshu.com/explore/6718d590000000001b02ef1d?xsec_token=ABwrxVpClvdv6ljWA6m1itscVP0Bk0pt-xvb6qo_iNDC4=&xsec_source=pc_feed"
+    },
+    {
+      "title": "香山最缓路线，老幼友好。",
+      "author": "没有如果",
+      "likes": 1357,
+      "cover": "assets/xhs/8e7c25b0-3.webp",
+      "url": "https://www.xiaohongshu.com/explore/66de558a0000000012013cff?xsec_token=ABxUCAgDx6uOI39q_PRquEbgEQ_dcKkygdnE2G23nHznw=&xsec_source=pc_feed"
+    }
+  ],
+  "THE BOX朝外": [
+    {
+      "title": "🛍️北京朝阳四巨头逛街攻略（含路线价格等",
+      "author": "985小猫咪🐈",
+      "likes": 8678,
+      "cover": "assets/xhs/THEBOX-3982a683-1.webp",
+      "url": "https://www.xiaohongshu.com/explore/6791f490000000002901affb?xsec_token=ABIThxxtuoSdv_TH3uKBw3QvhCbrFniYcf08KA1x7b--o=&xsec_source=pc_feed"
+    },
+    {
+      "title": "北京城漫步（45）-友谊商店",
+      "author": "风过耳",
+      "likes": 2850,
+      "cover": "assets/xhs/THEBOX-3982a683-2.webp",
+      "url": "https://www.xiaohongshu.com/explore/685cc4bf00000000200187fe?xsec_token=ABh-kXt5T-jIHZsHVbSeS9uN_R-G0anYVQ_Spop2ovLOw=&xsec_source=pc_feed"
+    },
+    {
+      "title": "北京朝外逛街攻略⛄️友谊商店好逛出片！📷",
+      "author": "牛奶派",
+      "likes": 742,
+      "cover": "assets/xhs/THEBOX-3982a683-3.webp",
+      "url": "https://www.xiaohongshu.com/explore/695886e1000000001e00cdd2?xsec_token=ABAyUMWpyKq6H68ZZbF9CyLITPPkCAEv4BV0ITGgP5Lhk=&xsec_source=pc_feed"
+    }
+  ],
+  "南澳西冲": [
+    {
+      "title": "《国家地理》没有骗我，深圳绝美海岸线攻略",
+      "author": "凯叔去哪儿",
+      "likes": 7833,
+      "cover": "assets/xhs/699640ae-1.webp",
+      "url": "https://www.xiaohongshu.com/explore/68fac800000000000703b63f?xsec_token=AB7T7sFMWxybL32hrbW9u1xJvWMgTWeuuoSZTbBfARk_Y=&xsec_source=pc_feed"
+    },
+    {
+      "title": "深圳天文台一日游！看这一篇详细攻略就够了！",
+      "author": "🎀Miss Coco",
+      "likes": 1877,
+      "cover": "assets/xhs/699640ae-2.webp",
+      "url": "https://www.xiaohongshu.com/explore/696f08bc000000000b009782?xsec_token=ABcmVAsXZ7f_ATMjX2DViklHt4taOZVYnVCxBMYQyMwd4=&xsec_source=pc_feed"
+    },
+    {
+      "title": "🌿 东西涌海岸徒步！梦幻海域+出片率99%",
+      "author": "赵小赵",
+      "likes": 1363,
+      "cover": "assets/xhs/699640ae-3.webp",
+      "url": "https://www.xiaohongshu.com/explore/67d58ee2000000000903ab32?xsec_token=AB5SE7TUFStF_tGebf0c9z1k-oxJK0Xh-qeRnO0g2dFbc=&xsec_source=pc_feed"
+    }
+  ],
+  "曲阜三孔": [
+    {
+      "title": "迄今旅游体验最差的地方",
+      "author": "席二仙",
+      "likes": 4393,
+      "cover": "assets/xhs/4c0641a0-1.webp",
+      "url": "https://www.xiaohongshu.com/explore/69b1085e000000001d012b35?xsec_token=AB0ILbkHWSCqemPPnQwh95SzYV6coMBCsYhE1QNmTOy2o=&xsec_source=pc_feed"
+    },
+    {
+      "title": "曲阜一日游攻略",
+      "author": "小傻瓜",
+      "likes": 1116,
+      "cover": "assets/xhs/4c0641a0-2.webp",
+      "url": "https://www.xiaohongshu.com/explore/68fcf29f00000000050030f1?xsec_token=ABsbaJXV22r-QEIR5G3EHor1o9MtDKF9Ki5TlDzJtJq0o=&xsec_source=pc_feed"
+    },
+    {
+      "title": "曲阜一日游看这一篇就够了，很多雷小心！",
+      "author": "可乐",
+      "likes": 1115,
+      "cover": "assets/xhs/4c0641a0-3.webp",
+      "url": "https://www.xiaohongshu.com/explore/689f44d1000000001c031bd6?xsec_token=ABTqM06UqyZTWb43zOkEg349h_9HXH0t7WnVeUwAshdE4=&xsec_source=pc_feed"
+    }
+  ],
+  "壶口瀑布": [
+    {
+      "title": "✅【带娃自驾游】壶口瀑布最省力攻略🔥",
+      "author": "知闲子",
+      "likes": 2893,
+      "cover": "assets/xhs/db9a5f74-1.webp",
+      "url": "https://www.xiaohongshu.com/explore/688dafc2000000002500c916?xsec_token=AB6aYQlLkOPkXf1l0rpQNhcCios9KBF8_0Cz_dfJhFrek=&xsec_source=pc_feed"
+    },
+    {
+      "title": "壶口瀑布，我选择了山西侧的。",
+      "author": "JasonYuen",
+      "likes": 1067,
+      "cover": "assets/xhs/db9a5f74-2.webp",
+      "url": "https://www.xiaohongshu.com/explore/6808c20c000000001c01d345?xsec_token=ABnabqyLfZ1mDA47-C5v4EdlSmhCx0fpnTJdbf-4PVT4A=&xsec_source=pc_feed"
+    },
+    {
+      "title": "壶口瀑布震撼，自驾游可以停这",
+      "author": "叫天田不应",
+      "likes": 914,
+      "cover": "assets/xhs/db9a5f74-3.webp",
+      "url": "https://www.xiaohongshu.com/explore/6992b295000000000c034f1a?xsec_token=AB-uauF3gp8ebnae91IV5DJiV3tDt-8Z5QPSh1BDYQYSI=&xsec_source=pc_feed"
     }
   ]
 };
