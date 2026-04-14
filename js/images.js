@@ -731,6 +731,11 @@ const DEST_IMAGES = {
   "Red1卡丁车": "assets/images/dest-bj-668.webp",
   "亮马河国际风情水岸": "assets/images/dest-bj-669.webp",
   "梅州客家围龙屋": "assets/images/dest-bj-538.webp",
+  "百花深处胡同": "assets/images/dest-baihua-hutong.webp",
+  "菜市口刑场旧址": "assets/images/dest-caishikou-xingchang.webp",
+  "段祺瑞执政府旧址": "assets/images/dest-duanqirui-mansion.webp",
+  "北京地下城": "assets/images/dest-beijing-underground-city.webp",
+  "景山崇祯自缢处": "assets/images/dest-jingshan-chongzhen.webp",
 };
 
 // Legend image mapping: legend name → legend image file
