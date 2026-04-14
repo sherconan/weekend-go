@@ -470,6 +470,33 @@ function openDetail(id) {
           <span class="modal-highlight-season">${dest.bestSeason}</span>
         </div>
       </div>
+
+      ${(() => {
+        const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name) : [];
+        if (!voices.length) return '';
+        return `
+        <div class="modal-xhs-voices">
+          <div class="modal-xhs-voices-header">
+            <span class="modal-xhs-voices-icon">&#x1F4D6;</span>
+            <h4>来自小红书的真实分享</h4>
+            <span class="modal-xhs-voices-count">TOP ${voices.length}</span>
+          </div>
+          <div class="modal-xhs-voices-grid">
+            ${voices.map(v => `
+              <a class="xhs-voice-card" href="${v.url}" target="_blank" rel="noopener">
+                <div class="xhs-voice-cover" style="background-image: url('${v.cover}')"></div>
+                <div class="xhs-voice-body">
+                  <div class="xhs-voice-title">${v.title}</div>
+                  <div class="xhs-voice-meta">
+                    <span class="xhs-voice-author">${v.author}</span>
+                    <span class="xhs-voice-likes">&#x2764; ${v.likes.toLocaleString()}</span>
+                  </div>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>`;
+      })()}
     </div>
 
     <div class="modal-cta-new">
