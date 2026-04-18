@@ -81,14 +81,19 @@ def generate_one(item, idx, total):
         print(f'[{idx}/{total}] ERR input: {r}', flush=True)
         return False
 
-    time.sleep(0.5)
+    time.sleep(2.5)
 
-    # Click send
-    r2 = chrome_js('''(function() {
-        var btn = document.querySelector('button[data-testid="send-button"]');
-        if (btn) { btn.click(); return 'OK'; }
-        return 'ERR:no_btn';
-    })()''')
+    # Click send — poll up to 10s for send button to render (React re-render after input)
+    r2 = 'ERR:no_btn'
+    for _ in range(10):
+        r2 = chrome_js('''(function() {
+            var btn = document.querySelector('button[data-testid="send-button"]');
+            if (btn && !btn.disabled) { btn.click(); return 'OK'; }
+            return btn ? 'ERR:btn_disabled' : 'ERR:no_btn';
+        })()''')
+        if r2 == 'OK':
+            break
+        time.sleep(1)
     if r2 != 'OK':
         print(f'[{idx}/{total}] ERR send: {r2}', flush=True)
         return False
