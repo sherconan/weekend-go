@@ -34,13 +34,38 @@
           <button class="city-btn active" data-city="beijing" onclick="switchCity('beijing')">&#x1F3EF; 北京</button>
           <button class="city-btn" data-city="shenzhen" onclick="switchCity('shenzhen')">&#x1F3D6; 深圳</button>
           <button class="city-btn" data-city="weihai" onclick="switchCity('weihai')">&#x1F30A; 威海</button>
+          <button class="city-btn" data-city="suzhou" onclick="switchCity('suzhou')">&#x1F3EE; 苏州</button>
         </div>
+        <button class="nav-btn nav-btn--icon" onclick="openSearch()" aria-label="搜索" title="搜索目的地 (⌘K)">🔍</button>
         <button class="nav-btn" onclick="scrollToSection('filters')">筛选</button>
         <button class="nav-btn nav-btn--primary" onclick="openChat()">我想聊一聊</button>
         <button class="world-flip-btn" id="world-flip-btn" onclick="flipWorld()">🌑 另一面</button>
       </div>
     </div>
   </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay" onclick="if(event.target===this)closeSearch()">
+    <div class="search-panel" role="dialog" aria-label="搜索目的地">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="search" class="search-input" id="search-input"
+               placeholder="搜目的地、传说、美食、主题…"
+               autocomplete="off" spellcheck="false"
+               oninput="performSearch(this.value)"
+               onkeydown="handleSearchKey(event)">
+        <button class="search-close" onclick="closeSearch()" aria-label="关闭">✕</button>
+      </div>
+      <div class="search-meta" id="search-meta">在北京 · 共 0 个结果</div>
+      <div class="search-results" id="search-results"></div>
+      <div class="search-hot" id="search-hot"></div>
+      <div class="search-hints">
+        <span><kbd>↑↓</kbd> 切换</span>
+        <span><kbd>Enter</kbd> 打开</span>
+        <span><kbd>Esc</kbd> 关闭</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Hero -->
   <section class="hero">
@@ -312,6 +337,7 @@
   <script src="js/data-beijing-new2026.js"></script>
   <script src="js/data-shenzhen.js"></script>
   <script src="js/data-weihai.js"></script>
+  <script src="js/data-suzhou.js" onerror="this.remove()"></script>
   <script src="js/xhs-data.js"></script>
   <script src="js/xhs-voices.js"></script>
   <script src="js/visuals.js"></script>

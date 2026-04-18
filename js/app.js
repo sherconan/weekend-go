@@ -33,6 +33,7 @@ const CITY_DATA = {
   beijing: { build: buildBeijingDestinations, label: '北京周边游', badge: '\u{1F331} 北京周边游 \u00B7 2026 春季版', desc: '从北京出发，500公里范围内的精选目的地。' },
   shenzhen: { build: () => typeof DESTINATIONS_SZ !== 'undefined' ? [...DESTINATIONS_SZ] : [], label: '深圳周边游', badge: '\u{1F3D6} 深圳周边游 \u00B7 2026 春季版', desc: '从深圳出发，海滩、美食、古镇，应有尽有。' },
   weihai: { build: () => typeof DESTINATIONS_WH !== 'undefined' ? [...DESTINATIONS_WH] : [], label: '威海周边游', badge: '\u{1F30A} 威海周边游 \u00B7 2026 春季版', desc: '从威海出发，海鲜、海景、韩国风情。' },
+  suzhou: { build: () => typeof DESTINATIONS_SU !== 'undefined' ? [...DESTINATIONS_SU] : [], label: '苏州周边游', badge: '\u{1F3EE} 苏州周边游 \u00B7 2026 春季版', desc: '从苏州出发，江南园林、水乡古镇、太湖烟雨。' },
 };
 
 let currentCity = 'beijing';
@@ -866,3 +867,227 @@ function showToast(msg) {
   requestAnimationFrame(() => toast.classList.add('show'));
   setTimeout(() => { toast.classList.remove('show'); setTimeout(() => toast.remove(), 300); }, 2500);
 }
+
+// ========== Global Search (⌘K / 🔍) ==========
+const SEARCH_HOT_WORDS = {
+  beijing: ['故宫', '长城', '环球影城', '颐和园', '古北水镇', '798', '雍和宫', '锁龙井'],
+  shenzhen: ['大梅沙', '世界之窗', '东部华侨城', '深圳湾', '甘坑', '大鹏所城', '红树林'],
+  weihai: ['刘公岛', '那香海', '威海湾', '成山头', '国际海水浴场'],
+  suzhou: ['拙政园', '平江路', '山塘街', '虎丘', '同里古镇', '金鸡湖']
+};
+
+let _searchAllIndex = null;
+let _searchHighlighted = -1;
+
+function buildSearchIndex() {
+  if (_searchAllIndex) return _searchAllIndex;
+  const all = [];
+  Object.keys(CITY_DATA).forEach(cityKey => {
+    let list = [];
+    try { list = CITY_DATA[cityKey].build() || []; } catch (_) {}
+    list.forEach(d => {
+      const themes = Array.isArray(d.themes) ? d.themes : [];
+      const tags = Array.isArray(d.tags) ? d.tags : [];
+      all.push({
+        type: 'dest',
+        id: d.id,
+        city: cityKey,
+        cityLabel: CITY_DATA[cityKey].label,
+        name: d.name || '',
+        subtitle: d.subtitle || '',
+        image: (typeof getImage === 'function' ? getImage(d) : '') || d.image || '',
+        searchText: [
+          d.name, d.subtitle,
+          themes.join(' '),
+          tags.join(' '),
+          d.distanceText,
+          d.budgetText
+        ].filter(Boolean).join(' ').toLowerCase()
+      });
+    });
+  });
+  if (typeof LEGENDS_DATA !== 'undefined' && Array.isArray(LEGENDS_DATA)) {
+    LEGENDS_DATA.forEach(l => {
+      all.push({
+        type: 'legend',
+        id: l.id,
+        city: 'beijing',
+        cityLabel: '另一面·北京',
+        name: l.name || '',
+        subtitle: l.subtitle || l.vibe || '',
+        image: (typeof getLegendImage === 'function' ? getLegendImage(l.id) : '') || '',
+        vibe: l.vibe || '',
+        vibeIcon: l.vibeIcon || '🌙',
+        searchText: [
+          l.name, l.subtitle, l.vibe, l.storyBrief,
+          Array.isArray(l.tags) ? l.tags.join(' ') : ''
+        ].filter(Boolean).join(' ').toLowerCase()
+      });
+    });
+  }
+  _searchAllIndex = all;
+  return all;
+}
+
+function _highlight(text, q) {
+  if (!q) return text;
+  const safe = String(text).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+  const qLower = q.toLowerCase();
+  const tLower = safe.toLowerCase();
+  const idx = tLower.indexOf(qLower);
+  if (idx < 0) return safe;
+  return safe.slice(0, idx) + '<mark>' + safe.slice(idx, idx + q.length) + '</mark>' + safe.slice(idx + q.length);
+}
+
+function openSearch() {
+  buildSearchIndex();
+  const overlay = document.getElementById('search-overlay');
+  if (!overlay) return;
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  const input = document.getElementById('search-input');
+  if (input) {
+    input.value = '';
+    setTimeout(() => input.focus(), 40);
+  }
+  renderHotWords();
+  performSearch('');
+}
+
+function closeSearch() {
+  const overlay = document.getElementById('search-overlay');
+  if (!overlay) return;
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+  _searchHighlighted = -1;
+}
+
+function renderHotWords() {
+  const hotEl = document.getElementById('search-hot');
+  if (!hotEl) return;
+  const words = SEARCH_HOT_WORDS[currentCity] || SEARCH_HOT_WORDS.beijing;
+  hotEl.innerHTML = `
+    <div class="search-hot-title">热门搜索 · ${CITY_DATA[currentCity]?.label || '全部'}</div>
+    ${words.map(w => `<span class="search-hot-chip" onclick="document.getElementById('search-input').value='${w}'; performSearch('${w}');">${w}</span>`).join('')}
+  `;
+}
+
+function performSearch(q) {
+  const resultsEl = document.getElementById('search-results');
+  const metaEl = document.getElementById('search-meta');
+  const hotEl = document.getElementById('search-hot');
+  if (!resultsEl) return;
+  const index = buildSearchIndex();
+  const qTrim = (q || '').trim().toLowerCase();
+
+  if (!qTrim) {
+    resultsEl.innerHTML = '';
+    if (metaEl) metaEl.textContent = `在 ${CITY_DATA[currentCity]?.label || '全部城市'} · 输入关键词开始搜索`;
+    if (hotEl) hotEl.style.display = 'block';
+    _searchHighlighted = -1;
+    return;
+  }
+
+  if (hotEl) hotEl.style.display = 'none';
+
+  const scored = [];
+  for (const item of index) {
+    const name = (item.name || '').toLowerCase();
+    let score = 0;
+    if (name === qTrim) score = 100;
+    else if (name.startsWith(qTrim)) score = 80;
+    else if (name.includes(qTrim)) score = 60;
+    else if (item.searchText.includes(qTrim)) score = 30;
+    else continue;
+    if (item.city === currentCity) score += 10;
+    if (item.type === 'legend' && !isOtherSide()) score -= 2;
+    scored.push({ ...item, score });
+  }
+  scored.sort((a, b) => b.score - a.score);
+  const top = scored.slice(0, 30);
+
+  if (metaEl) metaEl.textContent = `共 ${scored.length} 个结果${scored.length > 30 ? '（显示前 30）' : ''}`;
+
+  if (top.length === 0) {
+    resultsEl.innerHTML = `
+      <div class="search-empty">
+        <div class="search-empty-title">没找到「${q}」相关的结果</div>
+        <div style="font-size:12px">换个关键词试试，或看看下面的热门词</div>
+      </div>`;
+    if (hotEl) hotEl.style.display = 'block';
+    return;
+  }
+
+  resultsEl.innerHTML = top.map((it, i) => {
+    const cityTag = it.type === 'legend'
+      ? `<span class="search-result-tag search-result-tag--legend">${it.vibeIcon} 另一面</span>`
+      : `<span class="search-result-tag search-result-tag--city">${CITY_DATA[it.city]?.label.replace('周边游','') || it.city}</span>`;
+    const thumb = it.image
+      ? `<img class="search-result-thumb" src="${it.image}" loading="lazy" alt="${it.name}">`
+      : `<div class="search-result-thumb" style="display:flex;align-items:center;justify-content:center;font-size:22px">${it.vibeIcon || '📍'}</div>`;
+    return `
+      <div class="search-result-item" data-idx="${i}" onclick="jumpToResult(${i})">
+        ${thumb}
+        <div class="search-result-body">
+          <div class="search-result-title">${cityTag}${_highlight(it.name, q)}</div>
+          <div class="search-result-sub">${_highlight(it.subtitle, q)}</div>
+        </div>
+      </div>`;
+  }).join('');
+  _searchResultsCache = top;
+  _searchHighlighted = -1;
+}
+
+function isOtherSide() {
+  return document.body.classList.contains('world-flipped') || document.body.classList.contains('otherside-active');
+}
+
+let _searchResultsCache = [];
+function jumpToResult(idx) {
+  const it = _searchResultsCache[idx];
+  if (!it) return;
+  closeSearch();
+  if (it.type === 'legend') {
+    if (currentCity !== 'beijing') switchCity('beijing');
+    if (!isOtherSide() && typeof flipWorld === 'function') flipWorld();
+    setTimeout(() => {
+      if (typeof openLegendDetail === 'function') openLegendDetail(it.id);
+      else {
+        const card = document.querySelector(`[data-legend-id="${it.id}"]`);
+        if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, isOtherSide() ? 100 : 700);
+    return;
+  }
+  if (it.city !== currentCity) switchCity(it.city);
+  setTimeout(() => openDetail(it.id), 150);
+}
+
+function handleSearchKey(e) {
+  const items = document.querySelectorAll('.search-result-item');
+  if (e.key === 'Escape') { closeSearch(); return; }
+  if (e.key === 'Enter') {
+    const idx = _searchHighlighted >= 0 ? _searchHighlighted : 0;
+    if (_searchResultsCache[idx]) jumpToResult(idx);
+    return;
+  }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (items.length === 0) return;
+    _searchHighlighted = e.key === 'ArrowDown'
+      ? Math.min(items.length - 1, _searchHighlighted + 1)
+      : Math.max(0, _searchHighlighted - 1);
+    items.forEach((el, i) => el.classList.toggle('highlighted', i === _searchHighlighted));
+    items[_searchHighlighted]?.scrollIntoView({ block: 'nearest' });
+  }
+}
+
+document.addEventListener('keydown', (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    openSearch();
+  } else if (e.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+    e.preventDefault();
+    openSearch();
+  }
+});
