@@ -1,0 +1,362 @@
+[
+  {
+    "file": "dest-su-1000.webp",
+    "name": "拙政园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou zhuozheng garden, 中国四大名园之首, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1001.webp",
+    "name": "留园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou liuyuan garden, 以建筑精巧称冠江南, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1002.webp",
+    "name": "网师园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou wangshi garden, 以精巧著称的小园典范, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1003.webp",
+    "name": "狮子林",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou lion grove garden, 以假山闻名的禅意园林, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1004.webp",
+    "name": "沧浪亭",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou canglang pavilion garden, 苏州现存最古老的园林, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1005.webp",
+    "name": "艺圃",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou yipu garden, 小巷深处的小众园林, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1006.webp",
+    "name": "耦园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou ouyuan garden, 夫妻双双把家还的爱情园林, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1007.webp",
+    "name": "怡园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou yiyuan garden, 集诸园之长的晚清佳作, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1008.webp",
+    "name": "可园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou keyuan garden, 沧浪亭对面的清代书院, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1009.webp",
+    "name": "环秀山庄",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou huanxiu shanzhuang garden, 江南假山第一作, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1010.webp",
+    "name": "退思园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of tongli tuisi garden, 同里古镇中的贴水园, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林, 古镇. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1011.webp",
+    "name": "同里古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of tongli ancient water town, 江南威尼斯，园林水乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1012.webp",
+    "name": "周庄古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of zhouzhuang ancient water town, 中国第一水乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1013.webp",
+    "name": "甪直古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of luzhi ancient water town, 桥都水乡，最原生态, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1014.webp",
+    "name": "木渎古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of mudu ancient town suzhou, 乾隆下江南驻跸地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1015.webp",
+    "name": "锦溪古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of jinxi ancient water town, 中国民间博物馆之乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1016.webp",
+    "name": "千灯古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of qiandeng ancient water town, 顾炎武故乡，昆曲发源地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1017.webp",
+    "name": "震泽古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of zhenze ancient town suzhou, 太湖畔的蚕丝古镇, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1018.webp",
+    "name": "平江路历史街区",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of pingjiang road suzhou, 千年水巷，姑苏烟火, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1019.webp",
+    "name": "七里山塘",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shantang street suzhou, 白居易修建的千年古街, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 历史, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1020.webp",
+    "name": "观前街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of guanqian street suzhou, 姑苏商脉，苏州最繁华, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1021.webp",
+    "name": "十全街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shiquan street suzhou, 文艺小资慢时光, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1022.webp",
+    "name": "葑门横街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of fengmen hengjie market suzhou, 苏州人早餐天堂, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1023.webp",
+    "name": "双塔市集",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shuangta market suzhou, 复古网红菜场, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1024.webp",
+    "name": "寒山寺",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of hanshan temple suzhou, 姑苏城外寒山寺, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 寺庙. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1025.webp",
+    "name": "西园寺",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xiyuan temple suzhou, 苏州最清净的寺院, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 寺庙, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1026.webp",
+    "name": "北寺塔（报恩寺塔）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of beisi pagoda suzhou, 苏州最高古塔, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 寺庙. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1027.webp",
+    "name": "玄妙观",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xuanmiao temple suzhou, 观前街里的宋代道观, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 寺庙. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1028.webp",
+    "name": "苏州博物馆（本馆）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou museum ieoh ming pei, 贝聿铭封山之作, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1029.webp",
+    "name": "苏州博物馆西馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou museum west branch, 2021 年新馆，展品更丰富, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1030.webp",
+    "name": "苏州丝绸博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou silk museum, 4000 年丝绸文化全解读, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1031.webp",
+    "name": "中国昆曲博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of kunqu opera museum suzhou, 平江路里的戏曲圣殿, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1032.webp",
+    "name": "苏州碑刻博物馆（文庙）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou wen miao stele museum, 宋代四大碑石所在地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1033.webp",
+    "name": "苏州御窑金砖博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou imperial kiln brick museum, 紫禁城地砖的产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1034.webp",
+    "name": "虎丘",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of tiger hill suzhou huqiu, 吴中第一名胜, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1035.webp",
+    "name": "天平山",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of tianping mountain suzhou red maple, 江南赏枫最佳地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 赏花. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1036.webp",
+    "name": "穹窿山",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of qionglong mountain suzhou, 苏州第一名山, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1037.webp",
+    "name": "灵岩山",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of lingyan mountain suzhou, 西施遗迹 + 山顶寺庙, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 寺庙. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1038.webp",
+    "name": "石湖",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shi lake suzhou, 范成大诗意山水, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 赏花. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1039.webp",
+    "name": "上方山森林公园",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shangfang mountain park suzhou, 免费动物园 + 爬山, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1040.webp",
+    "name": "阳山",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yangshan mountain suzhou sunset, 免费登山看日落, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1041.webp",
+    "name": "渔洋山（太湖观景）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yuyang mountain taihu, 太湖最佳观景台 + 缆车, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1042.webp",
+    "name": "金鸡湖景区",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of jinji lake suzhou, 中国最大城市湖泊公园, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1043.webp",
+    "name": "东方之门（大秋裤）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of gate of the orient suzhou, 苏州工业园区地标, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1044.webp",
+    "name": "诚品书店（苏州店）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of eslite bookstore suzhou, 大陆首家诚品，72 阶网红楼梯, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1045.webp",
+    "name": "李公堤",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of ligongdi suzhou, 湖景美食酒吧街, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1046.webp",
+    "name": "月光码头",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of moonlight wharf suzhou, 欧式建筑 + 免费水上巴士起点, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1047.webp",
+    "name": "苏州之眼摩天轮",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou eye ferris wheel, 128 米俯瞰金鸡湖, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1048.webp",
+    "name": "圆融天幕街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yuanrong tianmu street suzhou, 500 米 LED 天幕, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1049.webp",
+    "name": "太湖西山（金庭镇）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xishan island taihu, 太湖最大岛 + 碧螺春产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1050.webp",
+    "name": "太湖东山（洞庭东山）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of dongshan peninsula taihu, 雕花楼 + 白沙枇杷产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1051.webp",
+    "name": "阳澄湖（莲花岛）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yangcheng lake hairy crab, 中国大闸蟹之乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1052.webp",
+    "name": "沙家浜（常熟）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shajiabang reed marsh, 红色湿地 + 芦苇荡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1053.webp",
+    "name": "常熟虞山（尚湖）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of changshu yushan shanghu, 姜尚钓鱼的湖 + 古城墙, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1054.webp",
+    "name": "斜塘老街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xietang old street suzhou, 园区仿古夜游街, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1055.webp",
+    "name": "树山村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shushan village suzhou, 阳山下的网红小村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 赏花. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1056.webp",
+    "name": "明月湾古村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of mingyuewan ancient village taihu, 太湖中的 2500 年古村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1057.webp",
+    "name": "黎里古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of lili ancient town suzhou, 最原生态的江南水乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1058.webp",
+    "name": "诚品生活苏州",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of eslite life suzhou, 生活美学综合体, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  },
+  {
+    "file": "dest-su-1059.webp",
+    "name": "苏州松鹤楼（观前街总店）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of songhelou restaurant suzhou, 260 年苏帮菜老字号, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark."
+  }
+]
