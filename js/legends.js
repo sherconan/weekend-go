@@ -2279,7 +2279,7 @@ function renderLegendCards(legends) {
 // Render legend cards — fully independent lc-* classes, zero dest-card dependency
 let _legendsRendered = false;
 function renderLegends() {
-  if (_legendsRendered) return;
+  // Always re-render so city switches update the list
   _legendsRendered = true;
   filterLegends();
 }
@@ -2431,8 +2431,10 @@ function updateFlipBtnVisibility() {
 // Re-render legends when city changes (called from switchCity)
 function onCityChangedForLegends() {
   updateFlipBtnVisibility();
-  if (typeof renderLegends === 'function') {
-    try { renderLegends(); } catch (_) {}
+  // Reset vibe filter to '全部' (vibes differ across cities) and re-filter
+  if (typeof _legendActiveVibe !== 'undefined') _legendActiveVibe = '全部';
+  if (typeof filterLegends === 'function') {
+    try { filterLegends(); } catch (_) {}
   }
 }
 
