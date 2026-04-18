@@ -1906,6 +1906,23 @@ const LEGENDS_DATA = [
   }
 ];
 
+// Inject city field for existing BJ legends (multi-city support)
+LEGENDS_DATA.forEach(l => { if (!l.city) l.city = 'beijing'; });
+
+// Merge multi-city legends (Shenzhen / Weihai / Suzhou)
+if (typeof LEGENDS_SZ !== 'undefined' && Array.isArray(LEGENDS_SZ)) {
+  LEGENDS_SZ.forEach(l => { if (!l.city) l.city = 'shenzhen'; });
+  LEGENDS_DATA.push(...LEGENDS_SZ);
+}
+if (typeof LEGENDS_WH !== 'undefined' && Array.isArray(LEGENDS_WH)) {
+  LEGENDS_WH.forEach(l => { if (!l.city) l.city = 'weihai'; });
+  LEGENDS_DATA.push(...LEGENDS_WH);
+}
+if (typeof LEGENDS_SU !== 'undefined' && Array.isArray(LEGENDS_SU)) {
+  LEGENDS_SU.forEach(l => { if (!l.city) l.city = 'suzhou'; });
+  LEGENDS_DATA.push(...LEGENDS_SU);
+}
+
 // ========== Legend Stamp System ==========
 const LEGEND_STAMP_KEY = 'weekendgo_legend_stamps';
 
@@ -2136,7 +2153,10 @@ function setLegendSort(btn) {
 
 function getFilteredLegends() {
   const searchVal = (document.getElementById('legend-search-input')?.value || '').trim().toLowerCase();
+  const activeCity = (typeof currentCity !== 'undefined' && currentCity) ? currentCity : 'beijing';
   let results = LEGENDS_DATA.filter(l => {
+    // City filter (only show legends of active city; fall back to beijing)
+    if ((l.city || 'beijing') !== activeCity) return false;
     // Vibe filter
     if (_legendActiveVibe !== '全部' && l.vibe !== _legendActiveVibe) return false;
     // Search filter
@@ -2392,12 +2412,42 @@ function randomLegend() {
   openLegendStory(LEGENDS_DATA[idx].id, { stopPropagation: () => {} });
 }
 
+// Cities that have legends data available
+function getCitiesWithLegends() {
+  const cities = new Set();
+  LEGENDS_DATA.forEach(l => cities.add(l.city || 'beijing'));
+  return cities;
+}
+
+// Show/hide the 另一面 button based on whether current city has legends
+function updateFlipBtnVisibility() {
+  const btn = document.getElementById('world-flip-btn');
+  if (!btn) return;
+  const city = (typeof currentCity !== 'undefined' && currentCity) ? currentCity : 'beijing';
+  const available = getCitiesWithLegends().has(city);
+  btn.style.display = available ? '' : 'none';
+}
+
+// Re-render legends when city changes (called from switchCity)
+function onCityChangedForLegends() {
+  updateFlipBtnVisibility();
+  if (typeof renderLegends === 'function') {
+    try { renderLegends(); } catch (_) {}
+  }
+}
+
+// Hook into switchCity so 另一面 updates on city change
+if (typeof switchCity === 'function') {
+  const _origSwitchCity = switchCity;
+  window.switchCity = function(city) {
+    _origSwitchCity(city);
+    onCityChangedForLegends();
+  };
+}
+
 // Init
 function initLegends() {
-  // Hide flip btn for non-BJ default city
-  const currentCity = window.currentCity || 'beijing';
-  const btn = document.getElementById('world-flip-btn');
-  if (btn && currentCity !== 'beijing') btn.style.display = 'none';
+  updateFlipBtnVisibility();
 }
 
 document.addEventListener('DOMContentLoaded', initLegends);
