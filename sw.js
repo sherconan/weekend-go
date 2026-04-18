@@ -1,5 +1,5 @@
-const CACHE_NAME = 'weekend-go-v10';
-const IMAGE_CACHE_NAME = 'weekend-go-images-v1';
+const CACHE_NAME = 'weekend-go-v12';
+const IMAGE_CACHE_NAME = 'weekend-go-images-v2';
 const MAX_IMAGE_CACHE = 80; // max images to cache
 const ASSETS = [
   '/',
@@ -15,7 +15,12 @@ const ASSETS = [
   '/js/data-beijing-new2026.js',
   '/js/data-shenzhen.js',
   '/js/data-weihai.js',
+  '/js/data-suzhou.js',
+  '/js/data-legends-shenzhen.js',
+  '/js/data-legends-weihai.js',
+  '/js/data-legends-suzhou.js',
   '/js/xhs-data.js',
+  '/js/xhs-voices.js',
   '/js/visuals.js',
   '/js/images.js',
   '/js/stamp-designs.js',
