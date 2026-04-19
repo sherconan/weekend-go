@@ -906,6 +906,11 @@ function buildSearchIndex() {
         name: d.name || '',
         subtitle: d.subtitle || '',
         image: (typeof getImage === 'function' ? getImage(d) : '') || d.image || '',
+        themes,
+        tags,
+        rating: typeof d.rating === 'number' ? d.rating / 5 : 0,
+        distance: d.distance,
+        budget: d.budget,
         searchText: [
           d.name, d.subtitle,
           themes.join(' '),
@@ -982,39 +987,85 @@ function renderHotWords() {
   `;
 }
 
+// Active theme facet filter (set by clicking facet chip)
+let _searchActiveFacet = null;
+
 function performSearch(q) {
   const resultsEl = document.getElementById('search-results');
   const metaEl = document.getElementById('search-meta');
   const hotEl = document.getElementById('search-hot');
+  const facetEl = document.getElementById('search-facets');
   if (!resultsEl) return;
   const index = buildSearchIndex();
   const qTrim = (q || '').trim().toLowerCase();
 
-  if (!qTrim) {
+  if (!qTrim && !_searchActiveFacet) {
     resultsEl.innerHTML = '';
-    if (metaEl) metaEl.textContent = `在 ${CITY_DATA[currentCity]?.label || '全部城市'} · 输入关键词开始搜索`;
+    if (metaEl) metaEl.textContent = `在 ${CITY_DATA[currentCity]?.label || '全部城市'} · 输入关键词或点击主题筛选`;
     if (hotEl) hotEl.style.display = 'block';
+    if (facetEl) facetEl.innerHTML = '';
     _searchHighlighted = -1;
     return;
   }
 
   if (hotEl) hotEl.style.display = 'none';
 
+  // Multi-token AND search — split by whitespace, all tokens must hit somewhere
+  const tokens = qTrim ? qTrim.split(/\s+/).filter(Boolean) : [];
+
   const scored = [];
+  const themeCounts = {}; // facet distribution
   for (const item of index) {
     const name = (item.name || '').toLowerCase();
-    let score = 0;
-    if (name === qTrim) score = 100;
-    else if (name.startsWith(qTrim)) score = 80;
-    else if (name.includes(qTrim)) score = 60;
-    else if (item.searchText.includes(qTrim)) score = 30;
-    else continue;
-    if (item.city === currentCity) score += 10;
-    if (item.type === 'legend' && !isOtherSide()) score -= 2;
-    scored.push({ ...item, score });
+    const allText = item.searchText || '';
+
+    // Token matching: every token must appear in name or searchText
+    let tokenPass = true;
+    let baseScore = 0;
+    for (const tk of tokens) {
+      if (name === tk) baseScore += 100;
+      else if (name.startsWith(tk)) baseScore += 40;
+      else if (name.includes(tk)) baseScore += 25;
+      else if (allText.includes(tk)) baseScore += 10;
+      else { tokenPass = false; break; }
+    }
+    if (!tokenPass) continue;
+    // If no tokens but facet filter active, accept all
+    if (tokens.length === 0) baseScore = 1;
+
+    // Facet filter (theme)
+    if (_searchActiveFacet) {
+      const itemThemes = item.themes || [];
+      if (!itemThemes.includes(_searchActiveFacet)) continue;
+      baseScore += 5;
+    }
+
+    if (item.city === currentCity) baseScore += 10;
+    if (item.type === 'legend' && !isOtherSide()) baseScore -= 2;
+    if (item.rating) baseScore += item.rating;
+
+    // Count themes for facet chips (only on unfiltered)
+    for (const t of item.themes || []) {
+      themeCounts[t] = (themeCounts[t] || 0) + 1;
+    }
+
+    scored.push({ ...item, score: baseScore });
   }
   scored.sort((a, b) => b.score - a.score);
   const top = scored.slice(0, 30);
+
+  // Render facet chips (top 8 themes by count)
+  if (facetEl) {
+    const chips = Object.entries(themeCounts)
+      .sort((a,b) => b[1] - a[1])
+      .slice(0, 8);
+    facetEl.innerHTML = chips.map(([t, n]) => `
+      <span class="search-facet-chip ${_searchActiveFacet === t ? 'active' : ''}" onclick="toggleFacet('${t.replace(/'/g,'\\\'')}')">${t}<span class="search-facet-count">${n}</span></span>
+    `).join('');
+    if (_searchActiveFacet) {
+      facetEl.insertAdjacentHTML('afterbegin', `<span class="search-facet-chip active" onclick="clearFacet()">清除 ✕</span>`);
+    }
+  }
 
   if (metaEl) metaEl.textContent = `共 ${scored.length} 个结果${scored.length > 30 ? '（显示前 30）' : ''}`;
 
@@ -1050,6 +1101,17 @@ function performSearch(q) {
 
 function isOtherSide() {
   return document.body.classList.contains('world-flipped') || document.body.classList.contains('otherside-active');
+}
+
+function toggleFacet(theme) {
+  _searchActiveFacet = _searchActiveFacet === theme ? null : theme;
+  const inp = document.getElementById('search-input');
+  performSearch(inp ? inp.value : '');
+}
+function clearFacet() {
+  _searchActiveFacet = null;
+  const inp = document.getElementById('search-input');
+  performSearch(inp ? inp.value : '');
 }
 
 let _searchResultsCache = [];
