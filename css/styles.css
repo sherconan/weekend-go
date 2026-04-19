@@ -3390,6 +3390,17 @@ body.night-mode .nav-logo {
 }
 .search-empty-title { font-size: 14px; margin-bottom: 4px; }
 
+.search-advanced { background: #fafbfc; }
+.search-adv-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; font-size: 12px; }
+.search-adv-lbl { color: #667085; min-width: 48px; flex-shrink: 0; }
+.search-adv-val { color: #FF7043; font-weight: 700; min-width: 52px; text-align: right; }
+.search-adv-chips { display: flex; flex-wrap: wrap; gap: 5px; flex: 1; }
+.search-adv-chip { padding: 3px 10px; background: #fff; border: 1px solid #E5E7EB; border-radius: 11px; font-size: 11px; cursor: pointer; user-select: none; transition: all 0.12s; }
+.search-adv-chip:hover { background: #f3f5f7; }
+.search-adv-chip.active { background: #FF7043; color: #fff; border-color: #F4511E; }
+.search-adv-sel { flex: 1; padding: 5px 8px; border: 1px solid #E5E7EB; border-radius: 8px; font-size: 12px; background: #fff; }
+#search-adv-toggle:hover { color: #FF7043; }
+
 .search-facets {
   display: flex;
   flex-wrap: wrap;

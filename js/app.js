@@ -1025,6 +1025,104 @@ function renderHotWords() {
 
 // Active theme facet filter (set by clicking facet chip)
 let _searchActiveFacet = null;
+// Advanced filter state
+const _searchAdv = {
+  maxDist: 500,
+  budgets: new Set(),    // empty = no filter
+  cities: new Set(),     // empty = no filter
+  sort: 'relevance'
+};
+
+function _searchReApply() {
+  const inp = document.getElementById('search-input');
+  if (inp) performSearch(inp.value);
+}
+
+function setSearchDistance(val) {
+  _searchAdv.maxDist = parseInt(val, 10);
+  const valEl = document.getElementById('search-dist-val');
+  if (valEl) valEl.textContent = _searchAdv.maxDist + 'km';
+  _searchReApply();
+}
+function toggleSearchBudget(budget) {
+  if (_searchAdv.budgets.has(budget)) _searchAdv.budgets.delete(budget);
+  else _searchAdv.budgets.add(budget);
+  _searchRenderAdvChips();
+  _searchReApply();
+}
+function toggleSearchCity(city) {
+  if (_searchAdv.cities.has(city)) _searchAdv.cities.delete(city);
+  else _searchAdv.cities.add(city);
+  _searchRenderAdvChips();
+  _searchReApply();
+}
+function setSearchSort(val) {
+  _searchAdv.sort = val;
+  _searchReApply();
+}
+
+function _searchGetCities() {
+  try { return (0, eval)('typeof CITIES !== "undefined" ? CITIES : []'); }
+  catch { return []; }
+}
+
+function _searchRenderAdvChips() {
+  const bBox = document.getElementById('search-budget-chips');
+  if (bBox) {
+    const tiers = ['200以下', '200-500', '500-1000', '1000以上'];
+    bBox.innerHTML = tiers.map(t => `<span class="search-adv-chip ${_searchAdv.budgets.has(t)?'active':''}" onclick="toggleSearchBudget('${t}')">¥${t}</span>`).join('');
+  }
+  const cBox = document.getElementById('search-city-chips');
+  if (cBox) {
+    const cs = _searchGetCities();
+    cBox.innerHTML = cs.map(c => `<span class="search-adv-chip ${_searchAdv.cities.has(c.key)?'active':''}" onclick="toggleSearchCity('${c.key}')">${c.emoji} ${c.name}</span>`).join('');
+  }
+}
+
+// Expose to window so inline onclick works across scripts
+window.toggleSearchBudget = toggleSearchBudget;
+window.toggleSearchCity = toggleSearchCity;
+window.setSearchDistance = setSearchDistance;
+window.setSearchSort = setSearchSort;
+
+function initSearchAdvanced() {
+  _searchRenderAdvChips();
+  const distInp = document.getElementById('search-dist');
+  if (distInp) distInp.addEventListener('input', () => setSearchDistance(distInp.value));
+  const sortSel = document.getElementById('search-sort');
+  if (sortSel) sortSel.addEventListener('change', () => setSearchSort(sortSel.value));
+  const toggleBtn = document.getElementById('search-adv-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const panel = document.getElementById('search-advanced');
+      const caret = document.getElementById('search-adv-caret');
+      const show = panel.style.display === 'none';
+      panel.style.display = show ? 'block' : 'none';
+      if (caret) caret.textContent = show ? '▲' : '▼';
+    });
+  }
+}
+// Wait for CITIES to load + search DOM — try multiple triggers
+function _searchAdvInitSafe() {
+  try {
+    initSearchAdvanced();
+    window.__searchAdvInited = true;
+  } catch (e) {
+    window.__searchAdvErr = String(e && e.stack || e);
+  }
+}
+if (document.readyState === 'complete') {
+  _searchAdvInitSafe();
+} else {
+  window.addEventListener('DOMContentLoaded', _searchAdvInitSafe);
+  window.addEventListener('load', _searchAdvInitSafe);
+}
+// Re-render chips whenever search overlay opens
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.nav-btn--icon') || e.target.classList.contains('search-hot-chip')) {
+    setTimeout(_searchAdvInitSafe, 10);
+  }
+});
 
 function performSearch(q) {
   const resultsEl = document.getElementById('search-results');
@@ -1076,7 +1174,21 @@ function performSearch(q) {
       baseScore += 5;
     }
 
-    if (item.city === currentCity) baseScore += 10;
+    // Advanced: distance filter
+    if (typeof item.distance === 'number' && item.distance > _searchAdv.maxDist) continue;
+
+    // Advanced: budget multi-select (empty set = no filter)
+    if (_searchAdv.budgets.size && item.type !== 'legend') {
+      if (!_searchAdv.budgets.has(item.budget)) continue;
+    }
+
+    // Advanced: city multi-select (empty set = use currentCity bonus only)
+    if (_searchAdv.cities.size) {
+      if (!_searchAdv.cities.has(item.city)) continue;
+    } else {
+      if (item.city === currentCity) baseScore += 10;
+    }
+
     if (item.type === 'legend' && !isOtherSide()) baseScore -= 2;
     if (item.rating) baseScore += item.rating;
 
@@ -1087,7 +1199,17 @@ function performSearch(q) {
 
     scored.push({ ...item, score: baseScore });
   }
-  scored.sort((a, b) => b.score - a.score);
+  // Sort by selected mode
+  if (_searchAdv.sort === 'rating') {
+    scored.sort((a,b) => (b.rating||0) - (a.rating||0) || b.score - a.score);
+  } else if (_searchAdv.sort === 'distance') {
+    scored.sort((a,b) => (a.distance||999) - (b.distance||999));
+  } else if (_searchAdv.sort === 'budget') {
+    const BUDGET_ORDER = ['200以下','200-500','500-1000','1000以上'];
+    scored.sort((a,b) => BUDGET_ORDER.indexOf(a.budget||'200-500') - BUDGET_ORDER.indexOf(b.budget||'200-500'));
+  } else {
+    scored.sort((a, b) => b.score - a.score);
+  }
   const top = scored.slice(0, 30);
 
   // Render facet chips (top 8 themes by count)
