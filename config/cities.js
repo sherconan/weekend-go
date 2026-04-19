@@ -53,6 +53,18 @@ const CITIES = [
     desc: '从苏州出发，江南园林、水乡古镇、太湖烟雨。',
     hotWords: ['拙政园', '平江路', '山塘街', '虎丘', '同里古镇', '金鸡湖'],
     hasLegends: true
+  },
+  {
+    key: 'tianjin',
+    name: '天津',
+    emoji: '🥐',
+    color: '#E91E63',
+    origin: { lat: 39.1040, lng: 117.2010 }, // 天津站
+    maxRange: 500,
+    badge: '🥐 天津周边游 · 2026 春季版',
+    desc: '从天津出发，洋楼、相声、狗不理，海河一日游到京冀晋辽。',
+    hotWords: ['五大道', '古文化街', '意式风情区', '天津之眼', '独乐寺', '盘山', '瓷房子', '海河'],
+    hasLegends: false
   }
 ];
 
