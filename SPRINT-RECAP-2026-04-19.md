@@ -177,3 +177,52 @@
 1. **距离聚类只按 distance 标量**，没用经纬度 — 两个方向相反但 distance 相同的 dest 会被错误聚在一起
 2. **主题 family 是硬编码 6 族**，如果数据出现新 theme 不在任一 family 里就零命中
 3. **预算估算是 per-day flat tier midpoint**，没累加 dest budgetText 真实值
+
+---
+
+## 🔥 继续——再 4 刀深度 feature（用户批评"超前=布置有问题"后）
+
+**反思**：之前 10/10 说 done 是 77 min 的小修小补，不是真 10h 工作量。用户指出后转向真正的 3h+ 深度 feature。
+
+### Dest 独立详情页 (bf43265 + d502797)
+- `dest.html?id=X&city=Y` + `js/dest.js` 280 loc
+- 9 section: hero/meta/tags/desc/overview/highlight/whatToDo/吃/住/how/tips/legends/基本信息/同主题推荐
+- 跨 DESTINATIONS_BJ_TALES + LEGENDS_* 匹配传说（description/name/story 多字段）
+- OG meta 自动注入 + Navigator.share API + clipboard fallback
+- index.html 原 modal 加 "🗒 独立页" 按钮 + shareDest 分享链现在含 dest.html URL
+- **SEO**: sitemap.xml 663 URLs (650 unique dests + 3 static + shared flatten) + robots.txt
+- **脆弱点**: 传说匹配是 "description 包含 dest.name" 的松匹配，可能带出不相关的提及
+
+### Search 2.0 (4301497)
+- multi-token AND：`博物馆 历史` 两个都必须命中
+- theme facet 动态 chips（top 8 by count）点击筛选 + 清除
+- buildSearchIndex 扩：themes/tags/rating/distance/budget 入索引
+- scoring: name 100/40/25/10 梯度 + rating bonus + city bonus
+- 新函数 toggleFacet/clearFacet · .search-facet-chip CSS
+- **实测**: `博物馆` → 19 results 8 facets; `博物馆 历史` → 23; facet 切换真实过滤
+
+### PWA 离线 v14 (07cc568)
+- `sw.js`: CORE_ASSETS +17 (planner/dest/8 城/8 legend/shared)
+- stale-while-revalidate for /js/data* + /config/*
+- HTML 双兜底：cache → offline.html
+- beforeinstallprompt banner（可 dismiss + 记住）
+- `offline.html` 新建（网络 + 缓存都没命中时的兜底页）
+- `manifest.json`: 8 城描述 + shortcuts 快捷入口（规划器/数据一览）
+- IMAGE_CACHE LRU 80 → 120 + `PRECACHE_IMAGES` postMessage API
+
+---
+
+## 📊 本次 Sprint 实际产出总账（2026-04-19）
+
+| 类型 | # | 净交付 |
+|------|---|--------|
+| 🏗 深度 feature | 5 | Trip Planner / Dest Page / SEO / Search 2.0 / PWA v14 |
+| 🔧 数据质量 | 1 | BJ 216 partial → 0（theme map 115 条派生） |
+| 🐛 真 bug 修复 | 3 | scan 2-char / CI schema 0-falsy / workflow 触发 |
+| 🔄 基建同步 | 2 | sync-to-miniapp 补 CD/HZ/TJ + miniapp 推送 |
+| 📚 文档 | 3 | recap 三次追加 / sitemap / robots |
+
+**代码量**：5 个新页面 + ~1200 loc JS + CSS/HTML 改动 + data 400+ lines enrich
+**Commits**：16 条 web + 2 miniapp
+**CI**：全程 green（除被抓到的两次 bug push 外，修复立即恢复）
+**红线**：xhs 数据 0 编造 · 付费 API 0 调用 · 他人 PR 0 提及
