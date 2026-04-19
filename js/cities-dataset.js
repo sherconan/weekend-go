@@ -25,7 +25,9 @@ const CITY_SOURCE_VARS = {
   weihai:   ['DESTINATIONS_WH'],
   suzhou:   ['DESTINATIONS_SU'],
   tianjin:  ['DESTINATIONS_TJ'],
-  qingdao:  ['DESTINATIONS_QD']
+  qingdao:  ['DESTINATIONS_QD'],
+  chengdu:  ['DESTINATIONS_CD'],
+  hangzhou: ['DESTINATIONS_HZ']
 };
 
 function _mergeSources(varNames) {
