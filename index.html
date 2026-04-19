@@ -76,9 +76,9 @@
         <button class="btn btn--primary" onclick="scrollToSection('filters')">
           &#x1F50D; 开始筛选
         </button>
-        <button class="btn btn--secondary" onclick="openChat()">
-          &#x1F4AC; 我想聊一聊
-        </button>
+        <a class="btn btn--secondary" href="planner.html" style="background:linear-gradient(135deg,#FF7043,#F4511E);color:white;border:none;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:4px;">
+          &#x1F5FA; 一键生成行程
+        </a>
       </div>
       <div class="stats-bar" id="stats-bar">
         <div class="stat-item">
@@ -317,6 +317,8 @@
   <footer class="site-footer" style="padding:40px 24px; text-align:center; color:#888; font-size:13px; margin-top:60px; border-top:1px solid #eee">
     <div>周末去哪儿 · 8 城 · 800+ 目的地 · 230+ 传说</div>
     <div style="margin-top:10px">
+      <a href="planner.html" style="color:#FF7043; text-decoration:none; margin:0 8px; font-weight:700">🗺 行程规划器</a>
+      <span style="color:#ccc">·</span>
       <a href="stats.html" style="color:#4CAF50; text-decoration:none; margin:0 8px">📊 数据一览</a>
       <span style="color:#ccc">·</span>
       <a href="#" onclick="document.querySelector('.nav-btn--icon')?.click();return false;" style="color:#4CAF50; text-decoration:none; margin:0 8px">🔍 搜索</a>

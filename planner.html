@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>周末去哪儿 · 行程规划器</title>
+  <meta name="description" content="一键生成 1-3 日周末行程：主题匹配、距离聚类、预算过滤——800+ 目的地智能组合">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🗺%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink-900:#101828; --ink-700:#344054; --ink-500:#667085; --ink-300:#98A2B3;
+      --bg:#FAFBF8; --surface:#FFFFFF; --surface-2:#F6F8F4;
+      --brand:#4CAF50; --brand-dark:#43a047;
+      --action:#FF7043; --action-dark:#F4511E;
+      --gold:#FFC107; --border:#E8ECF0;
+      --shadow-sm:0 1px 3px rgba(16,24,40,.05);
+      --shadow-md:0 4px 12px rgba(16,24,40,.08);
+      --shadow-lg:0 12px 32px rgba(16,24,40,.12);
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:"PingFang SC","Inter",-apple-system,sans-serif;background:var(--bg);color:var(--ink-900);line-height:1.5;-webkit-font-smoothing:antialiased;}
+    .container{max-width:880px;margin:0 auto;padding:24px 20px 80px;}
+    header{text-align:center;margin-bottom:28px;}
+    header h1{font-size:30px;font-weight:800;letter-spacing:-.5px;margin-bottom:6px;}
+    header p{font-size:15px;color:var(--ink-500);}
+    .back-link{display:inline-flex;align-items:center;gap:4px;margin-bottom:12px;padding:6px 14px;background:var(--surface);border:1px solid var(--border);color:var(--ink-700);text-decoration:none;border-radius:20px;font-size:13px;}
+    .back-link:hover{background:var(--surface-2);}
+
+    /* Form steps */
+    .form-card{background:var(--surface);border-radius:20px;padding:24px;box-shadow:var(--shadow-md);margin-bottom:16px;}
+    .step-label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--ink-700);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;}
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--brand);color:white;border-radius:50%;font-size:12px;font-weight:700;}
+    .chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+    .chip{padding:8px 16px;background:var(--surface-2);border:1.5px solid transparent;border-radius:20px;font-size:14px;cursor:pointer;transition:all .15s;user-select:none;}
+    .chip:hover{background:#EDF1EA;}
+    .chip.active{background:var(--brand);color:white;border-color:var(--brand-dark);box-shadow:0 2px 6px rgba(76,175,80,.3);}
+    .city-chip{font-size:15px;padding:10px 18px;}
+    .days-row{display:flex;gap:12px;}
+    .day-btn{flex:1;padding:14px;background:var(--surface-2);border:1.5px solid transparent;border-radius:14px;cursor:pointer;text-align:center;transition:all .15s;}
+    .day-btn.active{background:var(--action);color:white;border-color:var(--action-dark);}
+    .day-btn-num{font-size:24px;font-weight:800;}
+    .day-btn-lbl{font-size:12px;opacity:.8;}
+    .budget-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+    .budget-btn{padding:12px 8px;background:var(--surface-2);border:1.5px solid transparent;border-radius:12px;cursor:pointer;text-align:center;font-size:13px;transition:all .15s;}
+    .budget-btn.active{background:var(--gold);color:var(--ink-900);border-color:#F0A500;font-weight:700;}
+    .gen-btn{width:100%;padding:16px;background:linear-gradient(135deg,var(--action) 0%,var(--action-dark) 100%);color:white;border:none;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:var(--shadow-md);transition:transform .15s,box-shadow .15s;}
+    .gen-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-lg);}
+    .gen-btn:active{transform:translateY(0);}
+    .gen-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+
+    /* Result panel */
+    #result{display:none;margin-top:28px;}
+    .plan-summary{background:linear-gradient(135deg,#FFF8E1 0%,#FFF3E0 100%);border-radius:18px;padding:20px;margin-bottom:20px;border-left:4px solid var(--action);}
+    .plan-summary-title{font-size:18px;font-weight:700;margin-bottom:6px;}
+    .plan-summary-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--ink-700);}
+    .plan-summary-meta span{display:inline-flex;align-items:center;gap:4px;}
+    .day-card{background:var(--surface);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:var(--shadow-sm);}
+    .day-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;padding-bottom:12px;border-bottom:1px dashed var(--border);}
+    .day-title{font-size:18px;font-weight:700;}
+    .day-meta{font-size:12px;color:var(--ink-500);}
+    .dest-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--surface-2);}
+    .dest-item:last-child{border-bottom:none;}
+    .dest-time{flex-shrink:0;width:56px;font-size:12px;font-weight:700;color:var(--action);padding-top:2px;}
+    .dest-body{flex:1;min-width:0;}
+    .dest-name{font-size:15px;font-weight:700;margin-bottom:3px;}
+    .dest-sub{font-size:13px;color:var(--ink-500);margin-bottom:6px;}
+    .dest-tags{display:flex;flex-wrap:wrap;gap:4px;font-size:11px;}
+    .dest-tag{padding:1px 8px;background:var(--surface-2);border-radius:10px;color:var(--ink-700);}
+    .dest-meta{display:flex;gap:12px;font-size:11px;color:var(--ink-500);margin-top:4px;}
+    .action-row{display:flex;gap:10px;margin-top:20px;}
+    .action-btn{flex:1;padding:12px;background:var(--surface);border:1.5px solid var(--border);border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;transition:all .15s;color:var(--ink-700);}
+    .action-btn:hover{background:var(--surface-2);border-color:var(--ink-300);}
+    .action-btn.primary{background:var(--brand);color:white;border-color:var(--brand-dark);}
+    .action-btn.primary:hover{background:var(--brand-dark);}
+
+    /* History */
+    .history-section{margin-top:36px;}
+    .history-section h2{font-size:16px;font-weight:700;color:var(--ink-700);margin-bottom:12px;padding-left:10px;border-left:3px solid var(--action);}
+    .history-empty{text-align:center;padding:24px;color:var(--ink-500);font-size:13px;background:var(--surface);border-radius:14px;border:1px dashed var(--border);}
+    .history-item{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--surface);border-radius:12px;margin-bottom:8px;cursor:pointer;transition:all .15s;box-shadow:var(--shadow-sm);}
+    .history-item:hover{background:var(--surface-2);transform:translateX(2px);}
+    .history-item-main{flex:1;min-width:0;}
+    .history-item-title{font-weight:700;font-size:14px;margin-bottom:2px;}
+    .history-item-sub{font-size:12px;color:var(--ink-500);}
+    .history-item-actions{display:flex;gap:6px;}
+    .history-del{background:none;border:none;color:var(--ink-300);cursor:pointer;padding:4px 8px;font-size:18px;line-height:1;}
+    .history-del:hover{color:#E53935;}
+
+    /* Toast */
+    #toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--ink-900);color:white;padding:12px 24px;border-radius:24px;font-size:14px;opacity:0;transition:opacity .2s,transform .2s;z-index:100;pointer-events:none;}
+    #toast.show{opacity:.92;transform:translateX(-50%) translateY(0);}
+
+    /* Responsive */
+    @media (max-width:600px) {
+      header h1{font-size:24px;}
+      .form-card{padding:18px;}
+      .budget-row{grid-template-columns:repeat(2,1fr);}
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back-link" href="/weekend-go/">← 回主站</a>
+    <h1>🗺 行程规划器</h1>
+    <p>800+ 目的地 · 智能组合你的周末</p>
+  </header>
+
+  <!-- Form -->
+  <div class="form-card">
+    <div class="step-label"><span class="step-num">1</span>选一座城市</div>
+    <div class="chip-row" id="city-chips"></div>
+  </div>
+
+  <div class="form-card">
+    <div class="step-label"><span class="step-num">2</span>几天？</div>
+    <div class="days-row" id="days-row">
+      <div class="day-btn" data-days="1"><div class="day-btn-num">1</div><div class="day-btn-lbl">Day Trip</div></div>
+      <div class="day-btn active" data-days="2"><div class="day-btn-num">2</div><div class="day-btn-lbl">周末</div></div>
+      <div class="day-btn" data-days="3"><div class="day-btn-num">3</div><div class="day-btn-lbl">小长假</div></div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="step-label"><span class="step-num">3</span>最想体验什么？<span style="color:var(--ink-500);font-weight:400;text-transform:none;letter-spacing:0;">（可多选）</span></div>
+    <div class="chip-row" id="theme-chips"></div>
+  </div>
+
+  <div class="form-card">
+    <div class="step-label"><span class="step-num">4</span>预算档位</div>
+    <div class="budget-row" id="budget-row">
+      <div class="budget-btn" data-budget="200以下">¥200以下</div>
+      <div class="budget-btn active" data-budget="200-500">¥200-500</div>
+      <div class="budget-btn" data-budget="500-1000">¥500-1000</div>
+      <div class="budget-btn" data-budget="1000以上">¥1000+</div>
+    </div>
+  </div>
+
+  <button class="gen-btn" id="gen-btn">✨ 生成行程</button>
+
+  <!-- Result -->
+  <div id="result"></div>
+
+  <!-- History -->
+  <div class="history-section">
+    <h2>📚 我的行程历史</h2>
+    <div id="history"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<!-- Data files (same order as index.html) -->
+<script src="config/cities.js?v=planner"></script>
+<script src="js/data.js"></script>
+<script src="js/data-extra.js"></script>
+<script src="js/data-extra2.js"></script>
+<script src="js/data-beijing-500.js"></script>
+<script src="js/data-beijing-expand.js"></script>
+<script src="js/data-beijing-hidden.js"></script>
+<script src="js/data-beijing-tales.js"></script>
+<script src="js/data-beijing-new2026.js"></script>
+<script src="js/data-shenzhen.js"></script>
+<script src="js/data-weihai.js"></script>
+<script src="js/data-suzhou.js" onerror="this.remove()"></script>
+<script src="js/data-tianjin.js" onerror="this.remove()"></script>
+<script src="js/data-qingdao.js" onerror="this.remove()"></script>
+<script src="js/data-chengdu.js" onerror="this.remove()"></script>
+<script src="js/data-hangzhou.js" onerror="this.remove()"></script>
+<script src="js/data-shared-cross-city.js?v=planner" onerror="this.remove()"></script>
+<script src="js/planner.js?v=1"></script>
+</body>
+</html>
