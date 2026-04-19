@@ -2444,11 +2444,34 @@ function updateFlipBtnVisibility() {
   btn.style.display = available ? '' : 'none';
 }
 
+// Dynamically render vibe chips for current city based on LEGENDS_DATA
+function renderVibeChips() {
+  const container = document.getElementById('legend-vibe-chips');
+  if (!container) return;
+  const city = (typeof currentCity !== 'undefined' && currentCity) ? currentCity : 'beijing';
+  // Collect unique vibes from current city's legends, preserve emoji from vibeIcon
+  const vibeMap = new Map();
+  for (const l of LEGENDS_DATA) {
+    if ((l.city || 'beijing') !== city) continue;
+    const v = l.vibe;
+    if (!v) continue;
+    if (!vibeMap.has(v)) vibeMap.set(v, { icon: l.vibeIcon || '🌙', count: 0 });
+    vibeMap.get(v).count++;
+  }
+  // Sort by count desc
+  const sorted = [...vibeMap.entries()].sort((a, b) => b[1].count - a[1].count);
+  container.innerHTML = '<button class="legend-vibe-chip active" data-vibe="全部" onclick="setLegendVibe(this)">全部</button>' +
+    sorted.map(([v, { icon, count }]) =>
+      `<button class="legend-vibe-chip" data-vibe="${v}" onclick="setLegendVibe(this)">${icon} ${v}<span style="opacity:.5;margin-left:4px">${count}</span></button>`
+    ).join('');
+}
+
 // Re-render legends when city changes (called from switchCity)
 function onCityChangedForLegends() {
   updateFlipBtnVisibility();
   // Reset vibe filter to '全部' (vibes differ across cities) and re-filter
   if (typeof _legendActiveVibe !== 'undefined') _legendActiveVibe = '全部';
+  renderVibeChips();
   if (typeof filterLegends === 'function') {
     try { filterLegends(); } catch (_) {}
   }
@@ -2466,6 +2489,7 @@ if (typeof switchCity === 'function') {
 // Init
 function initLegends() {
   updateFlipBtnVisibility();
+  renderVibeChips();
 }
 
 document.addEventListener('DOMContentLoaded', initLegends);
