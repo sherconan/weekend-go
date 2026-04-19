@@ -105,6 +105,19 @@
     </li>
   </ol>
 
+  <h2>📊 季节分布</h2>
+  <p style="color:var(--ink-500); font-size:14px; margin-bottom:16px;">每座城市 799 dest 的 bestSeason 字段聚合，看清每城适合什么季节</p>
+  <div class="season-chart-wrap" style="background:var(--surface); border-radius:18px; padding:20px; box-shadow:0 2px 8px rgba(16,24,40,0.04); margin-bottom:32px;">
+    <svg id="season-chart" viewBox="0 0 800 320" style="width:100%; height:auto;" role="img" aria-label="8 城季节分布柱状图"></svg>
+    <div id="season-legend" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:12px; font-size:12px; color:var(--ink-700);"></div>
+  </div>
+
+  <h2>🎯 数据深度</h2>
+  <div id="quality-cards" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-bottom:16px;"></div>
+
+  <h2>🏅 你的足迹</h2>
+  <div id="user-footprint" style="background:linear-gradient(135deg,#FFF8E1 0%,#FFF3E0 100%); border-radius:16px; padding:20px; margin-bottom:32px; border-left:4px solid var(--action);"></div>
+
   <h2>🧭 跨城共享景点</h2>
   <p style="color:var(--ink-500); font-size:14px; margin-bottom:20px;">同一地标，不同城市视角下的距离 + 交通全自动切换</p>
   <div class="facet-grid" id="facet-grid"></div>
@@ -232,6 +245,148 @@
     fg.insertAdjacentHTML('beforeend', '<div class="facet-card"><div class="facet-name">' + d.name + '</div><div class="facet-cities">' + list + '</div></div>');
   }
   document.getElementById('last-updated').textContent = new Date().toLocaleDateString('zh-CN');
+
+  // ========== Stats v3 additions ==========
+  renderSeasonChart();
+  renderQualityCards();
+  renderUserFootprint();
+
+  function classifySeason(bs) {
+    if (!bs) return 'other';
+    if (/四季|全年|皆宜|皆可/.test(bs)) return 'all';
+    if (/(5|6|7|8|9|10)\s*月|避暑|夏/.test(bs)) return 'summer';
+    if (/11\s*月|12\s*月|1\s*月|2\s*月|冬|雪|温泉/.test(bs)) return 'winter';
+    if (/3\s*月|4\s*月|5\s*月|春|赏花/.test(bs)) return 'spring';
+    if (/9\s*月|10\s*月|11\s*月|秋|叶/.test(bs)) return 'autumn';
+    return 'other';
+  }
+
+  function renderSeasonChart() {
+    const svg = document.getElementById('season-chart');
+    const legend = document.getElementById('season-legend');
+    if (!svg) return;
+    const COLORS = { spring:'#FFB74D', summer:'#66BB6A', autumn:'#FF7043', winter:'#42A5F5', all:'#B0BEC5', other:'#ECEFF1' };
+    const LABELS = { spring:'🌸 春', summer:'☀️ 夏', autumn:'🍂 秋', winter:'❄️ 冬', all:'四季', other:'其他' };
+    const order = ['spring','summer','autumn','winter','all','other'];
+
+    // Aggregate per city
+    const rows = cs.map(c => {
+      const counts = { spring:0, summer:0, autumn:0, winter:0, all:0, other:0 };
+      for (const v of SRC[c.key] || []) {
+        const a = getGlobal(v);
+        if (!Array.isArray(a)) continue;
+        for (const d of a) counts[classifySeason(d.bestSeason)]++;
+      }
+      const sh = getGlobal('SHARED_CROSS_CITY_DESTS') || [];
+      for (const d of sh) if (d.cities && d.cities[c.key]) counts[classifySeason(d.bestSeason)]++;
+      const total = Object.values(counts).reduce((s,n) => s+n, 0);
+      return { city: c, counts, total };
+    });
+    const maxTotal = Math.max(...rows.map(r => r.total));
+
+    const W = 800, H = 320, padL = 60, padR = 20, padT = 20, padB = 80;
+    const chartH = H - padT - padB;
+    const barW = (W - padL - padR) / rows.length * 0.7;
+    const gap = (W - padL - padR) / rows.length * 0.3;
+
+    let html = '';
+    // Y-axis ticks
+    for (let i = 0; i <= 4; i++) {
+      const val = Math.round(maxTotal * (4 - i) / 4);
+      const y = padT + chartH * i / 4;
+      html += `<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="#EEE" stroke-width="1"/>`;
+      html += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="10" fill="#999">${val}</text>`;
+    }
+
+    rows.forEach((r, i) => {
+      const cx = padL + (barW + gap) * i + gap / 2;
+      let yCursor = padT + chartH;
+      for (const season of order) {
+        const n = r.counts[season];
+        if (!n) continue;
+        const h = chartH * (n / maxTotal);
+        yCursor -= h;
+        html += `<rect x="${cx}" y="${yCursor}" width="${barW}" height="${h}" fill="${COLORS[season]}"><title>${r.city.name} · ${LABELS[season]}: ${n}</title></rect>`;
+      }
+      const labelY = padT + chartH + 20;
+      html += `<text x="${cx + barW/2}" y="${labelY}" text-anchor="middle" font-size="14">${r.city.emoji}</text>`;
+      html += `<text x="${cx + barW/2}" y="${labelY + 18}" text-anchor="middle" font-size="11" fill="#344054" font-weight="700">${r.city.name}</text>`;
+      html += `<text x="${cx + barW/2}" y="${labelY + 34}" text-anchor="middle" font-size="10" fill="#667085">${r.total} 景</text>`;
+    });
+    svg.innerHTML = html;
+
+    legend.innerHTML = order.filter(s => s !== 'other').map(s =>
+      `<span style="display:inline-flex;align-items:center;gap:5px;"><span style="display:inline-block;width:14px;height:14px;background:${COLORS[s]};border-radius:3px;"></span>${LABELS[s]}</span>`
+    ).join('');
+  }
+
+  function renderQualityCards() {
+    const box = document.getElementById('quality-cards');
+    if (!box) return;
+    // Aggregate city-by-city
+    const rows = cs.map(c => {
+      let sum = 0, n = 0, fullCount = 0, withTags = 0;
+      const FIELDS = ['subtitle','themes','whereToEat','whereToStay','budgetText','tips','howToGet','bestSeason','xhsHeat','xhsQuote','highlight','tags','imageQuery','gradient'];
+      for (const v of SRC[c.key] || []) {
+        const a = getGlobal(v);
+        if (!Array.isArray(a)) continue;
+        for (const d of a) {
+          n++;
+          if (typeof d.rating === 'number') sum += d.rating;
+          const filled = FIELDS.filter(f => {
+            const v = d[f];
+            if (!v) return false;
+            if (Array.isArray(v)) return v.length > 0;
+            return String(v).trim().length >= 1;
+          }).length;
+          if (filled >= 11) fullCount++;
+          if (Array.isArray(d.tags) && d.tags.length) withTags++;
+        }
+      }
+      const avg = n ? (sum / n).toFixed(2) : '--';
+      const fillPct = n ? Math.round(fullCount / n * 100) : 0;
+      return { c, n, avg, fullCount, fillPct, withTags };
+    });
+
+    box.innerHTML = rows.map(r => `
+      <div style="background:var(--surface); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow-sm);">
+        <div style="font-size:14px; font-weight:700; margin-bottom:6px;">${r.c.emoji} ${r.c.name}</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--ink-700);">
+          <div>⭐ 平均 <strong>${r.avg}</strong></div>
+          <div>📦 ${r.n} 条</div>
+          <div>✅ ${r.fillPct}% 满字段</div>
+          <div>🏷 ${r.withTags} 有 tags</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderUserFootprint() {
+    const el = document.getElementById('user-footprint');
+    if (!el) return;
+    let visited = {};
+    try { visited = JSON.parse(localStorage.getItem('visited_destinations_shared') || '{}'); } catch {}
+    const n = Object.keys(visited).length;
+    const totalDests = parseInt(document.getElementById('tot-dests').textContent, 10) || 799;
+    const pct = (n / totalDests * 100).toFixed(1);
+    if (n === 0) {
+      el.innerHTML = `<div style="font-size:15px;">还没打过卡 — <a href="/weekend-go/" style="color:var(--brand);font-weight:700;">去主站</a>选一个目的地，回来再看。</div>`;
+      return;
+    }
+    // City distribution
+    const cityCount = {};
+    for (const v of Object.values(visited)) {
+      const name = v.name || '';
+      // try to match city from CITIES (rough)
+      cityCount['all'] = (cityCount['all'] || 0) + 1;
+    }
+    el.innerHTML = `
+      <div style="font-size:15px;margin-bottom:8px;">🏅 你已打卡 <strong style="color:var(--action);font-size:22px;">${n}</strong> 个目的地（${pct}% 覆盖率）</div>
+      <div style="font-size:13px;color:var(--ink-700);">
+        <a href="/weekend-go/achievements.html" style="color:var(--action);font-weight:700;">→ 看完整成就图鉴</a>
+      </div>
+    `;
+  }
 })();
 </script>
 </body>
