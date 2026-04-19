@@ -29,15 +29,18 @@ function buildBeijingDestinations() {
   return dests;
 }
 
-const CITY_DATA = {
+// CITY_DATA 由 cities-dataset.js 基于 config/cities.js 中的 CITIES 注册表派生。
+// 新增城市 → 改 config/cities.js（+可能改 cities-dataset.js 的 CITY_SOURCE_VARS），而不是在这里加字典项。
+// Fallback 保留硬编码以防加载顺序问题。
+const CITY_DATA = (typeof window !== 'undefined' && window.CITY_DATA) ? window.CITY_DATA : {
   beijing: { build: buildBeijingDestinations, label: '北京周边游', badge: '\u{1F331} 北京周边游 \u00B7 2026 春季版', desc: '从北京出发，500公里范围内的精选目的地。' },
   shenzhen: { build: () => typeof DESTINATIONS_SZ !== 'undefined' ? [...DESTINATIONS_SZ] : [], label: '深圳周边游', badge: '\u{1F3D6} 深圳周边游 \u00B7 2026 春季版', desc: '从深圳出发，海滩、美食、古镇，应有尽有。' },
   weihai: { build: () => typeof DESTINATIONS_WH !== 'undefined' ? [...DESTINATIONS_WH] : [], label: '威海周边游', badge: '\u{1F30A} 威海周边游 \u00B7 2026 春季版', desc: '从威海出发，海鲜、海景、韩国风情。' },
   suzhou: { build: () => typeof DESTINATIONS_SU !== 'undefined' ? [...DESTINATIONS_SU] : [], label: '苏州周边游', badge: '\u{1F3EE} 苏州周边游 \u00B7 2026 春季版', desc: '从苏州出发，江南园林、水乡古镇、太湖烟雨。' },
 };
 
-let currentCity = 'beijing';
-let ACTIVE_DESTINATIONS = buildBeijingDestinations();
+let currentCity = (typeof CITIES !== 'undefined' && CITIES[0] ? CITIES[0].key : 'beijing');
+let ACTIVE_DESTINATIONS = (CITY_DATA[currentCity] && CITY_DATA[currentCity].build()) || [];
 
 function switchCity(city) {
   if (!CITY_DATA[city]) return;
@@ -869,7 +872,8 @@ function showToast(msg) {
 }
 
 // ========== Global Search (⌘K / 🔍) ==========
-const SEARCH_HOT_WORDS = {
+// 热门词由 cities-dataset.js 派生自 CITIES.hotWords。新增城市 → 改 config/cities.js
+const SEARCH_HOT_WORDS = (typeof window !== 'undefined' && window.SEARCH_HOT_WORDS) ? window.SEARCH_HOT_WORDS : {
   beijing: ['故宫', '长城', '环球影城', '颐和园', '古北水镇', '798', '雍和宫', '锁龙井'],
   shenzhen: ['大梅沙', '世界之窗', '东部华侨城', '深圳湾', '甘坑', '大鹏所城', '红树林'],
   weihai: ['刘公岛', '那香海', '威海湾', '成山头', '国际海水浴场'],
