@@ -8,10 +8,13 @@ on:
       - 'js/**'
       - 'scripts/weekend-go-helper.js'
       - 'index.html'
+      - '.github/workflows/smoke.yml'
   pull_request:
     paths:
       - 'config/**'
       - 'js/**'
+      - '.github/workflows/smoke.yml'
+  workflow_dispatch:
 
 jobs:
   smoke:
