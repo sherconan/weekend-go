@@ -72,6 +72,28 @@ const SHARED_CROSS_CITY_DESTS = [
     }
   },
   {
+    id: 5005,
+    slug: 'mount-tai',
+    name: '泰山',
+    subtitle: '五岳独尊·世界文化与自然双遗产',
+    themes: ['爬山', '历史', '世界遗产'],
+    budget: '500-1000',
+    budgetText: '门票 ¥115+交通+住宿',
+    rating: 4.9,
+    gradient: 'linear-gradient(135deg, #37474F 0%, #78909C 100%)',
+    whereToEat: '岱庙街糖葫芦 / 红门路泰山煎饼',
+    whereToStay: '山顶神憩宾馆（看日出）/ 岱庙酒店',
+    highlight: '秦始皇至清 13 帝封禅·1545m·日出云海',
+    tags: ['五岳', '日出', '封禅', '世界遗产', '泰安'],
+    imageQuery: 'Mount Tai sunrise ancient stairs Shandong',
+    bestSeason: '4-10月（夜爬看日出最经典）',
+    tips: '1. 门票 ¥115 + 索道 ¥100\n2. 夜爬经典：21 点红门出发\n3. 十八盘最陡 1600 级\n4. 山顶需住宿待日出',
+    cities: {
+      beijing: { distance: 450, distanceText: '450km', duration: ['两日一夜'], transport: ['高铁+大巴', '自驾'] },
+      weihai:  { distance: 480, distanceText: '480km', duration: ['两日一夜', '三日两夜'], transport: ['自驾', '高铁'] }
+    }
+  },
+  {
     id: 5004,
     slug: 'tianjin-binhai-library',
     name: '天津滨海图书馆',
