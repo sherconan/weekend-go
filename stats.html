@@ -114,16 +114,20 @@
   const LEGV = { shenzhen:'LEGENDS_SZ', weihai:'LEGENDS_WH', suzhou:'LEGENDS_SU', qingdao:'LEGENDS_QD', tianjin:'LEGENDS_TJ', chengdu:'LEGENDS_CD', hangzhou:'LEGENDS_HZ' };
   const BJ_LEGENDS_FIXED = 100;
 
+  // Top-level const in non-module scripts doesn't attach to window, so fall back to indirect eval
+  function getGlobal(name) {
+    try { return (0, eval)('typeof ' + name + ' !== "undefined" ? ' + name + ' : undefined'); } catch { return undefined; }
+  }
   function dests(c) {
     const seen = new Set(); let n = 0;
-    for (const v of SRC[c] || []) { const a = window[v]; if (Array.isArray(a)) for (const d of a) if (d.name && !seen.has(d.name)) { seen.add(d.name); n++; } }
-    const sh = window.SHARED_CROSS_CITY_DESTS || [];
+    for (const v of SRC[c] || []) { const a = getGlobal(v); if (Array.isArray(a)) for (const d of a) if (d.name && !seen.has(d.name)) { seen.add(d.name); n++; } }
+    const sh = getGlobal('SHARED_CROSS_CITY_DESTS') || [];
     for (const d of sh) if (d.cities && d.cities[c] && !seen.has(d.name)) n++;
     return n;
   }
-  function legs(c) { if (c === 'beijing') return BJ_LEGENDS_FIXED; const a = window[LEGV[c]]; return Array.isArray(a) ? a.length : 0; }
+  function legs(c) { if (c === 'beijing') return BJ_LEGENDS_FIXED; const a = getGlobal(LEGV[c]); return Array.isArray(a) ? a.length : 0; }
 
-  const cs = window.CITIES || [];
+  const cs = getGlobal('CITIES') || [];
   let totD = 0, totL = 0;
   const g = document.getElementById('city-grid');
   for (const c of cs) {
@@ -136,7 +140,7 @@
   document.getElementById('tot-cities').textContent = cs.length;
   document.getElementById('tot-legends').textContent = totL;
 
-  const sh = window.SHARED_CROSS_CITY_DESTS || [];
+  const sh = getGlobal('SHARED_CROSS_CITY_DESTS') || [];
   document.getElementById('tot-shared').textContent = sh.length;
   const fg = document.getElementById('facet-grid');
   for (const d of sh) {
