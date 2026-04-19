@@ -1,10 +1,12 @@
-const CACHE_NAME = 'weekend-go-v12';
+const CACHE_NAME = 'weekend-go-v13';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v2';
 const MAX_IMAGE_CACHE = 80; // max images to cache
 const ASSETS = [
   '/',
   '/index.html',
   '/css/styles.css',
+  '/config/cities.js',
+  '/js/cities-dataset.js',
   '/js/data.js',
   '/js/data-extra.js',
   '/js/data-extra2.js',
