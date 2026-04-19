@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周末去哪儿 · 数据一览</title>
+  <meta name="description" content="周末去哪儿实时数据：8 城 800+ 目的地 230+ 都市传说">
+  <style>
+    :root { --ink-900:#101828; --ink-700:#344054; --ink-500:#667085; --bg:#FAFBF8; --surface:#FFFFFF; --brand:#4CAF50; --action:#FF7043; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:"PingFang SC","Inter",-apple-system,sans-serif; background:var(--bg); color:var(--ink-900); line-height:1.5; }
+    .container { max-width:1080px; margin:0 auto; padding:40px 24px; }
+    header { text-align:center; margin-bottom:48px; }
+    header h1 { font-size:44px; margin-bottom:12px; }
+    header p { font-size:17px; color:var(--ink-500); }
+    .back-link { display:inline-block; margin-top:20px; padding:10px 24px; background:var(--brand); color:white; text-decoration:none; border-radius:24px; font-weight:600; font-size:14px; }
+    .back-link:hover { background:#43a047; }
+    .hero-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:56px; }
+    .hero-stat { background:var(--surface); border-radius:16px; padding:24px; text-align:center; box-shadow:0 2px 8px rgba(16,24,40,0.04); }
+    .hero-stat-num { font-size:36px; font-weight:800; color:var(--brand); margin-bottom:4px; }
+    .hero-stat-label { font-size:13px; color:var(--ink-500); }
+    h2 { font-size:26px; margin:48px 0 24px; border-left:4px solid var(--action); padding-left:12px; }
+    .city-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+    .city-card { background:var(--surface); border-radius:16px; padding:24px; transition:transform .15s,box-shadow .15s; cursor:pointer; text-decoration:none; color:inherit; display:block; }
+    .city-card:hover { transform:translateY(-3px); box-shadow:0 12px 24px rgba(16,24,40,0.08); }
+    .city-emoji { font-size:48px; margin-bottom:12px; }
+    .city-name { font-size:22px; font-weight:700; margin-bottom:4px; }
+    .city-tagline { font-size:13px; color:var(--ink-500); margin-bottom:16px; min-height:36px; }
+    .city-metrics { display:flex; justify-content:space-between; font-size:12px; }
+    .city-metric { text-align:center; }
+    .city-metric-num { font-size:18px; font-weight:700; color:var(--brand); }
+    .city-metric-label { font-size:11px; color:var(--ink-500); }
+    .facet-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
+    .facet-card { background:linear-gradient(135deg,#FFF8E1 0%,#FFF3E0 100%); border-radius:14px; padding:20px; border-left:3px solid var(--action); }
+    .facet-name { font-weight:700; margin-bottom:4px; }
+    .facet-cities { font-size:12px; color:var(--ink-500); }
+    .arch-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+    .arch-card { background:var(--surface); border-radius:12px; padding:16px 20px; border:1px solid #E8ECF0; }
+    .arch-title { font-weight:700; margin-bottom:8px; font-size:15px; }
+    .arch-body { font-size:13px; color:var(--ink-700); line-height:1.6; }
+    footer { text-align:center; margin-top:64px; padding:32px; color:var(--ink-500); font-size:13px; border-top:1px solid #E8ECF0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>周末去哪儿 · 数据一览</h1>
+    <p>8 城 · 800+ 目的地 · 230+ 都市传说</p>
+    <a class="back-link" href="/weekend-go/">← 回主站</a>
+  </header>
+
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num" id="tot-dests">800+</div><div class="hero-stat-label">精选目的地</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" id="tot-cities">8</div><div class="hero-stat-label">覆盖城市</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" id="tot-legends">230+</div><div class="hero-stat-label">另一面传说</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" id="tot-shared">5</div><div class="hero-stat-label">跨城共享</div></div>
+  </div>
+
+  <h2>🏙 8 座城市</h2>
+  <div class="city-grid" id="city-grid"></div>
+
+  <h2>🧭 跨城共享景点</h2>
+  <p style="color:var(--ink-500); font-size:14px; margin-bottom:20px;">同一地标，不同城市视角下的距离 + 交通全自动切换</p>
+  <div class="facet-grid" id="facet-grid"></div>
+
+  <h2>🏗 架构亮点</h2>
+  <div class="arch-grid">
+    <div class="arch-card"><div class="arch-title">单一 CITIES 注册表</div><div class="arch-body">加一座城市只改 1 个 config 文件，所有 selector / hot-words / stats 自动派生</div></div>
+    <div class="arch-card"><div class="arch-title">Shared Cities Facet</div><div class="arch-body">跨城景点（如泰山）用一条数据 + cities{} 字段，不同城市视图自动展平</div></div>
+    <div class="arch-card"><div class="arch-title">双通道生图</div><div class="arch-body">Gemini Web + ChatGPT Web 逆向通道并行，不用付费 API</div></div>
+    <div class="arch-card"><div class="arch-title">另一面 / Night Side</div><div class="arch-body">每座城市的都市传说都有真实史料锚点·300+字 story</div></div>
+    <div class="arch-card"><div class="arch-title">Stamp 打卡图鉴</div><div class="arch-body">每个景点自动生成独特 SVG 印章·localStorage 持久化</div></div>
+    <div class="arch-card"><div class="arch-title">CI 自动化</div><div class="arch-body">GitHub Actions 每 push 跑 schema validator + shared facet check</div></div>
+  </div>
+
+  <footer>
+    <div>autoresearch 纪律 · 数据最后更新 <span id="last-updated"></span></div>
+    <div style="margin-top:8px;">© 2026 · MIT License</div>
+  </footer>
+</div>
+
+<script src="config/cities.js?v=stats"></script>
+<script src="js/data.js"></script>
+<script src="js/data-extra.js"></script>
+<script src="js/data-extra2.js"></script>
+<script src="js/data-beijing-500.js"></script>
+<script src="js/data-beijing-expand.js"></script>
+<script src="js/data-beijing-hidden.js"></script>
+<script src="js/data-beijing-tales.js"></script>
+<script src="js/data-beijing-new2026.js"></script>
+<script src="js/data-shenzhen.js"></script>
+<script src="js/data-weihai.js"></script>
+<script src="js/data-suzhou.js" onerror="this.remove()"></script>
+<script src="js/data-tianjin.js" onerror="this.remove()"></script>
+<script src="js/data-qingdao.js" onerror="this.remove()"></script>
+<script src="js/data-chengdu.js" onerror="this.remove()"></script>
+<script src="js/data-hangzhou.js" onerror="this.remove()"></script>
+<script src="js/data-shared-cross-city.js?v=stats" onerror="this.remove()"></script>
+<script src="js/data-legends-shenzhen.js" onerror="this.remove()"></script>
+<script src="js/data-legends-weihai.js" onerror="this.remove()"></script>
+<script src="js/data-legends-suzhou.js" onerror="this.remove()"></script>
+<script src="js/data-legends-qingdao.js" onerror="this.remove()"></script>
+<script src="js/data-legends-tianjin.js" onerror="this.remove()"></script>
+<script src="js/data-legends-chengdu.js" onerror="this.remove()"></script>
+<script src="js/data-legends-hangzhou.js" onerror="this.remove()"></script>
+
+<script>
+(function(){
+  const SRC = {
+    beijing:['DESTINATIONS','DESTINATIONS_EXTRA','DESTINATIONS_EXTRA2','DESTINATIONS_BJ500','DESTINATIONS_BJ_EXPAND','DESTINATIONS_BJ_HIDDEN','DESTINATIONS_BJ_TALES','DESTINATIONS_BJ_2026'],
+    shenzhen:['DESTINATIONS_SZ'], weihai:['DESTINATIONS_WH'], suzhou:['DESTINATIONS_SU'],
+    tianjin:['DESTINATIONS_TJ'], qingdao:['DESTINATIONS_QD'], chengdu:['DESTINATIONS_CD'], hangzhou:['DESTINATIONS_HZ']
+  };
+  const LEGV = { shenzhen:'LEGENDS_SZ', weihai:'LEGENDS_WH', suzhou:'LEGENDS_SU', qingdao:'LEGENDS_QD', tianjin:'LEGENDS_TJ', chengdu:'LEGENDS_CD', hangzhou:'LEGENDS_HZ' };
+  const BJ_LEGENDS_FIXED = 100;
+
+  function dests(c) {
+    const seen = new Set(); let n = 0;
+    for (const v of SRC[c] || []) { const a = window[v]; if (Array.isArray(a)) for (const d of a) if (d.name && !seen.has(d.name)) { seen.add(d.name); n++; } }
+    const sh = window.SHARED_CROSS_CITY_DESTS || [];
+    for (const d of sh) if (d.cities && d.cities[c] && !seen.has(d.name)) n++;
+    return n;
+  }
+  function legs(c) { if (c === 'beijing') return BJ_LEGENDS_FIXED; const a = window[LEGV[c]]; return Array.isArray(a) ? a.length : 0; }
+
+  const cs = window.CITIES || [];
+  let totD = 0, totL = 0;
+  const g = document.getElementById('city-grid');
+  for (const c of cs) {
+    const dn = dests(c.key), ln = legs(c.key);
+    totD += dn; totL += ln;
+    const tl = (c.hotWords || []).slice(0, 3).join(' / ');
+    g.insertAdjacentHTML('beforeend', '<a class="city-card" href="/weekend-go/?city=' + c.key + '"><div class="city-emoji">' + c.emoji + '</div><div class="city-name">' + c.name + '</div><div class="city-tagline">' + tl + '</div><div class="city-metrics"><div class="city-metric"><div class="city-metric-num">' + dn + '</div><div class="city-metric-label">目的地</div></div><div class="city-metric"><div class="city-metric-num">' + ln + '</div><div class="city-metric-label">另一面</div></div><div class="city-metric"><div class="city-metric-num">' + c.maxRange + 'km</div><div class="city-metric-label">半径</div></div></div></a>');
+  }
+  document.getElementById('tot-dests').textContent = totD;
+  document.getElementById('tot-cities').textContent = cs.length;
+  document.getElementById('tot-legends').textContent = totL;
+
+  const sh = window.SHARED_CROSS_CITY_DESTS || [];
+  document.getElementById('tot-shared').textContent = sh.length;
+  const fg = document.getElementById('facet-grid');
+  for (const d of sh) {
+    const list = Object.keys(d.cities || {}).map(k => {
+      const c = cs.find(x => x.key === k);
+      return c ? c.emoji + ' ' + c.name + ' <span style="color:#999">' + d.cities[k].distance + 'km</span>' : k;
+    }).join(' · ');
+    fg.insertAdjacentHTML('beforeend', '<div class="facet-card"><div class="facet-name">' + d.name + '</div><div class="facet-cities">' + list + '</div></div>');
+  }
+  document.getElementById('last-updated').textContent = new Date().toLocaleDateString('zh-CN');
+})();
+</script>
+</body>
+</html>
