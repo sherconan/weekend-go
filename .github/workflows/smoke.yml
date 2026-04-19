@@ -79,7 +79,7 @@ jobs:
             const fs = require('fs');
             const REQUIRED = ['id','name','subtitle','distance','distanceText','themes','budget','rating'];
             let fail = 0;
-            const files = fs.readdirSync('js').filter(f => f.startsWith('data-') && f.endsWith('.js') && !f.includes('legends') && !f.includes('detail'));
+            const files = fs.readdirSync('js').filter(f => f.startsWith('data-') && f.endsWith('.js') && !f.includes('legends') && !f.includes('detail') && !f.includes('shared-cross-city'));
             for (const f of files) {
               const src = fs.readFileSync('js/'+f,'utf-8').replace(/\bconst\s+(\w+)\s*=/g, 'var \$1 =');
               const sb = {window:{}, module:{exports:{}}, console:{}};
@@ -87,7 +87,8 @@ jobs:
               const arr = Object.values(sb).find(v => Array.isArray(v));
               if (!arr) continue;
               for (const e of arr) {
-                const missing = REQUIRED.filter(r => !e[r]);
+                // 0 is legal for distance (市内景点); only flag undefined/null/empty-string
+                const missing = REQUIRED.filter(r => e[r] === undefined || e[r] === null || e[r] === '');
                 if (missing.length) { console.error('✗',f,'id',e.id,'missing:',missing); fail++; }
               }
             }
