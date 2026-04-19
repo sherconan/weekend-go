@@ -10,8 +10,8 @@ const DESTINATIONS_QD = [
     rating: 4.5,
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     whereToEat: "王姐烧烤 / 劈柴院小吃", whereToStay: "中山路老城区民宿",
-    bestSeason: "5-10月",
-    tips: "1. 免费\n2. 日出+日落最美\n3. 潮涨潮落看完全不同", highlight: "回澜阁·清代始建",
+    bestSeason: "5-10月·冬夜东北风涨潮最独特",
+    tips: "1. 免费\n2. 日出+日落最美\n3. 潮涨潮落看完全不同\n4. 冬季夜潮可听礁石共振钟声（见另一面）", highlight: "回澜阁·清代始建",
     tags: ["地标", "老城", "海边"], imageQuery: "Qingdao Zhanqiao Pier sunset"
   },
   {
