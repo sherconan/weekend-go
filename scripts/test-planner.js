@@ -20,7 +20,7 @@ let plSrc = fs.readFileSync('js/planner.js','utf-8');
 // Replace IIFE with exposure
 plSrc = plSrc.replace(/\(function\(\)\{/, '(function(){')
   .replace(/if \(document\.readyState === 'loading'\)[\s\S]*?init\(\);\s*\}/, '')
-  .replace(/\}\)\(\);\s*$/, '\nmodule.exports={generatePlan,generateMultiCityPlan,loadCityDests,scoreDest,durationHours,allocateDays,assignTimeSlots,THEME_FAMILIES,budgetOk,haversineKm};\n})();');
+  .replace(/\}\)\(\);\s*$/, '\nmodule.exports={generatePlan,generateMultiCityPlan,generateNCityPlan,planTSP,loadCityDests,scoreDest,durationHours,allocateDays,assignTimeSlots,THEME_FAMILIES,budgetOk,haversineKm};\n})();');
 // Strip document references inside exposed fns
 const browserGuard = `
 var document = { readyState:'complete', addEventListener:()=>{}, getElementById:()=>({style:{},addEventListener:()=>{},innerHTML:'',querySelectorAll:()=>[],insertAdjacentHTML:()=>{},scrollIntoView:()=>{}}), querySelectorAll:()=>[], createElement:()=>({getContext:()=>({}),width:0,height:0,toBlob:()=>{}}), body:{appendChild:()=>{},removeChild:()=>{}} };
@@ -45,11 +45,16 @@ const testCases = [
   { city:'beijing', city2:'tianjin', days:2, themes:['历史文化'], budget:'500-1000', label:'BJ+TJ 2日联程' },
   { city:'suzhou', city2:'hangzhou', days:3, themes:['历史文化'], budget:'500-1000', label:'SU+HZ 3日江南' },
   { city:'qingdao', city2:'weihai', days:2, themes:['度假慢游'], budget:'500-1000', label:'QD+WH 2日海滨' },
+  // N-city TSP tests
+  { city:'beijing', extras:['tianjin','qingdao'], days:4, themes:['历史文化'], budget:'500-1000', label:'BJ+TJ+QD 4日TSP' },
+  { city:'suzhou', extras:['hangzhou','shanghai'].filter(x=>x!=='shanghai'), days:4, themes:['历史文化'], budget:'500-1000', label:'SU+HZ 4日扩展' },
+  { city:'beijing', extras:['tianjin','qingdao','weihai'], days:5, themes:['历史文化'], budget:'500-1000', label:'BJ+TJ+QD+WH 5日4城' },
 ];
 
 let pass = 0, fail = 0;
 for (const tc of testCases) {
-  const p = api.generatePlan(tc.city, tc.days, tc.themes, tc.budget, tc.city2);
+  const arg = tc.extras || tc.city2;
+  const p = api.generatePlan(tc.city, tc.days, tc.themes, tc.budget, arg);
   if (p.error) {
     console.log(`✗ ${tc.label}: ${p.error}`);
     fail++;

@@ -1,5 +1,5 @@
 // Weekend-Go Service Worker v14 — full 8-city + planner + dest offline support
-const CACHE_NAME = 'weekend-go-v17';
+const CACHE_NAME = 'weekend-go-v18';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 

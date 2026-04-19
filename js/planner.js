@@ -202,10 +202,14 @@
     return scored;
   }
 
-  function generatePlan(cityKey, numDays, selectedFamilies, userBudget, cityKey2) {
-    const isMultiCity = !!cityKey2 && cityKey2 !== cityKey && numDays >= 2;
-    if (isMultiCity) {
-      return generateMultiCityPlan(cityKey, cityKey2, numDays, selectedFamilies, userBudget);
+  function generatePlan(cityKey, numDays, selectedFamilies, userBudget, extraCitiesArg) {
+    // Normalize extra cities argument — accept string (legacy) or array
+    let extras = [];
+    if (Array.isArray(extraCitiesArg)) extras = extraCitiesArg.filter(c => c && c !== cityKey);
+    else if (typeof extraCitiesArg === 'string' && extraCitiesArg && extraCitiesArg !== cityKey) extras = [extraCitiesArg];
+
+    if (extras.length && numDays >= extras.length + 1) {
+      return generateNCityPlan(cityKey, extras, numDays, selectedFamilies, userBudget);
     }
     const all = loadCityDests(cityKey);
     if (!all.length) return { error: '该城市暂无数据' };
@@ -231,6 +235,95 @@
       }),
       totalBudget: estimateBudget(days, userBudget),
       totalDests: days.reduce((s,d)=>s+assignTimeSlots(d.dests).length, 0),
+      createdAt: Date.now()
+    };
+  }
+
+  // N-city TSP planner (primary + extras ordered by greedy nearest-neighbor)
+  function generateNCityPlan(primaryKey, extraKeys, numDays, selectedFamilies, userBudget) {
+    const cities = g('CITIES') || [];
+    const byKey = {};
+    for (const c of cities) byKey[c.key] = c;
+
+    const order = planTSP(primaryKey, extraKeys);
+    const totalCities = order.length;
+    if (numDays < totalCities) return { error: `${totalCities} 城至少需要 ${totalCities} 天` };
+
+    // Allocate days per city (base = 1, remaining distributed to primary first then round-robin)
+    const perCity = new Array(totalCities).fill(1);
+    let remaining = numDays - totalCities;
+    let idx = 0;
+    while (remaining > 0) {
+      perCity[idx % totalCities]++;
+      idx++;
+      remaining--;
+    }
+
+    const allDays = [];
+    const transits = [];
+    let totalBudgetPerDay = 0;
+
+    for (let i = 0; i < order.length; i++) {
+      const cKey = order[i];
+      const cObj = byKey[cKey];
+      const daysCount = perCity[i];
+
+      const dests = loadCityDests(cKey);
+      if (dests.length < 2) return { error: `${cObj.name} 数据不足` };
+      const scored = scoreAndRank(dests, selectedFamilies, userBudget);
+      const parts = allocateDays(scored, daysCount);
+
+      parts.forEach(day => {
+        const slots = assignTimeSlots(day.dests);
+        allDays.push({
+          idx: allDays.filter(d => !d.isTransit).length + 1,
+          city: cKey,
+          cityLabel: cObj.emoji + ' ' + cObj.name,
+          slots,
+          hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
+        });
+      });
+      totalBudgetPerDay += estimateBudget(parts, userBudget);
+
+      // Transit to next city
+      if (i < order.length - 1) {
+        const nextKey = order[i + 1];
+        const nextObj = byKey[nextKey];
+        const km = Math.round(haversineKm(cObj.origin, nextObj.origin));
+        const h = transitHours(km);
+        const cost = transitCost(km);
+        transits.push({ km, h, cost });
+        allDays.push({
+          idx: -1,
+          isTransit: true,
+          fromCity: cKey, toCity: nextKey,
+          fromLabel: cObj.emoji + ' ' + cObj.name,
+          toLabel: nextObj.emoji + ' ' + nextObj.name,
+          km, hours: h, cost
+        });
+      }
+    }
+
+    const totalTransitCost = transits.reduce((s, t) => s + t.cost, 0);
+    const totalTransitKm = transits.reduce((s, t) => s + t.km, 0);
+    const totalTransitH = Math.round(transits.reduce((s, t) => s + t.h, 0) * 10) / 10;
+
+    const totalDests = allDays.filter(d => !d.isTransit).reduce((s, d) => s + d.slots.length, 0);
+
+    return {
+      cityKey: primaryKey,
+      extraCities: extraKeys,
+      citiesOrder: order,
+      isMultiCity: true,
+      isNCity: true,
+      numDays,
+      familyTags: selectedFamilies,
+      userBudget,
+      transit: { km: totalTransitKm, hours: totalTransitH, cost: totalTransitCost, hops: transits.length },
+      transitsDetail: transits,
+      days: allDays,
+      totalBudget: totalBudgetPerDay + totalTransitCost,
+      totalDests,
       createdAt: Date.now()
     };
   }
@@ -324,12 +417,13 @@
   // ---------- UI state ----------
   const state = {
     city: null,
-    city2: null, // secondary city when multi-city mode
+    extraCities: [],  // array of city keys, multi-city mode
     multiCity: false,
     days: 2,
     themes: [],
     budget: '200-500'
   };
+  const MAX_EXTRA_CITIES = 3; // primary + 3 extra = 4 total
 
   // ---------- Haversine distance between two origins (km) ----------
   function haversineKm(a, b) {
@@ -352,6 +446,27 @@
     return Math.round((km / 250 + 1.5) * 10) / 10;
   }
 
+  // Greedy nearest-neighbor TSP starting from primary; returns ordered city key array
+  function planTSP(primaryKey, extraKeys) {
+    const cities = g('CITIES') || [];
+    const byKey = {};
+    for (const c of cities) byKey[c.key] = c;
+    const order = [primaryKey];
+    const remaining = new Set(extraKeys);
+    let cursor = byKey[primaryKey];
+    while (remaining.size) {
+      let best = null, bestDist = Infinity;
+      for (const k of remaining) {
+        const d = haversineKm(cursor.origin, byKey[k].origin);
+        if (d < bestDist) { bestDist = d; best = k; }
+      }
+      order.push(best);
+      remaining.delete(best);
+      cursor = byKey[best];
+    }
+    return order;
+  }
+
   // ---------- UI render ----------
   function renderCityChips() {
     const cities = g('CITIES') || [];
@@ -369,21 +484,46 @@
     const first = container.querySelector('.chip');
     if (first) { first.classList.add('active'); state.city = first.dataset.city; }
 
+    function updateTSPPreview() {
+      const el = document.getElementById('tsp-preview');
+      if (!el) return;
+      if (!state.multiCity || !state.extraCities.length) { el.style.display = 'none'; return; }
+      const primary = cities.find(c => c.key === state.city);
+      if (!primary) { el.style.display = 'none'; return; }
+      const order = planTSP(state.city, state.extraCities);
+      const chain = order.map(k => {
+        const c = cities.find(x => x.key === k);
+        return c ? c.emoji + ' ' + c.name : k;
+      }).join(' → ');
+      el.style.display = 'block';
+      el.textContent = `🗺 路线预览（按距离贪心排序）：${chain}`;
+    }
+
     function rebuildCity2Chips() {
       if (!container2) return;
       container2.innerHTML = cities.filter(c => c.key !== state.city).map(c =>
         `<div class="chip city-chip" data-city="${c.key}">${c.emoji} ${c.name}</div>`
       ).join('');
-      // Reset city2 if it matches city
-      if (state.city2 === state.city) state.city2 = null;
+      // Filter out primary from extras
+      state.extraCities = state.extraCities.filter(k => k !== state.city);
       container2.querySelectorAll('.chip').forEach(chip => {
-        if (chip.dataset.city === state.city2) chip.classList.add('active');
+        if (state.extraCities.includes(chip.dataset.city)) chip.classList.add('active');
         chip.addEventListener('click', () => {
-          container2.querySelectorAll('.chip').forEach(el => el.classList.remove('active'));
-          chip.classList.add('active');
-          state.city2 = chip.dataset.city;
+          const k = chip.dataset.city;
+          if (state.extraCities.includes(k)) {
+            state.extraCities = state.extraCities.filter(x => x !== k);
+            chip.classList.remove('active');
+          } else if (state.extraCities.length < MAX_EXTRA_CITIES) {
+            state.extraCities.push(k);
+            chip.classList.add('active');
+          } else {
+            toast(`最多选 ${MAX_EXTRA_CITIES} 个附加城市`);
+            return;
+          }
+          updateTSPPreview();
         });
       });
+      updateTSPPreview();
     }
     rebuildCity2Chips();
 
@@ -393,11 +533,11 @@
       toggle.addEventListener('change', () => {
         state.multiCity = toggle.checked;
         container2.style.display = state.multiCity ? 'flex' : 'none';
-        // Force days >= 2 when multi-city
         if (state.multiCity && state.days < 2) {
           state.days = 2;
           document.querySelectorAll('#days-row .day-btn').forEach(b => b.classList.toggle('active', parseInt(b.dataset.days,10) === 2));
         }
+        updateTSPPreview();
       });
     }
   }
@@ -445,7 +585,13 @@
     const cityDisplay = city ? `${city.emoji} ${city.name}` : plan.cityKey;
 
     let summaryTitle;
-    if (plan.isMultiCity) {
+    if (plan.isNCity && plan.citiesOrder) {
+      const chain = plan.citiesOrder.map(k => {
+        const c = cities.find(x => x.key === k);
+        return c ? `${c.emoji} ${c.name}` : k;
+      }).join(' → ');
+      summaryTitle = `${chain} · ${plan.numDays}日联程 · ${plan.totalDests} 个目的地`;
+    } else if (plan.isMultiCity) {
       const cityB = cities.find(c => c.key === plan.cityKey2);
       const bDisplay = cityB ? `${cityB.emoji} ${cityB.name}` : plan.cityKey2;
       summaryTitle = `${cityDisplay} → ${bDisplay} · ${plan.numDays}日联程 · ${plan.totalDests} 个目的地`;
@@ -459,7 +605,7 @@
           <span>💰 预计人均 ¥${plan.totalBudget}${plan.isMultiCity ? '（含高铁 ¥'+plan.transit.cost+'）' : ''}</span>
           <span>🎯 ${plan.familyTags.join(' · ') || '全主题'}</span>
           <span>🏷 ${plan.userBudget}</span>
-          ${plan.isMultiCity ? `<span>🚄 ${plan.transit.km}km · ${plan.transit.hours}h</span>` : ''}
+          ${plan.isMultiCity ? `<span>🚄 ${plan.transit.km}km · ${plan.transit.hours}h${plan.transit.hops > 1 ? ' · '+plan.transit.hops+' 次换乘' : ''}</span>` : ''}
         </div>
       </div>
     `;
@@ -701,12 +847,13 @@
     document.getElementById('gen-btn').addEventListener('click', () => {
       if (!state.city) { toast('请先选城市'); return; }
       if (state.multiCity) {
-        if (!state.city2) { toast('多城模式请再选一座目的地'); return; }
-        if (state.days < 2) { toast('多城联程至少需要 2 天'); return; }
+        if (!state.extraCities.length) { toast('多城模式请再选至少 1 座城市'); return; }
+        const needed = state.extraCities.length + 1;
+        if (state.days < needed) { toast(`${needed} 城至少需要 ${needed} 天`); return; }
       }
       const plan = generatePlan(
         state.city, state.days, state.themes, state.budget,
-        state.multiCity ? state.city2 : null
+        state.multiCity ? state.extraCities : null
       );
       renderPlan(plan);
     });

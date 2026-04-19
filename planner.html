@@ -110,24 +110,28 @@
 
   <!-- Form -->
   <div class="form-card">
-    <div class="step-label"><span class="step-num">1</span>选一座城市</div>
+    <div class="step-label"><span class="step-num">1</span>选起点城市</div>
     <div class="chip-row" id="city-chips"></div>
     <div style="margin-top:12px;padding-top:12px;border-top:1px dashed var(--border);display:flex;align-items:center;gap:10px;">
       <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;user-select:none;font-size:13px;color:var(--ink-700);">
         <input type="checkbox" id="multi-city-toggle" style="accent-color:var(--action);width:16px;height:16px;">
-        <span>🌏 加一城（多城联程）</span>
+        <span>🌏 多城联程</span>
       </label>
-      <span id="multi-city-hint" style="font-size:11px;color:var(--ink-500);margin-left:auto;">需要 ≥2 天</span>
+      <span id="multi-city-hint" style="font-size:11px;color:var(--ink-500);margin-left:auto;">最多 4 城 · TSP 自动排路</span>
     </div>
     <div id="city-chips-2" class="chip-row" style="margin-top:12px;display:none;"></div>
+    <div id="tsp-preview" style="margin-top:10px;display:none;font-size:12px;color:var(--ink-700);padding:10px;background:var(--surface-2);border-radius:10px;"></div>
   </div>
 
   <div class="form-card">
     <div class="step-label"><span class="step-num">2</span>几天？</div>
     <div class="days-row" id="days-row">
-      <div class="day-btn" data-days="1"><div class="day-btn-num">1</div><div class="day-btn-lbl">Day Trip</div></div>
+      <div class="day-btn" data-days="1"><div class="day-btn-num">1</div><div class="day-btn-lbl">Day</div></div>
       <div class="day-btn active" data-days="2"><div class="day-btn-num">2</div><div class="day-btn-lbl">周末</div></div>
       <div class="day-btn" data-days="3"><div class="day-btn-num">3</div><div class="day-btn-lbl">小长假</div></div>
+      <div class="day-btn" data-days="4"><div class="day-btn-num">4</div><div class="day-btn-lbl">4日</div></div>
+      <div class="day-btn" data-days="5"><div class="day-btn-num">5</div><div class="day-btn-lbl">5日</div></div>
+      <div class="day-btn" data-days="7"><div class="day-btn-num">7</div><div class="day-btn-lbl">7日</div></div>
     </div>
   </div>
 
@@ -178,6 +182,6 @@
 <script src="js/data-chengdu.js" onerror="this.remove()"></script>
 <script src="js/data-hangzhou.js" onerror="this.remove()"></script>
 <script src="js/data-shared-cross-city.js?v=planner" onerror="this.remove()"></script>
-<script src="js/planner.js?v=2"></script>
+<script src="js/planner.js?v=3-ncity"></script>
 </body>
 </html>
