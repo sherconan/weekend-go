@@ -32,7 +32,15 @@ function _mergeSources(varNames) {
   const seen = new Set();
   const out = [];
   for (const name of varNames) {
-    const arr = (typeof window !== 'undefined' ? window[name] : undefined);
+    // Top-level `const` in non-module scripts doesn't attach to window.
+    // Try window first (for data files that explicitly export), fall back to eval for const/let globals.
+    let arr = (typeof window !== 'undefined' ? window[name] : undefined);
+    if (!Array.isArray(arr)) {
+      try {
+        // eval in global scope to read const/let lexical globals
+        arr = (0, eval)(`typeof ${name} !== 'undefined' ? ${name} : undefined`);
+      } catch (_) {}
+    }
     if (!Array.isArray(arr)) continue;
     for (const d of arr) {
       if (d && d.name && !seen.has(d.name)) {
