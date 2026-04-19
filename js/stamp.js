@@ -62,11 +62,51 @@ function getVisitedCount() {
 
 // Mark a destination as visited with timestamp
 function markVisited(destId, destName) {
+  // Snapshot earned-badge set BEFORE adding new stamp
+  const preEarned = new Set();
+  if (window.WG_Achievements) {
+    try { WG_Achievements.compute().earned.forEach(b => preEarned.add(b.id)); } catch {}
+  }
+
   const visited = getVisited();
   visited[destId] = { name: destName, date: new Date().toISOString() };
   saveVisited(visited);
   updateStampUI();
   updateCollectionProgress();
+
+  // Detect newly-earned badges
+  if (window.WG_Achievements) {
+    try {
+      const now = WG_Achievements.compute().earned;
+      const fresh = now.filter(b => !preEarned.has(b.id));
+      if (fresh.length) showBadgeEarned(fresh[0]);
+    } catch {}
+  }
+}
+
+function showBadgeEarned(badge) {
+  if (!badge) return;
+  const existing = document.getElementById('wg-badge-toast');
+  if (existing) existing.remove();
+  const el = document.createElement('div');
+  el.id = 'wg-badge-toast';
+  el.style.cssText = 'position:fixed;top:24px;left:50%;transform:translateX(-50%) translateY(-120%);background:linear-gradient(135deg,#FF7043,#F4511E);color:white;padding:14px 20px;border-radius:16px;box-shadow:0 8px 24px rgba(255,112,67,.4);display:flex;gap:12px;align-items:center;z-index:10000;cursor:pointer;transition:transform .3s ease;max-width:90vw;';
+  el.innerHTML = `
+    <div style="font-size:40px;">${badge.emoji}</div>
+    <div>
+      <div style="font-size:12px;opacity:.85;">🎉 解锁新徽章</div>
+      <div style="font-size:16px;font-weight:700;">${badge.name}</div>
+      <div style="font-size:11px;opacity:.85;">${badge.desc}</div>
+    </div>
+    <div style="margin-left:8px;font-size:11px;opacity:.7;">点击查看 →</div>
+  `;
+  el.addEventListener('click', () => { location.href = 'achievements.html'; });
+  document.body.appendChild(el);
+  requestAnimationFrame(() => { el.style.transform = 'translateX(-50%) translateY(0)'; });
+  setTimeout(() => {
+    el.style.transform = 'translateX(-50%) translateY(-120%)';
+    setTimeout(() => el.remove(), 300);
+  }, 5000);
 }
 
 // Unmark a destination

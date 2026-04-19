@@ -17,6 +17,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sherconan.github.io/weekend-go/achievements.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sherconan.github.io/weekend-go/dest.html?id=1&city=beijing</loc>
     <priority>0.6</priority>
   </url>
