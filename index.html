@@ -56,6 +56,31 @@
         <button class="search-close" onclick="closeSearch()" aria-label="关闭">✕</button>
       </div>
       <div class="search-meta" id="search-meta">在北京 · 共 0 个结果</div>
+      <div class="search-advanced" id="search-advanced" style="padding:10px 20px 2px;border-bottom:1px solid #f0f2f5;display:none;">
+        <div class="search-adv-row">
+          <span class="search-adv-lbl">距离 ≤</span>
+          <input type="range" id="search-dist" min="0" max="500" step="10" value="500" style="flex:1;accent-color:#FF7043;">
+          <span class="search-adv-val" id="search-dist-val">500km</span>
+        </div>
+        <div class="search-adv-row">
+          <span class="search-adv-lbl">预算</span>
+          <div class="search-adv-chips" id="search-budget-chips"></div>
+        </div>
+        <div class="search-adv-row">
+          <span class="search-adv-lbl">城市</span>
+          <div class="search-adv-chips" id="search-city-chips"></div>
+        </div>
+        <div class="search-adv-row">
+          <span class="search-adv-lbl">排序</span>
+          <select id="search-sort" class="search-adv-sel">
+            <option value="relevance">相关度</option>
+            <option value="rating">评分高→低</option>
+            <option value="distance">距离近→远</option>
+            <option value="budget">预算低→高</option>
+          </select>
+        </div>
+      </div>
+      <button id="search-adv-toggle" style="background:none;border:none;color:#667085;font-size:12px;padding:6px 20px 4px;cursor:pointer;text-align:left;width:100%;">⚙️ 高级筛选 <span id="search-adv-caret">▼</span></button>
       <div class="search-facets" id="search-facets"></div>
       <div class="search-results" id="search-results"></div>
       <div class="search-hot" id="search-hot"></div>
@@ -378,7 +403,7 @@
   <script src="js/images.js?v=20260419-suzhou"></script>
   <script src="js/stamp-designs.js"></script>
   <script src="js/stamp.js?v=20260419-p2-stamp-migration"></script>
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=search21"></script>
   <script src="js/seasonal.js?v=1"></script>
   <script src="js/achievements.js?v=1"></script>
   <script src="js/legends.js?v=20260419-vibe-dynamic"></script>
