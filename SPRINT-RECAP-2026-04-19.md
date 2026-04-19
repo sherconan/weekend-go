@@ -130,9 +130,12 @@
 | P7 | CI workflow self-trigger + manual dispatch | 2796fd1 |
 | P8 | TJ hasLegends 翻 true + miniapp sync 补 CD/HZ | 5383c1d |
 | P9 | Miniapp utils 同步 push（8 城 231 传说 799 dest） | miniapp 9967ef35 |
+| P10 | BJ 216 partial → 0：tags+imageQuery B4 终清 | 7de0f44 |
+| P11 | Miniapp 再同步 BJ enrichment | miniapp 533ab849 |
 
 **收口状态**：
-- 8 城 partial entries 从 18 → **0**（全量 full）
+- **全量 full**：BJ 8 data files partial 216 → 0 + 8 城 18 → 0 = 全站 **0 partial**
 - CI 从 failure → **green**（schema + workflow 双修）
 - Web + Miniapp 数据 **零漂移**
 - Total dest 799 · legends 231 · shared 5 · 覆盖 8 城
+- **XHS 红线守住**：216 entries 无一条编造 xhsHeat/xhsQuote（仍保留空位待真实数据）
