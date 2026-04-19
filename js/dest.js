@@ -85,7 +85,6 @@
       if (CITY_OF[v] !== city) continue;
       for (const d of arr) {
         if (!d || !d.name || d.name === dest.name || d.id === dest.id) continue;
-        // score by theme overlap
         const overlap = (d.themes || []).filter(t => (dest.themes || []).includes(t)).length;
         if (overlap > 0) {
           all.push({ d, score: overlap + (d.rating || 0) * 0.1 });
@@ -94,6 +93,36 @@
     }
     all.sort((a,b) => b.score - a.score);
     return all.slice(0, limit).map(x => x.d);
+  }
+
+  // Cross-city: pick dests from OTHER cities that share max theme overlap
+  function findCrossCityRelated(dest, excludeCity, limit=4) {
+    const all = [];
+    for (const v of SOURCE_VARS) {
+      const arr = g(v);
+      if (!Array.isArray(arr)) continue;
+      const vcity = CITY_OF[v];
+      if (vcity === excludeCity) continue; // different cities only
+      for (const d of arr) {
+        if (!d || !d.name) continue;
+        const overlap = (d.themes || []).filter(t => (dest.themes || []).includes(t)).length;
+        if (overlap >= 1) {
+          all.push({ d, city: vcity, score: overlap * 2 + (d.rating || 0) * 0.2 });
+        }
+      }
+    }
+    all.sort((a,b) => b.score - a.score);
+    // Ensure variety: max 2 per city
+    const picks = [];
+    const perCity = {};
+    for (const x of all) {
+      perCity[x.city] = perCity[x.city] || 0;
+      if (perCity[x.city] >= 2) continue;
+      picks.push(x);
+      perCity[x.city]++;
+      if (picks.length >= limit) break;
+    }
+    return picks;
   }
 
   function imgFor(dest) {
@@ -146,6 +175,7 @@
 
     const tags = d.tags || d.themes || [];
     const related = findRelated(d, result.city);
+    const crossRelated = findCrossCityRelated(d, result.city);
     const legends = loadLegendsForDest(d.name, result.city);
 
     const html = `
@@ -214,7 +244,7 @@
 
         ${related.length ? `
         <div class="section">
-          <h2>🗺 周边推荐（同主题）</h2>
+          <h2>🗺 同城相关（同主题）</h2>
           <div class="related-grid">
             ${related.map(r => `
               <a class="related-card" href="dest.html?id=${r.id}&city=${result.city}">
@@ -226,6 +256,29 @@
                 </div>
               </a>
             `).join('')}
+          </div>
+        </div>
+        ` : ''}
+
+        ${crossRelated.length ? `
+        <div class="section">
+          <h2>🌏 其他城市同类</h2>
+          <p style="font-size:13px;color:var(--ink-500);margin-bottom:12px;">同样主题的景点，在其他 7 座城市的样子</p>
+          <div class="related-grid">
+            ${crossRelated.map(r => {
+              const cityObj = (g('CITIES') || []).find(c => c.key === r.city);
+              const cityTag = cityObj ? `${cityObj.emoji} ${cityObj.name}` : r.city;
+              return `
+              <a class="related-card" href="dest.html?id=${r.d.id}&city=${r.city}">
+                <div style="font-size:11px;color:var(--action);font-weight:700;margin-bottom:3px;">${cityTag}</div>
+                <div class="related-name">${escapeHtml(r.d.name)}</div>
+                <div class="related-sub">${escapeHtml(r.d.subtitle || '')}</div>
+                <div class="related-meta">
+                  <span>⭐ ${r.d.rating || '--'}</span>
+                  <span>📍 ${escapeHtml(r.d.distanceText || '')}</span>
+                </div>
+              </a>
+            `}).join('')}
           </div>
         </div>
         ` : ''}
