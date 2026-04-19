@@ -96,9 +96,14 @@
     return all.slice(0, limit).map(x => x.d);
   }
 
-  function imgFor(destName) {
-    // Try common image paths based on name slugification
-    return `assets/images/dest-${destName}.webp`;
+  function imgFor(dest) {
+    // Prefer mapped image from images.js, else attempt default filename by name
+    if (typeof getDestImage === 'function') {
+      const mapped = getDestImage(dest);
+      if (mapped) return mapped;
+    }
+    // No image → null, caller falls back to gradient
+    return null;
   }
 
   function escapeHtml(s) {
@@ -132,7 +137,12 @@
     document.getElementById('og-desc').content = d.description?.slice(0,120) || d.subtitle || '';
 
     const gradient = d.gradient || 'linear-gradient(135deg, #FF7043 0%, #FFC107 100%)';
-    const heroBg = `background-image:${gradient}`;
+    const imagePath = imgFor(d);
+    const heroBg = imagePath
+      ? `background-image:linear-gradient(to bottom,rgba(0,0,0,0.15) 40%,rgba(0,0,0,0.55) 100%),url('${imagePath}');background-size:cover;background-position:center;`
+      : `background-image:${gradient}`;
+    // Preload og:image
+    if (imagePath) document.getElementById('og-image').content = location.origin + location.pathname.replace(/[^/]*$/,'') + imagePath;
 
     const tags = d.tags || d.themes || [];
     const related = findRelated(d, result.city);
