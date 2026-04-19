@@ -1926,6 +1926,14 @@ if (typeof LEGENDS_QD !== 'undefined' && Array.isArray(LEGENDS_QD)) {
   LEGENDS_QD.forEach(l => { if (!l.city) l.city = 'qingdao'; });
   LEGENDS_DATA.push(...LEGENDS_QD);
 }
+if (typeof LEGENDS_HZ !== 'undefined' && Array.isArray(LEGENDS_HZ)) {
+  LEGENDS_HZ.forEach(l => { if (!l.city) l.city = 'hangzhou'; });
+  LEGENDS_DATA.push(...LEGENDS_HZ);
+}
+if (typeof LEGENDS_TJ !== 'undefined' && Array.isArray(LEGENDS_TJ)) {
+  LEGENDS_TJ.forEach(l => { if (!l.city) l.city = 'tianjin'; });
+  LEGENDS_DATA.push(...LEGENDS_TJ);
+}
 
 // ========== Legend Stamp System ==========
 const LEGEND_STAMP_KEY = 'weekendgo_legend_stamps';
