@@ -1,0 +1,128 @@
+name: Weekend-Go Smoke Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'js/**'
+      - 'scripts/weekend-go-helper.js'
+      - 'index.html'
+  pull_request:
+    paths:
+      - 'config/**'
+      - 'js/**'
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: JS syntax check · all city data files
+        run: |
+          for f in js/data-*.js config/cities.js js/cities-dataset.js js/legends.js; do
+            [[ -f "$f" ]] && node -c "$f" && echo "✓ $f" || echo "✗ $f"
+          done
+
+      - name: Verify CITIES registry loads
+        run: |
+          node -e "
+            const {runInNewContext} = require('vm');
+            const fs = require('fs');
+            const src = fs.readFileSync('config/cities.js','utf-8').replace(/\bconst\s+(\w+)\s*=/g, 'var \$1 =');
+            const sb = {window:{}, module:{exports:{}}, console:{}};
+            runInNewContext(src, sb, {timeout:5000});
+            if (!Array.isArray(sb.CITIES)) { console.error('✗ CITIES not found'); process.exit(1); }
+            console.log('✓ CITIES registry OK (' + sb.CITIES.length + ' cities)');
+            for (const c of sb.CITIES) {
+              const missing = ['key','name','emoji','origin','maxRange'].filter(f => !c[f]);
+              if (missing.length) { console.error('✗', c.key || 'unknown', 'missing:', missing); process.exit(1); }
+            }
+            console.log('✓ All city entries have required fields');
+          "
+
+      - name: Verify all city data files export the expected variable
+        run: |
+          node -e "
+            const {runInNewContext} = require('vm');
+            const fs = require('fs');
+            const expected = {
+              'data-shenzhen.js': 'DESTINATIONS_SZ',
+              'data-weihai.js': 'DESTINATIONS_WH',
+              'data-suzhou.js': 'DESTINATIONS_SU',
+              'data-tianjin.js': 'DESTINATIONS_TJ',
+              'data-qingdao.js': 'DESTINATIONS_QD',
+              'data-chengdu.js': 'DESTINATIONS_CD',
+              'data-hangzhou.js': 'DESTINATIONS_HZ'
+            };
+            let ok = true;
+            for (const [f, v] of Object.entries(expected)) {
+              const p = 'js/' + f;
+              if (!fs.existsSync(p)) { console.log('? ' + f + ' (not present)'); continue; }
+              const src = fs.readFileSync(p,'utf-8').replace(/\bconst\s+(\w+)\s*=/g, 'var \$1 =');
+              const sb = {window:{}, module:{exports:{}}, console:{}};
+              try { runInNewContext(src, sb, {timeout:5000}); } catch(e){ ok=false; console.error('✗',f,e.message); continue; }
+              if (!Array.isArray(sb[v])) { ok=false; console.error('✗',f,'no array for',v); continue; }
+              console.log('✓', f, v, sb[v].length, 'entries');
+            }
+            if (!ok) process.exit(1);
+          "
+
+      - name: Schema validator · required fields on every destination
+        run: |
+          node -e "
+            const {runInNewContext} = require('vm');
+            const fs = require('fs');
+            const REQUIRED = ['id','name','subtitle','distance','distanceText','themes','budget','rating'];
+            let fail = 0;
+            const files = fs.readdirSync('js').filter(f => f.startsWith('data-') && f.endsWith('.js') && !f.includes('legends') && !f.includes('detail'));
+            for (const f of files) {
+              const src = fs.readFileSync('js/'+f,'utf-8').replace(/\bconst\s+(\w+)\s*=/g, 'var \$1 =');
+              const sb = {window:{}, module:{exports:{}}, console:{}};
+              try { runInNewContext(src, sb, {timeout:5000}); } catch{}
+              const arr = Object.values(sb).find(v => Array.isArray(v));
+              if (!arr) continue;
+              for (const e of arr) {
+                const missing = REQUIRED.filter(r => !e[r]);
+                if (missing.length) { console.error('✗',f,'id',e.id,'missing:',missing); fail++; }
+              }
+            }
+            if (fail > 0) { console.error('Total schema violations:', fail); process.exit(1); }
+            console.log('✓ All destinations pass schema validator');
+          "
+
+      - name: Shared cross-city facet integrity check
+        run: |
+          node -e "
+            const {runInNewContext} = require('vm');
+            const fs = require('fs');
+            if (!fs.existsSync('js/data-shared-cross-city.js')) { console.log('skip (no shared file)'); process.exit(0); }
+            const src = fs.readFileSync('js/data-shared-cross-city.js','utf-8').replace(/\bconst\s+(\w+)\s*=/, 'var \$1 =');
+            const sb = {window:{}, module:{exports:{}}, console:{}};
+            runInNewContext(src, sb, {timeout:5000});
+            const shared = sb.SHARED_CROSS_CITY_DESTS;
+            for (const d of shared) {
+              if (!d.cities || Object.keys(d.cities).length < 2) { console.error('✗',d.name,'should have ≥2 cities'); process.exit(1); }
+              for (const [city, v] of Object.entries(d.cities)) {
+                if (typeof v.distance !== 'number' || !v.distanceText || !Array.isArray(v.duration)) {
+                  console.error('✗',d.name,city,'bad facet:',v); process.exit(1);
+                }
+              }
+            }
+            console.log('✓ shared cross-city facet OK (' + shared.length + ' entries)');
+          "
+
+      - name: Cache-bust query presence check
+        run: |
+          # Any <script src="js/*.js"> in index.html should have ?v= query
+          # (warning only, not fail)
+          if grep -E '<script src="(js|config)/[^?]+\.js(?!\?)' index.html > /tmp/missing.txt; then
+            echo "::warning::Scripts without cache-bust query:"
+            cat /tmp/missing.txt
+          else
+            echo "✓ All JS scripts have cache-bust query"
+          fi
