@@ -656,11 +656,18 @@
       html += `</div>`;
     }
 
+    const todayISO = new Date().toISOString().slice(0,10);
     html += `
+      <div style="background:var(--surface);border-radius:12px;padding:12px 14px;margin:12px 0;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-sm);font-size:13px;">
+        <span style="color:var(--ink-500);">📅 出发日期</span>
+        <input type="date" id="plan-start-date" value="${todayISO}" style="flex:1;padding:6px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;">
+        <span style="color:var(--ink-500);font-size:11px;">用于导出 ICS 日历</span>
+      </div>
       <div class="action-row">
-        <button class="action-btn primary" id="save-btn">💾 保存到历史</button>
-        <button class="action-btn" id="share-btn">📤 生成分享卡</button>
-        <button class="action-btn" id="copy-btn">📋 复制文本</button>
+        <button class="action-btn primary" id="save-btn">💾 保存历史</button>
+        <button class="action-btn" id="ics-btn">📅 导出日历</button>
+        <button class="action-btn" id="share-btn">📤 分享卡</button>
+        <button class="action-btn" id="copy-btn">📋 复制</button>
       </div>
     `;
 
@@ -671,6 +678,119 @@
     document.getElementById('save-btn').addEventListener('click', () => savePlan(plan));
     document.getElementById('share-btn').addEventListener('click', () => generateShareCard(plan));
     document.getElementById('copy-btn').addEventListener('click', () => copyPlanText(plan));
+    document.getElementById('ics-btn').addEventListener('click', () => {
+      const startDateInp = document.getElementById('plan-start-date');
+      const startDate = startDateInp ? startDateInp.value : new Date().toISOString().slice(0,10);
+      exportICS(plan, startDate);
+    });
+  }
+
+  // ---------- ICS (iCalendar) export ----------
+  function padZ(n) { return String(n).padStart(2, '0'); }
+  function isoToICSDate(isoDate, hourFloat) {
+    // isoDate: "2026-04-20", hourFloat: 9.5 → "20260420T093000"
+    const [y, m, d] = isoDate.split('-').map(Number);
+    const hour = Math.floor(hourFloat);
+    const min = Math.round((hourFloat - hour) * 60);
+    return `${y}${padZ(m)}${padZ(d)}T${padZ(hour)}${padZ(min)}00`;
+  }
+  function addDaysISO(isoDate, n) {
+    const d = new Date(isoDate + 'T00:00:00');
+    d.setDate(d.getDate() + n);
+    return d.toISOString().slice(0,10);
+  }
+  function icsEscape(s) {
+    return String(s || '').replace(/[\\;,]/g, m => '\\' + m).replace(/\n/g, '\\n');
+  }
+  function foldLine(line) {
+    // RFC 5545: lines > 75 bytes must be folded with CRLF + space
+    if (line.length <= 74) return line;
+    const parts = [];
+    let i = 0;
+    while (i < line.length) {
+      const chunk = line.slice(i, i + 73);
+      parts.push(i === 0 ? chunk : ' ' + chunk);
+      i += 73;
+    }
+    return parts.join('\r\n');
+  }
+
+  function exportICS(plan, startDate) {
+    const cities = g('CITIES') || [];
+    const lines = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//WeekendGo//Trip Planner//ZH',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      `X-WR-CALNAME:${icsEscape('WeekendGo ' + plan.numDays + '日行程')}`
+    ];
+
+    let dayOffset = 0;
+    const nowStamp = new Date().toISOString().replace(/[-:]|\.\d+/g, '').slice(0, 15) + 'Z';
+
+    for (const day of plan.days) {
+      if (day.isTransit) {
+        // Transit event 08:00-10:00 (placeholder) of the start date of next day segment
+        const transitDate = addDaysISO(startDate, dayOffset);
+        const uid = `transit-${transitDate}-${day.fromCity}-${day.toCity}@weekend-go`;
+        lines.push('BEGIN:VEVENT');
+        lines.push('UID:' + uid);
+        lines.push('DTSTAMP:' + nowStamp);
+        // Transit kicks off at 07:30 previous day's end, but keep simple: 08:00 - 08+h:00 same day as next city
+        const tStart = isoToICSDate(transitDate, 8);
+        const tEnd = isoToICSDate(transitDate, 8 + day.hours);
+        lines.push('DTSTART;TZID=Asia/Shanghai:' + tStart);
+        lines.push('DTEND;TZID=Asia/Shanghai:' + tEnd);
+        lines.push(foldLine('SUMMARY:🚄 ' + icsEscape(day.fromLabel + ' → ' + day.toLabel)));
+        lines.push(foldLine('DESCRIPTION:' + icsEscape(`高铁约 ${day.hours}h · ${day.km}km · 车票约 ¥${day.cost}`)));
+        lines.push('LOCATION:' + icsEscape(day.fromLabel + ' → ' + day.toLabel));
+        lines.push('END:VEVENT');
+        continue;
+      }
+      // Regular day
+      const dateISO = addDaysISO(startDate, dayOffset);
+      for (const slot of day.slots) {
+        const d = slot.dest;
+        const uid = `dest-${d.id}-${dateISO}@weekend-go`;
+        const cityObj = cities.find(c => c.key === day.city);
+        const cityLabel = cityObj ? (cityObj.emoji + ' ' + cityObj.name) : (day.city || '');
+
+        lines.push('BEGIN:VEVENT');
+        lines.push('UID:' + uid);
+        lines.push('DTSTAMP:' + nowStamp);
+        lines.push('DTSTART;TZID=Asia/Shanghai:' + isoToICSDate(dateISO, slot.start));
+        lines.push('DTEND;TZID=Asia/Shanghai:' + isoToICSDate(dateISO, slot.end));
+        lines.push(foldLine('SUMMARY:' + icsEscape(d.name + (d.subtitle ? ' · ' + d.subtitle : ''))));
+        const descLines = [];
+        if (cityLabel) descLines.push('📍 ' + cityLabel);
+        if (d.distanceText) descLines.push('距离 ' + d.distanceText);
+        if (d.rating) descLines.push('⭐ ' + d.rating);
+        if (d.budgetText || d.budget) descLines.push('💰 ' + (d.budgetText || d.budget));
+        if (d.howToGet) descLines.push('🚆 ' + d.howToGet.slice(0, 100));
+        if (d.whereToEat) descLines.push('🍜 ' + String(d.whereToEat).slice(0, 100));
+        descLines.push('详情: https://sherconan.github.io/weekend-go/dest.html?id=' + d.id + '&city=' + day.city);
+        lines.push(foldLine('DESCRIPTION:' + icsEscape(descLines.join('\n'))));
+        lines.push('LOCATION:' + icsEscape(d.name + (cityLabel ? ', ' + cityLabel.replace(/^[^ ]+ /, '') : '')));
+        lines.push('URL:https://sherconan.github.io/weekend-go/dest.html?id=' + d.id + '&city=' + day.city);
+        lines.push('END:VEVENT');
+      }
+      dayOffset++;
+    }
+    lines.push('END:VCALENDAR');
+    const content = lines.join('\r\n');
+
+    // Download
+    const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    const cityObj = cities.find(c => c.key === plan.cityKey);
+    const cityName = cityObj ? cityObj.name : plan.cityKey;
+    a.download = `WeekendGo-${cityName}-${plan.numDays}日.ics`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 3000);
+    toast('✓ ICS 日历已下载 · 双击导入');
   }
 
   // ---------- Persistence ----------

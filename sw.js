@@ -1,5 +1,5 @@
 // Weekend-Go Service Worker v14 — full 8-city + planner + dest offline support
-const CACHE_NAME = 'weekend-go-v18';
+const CACHE_NAME = 'weekend-go-v19';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 
@@ -23,7 +23,7 @@ const CORE_ASSETS = [
   '/js/visuals.js', '/js/images.js',
   '/js/stamp-designs.js', '/js/stamp.js',
   '/js/legends.js', '/js/app.js',
-  '/js/planner.js', '/js/dest.js', '/js/compare.js', '/js/seasonal.js', '/js/theme.js', '/js/achievements.js',
+  '/js/planner.js', '/js/dest.js', '/js/compare.js', '/js/seasonal.js', '/js/theme.js', '/js/achievements.js', '/js/recent.js',
   '/manifest.json'
 ];
 
