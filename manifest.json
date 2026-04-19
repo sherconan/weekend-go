@@ -35,6 +35,12 @@
       "short_name": "数据",
       "url": "/weekend-go/stats.html",
       "description": "8 城 800+ 目的地全景"
+    },
+    {
+      "name": "目的地对比",
+      "short_name": "对比",
+      "url": "/weekend-go/compare.html",
+      "description": "3 个目的地并排横向对比"
     }
   ],
   "categories": ["travel", "lifestyle", "utilities"]

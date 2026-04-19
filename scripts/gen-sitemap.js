@@ -5,7 +5,7 @@ const path = require('path');
 const { runInNewContext } = require('vm');
 
 const BASE = 'https://sherconan.github.io/weekend-go/';
-const STATIC = ['', 'stats.html', 'planner.html'];
+const STATIC = ['', 'stats.html', 'planner.html', 'compare.html'];
 
 const sources = {
   beijing: ['data.js','data-extra.js','data-extra2.js','data-beijing-500.js','data-beijing-expand.js','data-beijing-hidden.js','data-beijing-tales.js','data-beijing-new2026.js'],
