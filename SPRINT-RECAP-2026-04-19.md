@@ -139,3 +139,41 @@
 - Web + Miniapp 数据 **零漂移**
 - Total dest 799 · legends 231 · shared 5 · 覆盖 8 城
 - **XHS 红线守住**：216 entries 无一条编造 xhsHeat/xhsQuote（仍保留空位待真实数据）
+
+---
+
+## 🔥 Phase 3 实质交付 · Trip Planner
+
+**批评是对的**——前面都是字段补齐+CI 修，都不算 3h+ 深度 feature。Phase 3 第一刀**行程规划器**：
+
+### 入口
+`planner.html` · index.html hero 新 CTA + footer 入口 + stats.html 顶 link
+
+### 算法（`js/planner.js` 546 loc）
+```
+输入 (city, days, themes[], budget)
+  ↓ loadCityDests(city) — 聚合主源 + shared-cross-city 展平
+  ↓ scoreDest = theme*3 + rating*2 + budgetFit*1 − distancePenalty*0.5
+  ↓ allocateDays — greedy seed (highest score) + grow by proximity*2 + score
+  ↓ assignTimeSlots — 09:00 起, 0.5h transit, cap 20:00 drop 溢出
+输出 {days:[{idx, slots:[{dest, startText, endText}], hours}], totalBudget}
+```
+
+### UI
+- 4 步表单：8 城 chip / 1-3 天 btn / 6 主题 family chip（多选）/ 4 预算 tier btn
+- 结果：每日 day-card 含时间+dest name+subtitle+tags+meta（距离/评分/价位）
+- 行动：💾 保存历史 · 📤 Canvas 1080×1920 分享卡（PNG 下载）· 📋 复制文本
+- 历史：localStorage `wg_plans_v1` cap 20 条，可点击回看 + 删除
+
+### 验证证据
+- `scripts/test-planner.js` 6 组 city×themes×days 端到端 pass
+- Chrome DOM 实测（execute javascript）：BJ 2日历史 → 6 dests，时间片 09-12 / 12:30-15:30 / 16-19
+- 真实样例：HZ 2日全主题 → 西湖 → 灵隐寺 → 南宋御街 / 美院象山 → 西溪湿地 → 宋城
+
+### Commit
+`a8c84a1` — 725 行新代码（546 JS + 173 HTML + 2 integration），CI green。
+
+### 3 脆弱点自检
+1. **距离聚类只按 distance 标量**，没用经纬度 — 两个方向相反但 distance 相同的 dest 会被错误聚在一起
+2. **主题 family 是硬编码 6 族**，如果数据出现新 theme 不在任一 family 里就零命中
+3. **预算估算是 per-day flat tier midpoint**，没累加 dest budgetText 真实值
