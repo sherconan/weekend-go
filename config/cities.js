@@ -64,7 +64,7 @@ const CITIES = [
     badge: '🥐 天津周边游 · 2026 春季版',
     desc: '从天津出发，洋楼、相声、狗不理，海河一日游到京冀晋辽。',
     hotWords: ['五大道', '古文化街', '意式风情区', '天津之眼', '独乐寺', '盘山', '瓷房子', '海河'],
-    hasLegends: false
+    hasLegends: true
   },
   {
     key: 'qingdao',
