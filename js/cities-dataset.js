@@ -52,6 +52,24 @@ function _mergeSources(varNames) {
   return out;
 }
 
+// Phase 2 B: 从 SHARED_CROSS_CITY_DESTS 派生当前城市的视图
+function _buildSharedForCity(cityKey) {
+  let shared = [];
+  try {
+    shared = (typeof window !== 'undefined' && Array.isArray(window.SHARED_CROSS_CITY_DESTS))
+      ? window.SHARED_CROSS_CITY_DESTS
+      : (0, eval)(`typeof SHARED_CROSS_CITY_DESTS !== 'undefined' ? SHARED_CROSS_CITY_DESTS : []`);
+  } catch (_) { shared = []; }
+  const out = [];
+  for (const d of shared) {
+    if (d && d.cities && d.cities[cityKey]) {
+      // 展平：把 cities[cityKey] 的字段摊到顶层，保留公共字段
+      out.push({ ...d, ...d.cities[cityKey], _sharedId: d.id, originCity: cityKey });
+    }
+  }
+  return out;
+}
+
 // 基于 CITIES 构建 CITY_DATA（旧接口兼容）
 function buildCityData() {
   if (typeof CITIES === 'undefined') return {};
@@ -59,7 +77,14 @@ function buildCityData() {
   for (const city of CITIES) {
     const sources = CITY_SOURCE_VARS[city.key] || [];
     cd[city.key] = {
-      build: () => _mergeSources(sources),
+      build: () => {
+        const fromSources = _mergeSources(sources);
+        const fromShared = _buildSharedForCity(city.key);
+        // Dedup by name (if shared also exists in source file, prefer shared)
+        const sharedNames = new Set(fromShared.map(d => d.name));
+        const filteredSources = fromSources.filter(d => !sharedNames.has(d.name));
+        return [...fromShared, ...filteredSources];
+      },
       label: `${city.name}周边游`,
       badge: city.badge,
       desc: city.desc,
