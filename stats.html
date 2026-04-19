@@ -57,8 +57,51 @@
     <div class="hero-stat"><div class="hero-stat-num" id="tot-shared">5</div><div class="hero-stat-label">跨城共享</div></div>
   </div>
 
+  <h2>🗺 8 城半径覆盖图</h2>
+  <p style="color:var(--ink-500); font-size:14px; margin-bottom:16px;">每座城市从 origin 500km 辐射，覆盖 30+ 省市级景点</p>
+  <div class="map-wrap" style="background:var(--surface); border-radius:18px; padding:16px; box-shadow:0 2px 8px rgba(16,24,40,0.04); margin-bottom:40px; overflow:hidden;">
+    <svg id="china-map" viewBox="0 0 800 600" style="width:100%; height:auto; display:block;" role="img" aria-label="中国地图 8 城覆盖">
+      <!-- bg gradient -->
+      <defs>
+        <radialGradient id="cityGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#FF7043" stop-opacity="0.22"/>
+          <stop offset="100%" stop-color="#FF7043" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="gridP" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#EDF0F2" stroke-width="0.8"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="600" fill="url(#gridP)"/>
+      <!-- simplified China outline (coarse) -->
+      <path d="M 80 140 L 140 110 L 260 80 L 380 70 L 480 85 L 570 120 L 660 180 L 720 260 L 720 360 L 660 420 L 600 460 L 480 520 L 360 540 L 220 520 L 140 460 L 90 380 L 70 280 Z"
+            fill="rgba(76,175,80,0.04)" stroke="#CDE0D2" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <!-- origin markers injected by JS -->
+      <g id="map-cities"></g>
+    </svg>
+  </div>
+
   <h2>🏙 8 座城市</h2>
   <div class="city-grid" id="city-grid"></div>
+
+  <h2>🕰 数据演进时间轴</h2>
+  <ol id="timeline" style="list-style:none; padding:0; position:relative; margin-bottom:40px;">
+    <li style="position:relative; padding:10px 0 10px 28px; border-left:2px solid var(--brand); margin-left:12px;">
+      <span style="position:absolute; left:-7px; top:14px; width:12px; height:12px; border-radius:50%; background:var(--brand);"></span>
+      <strong style="color:var(--ink-900);">2026-03 早期</strong> · 3 城（北京 / 深圳 / 威海）· ~693 个目的地
+    </li>
+    <li style="position:relative; padding:10px 0 10px 28px; border-left:2px solid var(--brand); margin-left:12px;">
+      <span style="position:absolute; left:-7px; top:14px; width:12px; height:12px; border-radius:50%; background:var(--brand);"></span>
+      <strong style="color:var(--ink-900);">2026-04 中旬</strong> · +苏州 60 + 100 BJ 都市传说 · CITIES 单源架构落地
+    </li>
+    <li style="position:relative; padding:10px 0 10px 28px; border-left:2px solid var(--action); margin-left:12px;">
+      <span style="position:absolute; left:-7px; top:14px; width:12px; height:12px; border-radius:50%; background:var(--action);"></span>
+      <strong style="color:var(--ink-900);">2026-04-19</strong> · +天津 / 青岛 / 成都 / 杭州 · 泰山跨城 facet · 231 传说
+    </li>
+    <li style="position:relative; padding:10px 0 10px 28px; border-left:2px solid var(--action); margin-left:12px;">
+      <span style="position:absolute; left:-7px; top:14px; width:12px; height:12px; border-radius:50%; background:var(--action);"></span>
+      <strong style="color:var(--ink-900);">Phase 3 深度 feature</strong> · 行程规划器 / 独立详情页 / Search 2.0 / PWA 离线
+    </li>
+  </ol>
 
   <h2>🧭 跨城共享景点</h2>
   <p style="color:var(--ink-500); font-size:14px; margin-bottom:20px;">同一地标，不同城市视角下的距离 + 交通全自动切换</p>
@@ -131,11 +174,46 @@
   const cs = getGlobal('CITIES') || [];
   let totD = 0, totL = 0;
   const g = document.getElementById('city-grid');
+  const mapG = document.getElementById('map-cities');
+
+  // Mercator-ish projection: China bbox lng 73-135, lat 18-54 → viewBox 800×600 (40px padding)
+  function proj(lng, lat) {
+    const x = 40 + ((lng - 73) / 62) * 720;
+    const y = 40 + ((54 - lat) / 36) * 520;
+    return { x, y };
+  }
+  // 1° lat ≈ 111 km; radius in px per km: pixelsPerKm = (1/36 * 520) / 111 ≈ 0.13 px/km
+  const PIXELS_PER_KM = (1/36 * 520) / 111;
+
   for (const c of cs) {
     const dn = dests(c.key), ln = legs(c.key);
     totD += dn; totL += ln;
     const tl = (c.hotWords || []).slice(0, 3).join(' / ');
     g.insertAdjacentHTML('beforeend', '<a class="city-card" href="/weekend-go/?city=' + c.key + '"><div class="city-emoji">' + c.emoji + '</div><div class="city-name">' + c.name + '</div><div class="city-tagline">' + tl + '</div><div class="city-metrics"><div class="city-metric"><div class="city-metric-num">' + dn + '</div><div class="city-metric-label">目的地</div></div><div class="city-metric"><div class="city-metric-num">' + ln + '</div><div class="city-metric-label">另一面</div></div><div class="city-metric"><div class="city-metric-num">' + c.maxRange + 'km</div><div class="city-metric-label">半径</div></div></div></a>');
+
+    // Inject map marker + radius circle
+    if (mapG && c.origin) {
+      const p = proj(c.origin.lng, c.origin.lat);
+      const radiusPx = c.maxRange * PIXELS_PER_KM;
+      mapG.insertAdjacentHTML('beforeend', `
+        <g class="map-city" data-city="${c.key}" style="cursor:pointer;">
+          <circle cx="${p.x}" cy="${p.y}" r="${radiusPx}" fill="url(#cityGlow)"/>
+          <circle cx="${p.x}" cy="${p.y}" r="${radiusPx}" fill="none" stroke="#FF7043" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+          <circle cx="${p.x}" cy="${p.y}" r="5" fill="#FF7043"/>
+          <text x="${p.x}" y="${p.y - 10}" text-anchor="middle" font-size="16" font-family="system-ui">${c.emoji}</text>
+          <text x="${p.x}" y="${p.y + 20}" text-anchor="middle" font-size="12" font-weight="700" fill="#344054">${c.name}</text>
+          <text x="${p.x}" y="${p.y + 34}" text-anchor="middle" font-size="10" fill="#667085">${dn} 景 · ${ln} 传说</text>
+        </g>
+      `);
+    }
+  }
+  // clickable: jump to city
+  if (mapG) {
+    mapG.querySelectorAll('.map-city').forEach(el => {
+      el.addEventListener('click', () => {
+        location.href = '/weekend-go/?city=' + el.dataset.city;
+      });
+    });
   }
   document.getElementById('tot-dests').textContent = totD;
   document.getElementById('tot-cities').textContent = cs.length;
