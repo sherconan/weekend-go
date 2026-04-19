@@ -324,11 +324,12 @@
       for (const slot of day.slots) {
         const d = slot.dest;
         const tags = (d.tags || d.themes || []).slice(0, 3);
+        const destLink = `dest.html?id=${d.id}&city=${plan.cityKey}`;
         html += `
-          <div class="dest-item">
+          <a class="dest-item" href="${destLink}" style="display:flex;text-decoration:none;color:inherit;">
             <div class="dest-time">${slot.startText}<br>-${slot.endText}</div>
             <div class="dest-body">
-              <div class="dest-name">${d.name}</div>
+              <div class="dest-name">${d.name} <span style="color:var(--ink-300);font-weight:400;font-size:12px;">›</span></div>
               <div class="dest-sub">${d.subtitle || d.description?.slice(0,40) || ''}</div>
               <div class="dest-tags">${tags.map(t => `<span class="dest-tag">${t}</span>`).join('')}</div>
               <div class="dest-meta">
@@ -337,7 +338,7 @@
                 <span>💵 ${d.budgetText || d.budget || '--'}</span>
               </div>
             </div>
-          </div>
+          </a>
         `;
       }
       html += `</div>`;
