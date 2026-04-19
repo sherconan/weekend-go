@@ -1,0 +1,477 @@
+{
+  "proposals": [
+    {
+      "name": "故宫",
+      "500_id": 330,
+      "expand_id": 330,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "天坛",
+      "500_id": 331,
+      "expand_id": 331,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "北京动物园",
+      "500_id": 333,
+      "expand_id": 332,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "北京海洋馆",
+      "500_id": 334,
+      "expand_id": 333,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "烟袋斜街",
+      "500_id": 336,
+      "expand_id": 334,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "五道营胡同",
+      "500_id": 337,
+      "expand_id": 335,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "三里屯",
+      "500_id": 338,
+      "expand_id": 336,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "中国美术馆",
+      "500_id": 340,
+      "expand_id": 337,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "国家博物馆",
+      "500_id": 341,
+      "expand_id": 338,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "景山公园",
+      "500_id": 347,
+      "expand_id": 339,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "玉渊潭公园",
+      "500_id": 344,
+      "expand_id": 340,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "紫竹院公园",
+      "500_id": 345,
+      "expand_id": 341,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "陶然亭公园",
+      "500_id": 346,
+      "expand_id": 342,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "朝阳公园",
+      "500_id": 343,
+      "expand_id": 343,
+      "500_completeness": 17,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "天津海河夜游",
+      "500_id": 370,
+      "expand_id": 344,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "天津瓷房子",
+      "500_id": 371,
+      "expand_id": 345,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "天津滨海图书馆",
+      "500_id": 372,
+      "expand_id": 346,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "杨柳青古镇",
+      "500_id": 374,
+      "expand_id": 347,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "天津航母主题公园",
+      "500_id": 375,
+      "expand_id": 348,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "黄崖关长城",
+      "500_id": 376,
+      "expand_id": 349,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "承德金山岭长城",
+      "500_id": 352,
+      "expand_id": 350,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "秦皇岛老龙头",
+      "500_id": 353,
+      "expand_id": 351,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "北戴河鸽子窝",
+      "500_id": 354,
+      "expand_id": 352,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "乐亭月坨岛",
+      "500_id": 355,
+      "expand_id": 353,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "唐山清东陵",
+      "500_id": 356,
+      "expand_id": 354,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "张家口鸡鸣驿",
+      "500_id": 357,
+      "expand_id": 355,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "廊坊天下第一城",
+      "500_id": 359,
+      "expand_id": 356,
+      "500_completeness": 16,
+      "expand_completeness": 17,
+      "winner": "expand"
+    },
+    {
+      "name": "石家庄西柏坡",
+      "500_id": 361,
+      "expand_id": 357,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "石家庄抱犊寨",
+      "500_id": 362,
+      "expand_id": 358,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "保定白洋淀温泉",
+      "500_id": 358,
+      "expand_id": 359,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "潍坊风筝博物馆",
+      "500_id": 381,
+      "expand_id": 361,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "临沂蒙山",
+      "500_id": 382,
+      "expand_id": 362,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "枣庄台儿庄古城",
+      "500_id": 383,
+      "expand_id": 363,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "东营黄河入海口",
+      "500_id": 386,
+      "expand_id": 364,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "蓬莱八仙渡",
+      "500_id": 387,
+      "expand_id": 365,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "栖霞牟氏庄园",
+      "500_id": 390,
+      "expand_id": 366,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "泰安岱庙",
+      "500_id": 393,
+      "expand_id": 367,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "济宁水泊梁山",
+      "500_id": 394,
+      "expand_id": 368,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "太原晋祠",
+      "500_id": 400,
+      "expand_id": 369,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "大同华严寺",
+      "500_id": 401,
+      "expand_id": 370,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "乔家大院",
+      "500_id": 403,
+      "expand_id": 371,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "王家大院",
+      "500_id": 404,
+      "expand_id": 372,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "太行山大峡谷",
+      "500_id": 407,
+      "expand_id": 373,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "晋城皇城相府",
+      "500_id": 408,
+      "expand_id": 374,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "焦作云台山",
+      "500_id": 413,
+      "expand_id": 375,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "开封清明上河园",
+      "500_id": 412,
+      "expand_id": 376,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "沈阳故宫",
+      "500_id": 417,
+      "expand_id": 377,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "大连金石滩",
+      "500_id": 419,
+      "expand_id": 378,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "大连老虎滩",
+      "500_id": 420,
+      "expand_id": 379,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "丹东鸭绿江",
+      "500_id": 421,
+      "expand_id": 380,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "鞍山千山",
+      "500_id": 422,
+      "expand_id": 381,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "本溪水洞",
+      "500_id": 423,
+      "expand_id": 382,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "葫芦岛兴城古城",
+      "500_id": 424,
+      "expand_id": 383,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "营口鲅鱼圈",
+      "500_id": 427,
+      "expand_id": 384,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "邢台崆山白云洞",
+      "500_id": 360,
+      "expand_id": 385,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "沧州吴桥杂技",
+      "500_id": 365,
+      "expand_id": 386,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "衡水武强年画",
+      "500_id": 364,
+      "expand_id": 387,
+      "500_completeness": 18,
+      "expand_completeness": 17,
+      "winner": "500"
+    },
+    {
+      "name": "承德磬锤峰",
+      "500_id": 367,
+      "expand_id": 388,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    },
+    {
+      "name": "秦皇岛板厂峪长城",
+      "500_id": 368,
+      "expand_id": 389,
+      "500_completeness": 18,
+      "expand_completeness": 18,
+      "winner": "500"
+    }
+  ],
+  "unique_in_expand": []
+}
