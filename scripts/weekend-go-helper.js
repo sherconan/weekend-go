@@ -123,7 +123,7 @@ function scanSkeletons(cityKey) {
       const v = e[f];
       if (!v) return false;
       if (Array.isArray(v)) return v.length > 0;
-      return String(v).length >= 3;
+      return String(v).trim().length >= 1;
     }).length;
     const ratio = filled / FIELDS.length;
     if (ratio < 0.4) skel.push({ id: e.id, name: e.name, missing: FIELDS.filter(f => !e[f]) });
