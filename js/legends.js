@@ -1934,6 +1934,10 @@ if (typeof LEGENDS_TJ !== 'undefined' && Array.isArray(LEGENDS_TJ)) {
   LEGENDS_TJ.forEach(l => { if (!l.city) l.city = 'tianjin'; });
   LEGENDS_DATA.push(...LEGENDS_TJ);
 }
+if (typeof LEGENDS_CD !== 'undefined' && Array.isArray(LEGENDS_CD)) {
+  LEGENDS_CD.forEach(l => { if (!l.city) l.city = 'chengdu'; });
+  LEGENDS_DATA.push(...LEGENDS_CD);
+}
 
 // ========== Legend Stamp System ==========
 const LEGEND_STAMP_KEY = 'weekendgo_legend_stamps';
