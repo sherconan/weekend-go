@@ -1922,6 +1922,10 @@ if (typeof LEGENDS_SU !== 'undefined' && Array.isArray(LEGENDS_SU)) {
   LEGENDS_SU.forEach(l => { if (!l.city) l.city = 'suzhou'; });
   LEGENDS_DATA.push(...LEGENDS_SU);
 }
+if (typeof LEGENDS_QD !== 'undefined' && Array.isArray(LEGENDS_QD)) {
+  LEGENDS_QD.forEach(l => { if (!l.city) l.city = 'qingdao'; });
+  LEGENDS_DATA.push(...LEGENDS_QD);
+}
 
 // ========== Legend Stamp System ==========
 const LEGEND_STAMP_KEY = 'weekendgo_legend_stamps';
