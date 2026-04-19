@@ -85,8 +85,33 @@ function nextLegendId(cityKey) {
 
 function scanSkeletons(cityKey) {
   // 读 data-{cityKey}.js，列出 filled_field_ratio < 0.4 的 entry
-  const mod = require(path.join(JS_DIR, `data-${cityKey}.js`));
-  const arr = Array.isArray(mod) ? mod : Object.values(mod).find(Array.isArray);
+  // 兼容两种导出：module.exports / 纯 window.X
+  let arr;
+  const filePath = path.join(JS_DIR, `data-${cityKey}.js`);
+  const mod = require(filePath);
+  arr = Array.isArray(mod) ? mod : Object.values(mod).find(Array.isArray);
+  if (!arr) {
+    // Fallback: vm eval raw content — scan for any DESTINATIONS_* variable
+    const { runInNewContext } = require('vm');
+    const content = fs.readFileSync(filePath, 'utf-8');
+    // Find all `const DESTINATIONS_XX = [...]` declarations
+    const matches = [...content.matchAll(/const\s+(DESTINATIONS_\w+)\s*=/g)].map(m => m[1]);
+    const sandbox = { window: {}, module: { exports: {} }, console };
+    try {
+      const probeScript = content + '\n;globalThis._out = ' +
+        matches.map(n => `(typeof ${n} !== 'undefined' ? ${n} : null)`).join(' || ') +
+        ` || Object.values(window).find(v=>Array.isArray(v));`;
+      runInNewContext(probeScript, sandbox, { timeout: 3000 });
+      arr = sandbox._out;
+    } catch (e) {
+      console.error('scanSkeletons eval fail:', e.message);
+      return { error: e.message };
+    }
+  }
+  if (!Array.isArray(arr)) {
+    console.error('scanSkeletons: no array found in', filePath);
+    return { error: 'no-array' };
+  }
   const FIELDS = ['subtitle', 'themes', 'whereToEat', 'whereToStay', 'budgetText',
                   'tips', 'howToGet', 'bestSeason', 'xhsHeat', 'xhsQuote', 'highlight',
                   'tags', 'imageQuery', 'gradient'];
