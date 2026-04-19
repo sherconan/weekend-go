@@ -17,6 +17,8 @@ const DESTINATIONS_BJ500 = [
       "美食",
       "度假"
     ],
+    tags: ["青岛","美食","度假","周边"],
+    imageQuery: "青岛 food resort Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥1200-2000",
     "rating": 4.8,
@@ -49,6 +51,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "亲子"
     ],
+    tags: ["曲阜","历史","亲子","周边"],
+    imageQuery: "曲阜 history family Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.6,
@@ -81,6 +85,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["大同","历史","美食","周边"],
+    imageQuery: "大同 history food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.7,
@@ -114,6 +120,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["平遥古城","古镇","历史","美食","周边"],
+    imageQuery: "平遥古城 ancient-town history food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥600-1000",
     "rating": 4.8,
@@ -144,6 +152,8 @@ const DESTINATIONS_BJ500 = [
     "themes": [
       "度假"
     ],
+    tags: ["壶口瀑布","度假","周边"],
+    imageQuery: "壶口瀑布 resort Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥1000-1500",
     "rating": 4.6,
@@ -176,6 +186,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "爬山"
     ],
+    tags: ["五台山","历史","爬山","周边"],
+    imageQuery: "五台山 history hiking Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-900",
     "rating": 4.7,
@@ -208,6 +220,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "爬山"
     ],
+    tags: ["恒山·悬空寺","历史","爬山","周边"],
+    imageQuery: "恒山·悬空寺 history hiking Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.6,
@@ -240,6 +254,8 @@ const DESTINATIONS_BJ500 = [
       "美食",
       "历史"
     ],
+    tags: ["太原","美食","历史","周边"],
+    imageQuery: "太原 food history Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.5,
@@ -272,6 +288,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["济南","历史","美食","周边"],
+    imageQuery: "济南 history food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.5,
@@ -304,6 +322,8 @@ const DESTINATIONS_BJ500 = [
       "度假",
       "美食"
     ],
+    tags: ["烟台","度假","美食","周边"],
+    imageQuery: "烟台 resort food Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥1000-1500",
     "rating": 4.6,
@@ -336,6 +356,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "度假"
     ],
+    tags: ["威海刘公岛","历史","度假","周边"],
+    imageQuery: "威海刘公岛 history resort Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥1000-1500",
     "rating": 4.5,
@@ -368,6 +390,8 @@ const DESTINATIONS_BJ500 = [
       "度假",
       "美食"
     ],
+    tags: ["日照","度假","美食","周边"],
+    imageQuery: "日照 resort food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥600-1000",
     "rating": 4.4,
@@ -400,6 +424,8 @@ const DESTINATIONS_BJ500 = [
       "爬山",
       "亲子"
     ],
+    tags: ["连云港花果山","爬山","亲子","周边"],
+    imageQuery: "连云港花果山 hiking family Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.3,
@@ -432,6 +458,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["徐州","历史","美食","周边"],
+    imageQuery: "徐州 history food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.4,
@@ -464,6 +492,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["邯郸","历史","美食","周边"],
+    imageQuery: "邯郸 history food Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.3,
@@ -496,6 +526,8 @@ const DESTINATIONS_BJ500 = [
       "古镇",
       "历史"
     ],
+    tags: ["正定古城","古镇","历史","周边"],
+    imageQuery: "正定古城 ancient-town history Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.5,
@@ -528,6 +560,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["沧州","历史","美食","周边"],
+    imageQuery: "沧州 history food Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.2,
@@ -560,6 +594,8 @@ const DESTINATIONS_BJ500 = [
       "露营",
       "亲子"
     ],
+    tags: ["衡水湖","露营","亲子","周边"],
+    imageQuery: "衡水湖 camping family Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -592,6 +628,8 @@ const DESTINATIONS_BJ500 = [
       "露营",
       "度假"
     ],
+    tags: ["秦皇岛翡翠岛","露营","度假","周边"],
+    imageQuery: "秦皇岛翡翠岛 camping resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.5,
@@ -624,6 +662,8 @@ const DESTINATIONS_BJ500 = [
       "度假",
       "美食"
     ],
+    tags: ["葫芦岛","度假","美食","周边"],
+    imageQuery: "葫芦岛 resort food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.3,
@@ -656,6 +696,8 @@ const DESTINATIONS_BJ500 = [
       "度假",
       "历史"
     ],
+    tags: ["锦州笔架山","度假","历史","周边"],
+    imageQuery: "锦州笔架山 resort history Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.4,
@@ -687,6 +729,8 @@ const DESTINATIONS_BJ500 = [
     "themes": [
       "度假"
     ],
+    tags: ["盘锦红海滩","度假","周边"],
+    imageQuery: "盘锦红海滩 resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.6,
@@ -719,6 +763,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "美食"
     ],
+    tags: ["开封","历史","美食","周边"],
+    imageQuery: "开封 history food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥600-1000",
     "rating": 4.6,
@@ -751,6 +797,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "爬山"
     ],
+    tags: ["郑州少林寺","历史","爬山","周边"],
+    imageQuery: "郑州少林寺 history hiking Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥600-900",
     "rating": 4.5,
@@ -782,6 +830,8 @@ const DESTINATIONS_BJ500 = [
     "themes": [
       "历史"
     ],
+    tags: ["安阳殷墟","历史","周边"],
+    imageQuery: "安阳殷墟 history Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-700",
     "rating": 4.5,
@@ -813,6 +863,8 @@ const DESTINATIONS_BJ500 = [
       "爬山",
       "露营"
     ],
+    tags: ["邢台大峡谷","爬山","露营","周边"],
+    imageQuery: "邢台大峡谷 hiking camping Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.4,
@@ -845,6 +897,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "亲子"
     ],
+    tags: ["赵州桥","历史","亲子","周边"],
+    imageQuery: "赵州桥 history family Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -877,6 +931,8 @@ const DESTINATIONS_BJ500 = [
       "古镇",
       "美食"
     ],
+    tags: ["唐山滦州古城","古镇","美食","周边"],
+    imageQuery: "唐山滦州古城 ancient-town food Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.3,
@@ -908,6 +964,8 @@ const DESTINATIONS_BJ500 = [
     "themes": [
       "历史"
     ],
+    tags: ["洛阳龙门石窟","历史","周边"],
+    imageQuery: "洛阳龙门石窟 history Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥1000-1500",
     "rating": 4.8,
@@ -940,6 +998,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "亲子"
     ],
+    tags: ["故宫","历史","亲子","市中心"],
+    imageQuery: "故宫 history family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥60-150",
     "rating": 4.9,
@@ -972,6 +1032,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "休闲"
     ],
+    tags: ["天坛","历史","休闲","市中心"],
+    imageQuery: "天坛 history leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥30-80",
     "rating": 4.7,
@@ -1004,6 +1066,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "休闲"
     ],
+    tags: ["颐和园","历史","休闲","市中心"],
+    imageQuery: "颐和园 history leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-120",
     "rating": 4.8,
@@ -1036,6 +1100,8 @@ const DESTINATIONS_BJ500 = [
       "亲子",
       "休闲"
     ],
+    tags: ["北京动物园","亲子","休闲","市中心"],
+    imageQuery: "北京动物园 family leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥40-100",
     "rating": 4.5,
@@ -1068,6 +1134,8 @@ const DESTINATIONS_BJ500 = [
       "亲子",
       "休闲"
     ],
+    tags: ["北京海洋馆","亲子","休闲","市中心"],
+    imageQuery: "北京海洋馆 family leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥160-200",
     "rating": 4.4,
@@ -1100,6 +1168,8 @@ const DESTINATIONS_BJ500 = [
       "夜景",
       "美食"
     ],
+    tags: ["什刹海酒吧街","夜景","美食","市中心"],
+    imageQuery: "什刹海酒吧街 nightscape food Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-300",
     "rating": 4.3,
@@ -1132,6 +1202,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "美食"
     ],
+    tags: ["烟袋斜街","文化","美食","市中心"],
+    imageQuery: "烟袋斜街 culture food Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-150",
     "rating": 4.3,
@@ -1164,6 +1236,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "美食"
     ],
+    tags: ["五道营胡同","文化","美食","市中心"],
+    imageQuery: "五道营胡同 culture food Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-200",
     "rating": 4.4,
@@ -1196,6 +1270,8 @@ const DESTINATIONS_BJ500 = [
       "购物",
       "夜景"
     ],
+    tags: ["三里屯","购物","夜景","市中心"],
+    imageQuery: "三里屯 shopping nightscape Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥200-800",
     "rating": 4.3,
@@ -1228,6 +1304,8 @@ const DESTINATIONS_BJ500 = [
       "建筑",
       "摄影"
     ],
+    tags: ["望京SOHO","建筑","摄影","市中心"],
+    imageQuery: "望京SOHO architecture photography Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-150",
     "rating": 4.2,
@@ -1260,6 +1338,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "艺术"
     ],
+    tags: ["中国美术馆","文化","艺术","市中心"],
+    imageQuery: "中国美术馆 culture art Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-50",
     "rating": 4.5,
@@ -1292,6 +1372,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["国家博物馆","历史","文化","市中心"],
+    imageQuery: "国家博物馆 history culture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-30",
     "rating": 4.8,
@@ -1324,6 +1406,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "艺术"
     ],
+    tags: ["北京天桥艺术中心","文化","艺术","市中心"],
+    imageQuery: "北京天桥艺术中心 culture art Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥180-880",
     "rating": 4.6,
@@ -1356,6 +1440,8 @@ const DESTINATIONS_BJ500 = [
       "休闲",
       "亲子"
     ],
+    tags: ["朝阳公园","休闲","亲子","市中心"],
+    imageQuery: "朝阳公园 leisure family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥5-50",
     "rating": 4.3,
@@ -1388,6 +1474,8 @@ const DESTINATIONS_BJ500 = [
       "赏花",
       "休闲"
     ],
+    tags: ["玉渊潭公园","赏花","休闲","市中心"],
+    imageQuery: "玉渊潭公园 flowers leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥10-30",
     "rating": 4.5,
@@ -1420,6 +1508,8 @@ const DESTINATIONS_BJ500 = [
       "休闲",
       "文化"
     ],
+    tags: ["紫竹院公园","休闲","文化","市中心"],
+    imageQuery: "紫竹院公园 leisure culture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-20",
     "rating": 4.2,
@@ -1452,6 +1542,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "休闲"
     ],
+    tags: ["陶然亭公园","历史","休闲","市中心"],
+    imageQuery: "陶然亭公园 history leisure Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥2-20",
     "rating": 4.2,
@@ -1484,6 +1576,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "摄影"
     ],
+    tags: ["景山公园","历史","摄影","市中心"],
+    imageQuery: "景山公园 history photography Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥2-10",
     "rating": 4.6,
@@ -1516,6 +1610,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "亲子"
     ],
+    tags: ["北京大学/清华大学参观","文化","亲子","市中心"],
+    imageQuery: "北京大学/清华大学参观 culture family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-50",
     "rating": 4.4,
@@ -1548,6 +1644,8 @@ const DESTINATIONS_BJ500 = [
       "冰雪",
       "体验"
     ],
+    tags: ["什刹海冰场","冰雪","体验","市中心"],
+    imageQuery: "什刹海冰场 ice-snow experience Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥60-120",
     "rating": 4.5,
@@ -1580,6 +1678,8 @@ const DESTINATIONS_BJ500 = [
       "赏花",
       "度假"
     ],
+    tags: ["白洋淀荷花节","赏花","度假","周边"],
+    imageQuery: "白洋淀荷花节 flowers resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.4,
@@ -1612,6 +1712,8 @@ const DESTINATIONS_BJ500 = [
       "户外",
       "漂流"
     ],
+    tags: ["野三坡百里峡漂流","户外","漂流","周边"],
+    imageQuery: "野三坡百里峡漂流 outdoor rafting Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -1644,6 +1746,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "摄影"
     ],
+    tags: ["承德金山岭长城","历史","摄影","周边"],
+    imageQuery: "承德金山岭长城 history photography Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-200",
     "rating": 4.8,
@@ -1676,6 +1780,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "海滨"
     ],
+    tags: ["秦皇岛老龙头","历史","海滨","周边"],
+    imageQuery: "秦皇岛老龙头 history seaside Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-600",
     "rating": 4.5,
@@ -1708,6 +1814,8 @@ const DESTINATIONS_BJ500 = [
       "海滨",
       "摄影"
     ],
+    tags: ["北戴河鸽子窝","海滨","摄影","周边"],
+    imageQuery: "北戴河鸽子窝 seaside photography Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-600",
     "rating": 4.5,
@@ -1739,6 +1847,8 @@ const DESTINATIONS_BJ500 = [
       "海滨",
       "度假"
     ],
+    tags: ["乐亭月坨岛","海滨","度假","周边"],
+    imageQuery: "乐亭月坨岛 seaside resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.3,
@@ -1771,6 +1881,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["唐山清东陵","历史","文化","周边"],
+    imageQuery: "唐山清东陵 history culture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥150-300",
     "rating": 4.6,
@@ -1803,6 +1915,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "摄影"
     ],
+    tags: ["张家口鸡鸣驿","历史","摄影","周边"],
+    imageQuery: "张家口鸡鸣驿 history photography Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥60-150",
     "rating": 4.3,
@@ -1835,6 +1949,8 @@ const DESTINATIONS_BJ500 = [
       "温泉",
       "度假"
     ],
+    tags: ["保定白洋淀温泉","温泉","度假","周边"],
+    imageQuery: "保定白洋淀温泉 hot-spring resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.2,
@@ -1866,6 +1982,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "亲子"
     ],
+    tags: ["廊坊天下第一城","文化","亲子","近郊"],
+    imageQuery: "廊坊天下第一城 culture family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-150",
     "rating": 3.9,
@@ -1898,6 +2016,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "探险"
     ],
+    tags: ["邢台崆山白云洞","自然","探险","周边"],
+    imageQuery: "邢台崆山白云洞 nature adventure Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -1931,6 +2051,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "红色"
     ],
+    tags: ["石家庄西柏坡","历史","红色","周边"],
+    imageQuery: "石家庄西柏坡 history heritage Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-150",
     "rating": 4.4,
@@ -1963,6 +2085,8 @@ const DESTINATIONS_BJ500 = [
       "爬山",
       "历史"
     ],
+    tags: ["石家庄抱犊寨","爬山","历史","周边"],
+    imageQuery: "石家庄抱犊寨 hiking history Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-200",
     "rating": 4.3,
@@ -1994,6 +2118,8 @@ const DESTINATIONS_BJ500 = [
       "漂流",
       "户外"
     ],
+    tags: ["保定野三坡十渡漂流","漂流","户外","近郊"],
+    imageQuery: "保定野三坡十渡漂流 rafting outdoor Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥150-300",
     "rating": 4.2,
@@ -2026,6 +2152,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "非遗"
     ],
+    tags: ["衡水武强年画","文化","非遗","周边"],
+    imageQuery: "衡水武强年画 culture intangible-heritage Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-100",
     "rating": 4.1,
@@ -2058,6 +2186,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "体验"
     ],
+    tags: ["沧州吴桥杂技","文化","体验","周边"],
+    imageQuery: "沧州吴桥杂技 culture experience Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥100-180",
     "rating": 4.2,
@@ -2090,6 +2220,8 @@ const DESTINATIONS_BJ500 = [
       "避暑",
       "户外"
     ],
+    tags: ["张家口翠云山","避暑","户外","周边"],
+    imageQuery: "张家口翠云山 summer-retreat outdoor Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-700",
     "rating": 4.3,
@@ -2122,6 +2254,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["承德磬锤峰","自然","摄影","周边"],
+    imageQuery: "承德磬锤峰 nature photography Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.4,
@@ -2153,6 +2287,8 @@ const DESTINATIONS_BJ500 = [
       "户外",
       "摄影"
     ],
+    tags: ["秦皇岛板厂峪长城","户外","摄影","周边"],
+    imageQuery: "秦皇岛板厂峪长城 outdoor photography Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.5,
@@ -2185,6 +2321,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "工业"
     ],
+    tags: ["唐山开滦矿山公园","历史","工业","周边"],
+    imageQuery: "唐山开滦矿山公园 history industrial Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-150",
     "rating": 4.2,
@@ -2217,6 +2355,8 @@ const DESTINATIONS_BJ500 = [
       "夜景",
       "文化"
     ],
+    tags: ["天津海河夜游","夜景","文化","周边"],
+    imageQuery: "天津海河夜游 nightscape culture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.6,
@@ -2248,6 +2388,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "艺术"
     ],
+    tags: ["天津瓷房子","文化","艺术","周边"],
+    imageQuery: "天津瓷房子 culture art Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-80",
     "rating": 4.4,
@@ -2279,6 +2421,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "美食"
     ],
+    tags: ["天津小白楼","文化","美食","周边"],
+    imageQuery: "天津小白楼 culture food Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-300",
     "rating": 4.2,
@@ -2311,6 +2455,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "非遗"
     ],
+    tags: ["杨柳青古镇","文化","非遗","周边"],
+    imageQuery: "杨柳青古镇 culture intangible-heritage Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-150",
     "rating": 4.3,
@@ -2343,6 +2489,8 @@ const DESTINATIONS_BJ500 = [
       "军事",
       "亲子"
     ],
+    tags: ["天津航母主题公园","军事","亲子","周边"],
+    imageQuery: "天津航母主题公园 military family Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-300",
     "rating": 4.3,
@@ -2374,6 +2522,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "户外"
     ],
+    tags: ["黄崖关长城","历史","户外","周边"],
+    imageQuery: "黄崖关长城 history outdoor Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-150",
     "rating": 4.4,
@@ -2405,6 +2555,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "美食"
     ],
+    tags: ["独流老醋博物馆","文化","美食","周边"],
+    imageQuery: "独流老醋博物馆 culture food Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥30-60",
     "rating": 4,
@@ -2436,6 +2588,8 @@ const DESTINATIONS_BJ500 = [
       "休闲",
       "亲子"
     ],
+    tags: ["天津水上公园","休闲","亲子","周边"],
+    imageQuery: "天津水上公园 leisure family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-30",
     "rating": 4.2,
@@ -2467,6 +2621,8 @@ const DESTINATIONS_BJ500 = [
       "科普",
       "亲子"
     ],
+    tags: ["天津自然博物馆","科普","亲子","周边"],
+    imageQuery: "天津自然博物馆 science-edu family Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-20",
     "rating": 4.5,
@@ -2499,6 +2655,8 @@ const DESTINATIONS_BJ500 = [
       "美食",
       "文化"
     ],
+    tags: ["淄博烧烤","美食","文化","周边"],
+    imageQuery: "淄博烧烤 food culture Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-700",
     "rating": 4.5,
@@ -2531,6 +2689,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "非遗"
     ],
+    tags: ["潍坊风筝博物馆","文化","非遗","周边"],
+    imageQuery: "潍坊风筝博物馆 culture intangible-heritage Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.2,
@@ -2563,6 +2723,8 @@ const DESTINATIONS_BJ500 = [
       "爬山",
       "红色"
     ],
+    tags: ["临沂蒙山","爬山","红色","周边"],
+    imageQuery: "临沂蒙山 hiking heritage Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.4,
@@ -2595,6 +2757,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "夜景"
     ],
+    tags: ["枣庄台儿庄古城","历史","夜景","周边"],
+    imageQuery: "枣庄台儿庄古城 history nightscape Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.6,
@@ -2627,6 +2791,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["聊城光岳楼","历史","文化","周边"],
+    imageQuery: "聊城光岳楼 history culture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.2,
@@ -2659,6 +2825,8 @@ const DESTINATIONS_BJ500 = [
       "赏花",
       "文化"
     ],
+    tags: ["菏泽牡丹园","赏花","文化","周边"],
+    imageQuery: "菏泽牡丹园 flowers culture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥300-500",
     "rating": 4.4,
@@ -2690,6 +2858,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["东营黄河入海口","自然","摄影","周边"],
+    imageQuery: "东营黄河入海口 nature photography Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.5,
@@ -2722,6 +2892,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "海滨"
     ],
+    tags: ["蓬莱八仙渡","文化","海滨","周边"],
+    imageQuery: "蓬莱八仙渡 culture seaside Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.3,
@@ -2754,6 +2926,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["长岛万鸟岛","自然","摄影","周边"],
+    imageQuery: "长岛万鸟岛 nature photography Beijing",
     "budget": "1000以上",
     "budgetText": "人均 ¥800-1200",
     "rating": 4.6,
@@ -2786,6 +2960,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["荣成天鹅湖","自然","摄影","周边"],
+    imageQuery: "荣成天鹅湖 nature photography Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.7,
@@ -2817,6 +2993,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["栖霞牟氏庄园","历史","建筑","周边"],
+    imageQuery: "栖霞牟氏庄园 history architecture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -2848,6 +3026,8 @@ const DESTINATIONS_BJ500 = [
       "户外",
       "体验"
     ],
+    tags: ["沂蒙山银座天蒙","户外","体验","周边"],
+    imageQuery: "沂蒙山银座天蒙 outdoor experience Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.4,
@@ -2880,6 +3060,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "红色"
     ],
+    tags: ["微山湖红荷湿地","自然","红色","周边"],
+    imageQuery: "微山湖红荷湿地 nature heritage Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.3,
@@ -2911,6 +3093,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["泰安岱庙","历史","文化","周边"],
+    imageQuery: "泰安岱庙 history culture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-100",
     "rating": 4.5,
@@ -2943,6 +3127,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["济宁水泊梁山","历史","文化","周边"],
+    imageQuery: "济宁水泊梁山 history culture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-200",
     "rating": 4.2,
@@ -2974,6 +3160,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "自然"
     ],
+    tags: ["青岛崂山太清宫","历史","自然","周边"],
+    imageQuery: "青岛崂山太清宫 history nature Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥150-250",
     "rating": 4.6,
@@ -3006,6 +3194,8 @@ const DESTINATIONS_BJ500 = [
       "海滨",
       "度假"
     ],
+    tags: ["烟台金沙滩","海滨","度假","周边"],
+    imageQuery: "烟台金沙滩 seaside resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.4,
@@ -3038,6 +3228,8 @@ const DESTINATIONS_BJ500 = [
       "文化",
       "自然"
     ],
+    tags: ["威海赤山","文化","自然","周边"],
+    imageQuery: "威海赤山 culture nature Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.3,
@@ -3070,6 +3262,8 @@ const DESTINATIONS_BJ500 = [
       "海滨",
       "度假"
     ],
+    tags: ["日照万平口","海滨","度假","周边"],
+    imageQuery: "日照万平口 seaside resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-700",
     "rating": 4.4,
@@ -3101,6 +3295,8 @@ const DESTINATIONS_BJ500 = [
       "建筑",
       "摄影"
     ],
+    tags: ["青岛八大关秋景","建筑","摄影","周边"],
+    imageQuery: "青岛八大关秋景 architecture photography Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥0-50",
     "rating": 4.7,
@@ -3132,6 +3328,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["太原晋祠","历史","建筑","周边"],
+    imageQuery: "太原晋祠 history architecture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-150",
     "rating": 4.6,
@@ -3163,6 +3361,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["大同华严寺","历史","建筑","周边"],
+    imageQuery: "大同华严寺 history architecture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥60-120",
     "rating": 4.5,
@@ -3194,6 +3394,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "夜景"
     ],
+    tags: ["云冈石窟夜游","历史","夜景","周边"],
+    imageQuery: "云冈石窟夜游 history nightscape Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.8,
@@ -3226,6 +3428,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["乔家大院","历史","建筑","周边"],
+    imageQuery: "乔家大院 history architecture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥150-250",
     "rating": 4.5,
@@ -3258,6 +3462,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["王家大院","历史","建筑","周边"],
+    imageQuery: "王家大院 history architecture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥80-150",
     "rating": 4.6,
@@ -3290,6 +3496,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "自然"
     ],
+    tags: ["绵山","历史","自然","周边"],
+    imageQuery: "绵山 history nature Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.4,
@@ -3321,6 +3529,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["壶口瀑布冬季冰瀑","自然","摄影","周边"],
+    imageQuery: "壶口瀑布冬季冰瀑 nature photography Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.8,
@@ -3352,6 +3562,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "户外"
     ],
+    tags: ["太行山大峡谷","自然","户外","周边"],
+    imageQuery: "太行山大峡谷 nature outdoor Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.5,
@@ -3383,6 +3595,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["晋城皇城相府","历史","建筑","周边"],
+    imageQuery: "晋城皇城相府 history architecture Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥150-250",
     "rating": 4.5,
@@ -3415,6 +3629,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["运城盐湖","自然","摄影","周边"],
+    imageQuery: "运城盐湖 nature photography Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -3446,6 +3662,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["洛阳白马寺","历史","文化","周边"],
+    imageQuery: "洛阳白马寺 history culture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥50-100",
     "rating": 4.5,
@@ -3478,6 +3696,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["洛阳老君山","自然","摄影","周边"],
+    imageQuery: "洛阳老君山 nature photography Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.8,
@@ -3509,6 +3729,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "体验"
     ],
+    tags: ["开封清明上河园","历史","体验","周边"],
+    imageQuery: "开封清明上河园 history experience Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-350",
     "rating": 4.5,
@@ -3541,6 +3763,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "户外"
     ],
+    tags: ["焦作云台山","自然","户外","周边"],
+    imageQuery: "焦作云台山 nature outdoor Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.7,
@@ -3572,6 +3796,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "户外"
     ],
+    tags: ["新乡八里沟","自然","户外","周边"],
+    imageQuery: "新乡八里沟 nature outdoor Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.4,
@@ -3603,6 +3829,8 @@ const DESTINATIONS_BJ500 = [
       "红色",
       "历史"
     ],
+    tags: ["林州红旗渠","红色","历史","周边"],
+    imageQuery: "林州红旗渠 heritage history Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥100-200",
     "rating": 4.5,
@@ -3634,6 +3862,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "文化"
     ],
+    tags: ["安阳汤阴岳飞庙","历史","文化","周边"],
+    imageQuery: "安阳汤阴岳飞庙 history culture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥40-80",
     "rating": 4.3,
@@ -3666,6 +3896,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["沈阳故宫","历史","建筑","周边"],
+    imageQuery: "沈阳故宫 history architecture Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.6,
@@ -3698,6 +3930,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "摄影"
     ],
+    tags: ["盘锦红海滩落日","自然","摄影","周边"],
+    imageQuery: "盘锦红海滩落日 nature photography Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.7,
@@ -3730,6 +3964,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "度假"
     ],
+    tags: ["大连金石滩","自然","度假","周边"],
+    imageQuery: "大连金石滩 nature resort Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.5,
@@ -3762,6 +3998,8 @@ const DESTINATIONS_BJ500 = [
       "亲子",
       "海滨"
     ],
+    tags: ["大连老虎滩","亲子","海滨","周边"],
+    imageQuery: "大连老虎滩 family seaside Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-350",
     "rating": 4.4,
@@ -3794,6 +4032,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "边境"
     ],
+    tags: ["丹东鸭绿江","历史","边境","周边"],
+    imageQuery: "丹东鸭绿江 history border Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥500-800",
     "rating": 4.5,
@@ -3825,6 +4065,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "佛教"
     ],
+    tags: ["鞍山千山","自然","佛教","周边"],
+    imageQuery: "鞍山千山 nature buddhism Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.3,
@@ -3857,6 +4099,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "探险"
     ],
+    tags: ["本溪水洞","自然","探险","周边"],
+    imageQuery: "本溪水洞 nature adventure Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.6,
@@ -3889,6 +4133,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "海滨"
     ],
+    tags: ["葫芦岛兴城古城","历史","海滨","周边"],
+    imageQuery: "葫芦岛兴城古城 history seaside Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.3,
@@ -3920,6 +4166,8 @@ const DESTINATIONS_BJ500 = [
       "历史",
       "建筑"
     ],
+    tags: ["辽阳白塔","历史","建筑","周边"],
+    imageQuery: "辽阳白塔 history architecture Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥30-80",
     "rating": 4.1,
@@ -3951,6 +4199,8 @@ const DESTINATIONS_BJ500 = [
       "科普",
       "地质"
     ],
+    tags: ["朝阳北票化石群","科普","地质","周边"],
+    imageQuery: "朝阳北票化石群 science-edu geology Beijing",
     "budget": "200-500",
     "budgetText": "人均 ¥200-400",
     "rating": 4.3,
@@ -3983,6 +4233,8 @@ const DESTINATIONS_BJ500 = [
       "海滨",
       "美食"
     ],
+    tags: ["营口鲅鱼圈","海滨","美食","周边"],
+    imageQuery: "营口鲅鱼圈 seaside food Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.3,
@@ -4014,6 +4266,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "佛教"
     ],
+    tags: ["铁岭龙首山","自然","佛教","周边"],
+    imageQuery: "铁岭龙首山 nature buddhism Beijing",
     "budget": "200以下",
     "budgetText": "人均 ¥20-60",
     "rating": 4,
@@ -4046,6 +4300,8 @@ const DESTINATIONS_BJ500 = [
       "自然",
       "历史"
     ],
+    tags: ["锦州医巫闾山","自然","历史","周边"],
+    imageQuery: "锦州医巫闾山 nature history Beijing",
     "budget": "500-1000",
     "budgetText": "人均 ¥400-600",
     "rating": 4.4,
