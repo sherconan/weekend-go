@@ -324,8 +324,64 @@ const commands = {
   'scan-skeletons': () => scanSkeletons(args[0]),
   'cross-city-check': () => crossCityCheck(args[0]),
   'chrome-verify': () => chromeVerify(args[0], args.includes('--legend')),
-  'dedup-report': () => dedupReport()
+  'dedup-report': () => dedupReport(),
+  'full-city-smoke': () => fullCitySmoke()
 };
+
+function fullCitySmoke() {
+  // 依次切换所有 CITIES 并统计 cardCount，任一为 0 视为回归
+  const sb = { window:{}, module:{exports:{}}, console:{log:()=>{},error:()=>{}} };
+  require('vm').runInNewContext(fs.readFileSync(path.join(ROOT,'config/cities.js'),'utf-8').replace(/\bconst\s+CITIES\s*=/,'var CITIES ='), sb, {timeout:3000});
+  const keys = (sb.CITIES || []).map(c => c.key);
+  const jsParts = keys.map(k =>
+    `document.querySelector('[data-city=\\"${k}\\"]').click(); s=Date.now(); while(Date.now()-s<1500){} result.${k}=document.querySelectorAll('.dest-card').length;`
+  ).join(' ');
+  const js = `(function(){ var result={}; var s; ${jsParts} return JSON.stringify(result); })()`;
+
+  // Write AppleScript to temp file to avoid shell escaping hell
+  const tmpScript = `/tmp/wg-smoke-${Date.now()}.scpt`;
+  const url = `https://sherconan.github.io/weekend-go/?smoke=${Date.now()}`;
+  const applescript = `tell application "Google Chrome"
+  set toClose to {}
+  repeat with w in windows
+    repeat with t in tabs of w
+      if URL of t contains "sherconan.github.io/weekend-go" then copy t to end of toClose
+    end repeat
+  end repeat
+  repeat with t in toClose
+    close t
+  end repeat
+  tell window 1 to make new tab with properties {URL:"${url}"}
+end tell
+delay 15
+tell application "Google Chrome"
+  repeat with w in windows
+    repeat with t in tabs of w
+      if URL of t contains "sherconan.github.io/weekend-go" then
+        return execute t javascript "${js}"
+      end if
+    end repeat
+  end repeat
+end tell`;
+  fs.writeFileSync(tmpScript, applescript);
+  try {
+    const out = execSync(`osascript "${tmpScript}"`).toString().trim();
+    console.log('Full city smoke result:', out);
+    try {
+      const parsed = JSON.parse(out);
+      const zeros = Object.entries(parsed).filter(([k,v]) => !v).map(([k])=>k);
+      if (zeros.length) {
+        console.error('❌ REGRESSION: cities with 0 cards:', zeros.join(','));
+        process.exit(1);
+      }
+      console.log('✅ All cities render > 0 cards');
+    } catch (e) {
+      console.error('parse failed:', e.message);
+    }
+  } finally {
+    try { fs.unlinkSync(tmpScript); } catch {}
+  }
+}
 
 if (!commands[cmd]) {
   console.error(`Unknown command: ${cmd}\nAvailable: ${Object.keys(commands).join(', ')}`);
