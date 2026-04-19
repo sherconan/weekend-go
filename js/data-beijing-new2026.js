@@ -22,7 +22,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区购物目的地，无需住宿。如有需要：\n1. 国贸大酒店 — 步行5分钟，1200+/晚\n2. 大望路周边快捷酒店 — 400-600元/晚\n3. 建国门商圈 — 选择多，300-800元/晚",
     tips: "1. 周末下午人流高峰，建议工作日或上午前往\n2. SKP-S的艺术展免费但需在公众号预约时段\n3. 会员积分可兑换停车和餐饮券，办卡有门槛但值得\n4. 大望路地铁站换乘通道长，预留10分钟步行时间",
     bestSeason: "四季皆宜，换季打折最划算",
-    highlight: "奢侈品·艺术装置·美食超市"
+    highlight: "奢侈品·艺术装置·美食超市",
+    tags: ["北京SKP","购物","美食","城内"],
+    imageQuery: "北京SKP shopping food Beijing"
   },
   {
     id: 651,
@@ -46,7 +48,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区商业体，无需住宿。",
     tips: "1. 周五晚和周末中午是人流巅峰，21区几乎每家都要排队\n2. 用大众点评提前取号，能省一半等待时间\n3. 地下停车场周末经常满，地铁是唯一正确选择\n4. 21区很多店晚上10点关门，别去太晚",
     bestSeason: "四季皆宜",
-    highlight: "21区BLOCK·网红美食·潮流购物"
+    highlight: "21区BLOCK·网红美食·潮流购物",
+    tags: ["合生汇","美食","购物","城内"],
+    imageQuery: "合生汇 food shopping Beijing"
   },
   {
     id: 652,
@@ -70,7 +74,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区娱乐区，无需住宿。如看完演唱会太晚：\n1. 五棵松周边快捷酒店 — 300-500元/晚\n2. 万寿路地铁站附近 — 选择更多",
     tips: "1. 演唱会日周边交通管制，提前2小时到\n2. HI-UP非演出日晚间人不多，适合安静约会\n3. 冬天户外街区较冷，选室内店\n4. 周末经常有市集活动，关注华熙LIVE公众号",
     bestSeason: "四季皆宜，夏季户外活动最丰富",
-    highlight: "演唱会·精酿酒吧·冰上运动"
+    highlight: "演唱会·精酿酒吧·冰上运动",
+    tags: ["华熙LIVE·五棵松","购物","娱乐","城内"],
+    imageQuery: "华熙LIVE·五棵松 shopping entertainment Beijing"
   },
   {
     id: 653,
@@ -94,7 +100,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区购物点，无需住宿。",
     tips: "1. 工作日下午人最少，适合拍空景\n2. 和西单大悦城、汉光百货形成三角，可以串着逛\n3. 部分品牌只收现金或小程序支付，带好手机\n4. 地下层信号可能不好，提前下载好导航",
     bestSeason: "四季皆宜",
-    highlight: "先锋设计·下沉广场·独立品牌"
+    highlight: "先锋设计·下沉广场·独立品牌",
+    tags: ["西单更新场","购物","文创","城内"],
+    imageQuery: "西单更新场 shopping culture creative Beijing"
   },
   {
     id: 654,
@@ -118,7 +126,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区商场，无需住宿。",
     tips: "1. 2024年底到2025年仍在爬坡期，品牌还在持续进驻\n2. 周末客流大，建议工作日探店\n3. 停车3小时内消费满200免费\n4. 朝阳门地铁站出口多，认准A口最近",
     bestSeason: "四季皆宜",
-    highlight: "LED天幕·空中花园·北京首店"
+    highlight: "LED天幕·空中花园·北京首店",
+    tags: ["THE BOX朝外","购物","美食","城内"],
+    imageQuery: "THE BOX朝外 shopping food Beijing"
   },
   {
     id: 655,
@@ -142,7 +152,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "本地商场，无需住宿。",
     tips: "1. 周末亲子客流大，停车场下午容易满\n2. 和荟聚购物中心（宜家）相距不远，可以串着逛\n3. 大兴线非高峰期座位充足，地铁来很舒服\n4. 南城餐饮价格比朝阳海淀便宜10-20%",
     bestSeason: "四季皆宜",
-    highlight: "亲子商业·南城地标·家庭消费"
+    highlight: "亲子商业·南城地标·家庭消费",
+    tags: ["大悦春风里","购物","美食","亲子","城内"],
+    imageQuery: "大悦春风里 shopping food family Beijing"
   },
   {
     id: 656,
@@ -166,7 +178,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "1. 运河商务区酒店 — 周边多家品牌酒店，500-800元/晚\n2. 通州万达附近 — 选择多且便宜，300-500元/晚",
     tips: "1. 2025年底刚开业，部分区域仍在调整中\n2. 周末从朝阳过去堵车严重，建议地铁\n3. 可与大运河森林公园串联，白天公园晚上商场\n4. 停车目前免费（开业优惠期），后续可能调整",
     bestSeason: "四季皆宜",
-    highlight: "运河主题·室内滑雪·东部首店"
+    highlight: "运河主题·室内滑雪·东部首店",
+    tags: ["湾里","购物","美食","娱乐","城内"],
+    imageQuery: "湾里 shopping food entertainment Beijing"
   },
   {
     id: 657,
@@ -190,7 +204,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区商业项目，无需住宿。",
     tips: "1. 2026年新开业项目，建议开业稳定后再去体验\n2. 关注太古坊官方渠道获取开业时间和品牌信息\n3. 定位偏商务，穿着可以稍正式\n4. 预计工作日和周末体验差异不大",
     bestSeason: "四季皆宜",
-    highlight: "太古品质·艺术画廊·精品餐饮"
+    highlight: "太古品质·艺术画廊·精品餐饮",
+    tags: ["北京太古坊","购物","文创","城内"],
+    imageQuery: "北京太古坊 shopping culture creative Beijing"
   },
   {
     id: 658,
@@ -214,7 +230,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 完全免费，全天开放\n2. 入口非常隐蔽，导航搜「菖蒲河公园」跟着走\n3. 上午逆光、下午顺光，摄影建议下午2-4点\n4. 公园很小，单独来不够玩，一定要串联周边景点\n5. 雨后红墙颜色更深、地面反光，是最佳拍摄时机",
     bestSeason: "春秋最佳，春天桃花+红墙绝美",
-    highlight: "红墙秘境·汉服圣地·免费打卡"
+    highlight: "红墙秘境·汉服圣地·免费打卡",
+    tags: ["菖蒲河公园","拍照","文化","市中心"],
+    imageQuery: "菖蒲河公园 photography culture Beijing"
   },
   {
     id: 659,
@@ -238,7 +256,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "建议一日往返。如需住宿：\n1. 玻璃台村民宿 — 山中民宿，200-400元/晚\n2. 平谷城区酒店 — 选择更多，200-400元/晚",
     tips: "1. 花期极短！一般就10-15天，关注平谷文旅公众号获取实时花情\n2. 4月中旬到5月初最佳，具体看当年气温\n3. 山区早晚温差大，带件外套\n4. 路窄弯多，注意安全驾驶\n5. 和平谷桃花节错峰，梨花谷人少很多",
     bestSeason: "4月中旬-5月初（仅花期）",
-    highlight: "万亩梨花·山谷花海·小众赏花"
+    highlight: "万亩梨花·山谷花海·小众赏花",
+    tags: ["镇罗营梨花谷","赏花","自然","近郊"],
+    imageQuery: "镇罗营梨花谷 flowers nature Beijing"
   },
   {
     id: 660,
@@ -262,7 +282,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区休闲空间，无需住宿。",
     tips: "1. 下午2-4点光线最好，适合拍照\n2. 周末人多，工作日体验更佳\n3. 带相机比手机出片效果好——花园的层次感需要虚化\n4. 部分活动需要预约，提前查看公众号",
     bestSeason: "春夏最佳，花园最茂盛",
-    highlight: "花园商业·疗愈空间·精品咖啡"
+    highlight: "花园商业·疗愈空间·精品咖啡",
+    tags: ["友谊花园","拍照","美食","城内"],
+    imageQuery: "友谊花园 photography food Beijing"
   },
   {
     id: 661,
@@ -286,7 +308,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区文化空间，无需住宿。",
     tips: "1. 百老汇电影中心周末热门场次要提前买票\n2. 建筑外部随时可以拍照，内部走廊需要是住户才能进入\n3. 傍晚亮灯后透明立面最美\n4. 可以串联簋街夜宵，看完文艺片吃个麻辣小龙虾",
     bestSeason: "四季皆宜，傍晚亮灯后最美",
-    highlight: "大师建筑·文艺电影·独立书店"
+    highlight: "大师建筑·文艺电影·独立书店",
+    tags: ["当代MOMA","文创","拍照","城内"],
+    imageQuery: "当代MOMA culture creative photography Beijing"
   },
   {
     id: 662,
@@ -310,7 +334,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区胡同，无需住宿。如想体验胡同住宿：\n胡同民宿/四合院酒店 — 500-1500元/晚",
     tips: "1. 很多店周一到周三不开门，建议周四到周日去\n2. 胡同内手机信号可能弱，提前下载离线地图\n3. 尊重胡同居民生活，不要大声喧哗\n4. 各店营业时间不统一，下午2-6点是最安全的时间段",
     bestSeason: "春秋最佳，夏季胡同里也凉快",
-    highlight: "胡同新生·独立小店·手作体验"
+    highlight: "胡同新生·独立小店·手作体验",
+    tags: ["大吉巷","文创","美食","城内"],
+    imageQuery: "大吉巷 culture creative food Beijing"
   },
   {
     id: 663,
@@ -334,7 +360,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区艺术区，无需住宿。",
     tips: "1. 大部分展览免费，个别特展收费30-80元\n2. 周一闭馆！798很多画廊周一都关，别白跑\n3. 798周末人多车多，建议工作日或上午早去\n4. 泰康空间展览学术性强，建议先看公众号导览文字再去现场",
     bestSeason: "四季皆宜",
-    highlight: "当代艺术·非营利画廊·学术展览"
+    highlight: "当代艺术·非营利画廊·学术展览",
+    tags: ["泰康空间","文创","拍照","城内"],
+    imageQuery: "泰康空间 culture creative photography Beijing"
   },
   {
     id: 664,
@@ -358,7 +386,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区美食区，无需住宿。深夜活动建议打车回家。",
     tips: "1. 夏天旺季排队可达1-2小时，建议工作日去\n2. 深夜出行注意安全，结伴同行\n3. 烧烤味道重，穿不怕味道的衣服\n4. 吃完烧烤去望京SOHO溜达消食，夜景很美",
     bestSeason: "夏季最佳（户外烧烤季），冬季室内也不错",
-    highlight: "深夜烧烤·小腰文化·望京夜生活"
+    highlight: "深夜烧烤·小腰文化·望京夜生活",
+    tags: ["望京小腰","美食","夜生活","城内"],
+    imageQuery: "望京小腰 food nightlife Beijing"
   },
   {
     id: 665,
@@ -382,7 +412,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区美食街，无需住宿。",
     tips: "1. 护国寺小吃总店早上排队最长，建议7:30前到\n2. 豆汁是acquired taste，第一次喝可能不习惯，但要试一次\n3. 和什刹海、南锣鼓巷在同一片区，可以串联一日游\n4. 街道不长，纯吃1小时够，联游半天合适",
     bestSeason: "四季皆宜",
-    highlight: "老北京小吃·护国寺总店·胡同文化"
+    highlight: "老北京小吃·护国寺总店·胡同文化",
+    tags: ["护国寺街","美食","文化","城内"],
+    imageQuery: "护国寺街 food culture Beijing"
   },
   {
     id: 666,
@@ -406,7 +438,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区文化街区，无需住宿。深夜活动可打车回家。\n如想体验胡同住宿：周边四合院民宿500-1200元/晚。",
     tips: "1. 白天逛咖啡+vintage，傍晚开始喝酒听歌，这是正确的时间线\n2. 周末晚上酒吧排队，工作日晚上氛围更好\n3. 和南锣鼓巷只隔一条街但气质完全不同，别走错\n4. 很多店只收微信/支付宝，不收现金\n5. 骑车是最佳游览方式，停停走走最有感觉",
     bestSeason: "四季皆宜，夏季户外位最抢手",
-    highlight: "独立咖啡·精酿酒吧·Live house"
+    highlight: "独立咖啡·精酿酒吧·Live house",
+    tags: ["鼓楼东大街","美食","文创","夜生活","城内"],
+    imageQuery: "鼓楼东大街 food culture creative nightlife Beijing"
   },
   {
     id: 667,
@@ -430,7 +464,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区大学城，无需住宿。",
     tips: "1. 周末和假期学生少，反而不太有氛围\n2. 开学季（9月和3月）最热闹\n3. 五道口停车很难，地铁13号线直达\n4. 万圣书园值得专程来逛，但营业时间注意查看",
     bestSeason: "四季皆宜",
-    highlight: "宇宙中心·国际美食·大学文化"
+    highlight: "宇宙中心·国际美食·大学文化",
+    tags: ["五道口","美食","购物","城内"],
+    imageQuery: "五道口 food shopping Beijing"
   },
   {
     id: 668,
@@ -454,7 +490,9 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区娱乐项目，无需住宿。",
     tips: "1. 必须提前在大众点评或公众号预约，周末基本约满\n2. 穿平底鞋和长裤，不能穿高跟鞋和裙子\n3. 有身高和年龄限制，带小孩前先确认\n4. 第一次去选慢速模式就够刺激了，别逞强选快速\n5. 单次约150-250元，双次套票更划算",
     bestSeason: "四季皆宜（室内项目）",
-    highlight: "专业赛道·速度体验·团建约会"
+    highlight: "专业赛道·速度体验·团建约会",
+    tags: ["Red1卡丁车","运动","娱乐","城内"],
+    imageQuery: "Red1卡丁车 sports entertainment Beijing"
   },
   {
     id: 669,
@@ -478,6 +516,8 @@ const DESTINATIONS_BJ_2026 = [
     whereToStay: "市区夜景点，无需住宿。\n如需住宿：蓝色港湾/三里屯周边酒店 — 500-1200元/晚。",
     tips: "1. 夜景最佳时间：天黑后到晚上10点，灯光全开\n2. 夏天蚊子多，喷好防蚊液再去\n3. 皮划艇需提前预约，关注「亮马河水上运动」公众号\n4. 建议从蓝色港湾往东走，这个方向灯光最美\n5. 冬天河面结冰后有不同的美，但步道仍开放",
     bestSeason: "夏秋最佳，夜间打卡全年可",
-    highlight: "北京塞纳河·夜间灯光·水上皮划艇"
+    highlight: "北京塞纳河·夜间灯光·水上皮划艇",
+    tags: ["亮马河国际风情水岸","拍照","夜生活","城内"],
+    imageQuery: "亮马河国际风情水岸 photography nightlife Beijing"
   }
 ];
