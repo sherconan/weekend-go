@@ -841,11 +841,44 @@ function scrollToSection(id) {
   }
 }
 
-// ========== PWA Service Worker ==========
+// ========== PWA Service Worker + Install Prompt ==========
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
   });
+}
+
+let _deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  _deferredInstallPrompt = e;
+  if (localStorage.getItem('wg_install_dismissed')) return;
+  showInstallBanner();
+});
+
+function showInstallBanner() {
+  if (document.getElementById('wg-install-banner')) return;
+  const banner = document.createElement('div');
+  banner.id = 'wg-install-banner';
+  banner.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#101828;color:white;padding:12px 16px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:14px;display:flex;gap:10px;align-items:center;z-index:9999;max-width:90vw;';
+  banner.innerHTML = `
+    <span>📱 添加到主屏，离线也能用</span>
+    <button id="wg-install-yes" style="background:#4CAF50;color:white;border:none;padding:6px 14px;border-radius:12px;font-size:13px;cursor:pointer;font-weight:700">添加</button>
+    <button id="wg-install-no" style="background:transparent;color:#98A2B3;border:none;padding:6px;font-size:13px;cursor:pointer;">稍后</button>
+  `;
+  document.body.appendChild(banner);
+  document.getElementById('wg-install-yes').onclick = async () => {
+    banner.remove();
+    if (_deferredInstallPrompt) {
+      _deferredInstallPrompt.prompt();
+      await _deferredInstallPrompt.userChoice;
+      _deferredInstallPrompt = null;
+    }
+  };
+  document.getElementById('wg-install-no').onclick = () => {
+    localStorage.setItem('wg_install_dismissed', '1');
+    banner.remove();
+  };
 }
 
 // ========== Share ==========

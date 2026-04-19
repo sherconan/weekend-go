@@ -1,8 +1,9 @@
 {
-  "name": "周末去哪儿 - 北京周边游决策助手",
+  "name": "周末去哪儿 - 8 城周边游决策助手",
   "short_name": "周末去哪儿",
-  "description": "帮你从「不知道去哪」到「就去这儿」的北京周边游决策助手",
-  "start_url": "/index.html",
+  "description": "从「不知道去哪」到「就去这儿」— 8 城 800+ 目的地 · 行程智能规划 · 另一面都市传说",
+  "start_url": "/weekend-go/",
+  "scope": "/weekend-go/",
   "display": "standalone",
   "background_color": "#FAFBF8",
   "theme_color": "#4CAF50",
@@ -22,6 +23,19 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["travel", "lifestyle"],
-  "screenshots": []
+  "shortcuts": [
+    {
+      "name": "行程规划器",
+      "short_name": "规划",
+      "url": "/weekend-go/planner.html",
+      "description": "一键生成 1-3 日周末行程"
+    },
+    {
+      "name": "数据一览",
+      "short_name": "数据",
+      "url": "/weekend-go/stats.html",
+      "description": "8 城 800+ 目的地全景"
+    }
+  ],
+  "categories": ["travel", "lifestyle", "utilities"]
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>离线 · 周末去哪儿</title>
+  <style>
+    body{font-family:"PingFang SC",sans-serif;margin:0;background:linear-gradient(135deg,#FFF8E1 0%,#FFF3E0 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#101828;}
+    .card{max-width:420px;padding:40px 28px;background:white;border-radius:24px;box-shadow:0 12px 40px rgba(0,0,0,.08);text-align:center;margin:20px;}
+    .emoji{font-size:64px;margin-bottom:16px;}
+    h1{font-size:24px;margin-bottom:10px;}
+    p{color:#667085;font-size:15px;line-height:1.6;margin-bottom:24px;}
+    .btn{display:inline-block;padding:12px 28px;background:#4CAF50;color:white;text-decoration:none;border-radius:24px;font-weight:700;font-size:15px;}
+    .btn:hover{background:#43a047;}
+    .cached{margin-top:24px;padding-top:20px;border-top:1px dashed #E8ECF0;font-size:13px;color:#667085;}
+    .cached a{color:#4CAF50;text-decoration:none;margin:0 4px;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">📡</div>
+    <h1>当前处于离线状态</h1>
+    <p>网络连接不见了。已经访问过的目的地数据依然可以浏览。</p>
+    <a class="btn" href="/" onclick="location.reload();return false;">重新连接</a>
+    <div class="cached">
+      已缓存的页面：
+      <a href="/weekend-go/">首页</a>·
+      <a href="/weekend-go/planner.html">行程规划</a>·
+      <a href="/weekend-go/stats.html">数据一览</a>
+    </div>
+  </div>
+</body>
+</html>
