@@ -56,7 +56,10 @@ function loadAllWebData() {
     'data-legends-shenzhen.js': { var: 'LEGENDS_SZ', city: 'shenzhen' },
     'data-legends-weihai.js':   { var: 'LEGENDS_WH', city: 'weihai' },
     'data-legends-suzhou.js':   { var: 'LEGENDS_SU', city: 'suzhou' },
-    'data-legends-qingdao.js':  { var: 'LEGENDS_QD', city: 'qingdao' }
+    'data-legends-qingdao.js':  { var: 'LEGENDS_QD', city: 'qingdao' },
+    'data-legends-tianjin.js':  { var: 'LEGENDS_TJ', city: 'tianjin' },
+    'data-legends-chengdu.js':  { var: 'LEGENDS_CD', city: 'chengdu' },
+    'data-legends-hangzhou.js': { var: 'LEGENDS_HZ', city: 'hangzhou' }
   };
   for (const [f, { var: vn, city }] of Object.entries(legendCityFiles)) {
     const p = path.join(jsDir, f);
@@ -92,7 +95,9 @@ const CITY_SOURCE_VARS = {
   weihai:   ['DESTINATIONS_WH'],
   suzhou:   ['DESTINATIONS_SU'],
   tianjin:  ['DESTINATIONS_TJ'],
-  qingdao:  ['DESTINATIONS_QD']
+  qingdao:  ['DESTINATIONS_QD'],
+  chengdu:  ['DESTINATIONS_CD'],
+  hangzhou: ['DESTINATIONS_HZ']
 };
 
 function buildCityDests(sb, cityKey) {
