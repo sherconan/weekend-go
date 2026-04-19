@@ -2,6 +2,44 @@
 // localStorage-based "visited" tracking with unique artistic stamps
 
 const STAMP_KEY = 'weekendgo_visited';
+const STAMP_MIGRATION_FLAG = 'weekendgo_visited_migrated_v2';
+
+// Phase 2 migration: old entries keyed by city-scoped IDs (e.g. 1200 for QD 栈桥) should now
+// map to shared dest IDs (5001 for 栈桥 in shared facet). Runs once per browser.
+function _migrateVisitedToShared() {
+  try {
+    if (localStorage.getItem(STAMP_MIGRATION_FLAG) === '1') return;
+    if (typeof SHARED_CROSS_CITY_DESTS === 'undefined') return;
+    const visited = JSON.parse(localStorage.getItem(STAMP_KEY) || '{}');
+    let migrated = 0;
+    for (const shared of SHARED_CROSS_CITY_DESTS) {
+      // Find any visited entry whose name matches shared.name
+      for (const [oldKey, info] of Object.entries(visited)) {
+        if (info && info.name === shared.name && String(oldKey) !== String(shared.id)) {
+          visited[shared.id] = { name: shared.name, date: info.date, _migratedFrom: oldKey };
+          delete visited[oldKey];
+          migrated++;
+        }
+      }
+    }
+    if (migrated > 0) {
+      localStorage.setItem(STAMP_KEY, JSON.stringify(visited));
+      console.log('[stamp] migrated', migrated, 'visited entries to shared IDs');
+    }
+    localStorage.setItem(STAMP_MIGRATION_FLAG, '1');
+  } catch (e) {
+    console.warn('[stamp] migration failed:', e.message);
+  }
+}
+
+// Run migration on script load (once per browser)
+if (typeof window !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', _migrateVisitedToShared);
+  } else {
+    _migrateVisitedToShared();
+  }
+}
 
 // Load visited destinations from localStorage
 function getVisited() {
