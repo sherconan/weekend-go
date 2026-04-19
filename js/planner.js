@@ -183,33 +183,37 @@
     return String(hi).padStart(2,'0') + ':' + String(mi).padStart(2,'0');
   }
 
-  // ---------- Plan generation ----------
-  function generatePlan(cityKey, numDays, selectedFamilies, userBudget) {
-    const all = loadCityDests(cityKey);
-    if (!all.length) return { error: '该城市暂无数据' };
-
-    // Filter + score
-    const scored = all
+  // ---------- Plan generation (single-city or multi-city) ----------
+  function scoreAndRank(dests, selectedFamilies, userBudget) {
+    const scored = dests
       .filter(d => budgetOk(d, userBudget))
       .map(d => Object.assign({}, d, { _score: scoreDest(d, selectedFamilies, userBudget) }))
-      .filter(d => d._score > 1.0) // min score threshold
+      .filter(d => d._score > 1.0)
       .sort((a,b) => b._score - a._score);
-
     if (scored.length < 3) {
-      // Relax budget, keep scoring
-      const relaxed = all
+      const relaxed = dests
         .map(d => Object.assign({}, d, { _score: scoreDest(d, selectedFamilies, userBudget) * 0.8 }))
         .sort((a,b) => b._score - a._score);
-      if (relaxed.length < 3) return { error: '符合条件的目的地太少了，换个偏好试试？' };
-      scored.push(...relaxed.filter(r => !scored.find(s => s.name === r.name)));
+      for (const r of relaxed) {
+        if (!scored.find(s => s.name === r.name)) scored.push(r);
+        if (scored.length >= Math.max(3, dests.length / 2)) break;
+      }
     }
+    return scored;
+  }
+
+  function generatePlan(cityKey, numDays, selectedFamilies, userBudget, cityKey2) {
+    const isMultiCity = !!cityKey2 && cityKey2 !== cityKey && numDays >= 2;
+    if (isMultiCity) {
+      return generateMultiCityPlan(cityKey, cityKey2, numDays, selectedFamilies, userBudget);
+    }
+    const all = loadCityDests(cityKey);
+    if (!all.length) return { error: '该城市暂无数据' };
+    const scored = scoreAndRank(all, selectedFamilies, userBudget);
+    if (scored.length < 3) return { error: '符合条件的目的地太少了，换个偏好试试？' };
 
     const days = allocateDays(scored, numDays);
     if (!days.length) return { error: '无法组合出合理行程' };
-
-    // Estimate totals
-    const totalBudget = estimateBudget(days, userBudget);
-    const totalDests = days.reduce((s,d)=>s+d.dests.length, 0);
 
     return {
       cityKey,
@@ -220,12 +224,94 @@
         const slots = assignTimeSlots(day.dests);
         return {
           idx: i + 1,
+          city: cityKey,
           slots,
           hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
         };
       }),
-      totalBudget,
+      totalBudget: estimateBudget(days, userBudget),
       totalDests: days.reduce((s,d)=>s+assignTimeSlots(d.dests).length, 0),
+      createdAt: Date.now()
+    };
+  }
+
+  function generateMultiCityPlan(cityA, cityB, numDays, selectedFamilies, userBudget) {
+    const cities = g('CITIES') || [];
+    const ca = cities.find(c => c.key === cityA);
+    const cb = cities.find(c => c.key === cityB);
+    if (!ca || !cb) return { error: '城市数据未找到' };
+
+    const destsA = loadCityDests(cityA);
+    const destsB = loadCityDests(cityB);
+    if (destsA.length < 2 || destsB.length < 2) return { error: '两城数据不足组合行程' };
+
+    const rankA = scoreAndRank(destsA, selectedFamilies, userBudget);
+    const rankB = scoreAndRank(destsB, selectedFamilies, userBudget);
+
+    // Split days: roughly half/half, with cityA getting floor(numDays/2) + 1 if odd
+    const daysA = Math.ceil(numDays / 2);
+    const daysB = numDays - daysA;
+
+    const partA = allocateDays(rankA, daysA);
+    const partB = allocateDays(rankB, daysB);
+
+    // Transit metadata
+    const transitKm = Math.round(haversineKm(ca.origin, cb.origin));
+    const transitBudget = transitCost(transitKm);
+    const transitH = transitHours(transitKm);
+
+    const allDays = [];
+    partA.forEach((day, i) => {
+      const slots = assignTimeSlots(day.dests);
+      allDays.push({
+        idx: allDays.length + 1,
+        city: cityA,
+        cityLabel: ca.emoji + ' ' + ca.name,
+        slots,
+        hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
+      });
+    });
+    // Insert transit marker between A and B
+    if (partB.length) {
+      allDays.push({
+        idx: -1, // marker
+        isTransit: true,
+        fromCity: cityA,
+        toCity: cityB,
+        fromLabel: ca.emoji + ' ' + ca.name,
+        toLabel: cb.emoji + ' ' + cb.name,
+        km: transitKm,
+        hours: transitH,
+        cost: transitBudget
+      });
+      partB.forEach((day, i) => {
+        const slots = assignTimeSlots(day.dests);
+        allDays.push({
+          idx: allDays.filter(d => !d.isTransit).length + 1,
+          city: cityB,
+          cityLabel: cb.emoji + ' ' + cb.name,
+          slots,
+          hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
+        });
+      });
+    }
+
+    const budgetAB = estimateBudget(partA, userBudget) + estimateBudget(partB, userBudget);
+    const totalDests = allDays
+      .filter(d => !d.isTransit)
+      .reduce((s,d) => s + d.slots.length, 0);
+
+    return {
+      cityKey: cityA,
+      cityKey2: cityB,
+      isMultiCity: true,
+      numDays,
+      familyTags: selectedFamilies,
+      userBudget,
+      transit: { km: transitKm, hours: transitH, cost: transitBudget, fromLabel: ca.emoji+' '+ca.name, toLabel: cb.emoji+' '+cb.name },
+      days: allDays,
+      totalBudget: budgetAB + transitBudget,
+      totalDests,
       createdAt: Date.now()
     };
   }
@@ -238,15 +324,39 @@
   // ---------- UI state ----------
   const state = {
     city: null,
+    city2: null, // secondary city when multi-city mode
+    multiCity: false,
     days: 2,
     themes: [],
     budget: '200-500'
   };
 
+  // ---------- Haversine distance between two origins (km) ----------
+  function haversineKm(a, b) {
+    const R = 6371;
+    const toRad = (d) => d * Math.PI / 180;
+    const dLat = toRad(b.lat - a.lat);
+    const dLng = toRad(b.lng - a.lng);
+    const lat1 = toRad(a.lat);
+    const lat2 = toRad(b.lat);
+    const h = Math.sin(dLat/2)**2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng/2)**2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+
+  function transitCost(km) {
+    // rough CRH fare: ¥0.45/km + ¥40 base
+    return Math.round(km * 0.45 + 40);
+  }
+  function transitHours(km) {
+    // CRH avg 250km/h, +45min station buffer both ends
+    return Math.round((km / 250 + 1.5) * 10) / 10;
+  }
+
   // ---------- UI render ----------
   function renderCityChips() {
     const cities = g('CITIES') || [];
     const container = document.getElementById('city-chips');
+    const container2 = document.getElementById('city-chips-2');
     container.innerHTML = cities.map(c => `<div class="chip city-chip" data-city="${c.key}">${c.emoji} ${c.name}</div>`).join('');
     container.addEventListener('click', (e) => {
       const chip = e.target.closest('.chip');
@@ -254,10 +364,42 @@
       container.querySelectorAll('.chip').forEach(el => el.classList.remove('active'));
       chip.classList.add('active');
       state.city = chip.dataset.city;
+      rebuildCity2Chips();
     });
-    // default select first
     const first = container.querySelector('.chip');
     if (first) { first.classList.add('active'); state.city = first.dataset.city; }
+
+    function rebuildCity2Chips() {
+      if (!container2) return;
+      container2.innerHTML = cities.filter(c => c.key !== state.city).map(c =>
+        `<div class="chip city-chip" data-city="${c.key}">${c.emoji} ${c.name}</div>`
+      ).join('');
+      // Reset city2 if it matches city
+      if (state.city2 === state.city) state.city2 = null;
+      container2.querySelectorAll('.chip').forEach(chip => {
+        if (chip.dataset.city === state.city2) chip.classList.add('active');
+        chip.addEventListener('click', () => {
+          container2.querySelectorAll('.chip').forEach(el => el.classList.remove('active'));
+          chip.classList.add('active');
+          state.city2 = chip.dataset.city;
+        });
+      });
+    }
+    rebuildCity2Chips();
+
+    // Multi-city toggle
+    const toggle = document.getElementById('multi-city-toggle');
+    if (toggle) {
+      toggle.addEventListener('change', () => {
+        state.multiCity = toggle.checked;
+        container2.style.display = state.multiCity ? 'flex' : 'none';
+        // Force days >= 2 when multi-city
+        if (state.multiCity && state.days < 2) {
+          state.days = 2;
+          document.querySelectorAll('#days-row .day-btn').forEach(b => b.classList.toggle('active', parseInt(b.dataset.days,10) === 2));
+        }
+      });
+    }
   }
 
   function renderThemeChips() {
@@ -302,29 +444,53 @@
     const city = cities.find(c => c.key === plan.cityKey);
     const cityDisplay = city ? `${city.emoji} ${city.name}` : plan.cityKey;
 
+    let summaryTitle;
+    if (plan.isMultiCity) {
+      const cityB = cities.find(c => c.key === plan.cityKey2);
+      const bDisplay = cityB ? `${cityB.emoji} ${cityB.name}` : plan.cityKey2;
+      summaryTitle = `${cityDisplay} → ${bDisplay} · ${plan.numDays}日联程 · ${plan.totalDests} 个目的地`;
+    } else {
+      summaryTitle = `${cityDisplay} · ${plan.numDays}日 · ${plan.totalDests} 个目的地`;
+    }
     let html = `
       <div class="plan-summary">
-        <div class="plan-summary-title">${cityDisplay} · ${plan.numDays}日 · ${plan.totalDests} 个目的地</div>
+        <div class="plan-summary-title">${summaryTitle}</div>
         <div class="plan-summary-meta">
-          <span>💰 预计人均 ¥${plan.totalBudget}</span>
+          <span>💰 预计人均 ¥${plan.totalBudget}${plan.isMultiCity ? '（含高铁 ¥'+plan.transit.cost+'）' : ''}</span>
           <span>🎯 ${plan.familyTags.join(' · ') || '全主题'}</span>
           <span>🏷 ${plan.userBudget}</span>
+          ${plan.isMultiCity ? `<span>🚄 ${plan.transit.km}km · ${plan.transit.hours}h</span>` : ''}
         </div>
       </div>
     `;
 
     for (const day of plan.days) {
+      // Transit marker between cities
+      if (day.isTransit) {
+        html += `
+          <div style="background:linear-gradient(135deg,#E0F2F1 0%,#B2DFDB 100%);border-radius:14px;padding:16px 20px;margin:8px 0;display:flex;align-items:center;gap:14px;font-size:14px;color:#004D40;">
+            <div style="font-size:32px;">🚄</div>
+            <div style="flex:1;">
+              <div style="font-weight:700;margin-bottom:2px;">${day.fromLabel} → ${day.toLabel}</div>
+              <div style="font-size:12px;color:#00695C;">高铁约 ${day.hours}h · ${day.km}km · 车票约 ¥${day.cost}</div>
+            </div>
+          </div>
+        `;
+        continue;
+      }
+      const cityBadge = day.cityLabel ? `<span style="font-size:13px;color:var(--ink-500);margin-left:8px;font-weight:400;">${day.cityLabel}</span>` : '';
       html += `
         <div class="day-card">
           <div class="day-header">
-            <div class="day-title">Day ${day.idx}</div>
+            <div class="day-title">Day ${day.idx}${cityBadge}</div>
             <div class="day-meta">总时长约 ${day.hours}小时 · ${day.slots.length}个点</div>
           </div>
       `;
       for (const slot of day.slots) {
         const d = slot.dest;
         const tags = (d.tags || d.themes || []).slice(0, 3);
-        const destLink = `dest.html?id=${d.id}&city=${plan.cityKey}`;
+        const dCity = day.city || plan.cityKey;
+        const destLink = `dest.html?id=${d.id}&city=${dCity}`;
         html += `
           <a class="dest-item" href="${destLink}" style="display:flex;text-decoration:none;color:inherit;">
             <div class="dest-time">${slot.startText}<br>-${slot.endText}</div>
@@ -534,7 +700,14 @@
     renderHistory();
     document.getElementById('gen-btn').addEventListener('click', () => {
       if (!state.city) { toast('请先选城市'); return; }
-      const plan = generatePlan(state.city, state.days, state.themes, state.budget);
+      if (state.multiCity) {
+        if (!state.city2) { toast('多城模式请再选一座目的地'); return; }
+        if (state.days < 2) { toast('多城联程至少需要 2 天'); return; }
+      }
+      const plan = generatePlan(
+        state.city, state.days, state.themes, state.budget,
+        state.multiCity ? state.city2 : null
+      );
       renderPlan(plan);
     });
   }

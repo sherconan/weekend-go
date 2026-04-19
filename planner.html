@@ -110,6 +110,14 @@
   <div class="form-card">
     <div class="step-label"><span class="step-num">1</span>选一座城市</div>
     <div class="chip-row" id="city-chips"></div>
+    <div style="margin-top:12px;padding-top:12px;border-top:1px dashed var(--border);display:flex;align-items:center;gap:10px;">
+      <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;user-select:none;font-size:13px;color:var(--ink-700);">
+        <input type="checkbox" id="multi-city-toggle" style="accent-color:var(--action);width:16px;height:16px;">
+        <span>🌏 加一城（多城联程）</span>
+      </label>
+      <span id="multi-city-hint" style="font-size:11px;color:var(--ink-500);margin-left:auto;">需要 ≥2 天</span>
+    </div>
+    <div id="city-chips-2" class="chip-row" style="margin-top:12px;display:none;"></div>
   </div>
 
   <div class="form-card">
@@ -168,6 +176,6 @@
 <script src="js/data-chengdu.js" onerror="this.remove()"></script>
 <script src="js/data-hangzhou.js" onerror="this.remove()"></script>
 <script src="js/data-shared-cross-city.js?v=planner" onerror="this.remove()"></script>
-<script src="js/planner.js?v=1"></script>
+<script src="js/planner.js?v=2"></script>
 </body>
 </html>
