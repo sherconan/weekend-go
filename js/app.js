@@ -517,6 +517,9 @@ function openDetail(id) {
       <button class="btn btn--secondary" onclick="shareDest(ACTIVE_DESTINATIONS.find(d=>d.id===${dest.id}))">
         &#x1F4E4; 分享
       </button>
+      <a class="btn btn--secondary" href="dest.html?id=${dest.id}&city=${typeof currentCity !== 'undefined' ? currentCity : ''}" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+        &#x1F5D7; 独立页
+      </a>
     </div>
   `;
 
@@ -847,13 +850,16 @@ if ('serviceWorker' in navigator) {
 
 // ========== Share ==========
 function shareDest(dest) {
-  const text = `${dest.name} - ${dest.subtitle}\n距离${dest.distanceText}，${dest.duration[0]}，人均${dest.budgetText}\n⭐ ${dest.rating} | ${dest.themes.join('·')}\n\n来自「周末去哪儿」`;
+  const city = (typeof currentCity !== 'undefined' && currentCity) ? currentCity : '';
+  const shareUrl = `${location.origin}${location.pathname.replace(/[^/]*$/,'')}dest.html?id=${dest.id}${city?`&city=${city}`:''}`;
+  const durText = Array.isArray(dest.duration) ? dest.duration[0] : (dest.duration || '');
+  const text = `${dest.name} - ${dest.subtitle}\n距离${dest.distanceText}，${durText}，人均${dest.budgetText || dest.budget || ''}\n⭐ ${dest.rating} | ${(dest.themes||[]).join('·')}\n\n${shareUrl}\n\n来自「周末去哪儿」`;
 
   if (navigator.share) {
-    navigator.share({ title: `周末去哪儿 | ${dest.name}`, text, url: window.location.href }).catch(() => {});
+    navigator.share({ title: `周末去哪儿 | ${dest.name}`, text, url: shareUrl }).catch(() => {});
   } else {
     navigator.clipboard.writeText(text).then(() => {
-      showToast('已复制到剪贴板，去分享吧！');
+      showToast('✓ 已复制（含详情页链接）');
     }).catch(() => {
       showToast('分享失败，请手动复制');
     });
