@@ -22,7 +22,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返为主，如需住宿：\n四海镇民宿 — 农家院风格，150-300元/晚",
     tips: "1. 7月中到8月底水量最猛最刺激，6月和9月水量小但更适合带孩子\n2. 必须带一整套换洗衣物，从头湿到脚不是开玩笑的\n3. 手机套两层防水袋，漂流翻船概率不低，血泪教训\n4. 峡谷里没信号，出发前把离线地图下好，跟家人报平安要到四海镇才有网",
     bestSeason: "夏季漂流（6-9月）",
-    highlight: "峡谷激流漂流·原始野趣"
+    highlight: "峡谷激流漂流·原始野趣",
+    tags: ["白河峡谷","漂流","爬山","亲子","周边"],
+    imageQuery: "白河峡谷 rafting hiking family Beijing"
   },
   {
     id: 201,
@@ -46,7 +48,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返即可，石城镇有少量民宿。",
     tips: "1. 大雨后第二天去最绝，瀑布水量翻倍、雾气弥漫宛如仙境，但别在雨天冒险进谷\n2. 穿溯溪鞋或带防滑底的凉鞋，峡谷里至少三四处要踩水过，穿皮鞋的回去都后悔了\n3. 峡谷信号基本为零，出发前把行程发给家人，别让他们干着急\n4. 门票50元，停车免费，性价比在密云景区里算很高的",
     bestSeason: "夏秋季（6-10月）",
-    highlight: "神潭飞瀑·深谷清凉"
+    highlight: "神潭飞瀑·深谷清凉",
+    tags: ["幽谷神潭","爬山","瀑布","徒步","周边"],
+    imageQuery: "幽谷神潭 hiking waterfall trekking Beijing"
   },
   {
     id: 202,
@@ -70,7 +74,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返为主，北庄镇有民宿，100-250元/晚。",
     tips: "1. 一定要早上7点前出发，下午山里起雾能见度直线下降，拍照也不好看\n2. 10月中旬红叶最好看但人也最多，周二到周四去体验完全不同\n3. 山顶比山下冷6-8度，哪怕夏天也要塞件薄外套在包里\n4. 门票60元，南门进北门出是最经典路线，别走回头路浪费体力",
     bestSeason: "夏秋季（6-11月），秋季赏叶最佳",
-    highlight: "千米主峰·天然氧吧"
+    highlight: "千米主峰·天然氧吧",
+    tags: ["云蒙山","爬山","徒步","森林浴","近郊"],
+    imageQuery: "云蒙山 hiking trekking forest Beijing"
   },
   {
     id: 203,
@@ -94,7 +100,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "山顶露营：自带帐篷，需有经验\n延庆城区酒店：200-500元/晚\n冬奥小镇精品酒店：500-1500元/晚",
     tips: "1. 这不是公园爬山，是真正的户外徒步，没经验的别硬上，至少跟有经验的朋友同行\n2. 山顶比城里冷10度以上，八月份晚上也能到个位数温度，羽绒服不嫌多\n3. 7-8月最佳窗口期，9月以后山顶开始结冰，风力也大到站不稳\n4. 全程无信号，出发前下载两步路或六只脚的离线轨迹，带至少2升水",
     bestSeason: "夏秋季（7-10月）",
-    highlight: "北京第二高峰·冬奥赛场"
+    highlight: "北京第二高峰·冬奥赛场",
+    tags: ["海坨山","爬山","徒步","露营","周边"],
+    imageQuery: "海坨山 hiking trekking camping Beijing"
   },
   {
     id: 204,
@@ -118,7 +126,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "清水镇民宿：150-300元/晚\n门头沟城区酒店：200-400元/晚",
     tips: "1. 7月野花节周末一位难求，工作日去才能真正享受；10月红叶节同理\n2. 109国道到清水镇那段山路弯多坡陡，轿车底盘低的真别来，SUV起步\n3. 这是国家级自然保护区，采一朵花就可能被罚款，手下留情眼睛看就好\n4. 夏天山里下午雷暴频繁，一定要在3点前开始下撤，山顶打雷不是闹着玩的",
     bestSeason: "夏季赏花（7月）、秋季红叶（10月）",
-    highlight: "高山花海·京西植物宝库"
+    highlight: "高山花海·京西植物宝库",
+    tags: ["百花山","爬山","赏花","徒步","周边"],
+    imageQuery: "百花山 hiking flowers trekking Beijing"
   },
   {
     id: 205,
@@ -142,7 +152,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "湖边露营地：自带帐篷或租用，50-150元/人\n怀来县城酒店：200-400元/晚",
     tips: "1. 想看天鹅锁定11月到3月，清晨6-7点天鹅最活跃，去晚了就散了\n2. 骑行的话景区有租车点，也可以自带折叠车放后备箱更方便\n3. 湖边风力常年4-5级，春天沙尘更大，防风外套和口罩必带\n4. 官厅水库+天漠沙漠+怀来酒庄是经典一日三连，自驾半小时内互达",
     bestSeason: "全年皆可，冬春观鸟最佳",
-    highlight: "新中国第一库·候鸟栖息地"
+    highlight: "新中国第一库·候鸟栖息地",
+    tags: ["官厅水库","露营","骑行","风景","近郊"],
+    imageQuery: "官厅水库 camping cycling scenery Beijing"
   },
   {
     id: 206,
@@ -166,7 +178,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，汤河口镇有民宿，100-200元/晚。",
     tips: "1. 雨后第二天来最惊艳，瀑布水量暴增、溪流哗哗响，但当天别冒险进去\n2. 栈道有些段被水溅湿很滑，穿防滑底的鞋子，凉拖容易摔跤\n3. 门票60元，4月桃花季和暑假是旺季，周末停车场9点就满了\n4. 真心建议周一到周四来，游客少一半，拍照不用等人散开",
     bestSeason: "春季赏花（4月）、夏季戏水（6-8月）",
-    highlight: "峡谷飞瀑·桃花溪流"
+    highlight: "峡谷飞瀑·桃花溪流",
+    tags: ["桃源仙谷","爬山","瀑布","亲子","近郊"],
+    imageQuery: "桃源仙谷 hiking waterfall family Beijing"
   },
   {
     id: 207,
@@ -190,7 +204,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，北庄镇民宿100-200元/晚。",
     tips: "1. 7-8月水量最猛漂流最爽，6月和9月水少些但更安全，看你要刺激还是稳当\n2. 多带一整套干衣服放车里，漂流下来从头发到袜子没有干的地方\n3. 手机钱包钥匙统统塞进防水袋再放密封桶里，翻船丢手机的惨案年年有\n4. 走栈道也要穿运动鞋，有几段需要手脚并用攀爬，穿拖鞋的到那儿就傻眼了",
     bestSeason: "夏季漂流（6-9月）、秋季赏叶（10月）",
-    highlight: "峡谷漂流·百米峭壁"
+    highlight: "峡谷漂流·百米峭壁",
+    tags: ["云蒙峡","漂流","峡谷","徒步","近郊"],
+    imageQuery: "云蒙峡 rafting canyon trekking Beijing"
   },
   {
     id: 208,
@@ -214,7 +230,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内当日往返，无需住宿。",
     tips: "1. 90%的画廊免费进，少数特展收费也就30-50元，花不了什么钱但精神食粮管够\n2. 工作日去才是行家——周末全是拍照打卡的，工作日只剩真正看展的人和驻场艺术家\n3. 园区是开放式的大厂房区，夏天几乎没有树荫，帽子墨镜防晒霜缺一不可\n4. 穿舒服的鞋子，认真逛一圈至少走两万步，高跟鞋在石板路上绝对后悔",
     bestSeason: "全年皆可，秋季气候最舒适",
-    highlight: "工业包豪斯建筑·当代艺术地标"
+    highlight: "工业包豪斯建筑·当代艺术地标",
+    tags: ["798艺术区","艺术","文化","拍照","城内"],
+    imageQuery: "798艺术区 art culture photography Beijing"
   },
   {
     id: 209,
@@ -238,7 +256,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "当日往返，无需住宿。",
     tips: "1. 大部分区域免费逛，大跳台和冰球馆等场馆看活动安排，有时需单独买票\n2. 傍晚4-6点是拍照黄金时间，斜阳打在钢铁建筑上那个光影效果，摄影师都在这个点来\n3. S1线磁悬浮到首钢站直达，坐磁悬浮本身就是个体验\n4. 冬天来更有感觉——冷冽的空气配上钢铁巨人，那种硬核工业美学只有冬天才到位",
     bestSeason: "全年皆可，秋冬工业感最强",
-    highlight: "冬奥大跳台·工业遗存美学"
+    highlight: "冬奥大跳台·工业遗存美学",
+    tags: ["首钢园","文化","拍照","亲子","城内"],
+    imageQuery: "首钢园 culture photography family Beijing"
   },
   {
     id: 210,
@@ -262,7 +282,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 国庆节这条街能挤到走不动，真想体验老北京风情一定选工作日来\n2. 全聚德和都一处午餐高峰排队40分钟起步，要么11点前到要么2点后去\n3. 大栅栏正街偏商业化，真正的惊喜藏在背后的杨梅竹斜街和铁树斜街里\n4. 从这儿走5分钟就是天安门广场，再走10分钟到故宫，串一条经典路线完全不费劲",
     bestSeason: "全年皆可，避开节假日",
-    highlight: "600年老字号·老北京商业文化"
+    highlight: "600年老字号·老北京商业文化",
+    tags: ["前门大栅栏","历史","美食","文化","市中心"],
+    imageQuery: "前门大栅栏 history food culture Beijing"
   },
   {
     id: 211,
@@ -286,7 +308,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内参观，无需住宿。",
     tips: "1. 鸟巢门票50元、冰立方30元，只在外面拍照不进去也完全OK，省钱玩法\n2. 最佳拍照时间是傍晚6点到8点，天空还有余晖而灯已经亮了，蓝调时刻出大片\n3. 夏天白天园区暴晒无遮挡，下午4点以后去又凉快又好看\n4. 奥森公园就在北边，走过去10分钟，鸟巢+奥森是最佳半日游组合",
     bestSeason: "全年皆可",
-    highlight: "双奥地标·独特建筑美学"
+    highlight: "双奥地标·独特建筑美学",
+    tags: ["鸟巢水立方","文化","亲子","拍照","城内"],
+    imageQuery: "鸟巢水立方 culture family photography Beijing"
   },
   {
     id: 212,
@@ -310,7 +334,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，延庆城区有酒店。",
     tips: "1. 没有望远镜等于白来，至少带个8倍双筒，有长焦镜头更好，300mm起步才能拍到鸟\n2. 3-5月和10-11月是两个迁徙高峰，想看最壮观的万鸟齐飞锁定这两个时间段\n3. 穿灰绿色或深色衣服，亮色会惊到鸟，观鸟圈的人都穿迷彩或军绿\n4. 清晨6-7点和傍晚5-6点鸟类最活跃，中午都躲起来了，合理安排时间",
     bestSeason: "候鸟迁徙季（3-5月、10-11月）",
-    highlight: "300种鸟类·候鸟天堂"
+    highlight: "300种鸟类·候鸟天堂",
+    tags: ["延庆野鸭湖湿地","观鸟","自然","摄影","周边"],
+    imageQuery: "延庆野鸭湖湿地 birdwatching nature photography Beijing"
   },
   {
     id: 213,
@@ -334,7 +360,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "距离城区较近，当日往返轻松。",
     tips: "1. 10-11月芦花最美，12月芦苇变枯黄也有另一种荒凉美，各有风味\n2. 夏天来的话蚊子能把你抬走，驱蚊液必须反复喷，长裤长袖最稳当\n3. 门票30元性价比超高，划船另收费50元/小时但强烈推荐体验一次\n4. 周末上午有志愿者带自然讲解活动，免费参加，带孩子来特别有教育意义",
     bestSeason: "秋冬赏芦（10-12月）、候鸟迁徙季",
-    highlight: "平原芦苇荡·城区最近湿地"
+    highlight: "平原芦苇荡·城区最近湿地",
+    tags: ["汉石桥湿地","观鸟","自然","徒步","近郊"],
+    imageQuery: "汉石桥湿地 birdwatching nature trekking Beijing"
   },
   {
     id: 214,
@@ -358,7 +386,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "城区游玩，无需住宿。",
     tips: "1. 必须提前在公众号预约，周末名额一放出来几分钟就抢完，周三上午最好抢\n2. 园区严格执行安静规则，大声说话会被工作人员提醒，带小孩要提前沟通好\n3. 免费入园但限流，正因为人少才保护了生态，这种模式值得点赞\n4. 冬天也别错过，水面结冰后能看到不同的越冬水鸟，白头鹤运气好也能碰到",
     bestSeason: "全年皆可，迁徙季鸟类最多",
-    highlight: "震旦鸦雀·城区最近自然湿地"
+    highlight: "震旦鸦雀·城区最近自然湿地",
+    tags: ["翠湖湿地公园","观鸟","自然","休闲","城内"],
+    imageQuery: "翠湖湿地公园 birdwatching nature leisure Beijing"
   },
   {
     id: 215,
@@ -382,7 +412,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "可住村内农家院体验，150-250元/晚。",
     tips: "1. 10月中下旬银杏最黄，前后差一周效果天壤之别，出发前在小红书搜实时状态\n2. 村子是活的，里面还住着居民，拍照别对着人家窗户怼，保持基本礼貌\n3. 灵水村和爨底下村车程只有20分钟，两个村子一天串完是经典路线\n4. 这些古建筑都是不可再生的，手别贱别爬别刻字，文明游览",
     bestSeason: "秋季（10月银杏）最佳",
-    highlight: "千年银杏·举人文化古村"
+    highlight: "千年银杏·举人文化古村",
+    tags: ["灵水举人村","古村","历史","文化","近郊"],
+    imageQuery: "灵水举人村 ancient village history culture Beijing"
   },
   {
     id: 216,
@@ -406,7 +438,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，房山城区有酒店。",
     tips: "1. 完全免费、没有门票、没有检票口，就是一个真实的山村，请保持这份朴素\n2. 石板路高低不平还有苔藓，穿平底防滑鞋，高跟鞋和皮鞋会崴脚\n3. 距离周口店猿人遗址只有半小时车程，两个点串一天是房山最经典的人文路线\n4. 周末偶尔有太平鼓等民俗表演，提前关注房山文旅公众号看通知",
     bestSeason: "春秋气候最宜人",
-    highlight: "97盘石碾群·六百年石砌古村"
+    highlight: "97盘石碾群·六百年石砌古村",
+    tags: ["水峪村","古村","徒步","历史","近郊"],
+    imageQuery: "水峪村 ancient village trekking history Beijing"
   },
   {
     id: 217,
@@ -430,7 +464,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "距城区近，当日往返。",
     tips: "1. 想看匠人制作必须提前电话预约，直接去很可能扑空，工坊不是天天开\n2. 村内巷子窄到只能过一辆车，开小车来最方便，SUV会车困难\n3. 琉璃渠+京西古道+潭柘寺可以串成门头沟文化一日游，路线顺不绕路\n4. 下过雨的石板路特别滑，村子建在坡上，穿防滑鞋保平安",
     bestSeason: "全年皆可",
-    highlight: "700年皇家琉璃·故宫瓦片出产地"
+    highlight: "700年皇家琉璃·故宫瓦片出产地",
+    tags: ["琉璃渠村","古村","历史","文化","城内"],
+    imageQuery: "琉璃渠村 ancient village history culture Beijing"
   },
   {
     id: 218,
@@ -454,7 +490,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返为主，雪场附近有快捷酒店200-400元/晚。",
     tips: "1. 1-2月雪质最好最硬，12月和3月偏软偏湿，新手反而12月更友好因为摔了不那么疼\n2. 周末雪道像下饺子，必须提前3天以上预约；平日人少一半价格也便宜20%\n3. 全套雪具租赁约150元，雪票另购约200-300元，加一起人均400左右搞定\n4. 雪地紫外线是平时的两倍，不涂防晒霜一天下来脸直接两个色号",
     bestSeason: "冬季（12月-3月）",
-    highlight: "近郊雪场·新手友好"
+    highlight: "近郊雪场·新手友好",
+    tags: ["军都山滑雪场","滑雪","亲子","冬季","近郊"],
+    imageQuery: "军都山滑雪场 skiing family winter Beijing"
   },
   {
     id: 219,
@@ -478,7 +516,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "度假酒店：800-2000元/晚\n怀柔城区酒店：300-600元/晚",
     tips: "1. 周末至少提前一周预约，元旦春节更要提前半个月，否则买不到票\n2. 零基础强烈建议先上一节教练课，自学滑雪效率极低而且容易受伤\n3. 夜场票价只有白天的60%左右，人还少，唯一缺点是冷——但滑起来根本不觉得\n4. 温泉单独购票约200元，建议买滑雪+温泉套票能省50-80元",
     bestSeason: "冬季（12月-3月）",
-    highlight: "最大落差300米·雪场+温泉双享"
+    highlight: "最大落差300米·雪场+温泉双享",
+    tags: ["怀北滑雪场","滑雪","亲子","冬季","近郊"],
+    imageQuery: "怀北滑雪场 skiing family winter Beijing"
   },
   {
     id: 220,
@@ -502,7 +542,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "度假村酒店：600-1500元/晚\n周边民宿：200-400元/晚",
     tips: "1. 12月到2月下雪天来体验最极致，提前看天气预报蹲一场雪再出发\n2. 周末和节假日温泉池像下饺子，工作日去人少一半舒适度翻倍\n3. 泳衣必带、拖鞋可以用园区的但自带更卫生、浴巾园区提供\n4. 温泉池边湿滑蒸汽大，手机套上防水袋再拍照，不少人手机就是这么泡报废的",
     bestSeason: "冬季（11月-3月）最佳",
-    highlight: "冬季雪景露天温泉·怀柔最知名温泉"
+    highlight: "冬季雪景露天温泉·怀柔最知名温泉",
+    tags: ["九华山庄温泉","温泉","亲子","休闲","近郊"],
+    imageQuery: "九华山庄温泉 hot spring family leisure Beijing"
   },
   {
     id: 221,
@@ -526,7 +568,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "度假村酒店：600-1200元/晚\n周边民宿：150-300元/晚",
     tips: "1. 4月桃花节期间房价翻倍还订不到，至少提前两周预约才有希望\n2. 秋天「摘桃+温泉」是平谷最火的周末套餐，好多人年年来\n3. 周末价格比平日贵30%左右，周二到周四来最划算，体验一样但钱省不少\n4. 自带泳衣和浴巾更卫生，防滑拖鞋也建议自带，公共拖鞋穿着不放心",
     bestSeason: "冬春季温泉（12月-4月）",
-    highlight: "桃花园中泡温泉·平谷特色组合"
+    highlight: "桃花园中泡温泉·平谷特色组合",
+    tags: ["春晖园温泉","温泉","休闲","亲子","近郊"],
+    imageQuery: "春晖园温泉 hot spring leisure family Beijing"
   },
   {
     id: 222,
@@ -550,7 +594,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "天津市区酒店：300-700元/晚\n如当日往返，高铁30分钟非常方便",
     tips: "1. 北京南站高铁30分钟到天津站，二等座54.5元，比开车省时省心省油钱\n2. 节假日古文化街人挤人，平日去才能安安静静看手艺人的表演\n3. 古文化街+五大道+意大利风情区可以串成天津一日游，三个点打车互达15分钟内\n4. 傍晚一定要去海河边走走，天津之眼摩天轮亮灯后倒映在河面上，很浪漫",
     bestSeason: "全年皆可",
-    highlight: "华北最大妈祖庙·天津民俗艺术集中地"
+    highlight: "华北最大妈祖庙·天津民俗艺术集中地",
+    tags: ["天津古文化街","古街","美食","文化","周边"],
+    imageQuery: "天津古文化街 ancient street food culture Beijing"
   },
   {
     id: 223,
@@ -574,7 +620,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，蓟州城区酒店200-400元/晚。",
     tips: "1. 门票75元，比故宫还贵但看完你会觉得值——毕竟故宫才600年这里1000年\n2. 独乐寺和盘山只隔15公里，上午看寺下午爬山是蓟州经典一日游\n3. 强烈建议花30元请个讲解员，没有讲解你看到的只是一栋旧楼，有讲解看到的是千年奇迹\n4. 拍照最佳角度：山门正面拍全景、观音阁45度侧面拍气势、仰拍斗拱细节出建筑大片",
     bestSeason: "全年皆可，春秋气候最舒适",
-    highlight: "千年辽代楼阁·中国现存最古木构建筑"
+    highlight: "千年辽代楼阁·中国现存最古木构建筑",
+    tags: ["蓟州独乐寺","历史","古建","文化","周边"],
+    imageQuery: "蓟州独乐寺 history ancient architecture culture Beijing"
   },
   {
     id: 224,
@@ -598,7 +646,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返为主。",
     tips: "1. 门票60元含石经展馆，性价比极高，在这里花一下午完全值回票价\n2. 这是佛教圣地，保持安静庄重，拍照不要开闪光灯，对着佛像拍照前先问问允不允许\n3. 云居寺+石花洞是房山经典一日游路线，两个景点车程半小时\n4. 四月底寺内牡丹盛开，古寺配牡丹是绝美的东方意境，摄影爱好者别错过",
     bestSeason: "全年皆可，春秋最佳",
-    highlight: "14278块佛教石经·北京的敦煌"
+    highlight: "14278块佛教石经·北京的敦煌",
+    tags: ["房山云居寺","历史","宗教","文化","近郊"],
+    imageQuery: "房山云居寺 history temple culture Beijing"
   },
   {
     id: 225,
@@ -622,7 +672,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，斋堂镇有少量民宿。",
     tips: "1. 7-9月雨季后瀑布最壮观，但当天下雨别上山路，泥石流风险不是开玩笑的\n2. 门票才30元，和门头沟其他景点比简直是白菜价\n3. 白瀑寺+爨底下村+灵水村三点串成一日游，都在斋堂镇范围内，车程都不超20分钟\n4. 109国道到斋堂镇那段山路弯多路窄，会车时慢下来让对面先过，老司机都这么开",
     bestSeason: "夏秋雨季（7-9月）瀑布最壮观",
-    highlight: "唐代古刹·40米白色飞瀑"
+    highlight: "唐代古刹·40米白色飞瀑",
+    tags: ["白瀑寺","宗教","瀑布","徒步","近郊"],
+    imageQuery: "白瀑寺 temple waterfall trekking Beijing"
   },
   {
     id: 226,
@@ -646,7 +698,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，清水镇有民宿。",
     tips: "1. 这不是公园散步，是真户外穿越，体力差的走到一半会想放弃，量力而行\n2. 必须穿高帮防滑登山鞋，有几段湿滑岩石攀爬穿跑鞋会打滑\n3. 雨后48小时内别去，石头上长苔藓加水渍，滑倒风险翻倍\n4. 全程信号基本为零，出发前下好离线地图，至少带2升水和够吃的干粮",
     bestSeason: "夏秋季（6-10月）",
-    highlight: "原始峡谷秘境·手脚并用探险"
+    highlight: "原始峡谷秘境·手脚并用探险",
+    tags: ["龙门涧","峡谷","徒步","爬山","近郊"],
+    imageQuery: "龙门涧 canyon trekking hiking Beijing"
   },
   {
     id: 227,
@@ -670,7 +724,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "当日往返为主。",
     tips: "1. 花期只有两周左右，年年时间不同，出发前在微博搜「居庸关花海实拍」看最新状态\n2. S2线一天就几班车，务必提前在12306查好时刻表并早到北京北站排队\n3. 花期周末车厢挤到站不下脚，工作日去能悠闲坐在窗边慢慢拍\n4. 坐车时坐在列车右侧（面朝前进方向），那一侧才是花海和长城的方向",
     bestSeason: "春季花期（4月中旬）",
-    highlight: "穿越花海的列车·青龙桥百年老站"
+    highlight: "穿越花海的列车·青龙桥百年老站",
+    tags: ["居庸关花海列车","赏花","摄影","铁路","近郊"],
+    imageQuery: "居庸关花海列车 flowers photography railway Beijing"
   },
   {
     id: 228,
@@ -694,7 +750,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "山顶露营：需携带帐篷装备\n雁翅镇民宿：150-250元/晚",
     tips: "1. 全程约6小时往返，需要较好体力\n2. 秋季（10月上中旬）是最佳时机\n3. 山顶风大，带好防风外套\n4. 带足饮水，山上无水源补给",
     bestSeason: "秋季赏色（10月）最佳",
-    highlight: "高山金色草甸·秋日摄影圣地"
+    highlight: "高山金色草甸·秋日摄影圣地",
+    tags: ["黄草梁","爬山","徒步","摄影","近郊"],
+    imageQuery: "黄草梁 hiking trekking photography Beijing"
   },
   {
     id: 229,
@@ -718,7 +776,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "山顶露营地：需自带全套装备\n斋堂镇民宿：150-300元/晚",
     tips: "1. 推荐两日行程，第一天抵达斋堂，第二天登山\n2. 全程约15公里，需要良好体力和登山装备\n3. 山顶温度比山下低约10度\n4. 夏季下午常有雷暴，务必中午前下山",
     bestSeason: "夏季（7-8月）和秋季（10月）",
-    highlight: "北京最高峰2303米·开阔高山草甸"
+    highlight: "北京最高峰2303米·开阔高山草甸",
+    tags: ["东灵山","爬山","徒步","露营","周边"],
+    imageQuery: "东灵山 hiking trekking camping Beijing"
   },
   {
     id: 230,
@@ -742,7 +802,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返为主，石城镇有民宿。",
     tips: "1. 山桃花期约两周，4月上旬最佳\n2. 与幽谷神潭相距较近，可联程游览\n3. 花期门票约50元，平时更低\n4. 周末花期人多，早上8点前到达最好",
     bestSeason: "春季花期（4月上旬）",
-    highlight: "满山野桃花·密云春季花海"
+    highlight: "满山野桃花·密云春季花海",
+    tags: ["密云桃园仙谷","赏花","徒步","摄影","周边"],
+    imageQuery: "密云桃园仙谷 flowers trekking photography Beijing"
   },
   {
     id: 231,
@@ -766,7 +828,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "怀柔城区酒店：200-400元/晚\n水库边农家院：150-300元/晚",
     tips: "1. 垂钓需要购买钓鱼证，鱼庄内可办理\n2. 虹鳟鱼一条沟的烤鱼周末需排队\n3. 夏天水库风光最佳，也是垂钓旺季\n4. 水库内禁止游泳和洗车",
     bestSeason: "春秋最佳，全年皆可",
-    highlight: "怀柔虹鳟鱼·水库垂钓露营"
+    highlight: "怀柔虹鳟鱼·水库垂钓露营",
+    tags: ["怀柔水库","垂钓","露营","休闲","近郊"],
+    imageQuery: "怀柔水库 fishing camping leisure Beijing"
   },
   {
     id: 232,
@@ -790,7 +854,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，密云城区有酒店。",
     tips: "1. 门票免费或很低廉\n2. 保持寺庙礼仪，着装端庄\n3. 山路崎岖，驾驶注意安全\n4. 可与密云水库联程游览",
     bestSeason: "全年皆可，秋季景色最佳",
-    highlight: "明代古刹·深山清静之地"
+    highlight: "明代古刹·深山清静之地",
+    tags: ["密云黑山寺","宗教","爬山","历史","近郊"],
+    imageQuery: "密云黑山寺 temple hiking history Beijing"
   },
   {
     id: 233,
@@ -814,7 +880,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "遥桥峪村精品民宿：400-1200元/晚\n古北水镇内住宿：800-2000元/晚",
     tips: "1. 民宿需提前一周以上预订\n2. 可买古北水镇门票进入水镇和长城区域\n3. 步行上长城比坐缆车体验更好\n4. 秋季是最佳时机，红叶与长城同框",
     bestSeason: "秋季（10月）最佳，全年皆可",
-    highlight: "长城脚下精品民宿·司马台长城零距离"
+    highlight: "长城脚下精品民宿·司马台长城零距离",
+    tags: ["遥桥峪村","古村","长城","民宿","周边"],
+    imageQuery: "遥桥峪村 ancient village great wall homestay Beijing"
   },
   {
     id: 234,
@@ -838,7 +906,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，大兴酒店200-400元/晚。",
     tips: "1. 购票建议网上提前预订，节假日人多\n2. 车行区票需额外购买，约80元/人\n3. 带好望远镜观察动物效果更好\n4. 动物喂食时段最热闹，提前查看时间表",
     bestSeason: "春秋最佳，夏季动物活跃，冬季避开",
-    highlight: "散养近距离·大型野生猛兽车行区"
+    highlight: "散养近距离·大型野生猛兽车行区",
+    tags: ["北京野生动物园","亲子","动物","自然","近郊"],
+    imageQuery: "北京野生动物园 family animals nature Beijing"
   },
   {
     id: 235,
@@ -862,7 +932,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 门票约120元，旺季建议提前网上购票\n2. 园区面积大，建议乘坐园内小火车游览\n3. 特色表演时间固定，提前查好演出时间表\n4. 适合10岁以下儿童，成人可能觉得较简单",
     bestSeason: "全年皆可，春秋气候最宜人",
-    highlight: "100个世界地标微缩景观·亲子文化之旅"
+    highlight: "100个世界地标微缩景观·亲子文化之旅",
+    tags: ["世界公园","亲子","文化","娱乐","城内"],
+    imageQuery: "世界公园 family culture entertainment Beijing"
   },
   {
     id: 236,
@@ -886,7 +958,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 门票约30元，学生和老人有优惠\n2. 馆内面积大，建议游览3-4小时\n3. 天气好时室外园林更美，雨天也有室内展览\n4. 讲解器租用约10元，值得",
     bestSeason: "春秋季景色最美",
-    highlight: "中国唯一园林主题国家博物馆·江南园林在北京"
+    highlight: "中国唯一园林主题国家博物馆·江南园林在北京",
+    tags: ["中国园林博物馆","文化","历史","亲子","城内"],
+    imageQuery: "中国园林博物馆 culture history family Beijing"
   },
   {
     id: 237,
@@ -910,7 +984,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 天象厅需提前预约，热门时段可能售罄\n2. 适合6-16岁儿童，成人科普价值也高\n3. 可与北京动物园联程游览，性价比更高\n4. 门票约40-80元，含天象厅",
     bestSeason: "全年皆可，室内展馆受季节影响小",
-    highlight: "中国第一天文馆·沉浸式星空体验"
+    highlight: "中国第一天文馆·沉浸式星空体验",
+    tags: ["北京天文馆","亲子","科技","文化","城内"],
+    imageQuery: "北京天文馆 family technology culture Beijing"
   },
   {
     id: 238,
@@ -934,7 +1010,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 角楼咖啡周末排队严重，建议工作日早上前往\n2. 雨天护城河倒影效果更好，但要注意防雨\n3. 咖啡人均40-60元，文创周边价格不菲\n4. 秋冬季角楼+红墙+银杏是最佳拍照组合",
     bestSeason: "全年皆可，秋季（10月）银杏时最美",
-    highlight: "护城河倒影·故宫文创咖啡网红打卡"
+    highlight: "护城河倒影·故宫文创咖啡网红打卡",
+    tags: ["故宫角楼咖啡","文化","拍照","咖啡","市中心"],
+    imageQuery: "故宫角楼咖啡 culture photography cafe Beijing"
   },
   {
     id: 239,
@@ -958,7 +1036,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，顺义城区有酒店。",
     tips: "1. 花期约两周，5月下旬最佳\n2. 节日期间人多，建议工作日前往\n3. 穿好看的衣服，花海拍照机会极多\n4. 防晒必备，花海中遮阴少",
     bestSeason: "玫瑰花期（5月下旬）",
-    highlight: "百品玫瑰花海·北京最大玫瑰节"
+    highlight: "百品玫瑰花海·北京最大玫瑰节",
+    tags: ["蔡家洼玫瑰园","赏花","亲子","摄影","近郊"],
+    imageQuery: "蔡家洼玫瑰园 flowers family photography Beijing"
   },
   {
     id: 240,
@@ -982,7 +1062,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "当日往返，无需住宿。",
     tips: "1. 牡丹花期仅约2周，4月下旬-5月初\n2. 节日期间需网上预约购票\n3. 早上7-9点人少，光线也最好\n4. 与香山、颐和园联程游览效果最佳",
     bestSeason: "牡丹花期（4月下旬-5月初）",
-    highlight: "万株牡丹盛放·北京最大牡丹花节"
+    highlight: "万株牡丹盛放·北京最大牡丹花节",
+    tags: ["北京植物园牡丹节","赏花","文化","亲子","城内"],
+    imageQuery: "北京植物园牡丹节 flowers culture family Beijing"
   },
   {
     id: 241,
@@ -1006,7 +1088,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "霞云岭乡民宿：150-300元/晚\n房山城关酒店：200-400元/晚",
     tips: "1. 全程约8小时往返，需要良好体力\n2. 7月野花和10月秋色是两个最佳时机\n3. 山顶风大，带好防风外套\n4. 下午2-3点后雷暴风险高，务必早出发",
     bestSeason: "夏季野花（7月）、秋季赏色（10月）",
-    highlight: "房山最高峰2161米·高山野花草甸"
+    highlight: "房山最高峰2161米·高山野花草甸",
+    tags: ["白草畔","爬山","徒步","摄影","周边"],
+    imageQuery: "白草畔 hiking trekking photography Beijing"
   },
   {
     id: 242,
@@ -1030,7 +1114,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，大兴酒店200-400元/晚。",
     tips: "1. 建议提前网上购票，节假日票价更高\n2. 带好泳衣和防水包，拖鞋园区内租借\n3. 人多时热门项目需排队40-60分钟\n4. 游泳能力有限者注意安全，儿童需家长陪同",
     bestSeason: "全年皆可（室内恒温）",
-    highlight: "华北最大室内水上乐园·全年恒温"
+    highlight: "华北最大室内水上乐园·全年恒温",
+    tags: ["北京欢乐水魔方","亲子","水上乐园","休闲","近郊"],
+    imageQuery: "北京欢乐水魔方 family water park leisure Beijing"
   },
   {
     id: 243,
@@ -1054,7 +1140,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "市内游玩，无需住宿。",
     tips: "1. 登塔门票约100元\n2. 晴天能见度好时，可远眺燕山山脉\n3. 傍晚日落时分景色最美\n4. 与鸟巢、水立方联程参观，半天可游完",
     bestSeason: "全年皆可，秋冬晴天能见度最好",
-    highlight: "246米高空俯瞰奥运盛景·五塔如火炬"
+    highlight: "246米高空俯瞰奥运盛景·五塔如火炬",
+    tags: ["北京奥林匹克塔","观景","文化","拍照","城内"],
+    imageQuery: "北京奥林匹克塔 viewpoint culture photography Beijing"
   },
   {
     id: 244,
@@ -1078,7 +1166,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "酒庄精品民宿：600-1500元/晚\n怀来县城酒店：200-400元/晚",
     tips: "1. 参观酒庄必须提前预约\n2. 9月葡萄采摘季是最佳游览时机\n3. 品酒后不要自己开车，安排代驾\n4. 可与官厅水库、天漠沙漠联程游览",
     bestSeason: "葡萄采摘季（9月）最佳",
-    highlight: "长城脚下酒庄·葡萄采摘品酒体验"
+    highlight: "长城脚下酒庄·葡萄采摘品酒体验",
+    tags: ["怀来葡萄酒庄","美酒","文化","休闲","近郊"],
+    imageQuery: "怀来葡萄酒庄 wine culture leisure Beijing"
   },
   {
     id: 245,
@@ -1102,7 +1192,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，平谷城区酒店200-400元/晚。",
     tips: "1. 夏季（6-9月）水量大，峡谷最美\n2. 穿防水鞋，部分路段需涉水\n3. 手机防水处理好\n4. 可与金海湖联程游览，相距约20公里",
     bestSeason: "夏季（6-9月）",
-    highlight: "花岗岩峡谷穿越·飞瀑深潭"
+    highlight: "花岗岩峡谷穿越·飞瀑深潭",
+    tags: ["平谷大峡谷","峡谷","徒步","爬山","近郊"],
+    imageQuery: "平谷大峡谷 canyon trekking hiking Beijing"
   },
   {
     id: 246,
@@ -1126,7 +1218,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "怀柔城区酒店：200-400元/晚\n雁栖湖畔精品酒店：800-2000元/晚",
     tips: "1. 骑行需自带或租赁单车\n2. 傍晚湖光山色最美\n3. 会都核心区有安保，保持秩序\n4. 可与怀柔水库、红螺寺联程游览",
     bestSeason: "春秋气候最宜人",
-    highlight: "APEC峰会举办地·环湖骑行20公里"
+    highlight: "APEC峰会举办地·环湖骑行20公里",
+    tags: ["雁栖湖国际会都","休闲","骑行","风景","近郊"],
+    imageQuery: "雁栖湖国际会都 leisure cycling scenery Beijing"
   },
   {
     id: 247,
@@ -1150,7 +1244,9 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，平谷城区酒店200-300元/晚。",
     tips: "1. 庙会期间（农历三月初三）人流极大\n2. 穿运动鞋，山路有台阶\n3. 可与金海湖联程游览\n4. 门票较低，约20-30元",
     bestSeason: "春秋季（4月赏花、10月红叶）",
-    highlight: "俯瞰平谷盆地·传统道教庙会"
+    highlight: "俯瞰平谷盆地·传统道教庙会",
+    tags: ["平谷老泰山","爬山","宗教","徒步","近郊"],
+    imageQuery: "平谷老泰山 hiking temple trekking Beijing"
   },
   {
     id: 248,
@@ -1174,6 +1270,8 @@ const DESTINATIONS_EXTRA2 = [
     whereToStay: "一日往返，昌平城区酒店200-400元/晚。",
     tips: "1. 骑行需自带单车或景区租赁\n2. 与十三陵定陵、长陵联程游览最值\n3. 水库区域禁止游泳\n4. 春秋季气候最宜人",
     bestSeason: "春秋季最佳",
-    highlight: "皇陵旁静谧湖景·骑行与历史双享"
+    highlight: "皇陵旁静谧湖景·骑行与历史双享",
+    tags: ["昌平十三陵水库","露营","骑行","休闲","近郊"],
+    imageQuery: "昌平十三陵水库 camping cycling leisure Beijing"
   }
 ];
