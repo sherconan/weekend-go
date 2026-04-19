@@ -520,6 +520,9 @@ function openDetail(id) {
       <a class="btn btn--secondary" href="dest.html?id=${dest.id}&city=${typeof currentCity !== 'undefined' ? currentCity : ''}" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
         &#x1F5D7; 独立页
       </a>
+      <a class="btn btn--secondary" href="compare.html?ids=${dest.id}" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+        &#x2696;&#xFE0F; 对比
+      </a>
     </div>
   `;
 
