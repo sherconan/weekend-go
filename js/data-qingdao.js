@@ -102,6 +102,72 @@ const DESTINATIONS_QD = [
     whereToEat: "大学路沿街小店", whereToStay: "迎宾馆/老城区民宿",
     bestSeason: "四季", tips: "1. 门票 ¥15\n2. 旋转观景台 ¥5\n3. 日落/蓝调时段最佳", highlight: "98m·360° 俯瞰'红瓦绿树碧海蓝天'",
     tags: ["打卡", "俯瞰", "老城"], imageQuery: "Qingdao Signal Hill Park overlook red roofs"
+  },
+  // ──── 美食类（via add-dests skill 自测）────
+  {
+    id: 1208, name: "劈柴院", subtitle: "百年小吃街·江宁会馆旁",
+    distance: 1, distanceText: "1km",
+    duration: ["半日游"], transport: ["步行", "公交可达"],
+    themes: ["美食", "古街", "市井"],
+    budget: "200以下", budgetText: "人均 ¥60-120",
+    rating: 4.2,
+    gradient: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
+    whereToEat: "王姐烧烤 / 豆腐脑张 / 朝天锅", whereToStay: "老城区民宿",
+    bestSeason: "四季",
+    tips: "1. 免费\n2. 必尝王姐烧烤鱿鱼\n3. 江宁会馆相声演出（¥30）\n4. 晚上最热闹", highlight: "民国老字号+民间曲艺",
+    tags: ["小吃街", "老字号", "夜市"], imageQuery: "Qingdao Pichaiyuan food street night"
+  },
+  {
+    id: 1209, name: "登州路啤酒街", subtitle: "青啤厂门口的街区·原浆鲜啤",
+    distance: 4, distanceText: "4km",
+    duration: ["半日游"], transport: ["地铁 M2", "公交可达"],
+    themes: ["美食", "夜生活", "啤酒"],
+    budget: "200-500", budgetText: "人均 ¥150-300（烤串+原浆）",
+    rating: 4.4,
+    gradient: "linear-gradient(135deg, #f7971e 0%, #E65100 100%)",
+    whereToEat: "青啤 1903 总店 / 登州路 79 号烤肉", whereToStay: "附近商务酒店",
+    bestSeason: "5-10月（尤其 8 月啤酒节）",
+    tips: "1. 必点塑料袋装原浆（¥15/袋）\n2. 8 月国际啤酒节封街狂欢\n3. 烧烤配鲜啤是标配", highlight: "青啤博物馆正门街·鲜啤文化地标",
+    tags: ["啤酒", "烧烤", "夜市"], imageQuery: "Qingdao Dengzhou Road Beer Street night"
+  },
+  {
+    id: 1210, name: "台东步行街", subtitle: "青岛最大夜市·LED 霓虹楼",
+    distance: 3, distanceText: "3km",
+    duration: ["半日游"], transport: ["地铁 M2", "公交可达"],
+    themes: ["美食", "购物", "夜景"],
+    budget: "200以下", budgetText: "人均 ¥80-150",
+    rating: 4.3,
+    gradient: "linear-gradient(135deg, #E91E63 0%, #FF9800 100%)",
+    whereToEat: "大尧烧烤 / 青岛人家海鲜", whereToStay: "台东商圈酒店",
+    bestSeason: "四季",
+    tips: "1. 免费\n2. 周日 17:00 后 LED 灯光秀\n3. 大鲍岛啤酒市场 + 台东步行街连游", highlight: "LED 外立面 + 大排档一条街",
+    tags: ["夜市", "购物", "霓虹"], imageQuery: "Qingdao Taidong Pedestrian Street night LED"
+  },
+  {
+    id: 1211, name: "红岛海鲜市场", subtitle: "青岛吃蛤蜊的正宗地",
+    distance: 35, distanceText: "35km",
+    duration: ["半日游", "一日往返"], transport: ["自驾", "公交"],
+    themes: ["美食", "海边", "市场"],
+    budget: "200-500", budgetText: "人均 ¥80-200（蛤蜊现蒸）",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg, #00b4db 0%, #0083b0 100%)",
+    whereToEat: "市场旁自选加工店 / 红岛渔家宴", whereToStay: "红岛民宿",
+    bestSeason: "5-10月（蛤蜊最肥）",
+    tips: "1. 先买后加工（¥10/斤加工费）\n2. 挑活跳蛤蜊·外壳合拢\n3. 可一并游红岛蛤蜊节（4-5月）", highlight: "青岛蛤蜊之王·现捞现吃",
+    tags: ["蛤蜊", "海鲜", "在地"], imageQuery: "Qingdao Hongdao seafood market clams"
+  },
+  {
+    id: 1212, name: "船歌鱼水饺总店", subtitle: "青岛代表性海鲜水饺",
+    distance: 5, distanceText: "5km",
+    duration: ["半日游"], transport: ["地铁 M3", "公交可达"],
+    themes: ["美食", "海鲜", "老字号"],
+    budget: "200-500", budgetText: "人均 ¥120-200",
+    rating: 4.4,
+    gradient: "linear-gradient(135deg, #43cea2 0%, #185a9d 100%)",
+    whereToEat: "本店（闽江三路店）", whereToStay: "浮山湾附近",
+    bestSeason: "四季",
+    tips: "1. 人均 ¥120-200\n2. 黄花鱼+墨鱼饺子必点\n3. 可订位·旺季排队 1h+", highlight: "青岛水饺品牌·多家分店",
+    tags: ["水饺", "海鲜", "品牌"], imageQuery: "Qingdao Chuange fish dumpling restaurant"
   }
 ];
 
