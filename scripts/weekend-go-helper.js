@@ -211,13 +211,120 @@ end tell'`).toString().trim();
 // ─── Dispatch ───
 const [, , cmd, ...args] = process.argv;
 
+// ─── Phase 2: cross-city dedup analyzer ───
+function loadCityDests(cityKey) {
+  const filePath = path.join(JS_DIR, `data-${cityKey}.js`);
+  if (!fs.existsSync(filePath)) return [];
+  const { runInNewContext } = require('vm');
+  let content = fs.readFileSync(filePath, 'utf-8');
+  content = content.replace(/\bconst\s+(DESTINATIONS_\w+)\s*=/g, 'var $1 =');
+  const matches = [...content.matchAll(/var\s+(DESTINATIONS_\w+)\s*=/g)].map(m => m[1]);
+  const sandbox = { window: {}, module: { exports: {} }, console: { log: () => {}, error: () => {} } };
+  try {
+    runInNewContext(content, sandbox, { timeout: 5000 });
+    for (const n of matches) {
+      if (Array.isArray(sandbox[n])) return sandbox[n];
+    }
+    return [];
+  } catch { return []; }
+}
+
+function loadAllBeijingDests() {
+  // Map file → expected variable name
+  const fileToVar = {
+    'data': 'DESTINATIONS',
+    'data-extra': 'DESTINATIONS_EXTRA',
+    'data-extra2': 'DESTINATIONS_EXTRA2',
+    'data-beijing-500': 'DESTINATIONS_BJ500',
+    'data-beijing-expand': 'DESTINATIONS_BJ_EXPAND',
+    'data-beijing-hidden': 'DESTINATIONS_BJ_HIDDEN',
+    'data-beijing-tales': 'DESTINATIONS_BJ_TALES',
+    'data-beijing-new2026': 'DESTINATIONS_BJ_2026'
+  };
+  const { runInNewContext } = require('vm');
+  const byFile = {};
+  for (const [file, varName] of Object.entries(fileToVar)) {
+    const p = path.join(JS_DIR, file + '.js');
+    if (!fs.existsSync(p)) continue;
+    // Fresh sandbox per file to avoid const redeclare errors
+    const sandbox = { window: {}, module: { exports: {} }, console: { log: () => {}, error: () => {} } };
+    try {
+      // Convert `const DESTINATIONS_X =` to `var` so it attaches to sandbox
+      let src = fs.readFileSync(p, 'utf-8').replace(/\bconst\s+(DESTINATIONS_\w+)\s*=/g, 'var $1 =');
+      runInNewContext(src, sandbox, { timeout: 5000 });
+      if (Array.isArray(sandbox[varName])) byFile[file] = sandbox[varName];
+    } catch (e) {
+      // silent
+    }
+  }
+  return byFile;
+}
+
+function dedupReport() {
+  // Build name → [{city, file, entry}] groups
+  const groups = new Map();
+  const addEntry = (name, city, file, entry) => {
+    if (!groups.has(name)) groups.set(name, []);
+    groups.get(name).push({ city, file, entry });
+  };
+
+  // Beijing (multi-file)
+  const bjFiles = loadAllBeijingDests();
+  for (const [file, arr] of Object.entries(bjFiles)) {
+    for (const e of arr) addEntry(e.name, 'beijing', file, e);
+  }
+
+  // Other cities (single file each)
+  for (const city of ['shenzhen', 'weihai', 'suzhou', 'tianjin', 'qingdao']) {
+    const arr = loadCityDests(city);
+    for (const e of arr) addEntry(e.name, city, `data-${city}`, e);
+  }
+
+  // Filter to duplicates only
+  const dupes = [...groups.entries()].filter(([_, entries]) => entries.length > 1);
+
+  // Classify each duplicate group
+  const report = {
+    intraCity: [],     // same city, 2+ entries (must merge)
+    crossCity: [],     // different cities (candidate for cities{} facet)
+    stats: { totalDupes: dupes.length }
+  };
+  for (const [name, entries] of dupes) {
+    const cities = [...new Set(entries.map(e => e.city))];
+    if (cities.length === 1) {
+      report.intraCity.push({
+        name,
+        city: cities[0],
+        files: entries.map(e => e.file),
+        ids: entries.map(e => e.entry.id),
+        proposed: `keep ${entries[0].file}:${entries[0].entry.id}, remove others`
+      });
+    } else {
+      // Pick canonical: the city where distance is smallest (likely the real home)
+      const canonical = entries.reduce((min, cur) => (cur.entry.distance || 9999) < (min.entry.distance || 9999) ? cur : min, entries[0]);
+      report.crossCity.push({
+        name,
+        cities: cities,
+        canonical: `${canonical.city} (${canonical.entry.distance}km)`,
+        allDistances: entries.map(e => ({ city: e.city, dist: e.entry.distance })),
+        proposed: `Phase 2 merge into single entry with cities: { ${cities.map(c => `${c}: {distance}`).join(', ')} }`
+      });
+    }
+  }
+  report.stats.intraCityCount = report.intraCity.length;
+  report.stats.crossCityCount = report.crossCity.length;
+  console.log(JSON.stringify(report, null, 2));
+  return report;
+}
+
 const commands = {
   'bump-cache': () => bumpCache(args[0], args[1]),
   'next-dest-id': () => nextDestId(),
   'next-legend-id': () => nextLegendId(args[0]),
   'scan-skeletons': () => scanSkeletons(args[0]),
   'cross-city-check': () => crossCityCheck(args[0]),
-  'chrome-verify': () => chromeVerify(args[0], args.includes('--legend'))
+  'chrome-verify': () => chromeVerify(args[0], args.includes('--legend')),
+  'dedup-report': () => dedupReport()
 };
 
 if (!commands[cmd]) {
