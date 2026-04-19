@@ -3390,6 +3390,45 @@ body.night-mode .nav-logo {
 }
 .search-empty-title { font-size: 14px; margin-bottom: 4px; }
 
+.search-facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 20px 4px;
+  border-bottom: 1px solid #f0f2f5;
+}
+.search-facets:empty { padding: 0; border: none; }
+.search-facet-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: #f3f5f7;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #344054;
+  cursor: pointer;
+  transition: all 0.12s;
+  user-select: none;
+}
+.search-facet-chip:hover { background: #e8ecf0; }
+.search-facet-chip.active {
+  background: #FF7043;
+  color: #fff;
+  border-color: #F4511E;
+}
+.search-facet-count {
+  display: inline-block;
+  min-width: 18px;
+  padding: 0 4px;
+  background: rgba(0,0,0,.08);
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.search-facet-chip.active .search-facet-count { background: rgba(255,255,255,.25); }
+
 .search-hot {
   padding: 14px 20px;
   border-top: 1px solid #eef0f3;
