@@ -114,3 +114,25 @@
 2. **BJ 剩余 ~100 条 enrich**（data-extra / extra2 / new2026 未跑过）
 3. **WeChat 体验版 v1.5.0 上传**（等你重登）
 4. **Phase 3 explore**：AI 推荐 / 行程规划 / 打卡社区
+
+---
+
+## ➕ 打磨附录 · 10h 后持续优化
+
+| # | 一刀 | Commit |
+|---|------|--------|
+| P1 | BJ extra/extra2/new2026 enrich 132 条 tags+imageQuery | c3c69a0 / ee4e220 / 19fd1e9 |
+| P2 | 动态 vibe 筛选 chips（按城市派生） | 9276afa |
+| P3 | 首页 footer + stats.html 快捷入口 | 62acf21 |
+| P4 | howToGet 22 条派生（CD/HZ transport→prose） | a0a5f97 |
+| P5 | scan-skeletons 修 2 字中文误判 bug（"春秋" 合法） | a0a5f97 |
+| P6 | CI schema validator 修 `distance: 0` 被当 falsy | 432f437 |
+| P7 | CI workflow self-trigger + manual dispatch | 2796fd1 |
+| P8 | TJ hasLegends 翻 true + miniapp sync 补 CD/HZ | 5383c1d |
+| P9 | Miniapp utils 同步 push（8 城 231 传说 799 dest） | miniapp 9967ef35 |
+
+**收口状态**：
+- 8 城 partial entries 从 18 → **0**（全量 full）
+- CI 从 failure → **green**（schema + workflow 双修）
+- Web + Miniapp 数据 **零漂移**
+- Total dest 799 · legends 231 · shared 5 · 覆盖 8 城
