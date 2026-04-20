@@ -61,8 +61,28 @@ def get_token():
     return result
 
 
+def ensure_in_weekendgo_project():
+    """Navigate ChatGPT tab into '周末去哪儿玩' project + open fresh chat inside.
+    Per user rule: all WeekendGo image gen conversations must live under that project."""
+    nav_script_path = '/Users/sherconan/weekend-go/chatgpt-weekendgo-nav.js'
+    if not os.path.exists(nav_script_path):
+        return  # nav helper not present; caller continues at root (best-effort)
+    with open(nav_script_path) as f:
+        js = f.read()
+    r = chrome_js(js)
+    if r == 'OK:entered_project':
+        time.sleep(2.5)
+        chrome_js(js)  # second pass to click new-chat
+        time.sleep(1.5)
+    elif r.startswith('OK:'):
+        time.sleep(1.0)
+    else:
+        print(f"WARN: project nav returned {r} — chat may land at root", file=sys.stderr)
+
+
 def generate_image(prompt, output_path):
     """Generate image via ChatGPT conversation API."""
+    ensure_in_weekendgo_project()
     print("Getting access token...", file=sys.stderr)
     token = get_token()
     if not token:
