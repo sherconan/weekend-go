@@ -21,7 +21,8 @@
     ['DESTINATIONS_BJ500','beijing'],['DESTINATIONS_BJ_EXPAND','beijing'],['DESTINATIONS_BJ_HIDDEN','beijing'],
     ['DESTINATIONS_BJ_TALES','beijing'],['DESTINATIONS_BJ_2026','beijing'],
     ['DESTINATIONS_SZ','shenzhen'],['DESTINATIONS_WH','weihai'],['DESTINATIONS_SU','suzhou'],
-    ['DESTINATIONS_TJ','tianjin'],['DESTINATIONS_QD','qingdao'],['DESTINATIONS_CD','chengdu'],['DESTINATIONS_HZ','hangzhou']
+    ['DESTINATIONS_TJ','tianjin'],['DESTINATIONS_QD','qingdao'],['DESTINATIONS_CD','chengdu'],['DESTINATIONS_HZ','hangzhou'],
+    ['DESTINATIONS_CQ','chongqing'],['DESTINATIONS_ES','enshi']
   ];
 
   let _destIndex = null;
