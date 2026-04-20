@@ -13,6 +13,10 @@ html[data-theme="dark"] {
   --action-dark: #FF7043;
   --gold: #FFCA28;
   --border: #2A3138;
+  --border-light: #242B30;
+  --text-primary: #F5F7FA;
+  --text-secondary: #D5DAE0;
+  --text-muted: #98A2B3;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.7);
