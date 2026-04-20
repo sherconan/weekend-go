@@ -67,13 +67,15 @@
       'DESTINATIONS_BJ500','DESTINATIONS_BJ_EXPAND','DESTINATIONS_BJ_HIDDEN',
       'DESTINATIONS_BJ_TALES','DESTINATIONS_BJ_2026',
       'DESTINATIONS_SZ','DESTINATIONS_WH','DESTINATIONS_SU',
-      'DESTINATIONS_TJ','DESTINATIONS_QD','DESTINATIONS_CD','DESTINATIONS_HZ'];
+      'DESTINATIONS_TJ','DESTINATIONS_QD','DESTINATIONS_CD','DESTINATIONS_HZ',
+      'DESTINATIONS_CQ','DESTINATIONS_ES'];
     const CITY_OF = {
       DESTINATIONS:'beijing',DESTINATIONS_EXTRA:'beijing',DESTINATIONS_EXTRA2:'beijing',
       DESTINATIONS_BJ500:'beijing',DESTINATIONS_BJ_EXPAND:'beijing',DESTINATIONS_BJ_HIDDEN:'beijing',
       DESTINATIONS_BJ_TALES:'beijing',DESTINATIONS_BJ_2026:'beijing',
       DESTINATIONS_SZ:'shenzhen',DESTINATIONS_WH:'weihai',DESTINATIONS_SU:'suzhou',
-      DESTINATIONS_TJ:'tianjin',DESTINATIONS_QD:'qingdao',DESTINATIONS_CD:'chengdu',DESTINATIONS_HZ:'hangzhou'
+      DESTINATIONS_TJ:'tianjin',DESTINATIONS_QD:'qingdao',DESTINATIONS_CD:'chengdu',DESTINATIONS_HZ:'hangzhou',
+      DESTINATIONS_CQ:'chongqing',DESTINATIONS_ES:'enshi'
     };
     const seen = new Set();
     const out = [];
@@ -147,7 +149,7 @@
       const thumb = imgPath
         ? `<div style="width:100%;height:120px;background:url('${imgPath}') center/cover;border-radius:10px 10px 0 0;"></div>`
         : `<div style="width:100%;height:120px;background:${d.gradient || 'linear-gradient(135deg,#FF7043,#FFC107)'};border-radius:10px 10px 0 0;display:flex;align-items:center;justify-content:center;font-size:36px;">📍</div>`;
-      const cityEmoji = {beijing:'🏯',shenzhen:'🏖',weihai:'🌊',suzhou:'🏮',tianjin:'🥐',qingdao:'🍺',chengdu:'🐼',hangzhou:'🍵'}[d._city] || '📍';
+      const cityEmoji = {beijing:'🏯',shenzhen:'🏖',weihai:'🌊',suzhou:'🏮',tianjin:'🥐',qingdao:'🍺',chengdu:'🐼',hangzhou:'🍵',chongqing:'🌶️',enshi:'🏞'}[d._city] || '📍';
       return `
         <a href="dest.html?id=${d.id}&city=${d._city}" style="background:white;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:transform .15s,box-shadow .15s;box-shadow:0 2px 8px rgba(16,24,40,0.06);" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(16,24,40,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(16,24,40,0.06)'">
           ${thumb}
