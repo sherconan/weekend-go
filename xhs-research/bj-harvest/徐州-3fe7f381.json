@@ -1,0 +1,50 @@
+{
+  "id": 314,
+  "name": "徐州",
+  "file": "js/data-beijing-500.js",
+  "query": "徐州 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "徐州三刷真实评价（仅个人感受）",
+      "href": "https://www.xiaohongshu.com/explore/68aedda7000000001d0396a6",
+      "author": "草莓喵了个喵",
+      "likes_text": "7180",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/55702b4928178f5f494624107b61af9c/1040g2sg31lmepjuolo1g4a3p5ovptr0ntnq5ijg!nc_n_webp_mw_1",
+      "likes": 7180
+    },
+    {
+      "title": "刚从徐州回来，给来旅游的提个醒。。。。",
+      "href": "https://www.xiaohongshu.com/explore/68d5ed2e000000001300ad71",
+      "author": "啵啵糖",
+      "likes_text": "4663",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/153497d20f4bf5dabf9b406b18f6c04d/1040g00831msjcpf9l22g40lhc7cvf5ls30sd0h0!nc_n_webp_mw_1",
+      "likes": 4663
+    },
+    {
+      "title": "📍徐州2天1晚｜超详细攻略🏮附citywalk路线",
+      "href": "https://www.xiaohongshu.com/explore/69ccff3c000000001e00cc9b",
+      "author": "小韩走万里",
+      "likes_text": "4271",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/b31eef464c33a79c7f649b8c74ec6951/notes_pre_post/1040g3k831udsbuol2ia043gdhkt630ajd1udsog!nc_n_webp_mw_1",
+      "likes": 4271
+    },
+    {
+      "title": "1-2月徐州旅游保姆级攻略，真的很详细",
+      "href": "https://www.xiaohongshu.com/explore/695362e8000000001d03ad7b",
+      "author": "利物浦浪迹天涯",
+      "likes_text": "3980",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/c2942d9bd7b9554b193e0638b2775fc4/notes_pre_post/1040g3k031qn37ufpn4105npjh7m092d7anodri8!nc_n_webp_mw_1",
+      "likes": 3980
+    },
+    {
+      "title": "直接抄！J人做的徐州旅游攻略太牛了！",
+      "href": "https://www.xiaohongshu.com/explore/69489fc2000000001e03a3f2",
+      "author": "菠萝菠萝蜜🍍",
+      "likes_text": "3769",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/953a80289abd22b09e5f9146d5bfe603/notes_pre_post/1040g3k831qcjnsg1ga005p0pkgj4i8umu8qbvhg!nc_n_webp_mw_1",
+      "likes": 3769
+    }
+  ],
+  "harvested_at": "2026-04-20T15:28:35"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 565,
+  "name": "天桥杂耍艺人",
+  "file": "js/data-beijing-tales.js",
+  "query": "天桥杂耍艺人 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "吴桥杂技大世界攻略，名不虚传的亘古绝学",
+      "href": "https://www.xiaohongshu.com/explore/66e6fd1b000000002603d7b6",
+      "author": "兜爸和兜兜",
+      "likes_text": "511",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/2f83dba3847db49db723a59ce68bcea9/1040g2sg317on7l3n3qc05nklinsg8062e9rptlg!nc_n_webp_mw_1",
+      "likes": 511
+    },
+    {
+      "title": "京津冀卡🆓｜吴桥杂技大世界🤹半日游攻略",
+      "href": "https://www.xiaohongshu.com/explore/698e6f0c000000001502130d",
+      "author": "是张开心呀",
+      "likes_text": "273",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/2754172d932da693ce95a5e9f96425cc/1040g2sg31sgou82l5t0049388q5af93tssp88a0!nc_n_webp_mw_1",
+      "likes": 273
+    },
+    {
+      "title": "吴桥杂技大世界-看这一篇就够了",
+      "href": "https://www.xiaohongshu.com/explore/68e4c0d3000000000303a08a",
+      "author": "mome",
+      "likes_text": "101",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/b3893afeafc2a0807b78241d80e72059/1040g00831nb2j7hrlm1g5pv3sik2nvgfuglivj8!nc_n_webp_mw_1",
+      "likes": 101
+    },
+    {
+      "title": "天桥，老北京民间艺术神仙打架的地方",
+      "href": "https://www.xiaohongshu.com/explore/665d1e5c00000000160129e9",
+      "author": "张润雨",
+      "likes_text": "88",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/bc3055b0a39ce90ceed04624c72b84c5/spectrum/1040g34o313ik30n1380g43777lcarukguvu346o!nc_n_webp_mw_1",
+      "likes": 88
+    },
+    {
+      "title": "天桥印象博物馆：还原老北京天桥五行八作",
+      "href": "https://www.xiaohongshu.com/explore/664f491e00000000140198a1",
+      "author": "笔者",
+      "likes_text": "86",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/89c8bd315f53ae9dbab91b2e15efd5a2/1040g2sg313522jpm38bg4atqlpg7b2rm5ar2qco!nc_n_webp_mw_1",
+      "likes": 86
+    }
+  ],
+  "harvested_at": "2026-04-20T16:16:47"
+}

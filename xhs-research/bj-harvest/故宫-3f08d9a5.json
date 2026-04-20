@@ -1,0 +1,50 @@
+{
+  "id": 330,
+  "name": "故宫",
+  "file": "js/data-beijing-500.js",
+  "query": "故宫 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "进故宫免排长队的丝滑方法",
+      "href": "https://www.xiaohongshu.com/explore/69116c760000000003018b16",
+      "author": "荼靡",
+      "likes_text": "2.7万",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/7bb1bd0c1ad667a586007731e6c4f553/note_pre_post_uhdr/1040g3r031ommhee96m605n7p8vgltptpjdpj68g!nc_n_webp_mw_1",
+      "likes": 27000
+    },
+    {
+      "title": "跟着走！进故宫最丝滑省时的路线攻略",
+      "href": "https://www.xiaohongshu.com/explore/6952715a000000001e0138a8",
+      "author": "🥢张小安吃饱没烦恼",
+      "likes_text": "9368",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/757e42dccbb65d7748e3322dffbb9025/1040g00831qm4v2c9n40g4bhpolm9uce5psaegv0!nc_n_webp_mw_1",
+      "likes": 9368
+    },
+    {
+      "title": "故宫是真大，应该逛了一半吧",
+      "href": "https://www.xiaohongshu.com/explore/6979cb6d00000000210329a1",
+      "author": "莎莎",
+      "likes_text": "6013",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/d5e3ae39b7512b275860638e086becf2/notes_pre_post/1040g3k031rsk9n0c2s005njkjbb08bc33m84h8o!nc_n_webp_mw_1",
+      "likes": 6013
+    },
+    {
+      "title": "头一次去故宫，就这么逛！！",
+      "href": "https://www.xiaohongshu.com/explore/6947e082000000000d03c4d7",
+      "author": "万客畅游",
+      "likes_text": "5279",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/c01fa06af0e02a93e9dfc4f5389b1cb9/notes_pre_post/1040g3k031qbsboq1g0405p8hbl895hpk21vd088!nc_n_webp_mw_1",
+      "likes": 5279
+    },
+    {
+      "title": "仅10分钟❗️故宫不排队攻略路线👉跟着走就行",
+      "href": "https://www.xiaohongshu.com/explore/69a2d3dc000000002801cc16",
+      "author": "北京去哪儿玩",
+      "likes_text": "2703",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/25f9ff6fffddc6ded4730259af3e0a41/1040g00831t4lehk3ls005nesufj088vlk883vlo!nc_n_webp_mw_1",
+      "likes": 2703
+    }
+  ],
+  "harvested_at": "2026-04-20T15:30:19"
+}

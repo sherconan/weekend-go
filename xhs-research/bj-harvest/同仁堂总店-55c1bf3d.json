@@ -1,0 +1,50 @@
+{
+  "id": 588,
+  "name": "同仁堂总店",
+  "file": "js/data-beijing-tales.js",
+  "query": "同仁堂总店 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京同仁堂减体茶",
+      "href": "https://www.xiaohongshu.com/explore/66f18106000000001902d47b",
+      "author": "大白兔&小灰狼",
+      "likes_text": "624",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201620/a2f87bdc7631ca98bf28c9b4d1864575/1040g2sg3183h7qogkc7043g1cj9gqtdjl0dp4a0!nc_n_webp_mw_1",
+      "likes": 624
+    },
+    {
+      "title": "没找黄🐮，自己抢到同仁眼科号的详细过程",
+      "href": "https://www.xiaohongshu.com/explore/68a42eba000000001d006b73",
+      "author": "追光的叶子🍃",
+      "likes_text": "483",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201620/202dda17e8643b021c1c9ec07d785ea2/notes_pre_post/1040g3k031lc0n142l05g5pc11o6n3am4tn2auh0!nc_n_webp_mw_1",
+      "likes": 483
+    },
+    {
+      "title": "同仁堂",
+      "href": "https://www.xiaohongshu.com/explore/67bc7cb30000000009015ec3",
+      "author": "CcDai🦊",
+      "likes_text": "299",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201620/f3e8ab6d205b9cfdaa213fa4a5f17739/1040g00831e9oeqosgk005p0epomqaladntph6go!nc_n_webp_mw_1",
+      "likes": 299
+    },
+    {
+      "title": "二刷同仁堂大珊栏总店",
+      "href": "https://www.xiaohongshu.com/explore/69098ed4000000000700b38a",
+      "author": "Echohaha66",
+      "likes_text": "218",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201620/f40d7fbb4a0df31e6c86e72c8c0ecf9c/notes_pre_post/1040g3k031of0slnr4q6g5o2apsp0bnf1vfbs9k0!nc_n_webp_mw_1",
+      "likes": 218
+    },
+    {
+      "title": "来同仁堂总店抓药，不要太香",
+      "href": "https://www.xiaohongshu.com/explore/68404eb0000000002101a69f",
+      "author": "青绿光影",
+      "likes_text": "154",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201620/2a63678781b7b7e8d69fc1437bfa3fed/notes_pre_post/1040g3k031iafr5tm7c005p10st8k3hbiugnteh8!nc_n_webp_mw_1",
+      "likes": 154
+    }
+  ],
+  "harvested_at": "2026-04-20T16:20:15"
+}

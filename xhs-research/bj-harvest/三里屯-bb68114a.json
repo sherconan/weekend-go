@@ -1,0 +1,50 @@
+{
+  "id": 338,
+  "name": "三里屯",
+  "file": "js/data-beijing-500.js",
+  "query": "三里屯 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京。。蕞好的地方果然都是免费的❗️❶❾合集✋",
+      "href": "https://www.xiaohongshu.com/explore/68440ebf0000000012001a92",
+      "author": "阿七在北京",
+      "likes_text": "2.6万",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/c46fbdf93f255721318413ccecb2ccf6/notes_pre_post/1040g3k831ie4mcbdgek05oaikapgkc6priqk638!nc_n_webp_mw_1",
+      "likes": 26000
+    },
+    {
+      "title": "北京三里屯暴走2w步整理‼️潮牌购物攻略",
+      "href": "https://www.xiaohongshu.com/explore/68db6b090000000003011e7d",
+      "author": "噜喵喵🐱",
+      "likes_text": "1万",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/4721b01dfc4ceff7c294bd90871ad583/notes_pre_post/1040g3k031n1ul1rs6g705p1e4507u0280i8a48g!nc_n_webp_mw_1",
+      "likes": 10000
+    },
+    {
+      "title": "三里屯逛吃攻略",
+      "href": "https://www.xiaohongshu.com/explore/69e236ee000000002200c126",
+      "author": "朱匀天Z",
+      "likes_text": "2362",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/f53bea0067b879ae120e892f458bedb6/spectrum/1040g34o31v2j8h1p3m104a0rqgn21lhs1crq33o!nc_n_webp_mw_1",
+      "likes": 2362
+    },
+    {
+      "title": "北京三里屯！18家必逛店铺大合集（附地图🗺️）",
+      "href": "https://www.xiaohongshu.com/explore/68a7f17c000000001d020c06",
+      "author": "虾饺焦辣辣",
+      "likes_text": "1966",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/9bfe6fe2de7604ffb15e4da6ee6602d3/notes_pre_post/1040g3k831lfmds29l8904a4rmaotusb4fkvjte0!nc_n_webp_mw_1",
+      "likes": 1966
+    },
+    {
+      "title": "北京三里屯，个人觉得无法超越的12家小破店",
+      "href": "https://www.xiaohongshu.com/explore/6900d64b00000000050020e2",
+      "author": "老佛爷",
+      "likes_text": "1776",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/1beab5df556bb0d13daabf1dc669d87d/notes_pre_post/1040g3k831o6ga5qimmdg4011gt7cm23teem905o!nc_n_webp_mw_1",
+      "likes": 1776
+    }
+  ],
+  "harvested_at": "2026-04-20T15:31:07"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 357,
+  "name": "张家口鸡鸣驿",
+  "file": "js/data-beijing-500.js",
+  "query": "张家口鸡鸣驿 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京向西，去河北触摸大明的“边关”与“脊梁”",
+      "href": "https://www.xiaohongshu.com/explore/698836cb000000000a03d94d",
+      "author": "星星出来玩",
+      "likes_text": "569",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201535/108bc1e48b34d8ad78dac4e9bc6c35c9/notes_pre_post/1040g3k831samh9vkla005p3dcsr46u8ot75hr78!nc_n_webp_mw_1",
+      "likes": 569
+    },
+    {
+      "title": "周末逃离北京计划:从土木堡到鸡鸣驿",
+      "href": "https://www.xiaohongshu.com/explore/69bc10a5000000002200d0b1",
+      "author": "客居北平",
+      "likes_text": "316",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201535/cab00ca5365561a35f3cad44fd09920f/notes_pre_post/1040g3k831ttb4mpegodg5oh6utdgk96pcm2i9b8!nc_n_webp_mw_1",
+      "likes": 316
+    },
+    {
+      "title": "鸡鸣山+鸡鸣驿！无车版悠闲一日游攻略",
+      "href": "https://www.xiaohongshu.com/explore/68f0c26f00000000070218c5",
+      "author": "外星小宝贝",
+      "likes_text": "151",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201535/12ee9e1ba640494b2df62e77085ab85a/1040g00831nethv05kq6g4a0tfqkkgu5ptivrfho!nc_n_webp_mw_1",
+      "likes": 151
+    },
+    {
+      "title": "北京出发2h，在古城，娃上了堂生动的历史课",
+      "href": "https://www.xiaohongshu.com/explore/68af0c36000000001c035110",
+      "author": "乐天奶爸",
+      "likes_text": "124",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201535/ff498cd3802339bc547165bacdc483f1/notes_pre_post/1040g3k831lmke4t2ku0048cnsp0qer2182gi59o!nc_n_webp_mw_1",
+      "likes": 124
+    },
+    {
+      "title": "😚周末去了张家口下花园的鸡鸣驿",
+      "href": "https://www.xiaohongshu.com/explore/685ed546000000002400acc9",
+      "author": "Rio泽",
+      "likes_text": "119",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201535/b86ea0827325f442c3edb8e11da2a3f8/notes_pre_post/1040g3k031j88jbk1j45g5olhfvb6d35t8mcpmt8!nc_n_webp_mw_1",
+      "likes": 119
+    }
+  ],
+  "harvested_at": "2026-04-20T15:35:46"
+}

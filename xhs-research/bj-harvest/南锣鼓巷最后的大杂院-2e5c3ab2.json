@@ -1,0 +1,50 @@
+{
+  "id": 561,
+  "name": "南锣鼓巷最后的大杂院",
+  "file": "js/data-beijing-tales.js",
+  "query": "南锣鼓巷最后的大杂院 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京最精美的砖雕拱门竟深藏在这条老胡同里",
+      "href": "https://www.xiaohongshu.com/explore/66d57e8b000000001f01945f",
+      "author": "舜游记",
+      "likes_text": "2619",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/739d09c0c322330593dcb21040ae42eb/1040g00831785tc7lk46g40lr4ec5p8tmprrmc70!nc_n_webp_mw_1",
+      "likes": 2619
+    },
+    {
+      "title": "迄今为止❗️北京我最爱的胡同citywalk出现了",
+      "href": "https://www.xiaohongshu.com/explore/69674a65000000001a02dcd0",
+      "author": "董小贝",
+      "likes_text": "1957",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/8b35456ac48b905e8864ce47eda1d54f/notes_pre_post/1040g3k831rah26hi7u705ng1adh08mhb4rdngg8!nc_n_webp_mw_1",
+      "likes": 1957
+    },
+    {
+      "title": "砖雕真美阿🥹庆幸在北京胡同保留下来了！",
+      "href": "https://www.xiaohongshu.com/explore/68b84cbc000000001d02083c",
+      "author": "超级晶",
+      "likes_text": "1122",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/c6734d2b71d6999bca67594a7c00d81e/1040g00831lvl1q255e0g49fj7067vdmam9u14ao!nc_n_webp_mw_1",
+      "likes": 1122
+    },
+    {
+      "title": "比南锣鼓巷好逛10000倍的7条胡同！！",
+      "href": "https://www.xiaohongshu.com/explore/66854e9c000000000d00d655",
+      "author": "蜘蛛精环游记",
+      "likes_text": "1081",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/a6aa4f31ae59480bb3afff1e556de1fc/1040g2sg314ps2r28hadg5ndifsi09ep8rd9816o!nc_n_webp_mw_1",
+      "likes": 1081
+    },
+    {
+      "title": "太可怕了，五道营正在南锣鼓巷化",
+      "href": "https://www.xiaohongshu.com/explore/667bd64d000000001c0292f3",
+      "author": "绝世大可爱北老师🥕",
+      "likes_text": "1017",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/bb7102217f69601938af42bd46efba0e/1040g2sg314gk4pnamk705oe9i590j0utu698fg0!nc_n_webp_mw_1",
+      "likes": 1017
+    }
+  ],
+  "harvested_at": "2026-04-20T16:16:13"
+}

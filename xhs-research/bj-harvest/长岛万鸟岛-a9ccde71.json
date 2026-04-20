@@ -1,0 +1,50 @@
+{
+  "id": 388,
+  "name": "长岛万鸟岛",
+  "file": "js/data-beijing-500.js",
+  "query": "长岛万鸟岛 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "蓬莱·长岛超详细的旅游攻略",
+      "href": "https://www.xiaohongshu.com/explore/6302011a000000001b0040cd",
+      "author": "夏木的旅行📝",
+      "likes_text": "6979",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201542/a419a2fb6dcbc6dfd3a58000e0389349/01028l01kp92d9sfqc60112f6xh0d5mu2w!nc_n_webp_mw_1",
+      "likes": 6979
+    },
+    {
+      "title": "北京2.5h去长岛，看蕞美球石⚪和玻璃海🌊",
+      "href": "https://www.xiaohongshu.com/explore/66723e0e000000001c0376ad",
+      "author": "堂堂正正出游记📝",
+      "likes_text": "1350",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201542/d9ac161d6a3e6dd05aac78809864a05e/1040g008314789ju62e005ng7ecsg849met1vs00!nc_n_webp_mw_1",
+      "likes": 1350
+    },
+    {
+      "title": "长岛一日游结束，忠告如下：",
+      "href": "https://www.xiaohongshu.com/explore/683b0ea1000000000303ae40",
+      "author": "心底没数天地宽",
+      "likes_text": "1289",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201542/35184d4edc24e69e3e54c75c6e18b7ac/1040g00831i5bofii7e0048lu8kifghm15sgcul0!nc_n_webp_mw_1",
+      "likes": 1289
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/5b1e3e3c4b88457459c1728e",
+      "author": "吃汉在写小红薯",
+      "likes_text": "688",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201542/c48af74288a9e365517de076b7cf6419/e3a60e43-ec50-40bb-98b5-6b18031a8934!nc_n_webp_mw_1",
+      "likes": 688
+    },
+    {
+      "title": "今天带大家探秘一个无人岛---猴矶岛",
+      "href": "https://www.xiaohongshu.com/explore/66399d7c000000001e03176c",
+      "author": "长岛女孩",
+      "likes_text": "563",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201542/2552984862ba05bb5ce20da71de15bd6/217/0/01e6399ca62963dd0010000000018f510bf808_0.jpg!nc_n_webp_mw_1",
+      "likes": 563
+    }
+  ],
+  "harvested_at": "2026-04-20T15:42:42"
+}

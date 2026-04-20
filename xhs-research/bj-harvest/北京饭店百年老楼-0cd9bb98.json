@@ -1,0 +1,50 @@
+{
+  "id": 540,
+  "name": "北京饭店百年老楼",
+  "file": "js/data-beijing-tales.js",
+  "query": "北京饭店百年老楼 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "八大楼~来北京一定要吃的百年老字号餐馆~",
+      "href": "https://www.xiaohongshu.com/explore/66e2a9a0000000002603cdc9",
+      "author": "贪吃的兔子",
+      "likes_text": "814",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201611/894121c53c62b3da54e94ee98b5b0326/1040g2sg317l1e4l73qdg5p6j1pb9en96gonq0h8!nc_n_webp_mw_1",
+      "likes": 814
+    },
+    {
+      "title": "曾举办国宴，北京人心中的中西合璧典范❗",
+      "href": "https://www.xiaohongshu.com/explore/6911efb90000000007003ca4",
+      "author": "Derekwen Foto 📷",
+      "likes_text": "553",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201611/5a160ebf133a6141b6c8b5bf025a5491/note_pre_post_uhdr/1040g3r831on5svfuksqg5nn8mfhg8e9kk90j7ug!nc_n_webp_mw_1",
+      "likes": 553
+    },
+    {
+      "title": "北京饭店入住",
+      "href": "https://www.xiaohongshu.com/explore/68d09bce000000001201d20b",
+      "author": "努力瘦到100斤",
+      "likes_text": "175",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201611/ce5deecc8d8698c4a0e86723ccaa7911/notes_pre_post/1040g3k831mnd859g4s004a7kpf8pr3ijfe2gbfo!nc_n_webp_mw_1",
+      "likes": 175
+    },
+    {
+      "title": "北京饭庄八大楼那些事儿",
+      "href": "https://www.xiaohongshu.com/explore/673aa046000000001901803d",
+      "author": "了凡",
+      "likes_text": "169",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201611/317cdf1443389b61eb0c95a385d40c92/1040g00831aao9d32ng2g5nnpsru08q5t6drrjc0!nc_n_webp_mw_1",
+      "likes": 169
+    },
+    {
+      "title": "北京饭店",
+      "href": "https://www.xiaohongshu.com/explore/683c5e63000000000303fdc7",
+      "author": "蓓$润妈",
+      "likes_text": "164",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201611/f5d2ea4dbfa98795e3aaa23285330cc4/notes_pre_post/1040g3k031i6koci8nc0049q0smdk2hcpb5dcpr8!nc_n_webp_mw_1",
+      "likes": 164
+    }
+  ],
+  "harvested_at": "2026-04-20T16:11:35"
+}

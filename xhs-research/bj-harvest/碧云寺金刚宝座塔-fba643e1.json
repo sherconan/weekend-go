@@ -1,0 +1,50 @@
+{
+  "id": 482,
+  "name": "碧云寺金刚宝座塔",
+  "file": "js/data-beijing-hidden.js",
+  "query": "碧云寺金刚宝座塔 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "尘世中的惊鸿一瞥！寻访北京的古塔",
+      "href": "https://www.xiaohongshu.com/explore/68516be800000000120054d1",
+      "author": "悠悠和小茉莉",
+      "likes_text": "899",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/9cb2ef8d03089b6b9d7db4b3b83c5e8b/1040g00831itl5180hg005onism07qgcngsthnso!nc_n_webp_mw_1",
+      "likes": 899
+    },
+    {
+      "title": "北京漫行-香山碧云寺（金刚宝座塔）",
+      "href": "https://www.xiaohongshu.com/explore/68d52d51000000001300ecf7",
+      "author": "听雨轩",
+      "likes_text": "819",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/1b8a0991e162e392181e405cd64b4806/spectrum/1040g34o31p3skcr824105og25j6k1redpnum5vg!nc_n_webp_mw_1",
+      "likes": 819
+    },
+    {
+      "title": "香山碧云寺｜层林之上，中国最大金刚宝座塔",
+      "href": "https://www.xiaohongshu.com/explore/693eb937000000001e006d82",
+      "author": "看寺庙吗朋友",
+      "likes_text": "302",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/da1d6fba4b57eee666de39deb7d7de3b/notes_pre_post/1040g3k031q2s3l2c72004a4oan4p0nv7tjhqsqo!nc_n_webp_mw_1",
+      "likes": 302
+    },
+    {
+      "title": "北京香山碧云寺神秘的金刚宝座塔",
+      "href": "https://www.xiaohongshu.com/explore/67cd73b9000000000900e560",
+      "author": "炸酱面多放葱花",
+      "likes_text": "265",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/b9ede38694f3d552413707f6194ff6eb/1040g2sg31eqcp0fkme805nri04j08e4i041bfb8!nc_n_webp_mw_1",
+      "likes": 265
+    },
+    {
+      "title": "北京漫行-神秘的妙高塔（集齐四大金刚啦）",
+      "href": "https://www.xiaohongshu.com/explore/68e90944000000000301ba06",
+      "author": "听雨轩",
+      "likes_text": "226",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/8ba80c9cac102c5ac6bcedc439ffb516/spectrum/1040g0k031p42mku424005og25j6k1redrj3225g!nc_n_webp_mw_1",
+      "likes": 226
+    }
+  ],
+  "harvested_at": "2026-04-20T16:03:17"
+}

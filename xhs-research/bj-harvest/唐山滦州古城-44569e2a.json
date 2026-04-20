@@ -1,0 +1,50 @@
+{
+  "id": 328,
+  "name": "唐山滦州古城",
+  "file": "js/data-beijing-500.js",
+  "query": "唐山滦州古城 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "一个人环游中国之唐山篇",
+      "href": "https://www.xiaohongshu.com/explore/68e20a77000000000303626f",
+      "author": "一树天涯🌳🌳",
+      "likes_text": "110",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/07f02afce7e87382da435795e39feeec/notes_pre_post/1040g3k031n8dmclsmg0g5plsr7lne4qvb2353s8!nc_n_webp_mw_1",
+      "likes": 110
+    },
+    {
+      "title": "来唐山滦州市，除逛滦州古城还有啥",
+      "href": "https://www.xiaohongshu.com/explore/680d065d000000001d00a60b",
+      "author": "冷三岁",
+      "likes_text": "70",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/f1d09b25805c537d3df51a45331f53bc/1040g00831god5pqhj40g5ok7rlqoddtph0a6200!nc_n_webp_mw_1",
+      "likes": 70
+    },
+    {
+      "title": "避坑避坑～滦州古城",
+      "href": "https://www.xiaohongshu.com/explore/69c90846000000001b022897",
+      "author": "妞妈",
+      "likes_text": "63",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/74fc2f32343af0588922ee47a1bdd611/1040g00831ua0efi42q005nl9c58g8opj1k9oj8o!nc_n_webp_mw_1",
+      "likes": 63
+    },
+    {
+      "title": "滦州古城三天两晚攻略| 穿越明清 邂逅浪漫",
+      "href": "https://www.xiaohongshu.com/explore/686f4ef400000000200181ad",
+      "author": "慧慧爱旅行",
+      "likes_text": "59",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/fc2d04aefdc32e0064ed6de149647ac3/notes_pre_post/1040g3k031joce79j2oe05or0ijj6bh30907hmp0!nc_n_webp_mw_1",
+      "likes": 59
+    },
+    {
+      "title": "这么近那么美，周末到河北—滦州篇",
+      "href": "https://www.xiaohongshu.com/explore/692c3ca4000000001b02365f",
+      "author": "圆不落",
+      "likes_text": "53",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/7e16caa9c42ca7390dd12ff4e84770ac/notes_pre_post/1040g3k831pgsj5d3jc0g5nire0mg886qvbaj330!nc_n_webp_mw_1",
+      "likes": 53
+    }
+  ],
+  "harvested_at": "2026-04-20T15:30:08"
+}

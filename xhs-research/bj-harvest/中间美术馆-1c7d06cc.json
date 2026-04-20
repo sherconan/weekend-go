@@ -1,0 +1,50 @@
+{
+  "id": 454,
+  "name": "中间美术馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "中间美术馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "快来看展🎫｜4月一起在北京「躺进」艺术",
+      "href": "https://www.xiaohongshu.com/explore/69d8c0df0000000022028245",
+      "author": "艺术公园 ARTPARK",
+      "likes_text": "1042",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/c44754e2bed681a4256b53a77be11d02/spectrum/1040g0k031upbkh9mj4005oaolckgkdn0otjil50!nc_n_webp_mw_1",
+      "likes": 1042
+    },
+    {
+      "title": "北京被低估的京西宝藏美术馆",
+      "href": "https://www.xiaohongshu.com/explore/6946924b000000001e020da3",
+      "author": "Gofreey",
+      "likes_text": "473",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/a79079cc67a1851431992e0bccf7c9df/notes_pre_post/1040g3k031qajj75nnu004a5du3i2rpn7mpudqvg!nc_n_webp_mw_1",
+      "likes": 473
+    },
+    {
+      "title": "中间新展｜出片率💯% 最INS的小众艺术展",
+      "href": "https://www.xiaohongshu.com/explore/69b89bb4000000002300458c",
+      "author": "William Lee",
+      "likes_text": "265",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/0742fc3843c74df5dbaea10b9f97c803/1040g2sg31tpv761unqkg49igqkkgfsan4mbda98!nc_n_webp_mw_1",
+      "likes": 265
+    },
+    {
+      "title": "北京海淀❗️99%都不知道的艺术空间☁️",
+      "href": "https://www.xiaohongshu.com/explore/686c6e670000000017032caa",
+      "author": "哇塞北京",
+      "likes_text": "112",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/253dce98f4435776b13355b775d1b70a/notes_pre_post/1040g3k031jlimtdfj0005nnf2ct08u9gcifg8e8!nc_n_webp_mw_1",
+      "likes": 112
+    },
+    {
+      "title": "小众不挤！中间美术馆这个展值得专程来",
+      "href": "https://www.xiaohongshu.com/explore/69c623fc000000001f007fd9",
+      "author": "沉思。",
+      "likes_text": "93",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/131349763c874bb6a1038ccabdd309a8/notes_pre_post/1040g3k031u75jst4io6g5n10sijht7kmps9v5p0!nc_n_webp_mw_1",
+      "likes": 93
+    }
+  ],
+  "harvested_at": "2026-04-20T15:57:54"
+}

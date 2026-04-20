@@ -1,0 +1,50 @@
+{
+  "id": 511,
+  "name": "北京印刷博物馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "北京印刷博物馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "地铁直达！北京10个免费免预约的博物馆",
+      "href": "https://www.xiaohongshu.com/explore/69cfb1fd0000000023014e44",
+      "author": "爱玩的嘉荷儿",
+      "likes_text": "165",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/952c6efe69df6e77ef404e8073c105b0/1040g00831uggk3scia0046vmvpvqn7vv7lpg9c0!nc_n_webp_mw_1",
+      "likes": 165
+    },
+    {
+      "title": "北京13家小众免费博物馆推荐",
+      "href": "https://www.xiaohongshu.com/explore/68ad2d52000000001c0367de",
+      "author": "育见男孩",
+      "likes_text": "61",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/fd405ef9bed6af76cc3b2e0ebea6ca90/1040g2sg31lkpv87c4sc04buosljr13kcktm5ef8!nc_n_webp_mw_1",
+      "likes": 61
+    },
+    {
+      "title": "地下层才是真宝藏！小众博物馆机械控必冲",
+      "href": "https://www.xiaohongshu.com/explore/6818803000000000220055bf",
+      "author": "是Jill呀",
+      "likes_text": "43",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/b51c348eea82b13c67de040ff8332580/notes_pre_post/1040g3k031h3j23bejq1048uadsb7tgap8erju10!nc_n_webp_mw_1",
+      "likes": 43
+    },
+    {
+      "title": "中国印刷博物馆游玩攻略",
+      "href": "https://www.xiaohongshu.com/explore/68c954a7000000001201e9f2",
+      "author": "遛娃去野（蔚来自驾版）",
+      "likes_text": "29",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/2cfff7921396f4ce64e38705c9b09f2d/notes_pre_post/1040g3k031mg9qfklks105pmf6pine7k3c44c69g!nc_n_webp_mw_1",
+      "likes": 29
+    },
+    {
+      "title": "大兴区最大免费博物馆",
+      "href": "https://www.xiaohongshu.com/explore/6922e30b000000001e036eab",
+      "author": "麦田",
+      "likes_text": "14",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/859578cad974545d5e440c432f9aaf90/notes_pre_post/1040g3k031p7o1vs82g4g5nvobtkgbtpas0os138!nc_n_webp_mw_1",
+      "likes": 14
+    }
+  ],
+  "harvested_at": "2026-04-20T16:07:35"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 448,
+  "name": "角楼图书馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "角楼图书馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京最爱的图书馆，没有之一！！还免费",
+      "href": "https://www.xiaohongshu.com/explore/69c8aa8f000000001a02fd90",
+      "author": "溜溜达的美石",
+      "likes_text": "245",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/af3d5c28264161639f5a9e3c09fef914/1040g00831u9l1r012o005pjtt1ejcs02kkak7jg!nc_n_webp_mw_1",
+      "likes": 245
+    },
+    {
+      "title": "跟着首图Citywalk📖 打卡骆驼祥子同款点位",
+      "href": "https://www.xiaohongshu.com/explore/6882ec9000000000120179ac",
+      "author": "首都图书馆",
+      "likes_text": "38",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/eff67d2e23d6f3a1c93d51e2c41d2446/notes_pre_post/1040g3k031kbhe2v7jq005oa1lhi0jrk025i6a88!nc_n_webp_mw_1",
+      "likes": 38
+    },
+    {
+      "title": "📚北京自习天花板！9个超赞图书馆😊",
+      "href": "https://www.xiaohongshu.com/explore/689dc420000000001d01d6a6",
+      "author": "蕙心_北京周末去哪玩",
+      "likes_text": "32",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/1a747f21e3c2b7169ec16394aa186126/notes_pre_post/1040g3k831l5npc132o705n3epk8k6nku1qmf488!nc_n_webp_mw_1",
+      "likes": 32
+    },
+    {
+      "title": "角楼图书馆·100个有意思的人盖章打卡",
+      "href": "https://www.xiaohongshu.com/explore/691d6fef00000000190275bf",
+      "author": "一个小仙女💗",
+      "likes_text": "16",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/3365e8d481deb094ff78aa601f1d885e/1040g2sg31p2dttba321g5nek3a9g8dhvag4pjgg!nc_n_webp_mw_1",
+      "likes": 16
+    },
+    {
+      "title": "角楼图书馆｜60＋限定章年度返场",
+      "href": "https://www.xiaohongshu.com/explore/6965bb9f000000000903ba35",
+      "author": "小刘在北京",
+      "likes_text": "13",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/557a1b76e83e8f6bcbf4dd456d1daba7/notes_pre_post/1040g3k031r917n0274605nclm2f08i7dar7m25g!nc_n_webp_mw_1",
+      "likes": 13
+    }
+  ],
+  "harvested_at": "2026-04-20T15:57:14"
+}

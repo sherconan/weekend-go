@@ -1,0 +1,50 @@
+{
+  "id": 455,
+  "name": "地坛公园银杏大道",
+  "file": "js/data-beijing-hidden.js",
+  "query": "地坛公园银杏大道 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "一篇说明白地坛公园怎么逛？（附机位指引）",
+      "href": "https://www.xiaohongshu.com/explore/690b47fd000000000302ce55",
+      "author": "poor猴儿",
+      "likes_text": "8243",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/f2ed7e9790cf423dd87c70e8ead24c78/1040g2sg31oglb70d6gjg48ntoipe9pvstjbjhso!nc_n_webp_mw_1",
+      "likes": 8243
+    },
+    {
+      "title": "11.10实况！北京地坛公园银杏杀疯了！！！",
+      "href": "https://www.xiaohongshu.com/explore/6911f10b0000000004011dc3",
+      "author": "凡宝没吃饱",
+      "likes_text": "1480",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/8ca8b0b48f505fbe1e8d79c00cef8dce/1040g00831on5vvk9mg505p0j1srkicpqgfq7ig8!nc_n_webp_mw_1",
+      "likes": 1480
+    },
+    {
+      "title": "被地坛2块快乐美哭❗️错过等明年❗️攻略",
+      "href": "https://www.xiaohongshu.com/explore/69158ea4000000000d03c44c",
+      "author": "土著蔓蔓北京生活",
+      "likes_text": "1204",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/399039bf3f71f71a14ea1aed96da731a/notes_pre_post/1040g3k031oqn1rk0ha1g5paor6e20031525bo0o!nc_n_webp_mw_1",
+      "likes": 1204
+    },
+    {
+      "title": "地坛公园|赏秋and银杏出片路线推荐",
+      "href": "https://www.xiaohongshu.com/explore/69086ab7000000000700e0ac",
+      "author": "小wang爱溜达",
+      "likes_text": "1131",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/b1dd26e3ea93de51f78db3ae095584eb/1040g00831odsqhobl2405q05ldih9hl2bmbptt8!nc_n_webp_mw_1",
+      "likes": 1131
+    },
+    {
+      "title": "11.9实拍！应该是今年最好的地坛银杏大道了",
+      "href": "https://www.xiaohongshu.com/explore/6910132d0000000007020d66",
+      "author": "杰作的杰子🥕",
+      "likes_text": "510",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/6f67e027c3d3cd9dcc0620a9c6f040f9/spectrum/1040g34o31olccm7i4s3g5pmqtd52ueijtiqc0t8!nc_n_webp_mw_1",
+      "likes": 510
+    }
+  ],
+  "harvested_at": "2026-04-20T15:57:59"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 323,
+  "name": "开封",
+  "file": "js/data-beijing-500.js",
+  "query": "开封 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "开封踩雷😭以为三天够玩，两天耗在万岁山",
+      "href": "https://www.xiaohongshu.com/explore/695a8e65000000001e0286a8",
+      "author": "匡KuAng~不方",
+      "likes_text": "3908",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/534ad95a12b0ebef7def8a49c1261955/spectrum/1040g34o31qu3d17on0605p159qiki27a3n78rdo!nc_n_webp_mw_1",
+      "likes": 3908
+    },
+    {
+      "title": "开封旅游个人评价",
+      "href": "https://www.xiaohongshu.com/explore/695276df000000001e025285",
+      "author": "奶茶茶",
+      "likes_text": "3532",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/8ad94cb5865a1069a5481e98acb8d173/1040g00831qm6ft3gno505oc58hcocdga5i28s7g!nc_n_webp_mw_1",
+      "likes": 3532
+    },
+    {
+      "title": "开封万岁山武侠城➕清明上河园行程攻略",
+      "href": "https://www.xiaohongshu.com/explore/690c40790000000004004417",
+      "author": "1701",
+      "likes_text": "3291",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/53f081fe7f97b32d96fff5d227e90b4c/notes_pre_post/1040g3k031ohl2nhvmm005nn8hm40bp9vls8h1sg!nc_n_webp_mw_1",
+      "likes": 3291
+    },
+    {
+      "title": "开封一两天玩的稀碎，各种坑",
+      "href": "https://www.xiaohongshu.com/explore/68161acb0000000023013c75",
+      "author": "大可小馨",
+      "likes_text": "3130",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/a7a4906f727f16b253c10c38cf972ff8/notes_pre_post/1040g3k031h18rlav426g4a6a5hp15jtp8jt8650!nc_n_webp_mw_1",
+      "likes": 3130
+    },
+    {
+      "title": "开封｜最全攻略🏮这一篇就够了",
+      "href": "https://www.xiaohongshu.com/explore/69ba9b94000000001d01d4d1",
+      "author": "z｀猫头鹰🦉",
+      "likes_text": "2403",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/1f5d7010e465bc36e8d750260f50f477/1040g00831trdgrpt6i004bk4okodbfv7pojbnto!nc_n_webp_mw_1",
+      "likes": 2403
+    }
+  ],
+  "harvested_at": "2026-04-20T15:29:37"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 450,
+  "name": "红砖美术馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "红砖美术馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "文艺青年必收！北京美术馆地图＋打卡指南！",
+      "href": "https://www.xiaohongshu.com/explore/67ac57b9000000002903f08e",
+      "author": "曼领艺术小跟班",
+      "likes_text": "585",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/2789ed7d36dc5821f72b5e796c74aec6/1040g2sg31dq3bhllgk705phpnluhor01tjsptho!nc_n_webp_mw_1",
+      "likes": 585
+    },
+    {
+      "title": "红砖美术馆超全攻略",
+      "href": "https://www.xiaohongshu.com/explore/683474e0000000001101fc9a",
+      "author": "爱行者 i tour",
+      "likes_text": "70",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/256b9195040569d21b6d67290feec85c/notes_pre_post/1040g3k031hutbicpm4605n0m7pq1l1lvdfh0ts8!nc_n_webp_mw_1",
+      "likes": 70
+    },
+    {
+      "title": "【北京冬日必去系列】北京红砖美术馆",
+      "href": "https://www.xiaohongshu.com/explore/69366db1000000001e015731",
+      "author": "独立摄影师-留白",
+      "likes_text": "69",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/bbdc93ff83c9b8975144966d7b99910e/1040g00831pqr370sjq6g5nrchml0937qk02m080!nc_n_webp_mw_1",
+      "likes": 69
+    },
+    {
+      "title": "精选29场❗北京4月展览攻略✨大部分免费看",
+      "href": "https://www.xiaohongshu.com/explore/69c7f639000000001a02ab5b",
+      "author": "艺术街溜子",
+      "likes_text": "31",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/b1e1582c790d8e10dd61046ece76ccb2/1040g00831u8t2aq2ia505paso7a1703a1f5j2ao!nc_n_webp_mw_1",
+      "likes": 31
+    },
+    {
+      "title": "📍北京红砖美术馆｜灵动东方园林意蕴",
+      "href": "https://www.xiaohongshu.com/explore/68616662000000002203c3a6",
+      "author": "IMH 万象音乐空间",
+      "likes_text": "28",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201557/7d71bc1c2b6a501025f4450af8947446/1040g2sg31japen3f2pmg40qhnh9ls9l4m5p92fg!nc_n_webp_mw_1",
+      "likes": 28
+    }
+  ],
+  "harvested_at": "2026-04-20T15:57:28"
+}

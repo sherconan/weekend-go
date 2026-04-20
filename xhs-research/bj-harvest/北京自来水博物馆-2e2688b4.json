@@ -1,0 +1,50 @@
+{
+  "id": 505,
+  "name": "北京自来水博物馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "北京自来水博物馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "自来水博物馆藏着这么好看的章🕹",
+      "href": "https://www.xiaohongshu.com/explore/68c3953c000000001c031593",
+      "author": "面面妈咪呀",
+      "likes_text": "276",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201606/429a56bd4880f0f557f246dc796fb1df/1040g2sg31mam3k4o5meg412eh9p89e4jlhigne0!nc_n_webp_mw_1",
+      "likes": 276
+    },
+    {
+      "title": "😻北京私藏citywalk路线大公开！24/100",
+      "href": "https://www.xiaohongshu.com/explore/68424fcb000000000c03a21c",
+      "author": "闲不住的小过过",
+      "likes_text": "86",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201606/92743927be2c56968bad1d20ee92e8ab/1040g00831ice3c8ege6g5pru2q727u5vk5n0mmg!nc_n_webp_mw_1",
+      "likes": 86
+    },
+    {
+      "title": "打卡小众博物馆｜北京自来水博物馆🆓盖章",
+      "href": "https://www.xiaohongshu.com/explore/689edbf1000000001d02d7bc",
+      "author": "恋猫的奶茶",
+      "likes_text": "39",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201606/d3c0b9c0fa4944c26a6cec8bb075792d/notes_pre_post/1040g3k831l6ppmom5e705pb88bjfeoclr0b254g!nc_n_webp_mw_1",
+      "likes": 39
+    },
+    {
+      "title": "小众博物馆—自来水博物馆",
+      "href": "https://www.xiaohongshu.com/explore/68ce7bab000000001201f730",
+      "author": "小余爱逛博物馆",
+      "likes_text": "38",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201606/83369ff83f84bcd12c4ce68a35774245/notes_pre_post/1040g3k831mlajja44q705nmk8t50bs0k991iu98!nc_n_webp_mw_1",
+      "likes": 38
+    },
+    {
+      "title": "北京你没去过的冷门博物馆｜大多免费小众",
+      "href": "https://www.xiaohongshu.com/explore/694c178c000000000d03c5bc",
+      "author": "吃喝玩乐的小雪雪",
+      "likes_text": "34",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201606/007ac915e5c1f87980c77f766a8bf6c7/notes_pre_post/1040g3k031qfvmleo7u205n9d5npljpv7924o9b0!nc_n_webp_mw_1",
+      "likes": 34
+    }
+  ],
+  "harvested_at": "2026-04-20T16:06:51"
+}

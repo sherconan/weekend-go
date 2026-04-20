@@ -1,0 +1,50 @@
+{
+  "id": 575,
+  "name": "三联韬奋书店（24小时）",
+  "file": "js/data-beijing-tales.js",
+  "query": "三联韬奋书店（24小时） 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "🌙北京24小时营业好去处🌃“城市不眠指南”📓",
+      "href": "https://www.xiaohongshu.com/explore/681077640000000007034080",
+      "author": "IN北京",
+      "likes_text": "1716",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201618/6e823d8a44859949207e4e1e45885018/1040g00831groq5kbju005o5jr3sg90fooak26p0!nc_n_webp_mw_1",
+      "likes": 1716
+    },
+    {
+      "title": "北京探店｜北京第一家24小时书店打卡",
+      "href": "https://www.xiaohongshu.com/explore/5de6170d0000000001009027",
+      "author": "王怀恩漫游人间",
+      "likes_text": "890",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201618/8dd5ce5ba3886481e28108c8eba78916/Flj89wAhkWklD4t3xOMYOMTXO1aS!nc_n_webp_mw_1",
+      "likes": 890
+    },
+    {
+      "title": "文艺控必走‼️1公里解锁帝都艺术㊙️境",
+      "href": "https://www.xiaohongshu.com/explore/67dd37780000000009014bfe",
+      "author": "阿瑾翘班去",
+      "likes_text": "767",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201618/bff2067c77ec97f55632410aa61fe536/notes_pre_post/1040g3k831f9mpc7s6id04btdbfhmkj2qa4jvftg!nc_n_webp_mw_1",
+      "likes": 767
+    },
+    {
+      "title": "🌙这里曾是一家24小时营业的书店",
+      "href": "https://www.xiaohongshu.com/explore/684423a90000000012001c2a",
+      "author": "湲莱读书",
+      "likes_text": "194",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201618/06d7c5d3a82e9c7dbc3a203e633672ab/notes_pre_post/1040g3k831ie7dcfq02b042o6b5tcgohc9qg57og!nc_n_webp_mw_1",
+      "likes": 194
+    },
+    {
+      "title": "在北京实测一条温暖不费腿的书店漫游路线",
+      "href": "https://www.xiaohongshu.com/explore/69297af4000000001f00d7aa",
+      "author": "老布先生",
+      "likes_text": "160",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201618/cda0de7365b5e72586e32679bcd3c151/1040g00831pe66e3mis0g5nhha98g8qhg1coj810!nc_n_webp_mw_1",
+      "likes": 160
+    }
+  ],
+  "harvested_at": "2026-04-20T16:18:16"
+}

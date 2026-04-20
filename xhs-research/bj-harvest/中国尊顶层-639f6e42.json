@@ -1,0 +1,50 @@
+{
+  "id": 599,
+  "name": "中国尊顶层",
+  "file": "js/data-beijing-tales.js",
+  "query": "中国尊顶层 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京爬楼机位大总结",
+      "href": "https://www.xiaohongshu.com/explore/67ca3acb0000000007037bc2",
+      "author": "万能游",
+      "likes_text": "2040",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201622/94f7675944e968d310eeccd325118110/1040g2sg31hi91pggjo905ntfmjng80khenq5cdo!nc_n_webp_mw_1",
+      "likes": 2040
+    },
+    {
+      "title": "从中国尊往外看，顶层只能靠意会了",
+      "href": "https://www.xiaohongshu.com/explore/68fcea0300000000070391d6",
+      "author": "财躺平",
+      "likes_text": "1882",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201622/e15a2c07467fc28b16145ce1932a9df6/notes_pre_post/1040g3k831o2lptui50dg5ochlak418r4pdq08f0!nc_n_webp_mw_1",
+      "likes": 1882
+    },
+    {
+      "title": "中国尊中层为啥熄灯，没人租？",
+      "href": "https://www.xiaohongshu.com/explore/6949e0d5000000001d038990",
+      "author": "闪闪小七",
+      "likes_text": "931",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201622/60076aa28c74dd190988dd3b8d669151/notes_pre_post/1040g3k831qdqu0gg70dg49m6ecklstpnub01tg8!nc_n_webp_mw_1",
+      "likes": 931
+    },
+    {
+      "title": "中国尊不能参观！说能参观的都是骗子",
+      "href": "https://www.xiaohongshu.com/explore/675e672300000000020165a9",
+      "author": "柴老板在海淀",
+      "likes_text": "880",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201622/dd480275e43a3bbffaf7b1a0655631e8/1040g00831bdrm2fvna605ocvbk440m7395jimbg!nc_n_webp_mw_1",
+      "likes": 880
+    },
+    {
+      "title": "中国尊不能参观",
+      "href": "https://www.xiaohongshu.com/explore/675e8bbd0000000002037773",
+      "author": "柴老板在海淀",
+      "likes_text": "425",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201622/9cd0ff6bb889c7dcf68410a147a46aa3/1040g00831bdrm2fvna505ocvbk440m73od4u0bg!nc_n_webp_mw_1",
+      "likes": 425
+    }
+  ],
+  "harvested_at": "2026-04-20T16:22:57"
+}

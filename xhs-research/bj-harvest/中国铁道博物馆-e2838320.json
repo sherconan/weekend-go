@@ -1,0 +1,50 @@
+{
+  "id": 508,
+  "name": "中国铁道博物馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "中国铁道博物馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "前门隐藏款！免费铁道博物馆太好逛！",
+      "href": "https://www.xiaohongshu.com/explore/68f9d17900000000050009cf",
+      "author": "西音🍇",
+      "likes_text": "66",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/0dcb639ea9da787c0218036b3578d2cb/notes_pre_post/1040g3k831nvl0bf55m004a5i7t10s8c1aqk5cq8!nc_n_webp_mw_1",
+      "likes": 66
+    },
+    {
+      "title": "北京遛娃| 1200㎡的火车主题博物馆，太好玩",
+      "href": "https://www.xiaohongshu.com/explore/687243b600000000100262fa",
+      "author": "赫斯特懒懒的",
+      "likes_text": "64",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/8ea9be95e90498756f47737a679a9189/notes_pre_post/1040g3k031jr19et0ig6048hhluf1vroo2q3c4r8!nc_n_webp_mw_1",
+      "likes": 64
+    },
+    {
+      "title": "千呼万唤始出来 中国铁道博物馆快快码住",
+      "href": "https://www.xiaohongshu.com/explore/69a90615000000002203b9e3",
+      "author": "是哈哈大王啊",
+      "likes_text": "55",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/7edeace1368e29e5b7fb7fd5b25a3ecc/notes_pre_post/1040g3k031tao7epi560049qpibnlmeuvc13fjkg!nc_n_webp_mw_1",
+      "likes": 55
+    },
+    {
+      "title": "中国铁道博物馆，男孩子们欢呼雀跃的地方！",
+      "href": "https://www.xiaohongshu.com/explore/691b422600000000050125cc",
+      "author": "硬汉也带娃",
+      "likes_text": "27",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/0bed4c8e825e9411dd9e587ac2c4ea1a/spectrum/1040g0k031p09pl8ria005og63at40mspbvut7o0!nc_n_webp_mw_1",
+      "likes": 27
+    },
+    {
+      "title": "免预约❗男孩必去❗北京小众好玩的博物馆",
+      "href": "https://www.xiaohongshu.com/explore/694e4180000000001e02c920",
+      "author": "小哈",
+      "likes_text": "26",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/ef97e2a4bcc30a06ce967813c9b88311/notes_pre_post/1040g3k831qi3di2s0ab05nisfn5g97k7shddnc0!nc_n_webp_mw_1",
+      "likes": 26
+    }
+  ],
+  "harvested_at": "2026-04-20T16:07:17"
+}

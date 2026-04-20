@@ -1,0 +1,50 @@
+{
+  "id": 340,
+  "name": "中国美术馆",
+  "file": "js/data-beijing-500.js",
+  "query": "中国美术馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "好看的果然都上交北京了",
+      "href": "https://www.xiaohongshu.com/explore/69be988c000000001a031675",
+      "author": "jayxji",
+      "likes_text": "1721",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/477da55121a564e1403540ad08ecfbfd/1040g2sg31tvpt7cd7qeg45kp5njo02c1uo29hh0!nc_n_webp_mw_1",
+      "likes": 1721
+    },
+    {
+      "title": "omg！达芬奇巨作要来北京了！！！",
+      "href": "https://www.xiaohongshu.com/explore/69ca4ae4000000002302388f",
+      "author": "致远君看华夏",
+      "likes_text": "929",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/1dd6d6649315395fd12f7221cd0e4f1f/notes_pre_post/1040g3k831ub7muir1u005ol01nl8c9rl9pnmid8!nc_n_webp_mw_1",
+      "likes": 929
+    },
+    {
+      "title": "中国美术馆速速约这四天",
+      "href": "https://www.xiaohongshu.com/explore/69df7790000000001a02376c",
+      "author": "Miss Z",
+      "likes_text": "521",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/ad21e2f17419e32c46d31282a866aa0c/notes_pre_post/1040g3k031uvtifo42a0g5ovbbnq9i57bda25g6o!nc_n_webp_mw_1",
+      "likes": 521
+    },
+    {
+      "title": "🌟【中国美术馆超全攻略】",
+      "href": "https://www.xiaohongshu.com/explore/6868fe67000000000b01fbbc",
+      "author": "小猴子漫游记",
+      "likes_text": "473",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/c5a0c8646f690d552c12c70eb09756fa/notes_pre_post/1040g3k031ji79a6fii005olob4rmd7mc8o6sfm0!nc_n_webp_mw_1",
+      "likes": 473
+    },
+    {
+      "title": "长信宫灯4月18日起在北京展出!曾属于窦漪房",
+      "href": "https://www.xiaohongshu.com/explore/69de2b5e0000000021038f11",
+      "author": "中博热搜榜",
+      "likes_text": "440",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201531/b80cfee81f967a17fbc5dd16f8218de0/spectrum/1040g34o31uuksfpchu105pgk039gudkmssabt90!nc_n_webp_mw_1",
+      "likes": 440
+    }
+  ],
+  "harvested_at": "2026-04-20T15:31:39"
+}

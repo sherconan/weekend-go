@@ -1,0 +1,50 @@
+{
+  "id": 613,
+  "name": "北京城几何中心",
+  "file": "js/data-beijing-tales.js",
+  "query": "北京城几何中心 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京，你让我感到陌生………",
+      "href": "https://www.xiaohongshu.com/explore/667d07e4000000001d0197bc",
+      "author": "Sitara.星迴",
+      "likes_text": "7.4万",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201626/73b43788e28827545d72e5de413657ea/1040g008314hpefkime005o3vodn08tj6vov77uo!nc_n_webp_mw_1",
+      "likes": 74000
+    },
+    {
+      "title": "二刷北京塞尔达 美到以为闯入了天空之城",
+      "href": "https://www.xiaohongshu.com/explore/686935d200000000230073e2",
+      "author": "银山",
+      "likes_text": "6567",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201626/eadd78178c99da62c1b705c8dabdb53d/1040g2sg31jic9ppoiud049v6aor9h4eidc6p68g!nc_n_webp_mw_1",
+      "likes": 6567
+    },
+    {
+      "title": "北京最好的地方都是免费的。。。",
+      "href": "https://www.xiaohongshu.com/explore/68371eb70000000021004b8c",
+      "author": "宁香肉丝：）",
+      "likes_text": "5202",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201626/ad56aab38a8913dc0ea9eccf3834678c/1040g00831i3tkhsn7a0g5ohu9m28cpdb0rgv8kg!nc_n_webp_mw_1",
+      "likes": 5202
+    },
+    {
+      "title": "紫禁城的几何中心—中和殿后的第六块砖",
+      "href": "https://www.xiaohongshu.com/explore/67544190000000000600c460",
+      "author": "下雪了吗",
+      "likes_text": "4147",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201626/e0ad541924429c84d2257991d03eef71/1040g2sg31b3v55vlmm7g5p7f49h14hu7kigu9eg!nc_n_webp_mw_1",
+      "likes": 4147
+    },
+    {
+      "title": "北京城漫步（45）-友谊商店",
+      "href": "https://www.xiaohongshu.com/explore/685cc4bf00000000200187fe",
+      "author": "风过耳",
+      "likes_text": "2898",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201626/e92dfbcda01bd0daf9eaa1cfcd2067d7/notes_pre_post/1040g3k831j6980fg34005oirc0740vil3se7pa0!nc_n_webp_mw_1",
+      "likes": 2898
+    }
+  ],
+  "harvested_at": "2026-04-20T16:26:29"
+}

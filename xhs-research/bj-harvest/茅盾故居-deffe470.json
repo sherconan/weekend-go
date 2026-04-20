@@ -1,0 +1,50 @@
+{
+  "id": 556,
+  "name": "茅盾故居",
+  "file": "js/data-beijing-tales.js",
+  "query": "茅盾故居 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京探索｜原来这些熟悉的名字离我们这么近",
+      "href": "https://www.xiaohongshu.com/explore/69032c8400000000050307ca",
+      "author": "有空w",
+      "likes_text": "1267",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/5a65fdde857d76b3e964db8f9d65adfd/1040g2sg31ocmn37k6gd05nrn0fig88r0qnqkou0!nc_n_webp_mw_1",
+      "likes": 1267
+    },
+    {
+      "title": "来南锣鼓巷，别错过这两处名人故居",
+      "href": "https://www.xiaohongshu.com/explore/67bb3396000000000603f237",
+      "author": "行走的码字Landy",
+      "likes_text": "158",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/10d21182f93ce878afc1c0f0d1ab6611/notes_pre_post/1040g3k831e8fqbbb0ue05nqqtftg9115md09ojo!nc_n_webp_mw_1",
+      "likes": 158
+    },
+    {
+      "title": "北京胡同深处，竟藏着被严重忽视的名人故居",
+      "href": "https://www.xiaohongshu.com/explore/694a65aa000000001d03cd72",
+      "author": "路克马",
+      "likes_text": "111",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/96eaff92ffda881cbad9bedcf5f02970/1040g00831qfhj9qun04g4b4kmmogk5lilmfips0!nc_n_webp_mw_1",
+      "likes": 111
+    },
+    {
+      "title": "逛胡同里名人故居好city🦆",
+      "href": "https://www.xiaohongshu.com/explore/677637fd000000000900d925",
+      "author": "情绪稳定SAMA",
+      "likes_text": "75",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/20462afc360d5e1e73e0ecb5f986baef/1040g00831c54ig8i0s6040nsj3lt9jo6chusm60!nc_n_webp_mw_1",
+      "likes": 75
+    },
+    {
+      "title": "茅盾故居在景区里，乌镇吃相有点难看。",
+      "href": "https://www.xiaohongshu.com/explore/6982f212000000001a029eef",
+      "author": "不是东西的南北",
+      "likes_text": "72",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/87ad83cf6feec3394bfbd185b805d632/1040g00831s5hts75m26g5ogccjf40qa7o9nhh9g!nc_n_webp_mw_1",
+      "likes": 72
+    }
+  ],
+  "harvested_at": "2026-04-20T16:15:42"
+}

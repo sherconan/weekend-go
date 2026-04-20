@@ -1,0 +1,50 @@
+{
+  "id": 472,
+  "name": "梅兰芳纪念馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "梅兰芳纪念馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "梅兰芳纪念馆🌸偶遇一场海棠雨",
+      "href": "https://www.xiaohongshu.com/explore/69d39fab000000001f007343",
+      "author": "阑姗",
+      "likes_text": "147",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201601/d3884674bfa8859c2a1ddf7699bd499f/1040g00831ul0bc7a2i004a4ignfq49dkad2j4p0!nc_n_webp_mw_1",
+      "likes": 147
+    },
+    {
+      "title": "北京周末计划-琉璃厂City Walk（含路线）",
+      "href": "https://www.xiaohongshu.com/explore/697b6d94000000000e00f813",
+      "author": "小贾要静心",
+      "likes_text": "140",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201601/ad5bddf02af757531d1cfb78acca6eca/notes_pre_post/1040g3k031ru774csia00443mulmotc7ev9k0s68!nc_n_webp_mw_1",
+      "likes": 140
+    },
+    {
+      "title": "梅兰芳纪念馆参观攻略｜生平与戏服沉浸展出",
+      "href": "https://www.xiaohongshu.com/explore/69b8d2ac000000001a02cf00",
+      "author": "猫呜耶耶",
+      "likes_text": "96",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201601/571407ac483f3aed75567f10b0196a9c/notes_pre_post/1040g3k031tq5u6fenq0g5n1qmnl1lbv5f8ldu2g!nc_n_webp_mw_1",
+      "likes": 96
+    },
+    {
+      "title": "梅兰芳纪念馆文创&游玩攻略",
+      "href": "https://www.xiaohongshu.com/explore/69d6641d000000001b0230f6",
+      "author": "面面妈咪呀",
+      "likes_text": "68",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201601/ff9bcf3376bfaa4465b864f1f66d3f8a/notes_pre_post/1040g3k831un1nh902a00412eh9p89e4jkv278tg!nc_n_webp_mw_1",
+      "likes": 68
+    },
+    {
+      "title": "逛梅兰芳纪念馆🌸偶遇第四代曾孙",
+      "href": "https://www.xiaohongshu.com/explore/69dde6440000000023022ac5",
+      "author": "胡子24旅行日记",
+      "likes_text": "40",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201601/f405510c2b0ce62faf26be90578396ed/1040g00831uubuotbj40g5p9a6ksqo5pe921mse8!nc_n_webp_mw_1",
+      "likes": 40
+    }
+  ],
+  "harvested_at": "2026-04-20T16:01:41"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 546,
+  "name": "北京地下城",
+  "file": "js/data-beijing-tales.js",
+  "query": "北京地下城 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "真不是国外！就在三里屯地下城堡…",
+      "href": "https://www.xiaohongshu.com/explore/6869cd62000000000b02ed52",
+      "author": "糖霜小花生",
+      "likes_text": "2256",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/529898240b9cd3a2b04b9c8aa5e46388/notes_pre_post/1040g3k031jj0hovc2g005o3p3b1g9503l9rdmr8!nc_n_webp_mw_1",
+      "likes": 2256
+    },
+    {
+      "title": "北京四大鬼市攻略",
+      "href": "https://www.xiaohongshu.com/explore/690f165f0000000003011004",
+      "author": "北京吃喝玩乐攻略",
+      "likes_text": "802",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/21393dab329d9efe29364208daa27c95/notes_pre_post/1040g3k031okdkm2okq305po6b2gjcjpvuivp0lo!nc_n_webp_mw_1",
+      "likes": 802
+    },
+    {
+      "title": "免费无需预约体验地下迷宫❗️爱我中华❗️",
+      "href": "https://www.xiaohongshu.com/explore/6873694e000000001502000e",
+      "author": "蔓迪带你看北京",
+      "likes_text": "780",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/405ae4a6a020daf088390a678618f40f/1040g00831jscler4346g5p3mt32amie5rht40mg!nc_n_webp_mw_1",
+      "likes": 780
+    },
+    {
+      "title": "花市社区博物馆，地下城的一部分",
+      "href": "https://www.xiaohongshu.com/explore/68b7c7b7000000001d00e69d",
+      "author": "慕京",
+      "likes_text": "468",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/2ec03ca619930b5b37a604058622557d/1040g00831lv5b89sku005p2qajsj6c4kvfqo55g!nc_n_webp_mw_1",
+      "likes": 468
+    },
+    {
+      "title": "📍北京·地下城鬼市",
+      "href": "https://www.xiaohongshu.com/explore/670a8430000000001402cae0",
+      "author": "依古比古",
+      "likes_text": "446",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/f60f80adf6ded1d2fb76d18ae0c3e100/1040g2sg318rus158jq7g5no2dusg8bbhui27l48!nc_n_webp_mw_1",
+      "likes": 446
+    }
+  ],
+  "harvested_at": "2026-04-20T16:12:41"
+}

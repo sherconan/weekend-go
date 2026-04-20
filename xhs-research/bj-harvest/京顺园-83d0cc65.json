@@ -1,0 +1,50 @@
+{
+  "id": 444,
+  "name": "京顺园",
+  "file": "js/data-beijing-hidden.js",
+  "query": "京顺园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京“法式”公园🏡",
+      "href": "https://www.xiaohongshu.com/explore/68bda174000000001c00b189",
+      "author": "花卷",
+      "likes_text": "841",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201556/f032506517711281fc45f4148551a3b1/1040g00831m4ril2868405ot5god9bhvpj0tv6sg!nc_n_webp_mw_1",
+      "likes": 841
+    },
+    {
+      "title": "Vol.11北京漂亮公园地图🌳踏春/野餐/赏花",
+      "href": "https://www.xiaohongshu.com/explore/69c3c975000000001a022c8f",
+      "author": "春天游泳",
+      "likes_text": "480",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201556/11615e57983d3db7e10aa9c148311192/notes_pre_post/1040g3k031u4qv4tq2a3g41ocnkdjs197j2t2gk8!nc_n_webp_mw_1",
+      "likes": 480
+    },
+    {
+      "title": "京顺园|京城法式公园，楼下还藏着服装店",
+      "href": "https://www.xiaohongshu.com/explore/686d1e2a0000000012016700",
+      "author": "加菲兔",
+      "likes_text": "61",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201556/0743530ac492b64ebdda2bc3b7e4d4b9/notes_pre_post/1040g3k831jm7roul2gdg5o28cnk09elvrquq9a0!nc_n_webp_mw_1",
+      "likes": 61
+    },
+    {
+      "title": "初春京顺园散步🌿藏在三元桥旁的精致小公园",
+      "href": "https://www.xiaohongshu.com/explore/69c676a40000000023023710",
+      "author": "goodfoodmood",
+      "likes_text": "50",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201556/462c975f6fd8511a32f3fc654552dafb/1040g00831u7e6vek1u0g4a66398gfnv8jjvampo!nc_n_webp_mw_1",
+      "likes": 50
+    },
+    {
+      "title": "北京公园评测｜人造风景⛲️京顺园",
+      "href": "https://www.xiaohongshu.com/explore/690432000000000004001346",
+      "author": "PICUS",
+      "likes_text": "40",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201556/04033ead3fdfe1be95dd78de064ac7f3/notes_pre_post/1040g3k031o9p0192mm5g5oo4rfikhpubfrmadu8!nc_n_webp_mw_1",
+      "likes": 40
+    }
+  ],
+  "harvested_at": "2026-04-20T15:56:48"
+}

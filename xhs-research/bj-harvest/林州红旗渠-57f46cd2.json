@@ -1,0 +1,50 @@
+{
+  "id": 415,
+  "name": "林州红旗渠",
+  "file": "js/data-beijing-500.js",
+  "query": "林州红旗渠 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/6992c371000000001b015339",
+      "author": "五颜六摄",
+      "likes_text": "1389",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201549/987b294e78a96e750176dbbfd98f185c/1040g2sg31sl0ihhi5se05o0kj370blvtbdt2eno!nc_n_webp_mw_1",
+      "likes": 1389
+    },
+    {
+      "title": "红旗渠自驾+避雷贴",
+      "href": "https://www.xiaohongshu.com/explore/67f13a62000000001e00a8bb",
+      "author": "小灰灰和懒羊羊",
+      "likes_text": "634",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201549/0dfefbf30268634142e63d7903f22452/1040g00831ft8j3mi00005n4mbl54k3dcfvt02qo!nc_n_webp_mw_1",
+      "likes": 634
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/6926ab4b000000001f00471f",
+      "author": "明镜",
+      "likes_text": "198",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201549/3e6989a3cc78a2977f763e31cb083524/notes_pre_post/1040g3k031pbek82e2u6g5oski6cptfgdmjuhl5o!nc_n_webp_mw_1",
+      "likes": 198
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/69d48286000000002102d20c",
+      "author": "防晒计划",
+      "likes_text": "166",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201549/c371e22d57d5db54d91ba5d67a34848e/notes_pre_post/1040g3k831ul75d7pig005o0l9tng9526kl0uoa0!nc_n_webp_mw_1",
+      "likes": 166
+    },
+    {
+      "title": "北京周末遛娃：安阳红旗渠+大峡谷打卡攻略",
+      "href": "https://www.xiaohongshu.com/explore/68a3de9e000000001b037548",
+      "author": "青青子衿",
+      "likes_text": "66",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201549/8d6335e5a85a4de3cfe2269abbc0fc75/notes_pre_post/1040g3k031lbmfmcf5m004a1ltvo3eklju0lpvk0!nc_n_webp_mw_1",
+      "likes": 66
+    }
+  ],
+  "harvested_at": "2026-04-20T15:49:12"
+}

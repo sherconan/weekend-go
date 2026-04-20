@@ -1,0 +1,50 @@
+{
+  "id": 335,
+  "name": "什刹海酒吧街",
+  "file": "js/data-beijing-500.js",
+  "query": "什刹海酒吧街 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "一定要去过什刹海！",
+      "href": "https://www.xiaohongshu.com/explore/683565720000000022004720",
+      "author": "风千寻",
+      "likes_text": "1750",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/a01f9f4e5dabfa7ba2e637c3841b5c3d/1040g00831hvqqogilu005nhmkba081dp6edo90g!nc_n_webp_mw_1",
+      "likes": 1750
+    },
+    {
+      "title": "2025北京酒吧指南必喝榜",
+      "href": "https://www.xiaohongshu.com/explore/680dbadf000000000f038350",
+      "author": "老杨喝了吗",
+      "likes_text": "1617",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/cccafac386c47a10a18e54c152133866/notes_pre_post/1040g3k831gp30jvajie05ortmf2nr7ajghhdomo!nc_n_webp_mw_1",
+      "likes": 1617
+    },
+    {
+      "title": "五一北京什刹海一日游攻略，一张图就够啦！",
+      "href": "https://www.xiaohongshu.com/explore/662909ed00000000010336ff",
+      "author": "玩转什刹海",
+      "likes_text": "979",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/0a4b7251b094810a6df336a8356a18a9/spectrum/1040g34o311vo41q61m005p04g29527th5ev1jso!nc_n_webp_mw_1",
+      "likes": 979
+    },
+    {
+      "title": "后海｜人均30还能听live的酒吧被我找到了‼️",
+      "href": "https://www.xiaohongshu.com/explore/67f53895000000001c015bf6",
+      "author": "Yvonne_aaa",
+      "likes_text": "794",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/9185d6f8c237039486b88752147262f5/1040g00831g36beudgc0040i1u8h6upuvlqskvn0!nc_n_webp_mw_1",
+      "likes": 794
+    },
+    {
+      "title": "超全啦！傍晚来逛北京什刹海后海酒吧一条街",
+      "href": "https://www.xiaohongshu.com/explore/664489a5000000001e03165d",
+      "author": "玩转什刹海",
+      "likes_text": "767",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/e3103ca3c5196cfaefd8fe881fd22868/spectrum/1040g34o312qjpotf400g5p04g29527thbrk62v8!nc_n_webp_mw_1",
+      "likes": 767
+    }
+  ],
+  "harvested_at": "2026-04-20T15:30:50"
+}

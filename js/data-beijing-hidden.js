@@ -77,7 +77,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "千年古寺·铜锅涮肉·回民美食街",
     tags: ["牛街清真寺","历史","文化","美食","城内"],
-    imageQuery: "牛街清真寺 history culture food Beijing"
+    imageQuery: "牛街清真寺 history culture food Beijing",
+    xhsQuote: "「必看‼️牛街→ 法源寺CityWalk吃喝玩乐路线」— Ulla💕旅居ing @小红书（1078赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1078赞必看‼️牛街→ 法源寺Cit… / 982赞终于被我找到了，北京最好吃的… / 314赞北京牛街逛吃Citywalk…",
+      trending: ""
+    }
+  
   },
   {
     id: 433,
@@ -259,7 +266,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "古玩淘宝·辽代古寺·旧书市场",
     tags: ["报国寺文化市场","文化","购物","历史","城内"],
-    imageQuery: "报国寺文化市场 culture shopping history Beijing"
+    imageQuery: "报国寺文化市场 culture shopping history Beijing",
+    xhsQuote: "「必看‼️牛街→ 法源寺CityWalk吃喝玩乐路线」— Ulla💕旅居ing @小红书（1078赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1078赞必看‼️牛街→ 法源寺Cit… / 443赞4.23世界读书日，北京淘书…",
+      trending: ""
+    }
+  
   },
   {
     id: 440,
@@ -285,7 +299,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，冬天雪后最有韵味",
     highlight: "暮鼓晨钟·世界遗产·市井广场",
     tags: ["钟鼓楼广场","历史","文化","市井","城内"],
-    imageQuery: "钟鼓楼广场 history culture street life Beijing"
+    imageQuery: "钟鼓楼广场 history culture street life Beijing",
+    xhsQuote: "「北京不用预约不走回头路一日游路线」— Annie @小红书（5463赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "5463赞北京不用预约不走回头路一日游… / 785赞2026北京书市📚超详细攻略… / 362赞北京钟鼓楼：门票预约，游玩路…",
+      trending: ""
+    }
+  
   },
   {
     id: 441,
@@ -311,7 +332,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费参观，周一闭馆，不需预约直接去\n2. 游客极少到令人心疼——工作日可能就你一个人，馆员有空会主动讲解\n3. 去之前花10分钟搜一下\「宣南文化\」，了解背景后体验完全不同\n4. 最佳路线：宣南博物馆→法源寺→牛街吃午饭，全程走路不超过30分钟的\「宣南文化半日游\」",
     bestSeason: "四季皆宜",
-    highlight: "京剧起源地·会馆文化·维新变法"
+    highlight: "京剧起源地·会馆文化·维新变法",
+    xhsQuote: "「二环秘境，人少景美的红墙玉兰」— lemon微甜 @小红书（700赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "700赞二环秘境，人少景美的红墙玉兰 / 223赞北京宣南Citywalk｜维… / 209赞北京南城Citywalk |…",
+      trending: ""
+    }
+  
   },
   {
     id: 442,
@@ -337,7 +365,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "荣宝斋·古籍善本·文房四宝",
     tags: ["琉璃厂西街","文化","购物","历史","市中心"],
-    imageQuery: "琉璃厂西街 culture shopping history Beijing"
+    imageQuery: "琉璃厂西街 culture shopping history Beijing",
+    xhsQuote: "「前门懒人不走回头路+琉璃厂避坑指南」— 孔怕不够吃 @小红书（2842赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2842赞前门懒人不走回头路+琉璃厂避… / 797赞北京citywalk：琉璃厂… / 344赞北京citywalk:东交民…",
+      trending: ""
+    }
+  
   },
   {
     id: 443,
@@ -363,7 +398,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 从大栅栏西街拐进樱桃斜街，走大约200米右手边就是——没有明显标识，导航定位\「大栅栏观音寺\」\n2. 这不是常规旅游景点，更像一个\「知道了就会多一层理解\」的背景知识——适合文化向游客\n3. 整个参观20-30分钟足够，关键是串联：观音寺→樱桃斜街→杨梅竹斜街→大栅栏主街，2小时完美半日游\n4. 最好先逛观音寺再去大栅栏——带着\「这里是起点\」的认知再看商业街，感受完全不同",
     bestSeason: "四季皆宜",
-    highlight: "明代古庙·大栅栏原点·樱桃斜街"
+    highlight: "明代古庙·大栅栏原点·樱桃斜街",
+    xhsQuote: "「护国观音寺开了，能看的北京市保又多了一个」— 幽州台 @小红书（170赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "170赞护国观音寺开了，能看的北京市… / 140赞北京周末计划-琉璃厂City… / 103赞大栅栏街道又开放两处新景点，…",
+      trending: ""
+    }
+  
   },
   {
     id: 444,
@@ -389,7 +431,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 这里没有厕所、没有小卖部、没有WiFi——来之前做好心理建设，这是\「野生景点\」不是公园\n2. 适合特定人群：喜欢探索废墟和遗迹的人会兴奋，追求打卡景点的人会失望\n3. 春天槐花开时满园飘香是最好的时候，秋天古树变色也很美\n4. 带本书来读是最高级的打开方式——古槐下读书这种体验比任何网红咖啡馆都强",
     bestSeason: "春秋最佳",
-    highlight: "皇家遗存·古树·社区生活"
+    highlight: "皇家遗存·古树·社区生活",
+    xhsQuote: "「北京“法式”公园🏡」— 花卷 @小红书（841赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "841赞北京“法式”公园🏡 / 480赞Vol.11北京漂亮公园地图… / 61赞京顺园|京城法式公园，楼下还…",
+      trending: ""
+    }
+  
   },
   // ========== 文艺/创意空间 (10个) ==========
   {
@@ -416,7 +465,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "独立剧场·工业遗存·先锋文化",
     tags: ["77文创园","文艺","戏剧","设计","市中心"],
-    imageQuery: "77文创园 art theater design Beijing"
+    imageQuery: "77文创园 art theater design Beijing",
+    xhsQuote: "「北京周末去哪儿🔥本周末好玩活动太太太多了」— 北京周末去哪里 @小红书（216赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "216赞北京周末去哪儿🔥本周末好玩活… / 158赞北京二环小众宝藏地‼️胶片感… / 114赞Citywalk｜77文创园…",
+      trending: ""
+    }
+  
   },
   {
     id: 446,
@@ -442,7 +498,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "春秋最佳，夏天傍晚也很好",
     highlight: "铁轨遗存·周末市集·独立品牌",
     tags: ["郎园Station","文艺","市集","美食","城内"],
-    imageQuery: "郎园Station art market food Beijing"
+    imageQuery: "郎园Station art market food Beijing",
+    xhsQuote: "「北京4月活动！夯爆了！！！」— 北京周末去哪 @小红书（1620赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1620赞北京4月活动！夯爆了！！！ / 814赞🇨🇳北京｜郎园Station… / 666赞北影节｜郎园Station游…",
+      trending: ""
+    }
+  
   },
   {
     id: 447,
@@ -468,7 +531,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，阴天的光线反而更有氛围",
     highlight: "百年教堂·全球最美书店·诗歌空间",
     tags: ["模范书局·诗空间","文艺","建筑","阅读","市中心"],
-    imageQuery: "模范书局·诗空间 art architecture reading Beijing"
+    imageQuery: "模范书局·诗空间 art architecture reading Beijing",
+    xhsQuote: "「北京。。蕞好的地方果然都是免费的❗️❶❾合集✋」— 阿七在北京 @小红书（26000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "26000赞北京。。蕞好的地方果然都是免… / 1824赞北京西单📍百年教堂里放空｜看… / 1222赞人生建议：逛完这❾家书店，再…",
+      trending: ""
+    }
+  
   },
   {
     id: 448,
@@ -494,7 +564,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入馆只需带身份证，开馆时间9:00-17:00，周一闭馆\n2. 二楼靠窗位只有6-8个，周末10点前不到就没了——工作日来随便坐\n3. 非遗活动每周六预约制，通常周三放名额，手慢无\n4. 秋天（10月中-11月初）护城河两岸彩叶最美，读书之余抬头看窗外就是一幅画",
     bestSeason: "四季皆宜，秋天护城河两岸色彩最美",
-    highlight: "角楼阅读·护城河畔·免费文化空间"
+    highlight: "角楼阅读·护城河畔·免费文化空间",
+    xhsQuote: "「北京最爱的图书馆，没有之一！！还免费」— 溜溜达的美石 @小红书（245赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "245赞北京最爱的图书馆，没有之一！… / 38赞跟着首图Citywalk📖 … / 32赞📚北京自习天花板！9个超赞图…",
+      trending: ""
+    }
+  
   },
   {
     id: 449,
@@ -520,7 +597,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，冬天夜景最有氛围",
     highlight: "正阳门夜景·24小时书店·建筑设计",
     tags: ["PAGEONE北京坊","文艺","阅读","设计","市中心"],
-    imageQuery: "PAGEONE北京坊 art reading design Beijing"
+    imageQuery: "PAGEONE北京坊 art reading design Beijing",
+    xhsQuote: "「北京City Walk—前门&杨竹梅斜街」— 柠蒙茶树菇🍋 @小红书（8692赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "8692赞北京City Walk—前门… / 722赞北京0️⃣难度免费机位📷中轴… / 395赞最学术的万圣与最网红的pag…",
+      trending: ""
+    }
+  
   },
   {
     id: 450,
@@ -546,7 +630,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，阴天光线柔和更适合拍照",
     highlight: "红砖建筑·国际级展览·园林美术馆",
     tags: ["红砖美术馆","艺术","建筑","拍照","城内"],
-    imageQuery: "红砖美术馆 art architecture photography Beijing"
+    imageQuery: "红砖美术馆 art architecture photography Beijing",
+    xhsQuote: "「文艺青年必收！北京美术馆地图＋打卡指南！」— 曼领艺术小跟班 @小红书（585赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "585赞文艺青年必收！北京美术馆地图… / 70赞红砖美术馆超全攻略 / 69赞【北京冬日必去系列】北京红砖…",
+      trending: ""
+    }
+  
   },
   {
     id: 451,
@@ -572,7 +663,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "先锋展览·隆福寺复兴·天台观景",
     tags: ["木木美术馆","艺术","文艺","市中心","市中心"],
-    imageQuery: "木木美术馆 art art Beijing"
+    imageQuery: "木木美术馆 art art Beijing",
+    xhsQuote: "「晚晚的钱去哪了？」— 晚晚_ @小红书（3554赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3554赞晚晚的钱去哪了？ / 776赞没有买全价票的义务 / 531赞🌟 在北京发现一个神仙美术馆…",
+      trending: ""
+    }
+  
   },
   {
     id: 452,
@@ -598,7 +696,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "国际大展·包豪斯厂房·中国当代艺术",
     tags: ["尤伦斯当代艺术中心(UCCA)","艺术","文化","城内","城内"],
-    imageQuery: "尤伦斯当代艺术中心(UCCA) art culture Beijing"
+    imageQuery: "尤伦斯当代艺术中心(UCCA) art culture Beijing",
+    xhsQuote: "「去了798 20次，终于把核心路线搞清楚了❗️」— 皮皮虎去哪玩 @小红书（1934赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1934赞去了798 20次，终于把核… / 469赞最近花过最值的68块在UCC… / 233赞北京找5个搭子去UCCA，看…",
+      trending: ""
+    }
+  
   },
   {
     id: 453,
@@ -624,7 +729,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，冬天雪景最美",
     highlight: "199棵古松·极简白空间·私人收藏",
     tags: ["松美术馆","艺术","建筑","拍照","城内"],
-    imageQuery: "松美术馆 art architecture photography Beijing"
+    imageQuery: "松美术馆 art architecture photography Beijing",
+    xhsQuote: "「北京8个小众超美小众拍照打卡地…（合集）」— savokki @小红书（1451赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1451赞北京8个小众超美小众拍照打卡… / 815赞北京空无一人的美术馆 / 240赞📍北京 4月1日🌲松美术馆免…",
+      trending: ""
+    }
+  
   },
   {
     id: 454,
@@ -650,7 +762,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "学术策展·深度研究·小众精品",
     tags: ["中间美术馆","艺术","文化","城内","城内"],
-    imageQuery: "中间美术馆 art culture Beijing"
+    imageQuery: "中间美术馆 art culture Beijing",
+    xhsQuote: "「快来看展🎫｜4月一起在北京「躺进」艺术」— 艺术公园 ARTPARK @小红书（1042赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1042赞快来看展🎫｜4月一起在北京「… / 473赞北京被低估的京西宝藏美术馆 / 265赞中间新展｜出片率💯% 最IN…",
+      trending: ""
+    }
+  
   },
   // ========== 隐秘公园/自然 (10个) ==========
   {
@@ -677,7 +796,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "10-11月银杏季最佳",
     highlight: "金色银杏道·史铁生·明代祭坛",
     tags: ["地坛公园银杏大道","赏花","历史","拍照","城内"],
-    imageQuery: "地坛公园银杏大道 flowers history photography Beijing"
+    imageQuery: "地坛公园银杏大道 flowers history photography Beijing",
+    xhsQuote: "「一篇说明白地坛公园怎么逛？（附机位指引）」— poor猴儿 @小红书（8243赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "8243赞一篇说明白地坛公园怎么逛？（… / 1480赞11.10实况！北京地坛公园… / 1204赞被地坛2块快乐美哭❗️错过等…",
+      trending: ""
+    }
+  
   },
   {
     id: 456,
@@ -703,7 +829,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入园无需预约，全天开放\n2. 4月柳絮高峰期过敏体质必须戴口罩！不然会打一路喷嚏\n3. 游客少到什么程度呢——你拍照不需要等人走开，因为本来就没人\n4. 和地坛串联是好主意（步行15分钟），柳荫公园发呆+地坛看银杏/读史铁生，完美的安定门半日游",
     bestSeason: "春天新柳最美，夏天最凉爽",
-    highlight: "30种柳树·隐秘绿洲·本地人公园"
+    highlight: "30种柳树·隐秘绿洲·本地人公园",
+    xhsQuote: "「不愧是北京我最喜欢的公园」— 贺矜持 @小红书（593赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "593赞不愧是北京我最喜欢的公园 / 135赞北京公园评测｜城市田园🏞️柳… / 37赞小友自然大会｜遛娃地挑战4️…",
+      trending: ""
+    }
+  
   },
   {
     id: 457,
@@ -729,7 +862,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入园全天开放，不需要预约任何手续\n2. 清晨6-8点是黄金时段——晨练人群+低角度阳光打在古柏上=最有生活气息的画面\n3. 4月牡丹花季一定要来！日坛的牡丹不输景山，但游客只有景山的1/10\n4. 和建国门外大街使馆区漫步串联：日坛→日坛路使馆区→秀水街，2小时的\「国际化+古典\」混搭路线",
     bestSeason: "四季皆宜，春天牡丹和玉兰最美",
-    highlight: "红色祭坛·使馆区晨练·古柏群"
+    highlight: "红色祭坛·使馆区晨练·古柏群",
+    xhsQuote: "「北京土著｜宝藏Citywalk路线！使馆区与CBD🌸」— 来碗豆汁 @小红书（1129赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1129赞北京土著｜宝藏Citywal… / 613赞北京Citywalk友谊商店… / 470赞\"北京能量场最强的公园，是这…",
+      trending: ""
+    }
+  
   },
   {
     id: 458,
@@ -755,7 +895,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "秋天桂花季和中秋最佳",
     highlight: "白色祭坛·桂花飘香·中秋赏月",
     tags: ["月坛公园","历史","休闲","城内","城内"],
-    imageQuery: "月坛公园 history leisure Beijing"
+    imageQuery: "月坛公园 history leisure Beijing",
+    xhsQuote: "「月坛公园腊梅开了！古亭配黄花太绝了」— Gx @小红书（256赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "256赞月坛公园腊梅开了！古亭配黄花… / 98赞月坛公园门票免费啦！路线+攻… / 89赞🆘 一进月坛公园就头晕，怎么…",
+      trending: ""
+    }
+  
   },
   {
     id: 459,
@@ -781,7 +928,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "一亩三分地·太岁殿·皇帝亲耕",
     tags: ["先农坛","历史","建筑","市中心","市中心"],
-    imageQuery: "先农坛 history architecture Beijing"
+    imageQuery: "先农坛 history architecture Beijing",
+    xhsQuote: "「参观先农坛/北京古代建筑博物馆最全攻略」— dili @小红书（1653赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1653赞参观先农坛/北京古代建筑博物… / 816赞北京这个冷门博物馆，别说我没… / 468赞⚠️先农坛避坑攻略！1票逛3…",
+      trending: ""
+    }
+  
   },
   {
     id: 460,
@@ -807,7 +961,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。三里屯有各档次酒店。",
     tips: "1. 免费入园，全天开放，傍晚5-7点是黄金时段：夕阳+广场舞+遛弯人群\n2. 夏天湖边蚊子凶猛，长裤+驱蚊液是标配\n3. 别在周末下午来，附近居民带娃扎堆，体验感打折\n4. 冬天湖面结冰后有人野滑冰，看看就好别下去，冰面厚度没保障\n5. 从三里屯逛累了来这里坐坐，比任何咖啡馆都治愈",
     bestSeason: "夏天荷花最美，秋天最舒适",
-    highlight: "市民公园·三里屯反差·大跃进遗产"
+    highlight: "市民公园·三里屯反差·大跃进遗产",
+    xhsQuote: "「团结湖有自己的佛罗里达」— 鱼晚点 @小红书（4547赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4547赞团结湖有自己的佛罗里达 / 1884赞团结湖落日飞车｜多玩几次不就… / 1453赞真好北京也有自己的lalal…",
+      trending: ""
+    }
+  
   },
   {
     id: 461,
@@ -833,7 +994,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "夏天游泳最爽，四季都宜散步",
     highlight: "露天泳池·童年记忆·慢节奏公园",
     tags: ["青年湖公园","休闲","亲水","城内","城内"],
-    imageQuery: "青年湖公园 leisure waterside Beijing"
+    imageQuery: "青年湖公园 leisure waterside Beijing",
+    xhsQuote: "「果然。。。北京最牛逼的公园⛲️都是免费的！！！」— 是凯妹阿- @小红书（11000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "11000赞果然。。。北京最牛逼的公园⛲… / 6222赞北京，个人觉得无法超越的12… / 5311赞北京有没有这样的公园",
+      trending: ""
+    }
+  
   },
   {
     id: 462,
@@ -859,7 +1027,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入园，早8点前和工作日人最少，拍照不用排队\n2. 周末下午小红书博主多，想清静就换时间\n3. 纯逛30分钟够，拍照需留1-2小时\n4. 德胜门箭楼步行可达，可串联半日游\n5. 冬天雪后来最惊艳，灰白色调拍出北欧感",
     bestSeason: "春夏绿意最好，秋天也美",
-    highlight: "欧式花园·罗马柱廊·西城秘境"
+    highlight: "欧式花园·罗马柱廊·西城秘境",
+    xhsQuote: "「北京最好的地方都是免费的。。。」— 宁香肉丝：） @小红书（5202赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "5202赞北京最好的地方都是免费的。。… / 4197赞对北京无法祛魅的16个理由（… / 3308赞必须安利！北京必打卡的9个绝…",
+      trending: ""
+    }
+  
   },
   {
     id: 463,
@@ -885,7 +1060,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入园全天开放，去的人少到连百度地图评论都没几条\n2. 夏天湖边蚊虫猛烈，长裤+驱蚊液必备，否则回家数包\n3. 最佳时段是傍晚5-7点，夕阳+晚风+蛙鸣，治愈一切班味\n4. 与角楼图书馆串联是城南最佳半日游线路\n5. 别导航龙潭公园，要搜龙潭西湖公园，否则去了东湖那边",
     bestSeason: "春夏最美，荷花时节尤佳",
-    highlight: "隐秘湖泊·观鸟·城南慢生活"
+    highlight: "隐秘湖泊·观鸟·城南慢生活",
+    xhsQuote: "「2小时龙潭三湖赏荷︱附避暑省腿攻略」— 家有大懒猫 @小红书（138赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "138赞2小时龙潭三湖赏荷︱附避暑省… / 111赞一起跑团&威量龙潭三湖悦跑 / 82赞龙潭西湖藏宝图",
+      trending: ""
+    }
+  
   },
   {
     id: 464,
@@ -911,7 +1093,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费入园全天开放，是北京最长的免费公园\n2. 海棠花期极短仅10天左右，关注北京气象台的物候预报精准踩点\n3. 花季周末人山人海，工作日或清晨7点前来体验完全不同\n4. 带长焦镜头拍花比广角好，花丛密集时长焦压缩感更震撼\n5. 不要只逛花溪段，蓟门烟树和大都鼎盛段人少景美更值得探索",
     bestSeason: "4月海棠花季最佳",
-    highlight: "海棠花溪·元代城墙·9公里花园"
+    highlight: "海棠花溪·元代城墙·9公里花园",
+    xhsQuote: "「期待(*^o^*)🌸元大都遗址公园海棠即将美晕」— 谁守她城 @小红书（301赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "301赞期待(*^o^*)🌸元大都遗… / 120赞海棠花开🌸元大都海棠花溪路线… / 95赞9公里的北京元大都城垣遗址，…",
+      trending: ""
+    }
+  
   },
   // ========== 历史遗迹/博物馆 (10个) ==========
   {
@@ -938,7 +1127,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "中轴最高楼·82个箭窗·世界遗产",
     tags: ["正阳门箭楼","历史","建筑","市中心","市中心"],
-    imageQuery: "正阳门箭楼 history architecture Beijing"
+    imageQuery: "正阳门箭楼 history architecture Beijing",
+    xhsQuote: "「北京前门｜正阳门箭楼免费参观攻略❗️」— 山竹的旅行 @小红书（377赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "377赞北京前门｜正阳门箭楼免费参观… / 243赞去了6次正阳门箭楼✨全的不能… / 164赞箭楼免费开放（目前）",
+      trending: ""
+    }
+  
   },
   {
     id: 466,
@@ -964,7 +1160,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "出兵之门·古代钱币·城楼夕照",
     tags: ["德胜门箭楼","历史","建筑","城内","城内"],
-    imageQuery: "德胜门箭楼 history architecture Beijing"
+    imageQuery: "德胜门箭楼 history architecture Beijing",
+    xhsQuote: "「北京旅游攻略-877路公交车直达八达岭长城」— 恶作剧奶奶 @小红书（1141赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1141赞北京旅游攻略-877路公交车… / 348赞北京德胜门箭楼|昔日光景如云… / 223赞🎈北京一日游：什刹海、前海、…",
+      trending: ""
+    }
+  
   },
   {
     id: 467,
@@ -990,7 +1193,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，秋天晴空下最壮观",
     highlight: "570年天文台·清代铜仪器·中西交流",
     tags: ["北京古观象台","历史","科技","市中心","市中心"],
-    imageQuery: "北京古观象台 history technology Beijing"
+    imageQuery: "北京古观象台 history technology Beijing",
+    xhsQuote: "「古观象台」— 马未都 @小红书（1041赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1041赞古观象台 / 221赞别挤五塔寺︱古观象台文冠花，… / 169赞北京访古/北京古观象台游览探…",
+      trending: ""
+    }
+  
   },
   {
     id: 468,
@@ -1016,7 +1226,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "秋天银杏季最美",
     highlight: "印度式石塔·石雕艺术·露天博物馆",
     tags: ["五塔寺(真觉寺)","历史","建筑","石刻","城内"],
-    imageQuery: "五塔寺(真觉寺) history architecture stone carving Beijing"
+    imageQuery: "五塔寺(真觉寺) history architecture stone carving Beijing",
+    xhsQuote: "「北京工会卡免费📍五塔寺citywalk秋意正浓💯」— 炸酱面の吃喝玩乐日记📜 @小红书（111赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "111赞北京工会卡免费📍五塔寺cit… / 83赞北京最无聊的博物馆，没有之一… / 58赞五塔寺（北京石刻艺术博物馆）…",
+      trending: ""
+    }
+  
   },
   {
     id: 469,
@@ -1042,7 +1259,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费但必须提前预约，微信搜北京艺术博物馆公众号抢票\n2. 周一闭馆，周末人相对多但比故宫还是少太多\n3. 给自己留2小时以上，展品多到看不完\n4. 最佳线路：万寿寺→紫竹院公园→五塔寺，三个点一条线半天搞定\n5. 别被门口冷清的样子吓退，进去之后会被建筑和展品的水准震住",
     bestSeason: "四季皆宜",
-    highlight: "小故宫·慈禧行宫·皇家收藏"
+    highlight: "小故宫·慈禧行宫·皇家收藏",
+    xhsQuote: "「北京艺术博物馆（万寿寺）参观攻略：真的好」— dili @小红书（334赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "334赞北京艺术博物馆（万寿寺）参观… / 124赞万寿寺/国家图书馆｜京城文化… / 65赞😭被万寿寺玉兰美哭❗️还抢到…",
+      trending: ""
+    }
+  
   },
   {
     id: 470,
@@ -1068,7 +1292,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "永乐大钟·23万字佛经·世界之最",
     tags: ["大钟寺古钟博物馆","历史","文化","城内","城内"],
-    imageQuery: "大钟寺古钟博物馆 history culture Beijing"
+    imageQuery: "大钟寺古钟博物馆 history culture Beijing",
+    xhsQuote: "「字节离职必做10件事之一——免费游大钟寺」— 小翊 @小红书（296赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "296赞字节离职必做10件事之一——… / 108赞大钟寺古钟博物馆盖章&文创&… / 90赞每个从字节离职的人，都会打卡…",
+      trending: ""
+    }
+  
   },
   {
     id: 471,
@@ -1094,7 +1325,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费但需要预约，微信搜徐悲鸿纪念馆公众号\n2. 周一闭馆，周末人多但不至于拥挤\n3. 给自己留2小时，看完画再看书信和生平，体验完全不同\n4. 绝佳串联：徐悲鸿纪念馆→护国寺小吃→白塔寺→鲁迅故居，半天文化线\n5. 美术生和艺术爱好者来了可能走不动道，做好心理准备",
     bestSeason: "四季皆宜",
-    highlight: "奔马原作·1200件真迹·艺术大师"
+    highlight: "奔马原作·1200件真迹·艺术大师",
+    xhsQuote: "「马年免费新展 | 当然要来徐悲鸿纪念馆看🐴」— V的千千万 @小红书（419赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "419赞马年免费新展 | 当然要来徐… / 187赞限时三个月，来看徐悲鸿纪念馆… / 98赞别急着去徐悲鸿纪念馆……",
+      trending: ""
+    }
+  
   },
   {
     id: 472,
@@ -1120,7 +1358,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "梅兰芳故居·京剧戏服·四合院生活",
     tags: ["梅兰芳纪念馆","文化","历史","戏剧","城内"],
-    imageQuery: "梅兰芳纪念馆 culture history theater Beijing"
+    imageQuery: "梅兰芳纪念馆 culture history theater Beijing",
+    xhsQuote: "「梅兰芳纪念馆🌸偶遇一场海棠雨」— 阑姗 @小红书（147赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "147赞梅兰芳纪念馆🌸偶遇一场海棠雨 / 140赞北京周末计划-琉璃厂City… / 96赞梅兰芳纪念馆参观攻略｜生平与…",
+      trending: ""
+    }
+  
   },
   {
     id: 473,
@@ -1146,7 +1391,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "市区景点，无需住宿。",
     tips: "1. 免费需预约，公众号搜老舍纪念馆\n2. 10月柿子红透时来最有韵味，摄影效果拉满\n3. 强烈建议去之前重读《茶馆》或看一遍人艺版话剧录像，带着感情去体验完全不同\n4. 与史家胡同博物馆步行可达，两个馆串联是东城最好的文化半日游\n5. 院子很小20分钟能看完，但别赶时间，在柿子树下坐一会儿",
     bestSeason: "秋天柿子成熟季最佳",
-    highlight: "丹柿小院·茶馆手稿·人民艺术家"
+    highlight: "丹柿小院·茶馆手稿·人民艺术家",
+    xhsQuote: "「北平之秋从老舍故居开始🍅逛完这再离开北京」— 红苹果🍎 @小红书（3499赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3499赞北平之秋从老舍故居开始🍅逛完… / 172赞北京秋天city walk路… / 96赞老舍故居🍅北京人才知道的约票…",
+      trending: ""
+    }
+  
   },
   {
     id: 474,
@@ -1172,7 +1424,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "春天花开、秋天叶落最美",
     highlight: "醇亲王府花园·500年古树·后海静谧",
     tags: ["宋庆龄故居","历史","园林","城内","城内"],
-    imageQuery: "宋庆龄故居 history garden Beijing"
+    imageQuery: "宋庆龄故居 history garden Beijing",
+    xhsQuote: "「北京探索｜原来这些熟悉的名字离我们这么近」— 有空w @小红书（1267赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1267赞北京探索｜原来这些熟悉的名字… / 556赞本地人带路🔥北京逛吃/拍照一… / 300赞4.4实拍！百年海棠全开了，…",
+      trending: ""
+    }
+  
   },
   // ========== 美食/市井街巷 (5个) ==========
   {
@@ -1199,7 +1458,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，冬天热乎乎最暖",
     highlight: "豆汁焦圈·老北京早点·消失中的味道",
     tags: ["护国寺小吃街","美食","市井","城内","城内"],
-    imageQuery: "护国寺小吃街 food street life Beijing"
+    imageQuery: "护国寺小吃街 food street life Beijing",
+    xhsQuote: "「护国寺小吃街❗️轻易不敢去第二次（真实感受）」— April Bo🌻 @小红书（4319赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4319赞护国寺小吃街❗️轻易不敢去第… / 614赞带八个胃来‼️人均25吃北京…",
+      trending: ""
+    }
+  
   },
   {
     id: 476,
@@ -1225,7 +1491,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "夏天吃小龙虾最爽",
     highlight: "红灯笼美食街·麻辣小龙虾·深夜食堂",
     tags: ["簋街","美食","夜生活","城内","城内"],
-    imageQuery: "簋街 food nightlife Beijing"
+    imageQuery: "簋街 food nightlife Beijing",
+    xhsQuote: "「北京良心小吃街合集（附推荐小吃）」— 尼古拉斯奈奈 @小红书（10000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "10000赞北京良心小吃街合集（附推荐小… / 3418赞在北京dating可以做的9… / 2022赞北京簋街美食纯分享攻略|10…",
+      trending: ""
+    }
+  
   },
   {
     id: 477,
@@ -1251,7 +1524,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，但冬天凌晨很冷",
     highlight: "凌晨古玩·天光墟·江湖规矩",
     tags: ["鬼市(潘家园天光墟)","文化","购物","市井","城内"],
-    imageQuery: "鬼市(潘家园天光墟) culture shopping street life Beijing"
+    imageQuery: "鬼市(潘家园天光墟) culture shopping street life Beijing",
+    xhsQuote: "「潘家园鬼市攻略｜没两个小时根本逛不完❗️」— 大颖爱溜达 @小红书（3764赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3764赞潘家园鬼市攻略｜没两个小时根… / 3376赞潘家园鬼市丨保姆级攻略（附地… / 1302赞北京。。。鬼市。。。男生的天…",
+      trending: ""
+    }
+  
   },
   {
     id: 478,
@@ -1277,7 +1557,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "秋冬吃涮肉最佳",
     highlight: "隐秘清真美食·手切羊肉·本地人食堂",
     tags: ["花市清真寺旁牛羊肉胡同","美食","文化","市井","城内"],
-    imageQuery: "花市清真寺旁牛羊肉胡同 food culture street life Beijing"
+    imageQuery: "花市清真寺旁牛羊肉胡同 food culture street life Beijing",
+    xhsQuote: "「这是 20 年代末期羊肉胡同家门口。」— 北京 C @小红书（1340赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1340赞这是 20 年代末期羊肉胡同… / 989赞北京CityWalk异域美食…",
+      trending: ""
+    }
+  
   },
   {
     id: 479,
@@ -1303,7 +1590,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，秋冬吃热食更爽",
     highlight: "老天桥文化·市井小吃·德云社相声",
     tags: ["天桥市井美食","美食","市井","文化","市中心"],
-    imageQuery: "天桥市井美食 food street life culture Beijing"
+    imageQuery: "天桥市井美食 food street life culture Beijing",
+    xhsQuote: "「北京美食攻略｜天坛公园游览路线附近美食~」— 贪吃的兔子 @小红书（3233赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3233赞北京美食攻略｜天坛公园游览路… / 2056赞感觉是目前北京top1好吃的… / 933赞老北京餐馆里的人情味",
+      trending: ""
+    }
+  
   },
 
   // ===== 新增50个隐藏宝藏 (ID 480-529) =====
@@ -1333,7 +1627,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，春秋最舒适",
     highlight: "藏传佛教·胡同文艺·独立咖啡",
     tags: ["雍和宫附近的五道营创意区","文化","咖啡","文艺","城内"],
-    imageQuery: "雍和宫附近的五道营创意区 culture cafe art Beijing"
+    imageQuery: "雍和宫附近的五道营创意区 culture cafe art Beijing",
+    xhsQuote: "「迄今为止‼北京春天必逛的6️⃣条胡同路线」— 窝窝带娃超会玩 @小红书（2499赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2499赞迄今为止‼北京春天必逛的6️… / 503赞记不清是第几次在五道营胡同c… / 322赞雍和宫对面的【五道营胡同】你…",
+      trending: ""
+    }
+  
   },
   {
     id: 481,
@@ -1359,7 +1660,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地，建议住西城区",
     tips: "1. 免费开放但偶尔有活动限制入内，去之前电话确认\n2. 最佳拍摄机位在寺外天宁寺桥上，不进寺也能拍到绝美照片\n3. 完美半日线路：天宁寺塔→牛街清真美食→法源寺，一条线走完\n4. 真正的冷门古迹，经常整个寺院就你一个人\n5. 冬天落叶后塔身线条最清晰，拍建筑照首选季节",
     bestSeason: "四季皆宜，秋冬树叶落后塔身更清晰",
-    highlight: "辽代古塔·千年砖雕·城市穿越"
+    highlight: "辽代古塔·千年砖雕·城市穿越",
+    xhsQuote: "「求事业很灵」— 吐个泡泡糖 @小红书（1339赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1339赞求事业很灵 / 278赞今天在天宁寺画画 / 104赞天宁寺塔 修缮尾声",
+      trending: ""
+    }
+  
   },
   {
     id: 482,
@@ -1385,7 +1693,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "10-11月红叶季最美",
     highlight: "金刚宝座塔·孙中山衣冠冢·明清古刹",
     tags: ["碧云寺金刚宝座塔","历史","文化","摄影","城内"],
-    imageQuery: "碧云寺金刚宝座塔 history culture photography Beijing"
+    imageQuery: "碧云寺金刚宝座塔 history culture photography Beijing",
+    xhsQuote: "「尘世中的惊鸿一瞥！寻访北京的古塔」— 悠悠和小茉莉 @小红书（899赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "899赞尘世中的惊鸿一瞥！寻访北京的… / 819赞北京漫行-香山碧云寺（金刚宝… / 302赞香山碧云寺｜层林之上，中国最…",
+      trending: ""
+    }
+  
   },
   {
     id: 483,
@@ -1411,7 +1726,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "1-2月腊梅季，3-4月桃花季",
     highlight: "元代铜卧佛·腊梅古寺·offer祈福",
     tags: ["卧佛寺","文化","自然","摄影","城内"],
-    imageQuery: "卧佛寺 culture nature photography Beijing"
+    imageQuery: "卧佛寺 culture nature photography Beijing",
+    xhsQuote: "「北京卧佛寺｜求 offer 最灵寺庙攻略」— 北京溜达姐 @小红书（616赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "616赞北京卧佛寺｜求 offer … / 291赞北京卧佛寺蜡梅全攻略！ / 155赞📍净业寺➡️卧佛寺 | 详细…",
+      trending: ""
+    }
+  
   },
   {
     id: 484,
@@ -1437,7 +1759,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，蓝天白塔最上镜",
     highlight: "元代白塔·胡同天际线·阿尼哥遗作",
     tags: ["妙应寺白塔","历史","文化","摄影","市中心"],
-    imageQuery: "妙应寺白塔 history culture photography Beijing"
+    imageQuery: "妙应寺白塔 history culture photography Beijing",
+    xhsQuote: "「白塔寺｜人类对 西四Citywalk的探索不足1%」— 拆腻思空腹 @小红书（732赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "732赞白塔寺｜人类对 西四City… / 212赞北京白塔寺参观攻略：居然免费… / 181赞西城妙应寺白塔停车看这篇🅿️",
+      trending: ""
+    }
+  
   },
   {
     id: 485,
@@ -1463,7 +1792,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "渎山大玉海·城中之城·一元门票",
     tags: ["北海团城","历史","文化","市中心","市中心"],
-    imageQuery: "北海团城 history culture Beijing"
+    imageQuery: "北海团城 history culture Beijing",
+    xhsQuote: "「北海团城！三大国宝，一块钱的门票」— 蒙曼 @小红书（2322赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2322赞北海团城！三大国宝，一块钱的… / 1729赞北海公园旅行攻略 / 888赞北海公园｜大名鼎鼎团城三白开…",
+      trending: ""
+    }
+  
   },
   {
     id: 486,
@@ -1489,7 +1825,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "什刹海周边民宿丰富：\n1. 后海胡同四合院民宿 — 体验老北京\n2. 鼓楼附近酒店 — 300-600元/晚",
     tips: "1. 免费24小时可以来，但不同时段体验完全不同\n2. 想看西山就选冬天北风过后的晴天下午，空气通透度最高\n3. 夏天傍晚荷花+晚霞+垂柳是另一种美\n4. 周末晚上后海酒吧街人挤人噪音大，想安静就上午来\n5. 从银锭桥出发的最佳散步线路：银锭桥→烟袋斜街→鼓楼→钟楼，全程步行30分钟",
     bestSeason: "四季皆宜，冬季观山、夏季赏荷",
-    highlight: "银锭观山·烤肉季·什刹海画卷"
+    highlight: "银锭观山·烤肉季·什刹海画卷",
+    xhsQuote: "「什刹海拍蓝调，绝美大片秘籍✨」— Jjjjjiang @小红书（4149赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4149赞什刹海拍蓝调，绝美大片秘籍✨ / 4036赞照这张图走：景山+北海+什刹… / 1750赞一定要去过什刹海！",
+      trending: ""
+    }
+  
   },
   {
     id: 487,
@@ -1515,7 +1858,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "后海胡同民宿推荐：\n1. 四合院精品民宿 — 400-800元/晚\n2. 什刹海青旅 — 背包客之选",
     tips: "1. 免费随走随逛，上午9-11点是最佳时段，居民生活气息最浓\n2. 胡同是人家住的地方，别大声喧哗别对着人家门口拍照\n3. 步行或骑共享单车最好，开车进胡同会堵死\n4. 从后海酒吧街任意一个路口往里拐都能进入另一个世界\n5. 冬天胡同里有穿堂风冷得很，但也是最有老北京氛围的季节",
     bestSeason: "春秋最佳，夏天胡同里有穿堂风",
-    highlight: "名人故居·真实胡同生活·后海秘境"
+    highlight: "名人故居·真实胡同生活·后海秘境",
+    xhsQuote: "「【北京最灵的火神庙】祈福求签➕路线➕注意事项」— Shein @小红书（3645赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3645赞【北京最灵的火神庙】祈福求签… / 1032赞后海不是海🌊什刹海cityw… / 992赞极少人知道的北京胡同文化小众…",
+      trending: ""
+    }
+  
   },
 
   // ===== 老工业/新文化 (8个) =====
@@ -1543,7 +1893,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地，建议住朝阳区",
     tips: "1. 免费入园，全天开放，拍照完全不用排队等位\n2. 设计周（9月底至10月初）是年度高光时刻，值得专门来一趟\n3. 穿深色衣服在工业背景前拍照效果最好，亮色系也行但风格不同\n4. 部分管道区域有警示标识别翻越，安全第一\n5. 与798串联来大半天刚好，先逛751再去798，审美递减不心疼",
     bestSeason: "四季皆宜，秋季设计周期间最精彩",
-    highlight: "工业遗存·设计周主场·蒸汽朋克美学"
+    highlight: "工业遗存·设计周主场·蒸汽朋克美学",
+    xhsQuote: "「北京798·751citywalk路线攻略分享✅附地图」— 微笑豆 @小红书（730赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "730赞北京798·751cityw… / 235赞艺术无价｜25年开年免费看展… / 125赞ᵕ̈ 798看展🚶🏻‍♀️A…",
+      trending: ""
+    }
+  
   },
   {
     id: 489,
@@ -1569,7 +1926,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "独立剧场·精酿酒吧·工业改造",
     tags: ["恒通商务园","文化","艺术","美食","城内"],
-    imageQuery: "恒通商务园 culture art food Beijing"
+    imageQuery: "恒通商务园 culture art food Beijing",
+    xhsQuote: "「北京小京都！这些居然都在北京市区？」— 宇辰Evan @小红书（1688赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1688赞北京小京都！这些居然都在北京… / 1129赞北京土著｜宝藏Citywal… / 765赞北京娱乐公司打卡攻略🗺️超全…",
+      trending: ""
+    }
+  
   },
   {
     id: 490,
@@ -1595,7 +1959,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地，建议住朝阳区",
     tips: "1. 免费入园但导航要搜准入口，第一次来容易绕路\n2. 工作日下午3-6点最佳，光线好人少拍照自由\n3. 周末部分办公区域关闭，室外公共区域可以拍\n4. 注意别闯进人家办公室拍照，看到禁止入内的标识就停\n5. 与铜牛电影产业园距离不远，可以串联一日工业风摄影之旅",
     bestSeason: "四季皆宜，春秋光线好",
-    highlight: "红砖工厂·影视传媒·隐藏拍照地"
+    highlight: "红砖工厂·影视传媒·隐藏拍照地",
+    xhsQuote: "「北京不止798🔥还有14个创意园区根本逛不完」— 菜籽乱跑 @小红书（509赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "509赞北京不止798🔥还有14个创… / 420赞北京大望路🚶巨隐蔽但好逛小众… / 298赞北京|4.16-4.19周末…",
+      trending: ""
+    }
+  
   },
   {
     id: 491,
@@ -1621,7 +1992,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 免费入园但周末部分区域不开放，工作日来最自由\n2. 影展信息关注园区公众号，临时来可能什么活动都没有\n3. 锯齿屋顶在正午时分光影效果最好——三角形的影子打在地面上很有几何美感\n4. 与莱锦、京棉二厂串联是朝阳区工业遗产摄影一日游的完美线路\n5. 6号线常营站或草房站步行15分钟，不近但值得专程来",
     bestSeason: "四季皆宜",
-    highlight: "纺织遗存·锯齿屋顶·电影产业链"
+    highlight: "纺织遗存·锯齿屋顶·电影产业链",
+    xhsQuote: "「北影节｜郎园Station游玩全攻略🗺️」— 北京国际电影节 @小红书（666赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "666赞北影节｜郎园Station游… / 493赞2026北影节市集🎬200+… / 298赞北京|4.16-4.19周末…",
+      trending: ""
+    }
+  
   },
   {
     id: 492,
@@ -1647,7 +2025,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 艺术馆和工作室开放时间不固定，去之前务必电话确认\n2. 手工体验课至少提前3天预约，周末名额紧张\n3. 商店里的工艺品从几百到几万都有，品质有保证但量力而行\n4. 工作日去大师工作室更容易看到人在干活，周末可能不开\n5. 对传统手工艺没兴趣的人来了会无聊，适合有审美追求的访客",
     bestSeason: "四季皆宜",
-    highlight: "景泰蓝·非遗大师·国礼工艺"
+    highlight: "景泰蓝·非遗大师·国礼工艺",
+    xhsQuote: "「没想到北京的这个创意园 这么好拍📸️」— 毛若懿mnick @小红书（507赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "507赞没想到北京的这个创意园 这么… / 262赞周末大捡漏！众爱循环快闪又来… / 247赞北京周末（4.17-4.19…",
+      trending: ""
+    }
+  
   },
   {
     id: 493,
@@ -1673,7 +2058,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 免费入园，但艺术家工作室是私人空间，开着门的可以打招呼进去看，关着门别敲\n2. 6号线十里堡站或青年路站步行10分钟，交通还算方便\n3. 适合摄影爱好者和对当代艺术感兴趣的人，纯逛景点的会觉得无聊\n4. 与铜牛、莱锦串联是朝阳区工业遗产完整体验线路\n5. 园区在持续变化中，每隔几个月来可能有新发现",
     bestSeason: "四季皆宜",
-    highlight: "纺织工业遗产·红砖厂房·艺术家据点"
+    highlight: "纺织工业遗产·红砖厂房·艺术家据点",
+    xhsQuote: "「迄今为止，北京最爱的citywalk新园区！！！」— 小暖爱遛弯 @小红书（1772赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1772赞迄今为止，北京最爱的city… / 780赞这个博物馆，估计很多北京人没… / 666赞北影节｜郎园Station游…",
+      trending: ""
+    }
+  
   },
   {
     id: 494,
@@ -1699,7 +2091,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，4月摄影月最佳",
     highlight: "摄影画廊·专业影展·工业空间",
     tags: ["竞园艺术中心","摄影","艺术","展览","城内"],
-    imageQuery: "竞园艺术中心 photography art exhibition Beijing"
+    imageQuery: "竞园艺术中心 photography art exhibition Beijing",
+    xhsQuote: "「北京周末8/100｜百子湾高碑店的超chill一天」— 河豚乐乐 @小红书（379赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "379赞北京周末8/100｜百子湾高… / 197赞图书编辑的周末，百子湾竞园C… / 188赞北京你不知道的｜出片率很高得…",
+      trending: ""
+    }
+  
   },
   {
     id: 495,
@@ -1725,7 +2124,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 改造中，开放区域经常变化，去之前查最新信息\n2. 规模巨大预留2-3小时，穿舒服的鞋\n3. 部分老厂房区域可能有安全隐患，不要翻越围栏\n4. 可以跟卢沟桥、宛平城串联成一日历史线路\n5. 房山线长阳站转公交或打车可达，自驾更方便",
     bestSeason: "春秋最佳",
-    highlight: "百年铁路·二七大罢工·最大工业遗产"
+    highlight: "百年铁路·二七大罢工·最大工业遗产",
+    xhsQuote: "「丰台二七厂 | 一个很有意思的地方」— 枕山河 @小红书（873赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "873赞丰台二七厂 | 一个很有意思… / 180赞🚂北京丰台长辛店｜人少免费小… / 175赞老厂房变身工业风文创园，电影…",
+      trending: ""
+    }
+  
   },
 
   // ===== 城中村/边缘秘境 (8个) =====
@@ -1753,7 +2159,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地，建议住西城区",
     tips: "1. 免费随时可逛，胡同300米20分钟走完，但知道故事后可以慢慢走\n2. 去之前B站搜陈凯歌《百花深处》短片看一遍（只有10分钟），带着感情去体验完全不同\n3. 摇滚乐迷另外搜一下窦唯《黑梦》的录音花絮，录音棚旧址朝圣更有仪式感\n4. 这里是纯居民区，别大声喧哗别对着人家院子猛拍\n5. 最佳线路：百花深处→护国寺早点→西海湿地→德胜门箭楼",
     bestSeason: "四季皆宜，春天最应景",
-    highlight: "最美胡同名·摇滚录音棚·陈凯歌短片"
+    highlight: "最美胡同名·摇滚录音棚·陈凯歌短片",
+    xhsQuote: "「北京4月就逛这条2️⃣条胡同，含氧量1000%🌳」— 兰曦 @小红书（1427赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1427赞北京4月就逛这条2️⃣条胡同… / 992赞极少人知道的北京胡同文化小众… / 541赞胡同的名字叫百花深处",
+      trending: ""
+    }
+  
   },
   {
     id: 497,
@@ -1779,7 +2192,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地，建议住前门区域",
     tips: "1. 不做功课来看就是普通胡同，提前读一下赛金花和小凤仙的故事再去\n2. 这里是居民区，别对着人家门口猛拍，尤其别拍居民\n3. 带着尊重历史的心态来，不是来猎奇的\n4. 最佳线路：八大胡同→大栅栏→琉璃厂→前门大街，半天走完\n5. 部分院落还有原住民在住，看到有意思的门楼可以远拍但别闯进去",
     bestSeason: "四季皆宜",
-    highlight: "清末社会史·传奇人物·民国建筑"
+    highlight: "清末社会史·传奇人物·民国建筑",
+    xhsQuote: "「昔日烟花柳巷之地VS如今居民住所」— 琳瑄 @小红书（2827赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2827赞昔日烟花柳巷之地VS如今居民… / 2755赞北京八大胡同深处，我发现了难… / 915赞在北京八大胡同深处 闯入最后…",
+      trending: ""
+    }
+  
   },
   {
     id: 498,
@@ -1805,7 +2225,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速探访目的地",
     tips: "1. 藏经阁在学校院内，正常只能在校门外远看，别硬闯学校\n2. 周末和寒暑假学校关门人少，反而从围栏外看得更清楚\n3. 不是常规景点，对城市史和古建筑没兴趣的人不用专程来\n4. 最佳串联：崇效寺遗址→牛街美食→法源寺→天宁寺塔\n5. 这个遗址的价值在于思考，不在于打卡——站在这儿想想北京失去了多少",
     bestSeason: "四季皆宜",
-    highlight: "唐代古刹遗存·明代藏经阁·宣南记忆"
+    highlight: "唐代古刹遗存·明代藏经阁·宣南记忆",
+    xhsQuote: "「词穷了，请看图」— 小猫爱吃鱼 @小红书（2833赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2833赞词穷了，请看图 / 722赞古迹爱好者不建议买潭柘寺门票 / 664赞🔥“小红卡”居然免费‼️",
+      trending: ""
+    }
+  
   },
   {
     id: 499,
@@ -1831,7 +2258,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速探访目的地",
     tips: "1. 免费开放，从南锣鼓巷任意一个向东的岔路口拐进去2分钟就到\n2. 面积小20分钟够了，但别赶时间，在古树下多坐一会儿才值得来\n3. 南锣节假日人多到走不动路，报恩寺是最好的避难所\n4. 最佳线路：报恩寺→雨儿胡同（齐白石旧居）→帽儿胡同→鼓楼\n5. 寺内偶尔有文化活动但不固定，碰到是惊喜",
     bestSeason: "四季皆宜",
-    highlight: "闹中取静·明代古寺·南锣秘境"
+    highlight: "闹中取静·明代古寺·南锣秘境",
+    xhsQuote: "「什刹海-烟袋斜街-南锣鼓巷｜北京City Walk」— 雾中客 @小红书（3388赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3388赞什刹海-烟袋斜街-南锣鼓巷｜… / 2619赞北京最精美的砖雕拱门竟深藏在… / 795赞🌸北京本周1️⃣1️⃣个赏花…",
+      trending: ""
+    }
+  
   },
   {
     id: 500,
@@ -1857,7 +2291,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速探访目的地",
     tips: "1. 工作日上午去最好——整个公园可能只有你一个人，周末偶有研学团\n2. 城墙本身不起眼，第一反应会觉得'就这？'——提前看完颜亮迁都的历史再去，每一寸土墙都变得有故事\n3. 辽金城垣博物馆周一闭馆，建议周二至周五去，可以请馆内志愿者讲解\n4. 别穿白鞋——遗址公园部分路段是土路，雨后泥泞",
     bestSeason: "四季皆宜",
-    highlight: "北京建都起点·金代夯土城墙·870年"
+    highlight: "北京建都起点·金代夯土城墙·870年",
+    xhsQuote: "「北京广安门一带金代遗迹故址合集」— 得因 @小红书（244赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "244赞北京广安门一带金代遗迹故址合… / 184赞新年好消息，金中都城墙遗址开… / 153赞北京城内最早古城墙遗迹",
+      trending: ""
+    }
+  
   },
   {
     id: 501,
@@ -1883,7 +2324,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速探访目的地",
     tips: "1. 正阳书局营业时间约9:00-18:00，周一可能休息——去之前刷一眼公众号\n2. 最佳时间是工作日下午2-4点，游客少，崔勇有时在店里，碰上了能聊一下午北京故事\n3. 塔不能登只能外观，但在院子里仰拍塔尖配蓝天出片率极高\n4. 别只去书局就走——出门右转砖塔胡同、左转西四北头条到八条，都是明清老胡同群",
     bestSeason: "四季皆宜",
-    highlight: "元代古塔·正阳书局·北京文化书店"
+    highlight: "元代古塔·正阳书局·北京文化书店",
+    xhsQuote: "「闹中取静‼️北京城区仅存的一座古砖塔」— 海阔天空 @小红书（257赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "257赞闹中取静‼️北京城区仅存的一… / 205赞Solotrip城市游记 |… / 184赞遇见‖万松老人塔：老北京文化…",
+      trending: ""
+    }
+  
   },
   {
     id: 502,
@@ -1909,7 +2357,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速参观，无需住宿",
     tips: "1. 门牌号51号很容易走过——认准灰砖门楼上'广福观'三个字，门半开着就能进\n2. 周一闭馆，工作日下午最清静，能独享整个院子\n3. 与火神庙（步行3分钟）、银锭桥、鼓楼串成一条线，够逛半天\n4. 避开下午4点后——烟袋斜街人流高峰，进出都费劲",
     bestSeason: "四季皆宜",
-    highlight: "明代道观·烟袋斜街隐藏·什刹海文化"
+    highlight: "明代道观·烟袋斜街隐藏·什刹海文化",
+    xhsQuote: "「古法过冬·在鼓楼下来一场庙观祈福Citywalk」— Fay @小红书（179赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "179赞古法过冬·在鼓楼下来一场庙观… / 67赞来北京逛鼓楼📍经典胡同cit… / 40赞广福观 烟袋斜街 什刹海文化…",
+      trending: ""
+    }
+  
   },
   {
     id: 503,
@@ -1935,7 +2390,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速参观，无需住宿",
     tips: "1. 作为道教活动场所，进殿请保持安静，不要对着神像拍照（外面建筑随便拍）\n2. 免费开放但有时举办法事会暂时限流，工作日上午基本没这个问题\n3. 什刹海最喧闹的后海酒吧街就在对岸——但火神庙这边安静得像另一个世界\n4. 最佳拍摄时间：下午4-5点，侧光打在红墙上层次最丰富",
     bestSeason: "四季皆宜",
-    highlight: "皇家火神庙·什刹海畔·千年道观"
+    highlight: "皇家火神庙·什刹海畔·千年道观",
+    xhsQuote: "「北京火神庙最全求签+路线+攻略+注意事项 火」— 常顾在北京 @小红书（6272赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "6272赞北京火神庙最全求签+路线+攻… / 3645赞【北京最灵的火神庙】祈福求签… / 2756赞北京最灵验的火神庙（敕建火德…",
+      trending: ""
+    }
+  
   },
 
   // ===== 小众博物馆 (8个) =====
@@ -1963,7 +2425,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜（室内）",
     highlight: "大龙邮票·珍邮国宝·方寸历史",
     tags: ["中国邮政邮票博物馆","博物馆","文化","历史","城内"],
-    imageQuery: "中国邮政邮票博物馆 museum culture history Beijing"
+    imageQuery: "中国邮政邮票博物馆 museum culture history Beijing",
+    xhsQuote: "「建国门附近4个免费免预约的小众博物馆」— 余生尽兴 @小红书（710赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "710赞建国门附近4个免费免预约的小… / 307赞三个小众博物馆~人少，好逛，… / 129赞北京深度游3⃣|建国门内|博…",
+      trending: ""
+    }
+  
   },
   {
     id: 505,
@@ -1989,7 +2458,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜（室内）",
     highlight: "清末水厂·百年蒸汽泵·城市工业史",
     tags: ["北京自来水博物馆","博物馆","历史","工业","城内"],
-    imageQuery: "北京自来水博物馆 museum history industrial Beijing"
+    imageQuery: "北京自来水博物馆 museum history industrial Beijing",
+    xhsQuote: "「自来水博物馆藏着这么好看的章🕹」— 面面妈咪呀 @小红书（276赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "276赞自来水博物馆藏着这么好看的章… / 86赞😻北京私藏citywalk路… / 39赞打卡小众博物馆｜北京自来水博…",
+      trending: ""
+    }
+  
   },
   {
     id: 506,
@@ -2015,7 +2491,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜（室内）",
     highlight: "花旗银行旧址·刑侦案例·模拟射击",
     tags: ["北京警察博物馆","博物馆","历史","市中心","市中心"],
-    imageQuery: "北京警察博物馆 museum history Beijing"
+    imageQuery: "北京警察博物馆 museum history Beijing",
+    xhsQuote: "「🕯 北京警察博物馆·深度笔记」— 斌哥很爱玩 @小红书（1690赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1690赞🕯 北京警察博物馆·深度笔记 / 154赞北京警察博物馆（小众但是很好… / 109赞小众博物馆攻略｜北京警察博物…",
+      trending: ""
+    }
+  
   },
   {
     id: 507,
@@ -2041,7 +2524,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜（室内）",
     highlight: "百年电影史·IMAX巨幕·互动体验",
     tags: ["中国电影博物馆","博物馆","电影","亲子","城内"],
-    imageQuery: "中国电影博物馆 museum cinema family Beijing"
+    imageQuery: "中国电影博物馆 museum cinema family Beijing",
+    xhsQuote: "「北京📍果然最牛逼的地方都是免费的」— 别抢我的小花卷 @小红书（6352赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "6352赞北京📍果然最牛逼的地方都是免… / 1097赞⚠️去北京电影博物馆前必看这… / 628赞中国电影博物馆全攻略",
+      trending: ""
+    }
+  
   },
   {
     id: 508,
@@ -2067,7 +2557,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜（室内）",
     highlight: "百台真车头·毛泽东专列·铁路迷圣殿",
     tags: ["中国铁道博物馆","博物馆","工业","亲子","城内"],
-    imageQuery: "中国铁道博物馆 museum industrial family Beijing"
+    imageQuery: "中国铁道博物馆 museum industrial family Beijing",
+    xhsQuote: "「前门隐藏款！免费铁道博物馆太好逛！」— 西音🍇 @小红书（66赞）",
+    xhsHeat: {
+      heat: "低热",
+      notes: "66赞前门隐藏款！免费铁道博物馆太… / 64赞北京遛娃| 1200㎡的火车… / 55赞千呼万唤始出来 中国铁道博物…",
+      trending: ""
+    }
+  
   },
   {
     id: 509,
@@ -2093,7 +2590,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "2-3小时参观目的地",
     tips: "1. 免费开放但需预约——在北航官网或公众号预约参观，带身份证到校门登记\n2. 周末校园管理较松容易进，工作日可能需要提前联系博物馆\n3. P-61在二楼展厅最里面——很多人逛到一半就走了，千万别错过\n4. 室外展区下午3点后逆光，拍军机剪影效果最好",
     bestSeason: "四季皆宜（室内+室外）",
-    highlight: "黑寡妇战机·300架飞行器·免费"
+    highlight: "黑寡妇战机·300架飞行器·免费",
+    xhsQuote: "「寒假遛娃去北航，航空科普+奥运射击全体验」— 有空w @小红书（457赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "457赞寒假遛娃去北航，航空科普+奥… / 232赞北京航空航天博物馆｜免预约打… / 160赞🚀 航空航天博物馆攻略|免费…",
+      trending: ""
+    }
+  
   },
   {
     id: 510,
@@ -2119,7 +2623,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "1-2小时参观目的地",
     tips: "1. 免费开放但需提前预约，位置较偏建议自驾或打车\n2. 展览面积不大但信息密度高，建议留1.5小时细看\n3. 如果带小朋友来，碾米和磨面体验区是重点——比任何课本都生动\n4. 参观完去东四十条看南新仓（明代官仓遗址），两个点串起来就是完整的北京粮食故事",
     bestSeason: "四季皆宜（室内）",
-    highlight: "漕运历史·粮票收藏·吃饭的政治学"
+    highlight: "漕运历史·粮票收藏·吃饭的政治学",
+    xhsQuote: "「这个博物馆，估计很多北京人没听说过」— 光明小文 @小红书（780赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "780赞这个博物馆，估计很多北京人没… / 198赞北京7个免费的小众奇怪博物馆 / 179赞先农坛 首都粮食博物馆 4小…",
+      trending: ""
+    }
+  
   },
   {
     id: 511,
@@ -2145,7 +2656,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "2-3小时参观目的地",
     tips: "1. 免费开放，进校园需身份证——提前在北京印刷学院公众号查开馆信息\n2. 活字印刷体验区周末排队可能要30分钟，工作日基本不用等\n3. 从市区过去约40分钟车程，建议下午去，体验完正好回城吃晚饭\n4. 特别适合带6-12岁的小朋友——课本上的'四大发明'变成了亲手操作，记忆深度完全不同",
     bestSeason: "四季皆宜（室内）",
-    highlight: "四大发明·活字印刷体验·古籍工艺"
+    highlight: "四大发明·活字印刷体验·古籍工艺",
+    xhsQuote: "「地铁直达！北京10个免费免预约的博物馆」— 爱玩的嘉荷儿 @小红书（165赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "165赞地铁直达！北京10个免费免预… / 61赞北京13家小众免费博物馆推荐 / 43赞地下层才是真宝藏！小众博物馆…",
+      trending: ""
+    }
+  
   },
 
   // ===== 季节性秘境 (8个) =====
@@ -2173,7 +2691,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "3月底-4月中（花期约3周）",
     highlight: "3000株樱花·北京最大樱花园·春天信号",
     tags: ["玉渊潭樱花","赏花","摄影","春游","城内"],
-    imageQuery: "玉渊潭樱花 flowers photography spring outing Beijing"
+    imageQuery: "玉渊潭樱花 flowers photography spring outing Beijing",
+    xhsQuote: "「🌸玉渊潭公园赏花路线📷看这一篇就够了❗️」— 懒懒小年糕 @小红书（868赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "868赞🌸玉渊潭公园赏花路线📷看这一… / 731赞🌸给去玉渊潭公园看樱花的朋友… / 554赞🌸 玉渊潭公园旅游攻略 🌸",
+      trending: ""
+    }
+  
   },
   {
     id: 513,
@@ -2199,7 +2724,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 全年免费开放，无需预约，随到随进\n2. 海棠花期约4月中旬开始持续两周——比元大都海棠花溪晚3-5天，可以错峰\n3. 公园不大，1小时可逛完，适合跟国家图书馆或动物园（地铁一站）串联\n4. 竹林四季常绿——夏天来竹林里乘凉也极舒服，跟40度的马路完全两个世界",
     bestSeason: "4月中旬海棠季，竹林四季可赏",
-    highlight: "海棠映竹林·免费公园·本地人秘境"
+    highlight: "海棠映竹林·免费公园·本地人秘境",
+    xhsQuote: "「元大都海棠花溪，是北京春天的盛世之美」— 慢慢看世界 @小红书（823赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "823赞元大都海棠花溪，是北京春天的… / 688赞4.29流苏雪、猥实瀑，北京… / 322赞闭眼冲！北京下一个春日顶流出…",
+      trending: ""
+    }
+  
   },
   {
     id: 514,
@@ -2225,7 +2757,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 免费开放无需预约，随时可去\n2. 最佳观赏窗口极短——大约11月5日-15日这十天，之前叶子不够黄，之后落光了\n3. 关注天气预报：一场大风或大雨可能一夜之间吹光所有叶子\n4. 上午10点前和下午3点后光线最好——正午顶光拍不出银杏的通透感",
     bestSeason: "10月底-11月中旬",
-    highlight: "银杏大道·金色隧道·人少安静"
+    highlight: "银杏大道·金色隧道·人少安静",
+    xhsQuote: "「4.15实拍🌷北京最美的郁金香花海」— Cookiekk出去玩 @小红书（2418赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2418赞4.15实拍🌷北京最美的郁金… / 1876赞10.24实报live！这公… / 842赞当莫奈花园遇上落日余晖，绝了",
+      trending: ""
+    }
+  
   },
   {
     id: 515,
@@ -2251,7 +2790,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 免费开放，地铁8号线林萃桥站步行到北园东门约10分钟\n2. 最佳赏秋期约10月中旬到11月初这三周——关注'奥林匹克森林公园'公众号的彩叶播报\n3. 早上8-9点光线最好人最少，正午顶光拍不出色彩层次\n4. 北园人少的秘密：大部分游客从南门进只逛南园——你从北门进就赢了",
     bestSeason: "10月中-11月上旬",
-    highlight: "城区最大彩叶林·免费赏秋·跑步赏景"
+    highlight: "城区最大彩叶林·免费赏秋·跑步赏景",
+    xhsQuote: "「10.15实拍‼️奥森赏秋最佳路线，值得收藏！」— 趣行地图：历史寻踪 @小红书（4114赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4114赞10.15实拍‼️奥森赏秋最… / 2651赞北京对奥森的开发不足10%🌳… / 696赞别去奥森了，这里没人！！！",
+      trending: ""
+    }
+  
   },
   {
     id: 516,
@@ -2277,7 +2823,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "10月底-11月中旬红叶节",
     highlight: "千亩红叶·安静版香山·丰台秘境",
     tags: ["北宫国家森林公园红叶","赏叶","爬山","摄影","城内"],
-    imageQuery: "北宫国家森林公园红叶 autumn leaves hiking photography Beijing"
+    imageQuery: "北宫国家森林公园红叶 autumn leaves hiking photography Beijing",
+    xhsQuote: "「11.2实拍🚗0.5h，我最满意的赏秋徒步路线🍁」— 九月不冷不热 @小红书（313赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "313赞11.2实拍🚗0.5h，我最… / 251赞北宫国家森林公园亲子游玩攻略… / 233赞宣布了，这是北京最被低估的秋…",
+      trending: ""
+    }
+  
   },
   {
     id: 517,
@@ -2303,7 +2856,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日游目的地",
     tips: "1. 免费开放，骑共享单车或自带自行车最佳——步行的话8公里太远\n2. 最美期10月下旬至11月中旬，早上8-10点光线最暖\n3. 公园面积巨大，手机导航到'大运河森林公园月岛'最不容易迷路\n4. 周末骑行人多注意安全，公路车和共享单车共用车道",
     bestSeason: "10月下旬-11月中旬",
-    highlight: "运河骑行·8公里彩叶带·免费超大公园"
+    highlight: "运河骑行·8公里彩叶带·免费超大公园",
+    xhsQuote: "「来了不后悔！北京通州大运河森林公园」— 小王子在北京 Little Prince @小红书（306赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "306赞来了不后悔！北京通州大运河森… / 216赞大运河森林公园一日游 / 174赞被很多人要的大运河宝藏环线，…",
+      trending: ""
+    }
+  
   },
   {
     id: 518,
@@ -2329,7 +2889,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "晚间游览目的地",
     tips: "1. 天黑后（夏天约19:30，冬天约17:30）灯光才亮，到早了白等\n2. 夏秋季来最舒服，冬天河边风大穿够衣服\n3. 运河游船需在'通州大运河游船'小程序提前买票，周末常售罄\n4. 拍照tips：手机夜景模式+三脚架（或靠在栏杆上稳住），长曝光才能拍出水面灯光倒影",
     bestSeason: "5-10月夜景最舒适",
-    highlight: "运河灯光·燃灯古塔·副中心未来感"
+    highlight: "运河灯光·燃灯古塔·副中心未来感",
+    xhsQuote: "「通利福尼亚“小外滩”的夜，竟然这么好逛~」— 是霉霉团啊 @小红书（1054赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1054赞通利福尼亚“小外滩”的夜，竟… / 376赞免费一个月游运河 / 193赞大运河灯光秀最佳观影位置攻略",
+      trending: ""
+    }
+  
   },
   {
     id: 519,
@@ -2355,7 +2922,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "半日至一日游目的地",
     tips: "1. 免费开放但停车场周末上午10点后可能满——9点前到最保险\n2. 面积巨大，强烈建议开车或骑行——步行只能逛到一小部分\n3. 夏天必须带防晒霜和防蚊液，草坪上没有遮挡\n4. 搭帐篷可以但不能过夜，地钉不能打——用沙袋固定型帐篷",
     bestSeason: "春秋最佳，四季可去",
-    highlight: "超大草坪·湿地自然·亲子天堂"
+    highlight: "超大草坪·湿地自然·亲子天堂",
+    xhsQuote: "「温榆河公园遛娃｜看这一篇就够了【详细攻略】」— 呦呦的米妈 @小红书（2429赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2429赞温榆河公园遛娃｜看这一篇就够… / 342赞1000㎡全免费！新晋网红无… / 309赞让我1个月4刷的温榆河公园二…",
+      trending: ""
+    }
+  
   },
 
   // ===== 城市观景点 (5个) =====
@@ -2383,7 +2957,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "秋冬晴天能见度高",
     highlight: "360度全景·238米·日落夜景",
     tags: ["中央电视塔观景台","观景","摄影","约会","城内"],
-    imageQuery: "中央电视塔观景台 scenic view photography date Beijing"
+    imageQuery: "中央电视塔观景台 scenic view photography date Beijing",
+    xhsQuote: "「来北京一定要去一趟🌄🗼」— Aoeiuü @小红书（614赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "614赞来北京一定要去一趟🌄🗼 / 519赞北京电视塔+旋转餐厅+海底世… / 320赞中央电视塔冬日拍照攻略",
+      trending: ""
+    }
+  
   },
   {
     id: 521,
@@ -2409,7 +2990,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "秋冬晴天，日落时分",
     highlight: "330米高空·CBD天际线·鸡尾酒观景",
     tags: ["国贸三期80层","观景","摄影","约会","城内"],
-    imageQuery: "国贸三期80层 scenic view photography date Beijing"
+    imageQuery: "国贸三期80层 scenic view photography date Beijing",
+    xhsQuote: "「品读北京473——在国贸80层俯瞰北京城」— 呼本 @小红书（421赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "421赞品读北京473——在国贸80… / 413赞北京国贸一日游｜0元打卡帝都… / 277赞北京 | 国贸80层下午茶",
+      trending: ""
+    }
+  
   },
   {
     id: 522,
@@ -2435,7 +3023,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "1-2小时拍摄目的地",
     tips: "1. 日落前1小时到占机位——东侧天桥位置有限，周末摄影爱好者会抢\n2. 最佳拍摄季节：11月-1月冬至前后，太阳角度低金色持续最久\n3. 广角镜头或手机超广角必备——三栋楼太大太近，标准焦段装不下\n4. 拍完日落别急着走——等天完全黑灯光亮起还能再拍一轮夜景",
     bestSeason: "秋冬晴天日落最佳",
-    highlight: "扎哈设计·望京三山·日落金光"
+    highlight: "扎哈设计·望京三山·日落金光",
+    xhsQuote: "「北京，你让我感到陌生………」— Sitara.星迴 @小红书（74000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "74000赞北京，你让我感到陌生……… / 430赞北京晚霞机位看这篇就够啦！1… / 172赞北京春分悬日机位分享，个个经…",
+      trending: ""
+    }
+  
   },
   {
     id: 523,
@@ -2461,7 +3056,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "快速打卡目的地",
     tips: "1. 公共区域免费进入，不需要任何预约或费用\n2. 工作日中午12-1点最好拍——上班的人都在吃饭，中庭几乎没人\n3. 手机超广角是必须的——标准焦段根本装不进中庭的全貌\n4. 不要进入办公楼层，保安会请你出来——公共区域（中庭、连廊、底商）随便逛",
     bestSeason: "四季皆宜",
-    highlight: "扎哈设计·科幻中庭·无棱角建筑"
+    highlight: "扎哈设计·科幻中庭·无棱角建筑",
+    xhsQuote: "「终于有人把银河SOHO怎么拍说明白了！」— yoyoliu @小红书（2710赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2710赞终于有人把银河SOHO怎么拍… / 2017赞为了这1️⃣5️⃣张照片，我… / 832赞打卡北京最赛博朋克的机位 |…",
+      trending: ""
+    }
+  
   },
   {
     id: 524,
@@ -2487,7 +3089,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "1-2小时探索目的地",
     tips: "1. 公共区域免费进入——走进大堂直接看中庭，不需要任何手续\n2. 超广角镜头是硬需求——194米高的中庭用标准焦段只能拍到一小部分\n3. 商务区仍在建设中，部分路段有围挡——但建筑本身完全可以正常参观\n4. 人极少——工作日下午去中庭可能只有你和保安，拍照自由度全北京最高",
     bestSeason: "四季皆宜，晴天拍建筑最好",
-    highlight: "世界最高中庭·DNA双螺旋·新兴天际线"
+    highlight: "世界最高中庭·DNA双螺旋·新兴天际线",
+    xhsQuote: "「对北京祛魅不了一点....（附打卡点位）」— 撒欢儿北京 @小红书（1954赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1954赞对北京祛魅不了一点....（… / 295赞📸北京新地标｜丽泽SOHO，… / 255赞打卡许我耀眼同款机位，未来感…",
+      trending: ""
+    }
+  
   },
 
   // ===== 深夜/夜生活 (5个) =====
@@ -2515,7 +3124,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜，夏天户外最热闹",
     highlight: "国际化夜生活·潮流地标·深夜美食",
     tags: ["三里屯太古里","夜生活","购物","美食","城内"],
-    imageQuery: "三里屯太古里 nightlife shopping food Beijing"
+    imageQuery: "三里屯太古里 nightlife shopping food Beijing",
+    xhsQuote: "「北京三里屯暴走2w步整理‼️潮牌购物攻略」— 噜喵喵🐱 @小红书（10000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "10000赞北京三里屯暴走2w步整理‼️… / 4125赞北京暴走2w步整理‼️三里屯… / 1966赞北京三里屯！18家必逛店铺大…",
+      trending: ""
+    }
+  
   },
   {
     id: 526,
@@ -2541,7 +3157,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     bestSeason: "四季皆宜",
     highlight: "夜店文化发源地·工体新生·深夜烟火",
     tags: ["工体夜生活圈","夜生活","音乐","社交","城内"],
-    imageQuery: "工体夜生活圈 nightlife music social Beijing"
+    imageQuery: "工体夜生活圈 nightlife music social Beijing",
+    xhsQuote: "「工体蹦迪结束，千万别随便约人吃夜宵。」— 火山水母 @小红书（1376赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1376赞工体蹦迪结束，千万别随便约人… / 1215赞把工体一条街每一家都去了一遍 / 865赞北京工体夜店排行(纯蹦版)(…",
+      trending: ""
+    }
+  
   },
   {
     id: 527,
@@ -2567,7 +3190,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "鼓楼附近民宿：\n1. 胡同四合院民宿 — 300-600元/晚\n2. 安定门快捷酒店 — 200-350元/晚",
     tips: "1. 周四到周六最热闹，周日到周三很多店关得早\n2. 精酿价格一般¥40-80/杯，威士忌¥80-200/杯——比三里屯便宜30%左右\n3. 从什刹海沿后海北沿散步过来约20分钟——晚饭在什刹海吃，喝酒到鼓楼，完美路线\n4. 夏天一定坐户外——胡同里的晚风配精酿，是北京夜生活最舒服的打开方式",
     bestSeason: "四季皆宜，夏天户外座最棒",
-    highlight: "本土精酿·独立音乐·鼓楼文化"
+    highlight: "本土精酿·独立音乐·鼓楼文化",
+    xhsQuote: "「在北京dating可以做的99件事（2025 精酿篇🍺」— 拆腻思空腹 @小红书（3418赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3418赞在北京dating可以做的9… / 3187赞北京鼓楼，个人觉得无法超越的… / 1780赞北京夜生活-我珍藏的酒鬼路线…",
+      trending: ""
+    }
+  
   },
   {
     id: 528,
@@ -2593,7 +3223,14 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "1. 雍和宫附近民宿 — 胡同体验\n2. 安定门酒店 — 便利",
     tips: "1. 大部分店22:00-23:00关门——如果想体验深夜氛围，21:00左右到最好\n2. 冬天胡同里真的冷——穿厚一点，从地铁站到胡同只有3分钟但风能把人吹透\n3. 声音放低，尊重胡同居民——这里不是酒吧街，住着真正的人家\n4. 周末比工作日多开1-2家店营业到更晚，周五晚上是最佳时间",
     bestSeason: "夏秋最佳，可以坐户外",
-    highlight: "胡同深夜食堂·安静夜晚·温暖小店"
+    highlight: "胡同深夜食堂·安静夜晚·温暖小店",
+    xhsQuote: "「在北京，i人可以安静吃饭的地方（29/100）」— 吃你家肉啦？ @小红书（2200赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2200赞在北京，i人可以安静吃饭的地… / 1890赞千万别去关晓彤推荐的七寻八找… / 1314赞北京夜生活之五道营胡同～",
+      trending: ""
+    }
+  
   },
   {
     id: 529,
@@ -2619,6 +3256,13 @@ const DESTINATIONS_BJ_HIDDEN = [
     whereToStay: "1. 东四胡同民宿 — 老城体验\n2. 东直门商圈酒店 — 方便",
     tips: "1. 每家店营业时间不同——出门前在大众点评查确认，有的到22:00有的到24:00\n2. 胡同里GPS不太准，跟着大众点评的导航走到附近后用眼睛找——亮着灯的门洞就是\n3. 深夜保持安静是硬规矩——胡同里住着人家，说话声控制在室内\n4. 现金不用带但充电宝要带——拍照+导航+叫车，手机电量是深夜生存的关键",
     bestSeason: "四季皆宜，秋冬夜晚更有氛围",
-    highlight: "胡同独立咖啡·深夜手冲·老城新文化"
+    highlight: "胡同独立咖啡·深夜手冲·老城新文化",
+    xhsQuote: "「迄今为止，个人觉得无法超越的26家胡同店（上」— 高歌歌 @小红书（6861赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "6861赞迄今为止，个人觉得无法超越的… / 2417赞☕️ 北京咖啡看东四: 13… / 1297赞我宣布东四大街是北京最适合C…",
+      trending: ""
+    }
+  
   }
 ];

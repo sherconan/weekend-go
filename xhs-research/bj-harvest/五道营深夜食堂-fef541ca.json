@@ -1,0 +1,50 @@
+{
+  "id": 528,
+  "name": "五道营深夜食堂",
+  "file": "js/data-beijing-hidden.js",
+  "query": "五道营深夜食堂 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "在北京，i人可以安静吃饭的地方（29/100）",
+      "href": "https://www.xiaohongshu.com/explore/689ef0b1000000001b01ee5d",
+      "author": "吃你家肉啦？",
+      "likes_text": "2200",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201609/e38b8ac7318372600d629c4eb6c121fc/1040g00831l6srqv5le204bcbs9rrc7qb93nilc0!nc_n_webp_mw_1",
+      "likes": 2200
+    },
+    {
+      "title": "千万别去关晓彤推荐的七寻八找！",
+      "href": "https://www.xiaohongshu.com/explore/677e8ff4000000001703df81",
+      "author": "奶油菠萝包",
+      "likes_text": "1890",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201609/99cad5feed3f354b1792474b813b16d1/1040g00831cd9a1qv0s004a5psdgf80pkdnggqeo!nc_n_webp_mw_1",
+      "likes": 1890
+    },
+    {
+      "title": "北京夜生活之五道营胡同～",
+      "href": "https://www.xiaohongshu.com/explore/68922107000000002500e0bf",
+      "author": "曾经的考拉",
+      "likes_text": "1314",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201609/57fd48f4c7e09331bb0fddc2a00abd73/notes_pre_post/1040g3k031kqcisll483g5p8db0nls1aga5dd9vg!nc_n_webp_mw_1",
+      "likes": 1314
+    },
+    {
+      "title": "为什么没早点来吃！！",
+      "href": "https://www.xiaohongshu.com/explore/69c6137a000000001a02300b",
+      "author": "一支炉子",
+      "likes_text": "795",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201609/7379cd93746cae775c0252032b8d21ba/notes_uhdr/1040g3qo31u743rp0iq005n7d4aslnm6briqdk2g!nc_n_webp_mw_1",
+      "likes": 795
+    },
+    {
+      "title": "北京五道口，巨隐蔽但巨好吃的。。。",
+      "href": "https://www.xiaohongshu.com/explore/69c251c90000000023017697",
+      "author": "吃你家肉啦？",
+      "likes_text": "474",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201609/3c59b5f0e56b0677f373d752bdc9ec0a/1040g00831u3eluuti4004bcbs9rrc7qb3gf6gio!nc_n_webp_mw_1",
+      "likes": 474
+    }
+  ],
+  "harvested_at": "2026-04-20T16:09:54"
+}

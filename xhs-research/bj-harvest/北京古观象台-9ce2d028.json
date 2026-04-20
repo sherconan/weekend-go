@@ -1,0 +1,50 @@
+{
+  "id": 467,
+  "name": "北京古观象台",
+  "file": "js/data-beijing-hidden.js",
+  "query": "北京古观象台 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "古观象台",
+      "href": "https://www.xiaohongshu.com/explore/686e0156000000001d00ea7f",
+      "author": "马未都",
+      "likes_text": "1041",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201600/4b908a4e96b08c15f5378148a5207c23/spectrum/1040g34o31jn3s6r22a0g5npfbub0bhiucj4r8g8!nc_n_webp_mw_1",
+      "likes": 1041
+    },
+    {
+      "title": "别挤五塔寺︱古观象台文冠花，人少花绝4.17",
+      "href": "https://www.xiaohongshu.com/explore/69e2187500000000230125df",
+      "author": "PG乐桃桃",
+      "likes_text": "221",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201600/9de99340f16dc8c0438590d9efa5e39a/1040g00831v3sodrc2s005piroqo0u2r15jdh190!nc_n_webp_mw_1",
+      "likes": 221
+    },
+    {
+      "title": "北京访古/北京古观象台游览探古",
+      "href": "https://www.xiaohongshu.com/explore/6978a67a000000001a03321d",
+      "author": "tuni460",
+      "likes_text": "169",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201600/f04c7eeafd683da77a0c903b7b76352d/1040g2sg31rrg10acige05o86c2q08nm1d0f0ojg!nc_n_webp_mw_1",
+      "likes": 169
+    },
+    {
+      "title": "中轴寻芳⑪古观象台：文冠渐染，不负初心",
+      "href": "https://www.xiaohongshu.com/explore/69dcf42c000000001a034fc4",
+      "author": "是喵喵呀",
+      "likes_text": "92",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201600/cc166b2cb182fdc8541f8041de275705/notes_pre_post/1040g3k031utevsb43q005nlksfi08g2441q19h0!nc_n_webp_mw_1",
+      "likes": 92
+    },
+    {
+      "title": "北京小众景点02——古观象台，真能学到知识🌟",
+      "href": "https://www.xiaohongshu.com/explore/68eb9bf30000000007008faf",
+      "author": "善才童子",
+      "likes_text": "81",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201600/3a9a7a5065e42ee37ecbb5aafdc7e2bb/notes_pre_post/1040g3k031niv9gmp4u6g5p3lq5jnophpe74vbp0!nc_n_webp_mw_1",
+      "likes": 81
+    }
+  ],
+  "harvested_at": "2026-04-20T16:00:32"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 380,
+  "name": "淄博烧烤",
+  "file": "js/data-beijing-500.js",
+  "query": "淄博烧烤 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "淄博一日游（土著推荐）",
+      "href": "https://www.xiaohongshu.com/explore/6816f87700000000220058d5",
+      "author": "树树",
+      "likes_text": "4755",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/7bbaa0aef619eac0f5e4e640c5e60df4/1040g00831h20tqonjq605pcc16fnqbn2g8u2hso!nc_n_webp_mw_1",
+      "likes": 4755
+    },
+    {
+      "title": "反向旅游之山东淄博‼️一日游保姆级攻略",
+      "href": "https://www.xiaohongshu.com/explore/69ae2e2e000000000d00bf1a",
+      "author": "Mercury97",
+      "likes_text": "2519",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/9a4ee2441a5b0a17f6d5c59da524dd50/1040g00831tfp63h3lm0049kbqrg2thhhkq44bf0!nc_n_webp_mw_1",
+      "likes": 2519
+    },
+    {
+      "title": "等着你跟着我一起吃淄博了！",
+      "href": "https://www.xiaohongshu.com/explore/6948fd9c000000001e017321",
+      "author": "重生之这次面试我要80+！求上岸！",
+      "likes_text": "1754",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/78592200bc812b089cced417ea07caa3/notes_pre_post/1040g3k831qcuvej0mu005p93mccgia1v472550g!nc_n_webp_mw_1",
+      "likes": 1754
+    },
+    {
+      "title": "去了趟淄博，心里有点不是滋味",
+      "href": "https://www.xiaohongshu.com/explore/68370b22000000002100c14f",
+      "author": "刘蜜枣",
+      "likes_text": "1576",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/5e5c66200400407f03a493f557f57587/notes_pre_post/1040g3k831i1e8f1lna305ovi7k843g21q801c0g!nc_n_webp_mw_1",
+      "likes": 1576
+    },
+    {
+      "title": "五一来淄博的一点建议（烧烤篇）",
+      "href": "https://www.xiaohongshu.com/explore/681456f2000000000900c453",
+      "author": "甜甜琳呐",
+      "likes_text": "1140",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/3dac9ffb356c224f43b2685eb539b144/1040g00831gvhrdj8js005o6vvfn85ah0oi2rm10!nc_n_webp_mw_1",
+      "likes": 1140
+    }
+  ],
+  "harvested_at": "2026-04-20T15:40:00"
+}

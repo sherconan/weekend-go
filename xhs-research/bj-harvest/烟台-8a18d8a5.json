@@ -1,0 +1,50 @@
+{
+  "id": 310,
+  "name": "烟台",
+  "file": "js/data-beijing-500.js",
+  "query": "烟台 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "直接抄作业！来烟台去完这几个地方再离开.….",
+      "href": "https://www.xiaohongshu.com/explore/69855ac5000000000b00a77e",
+      "author": "俩小只只只",
+      "likes_text": "2661",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201527/7e3cfab3bef5a22e365c50c6e98c4740/notes_pre_post/1040g3k031s7tdm8alelg5n8sag9kj5irrt1c1co!nc_n_webp_mw_1",
+      "likes": 2661
+    },
+    {
+      "title": "J人对自己的烟台冬日攻略满意得睡不着",
+      "href": "https://www.xiaohongshu.com/explore/694b8da8000000001e000f1e",
+      "author": "一起出去玩呱！",
+      "likes_text": "2587",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201527/9e4c4116c5ab74fafcfd7ed75ce9c4cd/notes_pre_post/1040g3k831qfdj6rgn0d05pmdl78jch31j18iou8!nc_n_webp_mw_1",
+      "likes": 2587
+    },
+    {
+      "title": "一篇就够，烟台攻略路线",
+      "href": "https://www.xiaohongshu.com/explore/69811436000000000a03340e",
+      "author": "BADUN",
+      "likes_text": "2532",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201527/f7119c7d4e12aa4a9e32e4253396b22b/1040g00831s3mm7s65e005ovm6oi43o9pkogrlh8!nc_n_webp_mw_1",
+      "likes": 2532
+    },
+    {
+      "title": "带老少懒人烟台青岛游，附详细消费清单",
+      "href": "https://www.xiaohongshu.com/explore/688d84db000000000303158e",
+      "author": "一颗玻璃豆",
+      "likes_text": "2377",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201527/7dc2b2039e1660e8e3d94af8eb77dee5/notes_pre_post/1040g3k831klsfvdk34dg5p1g5qrl1kbso5oc2d8!nc_n_webp_mw_1",
+      "likes": 2377
+    },
+    {
+      "title": "烟台看海，2天1夜的citywalk！",
+      "href": "https://www.xiaohongshu.com/explore/6947d640000000000d038692",
+      "author": "奶茶团子",
+      "likes_text": "2003",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201527/3c42c09dd1d533d0e8186b8702174544/1040g00831qbphdb3no1g4a1n1f2tl4ihvkgiaso!nc_n_webp_mw_1",
+      "likes": 2003
+    }
+  ],
+  "harvested_at": "2026-04-20T15:27:45"
+}

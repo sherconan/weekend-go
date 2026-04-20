@@ -1,0 +1,50 @@
+{
+  "id": 400,
+  "name": "太原晋祠",
+  "file": "js/data-beijing-500.js",
+  "query": "太原晋祠 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "晋祠｜省流版攻略：看这篇就够了！绝不瞎逛",
+      "href": "https://www.xiaohongshu.com/explore/6795bbc5000000001800cf8d",
+      "author": "到处玩的小卡拉咪",
+      "likes_text": "5256",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/f7bb5e441c899198ce161a5a4e47a0d5/notes_pre_post/1040g3k831d3smtur10105n4u2njk6m0pmu26r58!nc_n_webp_mw_1",
+      "likes": 5256
+    },
+    {
+      "title": "本地人的太原旅游建议（景点篇）",
+      "href": "https://www.xiaohongshu.com/explore/689195db000000002502a0bb",
+      "author": "玉宇无痕",
+      "likes_text": "2441",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/919f408448ca3d76a52bd113d9ab3d32/notes_pre_post/1040g3k031kpro0k53q605n8fbfa47mao956mg08!nc_n_webp_mw_1",
+      "likes": 2441
+    },
+    {
+      "title": "晋祠东门进出攻略：免费公园+博物院打卡！",
+      "href": "https://www.xiaohongshu.com/explore/6962f980000000000e00ec33",
+      "author": "太阳是我啃圆的",
+      "likes_text": "1236",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/f51bada585411eef15218189221ad4f2/1040g00831r6adk0mng205oeteg8415ocoujo1r0!nc_n_webp_mw_1",
+      "likes": 1236
+    },
+    {
+      "title": "晋祠公园|免费在皇家园林露营遛娃攻略",
+      "href": "https://www.xiaohongshu.com/explore/6815e60300000000210050a2",
+      "author": "宇文大大",
+      "likes_text": "789",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/e3b298c59ce10ffc7ccfff8a599b6491/1040g00831h0sbatv3i5g5n4jb604kf6mn5g5sng!nc_n_webp_mw_1",
+      "likes": 789
+    },
+    {
+      "title": "晋祠怎么玩⁉️一篇讲清门票+路线+避坑攻略",
+      "href": "https://www.xiaohongshu.com/explore/69b13471000000000600d439",
+      "author": "YES谷子",
+      "likes_text": "298",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/fb52c2f8098c46ab874924959e84f540/notes_pre_post/1040g3k031tinq6uilm405n9iba8lkfkgbkj9be8!nc_n_webp_mw_1",
+      "likes": 298
+    }
+  ],
+  "harvested_at": "2026-04-20T15:46:02"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 594,
+  "name": "吴裕泰茶庄",
+  "file": "js/data-beijing-tales.js",
+  "query": "吴裕泰茶庄 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京伴手礼小记～",
+      "href": "https://www.xiaohongshu.com/explore/68384de1000000000303b1f9",
+      "author": "今天你study了吗",
+      "likes_text": "1860",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/1ff1248180d5bb718ac4596be5650cc9/1040g00831i2llngs7a005nna585g81a3r3ktju0!nc_n_webp_mw_1",
+      "likes": 1860
+    },
+    {
+      "title": "继抹茶冰淇淋之后，吴裕泰又一伟大单品！！",
+      "href": "https://www.xiaohongshu.com/explore/693e62c4000000001e034266",
+      "author": "koler苏打粉🥕",
+      "likes_text": "1105",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/254b29a537c134db493cea18f1e4accf/notes_pre_post/1040g3k031q2jpi9c7u20494c7gsaah4d4r61d4o!nc_n_webp_mw_1",
+      "likes": 1105
+    },
+    {
+      "title": "北京📍风很大的吴裕泰 明明软心酥更好吃🥹",
+      "href": "https://www.xiaohongshu.com/explore/67d2cd97000000001d014a92",
+      "author": "亿点点小脚丫",
+      "likes_text": "736",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/c1ae14e40e51af80f7ed102065d42681/notes_pre_post/1040g3k831evhqrdi6s7049sjevqmk0ad877e580!nc_n_webp_mw_1",
+      "likes": 736
+    },
+    {
+      "title": "选购北京茉莉花茶的保姆级教程",
+      "href": "https://www.xiaohongshu.com/explore/6838475600000000220251a0",
+      "author": "哦哟哟",
+      "likes_text": "564",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/0479f5b943abefd072cdd494c73775f0/notes_pre_post/1040g3k831i2kc1237ed040o5abpurvpd693cgso!nc_n_webp_mw_1",
+      "likes": 564
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/68b6c631000000001d020499",
+      "author": "胡同口马大爷",
+      "likes_text": "504",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/ee337ceca3b111705fad9cb8b8f9073e/1040g2sg31lu5lj36lmcg4a5fertaei9muqf0980!nc_n_webp_mw_1",
+      "likes": 504
+    }
+  ],
+  "harvested_at": "2026-04-20T16:21:42"
+}

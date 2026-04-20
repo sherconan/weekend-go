@@ -1,0 +1,50 @@
+{
+  "id": 507,
+  "name": "中国电影博物馆",
+  "file": "js/data-beijing-hidden.js",
+  "query": "中国电影博物馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京📍果然最牛逼的地方都是免费的",
+      "href": "https://www.xiaohongshu.com/explore/697e1acf000000001a02e521",
+      "author": "别抢我的小花卷",
+      "likes_text": "6352",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/7eea522cd2aab7bef0dc7e73c5195afa/notes_uhdr/1040g3qg31s0qvno2kc0g5p6c2vqiovdsfba0h2o!nc_n_webp_mw_1",
+      "likes": 6352
+    },
+    {
+      "title": "⚠️去北京电影博物馆前必看这篇🔥吐血整理",
+      "href": "https://www.xiaohongshu.com/explore/686a99a20000000012031201",
+      "author": "小啤酒儿🍺",
+      "likes_text": "1097",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/745cc60b70d699059e6fa46949140882/notes_pre_post/1040g3k831jjoh0i9iob04a4usneibdrfk510pr0!nc_n_webp_mw_1",
+      "likes": 1097
+    },
+    {
+      "title": "中国电影博物馆全攻略",
+      "href": "https://www.xiaohongshu.com/explore/68acee31000000001d005aad",
+      "author": "叶子",
+      "likes_text": "628",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/0794e851a9d854038618cf0d3a4c01c8/1040g00831lki3q4v4q6g5n33h1o4gncpf3plsdo!nc_n_webp_mw_1",
+      "likes": 628
+    },
+    {
+      "title": "中国电影博物馆玩逛攻略",
+      "href": "https://www.xiaohongshu.com/explore/697f4228000000001a02fe02",
+      "author": "墨菲",
+      "likes_text": "407",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/65544987196816681f3b8f465dfc3bf9/notes_pre_post/1040g3k831s1usjmqki00447ibsiee7e68hc2rt8!nc_n_webp_mw_1",
+      "likes": 407
+    },
+    {
+      "title": "‼️离开北京前一定要去一次这个免费的博物馆",
+      "href": "https://www.xiaohongshu.com/explore/693597f6000000000d036f4b",
+      "author": "明明游记",
+      "likes_text": "390",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201607/7d33a1a0ae9ec74ee54ae7a147a3780f/notes_uhdr/1040g3qo31pq11br5la1g48qqmbjre3u8e8cch7g!nc_n_webp_mw_1",
+      "likes": 390
+    }
+  ],
+  "harvested_at": "2026-04-20T16:07:12"
+}

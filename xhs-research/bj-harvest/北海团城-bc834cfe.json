@@ -1,0 +1,50 @@
+{
+  "id": 485,
+  "name": "北海团城",
+  "file": "js/data-beijing-hidden.js",
+  "query": "北海团城 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北海团城！三大国宝，一块钱的门票",
+      "href": "https://www.xiaohongshu.com/explore/67b7b758000000002900fd1d",
+      "author": "蒙曼",
+      "likes_text": "2322",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/b64f71023c78e91a3797f5a945bc5e88/1040g2sg31e53c14qh6dg5ov6sdq9i8880v9haig!nc_n_webp_mw_1",
+      "likes": 2322
+    },
+    {
+      "title": "北海公园旅行攻略",
+      "href": "https://www.xiaohongshu.com/explore/68d3ce85000000001301e21f",
+      "author": "Lady 瓜瓜",
+      "likes_text": "1729",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/812e1da5be2fa4ff61eb4e6358a21505/notes_pre_post/1040g3k831mpaeh4j6md04a4914t54a3f1o8i6p8!nc_n_webp_mw_1",
+      "likes": 1729
+    },
+    {
+      "title": "北海公园｜大名鼎鼎团城三白开了4.7实拍攻略",
+      "href": "https://www.xiaohongshu.com/explore/69d497b80000000021006b93",
+      "author": "PG乐桃桃",
+      "likes_text": "888",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/a7ace8768d4cbc581444d8b8e3aa4968/1040g2sg31uluq806hme05piroqo0u2r1e5qa8a0!nc_n_webp_mw_1",
+      "likes": 888
+    },
+    {
+      "title": "北海公园攻略｜8处秘境，看这1篇就够了",
+      "href": "https://www.xiaohongshu.com/explore/68d653ae000000001202defb",
+      "author": "妞一扭",
+      "likes_text": "754",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/272926f3d0fb15ba375d649c7d548ebc/1040g00831msuv3si4q0g5nqddffg870ul2n11bg!nc_n_webp_mw_1",
+      "likes": 754
+    },
+    {
+      "title": "只有走遍这8️⃣大秘境，北海公园才不算白来",
+      "href": "https://www.xiaohongshu.com/explore/695633740000000022021d18",
+      "author": "Shirley雪梨酱",
+      "likes_text": "750",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201603/0406a5fc0ca76c96afcf3ebc5e78ae4f/notes_pre_post/1040g3k031qps0ke4nu004a19omhde4deju8iftg!nc_n_webp_mw_1",
+      "likes": 750
+    }
+  ],
+  "harvested_at": "2026-04-20T16:03:36"
+}
