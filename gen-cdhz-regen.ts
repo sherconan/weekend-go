@@ -3,18 +3,15 @@ import { spawn, execSync } from "child_process";
 
 const ROOT = "/Users/sherconan/weekend-go";
 const SKILL = "/Users/sherconan/.claude/skills/baoyu-danger-gemini-web/scripts/main.ts";
-// Allow overriding queue file via --queue arg (default: full suzhou-regen-queue.json)
-const qIdx = process.argv.indexOf("--queue");
-const QUEUE_FILE = qIdx >= 0 ? process.argv[qIdx + 1] : `${ROOT}/suzhou-regen-queue.json`;
-const queue: { file: string; name: string; prompt: string; city: string }[] = JSON.parse(
-  readFileSync(QUEUE_FILE, "utf-8")
+const queue: { id: number; file: string; name: string; prompt: string; city: string }[] = JSON.parse(
+  readFileSync(`${ROOT}/cdhz-regen-queue.json`, "utf-8")
 );
 
 const args = process.argv.slice(2);
 const start = args.indexOf("--start") >= 0 ? +args[args.indexOf("--start") + 1] : 0;
 const limit = args.indexOf("--limit") >= 0 ? +args[args.indexOf("--limit") + 1] : queue.length;
 const testOnly = args.includes("--test");
-const onlyPrimitive = args.includes("--only-primitive");
+const force = args.includes("--force");
 const delayMs = 5000;
 
 function callSkill(prompt: string, pngTmp: string): Promise<{ code: number | null; stderr: string }> {
@@ -42,13 +39,11 @@ function callSkill(prompt: string, pngTmp: string): Promise<{ code: number | nul
 async function genOne(item: typeof queue[0], idx: number): Promise<boolean> {
   const pngTmp = `/tmp/pr-${item.file.replace(/\.webp$/, "")}.png`;
   const webpOut = `${ROOT}/assets/images/${item.file}`;
-  const pbPath = `${ROOT}/assets/images-suzhou-backup/${item.file}`;
 
-  if (onlyPrimitive && existsSync(webpOut) && existsSync(pbPath)) {
-    if (statSync(webpOut).size !== statSync(pbPath).size) {
-      console.log(`[${idx + 1}/${queue.length}] skip (already regenerated) ${item.file}`);
-      return true;
-    }
+  // Skip if already generated (>50KB = real image)
+  if (!force && existsSync(webpOut) && statSync(webpOut).size > 50_000) {
+    console.log(`[${idx + 1}/${queue.length}] skip (exists) ${item.file} ${(statSync(webpOut).size/1024).toFixed(0)}KB`);
+    return true;
   }
 
   const MAX_ATTEMPTS = 3;
@@ -63,7 +58,7 @@ async function genOne(item: typeof queue[0], idx: number): Promise<boolean> {
     if (size < 50000) {
       const authFail = /AuthError|Failed to refresh cookies|401/.test(stderr);
       if (authFail) {
-        console.log(`[${idx + 1}/${queue.length}] 🔑 auth expired, refreshing cookies from main Chrome...`);
+        console.log(`[${idx + 1}/${queue.length}] 🔑 auth expired, refreshing cookies...`);
         try {
           const r = execSync(`python3 "${ROOT}/refresh-gemini-cookies.py"`, { encoding: "utf8" });
           console.log(`  ${r.trim()}`);
@@ -111,13 +106,13 @@ async function genOne(item: typeof queue[0], idx: number): Promise<boolean> {
       return false;
     }
   }
-  console.log(`[${idx + 1}/${queue.length}] ❌ ${item.name} (${item.file}) gave up after 2 attempts`);
+  console.log(`[${idx + 1}/${queue.length}] ❌ ${item.name} (${item.file}) gave up after ${MAX_ATTEMPTS} attempts`);
   return false;
 }
 
 async function main() {
   const batch = queue.slice(start, start + limit);
-  console.log(`Running ${batch.length} items, start=${start}, delay=${delayMs}ms`);
+  console.log(`Running ${batch.length} CD/HZ items, start=${start}, delay=${delayMs}ms`);
   let ok = 0, fail = 0;
   const failed: string[] = [];
   for (let i = 0; i < batch.length; i++) {

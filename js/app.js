@@ -1278,7 +1278,8 @@ function jumpToResult(idx) {
   if (!it) return;
   closeSearch();
   if (it.type === 'legend') {
-    if (currentCity !== 'beijing') switchCity('beijing');
+    const targetCity = it.city || 'beijing';
+    if (currentCity !== targetCity) switchCity(targetCity);
     if (!isOtherSide() && typeof flipWorld === 'function') flipWorld();
     setTimeout(() => {
       if (typeof openLegendDetail === 'function') openLegendDetail(it.id);
