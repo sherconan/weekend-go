@@ -56,7 +56,7 @@
         <button class="search-close" onclick="closeSearch()" aria-label="关闭">✕</button>
       </div>
       <div class="search-meta" id="search-meta">在北京 · 共 0 个结果</div>
-      <div class="search-advanced" id="search-advanced" style="padding:10px 20px 2px;border-bottom:1px solid #f0f2f5;display:none;">
+      <div class="search-advanced" id="search-advanced" style="padding:10px 20px 2px;border-bottom:1px solid var(--border-light);display:none;">
         <div class="search-adv-row">
           <span class="search-adv-lbl">距离 ≤</span>
           <input type="range" id="search-dist" min="0" max="500" step="10" value="500" style="flex:1;accent-color:#FF7043;">
@@ -80,7 +80,7 @@
           </select>
         </div>
       </div>
-      <button id="search-adv-toggle" style="background:none;border:none;color:#667085;font-size:12px;padding:6px 20px 4px;cursor:pointer;text-align:left;width:100%;">⚙️ 高级筛选 <span id="search-adv-caret">▼</span></button>
+      <button id="search-adv-toggle" style="background:none;border:none;color:var(--text-muted);font-size:12px;padding:6px 20px 4px;cursor:pointer;text-align:left;width:100%;">⚙️ 高级筛选 <span id="search-adv-caret">▼</span></button>
       <div class="search-facets" id="search-facets"></div>
       <div class="search-results" id="search-results"></div>
       <div class="search-hot" id="search-hot"></div>
@@ -88,7 +88,7 @@
         <span><kbd>↑↓</kbd> 切换</span>
         <span><kbd>Enter</kbd> 打开</span>
         <span><kbd>Esc</kbd> 关闭</span>
-        <span style="margin-left:auto;color:#999">Tip: 空格分隔多关键词</span>
+        <span style="margin-left:auto;color:var(--text-muted)">Tip: 空格分隔多关键词</span>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@
         <span id="season-emoji">🌸</span>
         <span id="season-title">本季精选</span>
       </h2>
-      <span id="season-subtitle" style="font-size:13px;color:#667085;"></span>
+      <span id="season-subtitle" style="font-size:13px;color:var(--text-muted);"></span>
     </div>
     <div id="season-cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;"></div>
   </section>
@@ -364,19 +364,19 @@
   </div>
 
   <!-- Scripts -->
-  <footer class="site-footer" style="padding:40px 24px; text-align:center; color:#888; font-size:13px; margin-top:60px; border-top:1px solid #eee">
+  <footer class="site-footer" style="padding:40px 24px; text-align:center; color:var(--text-muted); font-size:13px; margin-top:60px; border-top:1px solid var(--border)">
     <div>周末去哪儿 · 8 城 · 800+ 目的地 · 230+ 传说</div>
     <div style="margin-top:10px">
       <a href="planner.html" style="color:#FF7043; text-decoration:none; margin:0 8px; font-weight:700">🗺 行程规划器</a>
-      <span style="color:#ccc">·</span>
+      <span style="color:var(--text-muted)">·</span>
       <a href="compare.html" style="color:#FF7043; text-decoration:none; margin:0 8px">⚖️ 对比</a>
-      <span style="color:#ccc">·</span>
+      <span style="color:var(--text-muted)">·</span>
       <a href="achievements.html" style="color:#FFC107; text-decoration:none; margin:0 8px; font-weight:700">🏆 成就</a>
-      <span style="color:#ccc">·</span>
+      <span style="color:var(--text-muted)">·</span>
       <a href="stats.html" style="color:#4CAF50; text-decoration:none; margin:0 8px">📊 数据一览</a>
-      <span style="color:#ccc">·</span>
+      <span style="color:var(--text-muted)">·</span>
       <a href="#" onclick="document.querySelector('.nav-btn--icon')?.click();return false;" style="color:#4CAF50; text-decoration:none; margin:0 8px">🔍 搜索</a>
-      <span style="color:#ccc">·</span>
+      <span style="color:var(--text-muted)">·</span>
       <a href="#" onclick="flipWorld();return false;" style="color:#4CAF50; text-decoration:none; margin:0 8px">🌑 另一面</a>
     </div>
   </footer>

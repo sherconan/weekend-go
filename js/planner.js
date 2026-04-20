@@ -656,7 +656,7 @@
       html += `</div>`;
     }
 
-    const todayISO = new Date().toISOString().slice(0,10);
+    const todayISO = toLocalISODate(new Date());
     html += `
       <div style="background:var(--surface);border-radius:12px;padding:12px 14px;margin:12px 0;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-sm);font-size:13px;">
         <span style="color:var(--ink-500);">📅 出发日期</span>
@@ -680,13 +680,16 @@
     document.getElementById('copy-btn').addEventListener('click', () => copyPlanText(plan));
     document.getElementById('ics-btn').addEventListener('click', () => {
       const startDateInp = document.getElementById('plan-start-date');
-      const startDate = startDateInp ? startDateInp.value : new Date().toISOString().slice(0,10);
+      const startDate = startDateInp ? startDateInp.value : toLocalISODate(new Date());
       exportICS(plan, startDate);
     });
   }
 
   // ---------- ICS (iCalendar) export ----------
   function padZ(n) { return String(n).padStart(2, '0'); }
+  function toLocalISODate(d) {
+    return `${d.getFullYear()}-${padZ(d.getMonth() + 1)}-${padZ(d.getDate())}`;
+  }
   function isoToICSDate(isoDate, hourFloat) {
     // isoDate: "2026-04-20", hourFloat: 9.5 → "20260420T093000"
     const [y, m, d] = isoDate.split('-').map(Number);
@@ -697,7 +700,7 @@
   function addDaysISO(isoDate, n) {
     const d = new Date(isoDate + 'T00:00:00');
     d.setDate(d.getDate() + n);
-    return d.toISOString().slice(0,10);
+    return toLocalISODate(d);
   }
   function icsEscape(s) {
     return String(s || '').replace(/[\\;,]/g, m => '\\' + m).replace(/\n/g, '\\n');
