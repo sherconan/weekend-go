@@ -1,0 +1,50 @@
+{
+  "id": 531,
+  "name": "北新桥锁龙井",
+  "file": "js/data-beijing-tales.js",
+  "query": "北新桥锁龙井 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北新桥的镇龙传说～还是得北京人讲",
+      "href": "https://www.xiaohongshu.com/explore/688ed4de0000000003024112",
+      "author": "桐槿潇潇",
+      "likes_text": "2362",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/49b93b3366085d7a6d95b23a8e1658f9/notes_pre_post/1040g3k831kn5na50306g4bj6e2s4er458ttouko!nc_n_webp_mw_1",
+      "likes": 2362
+    },
+    {
+      "title": "8分钟揭秘锁龙井，您不知道的老北京的传说",
+      "href": "https://www.xiaohongshu.com/explore/682c8dec000000002300ebe5",
+      "author": "紫禁城小圆",
+      "likes_text": "620",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/a25b483182dc4124a62d0b5fb7ce129b/1040g00831hn6ego5ja005om9ai70vuo4ih67j80!nc_n_webp_mw_1",
+      "likes": 620
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/67e3cbc0000000001203cc08",
+      "author": "李导说北京",
+      "likes_text": "614",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/6b7102caf44b74183a570e860f6a1aeb/1040g00831fg4mqcfmi004a5el4eass4njmpoodg!nc_n_webp_mw_1",
+      "likes": 614
+    },
+    {
+      "title": "胡同识遗珍76 这就是北新桥的那口锁龙井",
+      "href": "https://www.xiaohongshu.com/explore/663f8da1000000001e02c8d2",
+      "author": "蓝大老爷",
+      "likes_text": "371",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/a60a74ac0149909da5767505ff2de37b/1040g2sg312lo90581scg5o16gvog9d5iia1uh90!nc_n_webp_mw_1",
+      "likes": 371
+    },
+    {
+      "title": "北新桥锁龙井 听听北京大爷大妈怎么说",
+      "href": "https://www.xiaohongshu.com/explore/689c1e1f000000001d0227c4",
+      "author": "京城老肖",
+      "likes_text": "340",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/c466b97e3bb31580f28a52b66a32b6fc/1040g00831l44sef332e04atl641blu3pq6aduio!nc_n_webp_mw_1",
+      "likes": 340
+    }
+  ],
+  "harvested_at": "2026-04-20T16:10:22"
+}

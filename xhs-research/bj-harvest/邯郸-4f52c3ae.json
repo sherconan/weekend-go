@@ -1,0 +1,50 @@
+{
+  "id": 315,
+  "name": "邯郸",
+  "file": "js/data-beijing-500.js",
+  "query": "邯郸 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "推荐一个绝对冷门，但超级震撼的地方",
+      "href": "https://www.xiaohongshu.com/explore/68d25591000000000b010558",
+      "author": "memory的旅行日记",
+      "likes_text": "1417",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/b2320730e14af10204cf3cf534bb3465/notes_pre_post/1040g3k831mordhh85i804a2rksvnihp7j5om598!nc_n_webp_mw_1",
+      "likes": 1417
+    },
+    {
+      "title": "打卡国家地理东太行",
+      "href": "https://www.xiaohongshu.com/explore/6996f866000000001a03364b",
+      "author": "海豚HAITUN",
+      "likes_text": "1388",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/d71bf9cab1c79aee70c20daad68daa4c/1040g2sg31sp3pit8lk705n8r13ilhe8sv4kh7no!nc_n_webp_mw_1",
+      "likes": 1388
+    },
+    {
+      "title": "三千多年的风雨古城，邯郸不虚此行...",
+      "href": "https://www.xiaohongshu.com/explore/68e8de780000000003036294",
+      "author": "游游小记",
+      "likes_text": "1252",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/53b7c4da5f6342852ff534cbf8d0b7ec/notes_pre_post/1040g3k031nf3boib5m205oeen31k0pc8pavr4b8!nc_n_webp_mw_1",
+      "likes": 1252
+    },
+    {
+      "title": "国庆反向旅游❗️一个绝对冷门且震撼的地方❗️",
+      "href": "https://www.xiaohongshu.com/explore/68d28b06000000001003d7a5",
+      "author": "李慕白",
+      "likes_text": "1101",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/a3b88185395f1fcd28d06ec68b2172ee/notes_pre_post/1040g3k031mqlh23q6me05n84cdc47oiuqrhjmbg!nc_n_webp_mw_1",
+      "likes": 1101
+    },
+    {
+      "title": "节假日逃离北京计划5—河北邯郸（2天1夜）",
+      "href": "https://www.xiaohongshu.com/explore/68aef48b000000001b02390f",
+      "author": "Again张",
+      "likes_text": "861",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201528/1c24aaf7fb849da3c490a0515d18e194/spectrum/1040g34o31lmhci9l504049fmeh6qjosf52f8ii0!nc_n_webp_mw_1",
+      "likes": 861
+    }
+  ],
+  "harvested_at": "2026-04-20T15:28:47"
+}

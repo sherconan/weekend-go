@@ -1,0 +1,50 @@
+{
+  "id": 456,
+  "name": "柳荫公园",
+  "file": "js/data-beijing-hidden.js",
+  "query": "柳荫公园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "不愧是北京我最喜欢的公园",
+      "href": "https://www.xiaohongshu.com/explore/69db580b000000001d01953e",
+      "author": "贺矜持",
+      "likes_text": "593",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/7fd24cadf808952650c1e1648ad81586/notes_pre_post/1040g3k031urs360mj44040169r22hi9b0scs7g8!nc_n_webp_mw_1",
+      "likes": 593
+    },
+    {
+      "title": "北京公园评测｜城市田园🏞️柳荫公园",
+      "href": "https://www.xiaohongshu.com/explore/68306f2d000000002102eaa7",
+      "author": "PICUS",
+      "likes_text": "135",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/5a86f8238a17abb43bde2c51bfffea99/1040g00831hqvpn463q005oo4rfikhpub6t3136g!nc_n_webp_mw_1",
+      "likes": 135
+    },
+    {
+      "title": "小友自然大会｜遛娃地挑战4️⃣3️⃣：柳荫公园",
+      "href": "https://www.xiaohongshu.com/explore/6836c6fb000000002100b548",
+      "author": "董老板很爱买",
+      "likes_text": "37",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/26f5711db87702c0e1ee5067c61bc094/1040g2sg31i160pqcn0705nquvdf091rkl9jpqc0!nc_n_webp_mw_1",
+      "likes": 37
+    },
+    {
+      "title": "毕业季写论文的都看过来！",
+      "href": "https://www.xiaohongshu.com/explore/69b23e24000000002603f31a",
+      "author": "-宸熹-",
+      "likes_text": "22",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/9486e06640bfda0c82ab3eb860054bac/notes_pre_post/1040g3k831tjoadnqmo705obfror0j7n63m6o0cg!nc_n_webp_mw_1",
+      "likes": 22
+    },
+    {
+      "title": "北京❗️藏身三环的免费田园秘境，一键治愈💖",
+      "href": "https://www.xiaohongshu.com/explore/681c875b000000001200420f",
+      "author": "哇塞北京",
+      "likes_text": "17",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/6663bf16c83d0dca4b8dc778c97f060f/notes_pre_post/1040g3k831h7hmbmi3se05nnf2ct08u9ggfdpj00!nc_n_webp_mw_1",
+      "likes": 17
+    }
+  ],
+  "harvested_at": "2026-04-20T15:58:05"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 602,
+  "name": "天子大酒店福禄寿",
+  "file": "js/data-beijing-tales.js",
+  "query": "天子大酒店福禄寿 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "挑战！带女朋友在福禄寿酒店住一晚！",
+      "href": "https://www.xiaohongshu.com/explore/69992f11000000000d00b50e",
+      "author": "勤开心日记",
+      "likes_text": "24万",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201623/92fa891bfee56182cb2af40f80e0a1b7/1040g2sg31sr95l3362e05o6cc04o4sjsf769bmo!nc_n_webp_mw_1",
+      "likes": 240000
+    },
+    {
+      "title": "燕郊天子大酒店福禄寿酒店开业了",
+      "href": "https://www.xiaohongshu.com/explore/66f7ffc6000000001902d639",
+      "author": "阿牛设计",
+      "likes_text": "2218",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201623/ca5eaa3302cae39368635081a23209c5/1040g2sg3189s6tndju704ae0s33v95qbnrsdi10!nc_n_webp_mw_1",
+      "likes": 2218
+    },
+    {
+      "title": "国内最奇葩酒店，福禄寿酒店，桃子房四位数",
+      "href": "https://www.xiaohongshu.com/explore/69ad6fb0000000001b01ec3b",
+      "author": "巴克TheBuck",
+      "likes_text": "1449",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201623/303a2cf53d9d8f2b0c6cf5f0d3d4d142/1040g2sg31tf22hrelml05nqoip2g8nlse6uc3rg!nc_n_webp_mw_1",
+      "likes": 1449
+    },
+    {
+      "title": "廊坊三河|谁能想到福禄寿酒店藏在小区深处",
+      "href": "https://www.xiaohongshu.com/explore/699907550000000015022f2e",
+      "author": "雪莉杨Sherry",
+      "likes_text": "783",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201623/f78019d4567d6588fd18a59cabd3f91b/notes_pre_post/1040g3k031sr4ccrs5s00400q9pcn0jcducc1mao!nc_n_webp_mw_1",
+      "likes": 783
+    },
+    {
+      "title": "难以想象！这福气满满的建筑竟然是酒店",
+      "href": "https://www.xiaohongshu.com/explore/6777f0cf000000000800dd2a",
+      "author": "张一航",
+      "likes_text": "764",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201623/3f3744ec2196418d882ebc7b96616559/1040g2sg31c6qcehn10705ou2bolpte6h2k1v8v0!nc_n_webp_mw_1",
+      "likes": 764
+    }
+  ],
+  "harvested_at": "2026-04-20T16:23:34"
+}

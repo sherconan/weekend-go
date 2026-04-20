@@ -1,0 +1,50 @@
+{
+  "id": 545,
+  "name": "中南海邮局",
+  "file": "js/data-beijing-tales.js",
+  "query": "中南海邮局 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "中南海邮局跑戳",
+      "href": "https://www.xiaohongshu.com/explore/6730b540000000003c01f2a3",
+      "author": "嘉院集邮之家",
+      "likes_text": "294",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/52eaf333fed59b889c11145d2f4f3857/1040g00831a18bpoen2005n4i47a4nmv3shovnkg!nc_n_webp_mw_1",
+      "likes": 294
+    },
+    {
+      "title": "集戳打卡21-北京中南海邮政支局",
+      "href": "https://www.xiaohongshu.com/explore/64dfa7a8000000000b02bf1d",
+      "author": "种花兔",
+      "likes_text": "98",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/5d6e82c74e47832ea47455ca710d1c80/spectrum/1040g0k030nu3bpd41c005oqrlcbmbj487ackpeo!nc_n_webp_mw_1",
+      "likes": 98
+    },
+    {
+      "title": "北京中南海邮局寄明信片体验",
+      "href": "https://www.xiaohongshu.com/explore/6551f2160000000032039e18",
+      "author": "快乐时光",
+      "likes_text": "95",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/1b5ed0098abd2da35e757cabaeb9842e/1040g2sg30rdn1fcdhi4g5o8vq5v090bg2la6l2g!nc_n_webp_mw_1",
+      "likes": 95
+    },
+    {
+      "title": "中南海邮局日戳",
+      "href": "https://www.xiaohongshu.com/explore/67aa8d8e000000002903ea2d",
+      "author": "湛金的眼泪",
+      "likes_text": "91",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/89d1c80493897886a68ddc9b67e71871/1040g2sg31do80p1b0c705oph0a46dt4lranm4qo!nc_n_webp_mw_1",
+      "likes": 91
+    },
+    {
+      "title": "跑戳～天安门邮局",
+      "href": "https://www.xiaohongshu.com/explore/693eb5fa000000001d03f539",
+      "author": "贪玩儿的舒克",
+      "likes_text": "54",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201612/9b4ffdab98026414d25f4658be6838b6/notes_pre_post/1040g3k031q2samipn0705o192r4g8ib8rvg5bn8!nc_n_webp_mw_1",
+      "likes": 54
+    }
+  ],
+  "harvested_at": "2026-04-20T16:12:18"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 460,
+  "name": "团结湖公园",
+  "file": "js/data-beijing-hidden.js",
+  "query": "团结湖公园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "团结湖有自己的佛罗里达",
+      "href": "https://www.xiaohongshu.com/explore/69c0caf5000000001a031ecc",
+      "author": "鱼晚点",
+      "likes_text": "4547",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/5058f8bf19a30e4a3e0892671837bf82/note_pre_post_uhdr/1040g3r831u1upk4l7q704b8mfajkcesdia9vkqg!nc_n_webp_mw_1",
+      "likes": 4547
+    },
+    {
+      "title": "团结湖落日飞车｜多玩几次不就相当于免费🤫",
+      "href": "https://www.xiaohongshu.com/explore/69ad71b60000000015023b7e",
+      "author": "不说话的葵酱",
+      "likes_text": "1884",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/13e99ab34a0df47640c1cd73aa7aece6/1040g2sg31tf0g21h68e05oa2ses7vij1sg1upj0!nc_n_webp_mw_1",
+      "likes": 1884
+    },
+    {
+      "title": "真好北京也有自己的lalaland🪅🫧",
+      "href": "https://www.xiaohongshu.com/explore/69da4b6e000000001e00e7b6",
+      "author": "正经小朱",
+      "likes_text": "1453",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/4e80cd907482ef2b44e1825468a3791c/notes_uhdr/1040g3qo31uqru2jeig005nefea708n1ku3ce9o8!nc_n_webp_mw_1",
+      "likes": 1453
+    },
+    {
+      "title": "糊里糊涂撞到团结湖公园指南",
+      "href": "https://www.xiaohongshu.com/explore/69c3dcd2000000002003aa48",
+      "author": "欢迎光林呀",
+      "likes_text": "1319",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/6a11ecb751727c4f8c84814b62659ded/notes_uhdr/1040g3qo31u4tnf602io05n6qnodlgddmaf3sk5o!nc_n_webp_mw_1",
+      "likes": 1319
+    },
+    {
+      "title": "🌊不在海岸，就在团结湖公园🎠",
+      "href": "https://www.xiaohongshu.com/explore/69d343b4000000001d01ce39",
+      "author": "小象不小",
+      "likes_text": "626",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201558/78bc3504953cab6314c354f4a41b7e83/1040g00831ujvonbmhu004007cctfa698edtghs8!nc_n_webp_mw_1",
+      "likes": 626
+    }
+  ],
+  "harvested_at": "2026-04-20T15:58:42"
+}

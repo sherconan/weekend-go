@@ -1,0 +1,50 @@
+{
+  "id": 348,
+  "name": "北京大学/清华大学参观",
+  "file": "js/data-beijing-500.js",
+  "query": "北京大学/清华大学参观 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "清华北大预约攻略",
+      "href": "https://www.xiaohongshu.com/explore/6962f89e000000002103f496",
+      "author": "蓝莓味乖乖女",
+      "likes_text": "596",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201533/23ac9bd1604223a0632deae1d2320c30/notes_pre_post/1040g3k831r6b274f7g005nr8c3egbgp89f6df6o!nc_n_webp_mw_1",
+      "likes": 596
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/686e42050000000012016aa8",
+      "author": "扶疏",
+      "likes_text": "385",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201533/b56bc8d2553963e8e643cf742b43053b/notes_pre_post/1040g3k031jnb8n0via2g5ovc9nopi702rm1oqlg!nc_n_webp_mw_1",
+      "likes": 385
+    },
+    {
+      "title": "实测北大生潜入Thu成功💜",
+      "href": "https://www.xiaohongshu.com/explore/69b5197c000000002103a136",
+      "author": "Blingling",
+      "likes_text": "275",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201533/7662eb3f0c688cb08974764f6d997d7a/notes_pre_post/1040g3k031tmh8s46n80g5p5509p43v8si5nsdog!nc_n_webp_mw_1",
+      "likes": 275
+    },
+    {
+      "title": "北京大学一日游攻略！",
+      "href": "https://www.xiaohongshu.com/explore/69834103000000000e03c21b",
+      "author": "free",
+      "likes_text": "241",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201533/188286f885f3338eb27ece46a001ba8a/1040g2sg31s5rt2m4lskg5o61s2m086k1697ahug!nc_n_webp_mw_1",
+      "likes": 241
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/68984f4100000000020000d5",
+      "author": "洋子",
+      "likes_text": "218",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201533/f7e8a4abad2049d8f045837cfa8b72d8/1040g00831l0dro532u704baak0ovvlg4glqthp0!nc_n_webp_mw_1",
+      "likes": 218
+    }
+  ],
+  "harvested_at": "2026-04-20T15:34:03"
+}

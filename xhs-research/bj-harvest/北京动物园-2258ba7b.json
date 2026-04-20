@@ -1,0 +1,50 @@
+{
+  "id": 333,
+  "name": "北京动物园",
+  "file": "js/data-beijing-500.js",
+  "query": "北京动物园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "🐼北京动物园攻略🔥附保姆级路线+避雷指南❌",
+      "href": "https://www.xiaohongshu.com/explore/67e680f9000000000302a7c7",
+      "author": "Cheese 少女（成长版）",
+      "likes_text": "1520",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/d545f3073a86d4988f82450541d1494f/notes_pre_post/1040g3k031fipbk7rnq5g48t0sh30572kjtei38o!nc_n_webp_mw_1",
+      "likes": 1520
+    },
+    {
+      "title": "北京动物园“顶流”萌兰全攻略❗️一篇就够",
+      "href": "https://www.xiaohongshu.com/explore/69355da0000000001e035c76",
+      "author": "静静嗨皮日记",
+      "likes_text": "718",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/2bf74028b669c39bb1d105c54dc3a1f6/notes_pre_post/1040g3k831pppdhv84g005q0lpfb3jt90cmr3gag!nc_n_webp_mw_1",
+      "likes": 718
+    },
+    {
+      "title": "北京动物园10元门票的背后，是心疼和无奈",
+      "href": "https://www.xiaohongshu.com/explore/6927a6ce000000001e025173",
+      "author": "yy玩不够",
+      "likes_text": "644",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/943dac9919467d0de2546207a11b1bdf/notes_pre_post/1040g3k831pccv82s2ud0499g6agagr0ctncan90!nc_n_webp_mw_1",
+      "likes": 644
+    },
+    {
+      "title": "北京动物园游玩攻略👣祛魅了😔",
+      "href": "https://www.xiaohongshu.com/explore/699ea4b2000000001d026a7d",
+      "author": "大喜兔乖乖",
+      "likes_text": "349",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/63eae91ad6809b906c82503f2c2f2d82/1040g00831t0k0jaglm5g4bpa606vh6p9jaah0eg!nc_n_webp_mw_1",
+      "likes": 349
+    },
+    {
+      "title": "北京动物园暴走2万步总结！",
+      "href": "https://www.xiaohongshu.com/explore/68f0f9060000000007030edd",
+      "author": "不吃破香菜",
+      "likes_text": "339",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201530/97fd400ba93e716f893b722bac17c5d3/1040g00831nn0k1pg4s204a05keihsv94990qbo0!nc_n_webp_mw_1",
+      "likes": 339
+    }
+  ],
+  "harvested_at": "2026-04-20T15:30:40"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 322,
+  "name": "盘锦红海滩",
+  "file": "js/data-beijing-500.js",
+  "query": "盘锦红海滩 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "全世界独一份的红海滩！错过了便要再等一年",
+      "href": "https://www.xiaohongshu.com/explore/68ab2eba000000001d013a68",
+      "author": "无声单身狗",
+      "likes_text": "493",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/f83d8f8774aa6b43448301618ca205f4/1040g2sg31ln9ognr50kg5n7o98fpdhutkklmjpg!nc_n_webp_mw_1",
+      "likes": 493
+    },
+    {
+      "title": "本山大叔没骗我，东北真的有“红浪漫”",
+      "href": "https://www.xiaohongshu.com/explore/68db4b3200000000040115d3",
+      "author": "寻音",
+      "likes_text": "427",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/c25c3835a489293b6674c15c1bed844b/notes_pre_post/1040g3k831n1r4okd6g005o47c39g92ijpvm2pso!nc_n_webp_mw_1",
+      "likes": 427
+    },
+    {
+      "title": "差评如潮的5A景区？我赌赢了！亲妈：值了",
+      "href": "https://www.xiaohongshu.com/explore/687ceeb20000000010025290",
+      "author": "雕花工人",
+      "likes_text": "360",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/95870b68b2225a7442f96a681462c2e2/1040g2sg31k5l3csc48jg5ntej0p0bij143uvejo!nc_n_webp_mw_1",
+      "likes": 360
+    },
+    {
+      "title": "10.6 国庆行程最后一天，小红书跟风成功❗",
+      "href": "https://www.xiaohongshu.com/explore/68e672cc0000000003039ec8",
+      "author": "行行摄摄的老锺",
+      "likes_text": "127",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/4548de6045d6be3d889913a889288453/notes_pre_post/1040g3k031ncnfpqn6g6g5o5qgqtgbv7325kdk68!nc_n_webp_mw_1",
+      "likes": 127
+    },
+    {
+      "title": "盘锦挺好的，不过玩一天应该够了",
+      "href": "https://www.xiaohongshu.com/explore/68da3f8c0000000013018427",
+      "author": "花花不吃鲜花饼",
+      "likes_text": "106",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/a1470907eaf7713f4966e61586b5ea7e/1040g2sg31n0qg02qmge05nqbl1ogbm5b76fiteo!nc_n_webp_mw_1",
+      "likes": 106
+    }
+  ],
+  "harvested_at": "2026-04-20T15:29:33"
+}

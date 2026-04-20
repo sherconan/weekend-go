@@ -1,0 +1,50 @@
+{
+  "id": 374,
+  "name": "杨柳青古镇",
+  "file": "js/data-beijing-500.js",
+  "query": "杨柳青古镇 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京🚄1h直达｜北方被严重低估的宝藏古镇！",
+      "href": "https://www.xiaohongshu.com/explore/6900b10d0000000007036243",
+      "author": "夏泽峻",
+      "likes_text": "710",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201538/74f532e08c3b4514a784de7558cbec12/notes_pre_post/1040g3k031o8rvtp7ku004a1e58b81opvossisk0!nc_n_webp_mw_1",
+      "likes": 710
+    },
+    {
+      "title": "北京1.5h 🚘99%的游客不知道的非遗古镇❗️",
+      "href": "https://www.xiaohongshu.com/explore/68e5dd30000000000303a84d",
+      "author": "皮皮虎去哪玩",
+      "likes_text": "637",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201538/4cbbdfb0a60393d1cd20eca9a849e082/1040g2sg31nfvg6hnlie05oo27684hgc0kad924o!nc_n_webp_mw_1",
+      "likes": 637
+    },
+    {
+      "title": "天津杨柳青灯会（不走回头路）",
+      "href": "https://www.xiaohongshu.com/explore/69946d83000000001a032a45",
+      "author": "不靠谱🌟䒕姐",
+      "likes_text": "382",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201538/a0521c8b5346f167fc297f6262a830d8/1040g2sg31smja1jam21048c09hriiki91unmhd0!nc_n_webp_mw_1",
+      "likes": 382
+    },
+    {
+      "title": "亲测〡北京出发，1H可达的非遗古镇",
+      "href": "https://www.xiaohongshu.com/explore/68ff3142000000000400651b",
+      "author": "黑咖Qdt",
+      "likes_text": "298",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201538/2c0d50971537e3ffbcf952ac66093478/1040g2sg31oo2172amhf05o1t1iag8letvd8bh10!nc_n_webp_mw_1",
+      "likes": 298
+    },
+    {
+      "title": "杨柳青古镇",
+      "href": "https://www.xiaohongshu.com/explore/6997304a000000002800a6c3",
+      "author": "阿尼塔凡凡",
+      "likes_text": "244",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201538/83be6df97c694cf5ccf62b5be79d10c1/1040g2sg31spa64v268h040undfo0gvhln779jlo!nc_n_webp_mw_1",
+      "likes": 244
+    }
+  ],
+  "harvested_at": "2026-04-20T15:38:47"
+}

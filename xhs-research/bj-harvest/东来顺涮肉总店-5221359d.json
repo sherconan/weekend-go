@@ -1,0 +1,50 @@
+{
+  "id": 567,
+  "name": "东来顺涮肉总店",
+  "file": "js/data-beijing-tales.js",
+  "query": "东来顺涮肉总店 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京本地八家铜锅涮肉推荐",
+      "href": "https://www.xiaohongshu.com/explore/671772f40000000026034e21",
+      "author": "了凡",
+      "likes_text": "2199",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/05f5a5dc84120eb193f56615e0da6313/1040g2sg319nvqbsnnedg5nnpsru08q5t49ma7lo!nc_n_webp_mw_1",
+      "likes": 2199
+    },
+    {
+      "title": "甭纠结❗地道北京涮肉跟哪儿吃❓看完门儿清",
+      "href": "https://www.xiaohongshu.com/explore/6778b414000000000902ffc1",
+      "author": "樱桃小然子🍒",
+      "likes_text": "1501",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/04c6a58b099bacd391bada314c50d567/1040g2sg31c7i78o5gcdg5nh9cph0996ej8molp8!nc_n_webp_mw_1",
+      "likes": 1501
+    },
+    {
+      "title": "北京之美食篇，没有雷全是好吃的😋",
+      "href": "https://www.xiaohongshu.com/explore/68f109de000000000303450d",
+      "author": "晴岚",
+      "likes_text": "527",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/7d08ffa2d37a374ef9365235891e123c/notes_pre_post/1040g3k031nn1gb0hlm6g4a3kk85phfokdc2csco!nc_n_webp_mw_1",
+      "likes": 527
+    },
+    {
+      "title": "南门涮肉🆚东来顺",
+      "href": "https://www.xiaohongshu.com/explore/671d2f79000000001b03d21f",
+      "author": "yey",
+      "likes_text": "180",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/f39ff5d30e45a445292b1eb47025f05d/1040g2sg319e697dm5m705n0tvg91lm1np9k3gbg!nc_n_webp_mw_1",
+      "likes": 180
+    },
+    {
+      "title": "北京涮肉 东来顺🆚南门涮肉",
+      "href": "https://www.xiaohongshu.com/explore/68f5a5430000000005038d51",
+      "author": "Jeremy_wu",
+      "likes_text": "117",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201616/196735b1883258f9ed2c5c1d3380bff7/1040g00831nrh76k4lm5g5nhavf3g82g95tvhigo!nc_n_webp_mw_1",
+      "likes": 117
+    }
+  ],
+  "harvested_at": "2026-04-20T16:16:59"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 399,
+  "name": "青岛八大关秋景",
+  "file": "js/data-beijing-500.js",
+  "query": "青岛八大关秋景 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "三刷青岛…整理了一份保姆级攻略！！可抄！",
+      "href": "https://www.xiaohongshu.com/explore/69ccb8ea0000000021038685",
+      "author": "太瘦的饭饭",
+      "likes_text": "2791",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/d93f510b386b1964f280d63c9d439156/1040g2sg31udjovkuiq005n4d2t5kdldoc3ostb0!nc_n_webp_mw_1",
+      "likes": 2791
+    },
+    {
+      "title": "八大关红瓦绿树漫游|避坑指南！",
+      "href": "https://www.xiaohongshu.com/explore/684839b7000000000303b8f9",
+      "author": "德超海鲜·青岛菜",
+      "likes_text": "919",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/68e48d261ce691746764e2b46feb1eb6/notes_pre_post/1040g3k031ii6t7850a405np19e50937l35jvpgg!nc_n_webp_mw_1",
+      "likes": 919
+    },
+    {
+      "title": "青岛八大关实况‼️附超详细赏秋citywalk路线",
+      "href": "https://www.xiaohongshu.com/explore/6911704c0000000005011878",
+      "author": "小韩走万里",
+      "likes_text": "898",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/737b2ccef949688b101540a047995913/notes_pre_post/1040g3k831omn257dggbg43gdhkt630ajh57ki8o!nc_n_webp_mw_1",
+      "likes": 898
+    },
+    {
+      "title": "live🍂错过青岛八大关秋天，真的会后悔一年",
+      "href": "https://www.xiaohongshu.com/explore/68d10f2c000000000b03fa7c",
+      "author": "爆辣轻松版",
+      "likes_text": "858",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/dd0a210cac047da2a40434e36f1add8b/notes_pre_post/1040g3k031mnr2qeimg505pjagbm0u9qb2mk5280!nc_n_webp_mw_1",
+      "likes": 858
+    },
+    {
+      "title": "青岛枫叶红了🍁9大赏枫打卡地，错过等一年🍁",
+      "href": "https://www.xiaohongshu.com/explore/68fc461b000000000303aebe",
+      "author": "青岛旅行玩家",
+      "likes_text": "842",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201545/f1ca39d47f60ca0242b057bcf1a56f97/notes_pre_post/1040g3k031o21oar26m0g49odgb3l1v9q1g4m300!nc_n_webp_mw_1",
+      "likes": 842
+    }
+  ],
+  "harvested_at": "2026-04-20T15:45:55"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 555,
+  "name": "郭沫若故居",
+  "file": "js/data-beijing-tales.js",
+  "query": "郭沫若故居 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京探索｜原来这些熟悉的名字离我们这么近",
+      "href": "https://www.xiaohongshu.com/explore/69032c8400000000050307ca",
+      "author": "有空w",
+      "likes_text": "1267",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/5a65fdde857d76b3e964db8f9d65adfd/1040g2sg31ocmn37k6gd05nrn0fig88r0qnqkou0!nc_n_webp_mw_1",
+      "likes": 1267
+    },
+    {
+      "title": "北京春天最权威的一扇门，还有那神兽守护！",
+      "href": "https://www.xiaohongshu.com/explore/69d867980000000022027798",
+      "author": "食上先生去未来",
+      "likes_text": "320",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/d51fcde787c8b1458866c6129ac2f120/c/1040g00831uovt70a3q705p7rmouhmajimrlvbgo!nc_n_webp_mw_1",
+      "likes": 320
+    },
+    {
+      "title": "北京春日顶流！在郭沫若故居拍猫猫",
+      "href": "https://www.xiaohongshu.com/explore/69d64f2f000000002301efe3",
+      "author": "花开爱拍照📷",
+      "likes_text": "276",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/8f2ca991383f009dacb57721f63ec750/notes_pre_post/1040g3k831umv3grb2g7g4a6j75bntegqqi2ehl0!nc_n_webp_mw_1",
+      "likes": 276
+    },
+    {
+      "title": "海棠花与猫🐱︱郭沫若故居4.10实拍（附攻略）",
+      "href": "https://www.xiaohongshu.com/explore/69d8c4da000000001d0186e1",
+      "author": "PG乐桃桃",
+      "likes_text": "233",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/8fb85b64267ad86bb078ec0ab5f2b27a/1040g2sg31us7khgdj4005piroqo0u2r1c0pjkkg!nc_n_webp_mw_1",
+      "likes": 233
+    },
+    {
+      "title": "🎈北京一日游：什刹海、前海、后海全攻略",
+      "href": "https://www.xiaohongshu.com/explore/68cbdf38000000000b03c8c0",
+      "author": "HUDA Claw·簋街夜猫子店",
+      "likes_text": "224",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201615/3b56fc2e70487b440334db3ddf2a5d26/spectrum/1040g34o31miotmbekq5g5pkvb0up3rgttkm2n6o!nc_n_webp_mw_1",
+      "likes": 224
+    }
+  ],
+  "harvested_at": "2026-04-20T16:15:35"
+}

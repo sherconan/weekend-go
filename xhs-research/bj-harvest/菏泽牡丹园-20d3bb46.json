@@ -1,0 +1,50 @@
+{
+  "id": 385,
+  "name": "菏泽牡丹园",
+  "file": "js/data-beijing-500.js",
+  "query": "菏泽牡丹园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "本地人做的攻略，赏花必看的碎碎念",
+      "href": "https://www.xiaohongshu.com/explore/69c4f21d000000001b001c6a",
+      "author": "一只momomo",
+      "likes_text": "349",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201541/d46d0e2623347cbdbe591ff02faf534c/1040g00831u60kv4n2s605p0833oaavum2q9g2sg!nc_n_webp_mw_1",
+      "likes": 349
+    },
+    {
+      "title": "别去曹州牡丹园人挤人了，这里人少花美🌸",
+      "href": "https://www.xiaohongshu.com/explore/69db7b7b000000002300682a",
+      "author": "鹿鹿鹿",
+      "likes_text": "290",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201541/32fdbdea0f603470db7e9043c5234e2d/1040g00831urvq6pk2i005no1p2l0bpm0rh6scb8!nc_n_webp_mw_1",
+      "likes": 290
+    },
+    {
+      "title": "今日菏泽曹州牡丹园人山人海",
+      "href": "https://www.xiaohongshu.com/explore/69d9b551000000001a027822",
+      "author": "可可又在玩",
+      "likes_text": "256",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201541/361906cfa8da8e949bddaffd54dfe432/1040g00831uq9h4pfjq6g43uvp3sh1gbv2fmruj8!nc_n_webp_mw_1",
+      "likes": 256
+    },
+    {
+      "title": "菏泽三个牡丹园的近况和对比🆚可供参考",
+      "href": "https://www.xiaohongshu.com/explore/69dc78aa000000001b022e07",
+      "author": "鹿鹿鹿",
+      "likes_text": "162",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201541/e28a59e73b4330f014fc2271286b5902/notes_pre_post/1040g3k831usvrlkq2aag5no1p2l0bpm0tgmm2s8!nc_n_webp_mw_1",
+      "likes": 162
+    },
+    {
+      "title": "🌷菏泽牡丹花期攻略｜保姆级赏花时间线来",
+      "href": "https://www.xiaohongshu.com/explore/69cc8247000000001f00724f",
+      "author": "展信佳",
+      "likes_text": "139",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201541/fccd0c15ae49e9ee02906418472903ff/1040g2sg31udd2g76iokg5nkfrar08ecfc9b4ico!nc_n_webp_mw_1",
+      "likes": 139
+    }
+  ],
+  "harvested_at": "2026-04-20T15:41:25"
+}

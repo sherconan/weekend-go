@@ -1,0 +1,50 @@
+{
+  "id": 536,
+  "name": "西安门大街鬼宅",
+  "file": "js/data-beijing-tales.js",
+  "query": "西安门大街鬼宅 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "朝内大街81号开放在即，鬼屋迎来新生！",
+      "href": "https://www.xiaohongshu.com/explore/67b98f77000000002a000ca0",
+      "author": "Classical626",
+      "likes_text": "621",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/53a4d428f25b82ba422c2401390affbd/1040g00831e6t00s1h66g5p5kjkhk3idns1jq6so!nc_n_webp_mw_1",
+      "likes": 621
+    },
+    {
+      "title": "北京长藤鬼校被吓到退出",
+      "href": "https://www.xiaohongshu.com/explore/661a9e58000000001b013c53",
+      "author": "Yvette",
+      "likes_text": "431",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/08656d1860be8d5939726975652a0360/1040g008311hm2624mi004a5o1cfvm3n9t7hnghg!nc_n_webp_mw_1",
+      "likes": 431
+    },
+    {
+      "title": "探访朝内大街81号，儿时鬼屋变身美术馆",
+      "href": "https://www.xiaohongshu.com/explore/698094fe0000000028020670",
+      "author": "Fu大爷",
+      "likes_text": "378",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/3f1301aad4554fe311eedf97554bca17/1040g2sg31s38as9bm2e05n4ibsk4h5husevffpo!nc_n_webp_mw_1",
+      "likes": 378
+    },
+    {
+      "title": "京城“鬼宅”看展（一）",
+      "href": "https://www.xiaohongshu.com/explore/691c4c96000000000d037c1e",
+      "author": "浅风流羽",
+      "likes_text": "124",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/326a8b94cea4eadc24bdb748271c574e/notes_pre_post/1040g3k831p1aiu172g004bi2kijvdkrl2p601v0!nc_n_webp_mw_1",
+      "likes": 124
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/69bbb799000000001a031225",
+      "author": "北京打卡记",
+      "likes_text": "76",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201610/a9c1b25d13345a4116b1ab65ff7e35d6/217/0/01e9bbb791263cab0010000000019d05451c76_0.jpg!nc_n_webp_mw_1",
+      "likes": 76
+    }
+  ],
+  "harvested_at": "2026-04-20T16:10:54"
+}

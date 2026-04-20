@@ -1,0 +1,50 @@
+{
+  "id": 405,
+  "name": "绵山",
+  "file": "js/data-beijing-500.js",
+  "query": "绵山 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "😱别只去悬空寺了！山西这座悬崖上的古寺群，",
+      "href": "https://www.xiaohongshu.com/explore/699ec70f0000000022021664",
+      "author": "三文鱼鱼鱼鱼",
+      "likes_text": "3433",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201546/a0b4af5224c3457896be6aff3069a4f7/notes_pre_post/1040g3k831t0nd044l8604bevos9e51rsjnl7k18!nc_n_webp_mw_1",
+      "likes": 3433
+    },
+    {
+      "title": "绵山真的是宝藏景区！",
+      "href": "https://www.xiaohongshu.com/explore/684244990000000012000b16",
+      "author": "桐情不搭理",
+      "likes_text": "354",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201546/20d02029440fec94a50364a616482cec/1040g2sg31icd38fo02l049vjsk02vnlk219lod8!nc_n_webp_mw_1",
+      "likes": 354
+    },
+    {
+      "title": "第七十九站：绵山景区＋张壁古堡",
+      "href": "https://www.xiaohongshu.com/explore/69c3c83600000000230178e8",
+      "author": "孤雁",
+      "likes_text": "139",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201546/4af6f607d1ce67eda3d6ef02fd8087a7/1040g2sg31u4sdlru2oe05q7e2ritorgh4ro33po!nc_n_webp_mw_1",
+      "likes": 139
+    },
+    {
+      "title": "山西超值冷门5A级景区介休绵山攻略",
+      "href": "https://www.xiaohongshu.com/explore/6892b695000000002500d81c",
+      "author": "YOGO",
+      "likes_text": "126",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201546/9b4acc373d97b17f0d9108d66fcf2ff2/1040g00831l0ord7c2a004a1ef9c1nv9beu9v7mg!nc_n_webp_mw_1",
+      "likes": 126
+    },
+    {
+      "title": "太小众了！一定要拍完这个机位再离开山西！👆",
+      "href": "https://www.xiaohongshu.com/explore/6936b75b000000001e025d4c",
+      "author": "灰色亚麻布",
+      "likes_text": "91",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201546/67e1a6ad4900fc87148be00446764cfc/notes_pre_post/1040g3k831pr3ro3fla9048obrl2vjvadq5ef46g!nc_n_webp_mw_1",
+      "likes": 91
+    }
+  ],
+  "harvested_at": "2026-04-20T15:46:59"
+}

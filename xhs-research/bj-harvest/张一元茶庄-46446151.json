@@ -1,0 +1,50 @@
+{
+  "id": 593,
+  "name": "张一元茶庄",
+  "file": "js/data-beijing-tales.js",
+  "query": "张一元茶庄 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "2025/01/06 张一元总店人不多",
+      "href": "https://www.xiaohongshu.com/explore/677b8d2f000000000402cf70",
+      "author": "崧蓝",
+      "likes_text": "1875",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/d2305be6290f799c8936ed6a1e006085/1040g2sg31cardu6b0ukg5oauv18nvdju8hcoefg!nc_n_webp_mw_1",
+      "likes": 1875
+    },
+    {
+      "title": "去张一元推荐买什么茶呢",
+      "href": "https://www.xiaohongshu.com/explore/68fec2260000000005010f67",
+      "author": "🎀瘦不下去的胖子",
+      "likes_text": "1861",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/49bbdc7cdb511d5561f431bd84f952b2/1040g00831o4f821dlm1049mfp5mv33ocskvlqio!nc_n_webp_mw_1",
+      "likes": 1861
+    },
+    {
+      "title": "张一元茶怎么买！！！",
+      "href": "https://www.xiaohongshu.com/explore/662f7b41000000001e034dcc",
+      "author": "柴博一定能按时毕业！",
+      "likes_text": "798",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/056eea36b08096f28c8615063ca12a63/1040g00831261skvfhi0049p6j80059olgm6ei28!nc_n_webp_mw_1",
+      "likes": 798
+    },
+    {
+      "title": "买茉莉花茶，一定要去张一元大栅栏的总店",
+      "href": "https://www.xiaohongshu.com/explore/675e6c5600000000070094ae",
+      "author": "京小逛到处逛",
+      "likes_text": "722",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/14412f8ed4eb37f686368b8de01210c8/1040g00831bdsuu5l6m405nvkeb109fbm75aklbo!nc_n_webp_mw_1",
+      "likes": 722
+    },
+    {
+      "title": "张一元茶叶总店购买",
+      "href": "https://www.xiaohongshu.com/explore/6791aa58000000001800c89e",
+      "author": "momo",
+      "likes_text": "714",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201621/49e26d5b1d2b842e49be1a9a44a0da64/1040g00831d49sgc80s504a73la9mm8u4es6p4jg!nc_n_webp_mw_1",
+      "likes": 714
+    }
+  ],
+  "harvested_at": "2026-04-20T16:21:30"
+}

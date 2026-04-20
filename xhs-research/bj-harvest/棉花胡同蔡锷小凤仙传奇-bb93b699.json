@@ -1,0 +1,50 @@
+{
+  "id": 610,
+  "name": "棉花胡同蔡锷小凤仙传奇",
+  "file": "js/data-beijing-tales.js",
+  "query": "棉花胡同蔡锷小凤仙传奇 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "北京八大胡同深处，我发现了难得留存的青楼",
+      "href": "https://www.xiaohongshu.com/explore/692420d8000000001b032ea2",
+      "author": "Shirley雪梨酱",
+      "likes_text": "2755",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201625/777c3b8f23dc2702a4087244b12650af/notes_pre_post/1040g3k031p8v82hqio004a19omhde4dea9rsek8!nc_n_webp_mw_1",
+      "likes": 2755
+    },
+    {
+      "title": "",
+      "href": "https://www.xiaohongshu.com/explore/69abb932000000001a028ba0",
+      "author": "momo默墨",
+      "likes_text": "953",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201625/39305af8d1d678ec2e32e642d4fb2e8c/notes_pre_post/1040g3k831td9go4f62d05o0vi7bg89f8eilfajg!nc_n_webp_mw_1",
+      "likes": 953
+    },
+    {
+      "title": "老北京🎊花街柳巷，八大胡同citywalk路线",
+      "href": "https://www.xiaohongshu.com/explore/67625df8000000000900ebbb",
+      "author": "阿瑾翘班去",
+      "likes_text": "654",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201625/0a0076026f77228bf381616b7be9f88a/1040g00831bho6qq80k6g4btdbfhmkj2qe4ltdho!nc_n_webp_mw_1",
+      "likes": 654
+    },
+    {
+      "title": "介绍一下北京曾经知名的风月场所！",
+      "href": "https://www.xiaohongshu.com/explore/680627d3000000001d03aac1",
+      "author": "李",
+      "likes_text": "143",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201625/95219a33d60c9f2a8dcc4ed717295f4f/1040g00831ghm6ihs3u6g400qhp2k06agdpp8ng0!nc_n_webp_mw_1",
+      "likes": 143
+    },
+    {
+      "title": "小凤仙",
+      "href": "https://www.xiaohongshu.com/explore/69de4a4900000000200385f0",
+      "author": "镜像百年",
+      "likes_text": "128",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201625/d139f5c2a059816dbb770e24ee0342c1/spectrum/1040g34o31uuop1e0j4105p3ml91489vlvmoq2t8!nc_n_webp_mw_1",
+      "likes": 128
+    }
+  ],
+  "harvested_at": "2026-04-20T16:25:43"
+}

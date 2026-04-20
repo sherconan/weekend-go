@@ -1,0 +1,50 @@
+{
+  "id": 320,
+  "name": "葫芦岛",
+  "file": "js/data-beijing-500.js",
+  "query": "葫芦岛 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "葫芦岛—兴城 带娃三天三夜松弛游",
+      "href": "https://www.xiaohongshu.com/explore/68614d64000000001203ff9c",
+      "author": "贪吃鬼悦悦子🥥",
+      "likes_text": "2859",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/0e1f6d97ee328ca1c1d966763c79ba79/notes_pre_post/1040g3k031jam383giu0049mubn0i1uau0ibomeg!nc_n_webp_mw_1",
+      "likes": 2859
+    },
+    {
+      "title": "葫芦岛两天一夜看海攻略 虽小众但美",
+      "href": "https://www.xiaohongshu.com/explore/6818d6df0000000023013d87",
+      "author": "Ramona✨",
+      "likes_text": "1684",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/e0bfd91f28fd123966492e8b146e5356/1040g00831h3uet793c704a1gc6ssm6r38bfd6tg!nc_n_webp_mw_1",
+      "likes": 1684
+    },
+    {
+      "title": "📍葫芦岛|周末逃离北京的两天一夜！附攻略✅",
+      "href": "https://www.xiaohongshu.com/explore/69d46e20000000001f00000a",
+      "author": "yy几只圆",
+      "likes_text": "990",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/b892a9b69c86c88f7b24b701324e9dfd/notes_pre_post/1040g3k031ul453mdia6g5nj4i720899b8jijnd8!nc_n_webp_mw_1",
+      "likes": 990
+    },
+    {
+      "title": "北京—葫芦岛·周末放松之旅（2天1晚）",
+      "href": "https://www.xiaohongshu.com/explore/694969f2000000001b0269c4",
+      "author": "福娃",
+      "likes_text": "824",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/9a83259f57d43750e79524d855027348/1040g2sg31qdbddeo00k05namft9gb2tmaie146o!nc_n_webp_mw_1",
+      "likes": 824
+    },
+    {
+      "title": "北京周边海丨葫芦岛三天两晚实用攻略",
+      "href": "https://www.xiaohongshu.com/explore/687dcc62000000002203c2b7",
+      "author": "黑咖Qdt",
+      "likes_text": "586",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201529/1c36f9c7ac10556314466d9e6f1576e8/1040g00831k6hg3f72u405o1t1iag8let8739uto!nc_n_webp_mw_1",
+      "likes": 586
+    }
+  ],
+  "harvested_at": "2026-04-20T15:29:17"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 369,
+  "name": "唐山开滦矿山公园",
+  "file": "js/data-beijing-500.js",
+  "query": "唐山开滦矿山公园 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "刚从唐山回来，不踩雷不踩坑",
+      "href": "https://www.xiaohongshu.com/explore/6979dcd4000000002200920a",
+      "author": "不吃折耳根",
+      "likes_text": "237",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201537/c3db19d058558f0c8640f452baf12572/1040g00831rsmcv3p2g0g5q8qgmpdu5qdg7vs8sg!nc_n_webp_mw_1",
+      "likes": 237
+    },
+    {
+      "title": "唐山还能玩这里！能下矿井的开滦矿山博物馆",
+      "href": "https://www.xiaohongshu.com/explore/699fc5cb000000001a02d7bd",
+      "author": "TimeHug",
+      "likes_text": "104",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201537/24b1b3189892aec37f213b06f484f6ad/1040g00831t1394f2m83g4abeisejs1keut7sie0!nc_n_webp_mw_1",
+      "likes": 104
+    },
+    {
+      "title": "北京边上的地下世界太震撼，解锁人生新体验",
+      "href": "https://www.xiaohongshu.com/explore/69a40097000000002603f59a",
+      "author": "路克马",
+      "likes_text": "83",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201537/f25fe22f589a5b246ecd9a5ab9802c89/1040g00831t5qf92ll61g4b4kmmogk5li7amlik0!nc_n_webp_mw_1",
+      "likes": 83
+    },
+    {
+      "title": "废墟之上，向阳而生｜唐山一日行攻略",
+      "href": "https://www.xiaohongshu.com/explore/69ce4738000000002200ea22",
+      "author": "董小西",
+      "likes_text": "33",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201537/4e0b98808cecd4b922ca018ea055d86f/notes_pre_post/1040g3k831uf45s6visb05pbpom885goimjcjn78!nc_n_webp_mw_1",
+      "likes": 33
+    },
+    {
+      "title": "开滦国家矿山公园井下探险还真有点怕怕",
+      "href": "https://www.xiaohongshu.com/explore/69c0ec9f000000002301f76b",
+      "author": "开心快乐卢卡斯",
+      "likes_text": "30",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201537/f3ed42af1ae455a363cd154c88bb0b6c/notes_pre_post/1040g3k831u22kfr97q005n6mppelgeq44jmfd1o!nc_n_webp_mw_1",
+      "likes": 30
+    }
+  ],
+  "harvested_at": "2026-04-20T15:37:16"
+}

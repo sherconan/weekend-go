@@ -1,0 +1,50 @@
+{
+  "id": 379,
+  "name": "天津自然博物馆",
+  "file": "js/data-beijing-500.js",
+  "query": "天津自然博物馆 攻略",
+  "count": 24,
+  "top5": [
+    {
+      "title": "天津景点值不值得去。。。",
+      "href": "https://www.xiaohongshu.com/explore/6944c308000000001f0052be",
+      "author": "可肥不喝coffee",
+      "likes_text": "722",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/b772f64675c5e25839cef8ddc762c375/notes_pre_post/1040g3k031q8r1ffb7g6g5n7vo6g66bbsjnvaigg!nc_n_webp_mw_1",
+      "likes": 722
+    },
+    {
+      "title": "天津看展¦2小时逛天津三大馆超嗨",
+      "href": "https://www.xiaohongshu.com/explore/6947c5f0000000001f00b3a9",
+      "author": "在晴天🌞行走",
+      "likes_text": "228",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/1a0864a331175ccf6d7ed1d08e81b24f/notes_pre_post/1040g3k831qblv324no9g4bv1gq2ptrq9qe91di8!nc_n_webp_mw_1",
+      "likes": 228
+    },
+    {
+      "title": "天津博物馆排名，哪个更值得去，详细攻略",
+      "href": "https://www.xiaohongshu.com/explore/6853e96600000000200180e3",
+      "author": "暖暖游张小千",
+      "likes_text": "106",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/7def2b6c56e20628ad28ea18f26d84ea/notes_pre_post/1040g3k031itke3u9hc7g5phlrcn1os3ivind1ag!nc_n_webp_mw_1",
+      "likes": 106
+    },
+    {
+      "title": "天津自然博物馆｜千字游玩攻略&盖章指南🦋",
+      "href": "https://www.xiaohongshu.com/explore/696b7fd3000000001a01fff6",
+      "author": "宛若星辰",
+      "likes_text": "73",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/f29d3092834f9c56a9c7d671a8448456/1040g00831relir51nu0g5n1t8othr11j819jnag!nc_n_webp_mw_1",
+      "likes": 73
+    },
+    {
+      "title": "『 盖章 | 天津自然博物馆➕美术馆 🕹15➕ 』",
+      "href": "https://www.xiaohongshu.com/explore/699b2572000000002800a5d3",
+      "author": "日光倾城✨",
+      "likes_text": "48",
+      "cover": "https://sns-webpic-qc.xhscdn.com/202604201539/1f32dc98c9a27527fb3f56ec22cc85f1/notes_pre_post/1040g3k831st6gt0em2705n5t9kl40tcenhrhico!nc_n_webp_mw_1",
+      "likes": 48
+    }
+  ],
+  "harvested_at": "2026-04-20T15:39:51"
+}
