@@ -130,12 +130,20 @@ function buildCityDests(sb, cityKey) {
 const { sb, legends } = loadAllWebData();
 
 // Build DESTINATIONS per city
+// City key → 2-letter image filename prefix (与 web 侧 assets/images/dest-{PREFIX}-{id}.webp 对齐)
+// 不能用 cityKey.slice(0,2) —— 'tianjin'→'ti'（应为'tj'）/ 'qingdao'→'qi'（应为'qd'）/ 'chengdu'→'ch'（应为'cd'）
+// / 'hangzhou'→'ha'（应为'hz'）/ 'weihai'→'we'（应为'wh'）/ 'shenzhen'→'sh'（应为'sz'）全 6 城出错。
+const IMG_PREFIX = {
+  beijing: 'bj', shenzhen: 'sz', weihai: 'wh', suzhou: 'su',
+  tianjin: 'tj', qingdao: 'qd', chengdu: 'cd', hangzhou: 'hz'
+};
 const DESTINATIONS = {};
 for (const cityKey of Object.keys(CITY_SOURCE_VARS)) {
+  const px = IMG_PREFIX[cityKey] || cityKey.slice(0,2);
   DESTINATIONS[cityKey] = buildCityDests(sb, cityKey).map(d => ({
     ...d,
     // Inject image URL (mini expects CDN prefix handled later)
-    image: d.image || `https://sherconan.github.io/weekend-go/assets/images/dest-${cityKey.slice(0,2)}-${d.id}.webp`
+    image: d.image || `https://sherconan.github.io/weekend-go/assets/images/dest-${px}-${d.id}.webp`
   }));
 }
 
