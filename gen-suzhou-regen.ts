@@ -3,8 +3,11 @@ import { spawn, execSync } from "child_process";
 
 const ROOT = "/Users/USER/weekend-go";
 const SKILL = "/Users/USER/.claude/skills/baoyu-danger-gemini-web/scripts/main.ts";
+// Allow overriding queue file via --queue arg (default: full suzhou-regen-queue.json)
+const qIdx = process.argv.indexOf("--queue");
+const QUEUE_FILE = qIdx >= 0 ? process.argv[qIdx + 1] : `${ROOT}/suzhou-regen-queue.json`;
 const queue: { file: string; name: string; prompt: string; city: string }[] = JSON.parse(
-  readFileSync(`${ROOT}/suzhou-regen-queue.json`, "utf-8")
+  readFileSync(QUEUE_FILE, "utf-8")
 );
 
 const args = process.argv.slice(2);

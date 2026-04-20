@@ -2410,16 +2410,15 @@ function flipWorld() {
   }
 }
 
-// Hide the night world on city switch if not beijing
+// 切城后：如无传说则退出 night mode；flip btn 可见性走 updateFlipBtnVisibility()（hasLegends-aware）
 const _origSwitchCity = window.switchCity;
 window.switchCity = function(city) {
   _origSwitchCity && _origSwitchCity(city);
-  if (city !== 'beijing' && _nightMode) {
-    flipWorld(); // exit night mode for non-BJ cities
+  const citiesWithLegends = (typeof getCitiesWithLegends === 'function') ? getCitiesWithLegends() : new Set(['beijing']);
+  if (!citiesWithLegends.has(city) && _nightMode) {
+    flipWorld(); // 无传说的城市退出夜间模式
   }
-  // Hide flip btn for non-BJ cities
-  const btn = document.getElementById('world-flip-btn');
-  if (btn) btn.style.display = city === 'beijing' ? '' : 'none';
+  if (typeof updateFlipBtnVisibility === 'function') updateFlipBtnVisibility();
 };
 
 // Random legend — opens a random legend story
