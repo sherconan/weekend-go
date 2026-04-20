@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v14 — full 8-city + planner + dest offline support
-const CACHE_NAME = 'weekend-go-v19';
+// Weekend-Go Service Worker v20 — full 10-city (加 CQ/ES) + planner + dest offline support
+const CACHE_NAME = 'weekend-go-v20';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 
@@ -14,11 +14,13 @@ const CORE_ASSETS = [
   '/js/data-shenzhen.js', '/js/data-weihai.js', '/js/data-suzhou.js',
   '/js/data-tianjin.js', '/js/data-qingdao.js',
   '/js/data-chengdu.js', '/js/data-hangzhou.js',
+  '/js/data-chongqing.js', '/js/data-enshi.js',
   '/js/data-shared-cross-city.js',
   '/js/data-legends-shenzhen.js', '/js/data-legends-weihai.js',
   '/js/data-legends-suzhou.js', '/js/data-legends-qingdao.js',
   '/js/data-legends-tianjin.js', '/js/data-legends-chengdu.js',
   '/js/data-legends-hangzhou.js',
+  '/js/data-legends-chongqing.js', '/js/data-legends-enshi.js',
   '/js/xhs-data.js', '/js/xhs-voices.js',
   '/js/visuals.js', '/js/images.js',
   '/js/stamp-designs.js', '/js/stamp.js',
