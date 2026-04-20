@@ -1,0 +1,31 @@
+[16:39:57] === retry start · 55 gaps ===
+[16:39:57] cookies: 11
+[16:41:29] [1/55] ✗ 青岛 · tried 3 queries · TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.xi
+[16:42:25] [2/55] ✗ 曲阜 · tried 3 queries · empty-feed
+[16:43:28] [3/55] ✗ 大同 · tried 3 queries · empty-feed
+[16:44:24] [4/55] ✗ 景山公园 · tried 3 queries · empty-feed
+[16:45:22] [5/55] ✗ 天津瓷房子 · tried 3 queries · empty-feed
+[16:47:08] [6/55] ✗ 天津小白楼 · tried 3 queries · TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.xi
+[16:48:14] [7/55] ✗ 枣庄台儿庄古城 · tried 3 queries · empty-feed
+[16:49:18] [8/55] ✗ 蓬莱八仙渡 · tried 3 queries · empty-feed
+[16:50:36] [9/55] ✗ 荣成天鹅湖 · tried 3 queries · empty-feed
+[16:51:55] [10/55] ✗ 栖霞牟氏庄园 · tried 3 queries · empty-feed
+[16:52:50] [11/55] ✗ 林州红旗渠 · tried 3 queries · empty-feed
+[16:53:47] [12/55] ✗ 营口鲅鱼圈 · tried 3 queries · empty-feed
+[16:54:40] [13/55] ✗ 铁岭龙首山 · tried 3 queries · empty-feed
+[16:55:34] [14/55] ✗ 锦州医巫闾山 · tried 3 queries · empty-feed
+[16:56:24] [15/55] ✗ 史家胡同博物馆 · tried 3 queries · empty-feed
+[16:57:22] [16/55] ✗ 东交民巷使馆区 · tried 3 queries · empty-feed
+[16:58:17] [17/55] ✗ 法源寺 · tried 3 queries · empty-feed
+[16:59:17] [18/55] ✗ 白塔寺胡同 · tried 3 queries · empty-feed
+[17:00:08] [19/55] ✗ 杨梅竹斜街 · tried 3 queries · empty-feed
+[17:00:58] [20/55] ✗ 西什库教堂 · tried 3 queries · empty-feed
+[17:01:52] [21/55] ✗ 智化寺 · tried 3 queries · empty-feed
+[17:02:50] [22/55] ✗ 广化寺 · tried 3 queries · empty-feed
+[17:03:40] [23/55] ✗ 前门地下街 · tried 3 queries · empty-feed
+[17:04:34] [24/55] ✗ 正阳门城楼内部 · tried 3 queries · empty-feed
+[17:05:50] [25/55] ✗ 国子监辟雍 · tried 3 queries · empty-feed
