@@ -59,7 +59,9 @@ function loadAllWebData() {
     'data-legends-qingdao.js':  { var: 'LEGENDS_QD', city: 'qingdao' },
     'data-legends-tianjin.js':  { var: 'LEGENDS_TJ', city: 'tianjin' },
     'data-legends-chengdu.js':  { var: 'LEGENDS_CD', city: 'chengdu' },
-    'data-legends-hangzhou.js': { var: 'LEGENDS_HZ', city: 'hangzhou' }
+    'data-legends-hangzhou.js': { var: 'LEGENDS_HZ', city: 'hangzhou' },
+    'data-legends-chongqing.js':{ var: 'LEGENDS_CQ', city: 'chongqing' },
+    'data-legends-enshi.js':    { var: 'LEGENDS_ES', city: 'enshi' }
   };
   for (const [f, { var: vn, city }] of Object.entries(legendCityFiles)) {
     const p = path.join(jsDir, f);
@@ -97,7 +99,9 @@ const CITY_SOURCE_VARS = {
   tianjin:  ['DESTINATIONS_TJ'],
   qingdao:  ['DESTINATIONS_QD'],
   chengdu:  ['DESTINATIONS_CD'],
-  hangzhou: ['DESTINATIONS_HZ']
+  hangzhou: ['DESTINATIONS_HZ'],
+  chongqing: ['DESTINATIONS_CQ'],
+  enshi:    ['DESTINATIONS_ES']
 };
 
 function buildCityDests(sb, cityKey) {
@@ -135,7 +139,8 @@ const { sb, legends } = loadAllWebData();
 // / 'hangzhou'→'ha'（应为'hz'）/ 'weihai'→'we'（应为'wh'）/ 'shenzhen'→'sh'（应为'sz'）全 6 城出错。
 const IMG_PREFIX = {
   beijing: 'bj', shenzhen: 'sz', weihai: 'wh', suzhou: 'su',
-  tianjin: 'tj', qingdao: 'qd', chengdu: 'cd', hangzhou: 'hz'
+  tianjin: 'tj', qingdao: 'qd', chengdu: 'cd', hangzhou: 'hz',
+  chongqing: 'cq', enshi: 'es'
 };
 const DESTINATIONS = {};
 for (const cityKey of Object.keys(CITY_SOURCE_VARS)) {
