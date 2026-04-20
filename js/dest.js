@@ -51,30 +51,39 @@
   function loadLegendsForDest(destName, city) {
     // BJ legends live in DESTINATIONS_BJ_TALES; other cities in LEGENDS_*
     const LEGEND_VARS = ['DESTINATIONS_BJ_TALES','LEGENDS_DATA','LEGENDS_SZ','LEGENDS_WH','LEGENDS_SU','LEGENDS_QD','LEGENDS_TJ','LEGENDS_CD','LEGENDS_HZ'];
-    const out = [];
+    const strong = [];  // structured match: destName/location/name/title
+    const weak = [];    // text-only match: require ≥2 occurrences
     const seen = new Set();
     for (const v of LEGEND_VARS) {
       const arr = g(v);
       if (!Array.isArray(arr)) continue;
-      // BJ_TALES is BJ only
       if (v === 'DESTINATIONS_BJ_TALES' && city && city !== 'beijing') continue;
       for (const l of arr) {
-        if (!l || seen.has(l.name || l.title)) continue;
+        const key = l && (l.name || l.title);
+        if (!l || !key || seen.has(key)) continue;
         if (l.city && city && l.city !== city) continue;
-        // Match multiple shapes: {name, subtitle, description} (tales) OR {title, story, destName}
         const text = (l.description || '') + ' ' + (l.story || '') + ' ' + (l.overview || '');
-        const matchName = (l.destName === destName) ||
-                          (l.location === destName) ||
-                          (l.name && l.name.includes(destName)) ||
-                          (l.title && l.title.includes(destName)) ||
-                          (text && text.includes(destName));
-        if (matchName) {
-          seen.add(l.name || l.title);
-          out.push(l);
+        const structural = (l.destName === destName) ||
+                           (l.location === destName) ||
+                           (l.name && l.name.includes(destName)) ||
+                           (l.title && l.title.includes(destName));
+        if (structural) {
+          seen.add(key);
+          strong.push(l);
+          continue;
+        }
+        // Tighten loose text match: require destName appear ≥2 times in narrative
+        // (filters out legends that merely mention the dest in passing).
+        const occ = (destName && destName.length >= 2 && text)
+          ? text.split(destName).length - 1
+          : 0;
+        if (occ >= 2) {
+          seen.add(key);
+          weak.push(l);
         }
       }
     }
-    return out.slice(0, 4);
+    return [...strong, ...weak].slice(0, 4);
   }
 
   function findRelated(dest, city, limit=6) {
