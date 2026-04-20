@@ -1,0 +1,60 @@
+[18:39:26] === retry-smart · 55 gaps (shuffled) ===
+[18:39:27] cookies: 11
+[18:40:51] [1/55] ✗ 炸酱面海碗居 · 4 queries · TimeoutError: Page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://www.xi
+[18:41:44] [2/55] ✗ 正阳门城楼内部 · 4 queries · empty-all-variants
+[18:42:39] [3/55] ✗ 望京小腰 · 4 queries · empty-all-variants
+[18:43:31] [4/55] ✗ 营口鲅鱼圈 · 4 queries · empty-all-variants
+[18:44:13] [5/55] ✗ 法源寺 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:44:35] [6/55] ✗ 智化寺 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:44:57] [7/55] ✗ 护国寺街 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:45:19] [8/55] ✗ Red1卡丁车 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:45:41] [9/55] ✗ 北京SKP · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:46:03] [10/55] ✗ 西什库教堂 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:46:25] [11/55] ✗ 栖霞牟氏庄园 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:46:47] [12/55] ✗ 门钉肉饼 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:47:09] [13/55] ✗ 湾里 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:47:31] [14/55] ✗ 镇罗营梨花谷 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:47:53] [15/55] ✗ 豆汁儿锦馨 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:48:15] [16/55] ✗ 亮马河国际风情水岸 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:48:37] [17/55] ✗ 景山公园 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:48:59] [18/55] ✗ 广化寺 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:49:21] [19/55] ✗ 当代MOMA · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:49:43] [20/55] ✗ 天津瓷房子 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:50:05] [21/55] ✗ 卤煮火烧小肠陈 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:50:27] [22/55] ✗ 林州红旗渠 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:50:49] [23/55] ✗ 北京太古坊 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:51:11] [24/55] ✗ 前门地下街 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:51:33] [25/55] ✗ 西单更新场 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:51:55] [26/55] ✗ 国子监辟雍 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:52:17] [27/55] ✗ 青岛 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:52:39] [28/55] ✗ 牛街最后的传统屠宰坊参观 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:53:01] [29/55] ✗ 鼓楼东大街 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:53:23] [30/55] ✗ 杨梅竹斜街 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:53:45] [31/55] ✗ 涮羊肉南门涮肉 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:54:07] [32/55] ✗ 合生汇 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:54:29] [33/55] ✗ 故宫九龙壁修补秘密 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:54:52] [34/55] ✗ 铁岭龙首山 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:55:14] [35/55] ✗ THE BOX朝外 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:55:36] [36/55] ✗ 烤肉季烤肉宛 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:55:58] [37/55] ✗ 泰康空间 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:56:20] [38/55] ✗ 锦州医巫闾山 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:56:42] [39/55] ✗ 友谊花园 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:57:04] [40/55] ✗ 五道口 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:57:26] [41/55] ✗ 大同 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:57:48] [42/55] ✗ 砖塔胡同最古老 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:58:10] [43/55] ✗ 华熙LIVE·五棵松 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:58:32] [44/55] ✗ 天津小白楼 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:58:54] [45/55] ✗ 护国寺艾窝窝驴打滚 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:59:16] [46/55] ✗ 菖蒲河公园 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[18:59:38] [47/55] ✗ 枣庄台儿庄古城 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:00:00] [48/55] ✗ 荣成天鹅湖 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:00:22] [49/55] ✗ 史家胡同博物馆 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:00:44] [50/55] ✗ 东交民巷使馆区 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:01:06] [51/55] ✗ 白塔寺胡同 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:01:28] [52/55] ✗ 大吉巷 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:01:50] [53/55] ✗ 曲阜 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:02:12] [54/55] ✗ 蓬莱八仙渡 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:02:34] [55/55] ✗ 大悦春风里 · 4 queries · TargetClosedError: Page.goto: Target page, context or browser has been closed
+[19:02:40] === retry-smart done · ok=0 fail=55 ===
