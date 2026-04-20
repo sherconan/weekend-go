@@ -177,12 +177,17 @@ def generate_one(item, idx, total):
     final_size = os.path.getsize(out_path)
     print(f'[{idx}/{total}] ✅ {name} → {fname} {w}x{h}→{TARGET_W}x{TARGET_H} ({final_size//1024}KB) [ChatGPT]', flush=True)
 
-    # Step 5: Start new chat to avoid context buildup
-    chrome_js('''(function() {
-        var newChat = document.querySelector('a[data-testid="create-new-chat-button"]') || document.querySelector('nav a[href="/"]');
-        if (newChat) newChat.click();
-        return 'OK';
-    })()''')
+    # Step 5: Start new chat *inside* the "周末去哪儿玩" project (not at root).
+    # Two-phase nav: (a) click project link in sidebar (or verify already inside),
+    # (b) click "new chat" button on project page. React router needs a beat between.
+    nav_result = chrome_js_file(f'{ROOT}/chatgpt-weekendgo-nav.js')
+    if nav_result.startswith('ERR:'):
+        print(f'[{idx}/{total}] WARN nav to project: {nav_result} — falling back to root new-chat', flush=True)
+        chrome_js('''(function(){var b=document.querySelector('a[data-testid="create-new-chat-button"]')||document.querySelector('nav a[href="/"]');if(b)b.click();return 'OK';})()''')
+    elif nav_result == 'OK:entered_project':
+        # Just navigated into the project; wait for page render, then click new-chat
+        time.sleep(2.5)
+        chrome_js_file(f'{ROOT}/chatgpt-weekendgo-nav.js')  # second pass lands on OK:already_in_project:new_chat
     time.sleep(2)
 
     return True
