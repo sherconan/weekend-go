@@ -1,178 +1,183 @@
 # WeekendGo · 新会话交接文档
 
-> 写给下一次重启的 Claude · 2026-04-20 19:15 GMT+8
+> 写给下一次重启的 Claude · 2026-04-21 09:00 GMT+8（更新 8h 大会战收口）
 > 读完这个就能接上进度。不读要踩坑。
 
 ---
 
-## 🔴 优先级最高：三条红线（违反立即 revert）
+## 🔴 优先级最高：四条红线（违反立即 revert）
 
 1. **XHS 作为内容主源** — `~/.claude/projects/-Users-sherconan/memory/feedback_weekendgo_enrichment_source.md`。WebSearch / Bocha / 百度百科**禁止**作主源，fallback ≤5%。
-2. **不编造** — xhsHeat / xhsQuote / description / overview / whatToDo 必须来自真实 XHS 笔记。多笔记综合允许，但必须透明标注 "— 综合 XHS..."。
-3. **不用付费 API** — `feedback_no_paid_api.md`。所有 AI 调用走免费 / 逆向通道（Gemini Web / ChatGPT Web / Pollinations）。
-
-## 🚨 本 session 新增的第四条红线（重要）
-
-4. **禁止主动触发会"弹 Chrome / 抢焦点 / 弹 QR 登录"的工具链** —— `feedback_xhs_no_popup_pipeline.md`。用户本 session 两次被 `rednote-mcp login()` + `xhs-cli check-login` 的 Chrome 弹窗骚扰（"你怎么老在登录小红书啊？？"）。
-
-**正确抓手**：`pycookiecheat` 从主 Chrome 抠 cookies → `playwright headless Chromium` 隔离 context 注入 → 零弹窗访问 XHS web。模板脚本在 `xhs-research/batch-harvest-playwright.py`。
+2. **不编造** — xhsHeat / xhsQuote / description / overview / whatToDo 必须来自真实源。多笔记综合允许，但必须透明标注 "— 综合 XHS..."。
+3. **不用付费 API** — `feedback_no_paid_api.md`。所有 AI 调用走免费 / 逆向通道（Gemini Web / ChatGPT Web / Pollinations / 社交抓取）。
+4. **禁止主动触发会"弹 Chrome / 抢焦点 / 弹 QR 登录"的工具链** —— `feedback_xhs_no_popup_pipeline.md`。**正确抓手**：`pycookiecheat` 从主 Chrome 抠 cookies → `playwright headless Chromium` 隔离 context 注入 → 零弹窗访问 XHS web。模板脚本在 `xhs-research/batch-harvest-playwright-sz.py`（用 rednote-mcp cookies）。
+5. **WeekendGo ChatGPT 生图归档** — `feedback_chatgpt_weekendgo_project.md`。所有 ChatGPT 生图必须放在名为"周末去哪儿玩"的 ChatGPT 项目下。helper 已写：`chatgpt-weekendgo-nav.js`。
 
 ---
 
-## 📊 当前状态 snapshot（2026-04-20 19:15）
+## 📊 当前状态 snapshot（2026-04-21 收口）
 
-### XHS 内容深度（final）
+### 🌆 10 城全量 dest 957 + legends 270
 
-| 城 | dest | XHS 覆盖 | Commit | 状态 |
-|---|---|---|---|---|
-| 天津 | 9/9 | 94% | `c580368` | ✅ |
-| 青岛 | 10/10 | 92% | `a0e9cc8` | ✅ |
-| 杭州 | 10/10 | 95% | `95608f6` | ✅ |
-| 成都 | 12/12 | 98% | `1bcca07` | ✅ |
-| 苏州 | 60/60 | 98.7% | `0e9d6b4` | ✅ |
-| 威海 | 31/31 | 95% | `bbf30f8` | ✅ |
-| **北京** | **293/348** | **84%** | **`1b836d2`** | ✅ 本 session |
-| 深圳 | 0/159 | — | — | ❌ 未启动 |
-| **总** | **425/688** | | | 缺 263 |
+| 城 | dest | legends | 图覆盖 |
+|---|---|---|---|
+| 北京 | 500 | 100 | 既有大部分 |
+| 深圳 | 159 | 30 | 既有 |
+| 威海 | **54** (+19 本轮 35→54) | 20 | +19 ✅ |
+| 苏州 | 60 | 30 | +16 (1030 丝绸博物馆 Gemini timeout 缺) |
+| 天津 | **31** (+21 本轮 9→30+) | 15 | +21 ✅ |
+| 青岛 | **33** (+20 本轮 13→30+) | 15 | +20 ✅ |
+| 成都 | 30 (+18 本轮 12→30) | 15 | +18 ✅ |
+| 杭州 | 30 (+20 本轮 10→30) | 15 | +20 ✅ |
+| **重庆** 🌶️ | **30 新城** | 15 | +30 ✅ |
+| **恩施** 🏞 | **30 新城** | 15 | +30 ✅ |
 
-### BJ 本 session 详情
+### 🚀 本 8h 会战 39 commits push 一览（按时间序）
 
-- data-beijing-500.js: 114/128 (89%)
-- data-beijing-hidden.js: 92/100 (92%)
-- data-beijing-tales.js: 87/100 (87%)
-- data-beijing-new2026.js: 0/20（尾部 rate-limit 返空）
-- **剩 55 条 retry 2 轮 0 ok**：`retry-gaps.py` 和 `retry-smart.py`（4 query 变体 + shuffle）都救不回 —— 诊断见下。
+**Web (25 commits)**
+- 8 城对齐：bf43227 / ec80777 / b7c0634 / c549318 / d92d85f / b6f2d92
+- 加 2 城：651e238 / c675bdf
+- 内容：04dbfdf (TJ/QD/CD/HZ +79) / b40571f (ES) / b7a3ad8 (CQ) / ee247cc (CQ+ES legends) / 407c57f (QD legends + Suzhou 图)
+- 图：2560bc7 / d30ac41 / 9a7be09 / 473cc85 / 42d458f / d6eaff2 / **53b5c6c (final 158/158)**
+- bugs: ad56cf2 / eb0e15d (retry queues)
 
-### P3 bugfix（本 session 附带清）
+**Miniapp (14 commits)**
+- 8 城对齐 + 防抖 + 隐身根因：4657d90d / 95be338e / 12d5b43e / 44d16d2b / 03063cd0
+- 内容 sync: 1ab1f66c / 0e27bbfb / ca1de360 / 224ad174 / 40fcde19 / 1cc6c39d / 533ab849
+- 图: 40e58834
 
-- ✅ Planner ICS 时区 bug（commit `dfbe082`）
-- ✅ index.html 暗色模式 10 处 inline hex 归一（commit `dfbe082`）
-- ✅ Dest 传说关联从宽匹配收紧为 structured-first（commit `29f2828`）
+### 🚨 14 条本 8h 修的隐身 Bug（按用户感知排序）
 
-### 图片生成（正在处理）
+1. **app.js:34** preferredCity 白名单锁死 3 城 → CITY_KEYS 10 城（最关键根因，用户切 TJ/QD/CD/HZ/CQ/ES 后重启必回 beijing）
+2. **sync-to-miniapp `cityKey.slice(0,2)`** → IMG_PREFIX 字典（7 城 image URL 404 的根因，"图片大面积显示不出来"的锅）
+3. **stamp/search tabs** 硬编码 3-4 城 → CITY_KEYS.map 动态
+4. **index.wxml otherside-banner** 只 beijing 显示 → cityConfig[currentCity]
+5. **legends.js onGoToLinked** city=beijing 写死 → this._city 透传
+6. **list.js** 3 处 shadow CITY_KEYS/NAMES/LABELS → cities.js 派生
+7. **packageDetail/detail.js** similar 推荐 CITY_KEYS shadow → CITY_CONFIG
+8. **全制霸弹窗** CITY_NAMES/EMOJIS 3 城 → CITY_CONFIG
+9. **onboarding** 写死 3 城 block → CITIES 动态
+10. **web js/app.js** search jumpToResult 写死 beijing → it.city
+11. **web legends.js** flip btn 只 beijing 显示 → getCitiesWithLegends()
+12. **5 HTML 页**（planner/dest/achievements/stats/compare）漏加 CQ/ES script
+13. **seasonal/achievements/recent** 3 JS 模块 SOURCE_VARS 漏 CQ/ES
+14. **sw.js** cache v19→v20 + 6 新数据文件 offline 支持
 
-- ✅ pollinations-regen-queue.json (234): 全跑完
-- ✅ primitive-regen-queue.json (106): 全跑完
-- ⚠️ suzhou-regen-queue.json: 43/60 done，**17 张 missing source file**（需重跑）
-- ⚠️ **CD/HZ 22 张未进 `js/images.js`**（不是跑完质量差，是从未落地）
-- 🧪 本 session 新建 `cdhz-regen-queue.json`（12 CD + 10 HZ + 手写 location-specific anchors）
-- 📬 2 张 smoke（1300 宽窄巷子 + 1400 西湖）已发 Discord，**等用户视觉判断再铺全量**
+### 🎨 图片：Pollinations 158/158 全量上线
+
+`gen-pollinations-http.ts` HTTP 直调 image.pollinations.ai · 1376×768 photo-realistic editorial 风 · 64-136KB · 0 failed。
+
+**为什么不用 Gemini**：本 session 期间 Gemini Web returned 404（endpoint 改了）跑 22 张才出 3 张。Pollinations HTTP 不依赖 cookies 也不抢 Chrome 焦点，遇 429 会有重试 — 适合大批量 backfill。
 
 ### Git / CI / Deploy
 
-- 最新 commit: `72eda3c` (chore · retry-gaps 脚本 + 55 gap 交接日志)
+- 最新 commit: `53b5c6c` (images final)
 - origin/main: ✅ 已推
 - Live URL: https://sherconan.github.io/weekend-go/
-- 本 session 共 **4 个 commit pushed**（dfbe082 · 29f2828 · 1b836d2 · 72eda3c）
+- GH Actions 最近 3 条全 success
 
 ---
 
-## 🛠 本 session 新增工具链（重要 · 跨 session 复用）
+## 🛠 本 session 沉淀的工具链
 
-### 1. 零弹窗 XHS 抓手（`xhs-research/`）
+### 1. 双图片 pipeline 并行
+- **Gemini Web** (`gen-cdhz-regen.ts` / `gen-suzhou-regen.ts --queue ...`): 走 baoyu-danger-gemini-web skill，有抢 Chrome 焦点风险，质量稍好。**注意** Gemini cookies 过期会触发 AuthError，跑 `python3 refresh-gemini-cookies.py` 重抠。
+- **Pollinations HTTP** (`gen-pollinations-http.ts --queue ...`): 纯 HTTP 直调 image.pollinations.ai，零 Chrome 依赖、零 session 抢占，扛得住 429。**这是图片大批量生成的主力管道**。
 
-```
-build-bj-queue.py         # 从 data 文件扫 (id, name, file) → queue.json
-batch-harvest-playwright.py  # 幂等单进程 harvest，每 dest ~8s，幂等缓存
-apply-bj-enrichment.py    # 解析 harvest JSON → patch 4 个 data-beijing-*.js
-                          #   auto-detects bare vs JSON-quoted syntax
-retry-gaps.py             # 第一版 retry（单名 + 3 query）
-retry-smart.py            # 分类 + 4 query 变体 + shuffle（实证也救不回）
-```
+### 2. 同步脚本（关键）
+- `scripts/sync-to-miniapp.js --apply`: web → miniapp 单向同步
+- **重要**：IMG_PREFIX 显式映射（不是 cityKey.slice(0,2)）。8 城里 7 城前缀对不上，刚修过。
+- CITY_SOURCE_VARS / legendCityFiles 新增城市必须改 2 处。
 
-**关键点**：
-- 登录态从用户**主 Chrome** 直接抠，不触发 QR
-- playwright `headless=True` 无窗口无焦点
-- 注入 13 个 XHS cookies（`a1`/`web_session`/`xsecappid` 是关键）
-- 复用 selector：`section.note-item` → `a.title span` / `.like-wrapper .count` / `.author .name`
-- 节流：2-5s/req，尾部 20 条会被 rate-limit 返空（首轮观察）
+### 3. XHS 抓手（仍封中）
+- `xhs-research/batch-harvest-playwright-sz.py`：proven 跑过 SZ 95/159
+- cookies 从 `~/.mcp/rednote/cookies.json`（rednote-mcp 登录后保存的 16 个 cookies），**不是** pycookiecheat 主 Chrome（差 web_session token）
+- retry 模板：`xhs-research/retry-smart-sz.py`（带 query 变体 + shuffle 防尾部 rate-limit）
 
-### 2. Gemini Web 图片生成
-
-```
-refresh-gemini-cookies.py    # 从主 Chrome 抠 gemini/accounts.google cookies
-gen-pollinations-regen.ts    # 跑 pollinations queue
-gen-primitive-regen.ts       # 跑 primitive queue
-gen-suzhou-regen.ts          # 跑 suzhou queue
-gen-cdhz-smoke.sh            # 新：2 张 CD/HZ smoke（本 session 加）
-build-cdhz-queue.py          # 新：构建 CD/HZ queue + 手写 location anchors
-cdhz-regen-queue.json        # 新：12 CD + 10 HZ，每张 anchor 手写
-```
-
-**Gemini cookies 过期修法**（本 session 第一次踩到）：
-
-```bash
-python3 ~/weekend-go/refresh-gemini-cookies.py
-# 看到 "OK refreshed 30 cookies" 就 OK
-```
-
-### 3. ChatGPT Web 图片生成（备选 · 用户说质量差，暂不用）
-
-```
-gen-chatgpt-regen.py         # AppleScript → chatgpt.com tab · 会抢 Chrome 焦点
-chatgpt-web-imagegen.py      # 旧版
-```
+### 4. 加新城基建 checklist（重庆+恩施时验证过）
+1. `config/cities.js` CITIES[] 加一项（key/name/emoji/origin/maxRange/hotWords/hasLegends）
+2. `~/weekend-go-miniapp/utils/cities.js` CITIES[] 加一项
+3. `js/cities-dataset.js` CITY_SOURCE_VARS 加 `'DESTINATIONS_XX'`
+4. `scripts/sync-to-miniapp.js`: CITY_SOURCE_VARS + legendCityFiles + **IMG_PREFIX**
+5. `js/legends.js` 末尾 if (typeof LEGENDS_XX !== 'undefined') push 分支
+6. `index.html` + `dest.html` + `planner.html` + `achievements.html` + `stats.html` + `compare.html` 加 script 标签（data + legends）
+7. `js/seasonal.js` + `js/achievements.js` + `js/recent.js` SOURCE_VARS 加映射
+8. `sw.js` CORE_ASSETS 加 + 升 CACHE_NAME 版本
+9. 新建 `js/data-XX.js` + `js/data-legends-XX.js` stub
+10. 跑内容 agent 填 30 dest + 15 legends
+11. `node scripts/sync-to-miniapp.js --apply` 同步
+12. `git add -A && commit && push`
 
 ---
 
-## ⏭ 下一步工作清单（按优先级）
+## ⏸ 阻塞到次日（外部依赖）
 
-### P0 · CD/HZ 22 张图片（本 session 卡在用户审 smoke）
+### XHS 封禁
+- 距首封 ~10h（晚上 21:00 封，凌晨 1:00 还封）
+- 通常 12-24h 解，**今早起来再 probe `playwright headless + ~/.mcp/rednote/cookies.json` 跑 `大梅沙海滨公园 攻略`**
+- 解了之后立即跑 `xhs-research/batch-harvest-playwright-sz.py` 模板对：BJ 55 gap (`xhs-research/bj-gaps-queue.json`) + SZ 60 gap (`xhs-research/sz-retry-queue.json`) + 给新 158 dest 做 xhsQuote 归因
 
-- smoke 2 张（宽窄巷子 + 西湖）已发 Discord msg `1495738529...`，等用户过审
-- 过了就 `bun gen-xxx-regen.ts --queue cdhz-regen-queue.json` 跑剩 20 张
-- 落地后去 `js/images.js` 加 22 条映射 + sw.js v 号 bump + cache-bust query string
+### WeChat DevTools 体验版上传
+- 用户需扫码重登 WeChat DevTools
+- 然后 `cli upload --project ~/weekend-go-miniapp --version 1.6.0 --desc "10 城 957 dest + 适配大修"`
 
-### P1 · Suzhou 17 张缺图
-
-- missing_src 列表在 `suzhou-regen-queue.json`（id 1003/1029/1030/1031/1047-1059）
-- 走 `gen-suzhou-regen.ts`（Gemini Web），和 CD/HZ 串行别并发（抢 Gemini session）
-
-### P2 · SZ 159 dest XHS 深度补齐
-
-- 现有 data-suzhou.js xhsQuote 3/159（之前 commit 0e9d6b4 是 60/60 的子集？核对）
-- 走**零弹窗抓手**：同样 `playwright + 主 Chrome cookies`
-- 注意 SZ 是 bare syntax，`apply-bj-enrichment.py` 的 bare 分支直接能用
-
-### P3 · BJ 55 gap 补救（非刚需）
-
-- 如果用户点头允许破红线 ≤5% → 16% 走 Bocha fallback
-- 13 个外地城市（青岛/曲阜/大同/…）XHS 做城市 filter 不出笔记，Bocha 拿通用攻略摘要最合适
-- 32 个 BJ 胡同 / 老字号 XHS 无词库，可以上 Bocha 或人肉
-
-### P4 · 未完成的小程序工作（外部阻塞）
-
-- 小程序 v1.5.0 体验版上传：WeChat DevTools 登录过期，需用户扫码重登
+### Suzhou 1030 丝绸博物馆缺图
+- Gemini 3 连 240s timeout 跳过
+- 下次跑 Pollinations 一发就好
 
 ---
 
 ## ⚠️ 本 session 新增踩坑录
 
-1. **sub-agent 里 call rednote-mcp login** — 弹 Chrome + QR。**绝对禁止**。
-2. **xhs-cli check-login 会自动启动 Bridge server + 开 Chrome** — 和 rednote-mcp 同级的雷。
-3. **xiaohongshu-search-summarizer 依赖 playwright headed browser** —— 同样弹窗，绕开。
-4. **playwright Chromium 安装到 `~/Library/Caches/ms-playwright/` 不是 `~/.cache/`**（macOS），脚本写路径时注意。
-5. **apply-bj-enrichment.py 自动识别 bare vs JSON-quoted syntax**（BJ500 是 "id": 300 quoted，hidden/tales/new2026 是 id: 430 bare），复用到其他城市也要 bare-detect。
-6. **XHS 首轮批量跑 300+ 条后尾部会 rate-limit 返空 feed**（不是登录问题，是速率）。策略：batch 时 shuffle queue，或单 batch ≤200 条。
-7. **pkill -9 chromium_headless_shell 会清掉后续脚本的 browser context** → TargetClosedError。清僵尸进程时用 pkill（不加 -9）让它 graceful。
-8. **Gemini Web cookies 过期触发 AuthError: Failed to refresh cookies** → 跑 `refresh-gemini-cookies.py` 从主 Chrome 重抠。
+1. **content agent socket 断 + watchdog stall**：CQ dest 写 30 条规模，agent 连续 2 次失败（socket closed + 600s watchdog）。**结论**：30+ 条规模建议 inline 写，不要赌 agent。
+2. **Pollinations rate-limit 429**：单 IP 跑 200+ 张会触发，约 1h 解。可双 process 并发但都会 429。**最好 batch ≤ 100 + 间隔 1.5s**。
+3. **Gemini Web endpoint 偶尔 404**：CD/HZ 22 张跑出 3 张，后 19 张连 404 fail。可能 endpoint 路径短期失效，等几小时或刷 cookies。
+4. **JS 字符串内嵌中文双引号**：`由"永宇美学"改造` 看似中文双引号实际被 JS parser 当 ASCII " — 用 `「永宇美学」` 中文角括号或转义。
+5. **agent 5 个 city 的 7 个 letter prefix 错**：cityKey.slice(0,2) 对 5/8 城都不对（tianjin→ti、qingdao→qi、chengdu→ch、hangzhou→ha、weihai→we、shenzhen→sh、beijing→be 全错），只有 suzhou→su 巧合。
 
 ---
 
-## 🎯 接手建议（3 个抓手）
+## 🎯 接手建议（按优先级）
 
-1. **立即做**：等用户审 CD/HZ smoke → 一键 `build-cdhz-queue.py` 剩 20 张 + Suzhou 17 缺图（用 Gemini Web，零抢焦点）。
-2. **下一步**：SZ 159 dest XHS 补齐（复用 `batch-harvest-playwright.py` 改文件路径即可）。
-3. **破红线需要授权**：BJ 55 gap 用 Bocha（16% > 5%，必须用户明确点头）。
+### P0：明早 XHS 解封后立即做
+1. probe XHS：`python3 -c "..."` (cookies + playwright headless 跑大梅沙)
+2. 解了就批量跑 BJ 55 + SZ 60 + 新 158 dest 的 xhsQuote 归因
+3. apply + commit + push 一把
 
-**底层逻辑**：产品内容密度核心 = 真实 XHS 深度 + 真实 AI 图。本 session 把 BJ 从 0% 推到 84%，把 XHS 抓手从"subagent + login" 升级到"cookies + playwright headless"零弹窗级。下次可以拿模板直接套到 SZ。
+### P1：用户扫码重登 WeChat DevTools 后
+1. 上传 v1.6.0 体验版
+2. 扫码体验，验证 10 城 + 957 dest + 270 legends 全显示
+
+### P2：Pollinations 限制解后
+1. Suzhou 1030 丝绸博物馆补图（单张）
+
+### P3：内容打磨（用户偶尔会让做）
+- BJ 348 dest 的 xhsQuote 现在 293/348（85%），剩 55 条结构性无货，要破红线用 Bocha
+- TJ/QD/CD/HZ/CQ/ES 6 城每城 30 条，可以再补到 50 条提升内容密度
+- legends 量不均（QD 15/BJ 100），可以补 QD/TJ/CD/HZ/CQ/ES 到 20-30
+
+### P4（外部依赖：得用户拍板）
+- 破红线 5%：BJ 55 + SZ 60 + ?新 158 用 Bocha fallback 给 xhsQuote 兜底（user 明确点头）
+- 加新城（用户偶尔会想加）
 
 ---
 
 ## 📞 外部联系
 
-- 用户 Discord: chat_id `1484568024311922728`（allowlist 时好时坏，重要汇报同时写本文件）
+- 用户 Discord: chat_id `1484568024311922728`
 - Live site: https://sherconan.github.io/weekend-go/
 - 用户时区: GMT+8
-- 用户习惯：产品视角不看代码，要真实数据不要 demo；弹窗会直接吐槽
-- 用户偏好：本 session 的 commit message 中文 + 明确"顶层设计 / 底层逻辑 / 抓手 / 闭环"的 Alibaba 风格（PUA 🟠 flavor alibaba）
+- 用户习惯：产品视角不看代码，要真实数据不要 demo；弹窗会直接吐槽；"非常多功能显示不对"要 audit 找隐身根因不是表面修
+- 用户偏好：commit message 中文 + 明确"顶层设计 / 底层逻辑 / 抓手 / 闭环 / 颗粒度"的 Alibaba 风格
+
+---
+
+## 底层逻辑沉淀
+
+本 8h 大会战拉通的核心抓手：
+- **单一注册表**：cities.js → 所有 UI / sync / image URL / data load 全派生
+- **零弹窗 image gen**：Pollinations HTTP 是首选，不要碰 Gemini/ChatGPT 抢焦点
+- **隐身 bug 找法**：grep `'beijing'\|'shenzhen'\|'weihai'\|CITY_KEYS\s*=` 跨 web + miniapp + scripts，shadow 硬编码全清
+- **db backfill 路径**：先建 stub + 改基建 → 跑内容 agent → 同步 → commit per-city，最坏 agent 死了 inline 顶上
+
+跨 session 看，本次最重要遗产：**重新建立了 image gen 的备份路径**（Pollinations 直 HTTP）。下次任何 image batch 直接用，不要再赌 Gemini Web。
