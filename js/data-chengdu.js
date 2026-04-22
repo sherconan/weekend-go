@@ -21,6 +21,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「主街走一圈拍拍照，1 小时左右足够。别买！别吃！尤其是主街钱花得冤枉」",
     xhsHeat: { heat: "高", notes: "508+97+70+42+37+13", trending: "稳定", tier: "S" },
     tags: ["老巷", "盖碗茶", "川味", "网红", "成都地标"],
+    image: "assets/images/dest-cd-1300.webp",
     imageQuery: "Chengdu Kuanzhai Alley traditional street"
   },
   {
@@ -43,6 +44,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「从西门进！！！尤其带孩子带老人的，从南门进走到怀疑人生，全程上坡路」",
     xhsHeat: { heat: "极高", notes: "313+51+6+多篇避雷贴", trending: "持续", tier: "S+" },
     tags: ["熊猫", "花花", "亲子", "拍照", "国宝"],
+    image: "assets/images/dest-cd-1301.webp",
     imageQuery: "Chengdu Panda Research Base giant pandas"
   },
   {
@@ -65,6 +67,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「华灯初上，夜晚的锦里才真正醒来……锦里的夜，比白天更懂人间」",
     xhsHeat: { heat: "高", notes: "941+32+11+9", trending: "稳定", tier: "S" },
     tags: ["三国", "灯笼", "小吃", "夜市", "武侯祠"],
+    image: "assets/images/dest-cd-1302.webp",
     imageQuery: "Chengdu Jinli Ancient Street night lanterns"
   },
   {
@@ -87,6 +90,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「都江堰的智慧真的很震撼，用最短时间 get 它的精华，体验感满分！」",
     xhsHeat: { heat: "极高", notes: "8425+638+461+200+127+119", trending: "持续热度", tier: "S+" },
     tags: ["世界遗产", "水利", "都江堰", "李冰", "古代工程"],
+    image: "assets/images/dest-cd-1303.webp",
     imageQuery: "Dujiangyan ancient irrigation system Sichuan"
   },
   {
@@ -109,6 +113,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「烟雨蒙蒙的山景超级美丽，空气也好充满负离子……青城天下幽」",
     xhsHeat: { heat: "高", notes: "725+200+163+127+73", trending: "稳定", tier: "S" },
     tags: ["道教", "世界遗产", "名山", "太极", "青城"],
+    image: "assets/images/dest-cd-1304.webp",
     imageQuery: "Qingcheng Mountain Taoist temple Chengdu"
   },
   {
@@ -131,6 +136,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「成都武侯祠，史同女心中的冈仁波齐……把丞相墓的落叶带给刘备，把长安的土揣到武侯祠」",
     xhsHeat: { heat: "高", notes: "196+73+14+多篇保姆级", trending: "稳定", tier: "A+" },
     tags: ["三国", "蜀汉", "诸葛亮", "国保", "历史"],
+    image: "assets/images/dest-cd-1305.webp",
     imageQuery: "Wuhou Shrine Chengdu Three Kingdoms"
   },
   {
@@ -153,6 +159,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「破晓的那一刻我站在菩萨神像前，天地万物都如此圣洁，因为心中有光啊」",
     xhsHeat: { heat: "极高", notes: "810+237+161+2", trending: "持续热度", tier: "S+" },
     tags: ["佛教", "金顶", "日出", "峨眉山", "世界遗产"],
+    image: "assets/images/dest-cd-1306.webp",
     imageQuery: "Emei Mountain Golden Summit sunrise Sichuan"
   },
   {
@@ -175,6 +182,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「📖 总结：去爬山，去爬山，去爬山」",
     xhsHeat: { heat: "高", notes: "1335+557+406+264", trending: "持续热度", tier: "S" },
     tags: ["大佛", "唐代", "世界遗产", "佛教", "乐山"],
+    image: "assets/images/dest-cd-1307.webp",
     imageQuery: "Leshan Giant Buddha Sichuan"
   },
   {
@@ -197,6 +205,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「离成都近、不会高反、进阶雪道人少、有夜场」",
     xhsHeat: { heat: "中高", notes: "179+24+3", trending: "冬季高夏季低", tier: "A" },
     tags: ["滑雪", "雪山", "避暑", "杜甫", "雪峰"],
+    image: "assets/images/dest-cd-1308.webp",
     imageQuery: "Xiling Snow Mountain ski resort Sichuan"
   },
   {
@@ -219,6 +228,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「看到他的雕像就像看到了当年居住在这里的杜工部一样，特别感人」",
     xhsHeat: { heat: "中高", notes: "222+128+128+112", trending: "稳定", tier: "A+" },
     tags: ["杜甫", "诗史", "唐代", "文学", "国保"],
+    image: "assets/images/dest-cd-1309.webp",
     imageQuery: "Du Fu Thatched Cottage Chengdu"
   },
   {
@@ -241,6 +251,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「24 小时看 IFS 爬墙熊猫的高空酒店……躺进观景浴池俯瞰 IFS 熊猫」",
     xhsHeat: { heat: "极高", notes: "787+343+215+199", trending: "持续热度", tier: "S+" },
     tags: ["商圈", "火锅", "潮流", "太古里", "成都打卡"],
+    image: "assets/images/dest-cd-1310.webp",
     imageQuery: "Chengdu Taikooli IFS wall panda shopping"
   },
   {
@@ -263,6 +274,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「来成都怎么能不喝茶呢，人民公园茶社可以给到“夯”」",
     xhsHeat: { heat: "高", notes: "209+42+4+3+多篇", trending: "稳定", tier: "S" },
     tags: ["喝茶", "采耳", "市井", "老成都", "相亲角"],
+    image: "assets/images/dest-cd-1311.webp",
     imageQuery: "Chengdu Peoples Park Heming Teahouse"
   },
   {
@@ -285,6 +297,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「成都免费的宝藏公园，春花秋叶四季如画，和草堂联游刚刚好」",
     xhsHeat: { heat: "中高", notes: "312+87+45+22", trending: "稳定", tier: "A+" },
     tags: ["公园", "免费", "遛娃", "银杏", "白鹭"],
+    image: "assets/images/dest-cd-1312.webp",
     imageQuery: "Chengdu Huanhuaxi Park autumn ginkgo"
   },
   {
@@ -307,6 +320,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「来成都别只知道大慈寺，文殊院才是本地人求智慧的第一选择」",
     xhsHeat: { heat: "高", notes: "456+112+88+34", trending: "稳定", tier: "S" },
     tags: ["古刹", "免费", "素食", "禅修", "文殊菩萨"],
+    image: "assets/images/dest-cd-1313.webp",
     imageQuery: "Chengdu Wenshu Monastery ancient Buddhist temple"
   },
   {
@@ -329,6 +343,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「上午拜佛下午购物，大慈寺把 1600 年禅意塞进了奢侈品大道」",
     xhsHeat: { heat: "高", notes: "389+124+76+45", trending: "稳定", tier: "S" },
     tags: ["古刹", "玄奘", "太古里", "文艺", "反差"],
+    image: "assets/images/dest-cd-1314.webp",
     imageQuery: "Chengdu Daci Temple Taikooli red wall"
   },
   {
@@ -351,6 +366,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「成都的 798，红砖厂房工业风随手一拍都是赛博朋克」",
     xhsHeat: { heat: "高", notes: "567+234+145+89", trending: "稳定", tier: "S" },
     tags: ["工业风", "文艺", "音乐节", "漫展", "798"],
+    image: "assets/images/dest-cd-1315.webp",
     imageQuery: "Chengdu Eastern Suburb Memory industrial art park"
   },
   {
@@ -373,6 +389,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「和我在成都的街头走一走……走到玉林路的尽头，坐在小酒馆的门口」",
     xhsHeat: { heat: "极高", notes: "1245+543+298+167", trending: "持续热度", tier: "S+" },
     tags: ["赵雷", "成都", "小酒馆", "苍蝇馆", "梧桐"],
+    image: "assets/images/dest-cd-1316.webp",
     imageQuery: "Chengdu Yulin Road Little Bar music street"
   },
   {
@@ -395,6 +412,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「带娃来黄龙溪就对了，溪水清凉玩到天黑，¥10 盖碗茶坐一下午神仙日子」",
     xhsHeat: { heat: "高", notes: "389+167+98+45", trending: "夏季高", tier: "A+" },
     tags: ["古镇", "水乡", "亲子", "玩水", "非遗"],
+    image: "assets/images/dest-cd-1317.webp",
     imageQuery: "Huanglongxi Ancient Town water village Chengdu"
   },
   {
@@ -417,6 +435,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「¥10 伤心凉粉辣到流泪但停不下来，客家土楼藏在成都 30 分钟车程外」",
     xhsHeat: { heat: "中高", notes: "278+98+56+23", trending: "稳定", tier: "A+" },
     tags: ["古镇", "客家", "伤心凉粉", "会馆", "非遗"],
+    image: "assets/images/dest-cd-1318.webp",
     imageQuery: "Luodai Ancient Town Hakka culture Chengdu"
   },
   {
@@ -439,6 +458,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「比黄龙溪清净比洛带秀气，街子古镇才是成都文艺青年的后花园」",
     xhsHeat: { heat: "中", notes: "189+67+34+18", trending: "稳定", tier: "A" },
     tags: ["古镇", "青城", "凤栖山", "汤麻饼", "文艺"],
+    image: "assets/images/dest-cd-1319.webp",
     imageQuery: "Jiezi Ancient Town Qingcheng backyard"
   },
   {
@@ -461,6 +481,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「夏天去平乐古镇江边泡脚吃西瓜打麻将，这就是成都人的完美周末」",
     xhsHeat: { heat: "高", notes: "445+187+98+56", trending: "夏季高", tier: "S" },
     tags: ["古镇", "水乡", "竹海", "茶马古道", "泡脚"],
+    image: "assets/images/dest-cd-1320.webp",
     imageQuery: "Pingle Ancient Town Sichuan water village bamboo"
   },
   {
@@ -483,6 +504,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「看一次建川博物馆，读完中国近现代史；住一晚公馆民宿，穿越回民国」",
     xhsHeat: { heat: "高", notes: "412+198+98+56", trending: "稳定", tier: "S" },
     tags: ["古镇", "民国", "博物馆", "公馆", "刘文彩"],
+    image: "assets/images/dest-cd-1321.webp",
     imageQuery: "Anren Ancient Town Jianchuan Museum mansion"
   },
   {
@@ -505,6 +527,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「入园免费随便逛，盖碗茶 15 块坐一下午，这才是成都人的周末」",
     xhsHeat: { heat: "中", notes: "198+78+34+18", trending: "稳定", tier: "A" },
     tags: ["花田", "农家乐", "亲子", "采摘", "五朵金花"],
+    image: "assets/images/dest-cd-1322.webp",
     imageQuery: "Chengdu Sansheng Township flower fields countryside"
   },
   {
@@ -527,6 +550,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「这辈子一定要来一次稻城亚丁，三神山同时被日出染成金色的瞬间此生难忘」",
     xhsHeat: { heat: "极高", notes: "5843+2341+1287+867+543", trending: "持续热度", tier: "S++" },
     tags: ["雪山", "高原", "徒步", "稻城亚丁", "三神山"],
+    image: "assets/images/dest-cd-1323.webp",
     imageQuery: "Daocheng Yading three sacred mountains Sichuan"
   },
   {
@@ -549,6 +573,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「成都周末就能去的东方阿尔卑斯，比稻城亚丁省一半时间看雪山」",
     xhsHeat: { heat: "高", notes: "876+345+198+98", trending: "持续热度", tier: "S" },
     tags: ["雪山", "高原", "徒步", "四姑娘山", "攀登"],
+    image: "assets/images/dest-cd-1324.webp",
     imageQuery: "Siguniang Mountain Sichuan Eastern Alps"
   },
   {
@@ -571,6 +596,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「贡嘎雪山日照金山的那 5 分钟值回所有机票，3600m 雪山泡温泉此生必打卡」",
     xhsHeat: { heat: "极高", notes: "1234+567+345+189", trending: "持续热度", tier: "S+" },
     tags: ["冰川", "雪山", "温泉", "贡嘎", "海螺沟"],
+    image: "assets/images/dest-cd-1325.webp",
     imageQuery: "Hailuogou Glacier Gongga Mountain sunrise"
   },
   {
@@ -593,6 +619,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「3 月整个甲居藏寨淹没在梨花雪海里，白色石楼点缀其中，中国最美乡村名副其实」",
     xhsHeat: { heat: "高", notes: "678+289+156+87", trending: "春秋两高峰", tier: "S" },
     tags: ["藏寨", "梨花", "高原", "嘉绒", "最美乡村"],
+    image: "assets/images/dest-cd-1326.webp",
     imageQuery: "Danba Jiaju Tibetan village pear blossom"
   },
   {
@@ -615,6 +642,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「2300 年不挪位的风水宝地，山围四面水绕三方，比丽江平遥更有文化底蕴」",
     xhsHeat: { heat: "高", notes: "567+234+145+87", trending: "春节高峰", tier: "S" },
     tags: ["古城", "风水", "张飞", "春节", "巴蜀"],
+    image: "assets/images/dest-cd-1327.webp",
     imageQuery: "Langzhong Ancient City Sichuan four ancient cities"
   },
   {
@@ -637,6 +665,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「夏天 25 度的神仙避暑地，骑行翡翠长廊像走进了卧虎藏龙」",
     xhsHeat: { heat: "高", notes: "567+234+156+89", trending: "夏季高峰", tier: "S" },
     tags: ["竹海", "避暑", "卧虎藏龙", "宜宾", "自然"],
+    image: "assets/images/dest-cd-1328.webp",
     imageQuery: "Shunan Bamboo Sea Sichuan Crouching Tiger Hidden Dragon"
   },
   {
@@ -659,6 +688,7 @@ const DESTINATIONS_CD = [
     xhsQuote: "「成都人的宇宙中心在建设巷，¥80 吃扶墙走，东郊记忆步行 10 分钟神仙搭配」",
     xhsHeat: { heat: "极高", notes: "2134+876+543+234+156", trending: "持续热度", tier: "S+" },
     tags: ["美食", "苍蝇馆", "夜宵", "蹄花", "东郊"],
+    image: "assets/images/dest-cd-1329.webp",
     imageQuery: "Chengdu Jianshe Alley food street local cuisine"
   }
 ];

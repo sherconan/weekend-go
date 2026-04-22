@@ -19,6 +19,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 景区免费，三潭印月+雷峰塔+净慈寺一共约 ¥120\n2. 逆时针环湖不走回头路，穿素色衣服 + 运动鞋最出片\n3. 公交船 6-8 元最接地气，能穿行所有水面",
     highlight: "西湖十景·苏轼手笔·世界遗产",
     tags: ["西湖", "苏堤", "世界遗产", "断桥", "杭州地标"],
+    image: "assets/images/dest-hz-1400.webp",
     imageQuery: "West Lake Hangzhou Su Causeway spring",
     xhsQuote: "「4 点半太阳西向，撒在湖面上波光粼粼，西湖的水跟绸缎一样，陆续下班的船夫、肆无忌惮觅食的小鸭子，当真是风景美如画！」",
     xhsHeat: { heat: "高", notes: "2735+ 赞单篇", trending: true, tier: "S" }
@@ -41,6 +42,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 必须公众号提前 1 天预约，否则进不了\n2. 旺季 8:00-17:30 景区限行，网约车打不到，出园后步行到公交站坐公交 ¥5\n3. 清晨 7 点到人最少，自带的香不用带，衣着得体不穿暴露装",
     highlight: "飞来峰石窟·三生石·济公殿",
     tags: ["佛寺", "济公", "禅意", "灵隐", "石窟"],
+    image: "assets/images/dest-hz-1401.webp",
     imageQuery: "Lingyin Temple Hangzhou Buddhist",
     xhsQuote: "「灵隐寺的免费茶水别喝太多，出了寺院登山路上可没有厕所」",
     xhsHeat: { heat: "爆", notes: "1544+ 赞，126+ 笔记", trending: true, tier: "S" }
@@ -63,6 +65,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 龙井 43 号 3 月中旬开采，3 月下旬至清明前明前茶最珍贵，4 月清明后雨前茶性价比高\n2. 穿平底鞋 + 浅色系衣服出片，茶园无遮挡需防晒\n3. 村口会有拉客卖茶，往里走座位和茶品质都更好",
     highlight: "狮峰龙井原产地·茶文化博物馆",
     tags: ["龙井", "茶", "明前", "山景", "西湖"],
+    image: "assets/images/dest-hz-1402.webp",
     imageQuery: "Longjing tea plantation Hangzhou",
     xhsQuote: "「杭州东站跟西湖区真的很割裂，西湖区一整个大氧吧，满眼的绿色，太治愈了！牛马果然向往绿色！！」",
     xhsHeat: { heat: "高", notes: "278+ 赞徒步攻略", trending: true, tier: "A" }
@@ -85,6 +88,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 门票务必提前约千古情座位，错过可下一场补\n2. 自带干粮水，园内小吃贵\n3. 坐得太后面看不清，提前 20 分钟去国潮快闪区占位",
     highlight: "《宋城千古情》年接待 1800 万",
     tags: ["宋城", "千古情", "演艺", "穿越", "宋韵"],
+    image: "assets/images/dest-hz-1403.webp",
     imageQuery: "Songcheng Hangzhou song dynasty theme park",
     xhsQuote: "「景区各个地方都有很多很多 NPC 互动，回答对问题给你一张银票，凑齐 18 张可以换个小礼物，让孩子多去参与真的很开心」",
     xhsHeat: { heat: "中", notes: "好评+差评两极分化", trending: false, tier: "B" }
@@ -107,6 +111,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 9:30 前到没人排队，水面没船最好看\n2. ¥200/2h 包船是甜点，¥388 那档坑人别买\n3. 每个大门有一次进出机会，玩完别误出门",
     highlight: "深潭口·秋雪庵·西溪梅墅",
     tags: ["湿地", "芦苇", "非诚勿扰", "船游", "自然"],
+    image: "assets/images/dest-hz-1404.webp",
     imageQuery: "Xixi Wetland Park Hangzhou",
     xhsQuote: "「摇橹船很值得，省力悠闲，路线可以赏梅花，后续可以不用步行赏梅；买景交车票 30 元无限次乘坐」",
     xhsHeat: { heat: "高", notes: "1519+ 赞亲子线", trending: true, tier: "A" }
@@ -129,6 +134,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 游船提前一天订，10 点前上船才能刷三岛\n2. 天屿山扶梯必买，步行上下来会累残\n3. 天池岛吃饭是坑，务必自带干粮",
     highlight: "东南湖区梅峰观岛·鱼头宴",
     tags: ["千岛湖", "度假", "鱼头", "岛屿", "淳安"],
+    image: "assets/images/dest-hz-1405.webp",
     imageQuery: "Qiandao Lake thousand islands Hangzhou",
     xhsQuote: "「天屿山 16:30-18:00 看橘子海日落，俯瞰千岛湖大桥与群岛同框，拍照封神」",
     xhsHeat: { heat: "高", notes: "648+ 赞两日攻略", trending: true, tier: "A" }
@@ -151,6 +157,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 西栅夜景完整远胜东栅，必选西栅\n2. 亮灯 17:30 开始，22:00 冬令关灯（夏 22:30）\n3. 住景区内才能 9 点半后独占西栅",
     highlight: "西栅夜景·互联网大会小镇",
     tags: ["古镇", "水乡", "江南六镇", "戏剧节", "夜景"],
+    image: "assets/images/dest-hz-1406.webp",
     imageQuery: "Wuzhen ancient water town night",
     xhsQuote: "「21:00-21:30 尾声，主干道店铺开始打烊，人群散去，你能听到水流声和自己的脚步声，这是西栅最珍贵的时刻」",
     xhsHeat: { heat: "爆", notes: "254+ 赞保姆级夜游", trending: true, tier: "S" }
@@ -173,6 +180,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 河坊街主街滤镜很重，别只逛主街，拐进大井巷/高银街/鼓楼才是正确姿势\n2. 胡庆余堂、德寿宫免费参观不要错过\n3. 傍晚红灯笼亮起拍照最出片",
     highlight: "南宋临安都城中轴·清河坊老字号群",
     tags: ["南宋", "老字号", "片儿川", "胡庆余堂", "清河坊"],
+    image: "assets/images/dest-hz-1407.webp",
     imageQuery: "Hangzhou Nansong Imperial Street",
     xhsQuote: "「作为老杭州，这里要登山就登山，要寻古就寻古，还有让我安心的市井烟火气，消磨一整天都可以」",
     xhsHeat: { heat: "中", notes: "本地人推荐>外地游客吐槽", trending: false, tier: "B" }
@@ -195,6 +203,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 网上提前买票避免现场排队\n2. 傍晚 18:30-19:30 看雷峰夕照最经典\n3. 内里主要看塔顶全景+层内壁画，建议 1.5-2 小时",
     highlight: "白蛇传·西湖十景·雷峰夕照",
     tags: ["白娘子", "雷峰塔", "西湖", "夕照", "传说"],
+    image: "assets/images/dest-hz-1408.webp",
     imageQuery: "Leifeng Pagoda Hangzhou West Lake",
     xhsQuote: "「雷峰塔虽然是新建的，但值得一观，每层墙壁都有不同的设计，值得细细观摩，最下面是原雷峰塔旧址」",
     xhsHeat: { heat: "中", notes: "235+ 赞爬塔攻略", trending: false, tier: "B" }
@@ -217,6 +226,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 必须提前在公众号预约，刷身份证进校\n2. 工作日清晨 + 下午光线最出片，雨后水面倒影最灵\n3. 自驾停「转塘行政服务中心」¥5/小时",
     highlight: "王澍普利兹克奖作品·象山十景",
     tags: ["建筑", "王澍", "青瓦", "国美", "普利兹克"],
+    image: "assets/images/dest-hz-1409.webp",
     imageQuery: "China Academy Art Xiangshan Wang Shu",
     xhsQuote: "「史铁生有地坛，而我有美院象山，在那里，时间终于肯为我停一停，至少在那几个小时里，风是真的，树是真的，我是真的」",
     xhsHeat: { heat: "高", notes: "781+ 赞参观攻略", trending: true, tier: "A" }
@@ -239,6 +249,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 飞来峰门票必须单独买，灵隐寺 ¥30 只是香券\n2. 夏天比市区凉 5°C，是景区最舒服的夏游点\n3. 青林洞光线暗，建议带手电或开手机照明看石刻",
     highlight: "布袋弥勒像·青林洞密宗石刻",
     tags: ["石窟", "飞来峰", "造像", "佛教", "灵隐"],
+    image: "assets/images/dest-hz-1410.webp",
     imageQuery: "Feilaifeng grottoes Hangzhou Buddhist carvings",
     xhsQuote: "「弥勒布袋像是南宋原作，八百年风吹日晒还在笑，比灵隐寺里新翻修的铜像有灵多了」",
     xhsHeat: { heat: "中", notes: "320+ 赞石窟攻略", trending: false, tier: "A" }
@@ -261,6 +272,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 穿防滑运动鞋，汀步有青苔易滑\n2. 带 2L 水，沿途水贵且只有 3 个补水点\n3. 反走更省力：从龙井村下到九溪（下坡为主）",
     highlight: "九溪十八涧·十里琅珰·理安寺",
     tags: ["徒步", "九溪", "溪流", "龙井", "十里琅珰"],
+    image: "assets/images/dest-hz-1411.webp",
     imageQuery: "Jiuxi eighteen streams Hangzhou forest hiking",
     xhsQuote: "「三伏天杭州 38°C，九溪烟树里只有 32°C，溪水冰得跟冰箱里拿出来似的，娃在水里泡了俩小时不想回家」",
     xhsHeat: { heat: "高", notes: "1820+ 赞夏季攻略", trending: true, tier: "A" }
@@ -283,6 +295,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 村口前 200 米的「茶农」大多是外地转租户，茶叶良莠不齐，走到村尾才是正宗茶农家\n2. 「先品后买」是权利，不满意可以不买\n3. 节假日 103 路公交挤爆，建议打车或徒步",
     highlight: "狮峰龙井梅字号·周总理视察地",
     tags: ["梅家坞", "龙井", "茶文化", "村落", "狮峰"],
+    image: "assets/images/dest-hz-1412.webp",
     imageQuery: "Meijiawu tea village Hangzhou Longjing",
     xhsQuote: "「在梅家坞最里面那家茶农露台坐下，师傅现泡头采龙井，山风从茶田吹过来，才明白为什么古人说『从来佳茗似佳人』」",
     xhsHeat: { heat: "高", notes: "450+ 赞春茶攻略", trending: true, tier: "A" }
@@ -305,6 +318,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 保俶塔日出 4:30-5:30 最经典，但夏天要赶时间\n2. 梧桐树秋天 11 月中下旬才黄\n3. 北山街骑共享单车比走路更有味道",
     highlight: "民国建筑群·保俶塔日出",
     tags: ["北山街", "保俶塔", "宝石山", "民国", "西泠印社"],
+    image: "assets/images/dest-hz-1413.webp",
     imageQuery: "Baochu Pagoda Hangzhou West Lake sunrise",
     xhsQuote: "「凌晨 4 点半爬宝石山，天边粉橘色，保俶塔像一把针扎进天幕，整个西湖还在雾里睡——这一刻值回早起」",
     xhsHeat: { heat: "高", notes: "890+ 赞日出攻略", trending: true, tier: "A" }
@@ -327,6 +341,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 博物院讲解免费但限时段（9:30/10:30/14:00/15:00），务必蹭上\n2. 遗址公园 + 博物院 + 大屋顶一天勉强逛完，建议分两天\n3. 3 月樱花季大屋顶需提前 3 天预约",
     highlight: "玉琮王·莫角山宫殿·世界遗产",
     tags: ["良渚", "五千年", "世界遗产", "玉器", "安藤忠雄"],
+    image: "assets/images/dest-hz-1414.webp",
     imageQuery: "Liangzhu ancient city archaeological site",
     xhsQuote: "「站在反山王陵面前，想到 5300 年前这里就有贵族祭天用玉琮玉钺，比金字塔还早——第一次对『文明』这个词有实感」",
     xhsHeat: { heat: "高", notes: "1080+ 赞研学攻略", trending: true, tier: "A" }
@@ -349,6 +364,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 与象山校区一起公众号预约，工作日人少\n2. 屋顶光线下午最佳，阴雨天瓦片反差弱\n3. 周一闭馆，务必查开放日",
     highlight: "隈研吾青瓦屋顶·普利兹克建筑三剑客",
     tags: ["民艺博物馆", "隈研吾", "建筑", "国美", "青瓦"],
+    image: "assets/images/dest-hz-1415.webp",
     imageQuery: "Kengo Kuma folk art museum Hangzhou tiles",
     xhsQuote: "「6 万片老瓦盖出来的屋顶，下雨的时候听雨从瓦缝里滴下来的声音，像极了江南老祖母院子里的春分——隈研吾真的懂中国」",
     xhsHeat: { heat: "中", notes: "420+ 赞建筑打卡", trending: false, tier: "A" }
@@ -371,6 +387,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 戏剧节期间西栅住宿价格翻 3 倍，必须 8-9 月订\n2. 青年竞演和古镇嘉年华免费超值，别只抢特邀\n3. 非戏剧节时段也能玩水乡，但错过年度高光",
     highlight: "水剧场·孟京辉·赖声川·青年竞演",
     tags: ["戏剧节", "乌镇", "黄磊", "赖声川", "艺术节"],
+    image: "assets/images/dest-hz-1416.webp",
     imageQuery: "Wuzhen theatre festival water stage",
     xhsQuote: "「在乌镇戏剧节的水剧场看《等待戈多》，背后是大运河，头顶是月亮，台词从对岸飘过来——这一刻突然懂了艺术是什么」",
     xhsHeat: { heat: "爆", notes: "年度文艺圈顶流", trending: true, tier: "S" }
@@ -393,6 +410,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 必查潮汐表！错过就是一滩烂泥\n2. 观潮胜地公园是海塘上面，离潮头最近，小心水花溅湿衣服\n3. 农历八月十八当天人挤爆，前后两天体验更佳",
     highlight: "一线潮·交叉潮·回头潮·天下奇观",
     tags: ["观潮", "钱塘江", "盐官", "奇观", "海宁"],
+    image: "assets/images/dest-hz-1417.webp",
     imageQuery: "Qiantang River tidal bore Yanguan",
     xhsQuote: "「潮头过来那一刻，我旁边的老爷爷喊『乖乖！这叫浪！』，真的是肾上腺素飙到顶——一生一定要看一次钱塘江潮」",
     xhsHeat: { heat: "高", notes: "农历八月年度刷屏", trending: true, tier: "A" }
@@ -415,6 +433,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 必须「绍兴文旅」公众号提前预约，免费但要刷身份证\n2. 午饭留给咸亨酒店，体验孔乙己「温两碗酒要一碟茴香豆」\n3. 鲁迅故里+书圣故里+沈园+府山一天能全打卡，步行 30 分钟可达",
     highlight: "百草园·三味书屋·咸亨酒店",
     tags: ["鲁迅", "绍兴", "三味书屋", "百草园", "台门"],
+    image: "assets/images/dest-hz-1418.webp",
     imageQuery: "Lu Xun former residence Shaoxing",
     xhsQuote: "「站在三味书屋那张刻着『早』字的课桌前，小学课本突然活了——原来鲁迅笔下的每一处都真实存在」",
     xhsHeat: { heat: "高", notes: "750+ 赞研学首选", trending: true, tier: "A" }
@@ -437,6 +456,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 夜游版比白天值钱，越剧实景演出是灵魂\n2. 周末 + 公众号有时送免费戏票别错过\n3. 沈园 + 鲁迅故里 + 书圣故里一天连游刚好",
     highlight: "钗头凤碑·沈园之夜越剧",
     tags: ["沈园", "陆游", "唐琬", "钗头凤", "越剧"],
+    image: "assets/images/dest-hz-1419.webp",
     imageQuery: "Shen Garden Shaoxing Lu You",
     xhsQuote: "「沈园之夜看完越剧，走出园子，月亮挂在孤鹤轩瓦当上，我站在那儿哭了很久——陆游和唐琬的爱情放在今天也就是一个『父母棒打鸳鸯』的故事，但 800 年前的那一声叹息还在」",
     xhsHeat: { heat: "中", notes: "越剧迷顶流", trending: false, tier: "A" }
@@ -459,6 +479,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 腊月是年度高光，酱货现买现晒，回家能放半年\n2. 非节日 + 非周末去，商业味几乎没有，真就活着的江南古镇\n3. 乌篷船 ¥20/人是必须体验",
     highlight: "腊月风情节·酱鸭·师爷博物馆",
     tags: ["安昌", "古镇", "腊月", "酱货", "社戏"],
+    image: "assets/images/dest-hz-1420.webp",
     imageQuery: "Anchang ancient town Shaoxing lunar new year",
     xhsQuote: "「腊月二十到安昌，河上全是挂着的酱鸭腊肠，船家递我一块扯白糖，说『安昌人过年就是这个味儿』——一下子梦回外婆家」",
     xhsHeat: { heat: "高", notes: "腊月年味顶流", trending: true, tier: "A" }
@@ -481,6 +502,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 17:00 后免费进景区是薅羊毛秘诀\n2. 门票 3 天内可重复进出，适合住一晚玩两天\n3. 雨天拍廊棚最出片，备好一次性雨衣",
     highlight: "烟雨长廊·《碟中谍 3》·江南六镇",
     tags: ["西塘", "古镇", "廊棚", "碟中谍", "嘉善"],
+    image: "assets/images/dest-hz-1421.webp",
     imageQuery: "Xitang ancient town rainy corridor",
     xhsQuote: "「下雨天在西塘廊棚里走，屋檐滴水成一条线，远处乌篷船摇橹咿呀，灯笼在水里晃——比乌镇少一点商业味，多一点真江南」",
     xhsHeat: { heat: "高", notes: "1350+ 赞雨景攻略", trending: true, tier: "A" }
@@ -503,6 +525,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 先去南湖革命纪念馆（免费但 16:00 停止入馆），再坐船登红船\n2. 7.1 前后党员来学习多，人最挤\n3. 回市区顺路打卡五芳斋总店吃粽子",
     highlight: "红船·一大闭幕地·革命纪念馆",
     tags: ["红船", "一大", "南湖", "红色", "嘉兴"],
+    image: "assets/images/dest-hz-1422.webp",
     imageQuery: "Nanhu Red Boat Jiaxing revolution",
     xhsQuote: "「站在红船面前听导游讲 1921 年那个夏天 13 个年轻人在船上宣布建党，突然明白课本上那段话的分量」",
     xhsHeat: { heat: "高", notes: "研学必打卡", trending: true, tier: "A" }
@@ -525,6 +548,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 村民祭祖日（春秋清明前后）可免费旁观孙氏祭祖大典\n2. 周末和节假日有越剧演出，时间表看公众号\n3. 导游 ¥100/场讲宗族故事很值",
     highlight: "孙权后裔·明清宗族村落·孙氏宗祠",
     tags: ["龙门", "古镇", "孙权", "宗族", "富阳"],
+    image: "assets/images/dest-hz-1423.webp",
     imageQuery: "Longmen ancient village Fuyang Sun Quan",
     xhsQuote: "「全村都姓孙，村民坐在祠堂门口晒太阳，对我说『我是孙权第 65 代』——这种穿越感别的古镇给不了」",
     xhsHeat: { heat: "中", notes: "280+ 赞小众宝藏", trending: false, tier: "A" }
@@ -547,6 +571,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 洞内恒温 18°C，夏天记得带薄外套\n2. 穿防滑鞋，地面有水\n3. 联票含地下河漂流性价比高",
     highlight: "华东第一溶洞·2 亿年钟乳·三十三重天",
     tags: ["瑶琳仙境", "溶洞", "桐庐", "奇观", "钟乳石"],
+    image: "assets/images/dest-hz-1424.webp",
     imageQuery: "Yaolin Wonderland cave Tonglu stalactite",
     xhsQuote: "「带娃去瑶琳仙境，孩子在『银河飞瀑』厅里张大嘴巴发呆——这种 2 亿年的地下宫殿，去一次终身难忘」",
     xhsHeat: { heat: "中", notes: "亲子周末首选", trending: false, tier: "B" }
@@ -569,6 +594,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 立佛必须山下 300 米退远了看，走到山脚反而看不出\n2. 玻璃栈道 ¥20 另收，恐高慎入\n3. 和新叶古村+建德石林连游效率最高",
     highlight: "天然立佛·元代悬空寺·双面弥勒",
     tags: ["大慈岩", "立佛", "悬空寺", "建德", "弥勒"],
+    image: "assets/images/dest-hz-1425.webp",
     imageQuery: "Dacilian cliff temple hanging Buddha",
     xhsQuote: "「山下退到 300 米远回头一看，整座山真的就是一尊弥勒佛，笑眯眯躺在那儿——这种『山即是佛』的震撼别处真没有」",
     xhsHeat: { heat: "中", notes: "小众佛山宝藏", trending: false, tier: "A" }
@@ -591,6 +617,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 宗祠门楣上的「耕读传家」「诗书继世」是家训必拍\n2. 和大慈岩一张联票更划算\n3. 带娃找《爸爸去哪儿》当年录制的屋子，孩子会疯",
     highlight: "九宫八卦布局·叶氏宗祠·《爸爸去哪儿》",
     tags: ["新叶", "古村", "宗族", "爸爸去哪儿", "建德"],
+    image: "assets/images/dest-hz-1426.webp",
     imageQuery: "Xinye ancient village Jiande Ye clan",
     xhsQuote: "「新叶不像周庄乌镇被游客填满，村里还住着叶家第 25 代人，阿姨坐在祠堂门口纳鞋底，抬头跟我说『吃饭了没』——这种活着的古村才是我想要的」",
     xhsHeat: { heat: "中", notes: "摄影小众高分", trending: false, tier: "A" }
@@ -613,6 +640,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 分东/西天目山，常规游客去西天目山\n2. 夏天上山带长袖，山顶 20°C 凉得扎实\n3. 环线徒步 6 小时量力而行，走不动可坐电瓶车到四面峰",
     highlight: "大树王·金钱松群落·云海日出",
     tags: ["天目山", "避暑", "古树", "临安", "生物圈"],
+    image: "assets/images/dest-hz-1427.webp",
     imageQuery: "Tianmu Mountain ancient forest Lin'an",
     xhsQuote: "「山下市区 38°C 心态炸裂，天目山顶 22°C 套了长袖还凉飕飕——这就是浙江最扎实的避暑地」",
     xhsHeat: { heat: "高", notes: "夏季避暑顶流", trending: true, tier: "A" }
@@ -635,6 +663,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 周一闭馆务必查开放日\n2. 两个馆区相距 1.5km，建议安排半天全逛\n3. 茶席体验是最佳伴手礼带回家",
     highlight: "国家级茶专题博物馆·宋代点茶复原",
     tags: ["茶叶博物馆", "茶文化", "龙井", "博物馆", "双峰馆"],
+    image: "assets/images/dest-hz-1428.webp",
     imageQuery: "China National Tea Museum Hangzhou Longjing",
     xhsQuote: "「免费参观国家级博物馆 + 配套茶席体验 + 就在龙井茶田里，杭州没有比这更划算的半日游了」",
     xhsHeat: { heat: "中", notes: "茶文化研学推荐", trending: false, tier: "A" }
@@ -657,6 +686,7 @@ const DESTINATIONS_HZ = [
     tips: "1. 进岛不能带香（环保规定），必须在岛上请\n2. 凌晨 4 点起床看日出 + 烧头香是最灵体验\n3. 香期人挤人，平日朝圣体验更深",
     highlight: "南海观音·海天佛国·佛顶山日出",
     tags: ["普陀山", "观音", "佛教", "舟山", "朝圣"],
+    image: "assets/images/dest-hz-1429.webp",
     imageQuery: "Putuoshan Guanyin Buddhist island Zhoushan",
     xhsQuote: "「清晨 4 点半站在 33 米南海观音脚下，海风从东海吹来，第一缕阳光落在佛像指尖——那一刻突然明白什么叫『慈悲』」",
     xhsHeat: { heat: "爆", notes: "四大佛山朝圣顶流", trending: true, tier: "S" }

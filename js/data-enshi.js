@@ -21,6 +21,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「一炷香那一刻真的震到我，150 米柱子最细 6 米，风一吹感觉要倒」",
     xhsHeat: { heat: "极高", notes: "3k+ 笔记·恩施顶流", trending: "持续", tier: "S+" },
     tags: ["峡谷", "地缝", "索道", "徒步", "世界奇观"],
+    image: "assets/images/dest-es-1600.webp",
     imageQuery: "Enshi Grand Canyon One Incense Peak cliff"
   },
   {
@@ -43,6 +44,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「九进堂全木榫卯一根钉子没用，看得出土家工匠真手艺」",
     xhsHeat: { heat: "中高", notes: "500+ 笔记", trending: "稳定", tier: "A" },
     tags: ["土司", "木构", "土家", "非遗", "古建"],
+    image: "assets/images/dest-es-1601.webp",
     imageQuery: "Enshi Tusi Castle Tujia wooden palace"
   },
   {
@@ -65,6 +67,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「女儿城的夜比白天好看十倍，非遗街真能看到织机在动不是演」",
     xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施必打卡", trending: "持续", tier: "S" },
     tags: ["民俗", "小吃", "夜景", "非遗", "土家"],
+    image: "assets/images/dest-es-1602.webp",
     imageQuery: "Enshi Nverhcheng Tujia town night"
   },
   {
@@ -87,6 +90,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「比云南石林小众多了，独包整片出片率 100%」",
     xhsHeat: { heat: "中", notes: "400+ 笔记·小众宝藏", trending: "上升", tier: "A" },
     tags: ["石林", "喀斯特", "小众", "摄影", "奥陶纪"],
+    image: "assets/images/dest-es-1603.webp",
     imageQuery: "Enshi Suobuya Stone Forest limestone"
   },
   {
@@ -109,6 +113,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「一炷香那一刻真的震到我，风一吹晃得人心慌」",
     xhsHeat: { heat: "极高", notes: "大峡谷核心景区顶流", trending: "持续", tier: "S+" },
     tags: ["绝壁栈道", "一炷香", "索道", "云海", "大峡谷"],
+    image: "assets/images/dest-es-1604.webp",
     imageQuery: "Enshi Qixingzhai stone pillar cliff walk"
   },
   {
@@ -131,6 +136,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「飞机都能飞进的洞口真不夸张，比黄龙洞震撼多了」",
     xhsHeat: { heat: "极高", notes: "1k+ 笔记·利川顶流", trending: "持续", tier: "S" },
     tags: ["溶洞", "激光秀", "歌舞剧", "地质", "利川"],
+    image: "assets/images/dest-es-1605.webp",
     imageQuery: "Lichuan Tenglong Cave karst"
   },
   {
@@ -153,6 +159,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「武汉重庆 40℃ 这里 22℃，来就是为了发呆和睡觉」",
     xhsHeat: { heat: "高", notes: "800+ 笔记·暑假刚需", trending: "季节性", tier: "A+" },
     tags: ["避暑", "杜鹃", "草原", "森林", "利川"],
+    image: "assets/images/dest-es-1606.webp",
     imageQuery: "Lichuan Sumadang summer resort rhododendron"
   },
   {
@@ -175,6 +182,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「200 间房的李氏庄园木雕砖雕全是手工，比宏村更野」",
     xhsHeat: { heat: "中低", notes: "200+ 笔记·小众历史宝藏", trending: "稳定", tier: "B+" },
     tags: ["民歌", "庄园", "土家", "古建", "利川"],
+    image: "assets/images/dest-es-1607.webp",
     imageQuery: "Lichuan Dashuijing Li Family mansion"
   },
   {
@@ -197,6 +205,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「人少到感觉整座山都是我家的，瀑布下一股冷气透凉」",
     xhsHeat: { heat: "中", notes: "300+ 笔记·小众漂流地", trending: "上升", tier: "B+" },
     tags: ["峡谷", "瀑布", "漂流", "玻璃桥", "避暑"],
+    image: "assets/images/dest-es-1608.webp",
     imageQuery: "Lichuan Fobaoshan canyon waterfall"
   },
   {
@@ -219,6 +228,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「1700 年前的佛像低眉垂眼，岩下酉水小船漂过瞬间穿越」",
     xhsHeat: { heat: "中低", notes: "150+ 笔记·历史迷必看", trending: "稳定", tier: "B+" },
     tags: ["摩崖", "佛教", "东晋", "酉水", "来凤"],
+    image: "assets/images/dest-es-1609.webp",
     imageQuery: "Laifeng Xianfo Temple cliff Buddha"
   },
   {
@@ -241,6 +251,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「酉水清得看得见河底石头，比湘西猛洞河还清」",
     xhsHeat: { heat: "中低", notes: "150+ 笔记·小众土家游", trending: "稳定", tier: "B" },
     tags: ["河道", "土家", "摆手舞", "游船", "来凤"],
+    image: "assets/images/dest-es-1610.webp",
     imageQuery: "Laifeng Youshui River Tujia village"
   },
   {
@@ -263,6 +274,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「500 年土司城遗址还这么完整，比纸上读的明史生动多了」",
     xhsHeat: { heat: "中低", notes: "200+ 笔记·历史迷必打卡", trending: "稳定", tier: "A-" },
     tags: ["世界遗产", "土司", "明代", "石牌坊", "咸丰"],
+    image: "assets/images/dest-es-1611.webp",
     imageQuery: "Xianfeng Tangya Tusi city site stone archway"
   },
   {
@@ -285,6 +297,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「坐船 1.5 小时绝壁夹水道，水面只听桨声真的野」",
     xhsHeat: { heat: "中低", notes: "200+ 笔记·小众峡谷", trending: "稳定", tier: "B+" },
     tags: ["游船", "峡谷", "悬棺", "建始", "小众"],
+    image: "assets/images/dest-es-1612.webp",
     imageQuery: "Jianshi Yesanxia river canyon cruise"
   },
   {
@@ -307,6 +320,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「200 万年前的牙齿化石比北京人还老，教科书上提到的地方亲自来太震了」",
     xhsHeat: { heat: "中低", notes: "150+ 笔记·科普研学宝藏", trending: "稳定", tier: "B+" },
     tags: ["古人类", "地质", "峡谷", "建始", "研学"],
+    image: "assets/images/dest-es-1613.webp",
     imageQuery: "Jianshi Shimen River direct human fossil site"
   },
   {
@@ -329,6 +343,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「船漂在水上像飘在空中，水绿得像翡翠汤，2024 最震撼的景」",
     xhsHeat: { heat: "爆", notes: "5k+ 笔记·2024 年恩施顶流", trending: "爆火", tier: "S++" },
     tags: ["空中飞船", "秘境", "小众", "出片", "鹤峰"],
+    image: "assets/images/dest-es-1614.webp",
     imageQuery: "Hefeng Pingshan Grand Canyon flying boat green water"
   },
   {
@@ -351,6 +366,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「开车上浮桥那一刻水离车轮 10 厘米，30 秒像飞过水面」",
     xhsHeat: { heat: "极高", notes: "1.5k+ 笔记·抖音网红带火", trending: "持续", tier: "S" },
     tags: ["浮桥", "网红", "瀑布", "自驾", "宣恩"],
+    image: "assets/images/dest-es-1615.webp",
     imageQuery: "Xuan'en Shiziguan water bridge driving"
   },
   {
@@ -373,6 +389,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「6 个纤夫裸背拉船喊号子逆流而上，中国唯一活态文化展示太野了」",
     xhsHeat: { heat: "高", notes: "600+ 笔记·三峡迷必打卡", trending: "稳定", tier: "A+" },
     tags: ["游船", "纤夫", "长江", "非遗", "巴东"],
+    image: "assets/images/dest-es-1616.webp",
     imageQuery: "Badong Shennongxi boat trackers"
   },
   {
@@ -395,6 +412,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「比神农架主峰人少 10 倍，像私包整座山」",
     xhsHeat: { heat: "中高", notes: "400+ 笔记·避暑宝藏", trending: "季节性", tier: "A" },
     tags: ["原始森林", "避暑", "金丝猴", "巴东", "神农架"],
+    image: "assets/images/dest-es-1617.webp",
     imageQuery: "Badong Little Shennongjia forest meadow"
   },
   {
@@ -417,6 +435,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「站上华中屋脊那一刻风大到站不稳，360° 草甸云海」",
     xhsHeat: { heat: "极高", notes: "3k+ 笔记·鄂西顶流", trending: "持续", tier: "S+" },
     tags: ["华中屋脊", "原始森林", "世界遗产", "湿地", "神农架"],
+    image: "assets/images/dest-es-1618.webp",
     imageQuery: "Shennongjia peak alpine meadow China"
   },
   {
@@ -439,6 +458,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「四面 500m 绝壁围着一个古村，手机无信号真正世外桃源」",
     xhsHeat: { heat: "极高", notes: "1k+ 笔记·数字戒断打卡地", trending: "爆", tier: "S" },
     tags: ["古村", "秘境", "徒步", "无信号", "神农架"],
+    image: "assets/images/dest-es-1619.webp",
     imageQuery: "Luyuanping ancient village cliff valley"
   },
   {
@@ -461,6 +481,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「瀑布后栈道走过去直接浇透，比黄果树野多了」",
     xhsHeat: { heat: "高", notes: "900+ 笔记·三峡必打卡", trending: "稳定", tier: "A+" },
     tags: ["瀑布", "栈道", "三峡", "宜昌", "华中第一"],
+    image: "assets/images/dest-es-1620.webp",
     imageQuery: "Three Gorges Waterfall Yichang China"
   },
   {
@@ -483,6 +504,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「船过巫峡那一刻神女峰独柱远望，楚辞毛主席诗现实看到了」",
     xhsHeat: { heat: "高", notes: "700+ 笔记·三峡标志", trending: "稳定", tier: "A+" },
     tags: ["三峡", "巫峡", "诗歌", "神女峰", "巫山"],
+    image: "assets/images/dest-es-1621.webp",
     imageQuery: "Wushan Goddess Peak Three Gorges"
   },
   {
@@ -505,6 +527,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「天门洞 131m 高仰看像天开了门，玻璃栈道脚软但值」",
     xhsHeat: { heat: "极高", notes: "3k+ 笔记·湘西顶流", trending: "持续", tier: "S+" },
     tags: ["神山", "索道", "玻璃栈道", "张家界", "天门洞"],
+    image: "assets/images/dest-es-1622.webp",
     imageQuery: "Tianmen Mountain Zhangjiajie cable car"
   },
   {
@@ -527,6 +550,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「百龙天梯秒升山顶那一刻直接傻眼，3000 石峰穿越潘多拉星」",
     xhsHeat: { heat: "极高", notes: "1w+ 笔记·湘西顶流", trending: "持续", tier: "S++" },
     tags: ["世界遗产", "阿凡达", "石峰", "张家界", "徒步"],
+    image: "assets/images/dest-es-1623.webp",
     imageQuery: "Wulingyuan Zhangjiajie stone pillars Avatar"
   },
   {
@@ -549,6 +573,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「定海神针保了 2 亿元，比腾龙洞小但精致得多」",
     xhsHeat: { heat: "中高", notes: "600+ 笔记·张家界经典", trending: "稳定", tier: "A" },
     tags: ["溶洞", "钟乳石", "地下河", "张家界", "喀斯特"],
+    image: "assets/images/dest-es-1624.webp",
     imageQuery: "Huanglong Cave Zhangjiajie stalactites"
   },
   {
@@ -571,6 +596,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「开车上桥那一刻双脚像踩在云里，下面 13 道弯盘山是奇迹」",
     xhsHeat: { heat: "高", notes: "800+ 笔记·湘西网红", trending: "稳定", tier: "A+" },
     tags: ["桥梁", "公路", "湘西", "工程奇观", "自驾"],
+    image: "assets/images/dest-es-1625.webp",
     imageQuery: "Aizhai suspension bridge Xiangxi China"
   },
   {
@@ -593,6 +619,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「沱江灯火倒影那一刻懂了《边城》为什么写得那么湿那么美」",
     xhsHeat: { heat: "极高", notes: "5k+ 笔记·湘西经典", trending: "持续", tier: "S" },
     tags: ["古城", "沱江", "沈从文", "湘西", "苗族"],
+    image: "assets/images/dest-es-1626.webp",
     imageQuery: "Fenghuang Ancient Town Tuojiang River night"
   },
   {
@@ -615,6 +642,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「亚洲第一风雨桥 658m 长，走一半下雨屋檐避雨古人真聪明」",
     xhsHeat: { heat: "中高", notes: "500+ 笔记·渝东南经典", trending: "稳定", tier: "A" },
     tags: ["古镇", "风雨桥", "重庆", "黔江", "土家"],
+    image: "assets/images/dest-es-1627.webp",
     imageQuery: "Zhuoshui Ancient Town windbridge Qianjiang"
   },
   {
@@ -637,6 +665,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「阿蓬江 15km 漂流比猛洞河野，3 小时不重样」",
     xhsHeat: { heat: "中", notes: "300+ 笔记·渝东南秘境", trending: "上升", tier: "B+" },
     tags: ["漂流", "湿地", "峡谷", "黔江", "重庆"],
+    image: "assets/images/dest-es-1628.webp",
     imageQuery: "Apeng River rafting Qianjiang wetland"
   },
   {
@@ -659,6 +688,7 @@ const DESTINATIONS_ES = [
     xhsQuote: "「合渣+腊蹄子火锅+土豆饺子一顿吃下来才懂什么叫靠山吃山」",
     xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施美食顶流", trending: "持续", tier: "S" },
     tags: ["美食", "合渣", "非遗", "土家", "腊蹄子"],
+    image: "assets/images/dest-es-1629.webp",
     imageQuery: "Enshi Tujia Heza stew dinner"
   }
 ];

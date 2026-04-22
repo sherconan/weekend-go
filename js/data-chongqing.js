@@ -19,6 +19,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年，雨雾天氛围加分",
     highlight: "巴渝吊脚楼夜景 · 千厮门机位",
     tags: ["洪崖洞", "夜景", "网红"],
+    image: "assets/images/dest-cq-1500.webp",
     imageQuery: "Hongyadong stilted buildings Chongqing night lantern",
     xhsQuote: "「第一眼就原地哭出来，这不是千与千寻的汤屋吗」",
     xhsHeat: "S+"
@@ -41,6 +42,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "抗战胜利碑 · 山城商圈原点",
     tags: ["解放碑", "历史", "购物"],
+    image: "assets/images/dest-cq-1501.webp",
     imageQuery: "Jiefangbei monument Chongqing CBD",
     xhsQuote: "「重庆人约会最省心的地标：在解放碑等你」",
     xhsHeat: "A+"
@@ -63,6 +65,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 全年",
     highlight: "过江缆车 · 魔幻 1.5 分钟",
     tags: ["长江索道", "网红"],
+    image: "assets/images/dest-cq-1502.webp",
     imageQuery: "Chongqing Yangtze cable car over river",
     xhsQuote: "「1 分 32 秒坐完，等了 90 分钟」",
     xhsHeat: "S"
@@ -85,6 +88,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "轻轨穿民居 · 8D 魔幻",
     tags: ["李子坝", "网红", "轻轨"],
+    image: "assets/images/dest-cq-1503.webp",
     imageQuery: "Chongqing Liziba metro through building",
     xhsQuote: "「排了半小时，就为了这 7 秒」",
     xhsHeat: "S+"
@@ -107,6 +111,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋",
     highlight: "工业遗址 · 文创地标 · 天台江景",
     tags: ["贰厂", "文创", "天台"],
+    image: "assets/images/dest-cq-1504.webp",
     imageQuery: "Chongqing Tester II printing factory creative park",
     xhsQuote: "「在前慢书店坐了一下午，外面雾很重像电影」",
     xhsHeat: "A+"
@@ -129,6 +134,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 避暑",
     highlight: "1.9km 老山城 · 长江索道至菜园坝",
     tags: ["山城步道", "徒步"],
+    image: "assets/images/dest-cq-1505.webp",
     imageQuery: "Chongqing Shancheng trail Third Hiking Route old town",
     xhsQuote: "「走完才懂为什么重庆叫山城」",
     xhsHeat: "A"
@@ -151,6 +157,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "江北夜生活 · 九街 Live",
     tags: ["观音桥", "九街", "夜生活"],
+    image: "assets/images/dest-cq-1506.webp",
     imageQuery: "Chongqing Guanyinqiao Jiujie nightlife",
     xhsQuote: "「九街凌晨两点的烧烤摊是重庆真正的心脏」",
     xhsHeat: "A+"
@@ -173,6 +180,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "鹦鹉螺建筑 · 江北嘴地标",
     tags: ["大剧院", "建筑", "鹦鹉螺"],
+    image: "assets/images/dest-cq-1507.webp",
     imageQuery: "Chongqing Grand Theater nautilus architecture Jiangbei",
     xhsQuote: "「夜里从洪崖洞看过来，像停靠的太空船」",
     xhsHeat: "A"
@@ -195,6 +203,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 夜景全年",
     highlight: "渝中半岛最佳夜景平台",
     tags: ["一棵树", "夜景", "南山"],
+    image: "assets/images/dest-cq-1508.webp",
     imageQuery: "Chongqing Nanshan One Tree viewing deck night skyline",
     xhsQuote: "「山城夜雾里看万家灯火，真的一眼泪目」",
     xhsHeat: "S"
@@ -217,6 +226,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "11 月银杏 / 春秋",
     highlight: "1600 年古刹 · 抗战陪都遗址",
     tags: ["涂山寺", "寺庙", "南山"],
+    image: "assets/images/dest-cq-1509.webp",
     imageQuery: "Chongqing Tushan temple Nanshan ancient Buddhist",
     xhsQuote: "「28 块素斋吃到想哭，饭后登山望长江」",
     xhsHeat: "B+"
@@ -239,6 +249,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "1800 年道教祖庭 · 40 通摩崖",
     tags: ["老君洞", "道教", "古建"],
+    image: "assets/images/dest-cq-1510.webp",
     imageQuery: "Chongqing Laojun Cave Taoist temple ancient",
     xhsQuote: "「人少景美 15 块门票，比景山公园还清净」",
     xhsHeat: "B"
@@ -261,6 +272,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "千年古镇 · 陈麻花老字号",
     tags: ["磁器口", "古镇", "小吃"],
+    image: "assets/images/dest-cq-1511.webp",
     imageQuery: "Chongqing Ciqikou ancient town Jialing river",
     xhsQuote: "「麻花、毛血旺、江景，一站通关重庆老味」",
     xhsHeat: "S"
@@ -283,6 +295,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "夏季避暑 / 春秋",
     highlight: "抗战陪都遗址群 · 森林避暑",
     tags: ["歌乐山", "抗战", "避暑"],
+    image: "assets/images/dest-cq-1512.webp",
     imageQuery: "Chongqing Gele mountain forest park war relic",
     xhsQuote: "「上午看渣滓洞下午走松林坡，心情比爬山还累」",
     xhsHeat: "A"
@@ -305,6 +318,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年",
     highlight: "中共南方局旧址 · 红岩精神发源地",
     tags: ["红岩村", "革命", "免费"],
+    image: "assets/images/dest-cq-1513.webp",
     imageQuery: "Chongqing Hongyan village CCP Southern Bureau",
     xhsQuote: "「免费又有讲解，比想象中有内容」",
     xhsHeat: "A"
@@ -327,6 +341,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "夏季避暑最佳 / 全年",
     highlight: "主城避暑 · 1500 年道佛双庙",
     tags: ["缙云山", "避暑", "国保"],
+    image: "assets/images/dest-cq-1514.webp",
     imageQuery: "Chongqing Jinyun mountain nature reserve Taoist temple",
     xhsQuote: "「40 度的城，700 米山上吹自然空调」",
     xhsHeat: "A+"
@@ -349,6 +364,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "4-10 月",
     highlight: "喀斯特峡谷 · 6km 徒步穿越",
     tags: ["金刀峡", "峡谷", "徒步"],
+    image: "assets/images/dest-cq-1515.webp",
     imageQuery: "Chongqing Jindao gorge karst canyon hike",
     xhsQuote: "「在谷底抬头看天那一刻，150 米崖壁直接把人压小」",
     xhsHeat: "A"
@@ -371,6 +387,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 避暑",
     highlight: "UNESCO 世遗 · 宋代佛教石刻巅峰",
     tags: ["大足石刻", "世遗", "佛教"],
+    image: "assets/images/dest-cq-1516.webp",
     imageQuery: "Dazu rock carvings Baoding UNESCO Buddha",
     xhsQuote: "「六道轮回图站着看 20 分钟，回去开始反思人生」",
     xhsHeat: "S"
@@ -393,6 +410,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "3 月中-4 月初",
     highlight: "3 万亩油菜花海 · 季节限定",
     tags: ["潼南", "油菜花", "赏花"],
+    image: "assets/images/dest-cq-1517.webp",
     imageQuery: "Tongnan rapeseed flower field golden March",
     xhsQuote: "「3 万亩油菜花开疯了，随便一张都是屏保」",
     xhsHeat: "A+"
@@ -415,6 +433,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "4-10 月",
     highlight: "世遗喀斯特天生桥群 · 变形金刚 4 拍摄地",
     tags: ["武隆", "天生三桥", "世遗"],
+    image: "assets/images/dest-cq-1518.webp",
     imageQuery: "Wulong three natural bridges karst UNESCO",
     xhsQuote: "「走到天龙桥下抬头那一下，人生第一次被地貌震撼」",
     xhsHeat: "S"
@@ -437,6 +456,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "夏季避暑 / 冬季滑雪",
     highlight: "南国高山草原 · 重庆首家滑雪场",
     tags: ["仙女山", "草原", "滑雪"],
+    image: "assets/images/dest-cq-1519.webp",
     imageQuery: "Xiannv mountain alpine grassland Wulong",
     xhsQuote: "「8 月上 2000 米草原吃冰，这叫内蒙模拟」",
     xhsHeat: "A+"
@@ -459,6 +479,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "全年（洞内恒温）",
     highlight: "世遗喀斯特 · 70 种沉积物",
     tags: ["芙蓉洞", "溶洞", "世遗"],
+    image: "assets/images/dest-cq-1520.webp",
     imageQuery: "Furong cave karst stalactite Wulong UNESCO",
     xhsQuote: "「洞里看石花，真像走进了水晶博物馆」",
     xhsHeat: "A+"
@@ -481,6 +502,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "4-10 月",
     highlight: "世遗地缝 · 75 米观光电梯",
     tags: ["龙水峡", "地缝", "世遗"],
+    image: "assets/images/dest-cq-1521.webp",
     imageQuery: "Longshui canyon karst slot Wulong waterfall",
     xhsQuote: "「下电梯那一刻光消失，感觉被地球吞了」",
     xhsHeat: "A"
@@ -503,6 +525,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋",
     highlight: "1856 地震堰塞湖 · 苗寨围湖",
     tags: ["小南海", "堰塞湖", "地震"],
+    image: "assets/images/dest-cq-1522.webp",
     imageQuery: "Qianjiang Xiaonanhai earthquake lake Miao",
     xhsQuote: "「一面 170 年前地震塌山形成的镜子」",
     xhsHeat: "B+"
@@ -525,6 +548,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 夏季避暑",
     highlight: "乌江悬崖土家吊脚楼古镇",
     tags: ["龚滩", "古镇", "土家"],
+    image: "assets/images/dest-cq-1523.webp",
     imageQuery: "Gongtan ancient town Wujiang river Tujia stilted",
     xhsQuote: "「悬崖上的吊脚楼，夜里灯亮像星星掉进江里」",
     xhsHeat: "A+"
@@ -547,6 +571,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "3 月桃花 / 4-10 月",
     highlight: "陶渊明笔下桃花源 · 伏羲洞穿越",
     tags: ["桃花源", "酉阳", "溶洞"],
+    image: "assets/images/dest-cq-1524.webp",
     imageQuery: "Youyang Taohuayuan peach spring karst cave",
     xhsQuote: "「穿完溶洞出来那一刻，确实有点怀疑自己穿越了」",
     xhsHeat: "A"
@@ -569,6 +594,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "6-9 月汛期",
     highlight: "长江上游第一瀑 · 151 米宽水幕",
     tags: ["万州大瀑布", "瀑布", "三峡"],
+    image: "assets/images/dest-cq-1525.webp",
     imageQuery: "Wanzhou Daguapu waterfall Yangtze upper reach",
     xhsQuote: "「151 米宽的水幕声音像雷，相机都被水雾吞了」",
     xhsHeat: "A"
@@ -591,6 +617,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "4-11 月",
     highlight: "世界第一悬挑玻璃廊桥 · 260 米天坑",
     tags: ["云阳龙缸", "玻璃廊桥", "地质"],
+    image: "assets/images/dest-cq-1526.webp",
     imageQuery: "Yunyang Longgang sinkhole glass skywalk",
     xhsQuote: "「26 米悬空玻璃走一遍，腿软半小时」",
     xhsHeat: "A+"
@@ -613,6 +640,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋",
     highlight: "南宋抗蒙 36 年 · 蒙哥大汗殒命处",
     tags: ["钓鱼城", "南宋", "抗蒙"],
+    image: "assets/images/dest-cq-1527.webp",
     imageQuery: "Diaoyucheng fortress Song Mongol history",
     xhsQuote: "「课本里一句话的'钓鱼城之战'，在这里能走 3 个小时」",
     xhsHeat: "B+"
@@ -635,6 +663,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "4-10 月",
     highlight: "152 米华东第一瀑 · 爱情天梯",
     tags: ["四面山", "瀑布", "爱情天梯"],
+    image: "assets/images/dest-cq-1528.webp",
     imageQuery: "Jiangjin Simian mountain waterfall love ladder",
     xhsQuote: "「6000 级石梯的爱情故事，走上去腿酸心更酸」",
     xhsHeat: "A"
@@ -657,6 +686,7 @@ const DESTINATIONS_CQ = [
     bestSeason: "春秋 避暑",
     highlight: "白垩纪恐龙足迹化石 · 丹霞峰林",
     tags: ["老瀛山", "恐龙化石", "丹霞"],
+    image: "assets/images/dest-cq-1529.webp",
     imageQuery: "Qijiang Laoying mountain dinosaur footprint danxia",
     xhsQuote: "「脚下这一坨砂岩上居然踩着 6.8 亿年前的恐龙脚印」",
     xhsHeat: "B"
