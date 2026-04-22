@@ -1416,6 +1416,7 @@ const DESTINATIONS_WH = [
       "实景演出",
       "亲子"
     ],
+    "image": "assets/images/dest-wh-735.webp",
     "imageQuery": "威海华夏城 5A scenic area",
     "xhsQuote": "「《神游华夏》太震撼了，山水实景演出可以给五星，整个山都在动。别的景点可以不去但华夏城必去。」",
     "xhsHeat": {
@@ -1462,6 +1463,7 @@ const DESTINATIONS_WH = [
       "道教文化",
       "市区登高"
     ],
+    "image": "assets/images/dest-wh-736.webp",
     "imageQuery": "威海仙姑顶 temple view",
     "xhsQuote": "「俯瞰威海湾+市区+刘公岛全景，98的门票值得，适合下午上山看日落。」",
     "xhsHeat": {
@@ -1506,6 +1508,7 @@ const DESTINATIONS_WH = [
       "免费景点",
       "室内避暑"
     ],
+    "image": "assets/images/dest-wh-737.webp",
     "imageQuery": "威海博物馆 museum exhibition",
     "xhsQuote": "「免费进入信息量超大，带娃进来安安静静看两小时，比刘公岛讲得系统多了。」",
     "xhsHeat": {
@@ -1551,6 +1554,7 @@ const DESTINATIONS_WH = [
       "免费海景",
       "骑行"
     ],
+    "image": "assets/images/dest-wh-738.webp",
     "imageQuery": "金线顶 威海湾 sunset",
     "xhsQuote": "「来威海一定要在金线顶看一次日落，对着刘公岛咸咸的海风，胜过所有收费景点。」",
     "xhsHeat": {
@@ -1598,6 +1602,7 @@ const DESTINATIONS_WH = [
       "遛娃好去处",
       "室内避暑"
     ],
+    "image": "assets/images/dest-wh-739.webp",
     "imageQuery": "威高海洋公园 aquarium",
     "xhsQuote": "「带娃闭眼冲的室内海洋馆，鲨鱼隧道+白鲸秀+美人鱼，娃进去走不出来。」",
     "xhsHeat": {
@@ -1644,6 +1649,7 @@ const DESTINATIONS_WH = [
       "赶海",
       "小众海岛"
     ],
+    "image": "assets/images/dest-wh-740.webp",
     "imageQuery": "威海小石岛 fishing harbor",
     "xhsQuote": "「避开国际浴场的人山人海来小石岛，钓到第一条黑鲷时整船都在欢呼，海边赶海捡蛤蜊娃玩疯。」",
     "xhsHeat": {
@@ -1689,6 +1695,7 @@ const DESTINATIONS_WH = [
       "免费海滩",
       "小众"
     ],
+    "image": "assets/images/dest-wh-741.webp",
     "imageQuery": "威海九龙湾 tidal flat",
     "xhsQuote": "「本地人才知道的赶海圣地，退潮后花蛤一抓一把，娃玩疯我挖疯，晚上清蒸当晚餐。」",
     "xhsHeat": {
@@ -1735,6 +1742,7 @@ const DESTINATIONS_WH = [
       "海草房",
       "摄影"
     ],
+    "image": "assets/images/dest-wh-742.webp",
     "imageQuery": "烟墩角 swan village",
     "xhsQuote": "「11月的烟墩角，天鹅贴着岸边游，村民喂食的时候几十只扑翼冲过来，这辈子没见过这么近的野生天鹅。」",
     "xhsHeat": {
@@ -1780,6 +1788,7 @@ const DESTINATIONS_WH = [
       "摄影打卡",
       "免费"
     ],
+    "image": "assets/images/dest-wh-743.webp",
     "imageQuery": "荣成好运角灯塔 lighthouse",
     "xhsQuote": "「被成山头踩雷后发现了旁边的好运角灯塔，免费机位还比景区出片100倍，自驾党必冲。」",
     "xhsHeat": {
@@ -1825,6 +1834,7 @@ const DESTINATIONS_WH = [
       "登山",
       "秋叶"
     ],
+    "image": "assets/images/dest-wh-744.webp",
     "imageQuery": "荣成槎山 mountain temple",
     "xhsQuote": "「998尊佛像密密麻麻刻在洞壁上，站在千真洞前腿都软了，十月来秋叶满山值得一趟。」",
     "xhsHeat": {
@@ -1870,6 +1880,7 @@ const DESTINATIONS_WH = [
       "胶东美食",
       "小众"
     ],
+    "image": "assets/images/dest-wh-745.webp",
     "imageQuery": "石岛渔港 fishing harbor",
     "xhsQuote": "「凌晨4点到石岛渔港，活螃蟹30块一斤买了5斤，找加工店做完人均80吃到扶墙出。」",
     "xhsHeat": {
@@ -1916,6 +1927,7 @@ const DESTINATIONS_WH = [
       "亲子",
       "小众"
     ],
+    "image": "assets/images/dest-wh-746.webp",
     "imageQuery": "石岛湾 beach resort",
     "xhsQuote": "「石岛湾才是荣成真正的宝藏浴场，比国际浴场人少5倍，沙质还更细，我会再来。」",
     "xhsHeat": {
@@ -1961,6 +1973,7 @@ const DESTINATIONS_WH = [
       "文登",
       "登山"
     ],
+    "image": "assets/images/dest-wh-747.webp",
     "imageQuery": "文登圣经山 taoist mountain",
     "xhsQuote": "「一块刻满道德经的巨石，站在面前像穿越回元代全真教，武侠迷朝圣地。」",
     "xhsHeat": {
@@ -2006,6 +2019,7 @@ const DESTINATIONS_WH = [
       "全真教",
       "森林"
     ],
+    "image": "assets/images/dest-wh-748.webp",
     "imageQuery": "昆嵛山 mountain forest",
     "xhsQuote": "「登上泰礴顶看两面都是海，烟霞洞里摸到全真七子修炼的石床，道教武侠迷朝圣体验。」",
     "xhsHeat": {
@@ -2050,6 +2064,7 @@ const DESTINATIONS_WH = [
       "免费",
       "文登"
     ],
+    "image": "assets/images/dest-wh-749.webp",
     "imageQuery": "天福山起义纪念馆 memorial",
     "xhsQuote": "「免费的国家级爱国教育基地，带娃走一遍了解胶东抗战，纪念塔下一棵松树都有故事。」",
     "xhsHeat": {
@@ -2096,6 +2111,7 @@ const DESTINATIONS_WH = [
       "免费",
       "历史文化"
     ],
+    "image": "assets/images/dest-wh-750.webp",
     "imageQuery": "文登召文台 文山公园",
     "xhsQuote": "「免费的文山公园藏着文登地名由来，秦始皇蜡像馆意外惊喜，文史控逛两小时舍不得走。」",
     "xhsHeat": {
@@ -2140,6 +2156,7 @@ const DESTINATIONS_WH = [
       "红色旅游",
       "免费"
     ],
+    "image": "assets/images/dest-wh-751.webp",
     "imageQuery": "马石山十勇士纪念馆 memorial",
     "xhsQuote": "「站在十勇士牺牲处，解说员讲他们最后一个往山下扔石头时，整个人安静了半小时。」",
     "xhsHeat": {
@@ -2184,6 +2201,7 @@ const DESTINATIONS_WH = [
       "红色文学",
       "免费"
     ],
+    "image": "assets/images/dest-wh-752.webp",
     "imageQuery": "冯德英文学馆 museum",
     "xhsQuote": "「小时候看苦菜花电影，到冯德英纪念馆翻到作者亲笔手稿，眼眶热了，免费必去。」",
     "xhsHeat": {
@@ -2230,6 +2248,7 @@ const DESTINATIONS_WH = [
       "荣成海岛",
       "小众"
     ],
+    "image": "assets/images/dest-wh-753.webp",
     "imageQuery": "连林岛 remote island",
     "xhsQuote": "「比鸡鸣岛还野的无人小岛，上岛2小时只有我和海鸥，海蚀洞美到哭，下次还要来。」",
     "xhsHeat": {
