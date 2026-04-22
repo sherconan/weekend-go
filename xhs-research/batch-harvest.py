@@ -4,7 +4,7 @@ import json, subprocess, os, sys, time, urllib.request, ssl, re
 
 ROOT = os.path.expanduser("~/weekend-go")
 XHS_SKILLS = os.path.expanduser("~/xiaohongshu-skills")
-OUT_DIR = f"{ROOT}/xhs-research/batch1"
+OUT_DIR = os.environ.get("OUT_DIR", f"{ROOT}/xhs-research/batch1")
 COVER_DIR = f"{ROOT}/assets/xhs"
 os.makedirs(OUT_DIR, exist_ok=True)
 os.makedirs(COVER_DIR, exist_ok=True)

@@ -43,6 +43,7 @@ const DESTINATIONS_QD = [
       "非遗",
       "Tsingtao"
     ],
+    "image": "assets/images/dest-qd-青岛啤酒博物馆.webp",
     "imageQuery": "Tsingtao Beer Museum Qingdao"
   },
   {
@@ -87,6 +88,7 @@ const DESTINATIONS_QD = [
       "夜景",
       "纪念"
     ],
+    "image": "assets/images/dest-qd-五四广场.webp",
     "imageQuery": "Qingdao May Fourth Square wind sculpture"
   },
   {
@@ -131,6 +133,7 @@ const DESTINATIONS_QD = [
       "帆船",
       "夜拍"
     ],
+    "image": "assets/images/dest-qd-奥帆中心.webp",
     "imageQuery": "Qingdao Olympic Sailing Center marina"
   },
   {
@@ -175,6 +178,7 @@ const DESTINATIONS_QD = [
       "亲子",
       "市区"
     ],
+    "image": "assets/images/dest-qd-第一海水浴场.webp",
     "imageQuery": "Qingdao First Bathing Beach"
   },
   {
@@ -219,6 +223,7 @@ const DESTINATIONS_QD = [
       "俯瞰",
       "老城"
     ],
+    "image": "assets/images/dest-qd-信号山公园.webp",
     "imageQuery": "Qingdao Signal Hill Park overlook red roofs"
   },
   {
@@ -263,6 +268,7 @@ const DESTINATIONS_QD = [
       "老字号",
       "夜市"
     ],
+    "image": "assets/images/dest-qd-劈柴院.webp",
     "imageQuery": "Qingdao Pichaiyuan food street night"
   },
   {
@@ -307,6 +313,7 @@ const DESTINATIONS_QD = [
       "烧烤",
       "夜市"
     ],
+    "image": "assets/images/dest-qd-登州路啤酒街.webp",
     "imageQuery": "Qingdao Dengzhou Road Beer Street night"
   },
   {
@@ -351,6 +358,7 @@ const DESTINATIONS_QD = [
       "购物",
       "霓虹"
     ],
+    "image": "assets/images/dest-qd-台东步行街.webp",
     "imageQuery": "Qingdao Taidong Pedestrian Street night LED"
   },
   {
@@ -396,6 +404,7 @@ const DESTINATIONS_QD = [
       "海鲜",
       "在地"
     ],
+    "image": "assets/images/dest-qd-红岛海鲜市场.webp",
     "imageQuery": "Qingdao Hongdao seafood market clams"
   },
   {
@@ -440,6 +449,7 @@ const DESTINATIONS_QD = [
       "海鲜",
       "品牌"
     ],
+    "image": "assets/images/dest-qd-船歌鱼水饺总店.webp",
     "imageQuery": "Qingdao Chuange fish dumpling restaurant"
   },
   {
@@ -473,6 +483,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "60m·青岛首座古典山头公园",
     "tags": ["俯瞰", "老城", "登高"],
+    "image": "assets/images/dest-qd-小鱼山公园.webp",
     "imageQuery": "Qingdao Xiaoyushan Park Lanyue Pavilion overlook"
   },
   {
@@ -506,6 +517,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "全国重点文保·德国总督官邸原貌",
     "tags": ["德式", "文保", "博物馆"],
+    "image": "assets/images/dest-qd-青岛迎宾馆.webp",
     "imageQuery": "Qingdao German Governor Residence Yingbinguan"
   },
   {
@@ -539,6 +551,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "华北最大哥特式·56m 双塔",
     "tags": ["教堂", "打卡", "婚纱"],
+    "image": "assets/images/dest-qd-浙江路天主教堂.webp",
     "imageQuery": "Qingdao St Michaels Cathedral twin towers"
   },
   {
@@ -572,6 +585,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "1910 年德产机械钟·原装运转",
     "tags": ["教堂", "钟楼", "老建筑"],
+    "image": "assets/images/dest-qd-江苏路基督教堂.webp",
     "imageQuery": "Qingdao Jiangsu Road Protestant Church clock tower"
   },
   {
@@ -605,6 +619,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "亚洲最大海军博物馆·实舰登舰",
     "tags": ["军博", "潜艇", "亲子"],
+    "image": "assets/images/dest-qd-中国海军博物馆.webp",
     "imageQuery": "China Navy Museum Qingdao destroyer submarine"
   },
   {
@@ -638,6 +653,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "青岛红石滩·老城文艺海岸线",
     "tags": ["海边", "散步", "海鸥"],
+    "image": "assets/images/dest-qd-鲁迅公园海滨木栈道.webp",
     "imageQuery": "Qingdao Luxun Park seaside boardwalk red reef"
   },
   {
@@ -671,6 +687,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "半岛草坡·日落日出双机位",
     "tags": ["草坡", "日落", "网红"],
+    "image": "assets/images/dest-qd-小麦岛公园.webp",
     "imageQuery": "Qingdao Xiaomai Island Park grass sunset"
   },
   {
@@ -704,6 +721,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "2011 世界最长跨海大桥·42.23km",
     "tags": ["大桥", "自驾", "工程"],
+    "image": "assets/images/dest-qd-胶州湾跨海大桥.webp",
     "imageQuery": "Qingdao Jiaozhou Bay Bridge aerial"
   },
   {
@@ -737,6 +755,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "崂山主峰 1132.7m·海上第一名山",
     "tags": ["登山", "云海", "道教"],
+    "image": "assets/images/dest-qd-崂山巨峰.webp",
     "imageQuery": "Laoshan Jufeng Peak sea of clouds Qingdao"
   },
   {
@@ -770,6 +789,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "崂山北线·九曲 12 潭",
     "tags": ["溪流", "徒步", "避暑"],
+    "image": "assets/images/dest-qd-崂山北九水.webp",
     "imageQuery": "Laoshan Beijiushui nine waters waterfall"
   },
   {
@@ -803,6 +823,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "山海相连·北宋太平宫",
     "tags": ["道观", "海景", "索道"],
+    "image": "assets/images/dest-qd-崂山仰口.webp",
     "imageQuery": "Laoshan Yangkou mountain sea Taiping Palace"
   },
   {
@@ -836,6 +857,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "元代 1325 年道观·凌烟崮奇石",
     "tags": ["冷门", "道教", "徒步"],
+    "image": "assets/images/dest-qd-崂山华楼宫.webp",
     "imageQuery": "Laoshan Hualou Temple Qingdao Taoist"
   },
   {
@@ -869,6 +891,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "3500m·青岛最大沙滩·4A 景区",
     "tags": ["沙滩", "啤酒节", "度假"],
+    "image": "assets/images/dest-qd-黄岛金沙滩.webp",
     "imageQuery": "Qingdao Huangdao Golden Beach Jinshatan"
   },
   {
@@ -902,6 +925,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "白沙 2000m·安静版金沙滩",
     "tags": ["沙滩", "亲子", "安静"],
+    "image": "assets/images/dest-qd-黄岛银沙滩.webp",
     "imageQuery": "Qingdao Huangdao Silver Beach Yinshatan"
   },
   {
@@ -935,6 +959,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "北方第一高岛 513m·纯渔村民宿",
     "tags": ["海岛", "渔村", "小众"],
+    "image": "assets/images/dest-qd-灵山岛.webp",
     "imageQuery": "Lingshan Island Qingdao ferry fishing"
   },
   {
@@ -968,6 +993,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "秦代夯土古台·徐福东渡起点",
     "tags": ["历史", "秦代", "海岸"],
+    "image": "assets/images/dest-qd-琅琊台.webp",
     "imageQuery": "Langya Terrace Qin Shi Huang Qingdao"
   },
   {
@@ -1001,6 +1027,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "1061 年·中国四大名楼·5A",
     "tags": ["名楼", "仙境", "5A"],
+    "image": "assets/images/dest-qd-蓬莱阁.webp",
     "imageQuery": "Penglai Pavilion Yantai Immortal Tower"
   },
   {
@@ -1034,6 +1061,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "山东唯一海岛县·渤黄海分界",
     "tags": ["海岛", "轮渡", "海蚀"],
+    "image": "assets/images/dest-qd-长岛.webp",
     "imageQuery": "Changdao Island Yantai ferry Bohai"
   },
   {
@@ -1067,6 +1095,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "秦始皇御马场·12km 环岛公路",
     "tags": ["自驾", "公路", "免费"],
+    "image": "assets/images/dest-qd-养马岛.webp",
     "imageQuery": "Yangma Island Yantai coastal road"
   },
   {
@@ -1100,6 +1129,7 @@ const DESTINATIONS_QD = [
     },
     "highlight": "1892 年·中国首家葡萄酒厂·亚洲最大酒窖",
     "tags": ["葡萄酒", "工业", "品酒"],
+    "image": "assets/images/dest-qd-张裕酒文化博物馆.webp",
     "imageQuery": "Changyu Wine Culture Museum Yantai cellar"
   }
 ];

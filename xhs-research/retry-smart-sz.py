@@ -89,27 +89,39 @@ def harvest(page, query):
     feeds.sort(key=lambda x: -x['likes'])
     return feeds
 
+def _new_context(p, pw_cookies):
+    """Fresh browser + context + page, isolated cookies."""
+    browser = p.chromium.launch(headless=True)
+    ctx = browser.new_context(user_agent=UA, viewport={'width': 1440, 'height': 900}, locale='zh-CN')
+    ctx.add_cookies(pw_cookies)
+    page = ctx.new_page()
+    return browser, ctx, page
+
+# Rate-limit guardrails (tuned against observed breakpoint at ~query #100)
+SESSION_MAX_QUERIES = 40   # rotate browser context every N queries
+EMPTY_STREAK_TRIP   = 5    # 5 consecutive empty dests ⇒ we're soft-banned
+COOLDOWN_SECS       = 180  # pause + context rotate on trip
+
 def main():
     queue = json.load(open(QUEUE))
     random.Random(42).shuffle(queue)
     total = len(queue)
-    log(f"=== SZ retry start · {total} empties · shuffled ===")
+    log(f"=== SZ retry start · {total} empties · shuffled · rotate/{SESSION_MAX_QUERIES} · streak_trip={EMPTY_STREAK_TRIP} ===")
 
     pw_cookies = json.load(open(os.path.expanduser('~/.mcp/rednote/cookies.json')))
     log(f"cookies injected: {len(pw_cookies)}")
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(user_agent=UA, viewport={'width': 1440, 'height': 900}, locale='zh-CN')
-        ctx.add_cookies(pw_cookies)
-        page = ctx.new_page()
+        browser, ctx, page = _new_context(p, pw_cookies)
+        session_queries = 0
+        empty_streak    = 0
 
         ok, fail = 0, 0
         for idx, dest in enumerate(queue):
             name = dest['name']
             slug = slugify(name)
             outp = f"{OUT_DIR}/{slug}.json"
-            # Skip if existing file has real content (shouldn't happen but defensive)
+            # Skip if existing file has real content
             if os.path.exists(outp):
                 try:
                     existing = json.load(open(outp))
@@ -119,11 +131,21 @@ def main():
                 except Exception:
                     pass
 
+            # Preemptive session rotation
+            if session_queries >= SESSION_MAX_QUERIES:
+                log(f"--- rotating context after {session_queries} queries ---")
+                try: browser.close()
+                except Exception: pass
+                time.sleep(15)
+                browser, ctx, page = _new_context(p, pw_cookies)
+                session_queries = 0
+
             variants = queries_for(name)
             success = False
             for qi, q in enumerate(variants):
                 try:
                     feeds = harvest(page, q)
+                    session_queries += 1
                     if feeds:
                         top = feeds[:5]
                         payload = {
@@ -148,10 +170,25 @@ def main():
                 time.sleep(3.0)
             if not success:
                 fail += 1
-                log(f"[{idx+1}/{total}] ✗ {name} all {len(variants)} variants empty")
+                empty_streak += 1
+                log(f"[{idx+1}/{total}] ✗ {name} all {len(variants)} variants empty (streak={empty_streak})")
+            else:
+                empty_streak = 0
+
+            # Soft-ban detection: cooldown + context rotate
+            if empty_streak >= EMPTY_STREAK_TRIP:
+                log(f"!!! soft-ban suspected ({empty_streak} empties in a row) · cooldown {COOLDOWN_SECS}s + rotate ctx")
+                try: browser.close()
+                except Exception: pass
+                time.sleep(COOLDOWN_SECS)
+                browser, ctx, page = _new_context(p, pw_cookies)
+                session_queries = 0
+                empty_streak = 0
+
             time.sleep(2.0 if (idx + 1) % 10 else 5.0)
 
-        browser.close()
+        try: browser.close()
+        except Exception: pass
         log(f"=== retry done · ok={ok} fail={fail} ===")
 
 if __name__ == '__main__':

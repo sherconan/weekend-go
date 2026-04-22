@@ -3292,7 +3292,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年，春秋最舒适",
     highlight: "世界遗产·双塔·海丝起点",
     tags: ["泉州开元寺", "城市文化地标"],
-    imageQuery: "泉州开元寺 cultural heritage"
+    imageQuery: "泉州开元寺 cultural heritage",
+    xhsQuote: "「❤️泉州citywalk一日游路线攻略｜附打卡点」— knock knock小鹿游记 @小红书（3765赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3765赞❤️泉州citywalk一日… / 1343赞终于弄明白泉州怎么玩不绕路‼… / 1054赞来泉州只剩半天时间，直接复制…",
+      trending: ""
+    }
+  
   },
   {
     id: 601,
@@ -3318,7 +3325,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年，秋冬赏红枫最佳",
     highlight: "岳麓书院·橘子洲·长沙美食",
     tags: ["长沙岳麓山", "城市文化地标", "美食地图", "历史人文"],
-    imageQuery: "长沙岳麓山 cultural heritage"
+    imageQuery: "长沙岳麓山 cultural heritage",
+    xhsQuote: "「⭐五一长沙旅游必看❗岳麓山懒人极速攻略」— 熊霸天下 @小红书（20000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "20000赞⭐五一长沙旅游必看❗岳麓山懒… / 6236赞J人对自己复盘的长沙攻略甚是… / 5272赞长沙旅游本地人大实话‼️别怪…",
+      trending: ""
+    }
+  
   },
   {
     id: 602,
@@ -3344,7 +3358,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年，春季花海最盛",
     highlight: "光明乳鸽·虹桥公园·田园骑行",
     tags: ["深圳光明小镇", "深圳周边游", "遛娃好去处", "城市慢生活"],
-    imageQuery: "深圳光明小镇 family travel"
+    imageQuery: "深圳光明小镇 family travel",
+    xhsQuote: "「📍深圳周末｜光明区免费游玩景点攻略合集‼️」— 🌰栗栗在逃呀💨 @小红书（401赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "401赞📍深圳周末｜光明区免费游玩景… / 384赞春日穿搭指南🌼光明小镇的油菜… / 302赞游玩深圳光明的手绘地图，挖掘…",
+      trending: ""
+    }
+  
   },
   {
     id: 603,
@@ -3371,7 +3392,14 @@ const DESTINATIONS_SZ = [
     highlight: "深圳最老商业街·小吃天堂",
     tags: ["深圳东门老街", "深圳周边游", "扫货必去", "美食地图", "城市记忆"],
     imageQuery: "深圳东门老街 shopping street",
-    bestSeason: "全年皆宜，傍晚后最热闹"
+    bestSeason: "全年皆宜，傍晚后最热闹",
+    xhsQuote: "「🇭🇰港人来罗湖怎么吃⁉️本地人攻略」— 小松柴奈 @小红书（5184赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "5184赞🇭🇰港人来罗湖怎么吃⁉️本地… / 2857赞🚇老街站citywalk｜东… / 2606赞🔥吐血整理!!深圳东门老街的…",
+      trending: ""
+    }
+  
   },
   {
     id: 604,
@@ -3398,7 +3426,14 @@ const DESTINATIONS_SZ = [
     highlight: "前海石·海上日落",
     tags: ["深圳前海石公园", "深圳周边游", "小众打卡", "海边打卡", "城市记忆"],
     imageQuery: "深圳前海石公园 travel spot",
-    budgetText: "人均 ¥30-100"
+    budgetText: "人均 ¥30-100",
+    xhsQuote: "「深圳的公园 🏖️ 已经卷到离谱啦❗️」— 大钰登登登 @小红书（8165赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "8165赞深圳的公园 🏖️ 已经卷到离… / 6262赞来深圳玩，照抄这份攻略就够了… / 5132赞✨淡季城市citywalk🌴…",
+      trending: ""
+    }
+  
   },
   // ===== 潮汕地区 (15个) =====
   {
@@ -3425,7 +3460,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "春秋最佳，妈祖诞辰（农历三月廿三）必去",
     highlight: "古戏台·潮剧",
     tags: ["汕头老妈宫戏台", "汕头周边游", "城市文化地标"],
-    imageQuery: "汕头老妈宫戏台 cultural heritage"
+    imageQuery: "汕头老妈宫戏台 cultural heritage",
+    xhsQuote: "「汕头一日游-特种兵版行程安排」— 记录生活 @小红书（6505赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "6505赞汕头一日游-特种兵版行程安排 / 3054赞汕头 | 一日懒人旅游攻略，… / 3007赞‼️汕头旅游地图篇｜一天走完…",
+      trending: ""
+    }
+  
   },
   {
     id: 606,
@@ -3451,7 +3493,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春秋最舒适",
     highlight: "侨宅建筑·中西合璧",
     tags: ["汕头陈慈黉故居", "汕头周边游", "城市文化地标", "建筑打卡"],
-    imageQuery: "汕头陈慈黉故居 cultural heritage"
+    imageQuery: "汕头陈慈黉故居 cultural heritage",
+    xhsQuote: "「陈慈黉故居」— 山城磊子 @小红书（1890赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1890赞陈慈黉故居 / 1118赞南洋旧梦🍃汕头小众景点！（2… / 599赞带你们逛逛价值800亿的潮汕…",
+      trending: ""
+    }
+  
   },
   {
     id: 607,
@@ -3477,7 +3526,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬夜景最美",
     highlight: "浮桥奇观·夜间灯光秀",
     tags: ["潮州广济桥", "城市文化地标"],
-    imageQuery: "潮州广济桥 cultural heritage"
+    imageQuery: "潮州广济桥 cultural heritage",
+    xhsQuote: "「潮州📍一日逛吃攻略 | 步行+骑车(懒人版」— sw. @小红书（2135赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2135赞潮州📍一日逛吃攻略 | 步行… / 2016赞如果在潮州只有一天，可以盲抄… / 1915赞#潮汕行第三天#",
+      trending: ""
+    }
+  
   },
   {
     id: 608,
@@ -3503,7 +3559,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "千年古刹·唐代石柱",
     tags: ["潮州开元寺", "城市文化地标"],
-    imageQuery: "潮州开元寺 cultural heritage"
+    imageQuery: "潮州开元寺 cultural heritage",
+    xhsQuote: "「❤️泉州citywalk一日游路线攻略｜附打卡点」— knock knock小鹿游记 @小红书（3765赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3765赞❤️泉州citywalk一日… / 1343赞终于弄明白泉州怎么玩不绕路‼… / 1217赞本J人对自己手写的泉州旅游攻…",
+      trending: ""
+    }
+  
   },
   {
     id: 609,
@@ -3529,7 +3592,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "潮州小吃·牌坊古街",
     tags: ["潮州牌坊街美食", "美食地图", "城市文化地标"],
-    imageQuery: "潮州牌坊街美食 street food night market"
+    imageQuery: "潮州牌坊街美食 street food night market",
+    xhsQuote: "「如果在潮州只有一天时间…我最想推荐这些！！」— 西蛮几ozz @小红书（13000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "13000赞如果在潮州只有一天时间…我最… / 3973赞潮州吃这8️⃣家就够了❗️不… / 2100赞潮州🤤保姆级美食路线，吃货直…",
+      trending: ""
+    }
+  
   },
   {
     id: 610,
@@ -3555,7 +3625,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "明代城门·揭阳老城",
     tags: ["揭阳进贤门", "城市文化地标"],
-    imageQuery: "揭阳进贤门 cultural heritage"
+    imageQuery: "揭阳进贤门 cultural heritage",
+    xhsQuote: "「来揭阳只有1天时间，直接复制这条路线❗」— 猫又的广州CityWalk攻略 @小红书（2564赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2564赞来揭阳只有1天时间，直接复制… / 952赞左滑告诉你‼️揭阳春节48小…",
+      trending: ""
+    }
+  
   },
   {
     id: 611,
@@ -3581,7 +3658,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，三月廿三最佳",
     highlight: "妈祖文化·品清湖景",
     tags: ["汕尾凤山祖庙", "城市文化地标"],
-    imageQuery: "汕尾凤山祖庙 cultural heritage"
+    imageQuery: "汕尾凤山祖庙 cultural heritage",
+    xhsQuote: "「汕尾‖快来汕尾旅游吧，旅游攻略已整理OK！」— 汕尾自由行-地豆游 @小红书（7707赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "7707赞汕尾‖快来汕尾旅游吧，旅游攻… / 2179赞汕尾这座祖庙的华丽程度，绝了… / 1565赞冬季汕尾一日，打卡三大海湾+…",
+      trending: ""
+    }
+  
   },
   {
     id: 612,
@@ -3607,7 +3691,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "3-5月春茶季最佳，秋季也很美",
     highlight: "凤凰单丛·云雾茶园",
     tags: ["潮州凤凰山茶区", "茶文化体验", "自然风光"],
-    imageQuery: "潮州凤凰山茶区 tea plantation"
+    imageQuery: "潮州凤凰山茶区 tea plantation",
+    xhsQuote: "「还得是潮汕人！茶山里喝茶才够味🍃」— 古灵精怪的痒姐 @小红书（471赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "471赞还得是潮汕人！茶山里喝茶才够… / 368赞凤凰单丛产区排行 / 97赞来凤凰山一日游后，我后悔了",
+      trending: ""
+    }
+  
   },
   {
     id: 613,
@@ -3633,7 +3724,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "5-10月最佳",
     highlight: "碧海银沙·日出之岛",
     tags: ["南澳岛青澳湾", "海边打卡", "度假天花板", "自然风光"],
-    imageQuery: "南澳岛青澳湾 sea coast aerial"
+    imageQuery: "南澳岛青澳湾 sea coast aerial",
+    xhsQuote: "「8.10南澳岛旅游已回…再也不听小红书乱说了…」— 胖胖哒熊老大呀 @小红书（5356赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "5356赞8.10南澳岛旅游已回…再也… / 1898赞7.14📍南澳岛已回，再也不… / 1282赞两个抠搜女孩南澳岛玩回来🥺内…",
+      trending: ""
+    }
+  
   },
   {
     id: 614,
@@ -3659,7 +3757,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春季桃花涧最美",
     highlight: "海湾全景·奇峰怪石",
     tags: ["汕头礐石风景区", "汕头周边游", "自然风光"],
-    imageQuery: "汕头礐石风景区 nature landscape"
+    imageQuery: "汕头礐石风景区 nature landscape",
+    xhsQuote: "「比起小公园，我更爱汕头这有风的小岛」— 阿Lin吖 @小红书（2432赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2432赞比起小公园，我更爱汕头这有风… / 1176赞在汕头！搭1r的轮渡去礐石c… / 971赞⛴️这条路线能实现“上山下海…",
+      trending: ""
+    }
+  
   },
   {
     id: 615,
@@ -3685,7 +3790,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "韩愈遗迹·千年文脉",
     tags: ["潮州韩文公祠", "城市文化地标"],
-    imageQuery: "潮州韩文公祠 cultural heritage"
+    imageQuery: "潮州韩文公祠 cultural heritage",
+    xhsQuote: "「潮州📍一日逛吃攻略 | 步行+骑车(懒人版」— sw. @小红书（2135赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2135赞潮州📍一日逛吃攻略 | 步行… / 1915赞#潮汕行第三天# / 1438赞潮州真的不是你想的这样！能救…",
+      trending: ""
+    }
+  
   },
   {
     id: 616,
@@ -3737,7 +3849,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬海浪最壮观",
     highlight: "海边淡泉·自然奇观",
     tags: ["揭阳惠来海角甘泉", "自然风光", "海边打卡"],
-    imageQuery: "揭阳惠来海角甘泉 nature landscape"
+    imageQuery: "揭阳惠来海角甘泉 nature landscape",
+    xhsQuote: "「潮汕·这才是牛马呆的地方都以为去新西兰….」— 马马德 @小红书（1711赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1711赞潮汕·这才是牛马呆的地方都以… / 1124赞终于赶海成功了，惠来美丽的玻… / 918赞哇塞！惠来居然有这种免费的沙…",
+      trending: ""
+    }
+  
   },
   {
     id: 618,
@@ -3763,7 +3882,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "手打鱼丸·百年老字号",
     tags: ["汕头达濠鱼丸一条街", "汕头周边游", "美食地图"],
-    imageQuery: "汕头达濠鱼丸一条街 street food night market"
+    imageQuery: "汕头达濠鱼丸一条街 street food night market",
+    xhsQuote: "「汕头达濠最全美食攻略路线来了🔥不看后悔！」— 米莉在玩 @小红书（615赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "615赞汕头达濠最全美食攻略路线来了… / 569赞汕头濠江本地土著私藏👉吃不腻… / 338赞在汕头，花半天吃达濠老牌店（…",
+      trending: ""
+    }
+  
   },
   {
     id: 619,
@@ -3789,7 +3915,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "海防历史·总兵遗址",
     tags: ["南澳岛总兵府", "城市文化地标", "海边打卡"],
-    imageQuery: "南澳岛总兵府 cultural heritage"
+    imageQuery: "南澳岛总兵府 cultural heritage",
+    xhsQuote: "「说是郑成功选兵的及格线」— 林万铁 @小红书（26000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "26000赞说是郑成功选兵的及格线 / 2472赞南澳岛避坑指南 / 1282赞两个抠搜女孩南澳岛玩回来🥺内…",
+      trending: ""
+    }
+  
   },
   // ===== 广州深度 (15个) =====
   {
@@ -3816,7 +3949,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春秋最舒适",
     highlight: "五羊石像·镇海楼",
     tags: ["广州越秀公园五羊雕塑", "广州周边游", "城市文化地标", "遛娃好去处"],
-    imageQuery: "广州越秀公园五羊雕塑 cultural heritage"
+    imageQuery: "广州越秀公园五羊雕塑 cultural heritage",
+    xhsQuote: "「来广州越秀公园走走」— 张国强KK @小红书（8113赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "8113赞来广州越秀公园走走 / 1060赞越秀公园既是一座公园，又是半… / 726赞广州越秀公园游玩攻略|附路线…",
+      trending: ""
+    }
+  
   },
   {
     id: 621,
@@ -3842,7 +3982,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，端午节最热闹",
     highlight: "西关水乡·粤剧私伙局",
     tags: ["广州荔枝湾涌", "广州周边游", "城市文化地标", "美食地图"],
-    imageQuery: "广州荔枝湾涌 cultural heritage"
+    imageQuery: "广州荔枝湾涌 cultural heritage",
+    xhsQuote: "「广州攻略实践结合了一些网图，有好心人指导」— 戚梦想 @小红书（11000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "11000赞广州攻略实践结合了一些网图，… / 4410赞广州旅游丨【老广西关一日游】… / 4020赞广州周末｜来荔湾感受西关风情…",
+      trending: ""
+    }
+  
   },
   {
     id: 622,
@@ -3868,7 +4015,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬傍晚最舒适",
     highlight: "红砖仓库·珠江日落",
     tags: ["广州太古仓", "广州周边游", "文艺小众", "美食地图"],
-    imageQuery: "广州太古仓 art district"
+    imageQuery: "广州太古仓 art district",
+    xhsQuote: "「如果去广州的女孩看了这篇❗️」— 梨の碎碎念 @小红书（10000赞）",
+    xhsHeat: {
+      heat: "顶流",
+      notes: "10000赞如果去广州的女孩看了这篇❗️ / 2548赞【广州本地人实话】超全避坑指… / 920赞太古仓City Walk❗愿…",
+      trending: ""
+    }
+  
   },
   {
     id: 623,
@@ -3894,7 +4048,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "西关微改造·李小龙故居",
     tags: ["广州永庆坊", "广州周边游", "城市文化地标", "文艺小众", "美食地图"],
-    imageQuery: "广州永庆坊 cultural heritage"
+    imageQuery: "广州永庆坊 cultural heritage",
+    xhsQuote: "「有没有，来假广州啊？永庆坊一日游美食攻略」— 连少美食记 @小红书（8506赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "8506赞有没有，来假广州啊？永庆坊一… / 8427赞终于有人把6~8🈷️广州旅游… / 5290赞广州最全保姆级旅游攻略【永庆…",
+      trending: ""
+    }
+  
   },
   {
     id: 624,
@@ -3920,7 +4081,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "红砖厂房·当代艺术",
     tags: ["广州红砖厂创意园", "广州周边游", "文艺小众"],
-    imageQuery: "广州红砖厂创意园 art district"
+    imageQuery: "广州红砖厂创意园 art district",
+    xhsQuote: "「【一百四十二】广州 废弃产业创意园区」— 一起做个朋友仔 @小红书（577赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "577赞【一百四十二】广州 废弃产业… / 509赞北京不止798🔥还有14个创…",
+      trending: ""
+    }
+  
   },
   {
     id: 625,
@@ -3946,7 +4114,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬观鸟最佳，春季花海",
     highlight: "城央湿地·候鸟天堂",
     tags: ["广州海珠湿地", "广州周边游", "自然风光", "遛娃好去处"],
-    imageQuery: "广州海珠湿地 nature landscape"
+    imageQuery: "广州海珠湿地 nature landscape",
+    xhsQuote: "「地铁直达🌸广州3.2公里的紫荆花海好浪漫」— 心海心弦 @小红书（1101赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1101赞地铁直达🌸广州3.2公里的紫… / 1080赞听劝！来海珠湿地公园一定要先… / 625赞海珠citywalk深度游❗…",
+      trending: ""
+    }
+  
   },
   {
     id: 626,
@@ -3972,7 +4147,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "一口通商·古港小吃",
     tags: ["广州黄埔古港", "广州周边游", "城市文化地标", "美食地图"],
-    imageQuery: "广州黄埔古港 cultural heritage"
+    imageQuery: "广州黄埔古港 cultural heritage",
+    xhsQuote: "「黄埔古港｜古村慢时光，人间烟火气」— kaminglo @小红书（451赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "451赞黄埔古港｜古村慢时光，人间烟… / 427赞🚶‍♀️广州黄埔古港walk… / 243赞广州黄埔古港是怎么了",
+      trending: ""
+    }
+  
   },
   {
     id: 627,
@@ -3998,7 +4180,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "11-12月红叶最佳，3-4月赏花",
     highlight: "红叶漫山·天然氧吧",
     tags: ["广州从化石门森林公园", "广州周边游", "自然风光"],
-    imageQuery: "广州从化石门森林公园 nature landscape"
+    imageQuery: "广州从化石门森林公园 nature landscape",
+    xhsQuote: "「广州溜车｜从化篇①:石门森林公园」— 追寻些许自由 @小红书（629赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "629赞广州溜车｜从化篇①:石门森林… / 262赞石门山森林公园自驾游攻略 / 257赞广州📍从化，景点一日游路线|…",
+      trending: ""
+    }
+  
   },
   {
     id: 628,
@@ -4024,7 +4213,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春节最热闹",
     highlight: "道教宫观·仿天坛建筑",
     tags: ["广州花都圆玄道观", "广州周边游", "城市文化地标", "建筑打卡"],
-    imageQuery: "广州花都圆玄道观 cultural heritage"
+    imageQuery: "广州花都圆玄道观 cultural heritage",
+    xhsQuote: "「☯️广东最大的太上老君像，在花都小天坛」— 飞鸟与鱼 @小红书（235赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "235赞☯️广东最大的太上老君像，在… / 211赞不愧是广州小“天坛”｜圆玄道… / 177赞第一次去广州花都‼️｜3天2…",
+      trending: ""
+    }
+  
   },
   {
     id: 629,
@@ -4050,7 +4246,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春秋最舒适",
     highlight: "岭南五雕·锦鲤争食",
     tags: ["广州番禺宝墨园", "广州周边游", "城市文化地标", "遛娃好去处"],
-    imageQuery: "广州番禺宝墨园 cultural heritage"
+    imageQuery: "广州番禺宝墨园 cultural heritage",
+    xhsQuote: "「番禺必打卡景点♥超详细！这些点不能错过」— 你好酒店广州番禺市桥易发街店 @小红书（776赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "776赞番禺必打卡景点♥超详细！这些… / 644赞广州宝墨园｜🧨年味拉满！拍照… / 553赞被岭南园林封神！这才是老祖宗…",
+      trending: ""
+    }
+  
   },
   {
     id: 630,
@@ -4076,7 +4279,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬最佳（10-3月）",
     highlight: "山间温泉·度假放松",
     tags: ["广州增城派潭温泉", "广州周边游", "温泉养生", "度假天花板", "遛娃好去处"],
-    imageQuery: "广州增城派潭温泉 hot spring"
+    imageQuery: "广州增城派潭温泉 hot spring",
+    xhsQuote: "「纯干货！广州6大真温泉好去处！」— 含舍花园 @小红书（191赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "191赞纯干货！广州6大真温泉好去处… / 182赞白水寨❣️这家私汤民宿真的很… / 107赞广州增城｜牛牯嶂一日徒步攻略…",
+      trending: ""
+    }
+  
   },
   {
     id: 631,
@@ -4102,7 +4312,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "11-3月候鸟季最佳，夏季看荷花",
     highlight: "候鸟越冬·红树林",
     tags: ["广州南沙湿地", "广州周边游", "自然风光", "遛娃好去处"],
-    imageQuery: "广州南沙湿地 nature landscape"
+    imageQuery: "广州南沙湿地 nature landscape",
+    xhsQuote: "「广州去哪玩👉南沙区12个游玩景点🔥」— 广东全攻略 @小红书（484赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "484赞广州去哪玩👉南沙区12个游玩… / 168赞盘点广州南沙有哪些A级旅游景… / 137赞打工人周末吸氧洗眼🌿南沙湿地…",
+      trending: ""
+    }
+  
   },
   {
     id: 632,
@@ -4128,7 +4345,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "夏季戏水最佳，秋冬登山赏景",
     highlight: "碧绿水库·山间戏水",
     tags: ["花都芙蓉嶂", "自然风光", "遛娃好去处"],
-    imageQuery: "花都芙蓉嶂 nature landscape"
+    imageQuery: "花都芙蓉嶂 nature landscape",
+    xhsQuote: "「芙蓉嶂瀑布省级 玩水+徒步+野餐全搞定」— Naya @小红书（206赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "206赞芙蓉嶂瀑布省级 玩水+徒步+… / 146赞🚙芙蓉嶂-高百丈「跑山溯溪日… / 113赞花都芙蓉嶂省级旅游区",
+      trending: ""
+    }
+  
   },
   {
     id: 633,
@@ -4154,7 +4378,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "12-1月赏梅，夏季避暑",
     highlight: "流溪梅花·湖光山色",
     tags: ["从化流溪河森林公园", "自然风光", "遛娃好去处"],
-    imageQuery: "从化流溪河森林公园 nature landscape"
+    imageQuery: "从化流溪河森林公园 nature landscape",
+    xhsQuote: "「从化刚退房！！连住3晚的山野小院😭好chill」— 栖源旅行 @小红书（1287赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1287赞从化刚退房！！连住3晚的山野… / 804赞流溪河森林公园 / 500赞从化旅游景点好去处🗻保姆级攻…",
+      trending: ""
+    }
+  
   },
   {
     id: 634,
@@ -4180,7 +4411,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "6-7月荔枝季最佳",
     highlight: "天价荔枝·挂绿母树",
     tags: ["增城挂绿荔枝广场", "城市文化地标", "美食地图", "城市慢生活"],
-    imageQuery: "增城挂绿荔枝广场 cultural heritage"
+    imageQuery: "增城挂绿荔枝广场 cultural heritage",
+    xhsQuote: "「一颗荔枝换一套楼？」— 卢俊宇哥哥 @小红书（1786赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1786赞一颗荔枝换一套楼？ / 1504赞天价荔枝·挂绿 / 402赞80% 增城人都认错，挂绿广…",
+      trending: ""
+    }
+  
   },
   // ===== 顺德/佛山深度 (10个) =====
   {
@@ -4207,7 +4445,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "满洲窗·船厅·岭南园林",
     tags: ["顺德清晖园", "城市文化地标", "建筑打卡"],
-    imageQuery: "顺德清晖园 cultural heritage"
+    imageQuery: "顺德清晖园 cultural heritage",
+    xhsQuote: "「👉佛山顺德一日游｜本地人安利逛吃旅游攻略」— 半夏的小旅馆 @小红书（7658赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "7658赞👉佛山顺德一日游｜本地人安利… / 3351赞顺德刚回，说实话跟我想象中的… / 2465赞顺德懒人版攻略！",
+      trending: ""
+    }
+  
   },
   {
     id: 636,
@@ -4233,7 +4478,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "整猪蒸制·非遗美食",
     tags: ["顺德均安蒸猪", "美食地图"],
-    imageQuery: "顺德均安蒸猪 street food night market"
+    imageQuery: "顺德均安蒸猪 street food night market",
+    xhsQuote: "「🔥【顺德非遗美食｜均安蒸猪】🐷」— 舌尖上的佛山 @小红书（2872赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2872赞🔥【顺德非遗美食｜均安蒸猪】… / 428赞顺德｜远离市区，寻味不起眼的… / 349赞蒸猪啊！皮爽肉香，食得好过瘾…",
+      trending: ""
+    }
+  
   },
   {
     id: 637,
@@ -4259,7 +4511,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "百年伦教糕·手工米香",
     tags: ["顺德伦教糕老字号", "美食地图", "城市文化地标"],
-    imageQuery: "顺德伦教糕老字号 street food night market"
+    imageQuery: "顺德伦教糕老字号 street food night market",
+    xhsQuote: "「这次真是咸丰年代啦」— 卢俊宇哥哥 @小红书（537赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "537赞这次真是咸丰年代啦 / 392赞顺德｜本地人爱吃、反复吃的老… / 348赞血泪避坑指南 | 外地人开的…",
+      trending: ""
+    }
+  
   },
   {
     id: 638,
@@ -4285,7 +4544,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "春节前花市最盛，四季有花",
     highlight: "千年花乡·花卉世界",
     tags: ["顺德陈村花卉世界", "扫货必去", "遛娃好去处"],
-    imageQuery: "顺德陈村花卉世界 shopping street"
+    imageQuery: "顺德陈村花卉世界 shopping street",
+    xhsQuote: "「新晋爆火！地铁直达！藏在佛山陈村的电影片场」— 高米儿 @小红书（7288赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "7288赞新晋爆火！地铁直达！藏在佛山… / 633赞真的不是Ai‼️广佛地铁直达…",
+      trending: ""
+    }
+  
   },
   {
     id: 639,
@@ -4311,7 +4577,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "岭南奇石·清代园林",
     tags: ["佛山梁园", "佛山周边游", "城市文化地标", "建筑打卡"],
-    imageQuery: "佛山梁园 cultural heritage"
+    imageQuery: "佛山梁园 cultural heritage",
+    xhsQuote: "「佛山年味City walk路线来咯！」— 晴晴子 @小红书（2514赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2514赞佛山年味City walk路… / 701赞佛山一日游懒人版！（附详细逛… / 602赞佛山禅城区一日行Citywa…",
+      trending: ""
+    }
+  
   },
   {
     id: 640,
@@ -4337,7 +4610,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "古建筑·新业态",
     tags: ["佛山岭南天地", "佛山周边游", "城市文化地标", "美食地图"],
-    imageQuery: "佛山岭南天地 cultural heritage"
+    imageQuery: "佛山岭南天地 cultural heritage",
+    xhsQuote: "「佛山特种兵一日游攻略（禅城篇）」— AA高高 @小红书（4190赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4190赞佛山特种兵一日游攻略（禅城篇… / 3792赞佛山本地土著熬夜整理‼暑假来… / 2514赞佛山年味City walk路…",
+      trending: ""
+    }
+  
   },
   {
     id: 641,
@@ -4363,7 +4643,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "6-10月赏荷，7-8月最盛",
     highlight: "800品种荷花·亲子乐园",
     tags: ["佛山三水荷花世界", "佛山周边游", "遛娃好去处", "自然风光"],
-    imageQuery: "佛山三水荷花世界 family travel"
+    imageQuery: "佛山三水荷花世界 family travel",
+    xhsQuote: "「佛山三水区旅游地图路线攻略」— 东行西晃 @小红书（543赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "543赞佛山三水区旅游地图路线攻略 / 331赞佛山3天2夜旅游攻略✅️不绕… / 246赞实拍❗三水荷香湖睡莲进入最佳…",
+      trending: ""
+    }
+  
   },
   {
     id: 642,
@@ -4389,7 +4676,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春秋最舒适",
     highlight: "南海观音·黄飞鸿故里",
     tags: ["南海西樵山", "自然风光", "城市文化地标"],
-    imageQuery: "南海西樵山 nature landscape"
+    imageQuery: "南海西樵山 nature landscape",
+    xhsQuote: "「交通超easy | 西樵山北门超省力玩法！」— 西樵山风景名胜区 @小红书（1401赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1401赞交通超easy | 西樵山北… / 1209赞第一次来佛山西樵山，请直接复… / 556赞西樵山 | 轻松不费腿半日游…",
+      trending: ""
+    }
+  
   },
   {
     id: 643,
@@ -4415,7 +4709,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，避开盛夏",
     highlight: "影视实景·古装体验",
     tags: ["南海影视城", "遛娃好去处", "城市文化地标"],
-    imageQuery: "南海影视城 family travel"
+    imageQuery: "南海影视城 family travel",
+    xhsQuote: "「喜欢看TVB剧迷一定要来打卡❗️」— Kyoho @小红书（490赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "490赞喜欢看TVB剧迷一定要来打卡… / 490赞佛山丨南海影视城🎬保姆级攻略 / 268赞南海影视城1元入园。去了。累…",
+      trending: ""
+    }
+  
   },
   {
     id: 644,
@@ -4441,7 +4742,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "2-3月油菜花，夏季水上乐园",
     highlight: "油菜花海·亲子农庄",
     tags: ["佛山高明盈香生态园", "佛山周边游", "遛娃好去处", "自然风光"],
-    imageQuery: "佛山高明盈香生态园 family travel"
+    imageQuery: "佛山高明盈香生态园 family travel",
+    xhsQuote: "「佛山｜🎡盈香心动乐园超好玩攻略来了👀🗺️」— 理想是G奶 @小红书（2737赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2737赞佛山｜🎡盈香心动乐园超好玩攻… / 2737赞佛山｜🎡盈香心动乐园超好玩攻… / 1408赞佛山盈香生态乐园攻略！179…",
+      trending: ""
+    }
+  
   },
   // ===== 其他珠三角/周边 (15个) =====
   {
@@ -4468,7 +4776,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "夏季荷花最美，四季皆宜",
     highlight: "水乡湿地·荷花画境",
     tags: ["东莞华阳湖", "东莞周边游", "自然风光", "遛娃好去处", "城市慢生活"],
-    imageQuery: "东莞华阳湖 nature landscape"
+    imageQuery: "东莞华阳湖 nature landscape",
+    xhsQuote: "「每周末带老婆出去玩 第40站 麻涌」— 园园爱吃 @小红书（565赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "565赞每周末带老婆出去玩 第40站… / 331赞i人周末生活Plog｜广州出… / 123赞东莞麻涌Citywalk一日…",
+      trending: ""
+    }
+  
   },
   {
     id: 646,
@@ -4494,7 +4809,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬（10-3月）海水最清",
     highlight: "黑色礁石·海岸穿越",
     tags: ["惠州双月湾黑排角", "惠州周边游", "海边打卡", "城市徒步", "出片机位"],
-    imageQuery: "惠州双月湾黑排角 sea coast aerial"
+    imageQuery: "惠州双月湾黑排角 sea coast aerial",
+    xhsQuote: "「闺蜜第一次去双月湾，熬夜昨晚攻略给她👆」— 凤之旅定制旅行 @小红书（3615赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3615赞闺蜜第一次去双月湾，熬夜昨晚… / 1186赞为了这个镜头，特意来了一趟惠… / 1040赞自驾惠州黑排角露营看海，20…",
+      trending: ""
+    }
+  
   },
   {
     id: 647,
@@ -4520,7 +4842,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "世界级马戏·声光震撼",
     tags: ["珠海横琴长隆国际马戏城", "珠海周边游", "遛娃好去处", "度假天花板"],
-    imageQuery: "珠海横琴长隆国际马戏城 family travel"
+    imageQuery: "珠海横琴长隆国际马戏城 family travel",
+    xhsQuote: "「第一次来长隆看这篇就够」— BADUN @小红书（4256赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "4256赞第一次来长隆看这篇就够 / 1875赞不用加钱沉浸式带你找长隆秀c… / 1069赞珠海长隆内部员工良心建议‼️…",
+      trending: ""
+    }
+  
   },
   {
     id: 648,
@@ -4546,7 +4875,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "国父故居·辛亥革命",
     tags: ["中山故居纪念馆", "中山周边游", "城市文化地标"],
-    imageQuery: "中山故居纪念馆 cultural heritage"
+    imageQuery: "中山故居纪念馆 cultural heritage",
+    xhsQuote: "「北京|特种兵式一天体验打卡11个名人故居」— 一个老登 @小红书（3468赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3468赞北京|特种兵式一天体验打卡1… / 1285赞北京探索｜原来这些熟悉的名字… / 1003赞极少人知道的北京胡同文化小众…",
+      trending: ""
+    }
+  
   },
   {
     id: 649,
@@ -4572,7 +4908,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，春夏鸟类最多",
     highlight: "百鸟齐飞·独木成林",
     tags: ["江门新会小鸟天堂", "江门周边游", "自然风光"],
-    imageQuery: "江门新会小鸟天堂 nature landscape"
+    imageQuery: "江门新会小鸟天堂 nature landscape",
+    xhsQuote: "「小鸟天堂没看到小鸟」— 月亮和小猪 @小红书（3246赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3246赞小鸟天堂没看到小鸟 / 1353赞江门这里！！🕊️跟风小红书最… / 452赞🌿 江门「小鸟天堂」",
+      trending: ""
+    }
+  
   },
   {
     id: 650,
@@ -4598,7 +4941,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "5-10月最佳",
     highlight: "广东大海岛·人少水清",
     tags: ["江门台山上下川岛", "江门周边游", "海边打卡", "度假天花板", "自然风光"],
-    imageQuery: "江门台山上下川岛 sea coast aerial"
+    imageQuery: "江门台山上下川岛 sea coast aerial",
+    xhsQuote: "「【广东篇-江门】“中国侨都，宝藏小城”」— 自由的白 @小红书（5619赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "5619赞【广东篇-江门】“中国侨都，… / 1060赞江门台山📍下川岛一日游玩攻略… / 377赞上川岛住了一晚差点回不去🥹",
+      trending: ""
+    }
+  
   },
   {
     id: 651,
@@ -4624,7 +4974,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜",
     highlight: "溶洞奇观·地下暗河",
     tags: ["云浮蟠龙洞", "自然风光"],
-    imageQuery: "云浮蟠龙洞 nature landscape"
+    imageQuery: "云浮蟠龙洞 nature landscape",
+    xhsQuote: "「云浮仙境｜一键解锁广东被低估的山水」— 途乐出行咨询 @小红书（218赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "218赞云浮仙境｜一键解锁广东被低估… / 116赞📝【云浮旅游避坑血泪实录｜被… / 88赞云浮 3 天 2 夜旅游攻略…",
+      trending: ""
+    }
+  
   },
   {
     id: 652,
@@ -4650,7 +5007,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "江心岛·原生古村",
     tags: ["肇庆砚洲岛", "肇庆周边游", "自然风光", "城市文化地标"],
-    imageQuery: "肇庆砚洲岛 nature landscape"
+    imageQuery: "肇庆砚洲岛 nature landscape",
+    xhsQuote: "「肇庆三天三夜｜保姆级路线攻略」— 广东包车姐-粤车旅出行 @小红书（248赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "248赞肇庆三天三夜｜保姆级路线攻略 / 126赞肇庆砚州岛 / 117赞肇庆鼎湖⛺️砚洲岛露营烧烤",
+      trending: ""
+    }
+  
   },
   {
     id: 653,
@@ -4676,7 +5040,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬最佳，盘王节必去",
     highlight: "千年瑶寨·瑶族歌舞",
     tags: ["清远千年瑶寨", "城市文化地标"],
-    imageQuery: "清远千年瑶寨 cultural heritage"
+    imageQuery: "清远千年瑶寨 cultural heritage",
+    xhsQuote: "「清远已回，后悔去之前没刷到这篇😭」— 大宝同学 @小红书（1226赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1226赞清远已回，后悔去之前没刷到这… / 622赞清远旅游本地人大实话‼️别怪… / 400赞连南千年瑶寨去了，命快没了",
+      trending: ""
+    }
+  
   },
   {
     id: 654,
@@ -4702,7 +5073,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋季赏红叶，冬季看冰挂",
     highlight: "广东最高峰·原始森林",
     tags: ["韶关南岭国家森林公园", "韶关周边游", "自然风光"],
-    imageQuery: "韶关南岭国家森林公园 nature landscape"
+    imageQuery: "韶关南岭国家森林公园 nature landscape",
+    xhsQuote: "「【韶关】善美之地，绝美景点等你揭秘」— 带上历史去旅行 @小红书（1054赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1054赞【韶关】善美之地，绝美景点等… / 162赞这个森林公园真不是谁都可以进… / 125赞本溪南岭｜太适合新手（亲子）…",
+      trending: ""
+    }
+  
   },
   {
     id: 655,
@@ -4728,7 +5106,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬最佳（10-3月）",
     highlight: "日式温泉·客家山水",
     tags: ["河源御临门温泉", "温泉养生", "度假天花板"],
-    imageQuery: "河源御临门温泉 hot spring"
+    imageQuery: "河源御临门温泉 hot spring",
+    xhsQuote: "「广东御临门92度温泉伤父  酒店：快点起诉我」— 92度御临门温泉伤父维权的珊珊 @小红书（2107赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "2107赞广东御临门92度温泉伤父  … / 1374赞御临门温泉度假村 谁在给你们… / 460赞♨️广深自驾2h-温泉度假胜…",
+      trending: ""
+    }
+  
   },
   {
     id: 656,
@@ -4754,7 +5139,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "叶帅故居·客家围龙屋",
     tags: ["梅州叶剑英故居", "梅州周边游", "城市文化地标"],
-    imageQuery: "梅州叶剑英故居 cultural heritage"
+    imageQuery: "梅州叶剑英故居 cultural heritage",
+    xhsQuote: "「探叶剑英元帅北京旧居，曾是恭王府后花园」— 北京旅游等着瞧 @小红书（195赞）",
+    xhsHeat: {
+      heat: "中低热",
+      notes: "195赞探叶剑英元帅北京旧居，曾是恭… / 179赞天津五大道｜来天津怎么能不去… / 171赞叶剑英故居",
+      trending: ""
+    }
+  
   },
   {
     id: 657,
@@ -4780,7 +5172,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬最舒适",
     highlight: "岭南石林·喀斯特地貌",
     tags: ["阳江阳春春湾石林", "自然风光"],
-    imageQuery: "阳江阳春春湾石林 nature landscape"
+    imageQuery: "阳江阳春春湾石林 nature landscape",
+    xhsQuote: "「五一不要人挤人，小众旅游城市阳春必打卡！」— 阳春视窗 @小红书（570赞）",
+    xhsHeat: {
+      heat: "中热",
+      notes: "570赞五一不要人挤人，小众旅游城市… / 149赞《长安的荔枝》取景地·阳春小…",
+      trending: ""
+    }
+  
   },
   {
     id: 658,
@@ -4806,7 +5205,14 @@ const DESTINATIONS_SZ = [
     bestSeason: "秋冬最佳（10-2月）",
     highlight: "云海日出·高山草甸",
     tags: ["茂名信宜大仁山", "茂名周边游", "自然风光"],
-    imageQuery: "茂名信宜大仁山 nature landscape"
+    imageQuery: "茂名信宜大仁山 nature landscape",
+    xhsQuote: "「每周末带老婆出去玩 广东信宜」— 园园很圆满（夫妻旅游版） @小红书（1043赞）",
+    xhsHeat: {
+      heat: "中高热",
+      notes: "1043赞每周末带老婆出去玩 广东信宜 / 701赞不愧是广东阿勒泰｜台风后依然… / 592赞茂名旅游攻略，不走回头路！！…",
+      trending: ""
+    }
+  
   },
   {
     id: 659,
@@ -4832,6 +5238,13 @@ const DESTINATIONS_SZ = [
     bestSeason: "全年皆宜，秋冬最舒适",
     highlight: "热带海滩·湛江生蚝",
     tags: ["湛江金沙湾", "湛江周边游", "海边打卡", "美食地图", "度假天花板"],
-    imageQuery: "湛江金沙湾 sea coast aerial"
+    imageQuery: "湛江金沙湾 sea coast aerial",
+    xhsQuote: "「湛江旅游攻略（本地人版）」— 薏米炖冬瓜 @小红书（3117赞）",
+    xhsHeat: {
+      heat: "高热",
+      notes: "3117赞湛江旅游攻略（本地人版） / 2166赞湛江旅游，个人感受总结（强推… / 1325赞广州湛江——珠海旅游第一天（…",
+      trending: ""
+    }
+  
   }
 ];
