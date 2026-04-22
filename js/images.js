@@ -905,9 +905,9 @@ const LEGEND_IMAGES = {
 };
 
 function getDestImage(dest) {
-  return DEST_IMAGES[dest.name] || null;
+  return DEST_IMAGES[dest.name] || dest.image || null;
 }
 
 function getLegendImage(legend) {
-  return LEGEND_IMAGES[legend.name] || null;
+  return LEGEND_IMAGES[legend.name] || legend.image || null;
 }
