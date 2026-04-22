@@ -42,6 +42,7 @@ const DESTINATIONS_TJ = [
       "小洋楼",
       "慢生活"
     ],
+    "image": "assets/images/dest-tj-1100.webp",
     "imageQuery": "Tianjin Five Great Avenues historical buildings"
   },
   {
@@ -85,6 +86,7 @@ const DESTINATIONS_TJ = [
       "老字号",
       "海河"
     ],
+    "image": "assets/images/dest-tj-1101.webp",
     "imageQuery": "Tianjin Ancient Culture Street night lanterns"
   },
   {
@@ -128,6 +130,7 @@ const DESTINATIONS_TJ = [
       "异域",
       "海河北岸"
     ],
+    "image": "assets/images/dest-tj-1102.webp",
     "imageQuery": "Tianjin Italian Style Street evening"
   },
   {
@@ -171,6 +174,7 @@ const DESTINATIONS_TJ = [
       "海河",
       "打卡"
     ],
+    "image": "assets/images/dest-tj-1103.webp",
     "imageQuery": "Tianjin Eye Ferris wheel sunset"
   },
   {
@@ -214,6 +218,7 @@ const DESTINATIONS_TJ = [
       "瓷器",
       "奇观"
     ],
+    "image": "assets/images/dest-tj-1104.webp",
     "imageQuery": "Tianjin Porcelain House"
   },
   {
@@ -257,6 +262,7 @@ const DESTINATIONS_TJ = [
       "海河",
       "灯光"
     ],
+    "image": "assets/images/dest-tj-1105.webp",
     "imageQuery": "Tianjin Haihe river night cruise"
   },
   {
@@ -300,6 +306,7 @@ const DESTINATIONS_TJ = [
       "辽代",
       "木构"
     ],
+    "image": "assets/images/dest-tj-1106.webp",
     "imageQuery": "Dule Temple Ji County ancient wooden architecture"
   },
   {
@@ -344,6 +351,7 @@ const DESTINATIONS_TJ = [
       "乾隆",
       "徒步"
     ],
+    "image": "assets/images/dest-tj-1107.webp",
     "imageQuery": "Panshan Mountain Ji County Tianjin"
   },
   {
@@ -388,6 +396,7 @@ const DESTINATIONS_TJ = [
       "军事",
       "亲子"
     ],
+    "image": "assets/images/dest-tj-1108.webp",
     "imageQuery": "Tianjin Binhai Aircraft Carrier Theme Park"
   },
   {
