@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# pre-push — 保证 miniapp utils/data.js 与 web data-*.js 同步
+#
+# 逻辑：
+# 1. 备份 miniapp/utils/data.js
+# 2. 跑 sync-to-miniapp.js --apply
+# 3. 若 data.js 字节有变 → 说明 push 前忘了 sync，失败并提示（备份已还原前保留新版本）
+# 4. 无差异 → 放行
+#
+# Install: git config core.hooksPath .githooks
+# Emergency bypass: git push --no-verify
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+MINIAPP="$HOME/weekend-go-miniapp"
+
+if [[ ! -d "$MINIAPP" ]]; then
+  exit 0
+fi
+
+cd "$REPO_ROOT"
+BEFORE_HASH=$(md5 -q "$MINIAPP/utils/data.js" 2>/dev/null || md5sum "$MINIAPP/utils/data.js" 2>/dev/null | awk '{print $1}')
+node scripts/sync-to-miniapp.js --apply >/dev/null 2>&1
+AFTER_HASH=$(md5 -q "$MINIAPP/utils/data.js" 2>/dev/null || md5sum "$MINIAPP/utils/data.js" 2>/dev/null | awk '{print $1}')
+
+if [[ "$BEFORE_HASH" != "$AFTER_HASH" ]]; then
+  echo "" >&2
+  echo "❌ pre-push 拦截: miniapp/utils/data.js 原本 out-of-sync" >&2
+  echo "   sync-to-miniapp.js 已同步（新 data.js 现在落在 $MINIAPP/utils/data.js）" >&2
+  echo "   请先 cd $MINIAPP && git add utils/ && git commit && git push" >&2
+  echo "   之后再 push 本仓库（或 --no-verify 跳过本 hook）" >&2
+  exit 1
+fi
+
+exit 0
