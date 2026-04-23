@@ -144,6 +144,12 @@ function getXhsHeat(dest) {
   const cityHeatMap = {
     shenzhen: typeof XHS_HEAT_SZ !== 'undefined' ? XHS_HEAT_SZ : null,
     weihai: typeof XHS_HEAT_WH !== 'undefined' ? XHS_HEAT_WH : null,
+    chengdu: typeof XHS_HEAT_CD !== 'undefined' ? XHS_HEAT_CD : null,
+    chongqing: typeof XHS_HEAT_CQ !== 'undefined' ? XHS_HEAT_CQ : null,
+    hangzhou: typeof XHS_HEAT_HZ !== 'undefined' ? XHS_HEAT_HZ : null,
+    enshi: typeof XHS_HEAT_ES !== 'undefined' ? XHS_HEAT_ES : null,
+    qingdao: typeof XHS_HEAT_QD !== 'undefined' ? XHS_HEAT_QD : null,
+    tianjin: typeof XHS_HEAT_TJ !== 'undefined' ? XHS_HEAT_TJ : null,
   };
   const cityHeat = cityHeatMap[currentCity];
   if (cityHeat && cityHeat[dest.name]) return cityHeat[dest.name].heat;
@@ -380,7 +386,16 @@ function openDetail(id) {
     ? `background-image: url('${imgPath}'); background-size: cover; background-position: center;`
     : `background: ${dest.gradient};`;
 
-  const xhsCityMap = { shenzhen: typeof XHS_HEAT_SZ !== 'undefined' ? XHS_HEAT_SZ : null, weihai: typeof XHS_HEAT_WH !== 'undefined' ? XHS_HEAT_WH : null };
+  const xhsCityMap = {
+    shenzhen: typeof XHS_HEAT_SZ !== 'undefined' ? XHS_HEAT_SZ : null,
+    weihai: typeof XHS_HEAT_WH !== 'undefined' ? XHS_HEAT_WH : null,
+    chengdu: typeof XHS_HEAT_CD !== 'undefined' ? XHS_HEAT_CD : null,
+    chongqing: typeof XHS_HEAT_CQ !== 'undefined' ? XHS_HEAT_CQ : null,
+    hangzhou: typeof XHS_HEAT_HZ !== 'undefined' ? XHS_HEAT_HZ : null,
+    enshi: typeof XHS_HEAT_ES !== 'undefined' ? XHS_HEAT_ES : null,
+    qingdao: typeof XHS_HEAT_QD !== 'undefined' ? XHS_HEAT_QD : null,
+    tianjin: typeof XHS_HEAT_TJ !== 'undefined' ? XHS_HEAT_TJ : null,
+  };
   const xhs = (xhsCityMap[currentCity] && xhsCityMap[currentCity][dest.name]) || (typeof XHS_HEAT !== 'undefined' ? XHS_HEAT[dest.name] : null);
   const heatBar = xhs ? `
     <div class="modal-heat">

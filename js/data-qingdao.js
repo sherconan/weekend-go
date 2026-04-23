@@ -33,7 +33,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「谁懂啊！逛青啤馆没做攻略，错过隐藏品酒点真的会亏哭——B 馆原浆麦香爆炸，搭配啤酒豆越嚼越香。」",
     "xhsHeat": {
       "heat": "4.8w",
-      "notes": "3.2k",
+      "notes": "3.2k · 1903 年德国人创立 · A 级景区",
       "trending": "up",
       "tier": "high"
     },
@@ -78,7 +78,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「红到发光的『五月的风』搭配浮山湾超震撼灯光秀，三色光影流转间，现代都市感直接拉满，用运动相机随手拍都是电影级分镜。」",
     "xhsHeat": {
       "heat": "5.2w",
-      "notes": "3.6k",
+      "notes": "3.6k · 1919 年五四运动纪念 · 青岛回归象征",
       "trending": "up",
       "tier": "high"
     },
@@ -123,7 +123,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「我宣布这是我在青岛花的最值的一笔钱！看着夕阳从橘粉色慢慢变成深蓝，回头还能看到五四广场的灯光亮起——浪漫 double 体验感真的拉满。」",
     "xhsHeat": {
       "heat": "6.5w",
-      "notes": "4.8k",
+      "notes": "4.8k · 奥运五环标志 · 2008 帆船赛事",
       "trending": "up",
       "tier": "high"
     },
@@ -168,7 +168,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「今天第一次来喂海鸥，选择第一海水浴场——人少！！不用去人挤人的地方也可以喂海鸥，沙滩走到头还有孤独的树可以拍照。」",
     "xhsHeat": {
       "heat": "2.8w",
-      "notes": "1.6k",
+      "notes": "1.6k · 580m 沙滩 · 民国时为汇泉浴场",
       "trending": "steady",
       "tier": "mid"
     },
@@ -213,7 +213,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「一句话总结，海拔 98 米的小山包，是俯瞰青岛『红瓦绿树、碧海蓝天』的极佳观景台！遛个弯的功夫就到顶了。」",
     "xhsHeat": {
       "heat": "3.6w",
-      "notes": "2.4k",
+      "notes": "2.4k · 98m · 360° 俯瞰'红瓦绿树碧海蓝天'",
       "trending": "up",
       "tier": "high"
     },
@@ -258,7 +258,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「劈柴院重新修整真的好逛太多了！油炸糕外酥里嫩分分钟回到小时候，春节期间江宁会馆的戏台有戏曲和民俗表演别错过。」",
     "xhsHeat": {
       "heat": "3.1w",
-      "notes": "2.0k",
+      "notes": "2.0k · 民国老字号+民间曲艺 · 百年小吃街·江宁会馆旁",
       "trending": "steady",
       "tier": "mid"
     },
@@ -303,7 +303,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「这里藏着世间最动人的啤酒，清冽崂山水淬炼醇厚麦香，地道德式百年工艺沉淀风味。街头巷尾，人人手捧一扎鲜啤，晚风里散步闲谈。」",
     "xhsHeat": {
       "heat": "2.6w",
-      "notes": "1.8k",
+      "notes": "1.8k · 青啤博物馆正门街 · 鲜啤文化地标",
       "trending": "steady",
       "tier": "mid"
     },
@@ -348,7 +348,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「来台东步行街恨不得有两个胃！胡初鑫烤猪蹄先卤后烤、松和路 1 号烤肠外焦里嫩、青岛啤酒交易所股票大屏看酒价涨跌——烟火气焊死青岛的夜。」",
     "xhsHeat": {
       "heat": "5.8w",
-      "notes": "4.2k",
+      "notes": "4.2k · LED 外立面 + 大排档一条街 · 青岛最大夜市·LED 霓虹楼",
       "trending": "up",
       "tier": "high"
     },
@@ -394,7 +394,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「鲜美无比，这才是正宗红岛蛤蜊的味道！添两个红辣椒爆炒几分钟出锅，第一颗携着汁水蛤蜊肉在上下齿间翻腾跳跃，无法形容的鲜。」",
     "xhsHeat": {
       "heat": "2.2w",
-      "notes": "1.4k",
+      "notes": "1.4k · 青岛蛤蜊之王 · 现捞现吃",
       "trending": "steady",
       "tier": "mid"
     },
@@ -439,7 +439,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「海鲜全家福水饺每种都很好吃，特别是海胆馅儿的，太鲜甜美味了，让人回味。招牌鲅鱼水饺鱼肉细腻滑嫩有汁水，水准在线。」",
     "xhsHeat": {
       "heat": "2.4w",
-      "notes": "1.5k",
+      "notes": "1.5k · 青岛水饺品牌 · 多家分店",
       "trending": "steady",
       "tier": "mid"
     },
@@ -477,7 +477,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「小鱼山才是青岛最低调的观景宝藏！¥15 登揽月阁，栈桥 + 八大关 + 小青岛一个画框全收，比信号山人少一半。」",
     "xhsHeat": {
       "heat": "1.9w",
-      "notes": "1.2k",
+      "notes": "1.2k · 60m · 青岛首座古典山头公园",
       "trending": "up",
       "tier": "mid"
     },
@@ -511,7 +511,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「青岛迎宾馆真的被低估了！¥20 进去就像走进欧洲古堡，水晶吊灯壁炉彩绘玻璃全是原物，毛主席用过的钢琴还在那里。」",
     "xhsHeat": {
       "heat": "2.1w",
-      "notes": "1.3k",
+      "notes": "1.3k · 全国重点文保 · 德国总督官邸原貌",
       "trending": "up",
       "tier": "mid"
     },
@@ -545,7 +545,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「浙江路天主教堂真的绝了！广场石阶 + 双尖塔 + 鸽子群就是欧洲小镇原画，穿白色或米色连衣裙随手一拍都出大片。」",
     "xhsHeat": {
       "heat": "4.1w",
-      "notes": "2.8k",
+      "notes": "2.8k · 华北最大哥特式 · 56m 双塔",
       "trending": "up",
       "tier": "high"
     },
@@ -579,7 +579,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「基督教堂的钟楼是 1910 年的！至今每半小时报时，站在钟下听铜钟长鸣，突然就理解什么叫百年时光慢走。」",
     "xhsHeat": {
       "heat": "2.3w",
-      "notes": "1.4k",
+      "notes": "1.4k · 1910 年德产机械钟 · 原装运转",
       "trending": "steady",
       "tier": "mid"
     },
@@ -613,7 +613,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「海军博物馆真的封神！¥50 登驱逐舰 + 钻潜艇，小孩看得眼睛发亮，成年人也燃炸——这是中国最强军博没之一。」",
     "xhsHeat": {
       "heat": "4.2w",
-      "notes": "2.9k",
+      "notes": "2.9k · 亚洲最大海军博物馆 · 实舰登舰",
       "trending": "up",
       "tier": "high"
     },
@@ -647,7 +647,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「鲁迅公园才是青岛老城最文艺的那条路！红礁黑石 + 海大红楼 + 海鸥群，走 2 公里走一下午都不腻。」",
     "xhsHeat": {
       "heat": "2.8w",
-      "notes": "1.8k",
+      "notes": "1.8k · 青岛红石滩 · 老城文艺海岸线",
       "trending": "up",
       "tier": "mid"
     },
@@ -681,7 +681,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「小麦岛真的太美了！草坡 + 礁石 + 落日的色彩搭配就像济州岛，关键还免费，青岛本地人都当后花园在遛。」",
     "xhsHeat": {
       "heat": "4.6w",
-      "notes": "3.2k",
+      "notes": "3.2k · 半岛草坡 · 日落日出双机位",
       "trending": "up",
       "tier": "high"
     },
@@ -715,7 +715,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「开车穿过胶州湾大桥 42 公里全是海，左边青岛红瓦右边黄岛新区——中国速度真的让人热血沸腾。」",
     "xhsHeat": {
       "heat": "1.8w",
-      "notes": "1.1k",
+      "notes": "1.1k · 2011 世界最长跨海大桥 · 42.23km",
       "trending": "steady",
       "tier": "mid"
     },
@@ -749,7 +749,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「崂山巨峰云海真的封神！索道 15 分钟升到 900m，再爬 45 分钟看脚下云雾翻腾，日出染金整个黄海，一辈子必来一次。」",
     "xhsHeat": {
       "heat": "3.4w",
-      "notes": "2.2k",
+      "notes": "2.2k · 崂山主峰 1132.7m · 海上第一名山",
       "trending": "up",
       "tier": "high"
     },
@@ -783,7 +783,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「北九水真的是青岛后花园小九寨！碧绿的水 + 瀑布 + 栈道，带娃带老人都能走，水气好到皮肤都在喝水。」",
     "xhsHeat": {
       "heat": "2.4w",
-      "notes": "1.5k",
+      "notes": "1.5k · 崂山北线 · 九曲 12 潭",
       "trending": "up",
       "tier": "mid"
     },
@@ -817,7 +817,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「崂山仰口才是一日游王者！索道看山海相连、觅天洞钻一次、太平宫听道长诵经，最后沙滩看落日——性价比碾压巨峰。」",
     "xhsHeat": {
       "heat": "2.6w",
-      "notes": "1.6k",
+      "notes": "1.6k · 山海相连 · 北宋太平宫",
       "trending": "up",
       "tier": "mid"
     },
@@ -851,7 +851,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「华楼宫是崂山冷门王！¥10 门票上山人少到怀疑景区关门，山顶奇石叠罗汉比巨峰还奇，本地人私藏的徒步路线。」",
     "xhsHeat": {
       "heat": "0.6w",
-      "notes": "320",
+      "notes": "320 · 元代 1325 年道观 · 凌烟崮奇石",
       "trending": "steady",
       "tier": "low"
     },
@@ -885,7 +885,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「金沙滩的沙真的像面粉一样细！3500 米走到脚软，带娃下水 + 傍晚看落日，这才是青岛海滩的天花板。」",
     "xhsHeat": {
       "heat": "3.8w",
-      "notes": "2.5k",
+      "notes": "2.5k · 3500m · 青岛最大沙滩",
       "trending": "up",
       "tier": "high"
     },
@@ -919,7 +919,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「银沙滩才是带娃首选！沙比金沙滩还白、人少一半、水浅安全，我家宝宝玩一整天没遇到挤。」",
     "xhsHeat": {
       "heat": "1.5w",
-      "notes": "920",
+      "notes": "920 · 白沙 2000m · 安静版金沙滩",
       "trending": "steady",
       "tier": "mid"
     },
@@ -953,7 +953,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「灵山岛才是青岛最纯粹的海岛！¥80 轮渡上岛，住渔家吃海胆看日出，没有大商业 + 只有山海和人情味。」",
     "xhsHeat": {
       "heat": "1.2w",
-      "notes": "780",
+      "notes": "780 · 北方第一高岛 513m · 纯渔村民宿",
       "trending": "up",
       "tier": "mid"
     },
@@ -987,7 +987,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「琅琊台是秦始皇 3 次登临的地方！站在 183m 夯土台顶看黄海，脚下是 2200 年前徐福出海的起点，历史厚度拉满。」",
     "xhsHeat": {
       "heat": "1.3w",
-      "notes": "820",
+      "notes": "820 · 秦代夯土古台 · 徐福东渡起点",
       "trending": "steady",
       "tier": "mid"
     },
@@ -1021,7 +1021,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「蓬莱阁真的是中国人的仙境！宋代名楼临海而建，八仙过海的起点就在这里，登顶看黄海波涛突然理解什么叫'人间仙境'。」",
     "xhsHeat": {
       "heat": "2.9w",
-      "notes": "1.9k",
+      "notes": "1.9k · 1061 年 · 中国四大名楼",
       "trending": "up",
       "tier": "high"
     },
@@ -1055,7 +1055,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「长岛是山东最浪漫的海岛！渤海黄海分界线 + 九丈崖海蚀奇观 + 月牙湾彩色球石，2 日自驾 + 轮渡直接圆梦海岛游。」",
     "xhsHeat": {
       "heat": "2.2w",
-      "notes": "1.4k",
+      "notes": "1.4k · 山东唯一海岛县 · 渤黄海分界",
       "trending": "up",
       "tier": "mid"
     },
@@ -1089,7 +1089,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「养马岛是山东最美滨海公路！12km 环岛路依海而建 + 免费开放，日落时分整条路铺成橙粉色，随手一拍公路片。」",
     "xhsHeat": {
       "heat": "2.1w",
-      "notes": "1.3k",
+      "notes": "1.3k · 秦始皇御马场 · 12km 环岛公路",
       "trending": "up",
       "tier": "mid"
     },
@@ -1123,7 +1123,7 @@ const DESTINATIONS_QD = [
     "xhsQuote": "「张裕酒博真的宝藏！¥80 下到 7m 深百年酒窖看橡木桶阵，再品 4 款葡萄酒 —— 一秒穿越波尔多的既视感。」",
     "xhsHeat": {
       "heat": "1.6w",
-      "notes": "1.0k",
+      "notes": "1.0k · 1892 年 · 中国首家葡萄酒厂",
       "trending": "steady",
       "tier": "mid"
     },

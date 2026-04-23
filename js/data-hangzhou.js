@@ -22,7 +22,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1400.webp",
     imageQuery: "West Lake Hangzhou Su Causeway spring",
     xhsQuote: "「4 点半太阳西向，撒在湖面上波光粼粼，西湖的水跟绸缎一样，陆续下班的船夫、肆无忌惮觅食的小鸭子，当真是风景美如画！」",
-    xhsHeat: { heat: "高", notes: "2735+ 赞单篇", trending: true, tier: "S" }
+    xhsHeat: { heat: "高", notes: "2735+ 赞单篇 · 西湖十景 · 苏轼手笔", trending: true, tier: "S" }
   },
   {
     id: 1401, name: "灵隐寺", subtitle: "1700 年古刹·济公故事发源",
@@ -45,7 +45,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1401.webp",
     imageQuery: "Lingyin Temple Hangzhou Buddhist",
     xhsQuote: "「灵隐寺的免费茶水别喝太多，出了寺院登山路上可没有厕所」",
-    xhsHeat: { heat: "爆", notes: "1544+ 赞，126+ 笔记", trending: true, tier: "S" }
+    xhsHeat: { heat: "爆", notes: "1544+ 赞，126+ 笔记 · 飞来峰石窟 · 三生石", trending: true, tier: "S" }
   },
   {
     id: 1402, name: "龙井茶田", subtitle: "明前龙井原产地·西湖边茶山",
@@ -68,7 +68,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1402.webp",
     imageQuery: "Longjing tea plantation Hangzhou",
     xhsQuote: "「杭州东站跟西湖区真的很割裂，西湖区一整个大氧吧，满眼的绿色，太治愈了！牛马果然向往绿色！！」",
-    xhsHeat: { heat: "高", notes: "278+ 赞徒步攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "278+ 赞徒步攻略 · 狮峰龙井原产地 · 茶文化博物馆", trending: true, tier: "A" }
   },
   {
     id: 1403, name: "宋城", subtitle: "给你一天，还你千年·大型宋文化主题区",
@@ -91,7 +91,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1403.webp",
     imageQuery: "Songcheng Hangzhou song dynasty theme park",
     xhsQuote: "「景区各个地方都有很多很多 NPC 互动，回答对问题给你一张银票，凑齐 18 张可以换个小礼物，让孩子多去参与真的很开心」",
-    xhsHeat: { heat: "中", notes: "好评+差评两极分化", trending: false, tier: "B" }
+    xhsHeat: { heat: "中", notes: "好评+差评两极分化 · 《宋城千古情》年接待 1800 万 · 给你一天，还你千年·大型宋文化主题区", trending: false, tier: "B" }
   },
   {
     id: 1404, name: "西溪湿地", subtitle: "三西合一·《非诚勿扰》取景地",
@@ -114,7 +114,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1404.webp",
     imageQuery: "Xixi Wetland Park Hangzhou",
     xhsQuote: "「摇橹船很值得，省力悠闲，路线可以赏梅花，后续可以不用步行赏梅；买景交车票 30 元无限次乘坐」",
-    xhsHeat: { heat: "高", notes: "1519+ 赞亲子线", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "1519+ 赞亲子线 · 深潭口 · 秋雪庵", trending: true, tier: "A" }
   },
   {
     id: 1405, name: "千岛湖", subtitle: "1078 座岛屿·国家 5A 水上乐园",
@@ -137,7 +137,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1405.webp",
     imageQuery: "Qiandao Lake thousand islands Hangzhou",
     xhsQuote: "「天屿山 16:30-18:00 看橘子海日落，俯瞰千岛湖大桥与群岛同框，拍照封神」",
-    xhsHeat: { heat: "高", notes: "648+ 赞两日攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "648+ 赞两日攻略 · 东南湖区梅峰观岛 · 鱼头宴", trending: true, tier: "A" }
   },
   {
     id: 1406, name: "乌镇", subtitle: "江南六大古镇·互联网大会永久举办地",
@@ -160,7 +160,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1406.webp",
     imageQuery: "Wuzhen ancient water town night",
     xhsQuote: "「21:00-21:30 尾声，主干道店铺开始打烊，人群散去，你能听到水流声和自己的脚步声，这是西栅最珍贵的时刻」",
-    xhsHeat: { heat: "爆", notes: "254+ 赞保姆级夜游", trending: true, tier: "S" }
+    xhsHeat: { heat: "爆", notes: "254+ 赞保姆级夜游 · 西栅夜景 · 互联网大会小镇", trending: true, tier: "S" }
   },
   {
     id: 1407, name: "南宋御街", subtitle: "临安都城中轴·清河坊老字号",
@@ -183,7 +183,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1407.webp",
     imageQuery: "Hangzhou Nansong Imperial Street",
     xhsQuote: "「作为老杭州，这里要登山就登山，要寻古就寻古，还有让我安心的市井烟火气，消磨一整天都可以」",
-    xhsHeat: { heat: "中", notes: "本地人推荐>外地游客吐槽", trending: false, tier: "B" }
+    xhsHeat: { heat: "中", notes: "本地人推荐>外地游客吐槽 · 南宋临安都城中轴 · 清河坊老字号群", trending: false, tier: "B" }
   },
   {
     id: 1408, name: "杭州雷峰塔", subtitle: "白娘子传说·西湖南畔地标",
@@ -206,7 +206,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1408.webp",
     imageQuery: "Leifeng Pagoda Hangzhou West Lake",
     xhsQuote: "「雷峰塔虽然是新建的，但值得一观，每层墙壁都有不同的设计，值得细细观摩，最下面是原雷峰塔旧址」",
-    xhsHeat: { heat: "中", notes: "235+ 赞爬塔攻略", trending: false, tier: "B" }
+    xhsHeat: { heat: "中", notes: "235+ 赞爬塔攻略 · 白蛇传 · 西湖十景", trending: false, tier: "B" }
   },
   {
     id: 1409, name: "中国美术学院象山校区", subtitle: "王澍设计·最美大学之一",
@@ -229,7 +229,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1409.webp",
     imageQuery: "China Academy Art Xiangshan Wang Shu",
     xhsQuote: "「史铁生有地坛，而我有美院象山，在那里，时间终于肯为我停一停，至少在那几个小时里，风是真的，树是真的，我是真的」",
-    xhsHeat: { heat: "高", notes: "781+ 赞参观攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "781+ 赞参观攻略 · 王澍普利兹克奖作品 · 象山十景", trending: true, tier: "A" }
   },
   {
     id: 1410, name: "飞来峰石窟", subtitle: "江南唯一大型石窟·345 龛造像",
@@ -252,7 +252,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1410.webp",
     imageQuery: "Feilaifeng grottoes Hangzhou Buddhist carvings",
     xhsQuote: "「弥勒布袋像是南宋原作，八百年风吹日晒还在笑，比灵隐寺里新翻修的铜像有灵多了」",
-    xhsHeat: { heat: "中", notes: "320+ 赞石窟攻略", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "320+ 赞石窟攻略 · 布袋弥勒像 · 青林洞密宗石刻", trending: false, tier: "A" }
   },
   {
     id: 1411, name: "九溪烟树", subtitle: "十里琅珰·九溪十八涧徒步",
@@ -275,7 +275,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1411.webp",
     imageQuery: "Jiuxi eighteen streams Hangzhou forest hiking",
     xhsQuote: "「三伏天杭州 38°C，九溪烟树里只有 32°C，溪水冰得跟冰箱里拿出来似的，娃在水里泡了俩小时不想回家」",
-    xhsHeat: { heat: "高", notes: "1820+ 赞夏季攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "1820+ 赞夏季攻略 · 九溪十八涧 · 十里琅珰", trending: true, tier: "A" }
   },
   {
     id: 1412, name: "梅家坞茶文化村", subtitle: "周恩来五顾·万亩茶田小村",
@@ -298,7 +298,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1412.webp",
     imageQuery: "Meijiawu tea village Hangzhou Longjing",
     xhsQuote: "「在梅家坞最里面那家茶农露台坐下，师傅现泡头采龙井，山风从茶田吹过来，才明白为什么古人说『从来佳茗似佳人』」",
-    xhsHeat: { heat: "高", notes: "450+ 赞春茶攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "450+ 赞春茶攻略 · 狮峰龙井梅字号 · 周总理视察地", trending: true, tier: "A" }
   },
   {
     id: 1413, name: "北山街·宝石山", subtitle: "民国别墅一条街·保俶塔俯瞰西湖",
@@ -321,7 +321,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1413.webp",
     imageQuery: "Baochu Pagoda Hangzhou West Lake sunrise",
     xhsQuote: "「凌晨 4 点半爬宝石山，天边粉橘色，保俶塔像一把针扎进天幕，整个西湖还在雾里睡——这一刻值回早起」",
-    xhsHeat: { heat: "高", notes: "890+ 赞日出攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "890+ 赞日出攻略 · 民国建筑群 · 保俶塔日出", trending: true, tier: "A" }
   },
   {
     id: 1414, name: "良渚古城遗址公园", subtitle: "五千年文明·世界文化遗产",
@@ -344,7 +344,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1414.webp",
     imageQuery: "Liangzhu ancient city archaeological site",
     xhsQuote: "「站在反山王陵面前，想到 5300 年前这里就有贵族祭天用玉琮玉钺，比金字塔还早——第一次对『文明』这个词有实感」",
-    xhsHeat: { heat: "高", notes: "1080+ 赞研学攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "1080+ 赞研学攻略 · 玉琮王 · 莫角山宫殿", trending: true, tier: "A" }
   },
   {
     id: 1415, name: "中国美术学院民艺博物馆", subtitle: "隈研吾设计·青瓦流云屋顶",
@@ -367,7 +367,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1415.webp",
     imageQuery: "Kengo Kuma folk art museum Hangzhou tiles",
     xhsQuote: "「6 万片老瓦盖出来的屋顶，下雨的时候听雨从瓦缝里滴下来的声音，像极了江南老祖母院子里的春分——隈研吾真的懂中国」",
-    xhsHeat: { heat: "中", notes: "420+ 赞建筑打卡", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "420+ 赞建筑打卡 · 隈研吾青瓦屋顶 · 普利兹克建筑三剑客", trending: false, tier: "A" }
   },
   {
     id: 1416, name: "乌镇戏剧节", subtitle: "中国最硬核艺术节·10 天 300 场",
@@ -390,7 +390,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1416.webp",
     imageQuery: "Wuzhen theatre festival water stage",
     xhsQuote: "「在乌镇戏剧节的水剧场看《等待戈多》，背后是大运河，头顶是月亮，台词从对岸飘过来——这一刻突然懂了艺术是什么」",
-    xhsHeat: { heat: "爆", notes: "年度文艺圈顶流", trending: true, tier: "S" }
+    xhsHeat: { heat: "爆", notes: "年度文艺圈顶流 · 水剧场 · 孟京辉", trending: true, tier: "S" }
   },
   {
     id: 1417, name: "盐官观潮景区", subtitle: "天下奇观·钱塘江潮起三丈",
@@ -413,7 +413,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1417.webp",
     imageQuery: "Qiantang River tidal bore Yanguan",
     xhsQuote: "「潮头过来那一刻，我旁边的老爷爷喊『乖乖！这叫浪！』，真的是肾上腺素飙到顶——一生一定要看一次钱塘江潮」",
-    xhsHeat: { heat: "高", notes: "农历八月年度刷屏", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "农历八月年度刷屏 · 一线潮 · 交叉潮", trending: true, tier: "A" }
   },
   {
     id: 1418, name: "鲁迅故里·三味书屋", subtitle: "从百草园到三味书屋·先生的绍兴",
@@ -436,7 +436,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1418.webp",
     imageQuery: "Lu Xun former residence Shaoxing",
     xhsQuote: "「站在三味书屋那张刻着『早』字的课桌前，小学课本突然活了——原来鲁迅笔下的每一处都真实存在」",
-    xhsHeat: { heat: "高", notes: "750+ 赞研学首选", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "750+ 赞研学首选 · 百草园 · 三味书屋", trending: true, tier: "A" }
   },
   {
     id: 1419, name: "沈园·陆游唐琬", subtitle: "《钗头凤》千古情殇之地",
@@ -459,7 +459,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1419.webp",
     imageQuery: "Shen Garden Shaoxing Lu You",
     xhsQuote: "「沈园之夜看完越剧，走出园子，月亮挂在孤鹤轩瓦当上，我站在那儿哭了很久——陆游和唐琬的爱情放在今天也就是一个『父母棒打鸳鸯』的故事，但 800 年前的那一声叹息还在」",
-    xhsHeat: { heat: "中", notes: "越剧迷顶流", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "越剧迷顶流 · 钗头凤碑 · 沈园之夜越剧", trending: false, tier: "A" }
   },
   {
     id: 1420, name: "安昌古镇", subtitle: "社戏腊味·师爷故乡",
@@ -482,7 +482,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1420.webp",
     imageQuery: "Anchang ancient town Shaoxing lunar new year",
     xhsQuote: "「腊月二十到安昌，河上全是挂着的酱鸭腊肠，船家递我一块扯白糖，说『安昌人过年就是这个味儿』——一下子梦回外婆家」",
-    xhsHeat: { heat: "高", notes: "腊月年味顶流", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "腊月年味顶流 · 腊月风情节 · 酱鸭", trending: true, tier: "A" }
   },
   {
     id: 1421, name: "西塘古镇", subtitle: "碟中谍 3 取景·廊棚烟雨",
@@ -505,7 +505,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1421.webp",
     imageQuery: "Xitang ancient town rainy corridor",
     xhsQuote: "「下雨天在西塘廊棚里走，屋檐滴水成一条线，远处乌篷船摇橹咿呀，灯笼在水里晃——比乌镇少一点商业味，多一点真江南」",
-    xhsHeat: { heat: "高", notes: "1350+ 赞雨景攻略", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "1350+ 赞雨景攻略 · 烟雨长廊 · 《碟中谍 3》", trending: true, tier: "A" }
   },
   {
     id: 1422, name: "嘉兴南湖·红船", subtitle: "一大召开地·红色研学必打卡",
@@ -528,7 +528,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1422.webp",
     imageQuery: "Nanhu Red Boat Jiaxing revolution",
     xhsQuote: "「站在红船面前听导游讲 1921 年那个夏天 13 个年轻人在船上宣布建党，突然明白课本上那段话的分量」",
-    xhsHeat: { heat: "高", notes: "研学必打卡", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "研学必打卡 · 红船 · 一大闭幕地", trending: true, tier: "A" }
   },
   {
     id: 1423, name: "龙门古镇", subtitle: "孙权故里·最完整明清宗族村落",
@@ -551,7 +551,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1423.webp",
     imageQuery: "Longmen ancient village Fuyang Sun Quan",
     xhsQuote: "「全村都姓孙，村民坐在祠堂门口晒太阳，对我说『我是孙权第 65 代』——这种穿越感别的古镇给不了」",
-    xhsHeat: { heat: "中", notes: "280+ 赞小众宝藏", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "280+ 赞小众宝藏 · 孙权后裔 · 明清宗族村落", trending: false, tier: "A" }
   },
   {
     id: 1424, name: "桐庐瑶琳仙境", subtitle: "华东最大溶洞·亿年钟乳",
@@ -574,7 +574,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1424.webp",
     imageQuery: "Yaolin Wonderland cave Tonglu stalactite",
     xhsQuote: "「带娃去瑶琳仙境，孩子在『银河飞瀑』厅里张大嘴巴发呆——这种 2 亿年的地下宫殿，去一次终身难忘」",
-    xhsHeat: { heat: "中", notes: "亲子周末首选", trending: false, tier: "B" }
+    xhsHeat: { heat: "中", notes: "亲子周末首选 · 华东第一溶洞 · 2 亿年钟乳", trending: false, tier: "B" }
   },
   {
     id: 1425, name: "建德大慈岩", subtitle: "中国最大天然立佛·悬空寺",
@@ -597,7 +597,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1425.webp",
     imageQuery: "Dacilian cliff temple hanging Buddha",
     xhsQuote: "「山下退到 300 米远回头一看，整座山真的就是一尊弥勒佛，笑眯眯躺在那儿——这种『山即是佛』的震撼别处真没有」",
-    xhsHeat: { heat: "中", notes: "小众佛山宝藏", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "小众佛山宝藏 · 天然立佛 · 元代悬空寺", trending: false, tier: "A" }
   },
   {
     id: 1426, name: "新叶古村", subtitle: "700 年宗族耕读村·浙江第一古村",
@@ -620,7 +620,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1426.webp",
     imageQuery: "Xinye ancient village Jiande Ye clan",
     xhsQuote: "「新叶不像周庄乌镇被游客填满，村里还住着叶家第 25 代人，阿姨坐在祠堂门口纳鞋底，抬头跟我说『吃饭了没』——这种活着的古村才是我想要的」",
-    xhsHeat: { heat: "中", notes: "摄影小众高分", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "摄影小众高分 · 九宫八卦布局 · 叶氏宗祠", trending: false, tier: "A" }
   },
   {
     id: 1427, name: "临安天目山", subtitle: "大树王·亚洲最大金钱松",
@@ -643,7 +643,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1427.webp",
     imageQuery: "Tianmu Mountain ancient forest Lin'an",
     xhsQuote: "「山下市区 38°C 心态炸裂，天目山顶 22°C 套了长袖还凉飕飕——这就是浙江最扎实的避暑地」",
-    xhsHeat: { heat: "高", notes: "夏季避暑顶流", trending: true, tier: "A" }
+    xhsHeat: { heat: "高", notes: "夏季避暑顶流 · 大树王 · 金钱松群落", trending: true, tier: "A" }
   },
   {
     id: 1428, name: "中国茶叶博物馆", subtitle: "全国唯一国家级茶主题博物馆",
@@ -666,7 +666,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1428.webp",
     imageQuery: "China National Tea Museum Hangzhou Longjing",
     xhsQuote: "「免费参观国家级博物馆 + 配套茶席体验 + 就在龙井茶田里，杭州没有比这更划算的半日游了」",
-    xhsHeat: { heat: "中", notes: "茶文化研学推荐", trending: false, tier: "A" }
+    xhsHeat: { heat: "中", notes: "茶文化研学推荐 · 国家级茶专题博物馆 · 宋代点茶复原", trending: false, tier: "A" }
   },
   {
     id: 1429, name: "普陀山", subtitle: "观音菩萨道场·海天佛国",
@@ -689,7 +689,7 @@ const DESTINATIONS_HZ = [
     image: "assets/images/dest-hz-1429.webp",
     imageQuery: "Putuoshan Guanyin Buddhist island Zhoushan",
     xhsQuote: "「清晨 4 点半站在 33 米南海观音脚下，海风从东海吹来，第一缕阳光落在佛像指尖——那一刻突然明白什么叫『慈悲』」",
-    xhsHeat: { heat: "爆", notes: "四大佛山朝圣顶流", trending: true, tier: "S" }
+    xhsHeat: { heat: "爆", notes: "四大佛山朝圣顶流 · 南海观音 · 海天佛国", trending: true, tier: "S" }
   }
 ];
 if (typeof window !== 'undefined') window.DESTINATIONS_HZ = DESTINATIONS_HZ;
