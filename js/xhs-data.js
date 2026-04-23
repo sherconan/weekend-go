@@ -4595,3 +4595,221 @@ const XHS_HEAT_WH = {
     tier: "D"
   }
 };
+
+// CD 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_CD = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "大熊猫繁育研究基地": { heat: 97, notes: "313+51+6+多篇避雷贴", trending: "130+ 大熊猫、顶流花花、月亮产房新生幼崽", tier: "S" },
+  "峨眉山": { heat: 97, notes: "810+237+161+2", trending: "金顶日出、云海佛光、普贤菩萨、贡嘎雪山同框", tier: "S" },
+  "稻城亚丁": { heat: 97, notes: "5843+2341+1287+867+543", trending: "三神山、牛奶海、五色海、日照金山", tier: "S" },
+  "建设巷美食街": { heat: 97, notes: "2134+876+543+234+156", trending: "矿工蹄花、万春卤菜、糖油果子、烤脑花", tier: "S" },
+  "都江堰": { heat: 95, notes: "8425+638+461+200+127+119", trending: "鱼嘴、飞沙堰、宝瓶口 三大工程、南桥蓝眼泪", tier: "S" },
+  "海螺沟": { heat: 95, notes: "1234+567+345+189", trending: "亚洲最低冰川、贡嘎日照金山、3600m 雪山温泉、磨西古镇", tier: "S" },
+  "蜀南竹海": { heat: 95, notes: "567+234+156+89", trending: "500km² 竹海、卧虎藏龙取景、全竹宴、避暑圣地", tier: "S" },
+  "玉林路·小酒馆": { heat: 94, notes: "1245+543+298+167", trending: "赵雷《成都》原型、小酒馆、明婷苍蝇馆、梧桐老街", tier: "S" },
+  "春熙路": { heat: 92, notes: "787+343+215+199", trending: "IFS 爬墙熊猫、太古里、裸眼 3D 熊猫、成都潮流中心", tier: "S" },
+  "文殊院": { heat: 92, notes: "456+112+88+34", trending: "文殊菩萨、1400 年古刹、香园茶坊、免费斋饭", tier: "S" },
+  "四姑娘山": { heat: 92, notes: "876+345+198+98", trending: "东方阿尔卑斯、4 座 6000m 姊妹峰、日照金山、双桥沟全景", tier: "S" },
+  "丹巴甲居藏寨": { heat: 92, notes: "678+289+156+87", trending: "中国最美乡村、嘉绒藏族白石楼、梨花雪海、金秋彩林", tier: "S" },
+  "乐山大佛": { heat: 90, notes: "1335+557+406+264", trending: "71m 世界最大石刻佛像、三江汇流、海通禅师、凌云寺", tier: "S" },
+  "安仁古镇": { heat: 90, notes: "412+198+98+56", trending: "27 座民国公馆、刘氏庄园、建川博物馆聚落（38 馆）", tier: "S" },
+  "阆中古城": { heat: 90, notes: "567+234+145+87", trending: "中国四大古城、风水宝地、张飞镇守、巴蜀春节发源", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "青城山": { heat: 89, notes: "725+200+163+127+73", trending: "张陵开道、青城天下幽、天师洞、老君阁", tier: "A" },
+  "人民公园": { heat: 89, notes: "209+42+4+3+多篇", trending: "鹤鸣茶社百年、盖碗茶+变脸吐火、非遗采耳、保路纪念碑", tier: "A" },
+  "大慈寺": { heat: 89, notes: "389+124+76+45", trending: "玄奘受戒之地、太古里红墙反差、博舍酒店隔壁", tier: "A" },
+  "平乐古镇": { heat: 89, notes: "445+187+98+56", trending: "2300 年茶马古道第一镇、乐善桥、江边泡脚、瓷胎竹编非遗", tier: "A" },
+  "锦里古街": { heat: 87, notes: "941+32+11+9", trending: "三国文化主题、灯笼夜市、莲花池廊桥、川剧变脸", tier: "A" },
+  "武侯祠": { heat: 87, notes: "196+73+14+多篇保姆级", trending: "刘备墓、诸葛亮祠、三绝碑、红墙夹道", tier: "A" },
+  "浣花溪公园": { heat: 87, notes: "312+87+45+22", trending: "诗歌大道、白鹭洲、沧浪湖、银杏大道", tier: "A" },
+  "东郊记忆": { heat: 87, notes: "567+234+145+89", trending: "1958 年苏联援建红砖厂房、火车头广场、Live House、草莓音乐节", tier: "A" },
+  "杜甫草堂": { heat: 86, notes: "222+128+128+112", trending: "杜甫茅屋为秋风所破歌原址、红墙花径、诗史堂", tier: "A" },
+  "宽窄巷子": { heat: 85, notes: "508+97+70+42+37+13", trending: "清代满城遗址、泡泡玛特露台、喜茶独栋洋楼、熊猫邮局", tier: "A" },
+  "西岭雪山": { heat: 85, notes: "179+24+3", trending: "阴阳界、日月坪日出、滑雪场+云端森林", tier: "A" },
+  "黄龙溪古镇": { heat: 85, notes: "389+167+98+45", trending: "1700 年川西水乡、玩水天堂、一根面、火龙灯舞非遗", tier: "A" },
+  "洛带古镇": { heat: 80, notes: "278+98+56+23", trending: "客家第一镇、四大会馆、伤心凉粉、油烫鹅", tier: "A" },
+  "街子古镇": { heat: 79, notes: "189+67+34+18", trending: "晋代光严禅院、唐求故居、字库塔、凤栖山", tier: "A" },
+  "三圣乡·花香荷韵": { heat: 75, notes: "198+78+34+18", trending: "五朵金花、幸福梅林、荷塘月色、江家菜地", tier: "A" }
+};
+
+// CQ 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_CQ = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "洪崖洞": { heat: 91, notes: "5千+", trending: "巴渝吊脚楼夜景、千厮门机位", tier: "S" },
+  "大足石刻（宝顶山景区）": { heat: 90, notes: "5千+", trending: "UNESCO 世遗、宋代佛教石刻巅峰", tier: "S" },
+  "武隆天生三桥": { heat: 90, notes: "5千+", trending: "世遗喀斯特天生桥群、变形金刚 4 拍摄地", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "李子坝轻轨穿楼": { heat: 88, notes: "5千+", trending: "轻轨穿民居、8D 魔幻", tier: "A" },
+  "长江索道": { heat: 86, notes: "5千+", trending: "过江缆车、魔幻 1.5 分钟", tier: "A" },
+  "南山一棵树": { heat: 86, notes: "5千+", trending: "渝中半岛最佳夜景平台", tier: "A" },
+  "山城步道（第三步道）": { heat: 84, notes: "5千+", trending: "1.9km 老山城、长江索道至菜园坝", tier: "A" },
+  "红岩村": { heat: 84, notes: "5千+", trending: "中共南方局旧址、红岩精神发源地", tier: "A" },
+  "江津四面山": { heat: 84, notes: "5千+", trending: "152 米华东第一瀑、爱情天梯", tier: "A" },
+  "歌乐山森林公园": { heat: 83, notes: "5千+", trending: "抗战陪都遗址群、森林避暑", tier: "A" },
+  "金刀峡": { heat: 83, notes: "5千+", trending: "喀斯特峡谷、6km 徒步穿越", tier: "A" },
+  "龙水峡地缝": { heat: 83, notes: "5千+", trending: "世遗地缝、75 米观光电梯", tier: "A" },
+  "酉阳桃花源": { heat: 83, notes: "5千+", trending: "陶渊明笔下桃花源、伏羲洞穿越", tier: "A" },
+  "万州大瀑布群": { heat: 83, notes: "5千+", trending: "长江上游第一瀑、151 米宽水幕", tier: "A" },
+  "重庆大剧院（鹦鹉螺）": { heat: 81, notes: "5千+", trending: "鹦鹉螺建筑、江北嘴地标", tier: "A" },
+  "磁器口古镇": { heat: 81, notes: "5千+", trending: "千年古镇、陈麻花老字号", tier: "A" },
+  "芙蓉洞": { heat: 81, notes: "5千+", trending: "世遗喀斯特、70 种沉积物", tier: "A" },
+  "龚滩古镇": { heat: 81, notes: "5千+", trending: "乌江悬崖土家吊脚楼古镇", tier: "A" },
+  "合川钓鱼城": { heat: 81, notes: "5千+", trending: "南宋抗蒙 36 年、蒙哥大汗殒命处", tier: "A" },
+  "缙云山国家级自然保护区": { heat: 79, notes: "5千+", trending: "主城避暑、1500 年道佛双庙", tier: "A" },
+  "仙女山国家森林公园": { heat: 79, notes: "5千+", trending: "南国高山草原、重庆首家滑雪场", tier: "A" },
+  "云阳龙缸国家地质公园": { heat: 79, notes: "5千+", trending: "世界第一悬挑玻璃廊桥、260 米天坑", tier: "A" },
+  "解放碑": { heat: 78, notes: "5千+", trending: "抗战胜利碑、山城商圈原点", tier: "A" },
+  "涂山寺": { heat: 78, notes: "5千+", trending: "1600 年古刹、抗战陪都遗址", tier: "A" },
+  "老君洞道观": { heat: 78, notes: "5千+", trending: "1800 年道教祖庭、40 通摩崖", tier: "A" },
+  "潼南陈抟故里油菜花田": { heat: 78, notes: "5千+", trending: "3 万亩油菜花海、季节限定", tier: "A" },
+  "黔江小南海": { heat: 78, notes: "5千+", trending: "1856 地震堰塞湖、苗寨围湖", tier: "A" },
+  "鹅岭贰厂文创公园": { heat: 76, notes: "5千+", trending: "工业遗址、文创地标、天台江景", tier: "A" },
+  "观音桥商圈+九街": { heat: 76, notes: "5千+", trending: "江北夜生活、九街 Live", tier: "A" },
+  "綦江老瀛山": { heat: 76, notes: "5千+", trending: "白垩纪恐龙足迹化石、丹霞峰林", tier: "A" }
+};
+
+// HZ 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_HZ = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "灵隐寺": { heat: 95, notes: "1544+ 赞，126+ 笔记", trending: "飞来峰石窟、三生石、济公殿", tier: "S" },
+  "乌镇戏剧节": { heat: 95, notes: "年度文艺圈顶流", trending: "水剧场、孟京辉、赖声川、青年竞演", tier: "S" },
+  "西湖": { heat: 94, notes: "2735+ 赞单篇", trending: "西湖十景、苏轼手笔、世界遗产", tier: "S" },
+  "普陀山": { heat: 94, notes: "四大佛山朝圣顶流", trending: "南海观音、海天佛国、佛顶山日出", tier: "S" },
+  "乌镇": { heat: 93, notes: "254+ 赞保姆级夜游", trending: "西栅夜景、互联网大会小镇", tier: "S" },
+  "中国美术学院象山校区": { heat: 90, notes: "781+ 赞参观攻略", trending: "王澍普利兹克奖作品、象山十景", tier: "S" },
+  "九溪烟树": { heat: 90, notes: "1820+ 赞夏季攻略", trending: "九溪十八涧、十里琅珰、理安寺", tier: "S" },
+  "北山街·宝石山": { heat: 90, notes: "890+ 赞日出攻略", trending: "民国建筑群、保俶塔日出", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "临安天目山": { heat: 89, notes: "夏季避暑顶流", trending: "大树王、金钱松群落、云海日出", tier: "A" },
+  "龙井茶田": { heat: 88, notes: "278+ 赞徒步攻略", trending: "狮峰龙井原产地、茶文化博物馆", tier: "A" },
+  "良渚古城遗址公园": { heat: 88, notes: "1080+ 赞研学攻略", trending: "玉琮王、莫角山宫殿、世界遗产", tier: "A" },
+  "鲁迅故里·三味书屋": { heat: 88, notes: "750+ 赞研学首选", trending: "百草园、三味书屋、咸亨酒店", tier: "A" },
+  "西溪湿地": { heat: 87, notes: "1519+ 赞亲子线", trending: "深潭口、秋雪庵、西溪梅墅", tier: "A" },
+  "千岛湖": { heat: 87, notes: "648+ 赞两日攻略", trending: "东南湖区梅峰观岛、鱼头宴", tier: "A" },
+  "梅家坞茶文化村": { heat: 87, notes: "450+ 赞春茶攻略", trending: "狮峰龙井梅字号、周总理视察地", tier: "A" },
+  "盐官观潮景区": { heat: 87, notes: "农历八月年度刷屏", trending: "一线潮、交叉潮、回头潮、天下奇观", tier: "A" },
+  "西塘古镇": { heat: 87, notes: "1350+ 赞雨景攻略", trending: "烟雨长廊、《碟中谍 3》、江南六镇", tier: "A" },
+  "安昌古镇": { heat: 85, notes: "腊月年味顶流", trending: "腊月风情节、酱鸭、师爷博物馆", tier: "A" },
+  "嘉兴南湖·红船": { heat: 85, notes: "研学必打卡", trending: "红船、一大闭幕地、革命纪念馆", tier: "A" },
+  "中国美术学院民艺博物馆": { heat: 84, notes: "420+ 赞建筑打卡", trending: "隈研吾青瓦屋顶、普利兹克建筑三剑客", tier: "A" },
+  "飞来峰石窟": { heat: 82, notes: "320+ 赞石窟攻略", trending: "布袋弥勒像、青林洞密宗石刻", tier: "A" },
+  "中国茶叶博物馆": { heat: 81, notes: "茶文化研学推荐", trending: "国家级茶专题博物馆、宋代点茶复原", tier: "A" },
+  "龙门古镇": { heat: 79, notes: "280+ 赞小众宝藏", trending: "孙权后裔、明清宗族村落、孙氏宗祠", tier: "A" },
+  "宋城": { heat: 78, notes: "好评+差评两极分化", trending: "《宋城千古情》年接待 1800 万", tier: "A" },
+  "杭州雷峰塔": { heat: 77, notes: "235+ 赞爬塔攻略", trending: "白蛇传、西湖十景、雷峰夕照", tier: "A" },
+  "建德大慈岩": { heat: 77, notes: "小众佛山宝藏", trending: "天然立佛、元代悬空寺、双面弥勒", tier: "A" },
+  "沈园·陆游唐琬": { heat: 75, notes: "越剧迷顶流", trending: "钗头凤碑、沈园之夜越剧", tier: "A" },
+  "新叶古村": { heat: 75, notes: "摄影小众高分", trending: "九宫八卦布局、叶氏宗祠、《爸爸去哪儿》", tier: "A" },
+  // ===== Tier B: 中等热度 (60-74) =====
+  "南宋御街": { heat: 73, notes: "本地人推荐>外地游客吐槽", trending: "南宋临安都城中轴、清河坊老字号群", tier: "B" },
+  "桐庐瑶琳仙境": { heat: 73, notes: "亲子周末首选", trending: "华东第一溶洞、2 亿年钟乳、三十三重天", tier: "B" }
+};
+
+// ES 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_ES = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "恩施大峡谷": { heat: 97, notes: "3k+ 笔记·恩施顶流", trending: "一炷香独峰、云龙地缝、绝壁栈道、世界地质奇观", tier: "S" },
+  "利川腾龙洞": { heat: 97, notes: "1k+ 笔记·利川顶流", trending: "亚洲第一溶洞、激光秀、江源情歌舞剧、清江伏流", tier: "S" },
+  "鹤峰屏山大峡谷": { heat: 97, notes: "5k+ 笔记·2024 年恩施顶流", trending: "空中飞船、水绿透明、恩施最出片秘境、限流景区", tier: "S" },
+  "宣恩狮子关水上浮桥": { heat: 97, notes: "1.5k+ 笔记·抖音网红带火", trending: "500m 水上浮桥、伏流大瀑布、抖音网红点", tier: "S" },
+  "神农架神农顶": { heat: 97, notes: "3k+ 笔记·鄂西顶流", trending: "华中屋脊 3106m、大九湖湿地、野人传说、世界遗产", tier: "S" },
+  "神农架鹿院坪": { heat: 97, notes: "1k+ 笔记·数字戒断打卡地", trending: "1336 级石阶下、谷底桃花源、无信号、神农架秘境", tier: "S" },
+  "张家界天门山": { heat: 97, notes: "3k+ 笔记·湘西顶流", trending: "世界最长索道、天门洞、玻璃栈道、天门狐仙演出", tier: "S" },
+  "张家界武陵源": { heat: 97, notes: "1w+ 笔记·湘西顶流", trending: "世界自然遗产、阿凡达原型、3000 石峰、百龙天梯", tier: "S" },
+  "恩施土家合渣宴": { heat: 97, notes: "2k+ 笔记·恩施美食顶流", trending: "省级非遗、合渣+腊蹄子火锅、张关合渣本地连锁", tier: "S" },
+  "七星寨景区": { heat: 95, notes: "大峡谷核心景区顶流", trending: "一炷香世界奇观、绝壁栈道、玉笔峰、云海", tier: "S" },
+  "恩施女儿城": { heat: 94, notes: "2k+ 笔记·恩施必打卡", trending: "土家相亲会、非遗街、西兰卡普织机、土家小吃集散", tier: "S" },
+  "凤凰古城": { heat: 94, notes: "5k+ 笔记·湘西经典", trending: "沈从文故乡、沱江吊脚楼、跳岩、中国最美小城", tier: "S" },
+  "巫山神女峰": { heat: 90, notes: "700+ 笔记·三峡标志", trending: "巫峡十二峰、神女独柱、屈原毛主席诗、长江三峡", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "利川苏马荡": { heat: 88, notes: "800+ 笔记·暑假刚需", trending: "1500m 避暑、杜鹃花海、齐岳山大草原、别梦山", tier: "A" },
+  "巴东神农溪": { heat: 88, notes: "600+ 笔记·三峡迷必打卡", trending: "长江支流游船、豌豆角小船、纤夫活态非遗", tier: "A" },
+  "三峡大瀑布": { heat: 88, notes: "900+ 笔记·三峡必打卡", trending: "华中第一瀑、水帘洞栈道、102m 高、三峡腹地", tier: "A" },
+  "矮寨大桥": { heat: 88, notes: "800+ 笔记·湘西网红", trending: "世界第一悬索桥、355m 高、13 道弯盘山公路", tier: "A" },
+  "咸丰唐崖土司城址": { heat: 83, notes: "200+ 笔记·历史迷必打卡", trending: "世界文化遗产、荆南雄镇石牌坊、500 年土司城", tier: "A" },
+  "巴东小神农架": { heat: 83, notes: "400+ 笔记·避暑宝藏", trending: "3000m 云海、原始冷杉、金丝猴、神农架恩施段", tier: "A" },
+  "张家界黄龙洞": { heat: 83, notes: "600+ 笔记·张家界经典", trending: "定海神针、地下河游船、3 亿年钟乳石", tier: "A" },
+  "恩施土司城": { heat: 82, notes: "500+ 笔记", trending: "九进堂木构、廪君白虎、摆手舞表演、土家织锦", tier: "A" },
+  "利川龙船调景区": { heat: 81, notes: "200+ 笔记·小众历史宝藏", trending: "世界民歌龙船调故乡、李氏庄园、土家宗族文化", tier: "A" },
+  "来凤仙佛寺": { heat: 81, notes: "150+ 笔记·历史迷必看", trending: "东晋 1700 年摩崖造像、南方最古老佛像、酉水", tier: "A" },
+  "建始石门河": { heat: 81, notes: "150+ 笔记·科普研学宝藏", trending: "200 万年前建始直立人、巨鲵保护区、古盐道", tier: "A" },
+  "梭布垭石林": { heat: 80, notes: "400+ 笔记·小众宝藏", trending: "4 亿年前海底礁石、戴冠石、青龙缠松、一线天", tier: "A" },
+  "酉水河风景区": { heat: 80, notes: "150+ 笔记·小众土家游", trending: "土家母亲河、游船 2 小时、摆手舞发源地", tier: "A" },
+  "建始野三峡": { heat: 80, notes: "200+ 笔记·小众峡谷", trending: "野三河游船、悬棺遗迹、景阳关、小众峡谷", tier: "A" },
+  "重庆黔江濯水古镇": { heat: 80, notes: "500+ 笔记·渝东南经典", trending: "亚洲第一风雨廊桥、明清商贸古镇、阿蓬江", tier: "A" },
+  "利川佛宝山大峡谷": { heat: 76, notes: "300+ 笔记·小众漂流地", trending: "九瀑一线天、玻璃栈桥、6 公里漂流、红杉林", tier: "A" },
+  "阿蓬江国家湿地公园": { heat: 75, notes: "300+ 笔记·渝东南秘境", trending: "全国最长漂流、神龟峡、蒲花暗河、渝东南秘境", tier: "A" }
+};
+
+// QD 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_QD = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "中国海军博物馆": { heat: 92, notes: "2.9k", trending: "亚洲最大海军博物馆、实舰登舰", tier: "S" },
+  "崂山巨峰": { heat: 91, notes: "2.2k", trending: "崂山主峰 1132.7m、海上第一名山", tier: "S" },
+  "蓬莱阁": { heat: 91, notes: "1.9k", trending: "1061 年、中国四大名楼、5A", tier: "S" },
+  "长岛": { heat: 91, notes: "1.4k", trending: "山东唯一海岛县、渤黄海分界", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "信号山公园": { heat: 89, notes: "2.4k", trending: "98m、360° 俯瞰'红瓦绿树碧海蓝天'", tier: "A" },
+  "青岛迎宾馆": { heat: 89, notes: "1.3k", trending: "全国重点文保、德国总督官邸原貌", tier: "A" },
+  "浙江路天主教堂": { heat: 89, notes: "2.8k", trending: "华北最大哥特式、56m 双塔", tier: "A" },
+  "小麦岛公园": { heat: 89, notes: "3.2k", trending: "半岛草坡、日落日出双机位", tier: "A" },
+  "崂山北九水": { heat: 89, notes: "1.5k", trending: "崂山北线、九曲 12 潭", tier: "A" },
+  "黄岛金沙滩": { heat: 89, notes: "2.5k", trending: "3500m、青岛最大沙滩、4A 景区", tier: "A" },
+  "五四广场": { heat: 87, notes: "3.6k", trending: "1919 年五四运动纪念、青岛回归象征", tier: "A" },
+  "奥帆中心": { heat: 87, notes: "4.8k", trending: "奥运五环标志、2008 帆船赛事", tier: "A" },
+  "红岛海鲜市场": { heat: 87, notes: "1.4k", trending: "青岛蛤蜊之王、现捞现吃", tier: "A" },
+  "小鱼山公园": { heat: 87, notes: "1.2k", trending: "60m、青岛首座古典山头公园", tier: "A" },
+  "江苏路基督教堂": { heat: 87, notes: "1.4k", trending: "1910 年德产机械钟、原装运转", tier: "A" },
+  "鲁迅公园海滨木栈道": { heat: 87, notes: "1.8k", trending: "青岛红石滩、老城文艺海岸线", tier: "A" },
+  "崂山仰口": { heat: 87, notes: "1.6k", trending: "山海相连、北宋太平宫", tier: "A" },
+  "养马岛": { heat: 87, notes: "1.3k", trending: "秦始皇御马场、12km 环岛公路", tier: "A" },
+  "张裕酒文化博物馆": { heat: 87, notes: "1.0k", trending: "1892 年、中国首家葡萄酒厂、亚洲最大酒窖", tier: "A" },
+  "台东步行街": { heat: 86, notes: "4.2k", trending: "LED 外立面 + 大排档一条街", tier: "A" },
+  "灵山岛": { heat: 86, notes: "780", trending: "北方第一高岛 513m、纯渔村民宿", tier: "A" },
+  "青岛啤酒博物馆": { heat: 85, notes: "3.2k", trending: "1903 年德国人创立、A 级景区", tier: "A" },
+  "劈柴院": { heat: 85, notes: "2.0k", trending: "民国老字号+民间曲艺", tier: "A" },
+  "登州路啤酒街": { heat: 85, notes: "1.8k", trending: "青啤博物馆正门街、鲜啤文化地标", tier: "A" },
+  "船歌鱼水饺总店": { heat: 85, notes: "1.5k", trending: "青岛水饺品牌、多家分店", tier: "A" },
+  "胶州湾跨海大桥": { heat: 85, notes: "1.1k", trending: "2011 世界最长跨海大桥、42.23km", tier: "A" },
+  "第一海水浴场": { heat: 83, notes: "1.6k", trending: "580m 沙滩、民国时为汇泉浴场", tier: "A" },
+  "黄岛银沙滩": { heat: 80, notes: "920", trending: "白沙 2000m、安静版金沙滩", tier: "A" },
+  "琅琊台": { heat: 80, notes: "820", trending: "秦代夯土古台、徐福东渡起点", tier: "A" },
+  "崂山华楼宫": { heat: 78, notes: "320", trending: "元代 1325 年道观、凌烟崮奇石", tier: "A" }
+};
+
+// TJ 周边游小红书声量数据（编辑派生：trending 来自 highlight；heat 由 rating + 原 xhsHeat 启发式）
+const XHS_HEAT_TJ = {
+  // ===== Tier S: 病毒级/持续热门 (90-100) =====
+  "国家海洋博物馆": { heat: 92, notes: "1.6k", trending: "18m 抹香鲸骨骼、南海 I 号瓷器", tier: "S" },
+  // ===== Tier A: 高人气目的地 (75-89) =====
+  "五大道": { heat: 89, notes: "2.8k", trending: "230 座小洋楼、民国风", tier: "A" },
+  "海河游船": { heat: 89, notes: "2.3k", trending: "70 分钟穿越 9 座大桥", tier: "A" },
+  "天津之眼": { heat: 87, notes: "3.2k", trending: "永乐桥摩天轮、30 分钟一圈", tier: "A" },
+  "滨海文化中心（滨海图书馆）": { heat: 87, notes: "2.4k", trending: "34m 中庭、书山海啸", tier: "A" },
+  "独乐寺（蓟州）": { heat: 86, notes: "950", trending: "辽代观音阁、梁思成盛赞", tier: "A" },
+  "意式风情区": { heat: 85, notes: "2.1k", trending: "马可波罗广场、罗马柱廊", tier: "A" },
+  "盘山（蓟州）": { heat: 84, notes: "720", trending: "乾隆行宫、云罩寺", tier: "A" },
+  "古文化街": { heat: 83, notes: "1.5k", trending: "杨柳青年画、泥人张", tier: "A" },
+  "梨木台风景区": { heat: 82, notes: "580", trending: "燕山原始森林、天津屋脊", tier: "A" },
+  "黄崖关长城": { heat: 82, notes: "420", trending: "戚继光督建、寡妇楼传说", tier: "A" },
+  "瓷房子": { heat: 80, notes: "1.8k", trending: "张连志私人博物馆、700 尊石狮子", tier: "A" },
+  "八仙山国家级自然保护区": { heat: 80, notes: "280", trending: "1052m 天津屋脊、八仙桌子", tier: "A" },
+  "东疆湾沙滩景区": { heat: 80, notes: "780", trending: "2km 进口白沙、渤海帆船", tier: "A" },
+  "大沽口炮台遗址博物馆": { heat: 80, notes: "240", trending: "国保、二次鸦片战争遗址", tier: "A" },
+  "西开教堂": { heat: 80, notes: "420", trending: "国保、法国罗曼式双塔、天主教堂", tier: "A" },
+  "天津大学北洋园校区": { heat: 80, notes: "820", trending: "中国第一所现代大学、北洋大学", tier: "A" },
+  "滨海航母主题公园": { heat: 78, notes: "680", trending: "唯一对外开放、俄罗斯基辅级核航母", tier: "A" },
+  "九龙山国家森林公园": { heat: 78, notes: "210", trending: "华北石英岩峰林、双龙顶石海", tier: "A" },
+  "杨柳青古镇（石家大院）": { heat: 78, notes: "420", trending: "华北第一宅、杨柳青年画", tier: "A" },
+  "解放北路金融街": { heat: 78, notes: "560", trending: "56 栋百年金融建筑、东方华尔街", tier: "A" },
+  "泰安道五大院": { heat: 78, notes: "380", trending: "国保开滦大楼、英式红砖街", tier: "A" },
+  "霍元甲纪念馆": { heat: 77, notes: "120", trending: "精武门创始人故居、迷踪拳发源地", tier: "A" },
+  "天津广播电视塔（天塔）": { heat: 77, notes: "310", trending: "亚洲唯一水中塔、257m 观光层", tier: "A" },
+  "天津邮政博物馆": { heat: 77, notes: "95", trending: "中国邮政发源地、大龙邮票真品", tier: "A" },
+  "鼓楼商业街": { heat: 75, notes: "360", trending: "27m 三层鼓楼、广东会馆戏台", tier: "A" },
+  "望海楼教堂": { heat: 75, notes: "160", trending: "国保、天津教案发生地、哥特式三塔", tier: "A" },
+  // ===== Tier B: 中等热度 (60-74) =====
+  "南市食品街": { heat: 73, notes: "720", trending: "耳朵眼、桂发祥、狗不理一站齐", tier: "B" },
+  "劝业场（滨江道）": { heat: 73, notes: "180", trending: "1928 巴洛克百货、马三立演出地", tier: "B" },
+  "独流老醋文化产业园": { heat: 73, notes: "75", trending: "中国四大名醋、千缸晒醋场", tier: "B" }
+};

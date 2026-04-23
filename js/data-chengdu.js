@@ -19,7 +19,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免费开放·停车 5 元/小时\n2. 主街 1 小时逛完够了，拐进泡桐树街/奎星楼街才是本地人的慢生活\n3. 主街不买不吃（冰粉 15-20/碗、三大炮比外面贵一倍，全国统一义乌小商品）\n4. 穿汉服拍照出片率 100%，22:00 后店铺关门人少更出片",
     highlight: "清代满城遗址·泡泡玛特露台·喜茶独栋洋楼·熊猫邮局",
     xhsQuote: "「主街走一圈拍拍照，1 小时左右足够。别买！别吃！尤其是主街钱花得冤枉」",
-    xhsHeat: { heat: "高", notes: "508+97+70+42+37+13", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "508+97+70+42+37+13 · 清代满城遗址 · 泡泡玛特露台", trending: "稳定", tier: "S" },
     tags: ["老巷", "盖碗茶", "川味", "网红", "成都地标"],
     image: "assets/images/dest-cd-1300.webp",
     imageQuery: "Chengdu Kuanzhai Alley traditional street"
@@ -42,7 +42,7 @@ const DESTINATIONS_CD = [
     tips: "1. 西门（新区）进不是南门！带老人小孩尤其重要，全程上坡路要命\n2. 门票 ¥55，学生半价，1.3m 以下免票\n3. 观光车单程 10/往返 15，体力差必买\n4. 公众号查花花位置做路线，导航挺准\n5. 自带水和零食，景区橙汁 28/杯纯糖精",
     highlight: "130+ 大熊猫·顶流花花·月亮产房新生幼崽",
     xhsQuote: "「从西门进！！！尤其带孩子带老人的，从南门进走到怀疑人生，全程上坡路」",
-    xhsHeat: { heat: "极高", notes: "313+51+6+多篇避雷贴", trending: "持续", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "313+51+6+多篇避雷贴 · 130+ 大熊猫 · 顶流花花", trending: "持续", tier: "S+" },
     tags: ["熊猫", "花花", "亲子", "拍照", "国宝"],
     image: "assets/images/dest-cd-1301.webp",
     imageQuery: "Chengdu Panda Research Base giant pandas"
@@ -65,7 +65,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免费开放，与武侯祠联游（侧门互通/门票 ¥50）\n2. 不建议自驾（停车难），地铁 3 号线高升桥站 D 口最省心\n3. 避开周末节假日人流高峰\n4. 穿汉服拍照出片率 100%\n5. 18:00 后入场、22:00 后店铺相继关门人更少拍照更出片",
     highlight: "三国文化主题·灯笼夜市·莲花池廊桥·川剧变脸",
     xhsQuote: "「华灯初上，夜晚的锦里才真正醒来……锦里的夜，比白天更懂人间」",
-    xhsHeat: { heat: "高", notes: "941+32+11+9", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "941+32+11+9 · 三国文化主题 · 灯笼夜市", trending: "稳定", tier: "S" },
     tags: ["三国", "灯笼", "小吃", "夜市", "武侯祠"],
     image: "assets/images/dest-cd-1302.webp",
     imageQuery: "Chengdu Jinli Ancient Street night lanterns"
@@ -88,7 +88,7 @@ const DESTINATIONS_CD = [
     tips: "1. 犀浦站→离堆公园站城际 ¥10/30 分钟最便宜，12306 提前买\n2. 秦堰楼入全程下坡不费腿（淡季打车 ¥10 比景区直通车 ¥10/人更划算）\n3. 安澜索桥旺季排 30 分钟\n4. 蓝眼泪冬天 18:00/夏天 19:00 亮灯，提前去拍不好看\n5. 建议请讲解（拼团 ¥40/人）——自己走两条河啥也看不懂",
     highlight: "鱼嘴·飞沙堰·宝瓶口 三大工程·南桥蓝眼泪",
     xhsQuote: "「都江堰的智慧真的很震撼，用最短时间 get 它的精华，体验感满分！」",
-    xhsHeat: { heat: "极高", notes: "8425+638+461+200+127+119", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "8425+638+461+200+127+119 · 鱼嘴 · 飞沙堰", trending: "持续热度", tier: "S+" },
     tags: ["世界遗产", "水利", "都江堰", "李冰", "古代工程"],
     image: "assets/images/dest-cd-1303.webp",
     imageQuery: "Dujiangyan ancient irrigation system Sichuan"
@@ -111,7 +111,7 @@ const DESTINATIONS_CD = [
     tips: "1. 前山 vs 后山——前山道教文化密集 3-5 小时、后山自然风光拍照 6-8 小时\n2. 犀浦→青城山城际 ¥10 别打车（贵）\n3. 观光短驳车 ¥35 必买（山门到景区 2km）\n4. 建议走上索道下（天师洞降魔石只能步行上看到）\n5. 速干内衣+防滑鞋，下山登山杖省力",
     highlight: "张陵开道·青城天下幽·天师洞·老君阁",
     xhsQuote: "「烟雨蒙蒙的山景超级美丽，空气也好充满负离子……青城天下幽」",
-    xhsHeat: { heat: "高", notes: "725+200+163+127+73", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "725+200+163+127+73 · 张陵开道 · 青城天下幽", trending: "稳定", tier: "S" },
     tags: ["道教", "世界遗产", "名山", "太极", "青城"],
     image: "assets/images/dest-cd-1304.webp",
     imageQuery: "Qingcheng Mountain Taoist temple Chengdu"
@@ -134,7 +134,7 @@ const DESTINATIONS_CD = [
     tips: "1. 门票 ¥50（学生半价、60+/6 岁以下免费，证件必带）\n2. 地铁 10 号线武侯祠站 B 口直达（自驾难停）\n3. 人工拼团讲解 ¥30-50 可砍价，线上语音不推荐（只念台词）\n4. 红墙夹道浅色衣服出片 100%\n5. 联游锦里（侧门互通）白天祠庙晚上锦里",
     highlight: "刘备墓·诸葛亮祠·三绝碑·红墙夹道·1800 年惠陵",
     xhsQuote: "「成都武侯祠，史同女心中的冈仁波齐……把丞相墓的落叶带给刘备，把长安的土揣到武侯祠」",
-    xhsHeat: { heat: "高", notes: "196+73+14+多篇保姆级", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "196+73+14+多篇保姆级 · 刘备墓 · 诸葛亮祠", trending: "稳定", tier: "A+" },
     tags: ["三国", "蜀汉", "诸葛亮", "国保", "历史"],
     image: "assets/images/dest-cd-1305.webp",
     imageQuery: "Wuhou Shrine Chengdu Three Kingdoms"
@@ -157,7 +157,7 @@ const DESTINATIONS_CD = [
     tips: "1. 门票旺季 ¥160/淡季 ¥110，1.2m 以下免票\n2. 金顶海拔 3000+ 羽绒服手套帽子必备（山下速干内衣防汗湿）\n3. 观光车收车 18:00，日出 7:50 左右提前半小时占位\n4. 登山杖震慑猴子+背包别露塑料袋\n5. 官方小程序买徒步票返 75 仙山豆抵返程巴士 ¥50",
     highlight: "金顶日出·云海佛光·普贤菩萨·贡嘎雪山同框",
     xhsQuote: "「破晓的那一刻我站在菩萨神像前，天地万物都如此圣洁，因为心中有光啊」",
-    xhsHeat: { heat: "极高", notes: "810+237+161+2", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "810+237+161+2 · 金顶日出 · 云海佛光", trending: "持续热度", tier: "S+" },
     tags: ["佛教", "金顶", "日出", "峨眉山", "世界遗产"],
     image: "assets/images/dest-cd-1306.webp",
     imageQuery: "Emei Mountain Golden Summit sunrise Sichuan"
@@ -180,7 +180,7 @@ const DESTINATIONS_CD = [
     tips: "1. 交通首选滴滴巴士 ¥14.9/2.5h（比高铁+打车+直通车都划算）\n2. 游山 ¥80 vs 游船 ¥70——游山能摸佛脚但排队 1h+、游船 30 分钟看全景\n3. 北门进东门出不走回头路、观光车 ¥10 单程\n4. 游船当天现场购票（线上放票时间不固定）\n5. 春节避雷人挤人、栏杆危险建议平日去",
     highlight: "71m 世界最大石刻佛像·三江汇流·海通禅师·凌云寺",
     xhsQuote: "「📖 总结：去爬山，去爬山，去爬山」",
-    xhsHeat: { heat: "高", notes: "1335+557+406+264", trending: "持续热度", tier: "S" },
+    xhsHeat: { heat: "高", notes: "1335+557+406+264 · 71m 世界最大石刻佛像 · 三江汇流", trending: "持续热度", tier: "S" },
     tags: ["大佛", "唐代", "世界遗产", "佛教", "乐山"],
     image: "assets/images/dest-cd-1307.webp",
     imageQuery: "Leshan Giant Buddha Sichuan"
@@ -203,7 +203,7 @@ const DESTINATIONS_CD = [
     tips: "1. 2026-3-17 滑雪场闭园转绿季免门票（至 4-6）、下个雪季再开\n2. 雪袜雪镜速干衣必须提前准备（山上租不到买不到）\n3. 滑雪 ¥168/2h 超时 ¥60/h+ 超 4h 按全天算\n4. 新手熊猫道+白天滑、夜场只有中高级道\n5. 大邑站→西岭雪山旅游专车固定时间发车、提前算时间别错过",
     highlight: "阴阳界·日月坪日出·滑雪场+云端森林",
     xhsQuote: "「离成都近、不会高反、进阶雪道人少、有夜场」",
-    xhsHeat: { heat: "中高", notes: "179+24+3", trending: "冬季高夏季低", tier: "A" },
+    xhsHeat: { heat: "中高", notes: "179+24+3 · 阴阳界 · 日月坪日出", trending: "冬季高夏季低", tier: "A" },
     tags: ["滑雪", "雪山", "避暑", "杜甫", "雪峰"],
     image: "assets/images/dest-cd-1308.webp",
     imageQuery: "Xiling Snow Mountain ski resort Sichuan"
@@ -226,7 +226,7 @@ const DESTINATIONS_CD = [
     tips: "1. 门票 ¥50，下午 2-3 点后阳光柔和最佳\n2. 红墙花径毛爷爷同款背影照必拍（浅色衣服显白）\n3. 5 岁以下娃觉得枯燥蚊虫多、学龄娃诗词闯关边逛边学\n4. 与武侯祠分开日去（信息量大容易疲累）\n5. 联游隔壁青羊宫或浣花溪公园（免费）",
     highlight: "杜甫茅屋为秋风所破歌原址·红墙花径·诗史堂",
     xhsQuote: "「看到他的雕像就像看到了当年居住在这里的杜工部一样，特别感人」",
-    xhsHeat: { heat: "中高", notes: "222+128+128+112", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "中高", notes: "222+128+128+112 · 杜甫茅屋为秋风所破歌原址 · 红墙花径", trending: "稳定", tier: "A+" },
     tags: ["杜甫", "诗史", "唐代", "文学", "国保"],
     image: "assets/images/dest-cd-1309.webp",
     imageQuery: "Du Fu Thatched Cottage Chengdu"
@@ -249,7 +249,7 @@ const DESTINATIONS_CD = [
     tips: "1. IFS 7 楼拍熊猫正面走扶梯（别等电梯慢死）\n2. 远拍屁屁更出片（正面要排队）\n3. 3D 大屏耐心等大熊猫出现+夜晚效果更惊艳\n4. 镋钯街熊猫书店+熊猫邮局+文艺小店（10 分钟步行）\n5. 周末人山人海避开节假日高峰",
     highlight: "IFS 爬墙熊猫·太古里·裸眼 3D 熊猫·成都潮流中心",
     xhsQuote: "「24 小时看 IFS 爬墙熊猫的高空酒店……躺进观景浴池俯瞰 IFS 熊猫」",
-    xhsHeat: { heat: "极高", notes: "787+343+215+199", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "787+343+215+199 · IFS 爬墙熊猫 · 太古里", trending: "持续热度", tier: "S+" },
     tags: ["商圈", "火锅", "潮流", "太古里", "成都打卡"],
     image: "assets/images/dest-cd-1310.webp",
     imageQuery: "Chengdu Taikooli IFS wall panda shopping"
@@ -272,7 +272,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免费进园·鹤鸣盖碗茶 ¥48-88 含节目\n2. 院外 ¥16 便宜但人多排队拥挤\n3. 采耳 ¥30-100/5 分钟+ 一次性工具 ¥10 地道体验\n4. 表演时长约 1h 提前占位（院里进门右手边栏杆旁/二楼前排）\n5. 保路纪念碑+相亲角+手工茶叶基地一站式体验老成都",
     highlight: "鹤鸣茶社百年·盖碗茶+变脸吐火·非遗采耳·保路纪念碑",
     xhsQuote: "「来成都怎么能不喝茶呢，人民公园茶社可以给到“夯”」",
-    xhsHeat: { heat: "高", notes: "209+42+4+3+多篇", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "209+42+4+3+多篇 · 鹤鸣茶社百年 · 盖碗茶+变脸吐火", trending: "稳定", tier: "S" },
     tags: ["喝茶", "采耳", "市井", "老成都", "相亲角"],
     image: "assets/images/dest-cd-1311.webp",
     imageQuery: "Chengdu Peoples Park Heming Teahouse"
@@ -295,7 +295,7 @@ const DESTINATIONS_CD = [
     tips: "1. 全天免费开放（05:30-22:30）\n2. 地铁 4 号线草堂北路站 B 口步行 10 分钟最方便\n3. 联游杜甫草堂（南门相通一日双打卡）\n4. 带孩子必备鱼食+小水桶喂锦鲤\n5. 11 月中下旬银杏大道金黄毯出片率 100%",
     highlight: "诗歌大道·白鹭洲·沧浪湖·银杏大道·川西民居",
     xhsQuote: "「成都免费的宝藏公园，春花秋叶四季如画，和草堂联游刚刚好」",
-    xhsHeat: { heat: "中高", notes: "312+87+45+22", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "中高", notes: "312+87+45+22 · 诗歌大道 · 白鹭洲", trending: "稳定", tier: "A+" },
     tags: ["公园", "免费", "遛娃", "银杏", "白鹭"],
     image: "assets/images/dest-cd-1312.webp",
     imageQuery: "Chengdu Huanhuaxi Park autumn ginkgo"
@@ -318,7 +318,7 @@ const DESTINATIONS_CD = [
     tips: "1. 完全免费（进香随喜、不要信门口推销高价香）\n2. 地铁 1 号线文殊院站 K 口 3 分钟直达\n3. 斋堂 ¥10 素面是招牌（排队但速度快）\n4. 香园茶坊 ¥10-20 盖碗茶坐一下午（免费续水）\n5. 联游文殊坊老字号（陈麻婆豆腐+严太婆锅盔+洞子口凉粉）",
     highlight: "文殊菩萨·1400 年古刹·香园茶坊·免费斋饭",
     xhsQuote: "「来成都别只知道大慈寺，文殊院才是本地人求智慧的第一选择」",
-    xhsHeat: { heat: "高", notes: "456+112+88+34", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "456+112+88+34 · 文殊菩萨 · 1400 年古刹", trending: "稳定", tier: "S" },
     tags: ["古刹", "免费", "素食", "禅修", "文殊菩萨"],
     image: "assets/images/dest-cd-1313.webp",
     imageQuery: "Chengdu Wenshu Monastery ancient Buddhist temple"
@@ -341,7 +341,7 @@ const DESTINATIONS_CD = [
     tips: "1. 门票 ¥5 良心价（不同于其他寺庙免费）\n2. 地铁 2/3 号线春熙路站 D 口穿太古里 3 分钟\n3. 寺外 LV 玻璃幕墙+大慈寺红墙反差感必拍\n4. 联游春熙路 IFS 爬墙熊猫+裸眼 3D 大熊猫屏幕\n5. 博舍酒店就在大慈寺隔壁（奢华文艺之选）",
     highlight: "玄奘受戒之地·太古里红墙反差·博舍酒店隔壁",
     xhsQuote: "「上午拜佛下午购物，大慈寺把 1600 年禅意塞进了奢侈品大道」",
-    xhsHeat: { heat: "高", notes: "389+124+76+45", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "389+124+76+45 · 玄奘受戒之地 · 太古里红墙反差", trending: "稳定", tier: "S" },
     tags: ["古刹", "玄奘", "太古里", "文艺", "反差"],
     image: "assets/images/dest-cd-1314.webp",
     imageQuery: "Chengdu Daci Temple Taikooli red wall"
@@ -364,7 +364,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免费进园（Live House 演出 ¥80-300、音乐节 ¥400+）\n2. 地铁 7/8 号线东郊记忆站 A 口出即到\n3. 工业风拍照出片率 100%（红砖+管道+烟囱+火车头）\n4. 联游建设巷美食街（步行 10 分钟）\n5. 5 月草莓音乐节+10 月迷笛音乐节+暑期漫展提前抢票",
     highlight: "1958 年苏联援建红砖厂房·火车头广场·Live House·草莓音乐节",
     xhsQuote: "「成都的 798，红砖厂房工业风随手一拍都是赛博朋克」",
-    xhsHeat: { heat: "高", notes: "567+234+145+89", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "567+234+145+89 · 1958 年苏联援建红砖厂房 · 火车头广场", trending: "稳定", tier: "S" },
     tags: ["工业风", "文艺", "音乐节", "漫展", "798"],
     image: "assets/images/dest-cd-1315.webp",
     imageQuery: "Chengdu Eastern Suburb Memory industrial art park"
@@ -387,7 +387,7 @@ const DESTINATIONS_CD = [
     tips: "1. 小酒馆不消费也能门口拍照+歌词墙+吉他雕塑\n2. 小酒馆玉林西路店（赵雷店）小+芳沁馆大（演出多）\n3. 明婷饭店排队 1h+ 建议 17:00 前到或 21:00 后去\n4. 玉林四巷+玉林东路咖啡+玉林南路 Live House 一条线 citywalk\n5. 深夜 22:00 后烧烤+精酿+脑花是玉林灵魂",
     highlight: "赵雷《成都》原型·小酒馆·明婷苍蝇馆·梧桐老街",
     xhsQuote: "「和我在成都的街头走一走……走到玉林路的尽头，坐在小酒馆的门口」",
-    xhsHeat: { heat: "极高", notes: "1245+543+298+167", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "1245+543+298+167 · 赵雷《成都》原型 · 小酒馆", trending: "持续热度", tier: "S+" },
     tags: ["赵雷", "成都", "小酒馆", "苍蝇馆", "梧桐"],
     image: "assets/images/dest-cd-1316.webp",
     imageQuery: "Chengdu Yulin Road Little Bar music street"
@@ -410,7 +410,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免门票全天开放（停车 ¥20/天）\n2. 金沙公交站旅游专线 ¥16/1.5h 最便宜\n3. 夏天带娃必备换洗衣服+拖鞋（直接下溪玩水）\n4. 工作日去（周末+节假日人山人海）\n5. 每晚 19:00-21:00 打更表演+春节元宵火龙灯舞（国家级非遗必看）",
     highlight: "1700 年川西水乡·玩水天堂·一根面·火龙灯舞非遗",
     xhsQuote: "「带娃来黄龙溪就对了，溪水清凉玩到天黑，¥10 盖碗茶坐一下午神仙日子」",
-    xhsHeat: { heat: "高", notes: "389+167+98+45", trending: "夏季高", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "389+167+98+45 · 1700 年川西水乡 · 玩水天堂", trending: "夏季高", tier: "A+" },
     tags: ["古镇", "水乡", "亲子", "玩水", "非遗"],
     image: "assets/images/dest-cd-1317.webp",
     imageQuery: "Huanglongxi Ancient Town water village Chengdu"
@@ -433,7 +433,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免门票全天开放（四馆联票 ¥20）\n2. 地铁 18 号线福洪站换 219 路 15 分钟直达\n3. 伤心凉粉辣到流泪但一吃停不下来必试\n4. 工作日去（周末老街拥挤吆喝声大）\n5. 联游建川博物馆聚落（12km 车程、安仁古镇方向）",
     highlight: "客家第一镇·四大会馆·伤心凉粉·油烫鹅",
     xhsQuote: "「¥10 伤心凉粉辣到流泪但停不下来，客家土楼藏在成都 30 分钟车程外」",
-    xhsHeat: { heat: "中高", notes: "278+98+56+23", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "中高", notes: "278+98+56+23 · 客家第一镇 · 四大会馆", trending: "稳定", tier: "A+" },
     tags: ["古镇", "客家", "伤心凉粉", "会馆", "非遗"],
     image: "assets/images/dest-cd-1318.webp",
     imageQuery: "Luodai Ancient Town Hakka culture Chengdu"
@@ -456,7 +456,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免门票全天开放（停车 ¥10/天）\n2. 地铁 4 号线凤溪河站换 527 路 40 分钟 ¥5\n3. 比黄龙溪/洛带清净秀气适合文艺青年\n4. 联游青城山后山+都江堰（20 分钟车程）\n5. 凤栖山森林公园免费徒步 2-3h（青城山替代）",
     highlight: "晋代光严禅院·唐求故居·字库塔·凤栖山",
     xhsQuote: "「比黄龙溪清净比洛带秀气，街子古镇才是成都文艺青年的后花园」",
-    xhsHeat: { heat: "中", notes: "189+67+34+18", trending: "稳定", tier: "A" },
+    xhsHeat: { heat: "中", notes: "189+67+34+18 · 晋代光严禅院 · 唐求故居", trending: "稳定", tier: "A" },
     tags: ["古镇", "青城", "凤栖山", "汤麻饼", "文艺"],
     image: "assets/images/dest-cd-1319.webp",
     imageQuery: "Jiezi Ancient Town Qingcheng backyard"
@@ -479,7 +479,7 @@ const DESTINATIONS_CD = [
     tips: "1. 免门票全天开放（停车 ¥10/天）\n2. 成都西站成蒲快铁 ¥26/40 分钟到邛崃最便宜\n3. 夏天必体验江边大竹椅泡脚+冰镇西瓜+麻将（成都人周末标配）\n4. 两日一夜玩透（Day1 古镇+江边+夜景、Day2 芦沟竹海）\n5. 瓷胎竹编国家级非遗+体验 ¥50-200 做竹编伴手礼",
     highlight: "2300 年茶马古道第一镇·乐善桥·江边泡脚·瓷胎竹编非遗",
     xhsQuote: "「夏天去平乐古镇江边泡脚吃西瓜打麻将，这就是成都人的完美周末」",
-    xhsHeat: { heat: "高", notes: "445+187+98+56", trending: "夏季高", tier: "S" },
+    xhsHeat: { heat: "高", notes: "445+187+98+56 · 2300 年茶马古道第一镇 · 乐善桥", trending: "夏季高", tier: "S" },
     tags: ["古镇", "水乡", "竹海", "茶马古道", "泡脚"],
     image: "assets/images/dest-cd-1320.webp",
     imageQuery: "Pingle Ancient Town Sichuan water village bamboo"
@@ -502,7 +502,7 @@ const DESTINATIONS_CD = [
     tips: "1. 古镇免费开放（建川博物馆 ¥120/2 日+刘氏庄园 ¥30）\n2. 成都西站成蒲快铁+公交 1.5h（¥30 左右）\n3. 建川博物馆 2 天都看不完（硬核历史迷必去）\n4. 民国风汉服 ¥50 与公馆同框出片率 100%\n5. 住公馆民宿（民国风房间+夜晚公馆灯光浸入感）",
     highlight: "27 座民国公馆·刘氏庄园·建川博物馆聚落（38 馆）",
     xhsQuote: "「看一次建川博物馆，读完中国近现代史；住一晚公馆民宿，穿越回民国」",
-    xhsHeat: { heat: "高", notes: "412+198+98+56", trending: "稳定", tier: "S" },
+    xhsHeat: { heat: "高", notes: "412+198+98+56 · 27 座民国公馆 · 刘氏庄园", trending: "稳定", tier: "S" },
     tags: ["古镇", "民国", "博物馆", "公馆", "刘文彩"],
     image: "assets/images/dest-cd-1321.webp",
     imageQuery: "Anren Ancient Town Jianchuan Museum mansion"
@@ -525,7 +525,7 @@ const DESTINATIONS_CD = [
     tips: "1. 五朵金花全免门票+免费停车\n2. 地铁 2 号线行政学院站换 857 路 20 分钟 ¥2\n3. 四季赏花不同：梅花/玫瑰/荷花/菊花轮流开\n4. 盖碗茶 ¥15+打麻将 ¥10/位是本地人标配\n5. 农家柴火鸡 ¥120/只+江家菜地采摘必体验",
     highlight: "五朵金花·幸福梅林·荷塘月色·江家菜地·农家乐",
     xhsQuote: "「入园免费随便逛，盖碗茶 15 块坐一下午，这才是成都人的周末」",
-    xhsHeat: { heat: "中", notes: "198+78+34+18", trending: "稳定", tier: "A" },
+    xhsHeat: { heat: "中", notes: "198+78+34+18 · 五朵金花 · 幸福梅林", trending: "稳定", tier: "A" },
     tags: ["花田", "农家乐", "亲子", "采摘", "五朵金花"],
     image: "assets/images/dest-cd-1322.webp",
     imageQuery: "Chengdu Sansheng Township flower fields countryside"
@@ -548,7 +548,7 @@ const DESTINATIONS_CD = [
     tips: "1. 门票 ¥146+观光车 ¥120 必买（30km 禁自驾）\n2. 红景天提前 7 天服+葡萄糖+氧气罐必备（高反严重）\n3. 机场落地即 4411m 建议先在香格里拉镇过渡 1 天\n4. 长线洛绒牛场+牛奶海+五色海徒步 6h 往返（硬核+日照金山清晨 7-8 点）\n5. 10-11 月秋景最佳+避开 12-3 月封山+5-6 月雨季",
     highlight: "三神山·牛奶海·五色海·日照金山·蓝色星球最后净土",
     xhsQuote: "「这辈子一定要来一次稻城亚丁，三神山同时被日出染成金色的瞬间此生难忘」",
-    xhsHeat: { heat: "极高", notes: "5843+2341+1287+867+543", trending: "持续热度", tier: "S++" },
+    xhsHeat: { heat: "极高", notes: "5843+2341+1287+867+543 · 三神山 · 牛奶海", trending: "持续热度", tier: "S++" },
     tags: ["雪山", "高原", "徒步", "稻城亚丁", "三神山"],
     image: "assets/images/dest-cd-1323.webp",
     imageQuery: "Daocheng Yading three sacred mountains Sichuan"
@@ -571,7 +571,7 @@ const DESTINATIONS_CD = [
     tips: "1. 成都茶店子站大巴 ¥130/4h 到日隆最方便（比飞机便宜+比自驾不累）\n2. 三沟门票+观光车组合 ¥150-300 必买\n3. 双桥沟坐车 3h 老人小孩友好+长坪沟徒步 2-3h 中等+海子沟徒步 1 天硬核\n4. 日隆镇 3200m 高反轻但红景天+氧气罐备着\n5. 日照金山清晨 7-8 点四峰全镀金+猫鼻梁观景台必去",
     highlight: "东方阿尔卑斯·4 座 6000m 姊妹峰·日照金山·双桥沟全景",
     xhsQuote: "「成都周末就能去的东方阿尔卑斯，比稻城亚丁省一半时间看雪山」",
-    xhsHeat: { heat: "高", notes: "876+345+198+98", trending: "持续热度", tier: "S" },
+    xhsHeat: { heat: "高", notes: "876+345+198+98 · 东方阿尔卑斯 · 4 座 6000m 姊妹峰", trending: "持续热度", tier: "S" },
     tags: ["雪山", "高原", "徒步", "四姑娘山", "攀登"],
     image: "assets/images/dest-cd-1324.webp",
     imageQuery: "Siguniang Mountain Sichuan Eastern Alps"
@@ -594,7 +594,7 @@ const DESTINATIONS_CD = [
     tips: "1. 成都新南门大巴 ¥180/7h 或自驾雅康高速 5h（比老路快 2h）\n2. 门票 ¥92+观光车 ¥70+索道 ¥150 必买（32km 禁自驾+索道看一号冰川必上）\n3. 日照金山清晨 7-8 点（冬季 8:30）贡嘎染金此生必看\n4. 四号营地温泉酒店 3600m 雪山泡温泉是硬核浪漫\n5. 海拔 2850-3600m 高反较轻但红景天+葡萄糖+氧气罐备着",
     highlight: "亚洲最低冰川·贡嘎日照金山·3600m 雪山温泉·磨西古镇",
     xhsQuote: "「贡嘎雪山日照金山的那 5 分钟值回所有机票，3600m 雪山泡温泉此生必打卡」",
-    xhsHeat: { heat: "极高", notes: "1234+567+345+189", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "1234+567+345+189 · 亚洲最低冰川 · 贡嘎日照金山", trending: "持续热度", tier: "S+" },
     tags: ["冰川", "雪山", "温泉", "贡嘎", "海螺沟"],
     image: "assets/images/dest-cd-1325.webp",
     imageQuery: "Hailuogou Glacier Gongga Mountain sunrise"
@@ -617,7 +617,7 @@ const DESTINATIONS_CD = [
     tips: "1. 成都茶店子大巴 ¥200/8h 或自驾雅康高速 7h\n2. 门票 ¥30+景区中巴 ¥15 必买（山路窄不建议自驾）\n3. 3 月梨花雪海+11 月金秋彩林是两大爆款季\n4. 住藏家民宿（石楼三层改造+锅庄晚会+青稞酒最地道）\n5. 海拔 1800-3000m 高反极轻+高原入门首选",
     highlight: "中国最美乡村·嘉绒藏族白石楼·梨花雪海·金秋彩林",
     xhsQuote: "「3 月整个甲居藏寨淹没在梨花雪海里，白色石楼点缀其中，中国最美乡村名副其实」",
-    xhsHeat: { heat: "高", notes: "678+289+156+87", trending: "春秋两高峰", tier: "S" },
+    xhsHeat: { heat: "高", notes: "678+289+156+87 · 中国最美乡村 · 嘉绒藏族白石楼", trending: "春秋两高峰", tier: "S" },
     tags: ["藏寨", "梨花", "高原", "嘉绒", "最美乡村"],
     image: "assets/images/dest-cd-1326.webp",
     imageQuery: "Danba Jiaju Tibetan village pear blossom"
@@ -640,7 +640,7 @@ const DESTINATIONS_CD = [
     tips: "1. 成都东高铁 ¥115/1.5h 到阆中站（最快+比自驾省 2.5h）\n2. 古城免门票+联票 ¥110（贡院+华光楼+张飞庙+风水博物馆必看）\n3. 巴蜀春节文化发源地（春节期间祭春官+烧火龙最地道）\n4. 住古城四合院客栈（晚上夜游+早上清静最美）\n5. 张飞牛肉+阆中醋+保宁醋+白糖蒸馍 4 大伴手礼必买",
     highlight: "中国四大古城·风水宝地·张飞镇守·巴蜀春节发源",
     xhsQuote: "「2300 年不挪位的风水宝地，山围四面水绕三方，比丽江平遥更有文化底蕴」",
-    xhsHeat: { heat: "高", notes: "567+234+145+87", trending: "春节高峰", tier: "S" },
+    xhsHeat: { heat: "高", notes: "567+234+145+87 · 中国四大古城 · 风水宝地", trending: "春节高峰", tier: "S" },
     tags: ["古城", "风水", "张飞", "春节", "巴蜀"],
     image: "assets/images/dest-cd-1327.webp",
     imageQuery: "Langzhong Ancient City Sichuan four ancient cities"
@@ -663,7 +663,7 @@ const DESTINATIONS_CD = [
     tips: "1. 成都东高铁 ¥140/2h 到宜宾西站换大巴 ¥60/1h\n2. 门票 ¥105+观光车 ¥60+索道 ¥65 必买（景区大 30km+景点分散）\n3. 夏天均温 25 度（成都 40 度）避暑圣地\n4. 《卧虎藏龙》+《十面埋伏》取景翡翠长廊+忘忧谷必打卡\n5. 全竹宴（竹笋+竹荪+竹燕窝 10 菜 ¥188/人）必体验",
     highlight: "500km² 竹海·卧虎藏龙取景·全竹宴·避暑圣地",
     xhsQuote: "「夏天 25 度的神仙避暑地，骑行翡翠长廊像走进了卧虎藏龙」",
-    xhsHeat: { heat: "高", notes: "567+234+156+89", trending: "夏季高峰", tier: "S" },
+    xhsHeat: { heat: "高", notes: "567+234+156+89 · 500km² 竹海 · 卧虎藏龙取景", trending: "夏季高峰", tier: "S" },
     tags: ["竹海", "避暑", "卧虎藏龙", "宜宾", "自然"],
     image: "assets/images/dest-cd-1328.webp",
     imageQuery: "Shunan Bamboo Sea Sichuan Crouching Tiger Hidden Dragon"
@@ -686,7 +686,7 @@ const DESTINATIONS_CD = [
     tips: "1. 地铁 7 号线二仙桥站 B 口步行 8 分钟（最方便）\n2. 联游东郊记忆（步行 10 分钟神仙搭配）\n3. 矿工蹄花排队 30 分钟但值得+本地人排一起才地道\n4. 人均 ¥50-100 吃扶墙走（别去网红店+走进排队苍蝇馆子才对）\n5. 19:00-23:00 夜宵高峰最热闹+14:00-17:00 下午茶人少",
     highlight: "矿工蹄花·万春卤菜·糖油果子·烤脑花·宇宙中心美食街",
     xhsQuote: "「成都人的宇宙中心在建设巷，¥80 吃扶墙走，东郊记忆步行 10 分钟神仙搭配」",
-    xhsHeat: { heat: "极高", notes: "2134+876+543+234+156", trending: "持续热度", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "2134+876+543+234+156 · 矿工蹄花 · 万春卤菜", trending: "持续热度", tier: "S+" },
     tags: ["美食", "苍蝇馆", "夜宵", "蹄花", "东郊"],
     image: "assets/images/dest-cd-1329.webp",
     imageQuery: "Chengdu Jianshe Alley food street local cuisine"

@@ -19,7 +19,7 @@ const DESTINATIONS_ES = [
     tips: "1. 必穿防滑运动鞋，栈道湿滑\n2. 索道+扶梯一定买，省体力（不然徒步登山 2h+石阶下山 40 分钟膝盖废）\n3. 云龙地缝和七星寨分开买票别漏\n4. 雨后云海概率高但栈道更滑\n5. 官方小程序提前预约避免排队",
     highlight: "一炷香独峰·云龙地缝·绝壁栈道·世界地质奇观",
     xhsQuote: "「一炷香那一刻真的震到我，150 米柱子最细 6 米，风一吹感觉要倒」",
-    xhsHeat: { heat: "极高", notes: "3k+ 笔记·恩施顶流", trending: "持续", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "3k+ 笔记·恩施顶流 · 一炷香独峰 · 云龙地缝", trending: "持续", tier: "S+" },
     tags: ["峡谷", "地缝", "索道", "徒步", "世界奇观"],
     image: "assets/images/dest-es-1600.webp",
     imageQuery: "Enshi Grand Canyon One Incense Peak cliff"
@@ -42,7 +42,7 @@ const DESTINATIONS_ES = [
     tips: "1. 门票 ¥50，学生半价，建议网上提前购\n2. 10:30/14:30 表演场次必看\n3. 与女儿城打包玩半天\n4. 夏天避开正午太晒\n5. 穿土家/苗族服饰拍照出片率高",
     highlight: "九进堂木构·廪君白虎·摆手舞表演·土家织锦",
     xhsQuote: "「九进堂全木榫卯一根钉子没用，看得出土家工匠真手艺」",
-    xhsHeat: { heat: "中高", notes: "500+ 笔记", trending: "稳定", tier: "A" },
+    xhsHeat: { heat: "中高", notes: "500+ 笔记 · 九进堂木构 · 廪君白虎", trending: "稳定", tier: "A" },
     tags: ["土司", "木构", "土家", "非遗", "古建"],
     image: "assets/images/dest-es-1601.webp",
     imageQuery: "Enshi Tusi Castle Tujia wooden palace"
@@ -65,7 +65,7 @@ const DESTINATIONS_ES = [
     tips: "1. 完全免费，不要门票\n2. 20:00 必看相亲会（免费互动有趣）\n3. 小吃比外面便宜 20%，是本地人也常去的街\n4. 穿民族服饰拍照出片率 100%\n5. 住女儿城门口最方便",
     highlight: "土家相亲会·非遗街·西兰卡普织机·土家小吃集散",
     xhsQuote: "「女儿城的夜比白天好看十倍，非遗街真能看到织机在动不是演」",
-    xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施必打卡", trending: "持续", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施必打卡 · 土家相亲会 · 非遗街", trending: "持续", tier: "S" },
     tags: ["民俗", "小吃", "夜景", "非遗", "土家"],
     image: "assets/images/dest-es-1602.webp",
     imageQuery: "Enshi Nverhcheng Tujia town night"
@@ -88,7 +88,7 @@ const DESTINATIONS_ES = [
     tips: "1. 穿防滑鞋，栈道湿滑\n2. 直通车往返 ¥60 比包车便宜\n3. 末班车 16:30 务必赶\n4. 小众人不多适合出片\n5. 与大峡谷分两天玩，别一天赶",
     highlight: "4 亿年前海底礁石·戴冠石·青龙缠松·一线天",
     xhsQuote: "「比云南石林小众多了，独包整片出片率 100%」",
-    xhsHeat: { heat: "中", notes: "400+ 笔记·小众宝藏", trending: "上升", tier: "A" },
+    xhsHeat: { heat: "中", notes: "400+ 笔记·小众宝藏 · 4 亿年前海底礁石 · 戴冠石", trending: "上升", tier: "A" },
     tags: ["石林", "喀斯特", "小众", "摄影", "奥陶纪"],
     image: "assets/images/dest-es-1603.webp",
     imageQuery: "Enshi Suobuya Stone Forest limestone"
@@ -111,7 +111,7 @@ const DESTINATIONS_ES = [
     tips: "1. 索道+扶梯必买，不然徒步登山 2h+下山 40 分钟膝盖废\n2. 一炷香最佳机位在玉笔峰观景台（对面拍）\n3. 雨后栈道湿滑必穿防滑鞋\n4. 秋季云海概率最高\n5. 与云龙地缝分两天玩不要一天赶",
     highlight: "一炷香世界奇观·绝壁栈道·玉笔峰·云海",
     xhsQuote: "「一炷香那一刻真的震到我，风一吹晃得人心慌」",
-    xhsHeat: { heat: "极高", notes: "大峡谷核心景区顶流", trending: "持续", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "大峡谷核心景区顶流 · 一炷香世界奇观 · 绝壁栈道", trending: "持续", tier: "S+" },
     tags: ["绝壁栈道", "一炷香", "索道", "云海", "大峡谷"],
     image: "assets/images/dest-es-1604.webp",
     imageQuery: "Enshi Qixingzhai stone pillar cliff walk"
@@ -134,7 +134,7 @@ const DESTINATIONS_ES = [
     tips: "1. 动车从恩施 25 分钟 ¥16 性价比最高\n2. 激光秀和《江源情》表演必看要踩点\n3. 洞内温度 15℃ 夏天记得带外套\n4. 观光车 ¥30 建议买（全程 6km 走路累）\n5. 可与大水井李氏庄园联游（车程 30 分钟）",
     highlight: "亚洲第一溶洞·激光秀·江源情歌舞剧·清江伏流",
     xhsQuote: "「飞机都能飞进的洞口真不夸张，比黄龙洞震撼多了」",
-    xhsHeat: { heat: "极高", notes: "1k+ 笔记·利川顶流", trending: "持续", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "1k+ 笔记·利川顶流 · 亚洲第一溶洞 · 激光秀", trending: "持续", tier: "S" },
     tags: ["溶洞", "激光秀", "歌舞剧", "地质", "利川"],
     image: "assets/images/dest-es-1605.webp",
     imageQuery: "Lichuan Tenglong Cave karst"
@@ -157,7 +157,7 @@ const DESTINATIONS_ES = [
     tips: "1. 夏天 7-8 月民宿翻倍且订不到，提前 1 个月\n2. 不要一天玩，至少住 2 晚才值\n3. 齐岳山大草原联游（30 分钟车程）\n4. 自驾最方便（盘山路开 2.5h）\n5. 冬天基本空城不值得去",
     highlight: "1500m 避暑·杜鹃花海·齐岳山大草原·别梦山",
     xhsQuote: "「武汉重庆 40℃ 这里 22℃，来就是为了发呆和睡觉」",
-    xhsHeat: { heat: "高", notes: "800+ 笔记·暑假刚需", trending: "季节性", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "800+ 笔记·暑假刚需 · 1500m 避暑 · 杜鹃花海", trending: "季节性", tier: "A+" },
     tags: ["避暑", "杜鹃", "草原", "森林", "利川"],
     image: "assets/images/dest-es-1606.webp",
     imageQuery: "Lichuan Sumadang summer resort rhododendron"
@@ -180,7 +180,7 @@ const DESTINATIONS_ES = [
     tips: "1. 大水井是土家最大庄园必看\n2. 包车 ¥150/天最方便\n3. 柏杨豆干是国家地理标志必尝\n4. 可请当地人唱龙船调（¥20 小费）\n5. 可与腾龙洞联游一天（紧张）",
     highlight: "世界民歌龙船调故乡·李氏庄园·土家宗族文化",
     xhsQuote: "「200 间房的李氏庄园木雕砖雕全是手工，比宏村更野」",
-    xhsHeat: { heat: "中低", notes: "200+ 笔记·小众历史宝藏", trending: "稳定", tier: "B+" },
+    xhsHeat: { heat: "中低", notes: "200+ 笔记·小众历史宝藏 · 世界民歌龙船调故乡 · 李氏庄园", trending: "稳定", tier: "B+" },
     tags: ["民歌", "庄园", "土家", "古建", "利川"],
     image: "assets/images/dest-es-1607.webp",
     imageQuery: "Lichuan Dashuijing Li Family mansion"
@@ -203,7 +203,7 @@ const DESTINATIONS_ES = [
     tips: "1. 自驾最方便，公共交通很少\n2. 漂流必须换洗衣服和鞋\n3. 门票+漂流 ¥208\n4. 冷门人少出片率高\n5. 与苏马荡联游（车程 1.5 小时）",
     highlight: "九瀑一线天·玻璃栈桥·6 公里漂流·红杉林",
     xhsQuote: "「人少到感觉整座山都是我家的，瀑布下一股冷气透凉」",
-    xhsHeat: { heat: "中", notes: "300+ 笔记·小众漂流地", trending: "上升", tier: "B+" },
+    xhsHeat: { heat: "中", notes: "300+ 笔记·小众漂流地 · 九瀑一线天 · 玻璃栈桥", trending: "上升", tier: "B+" },
     tags: ["峡谷", "瀑布", "漂流", "玻璃桥", "避暑"],
     image: "assets/images/dest-es-1608.webp",
     imageQuery: "Lichuan Fobaoshan canyon waterfall"
@@ -226,7 +226,7 @@ const DESTINATIONS_ES = [
     tips: "1. 班车 3 小时单程较远建议住一晚\n2. 酉水坐船看佛像 ¥10 视角独特\n3. 门票 ¥30 便宜但历史价值极高\n4. 来凤牛肉是全国地标必尝\n5. 与唐崖土司城堡联游（车程 1 小时）",
     highlight: "东晋 1700 年摩崖造像·南方最古老佛像·酉水",
     xhsQuote: "「1700 年前的佛像低眉垂眼，岩下酉水小船漂过瞬间穿越」",
-    xhsHeat: { heat: "中低", notes: "150+ 笔记·历史迷必看", trending: "稳定", tier: "B+" },
+    xhsHeat: { heat: "中低", notes: "150+ 笔记·历史迷必看 · 东晋 1700 年摩崖造像 · 南方最古老佛像", trending: "稳定", tier: "B+" },
     tags: ["摩崖", "佛教", "东晋", "酉水", "来凤"],
     image: "assets/images/dest-es-1609.webp",
     imageQuery: "Laifeng Xianfo Temple cliff Buddha"
@@ -249,7 +249,7 @@ const DESTINATIONS_ES = [
     tips: "1. 游船 ¥100 必坐，2 小时往返\n2. 与仙佛寺联游最省时\n3. 摆手舞广场免费晚上去看\n4. 来凤牛肉必尝\n5. 小众人少出片率高",
     highlight: "土家母亲河·游船 2 小时·摆手舞发源地",
     xhsQuote: "「酉水清得看得见河底石头，比湘西猛洞河还清」",
-    xhsHeat: { heat: "中低", notes: "150+ 笔记·小众土家游", trending: "稳定", tier: "B" },
+    xhsHeat: { heat: "中低", notes: "150+ 笔记·小众土家游 · 土家母亲河 · 游船 2 小时", trending: "稳定", tier: "B" },
     tags: ["河道", "土家", "摆手舞", "游船", "来凤"],
     image: "assets/images/dest-es-1610.webp",
     imageQuery: "Laifeng Youshui River Tujia village"
@@ -272,7 +272,7 @@ const DESTINATIONS_ES = [
     tips: "1. 世界遗产但免费开放罕见\n2. 讲解 ¥50 必请（懂历史才能看懂）\n3. 咸丰白水豆腐必尝（非遗）\n4. 与仙佛寺联游（车程 1 小时）\n5. 小众人少出片率高",
     highlight: "世界文化遗产·荆南雄镇石牌坊·500 年土司城",
     xhsQuote: "「500 年土司城遗址还这么完整，比纸上读的明史生动多了」",
-    xhsHeat: { heat: "中低", notes: "200+ 笔记·历史迷必打卡", trending: "稳定", tier: "A-" },
+    xhsHeat: { heat: "中低", notes: "200+ 笔记·历史迷必打卡 · 世界文化遗产 · 荆南雄镇石牌坊", trending: "稳定", tier: "A-" },
     tags: ["世界遗产", "土司", "明代", "石牌坊", "咸丰"],
     image: "assets/images/dest-es-1611.webp",
     imageQuery: "Xianfeng Tangya Tusi city site stone archway"
@@ -295,7 +295,7 @@ const DESTINATIONS_ES = [
     tips: "1. 游船 ¥70 必坐 1.5 小时\n2. 自驾比班车快很多（40 分钟 vs 2 小时）\n3. 悬棺遗迹只能远观\n4. 景阳白柚是当地特产必带\n5. 与清江画廊联游（车程 1.5 小时）",
     highlight: "野三河游船·悬棺遗迹·景阳关·小众峡谷",
     xhsQuote: "「坐船 1.5 小时绝壁夹水道，水面只听桨声真的野」",
-    xhsHeat: { heat: "中低", notes: "200+ 笔记·小众峡谷", trending: "稳定", tier: "B+" },
+    xhsHeat: { heat: "中低", notes: "200+ 笔记·小众峡谷 · 野三河游船 · 悬棺遗迹", trending: "稳定", tier: "B+" },
     tags: ["游船", "峡谷", "悬棺", "建始", "小众"],
     image: "assets/images/dest-es-1612.webp",
     imageQuery: "Jianshi Yesanxia river canyon cruise"
@@ -318,7 +318,7 @@ const DESTINATIONS_ES = [
     tips: "1. 直立人遗址展馆必看（科普价值极高）\n2. 玻璃栈道恐高慎走\n3. 峡谷栈道 2 小时穿防滑鞋\n4. 适合带孩子科普\n5. 与野三峡联游最高效",
     highlight: "200 万年前建始直立人·巨鲵保护区·古盐道",
     xhsQuote: "「200 万年前的牙齿化石比北京人还老，教科书上提到的地方亲自来太震了」",
-    xhsHeat: { heat: "中低", notes: "150+ 笔记·科普研学宝藏", trending: "稳定", tier: "B+" },
+    xhsHeat: { heat: "中低", notes: "150+ 笔记·科普研学宝藏 · 200 万年前建始直立人 · 巨鲵保护区", trending: "稳定", tier: "B+" },
     tags: ["古人类", "地质", "峡谷", "建始", "研学"],
     image: "assets/images/dest-es-1613.webp",
     imageQuery: "Jianshi Shimen River direct human fossil site"
@@ -341,7 +341,7 @@ const DESTINATIONS_ES = [
     tips: "1. 限流 800 人/天，提前 3 天在“鹤峰文旅”公众号预约\n2. 车程 3 小时较远建议住一晚\n3. 雨季水浑可能停船，出发前查公众号\n4. 夏天 7-9 月水色最绿出片率最高\n5. 民宿 ¥400-800 旺季一房难求",
     highlight: "空中飞船·水绿透明·恩施最出片秘境·限流景区",
     xhsQuote: "「船漂在水上像飘在空中，水绿得像翡翠汤，2024 最震撼的景」",
-    xhsHeat: { heat: "爆", notes: "5k+ 笔记·2024 年恩施顶流", trending: "爆火", tier: "S++" },
+    xhsHeat: { heat: "爆", notes: "5k+ 笔记·2024 年恩施顶流 · 空中飞船 · 水绿透明", trending: "爆火", tier: "S++" },
     tags: ["空中飞船", "秘境", "小众", "出片", "鹤峰"],
     image: "assets/images/dest-es-1614.webp",
     imageQuery: "Hefeng Pingshan Grand Canyon flying boat green water"
@@ -364,7 +364,7 @@ const DESTINATIONS_ES = [
     tips: "1. 必须自驾（其他交通方式上不了浮桥）\n2. 浮桥限速 20km/h 别开快\n3. 门票 ¥98 含浮桥通行\n4. 伏流瀑布联游必看\n5. 可与小神农架联游（车程 1.5 小时）",
     highlight: "500m 水上浮桥·伏流大瀑布·抖音网红点",
     xhsQuote: "「开车上浮桥那一刻水离车轮 10 厘米，30 秒像飞过水面」",
-    xhsHeat: { heat: "极高", notes: "1.5k+ 笔记·抖音网红带火", trending: "持续", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "1.5k+ 笔记·抖音网红带火 · 500m 水上浮桥 · 伏流大瀑布", trending: "持续", tier: "S" },
     tags: ["浮桥", "网红", "瀑布", "自驾", "宣恩"],
     image: "assets/images/dest-es-1615.webp",
     imageQuery: "Xuan'en Shiziguan water bridge driving"
@@ -387,7 +387,7 @@ const DESTINATIONS_ES = [
     tips: "1. 套餐 ¥260 含大船+小船双程必要\n2. 纤夫号子是国家级非遗必看\n3. 早班 9:00 出发错峰\n4. 可与三峡邮轮衔接（三峡大坝出）\n5. 自驾最快 2.5h，班车 3h",
     highlight: "长江支流游船·豌豆角小船·纤夫活态非遗",
     xhsQuote: "「6 个纤夫裸背拉船喊号子逆流而上，中国唯一活态文化展示太野了」",
-    xhsHeat: { heat: "高", notes: "600+ 笔记·三峡迷必打卡", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "600+ 笔记·三峡迷必打卡 · 长江支流游船 · 豌豆角小船", trending: "稳定", tier: "A+" },
     tags: ["游船", "纤夫", "长江", "非遗", "巴东"],
     image: "assets/images/dest-es-1616.webp",
     imageQuery: "Badong Shennongxi boat trackers"
@@ -410,7 +410,7 @@ const DESTINATIONS_ES = [
     tips: "1. 冬季 12-3 月封路不开放\n2. 夏天带外套（山上 15-20℃）\n3. 漂流限 6-9 月水量足\n4. 自驾最方便\n5. 与狮子关浮桥联游（1.5h 车程）",
     highlight: "3000m 云海·原始冷杉·金丝猴·神农架恩施段",
     xhsQuote: "「比神农架主峰人少 10 倍，像私包整座山」",
-    xhsHeat: { heat: "中高", notes: "400+ 笔记·避暑宝藏", trending: "季节性", tier: "A" },
+    xhsHeat: { heat: "中高", notes: "400+ 笔记·避暑宝藏 · 3000m 云海 · 原始冷杉", trending: "季节性", tier: "A" },
     tags: ["原始森林", "避暑", "金丝猴", "巴东", "神农架"],
     image: "assets/images/dest-es-1617.webp",
     imageQuery: "Badong Little Shennongjia forest meadow"
@@ -433,7 +433,7 @@ const DESTINATIONS_ES = [
     tips: "1. 3 天 2 夜才玩得完，一天根本来不及\n2. 住大九湖看日出最震撼\n3. 观光车 ¥64 必买（景区极大）\n4. 带厚外套山顶 10℃\n5. 金丝猴看运气",
     highlight: "华中屋脊 3106m·大九湖湿地·野人传说·世界遗产",
     xhsQuote: "「站上华中屋脊那一刻风大到站不稳，360° 草甸云海」",
-    xhsHeat: { heat: "极高", notes: "3k+ 笔记·鄂西顶流", trending: "持续", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "3k+ 笔记·鄂西顶流 · 华中屋脊 3106m · 大九湖湿地", trending: "持续", tier: "S+" },
     tags: ["华中屋脊", "原始森林", "世界遗产", "湿地", "神农架"],
     image: "assets/images/dest-es-1618.webp",
     imageQuery: "Shennongjia peak alpine meadow China"
@@ -456,7 +456,7 @@ const DESTINATIONS_ES = [
     tips: "1. 必须住谷底一晚才值得（爬下去 40 分钟爬上去 1 小时）\n2. 手机无信号心理准备\n3. 门票 ¥50\n4. 自带日用品（谷底物资少）\n5. 穿登山鞋石阶湿滑",
     highlight: "1336 级石阶下·谷底桃花源·无信号·神农架秘境",
     xhsQuote: "「四面 500m 绝壁围着一个古村，手机无信号真正世外桃源」",
-    xhsHeat: { heat: "极高", notes: "1k+ 笔记·数字戒断打卡地", trending: "爆", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "1k+ 笔记·数字戒断打卡地 · 1336 级石阶下 · 谷底桃花源", trending: "爆", tier: "S" },
     tags: ["古村", "秘境", "徒步", "无信号", "神农架"],
     image: "assets/images/dest-es-1619.webp",
     imageQuery: "Luyuanping ancient village cliff valley"
@@ -479,7 +479,7 @@ const DESTINATIONS_ES = [
     tips: "1. 雨衣必穿（瀑布后栈道直接浇透）\n2. 旺季 5-10 月水量最大\n3. 与三峡人家/三峡大坝联游\n4. 高铁 2h 比自驾快\n5. 门票 ¥128 含观光车",
     highlight: "华中第一瀑·水帘洞栈道·102m 高·三峡腹地",
     xhsQuote: "「瀑布后栈道走过去直接浇透，比黄果树野多了」",
-    xhsHeat: { heat: "高", notes: "900+ 笔记·三峡必打卡", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "900+ 笔记·三峡必打卡 · 华中第一瀑 · 水帘洞栈道", trending: "稳定", tier: "A+" },
     tags: ["瀑布", "栈道", "三峡", "宜昌", "华中第一"],
     image: "assets/images/dest-es-1620.webp",
     imageQuery: "Three Gorges Waterfall Yichang China"
@@ -502,7 +502,7 @@ const DESTINATIONS_ES = [
     tips: "1. 游船看全景最美\n2. 登神女峰观景台徒步 1 小时\n3. 秋天红叶最震撼\n4. 可对接长江邮轮\n5. 巫山烤鱼+脆李必尝",
     highlight: "巫峡十二峰·神女独柱·屈原毛主席诗·长江三峡",
     xhsQuote: "「船过巫峡那一刻神女峰独柱远望，楚辞毛主席诗现实看到了」",
-    xhsHeat: { heat: "高", notes: "700+ 笔记·三峡标志", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "700+ 笔记·三峡标志 · 巫峡十二峰 · 神女独柱", trending: "稳定", tier: "A+" },
     tags: ["三峡", "巫峡", "诗歌", "神女峰", "巫山"],
     image: "assets/images/dest-es-1621.webp",
     imageQuery: "Wushan Goddess Peak Three Gorges"
@@ -525,7 +525,7 @@ const DESTINATIONS_ES = [
     tips: "1. 索道从市区直上必玩\n2. 玻璃栈道恐高慎走\n3. 与武陵源+黄龙洞联游 3-4 天\n4. 《天门狐仙》演出必看\n5. 秋季红叶云海最美",
     highlight: "世界最长索道·天门洞·玻璃栈道·天门狐仙演出",
     xhsQuote: "「天门洞 131m 高仰看像天开了门，玻璃栈道脚软但值」",
-    xhsHeat: { heat: "极高", notes: "3k+ 笔记·湘西顶流", trending: "持续", tier: "S+" },
+    xhsHeat: { heat: "极高", notes: "3k+ 笔记·湘西顶流 · 世界最长索道 · 天门洞", trending: "持续", tier: "S+" },
     tags: ["神山", "索道", "玻璃栈道", "张家界", "天门洞"],
     image: "assets/images/dest-es-1622.webp",
     imageQuery: "Tianmen Mountain Zhangjiajie cable car"
@@ -548,7 +548,7 @@ const DESTINATIONS_ES = [
     tips: "1. 必住山顶丁香榕村看日出\n2. 3 天 2 夜才玩得完\n3. 门票 ¥245 4 日有效\n4. 百龙天梯+观光车必买\n5. 秋季红叶云海最美",
     highlight: "世界自然遗产·阿凡达原型·3000 石峰·百龙天梯",
     xhsQuote: "「百龙天梯秒升山顶那一刻直接傻眼，3000 石峰穿越潘多拉星」",
-    xhsHeat: { heat: "极高", notes: "1w+ 笔记·湘西顶流", trending: "持续", tier: "S++" },
+    xhsHeat: { heat: "极高", notes: "1w+ 笔记·湘西顶流 · 世界自然遗产 · 阿凡达原型", trending: "持续", tier: "S++" },
     tags: ["世界遗产", "阿凡达", "石峰", "张家界", "徒步"],
     image: "assets/images/dest-es-1623.webp",
     imageQuery: "Wulingyuan Zhangjiajie stone pillars Avatar"
@@ -571,7 +571,7 @@ const DESTINATIONS_ES = [
     tips: "1. 定海神针必看（象征性景点）\n2. 地下河游船必坐（含在门票）\n3. 穿外套（洞内 15℃）\n4. 与武陵源联游一天搞定\n5. 穿防滑鞋",
     highlight: "定海神针·地下河游船·3 亿年钟乳石",
     xhsQuote: "「定海神针保了 2 亿元，比腾龙洞小但精致得多」",
-    xhsHeat: { heat: "中高", notes: "600+ 笔记·张家界经典", trending: "稳定", tier: "A" },
+    xhsHeat: { heat: "中高", notes: "600+ 笔记·张家界经典 · 定海神针 · 地下河游船", trending: "稳定", tier: "A" },
     tags: ["溶洞", "钟乳石", "地下河", "张家界", "喀斯特"],
     image: "assets/images/dest-es-1624.webp",
     imageQuery: "Huanglong Cave Zhangjiajie stalactites"
@@ -594,7 +594,7 @@ const DESTINATIONS_ES = [
     tips: "1. 开车过桥本身免费\n2. 观光索道 ¥108 俯瞰最美\n3. 与凤凰古城联游（车程 1 小时）\n4. 与张家界联游（车程 2 小时）\n5. 夕阳拍桥出片",
     highlight: "世界第一悬索桥·355m 高·13 道弯盘山公路",
     xhsQuote: "「开车上桥那一刻双脚像踩在云里，下面 13 道弯盘山是奇迹」",
-    xhsHeat: { heat: "高", notes: "800+ 笔记·湘西网红", trending: "稳定", tier: "A+" },
+    xhsHeat: { heat: "高", notes: "800+ 笔记·湘西网红 · 世界第一悬索桥 · 355m 高", trending: "稳定", tier: "A+" },
     tags: ["桥梁", "公路", "湘西", "工程奇观", "自驾"],
     image: "assets/images/dest-es-1625.webp",
     imageQuery: "Aizhai suspension bridge Xiangxi China"
@@ -617,7 +617,7 @@ const DESTINATIONS_ES = [
     tips: "1. 古城免费进入，9 景联票 ¥148\n2. 必住沱江畔临水民宿看夜景\n3. 沱江泛舟 ¥30 必坐\n4. 与矮寨大桥联游（1 小时）\n5. 早起拍北门吊脚楼出片",
     highlight: "沈从文故乡·沱江吊脚楼·跳岩·中国最美小城",
     xhsQuote: "「沱江灯火倒影那一刻懂了《边城》为什么写得那么湿那么美」",
-    xhsHeat: { heat: "极高", notes: "5k+ 笔记·湘西经典", trending: "持续", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "5k+ 笔记·湘西经典 · 沈从文故乡 · 沱江吊脚楼", trending: "持续", tier: "S" },
     tags: ["古城", "沱江", "沈从文", "湘西", "苗族"],
     image: "assets/images/dest-es-1626.webp",
     imageQuery: "Fenghuang Ancient Town Tuojiang River night"
@@ -640,7 +640,7 @@ const DESTINATIONS_ES = [
     tips: "1. 5A 景区免费极少见\n2. 风雨廊桥必拍\n3. 与蒲花暗河+小南海联游\n4. 漂流限夏季 6-9 月\n5. 绿豆粉是非遗必尝",
     highlight: "亚洲第一风雨廊桥·明清商贸古镇·阿蓬江",
     xhsQuote: "「亚洲第一风雨桥 658m 长，走一半下雨屋檐避雨古人真聪明」",
-    xhsHeat: { heat: "中高", notes: "500+ 笔记·渝东南经典", trending: "稳定", tier: "A" },
+    xhsHeat: { heat: "中高", notes: "500+ 笔记·渝东南经典 · 亚洲第一风雨廊桥 · 明清商贸古镇", trending: "稳定", tier: "A" },
     tags: ["古镇", "风雨桥", "重庆", "黔江", "土家"],
     image: "assets/images/dest-es-1627.webp",
     imageQuery: "Zhuoshui Ancient Town windbridge Qianjiang"
@@ -663,7 +663,7 @@ const DESTINATIONS_ES = [
     tips: "1. 漂流 6-9 月限定\n2. 15km 漂流带防水包\n3. 与濯水古镇一天玩完\n4. 黔江鸡杂必尝\n5. 与小南海联游",
     highlight: "全国最长漂流·神龟峡·蒲花暗河·渝东南秘境",
     xhsQuote: "「阿蓬江 15km 漂流比猛洞河野，3 小时不重样」",
-    xhsHeat: { heat: "中", notes: "300+ 笔记·渝东南秘境", trending: "上升", tier: "B+" },
+    xhsHeat: { heat: "中", notes: "300+ 笔记·渝东南秘境 · 全国最长漂流 · 神龟峡", trending: "上升", tier: "B+" },
     tags: ["漂流", "湿地", "峡谷", "黔江", "重庆"],
     image: "assets/images/dest-es-1628.webp",
     imageQuery: "Apeng River rafting Qianjiang wetland"
@@ -686,7 +686,7 @@ const DESTINATIONS_ES = [
     tips: "1. 张关合渣最正宗（本地人连锁 20+家店）\n2. 腊蹄子火锅是国家地理标志必点\n3. 合渣 ¥18/碗性价比极高\n4. 鲊广椒是非遗只有恩施有\n5. 人均 ¥80-120 可吃饱吃好",
     highlight: "省级非遗·合渣+腊蹄子火锅·张关合渣本地连锁",
     xhsQuote: "「合渣+腊蹄子火锅+土豆饺子一顿吃下来才懂什么叫靠山吃山」",
-    xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施美食顶流", trending: "持续", tier: "S" },
+    xhsHeat: { heat: "极高", notes: "2k+ 笔记·恩施美食顶流 · 省级非遗 · 合渣+腊蹄子火锅", trending: "持续", tier: "S" },
     tags: ["美食", "合渣", "非遗", "土家", "腊蹄子"],
     image: "assets/images/dest-es-1629.webp",
     imageQuery: "Enshi Tujia Heza stew dinner"
