@@ -6,3 +6,15 @@ node_modules/
 *.log
 PROJECT-HANDOFF.md
 gen-remaining-sz-stamps.sh
+
+# local audit / research / queue artifacts
+thumb-audit.html
+thumb-audit-thumbs/
+assets/images-primitive-backup/
+all-cities-gap-queue.json
+all-cities-gap-queue-report.json
+all-cities-real-gap-queue.json
+qingdao-regen-queue.json
+suzhou-1030-queue.json
+xhs-research/
+prompts-legends-*.txt
