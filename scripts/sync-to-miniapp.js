@@ -203,6 +203,26 @@ if (!APPLY) {
   process.exit(0);
 }
 
+// Flatten xhsHeat for miniapp consumers.
+// Web data stores xhsHeat as { heat, notes, trending, tier } (object).
+// Miniapp code expects `d.xhsHeat` as scalar number (sort weight, heat-bar width %, heatLabel threshold).
+// We flatten: d.xhsHeat = Number(heat); d.xhsHeatDetail = { notes, trending, tier } (preserved for detail modal).
+// Handles scalar/string/object input; missing or unparseable → xhsHeat undefined (miniapp falls back to || 0).
+for (const city of Object.keys(DESTINATIONS)) {
+  for (const d of DESTINATIONS[city]) {
+    const raw = d.xhsHeat;
+    if (raw && typeof raw === 'object') {
+      const num = typeof raw.heat === 'number' ? raw.heat
+                : typeof raw.heat === 'string' ? ({S:92,A:82,B:65,C:50,D:30,'S+':95,'极高':90,'顶流':92,'爆':90,'高':82,'中高':72,'中':60,'低':40}[raw.heat] ?? 30)
+                : 30;
+      d.xhsHeat = num;
+      d.xhsHeatDetail = { notes: raw.notes || '', trending: raw.trending || '', tier: raw.tier || '' };
+    } else if (typeof raw === 'string') {
+      d.xhsHeat = ({S:92,A:82,B:65,C:50,D:30,'S+':95,'极高':90,'顶流':92,'爆':90,'高':82,'中高':72,'中':60,'低':40}[raw] ?? 30);
+    }
+  }
+}
+
 // Write Mini data.js
 const currentData = fs.readFileSync(miniDataPath, 'utf-8');
 const cdnBaseIdx = currentData.indexOf('\nconst CDN_BASE');
