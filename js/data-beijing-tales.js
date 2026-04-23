@@ -590,7 +590,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜",
     highlight: "废弃商场美学·时间胶囊·地下世界",
     tags: ["前门地下街","地下","城市","市中心"],
-    imageQuery: "前门地下街 underground urban Beijing"
+    imageQuery: "前门地下街 underground urban Beijing",
+    xhsQuote: "前门脚下的时间胶囊🕰️霓虹灯牌还停在 80 年代，电梯按钮锈成红色——地面是旅游人潮，地下是一个被封存的老北京"
   },
   {
     id: 548,
@@ -616,7 +617,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "秋天天高云淡时观景最佳",
     highlight: "隐藏观景点·北京最高城楼·城门历史",
     tags: ["正阳门城楼内部","建筑","历史","市中心"],
-    imageQuery: "正阳门城楼内部 architecture history Beijing"
+    imageQuery: "正阳门城楼内部 architecture history Beijing",
+    xhsQuote: "正阳门大多数人只从下面路过🏯其实能上去——北京城最高的城楼，内部有古代城门构造展，从上面俯瞰天安门广场的角度全城独一份"
   },
   {
     id: 549,
@@ -708,7 +710,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "春秋最佳，夏天荷花映辟雍",
     highlight: "皇帝讲堂·四面环水·天圆地方",
     tags: ["国子监辟雍","教育","建筑","城内"],
-    imageQuery: "国子监辟雍 education architecture Beijing"
+    imageQuery: "国子监辟雍 education architecture Beijing",
+    xhsQuote: "国子监深处那座四面环水的方形大殿🏛️乾隆为自己讲学专门建的——天圆地方的设计现存全国唯一，没几个游客知道有这么一处"
   },
   {
     id: 552,
@@ -1134,7 +1137,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "秋冬最佳，涮肉季节",
     highlight: "北京最好的羊肉·千年回族街·凌晨排队仪式",
     tags: ["牛街最后的传统屠宰坊参观","美食","文化","市中心"],
-    imageQuery: "牛街最后的传统屠宰坊参观 food culture Beijing"
+    imageQuery: "牛街最后的传统屠宰坊参观 food culture Beijing",
+    xhsQuote: "牛街凌晨 4 点就排起队🐏千年回族老街，北京最好的羊肉从这里分割——看一次传统屠宰的规矩和敬畏，才知道"清真"二字的分量"
   },
   {
     id: 565,
@@ -1727,7 +1731,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "晴天最佳",
     highlight: "偷天换日·木冒琉璃·骗过乾隆",
     tags: ["故宫九龙壁修补秘密","皇家","秘密","市中心"],
-    imageQuery: "故宫九龙壁修补秘密 imperial secret Beijing"
+    imageQuery: "故宫九龙壁修补秘密 imperial secret Beijing",
+    xhsQuote: "故宫九龙壁第 3 条龙的腹部其实是木头的🐉工匠烧坏了来不及重做，连夜刷漆糊过乾隆——270 年了没被换掉，眼尖的能看出颜色微差"
   },
   {
     id: 583,
@@ -2518,7 +2523,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜",
     highlight: "北京最古胡同·元代古塔·鲁迅暂居地",
     tags: ["砖塔胡同最古老","胡同","历史","市中心"],
-    imageQuery: "砖塔胡同最古老 hutong history Beijing"
+    imageQuery: "砖塔胡同最古老 hutong history Beijing",
+    xhsQuote: "砖塔胡同是北京有文字记载最老的一条🏯元代砖塔到现在还立在胡同口，鲁迅 1923 年在这儿住过——走进去就是 700 年北京的折叠时间"
   },
   {
     id: 607,
@@ -3078,7 +3084,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "冬天吃最暖和",
     highlight: "百年卤煮·苏造肉后裔·老北京内脏美学",
     tags: ["卤煮火烧小肠陈","美食","老字号","市中心"],
-    imageQuery: "卤煮火烧小肠陈 food time-honored brand Beijing"
+    imageQuery: "卤煮火烧小肠陈 food time-honored brand Beijing",
+    xhsQuote: "小肠陈传到第四代🍲百年卤煮火烧——大肠肥厚入味，火烧吸满汤汁咬开烫嘴，慈禧这辈子也没吃到过的平民美味"
   },
   {
     id: 624,
@@ -3104,7 +3111,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜",
     highlight: "北京豆汁·酸臭成瘾·京城饮食灵魂",
     tags: ["豆汁儿锦馨","美食","传统","市中心"],
-    imageQuery: "豆汁儿锦馨 food tradition Beijing"
+    imageQuery: "豆汁儿锦馨 food tradition Beijing",
+    xhsQuote: "第一口豆汁儿基本都想吐🥣但老北京会告诉你"喝不下去才是正宗的"——锦馨是绿豆发酵的最后几家正统，咸菜丝配焦圈，刷新你对酸臭的理解"
   },
   {
     id: 625,
@@ -3130,7 +3138,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜",
     highlight: "搪瓷大碗·八碟面码·老北京仪式感",
     tags: ["炸酱面海碗居","美食","传统","城内"],
-    imageQuery: "炸酱面海碗居 food tradition Beijing"
+    imageQuery: "炸酱面海碗居 food tradition Beijing",
+    xhsQuote: "一碗炸酱面要上八个小碟面码🍜海碗居搪瓷大碗端上桌的声响就是北京——黄瓜丝、萝卜丁、豆芽、青豆、蒜末一样一样拌进去才有仪式感"
   },
   {
     id: 626,
@@ -3156,7 +3165,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "冬天最佳",
     highlight: "铜锅清汤·手切苏尼特羊·北京冬天灵魂",
     tags: ["涮羊肉南门涮肉","美食","传统","市中心"],
-    imageQuery: "涮羊肉南门涮肉 food tradition Beijing"
+    imageQuery: "涮羊肉南门涮肉 food tradition Beijing",
+    xhsQuote: "铜锅清汤涮羊肉🥘南门手切苏尼特羊肉 7 秒出锅，粉嫩如樱花——北京人冬天的魂，韭菜花配麻酱再来个芝麻烧饼才叫对味"
   },
   {
     id: 627,
@@ -3182,7 +3192,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "秋冬最佳",
     highlight: "南宛北季·炙子烤肉·武吃豪迈",
     tags: ["烤肉季烤肉宛","美食","老字号","市中心"],
-    imageQuery: "烤肉季烤肉宛 food time-honored brand Beijing"
+    imageQuery: "烤肉季烤肉宛 food time-honored brand Beijing",
+    xhsQuote: "百年前北京烤肉江湖分"南宛北季"🔥季城外武吃豪迈，宛城内文吃讲究——大铁炙子噼啪作响，肉汁滴在松木上那股香气至今无人替代"
   },
   {
     id: 628,
@@ -3208,7 +3219,8 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜，冬天吃最暖和",
     highlight: "城门钉形状·汤汁横流·正在消失的味道",
     tags: ["门钉肉饼","美食","传统","市中心"],
-    imageQuery: "门钉肉饼 food tradition Beijing"
+    imageQuery: "门钉肉饼 food tradition Beijing",
+    xhsQuote: "一口咬开门钉肉饼🥟汤汁直接溅一桌——圆鼓鼓像城门上的铜钉，老北京胡同里正在消失的味道，找到一家算一家"
   },
   {
     id: 629,
@@ -3234,6 +3246,7 @@ const DESTINATIONS_BJ_TALES = [
     bestSeason: "四季皆宜",
     highlight: "北京十三绝·艾窝窝驴打滚·宫廷流落民间",
     tags: ["护国寺艾窝窝驴打滚","美食","传统","市中心"],
-    imageQuery: "护国寺艾窝窝驴打滚 food tradition Beijing"
+    imageQuery: "护国寺艾窝窝驴打滚 food tradition Beijing",
+    xhsQuote: "艾窝窝糯米裹豆沙撒椰丝🍬驴打滚黄豆粉一层层扑满——北京十三绝里的宫廷糕点，护国寺小吃店还照着老方子做，便宜到不忍心说"
   }
 ];
