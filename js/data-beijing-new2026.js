@@ -24,7 +24,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜，换季打折最划算",
     highlight: "奢侈品·艺术装置·美食超市",
     tags: ["北京SKP","购物","美食","城内"],
-    imageQuery: "北京SKP shopping food Beijing"
+    imageQuery: "北京SKP shopping food Beijing",
+    xhsQuote: "SKP-S 沉浸式数字艺术装置✨B1 甄选超市堪比全球美食博览会——在北京，这里不是一座百货公司，是能逛一整天的奢华宇宙"
   },
   {
     id: 651,
@@ -50,7 +51,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "21区BLOCK·网红美食·潮流购物",
     tags: ["合生汇","美食","购物","城内"],
-    imageQuery: "合生汇 food shopping Beijing"
+    imageQuery: "合生汇 food shopping Beijing",
+    xhsQuote: "地下二层 21 区 BLOCK🍜一条模拟街区把全北京最火的网红餐饮都塞了进来——排队两小时吃一顿是常态，但年轻人就认这个热闹劲儿"
   },
   {
     id: 652,
@@ -76,7 +78,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜，夏季户外活动最丰富",
     highlight: "演唱会·精酿酒吧·冰上运动",
     tags: ["华熙LIVE·五棵松","购物","娱乐","城内"],
-    imageQuery: "华熙LIVE·五棵松 shopping entertainment Beijing"
+    imageQuery: "华熙LIVE·五棵松 shopping entertainment Beijing",
+    xhsQuote: "白天喝精酿🍺晚上可能撞见万人演唱会——凯迪拉克中心外一圈买手店加冰上运动中心，五棵松把体育、音乐和商业揉成了一种生活方式"
   },
   {
     id: 653,
@@ -102,7 +105,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "先锋设计·下沉广场·独立品牌",
     tags: ["西单更新场","购物","文创","城内"],
-    imageQuery: "西单更新场 shopping culture creative Beijing"
+    imageQuery: "西单更新场 shopping culture creative Beijing",
+    xhsQuote: "西单老商圈的新物种🛍️不卖传统大牌，专做小众设计师和独立咖啡——下沉广场和不规则几何外立面本身就是一个打卡点"
   },
   {
     id: 654,
@@ -128,7 +132,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "LED天幕·空中花园·北京首店",
     tags: ["THE BOX朝外","购物","美食","城内"],
-    imageQuery: "THE BOX朝外 shopping food Beijing"
+    imageQuery: "THE BOX朝外 shopping food Beijing",
+    xhsQuote: "朝外大街凭空冒出来的"盒子"📦中庭那块巨型 LED 天幕加多层退台空中花园——2024 年北京商业最大的惊喜，还没开业小红书就炸了"
   },
   {
     id: 655,
@@ -154,7 +159,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "亲子商业·南城地标·家庭消费",
     tags: ["大悦春风里","购物","美食","亲子","城内"],
-    imageQuery: "大悦春风里 shopping food family Beijing"
+    imageQuery: "大悦春风里 shopping food family Beijing",
+    xhsQuote: "南城终于有了不用专门进城就能逛的好商场🎈大悦城的基因加上大兴的烟火气——住南四环到南六环的家庭周末再也不用往北跑"
   },
   {
     id: 656,
@@ -180,7 +186,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "运河主题·室内滑雪·东部首店",
     tags: ["湾里","购物","美食","娱乐","城内"],
-    imageQuery: "湾里 shopping food entertainment Beijing"
+    imageQuery: "湾里 shopping food entertainment Beijing",
+    xhsQuote: "通州副中心 2025 年底开业的巨无霸📐40 万方体量碾压朝阳所有商场，室内运河水景加滑雪场——城市副中心终于有了值得专程去的消费目的地"
   },
   {
     id: 657,
@@ -206,7 +213,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "太古品质·艺术画廊·精品餐饮",
     tags: ["北京太古坊","购物","文创","城内"],
-    imageQuery: "北京太古坊 shopping culture creative Beijing"
+    imageQuery: "北京太古坊 shopping culture creative Beijing",
+    xhsQuote: "太古里是派对，太古坊是一场精致的下午茶☕商务社交加艺术画廊，低密度开放街区——太古地产在北京的第二张答卷，质感比三里屯更内敛"
   },
   {
     id: 658,
@@ -232,7 +240,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "春秋最佳，春天桃花+红墙绝美",
     highlight: "红墙秘境·汉服圣地·免费打卡",
     tags: ["菖蒲河公园","拍照","文化","市中心"],
-    imageQuery: "菖蒲河公园 photography culture Beijing"
+    imageQuery: "菖蒲河公园 photography culture Beijing",
+    xhsQuote: "就在故宫东墙外📷510 米红墙步道，垂柳映河道，穿汉服的姑娘把它变成了北京最隐秘的出片圣地——免费"
   },
   {
     id: 659,
@@ -258,7 +267,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "4月中旬-5月初（仅花期）",
     highlight: "万亩梨花·山谷花海·小众赏花",
     tags: ["镇罗营梨花谷","赏花","自然","近郊"],
-    imageQuery: "镇罗营梨花谷 flowers nature Beijing"
+    imageQuery: "镇罗营梨花谷 flowers nature Beijing",
+    xhsQuote: "平谷的梨花不是几棵，是漫山遍野铺天盖地的白🌸4 月中到 5 月初盛开，站山坡上看整条山谷像落了一层春雪——比挤爆的桃花节小众得多"
   },
   {
     id: 660,
@@ -284,7 +294,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "春夏最佳，花园最茂盛",
     highlight: "花园商业·疗愈空间·精品咖啡",
     tags: ["友谊花园","拍照","美食","城内"],
-    imageQuery: "友谊花园 photography food Beijing"
+    imageQuery: "友谊花园 photography food Beijing",
+    xhsQuote: "把花园搬进商业空间🌿或者说把店藏进花园里——植物和阳光重新定义了"逛街"，周末想放空的都市人全在这里"
   },
   {
     id: 661,
@@ -310,7 +321,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜，傍晚亮灯后最美",
     highlight: "大师建筑·文艺电影·独立书店",
     tags: ["当代MOMA","文创","拍照","城内"],
-    imageQuery: "当代MOMA culture creative photography Beijing"
+    imageQuery: "当代MOMA culture creative photography Beijing",
+    xhsQuote: "东直门里的立体城市🏙️斯蒂芬·霍尔用空中连廊把几栋楼连成一片——百老汇电影中心加库布里克书店，北京文艺青年的精神据点"
   },
   {
     id: 662,
@@ -336,7 +348,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "春秋最佳，夏季胡同里也凉快",
     highlight: "胡同新生·独立小店·手作体验",
     tags: ["大吉巷","文创","美食","城内"],
-    imageQuery: "大吉巷 culture creative food Beijing"
+    imageQuery: "大吉巷 culture creative food Beijing",
+    xhsQuote: "老胡同的新故事🏮不是南锣那种旅游纪念品一条街——灰砖红门之间藏的全是独立设计师工作室和手作工坊，北京最有味道的新胡同"
   },
   {
     id: 663,
@@ -362,7 +375,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "当代艺术·非营利画廊·学术展览",
     tags: ["泰康空间","文创","拍照","城内"],
-    imageQuery: "泰康空间 culture creative photography Beijing"
+    imageQuery: "泰康空间 culture creative photography Beijing",
+    xhsQuote: "798 里最不商业的角落🎨别家都变了网红打卡，泰康还在认真做展览——非营利、免费、学术策展，这种坚持本身就是一件艺术品"
   },
   {
     id: 664,
@@ -388,7 +402,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "夏季最佳（户外烧烤季），冬季室内也不错",
     highlight: "深夜烧烤·小腰文化·望京夜生活",
     tags: ["望京小腰","美食","夜生活","城内"],
-    imageQuery: "望京小腰 food nightlife Beijing"
+    imageQuery: "望京小腰 food nightlife Beijing",
+    xhsQuote: "在望京，"小腰"不是店名是一种生活方式🔥下班约几个人炭火烤腰子配冰啤——北京夜晚该有的样子全在这一条街"
   },
   {
     id: 665,
@@ -414,7 +429,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "老北京小吃·护国寺总店·胡同文化",
     tags: ["护国寺街","美食","文化","城内"],
-    imageQuery: "护国寺街 food culture Beijing"
+    imageQuery: "护国寺街 food culture Beijing",
+    xhsQuote: "豆汁焦圈、驴打滚、艾窝窝——那些快消失在外卖 APP 里的老北京味道🍡护国寺街还在原汁原味地供应，北京小吃的活化石"
   },
   {
     id: 666,
@@ -440,7 +456,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜，夏季户外位最抢手",
     highlight: "独立咖啡·精酿酒吧·Live house",
     tags: ["鼓楼东大街","美食","文创","夜生活","城内"],
-    imageQuery: "鼓楼东大街 food culture creative nightlife Beijing"
+    imageQuery: "鼓楼东大街 food culture creative nightlife Beijing",
+    xhsQuote: "南锣鼓巷是给游客的，鼓楼东大街才是给北京人的☕白天手冲加 vintage，入夜精酿加 live house——TimeOut 刚评出的全城最酷街区"
   },
   {
     id: 667,
@@ -466,7 +483,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜",
     highlight: "宇宙中心·国际美食·大学文化",
     tags: ["五道口","美食","购物","城内"],
-    imageQuery: "五道口 food shopping Beijing"
+    imageQuery: "五道口 food shopping Beijing",
+    xhsQuote: "被叫"宇宙中心"不是吹的🌏清华北大的学生、留学生、互联网人、居民全混在这几个路口——北京最密集的国际餐饮都挤在这"
   },
   {
     id: 668,
@@ -492,7 +510,8 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "四季皆宜（室内项目）",
     highlight: "专业赛道·速度体验·团建约会",
     tags: ["Red1卡丁车","运动","娱乐","城内"],
-    imageQuery: "Red1卡丁车 sports entertainment Beijing"
+    imageQuery: "Red1卡丁车 sports entertainment Beijing",
+    xhsQuote: "专业赛道加进口车加全封闭恒温🏁穿上赛车服那一刻你就是秋名山车神——北京近年最火的团建和约会场地"
   },
   {
     id: 669,
@@ -518,6 +537,7 @@ const DESTINATIONS_BJ_2026 = [
     bestSeason: "夏秋最佳，夜间打卡全年可",
     highlight: "北京塞纳河·夜间灯光·水上皮划艇",
     tags: ["亮马河国际风情水岸","拍照","夜生活","城内"],
-    imageQuery: "亮马河国际风情水岸 photography nightlife Beijing"
+    imageQuery: "亮马河国际风情水岸 photography nightlife Beijing",
+    xhsQuote: "谁能想到北京也有了自己的塞纳河🌉臭水沟改造成滨水步道加景观灯光带——夜里沿蓝色港湾到颐堤港走一段，比巴黎松弛得多"
   }
 ];
