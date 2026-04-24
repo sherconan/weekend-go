@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v20 — full 10-city (加 CQ/ES) + planner + dest offline support
-const CACHE_NAME = 'weekend-go-v20';
+// Weekend-Go Service Worker v21 — nav layout fix + XHS prefix purge (2026-04-24)
+const CACHE_NAME = 'weekend-go-v21';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 
