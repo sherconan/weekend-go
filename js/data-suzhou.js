@@ -492,7 +492,7 @@ const DESTINATIONS_SU = [
     highlight: "乾隆六下江南行宫，地铁直达",
     tags: ["免费进镇", "地铁可达", "乾隆行宫"],
     imageQuery: "mudu ancient town suzhou",
-    xhsQuote: "「乾隆六下江南五次驻跸于此，严家花园、虹饮山房保留至今。距苏州市区最近、地铁直达的古镇，古镇免费进入，香溪河上可以坐摇橹船。」— 综合多篇 XHS 游记",
+    xhsQuote: "「乾隆六下江南五次驻跸于此，严家花园、虹饮山房保留至今。距苏州市区最近、地铁直达的古镇，古镇免费进入，香溪河上可以坐摇橹船。」— 综合多篇 小红书 游记",
     xhsHeat: {
       heat: "中热（地铁直达，便利顶流）",
       notes: "地铁 1 号线终点 + 免费进镇；严家花园 & 虹饮山房乾隆行宫打卡点集中",
@@ -525,7 +525,7 @@ const DESTINATIONS_SU = [
     highlight: "16 座博物馆 + 陈妃水冢",
     tags: ["小众", "江南六大古镇候补", "博物馆"],
     imageQuery: "jinxi ancient water town",
-    xhsQuote: "「锦溪古镇商业化程度低，水质较清，青石板河道幽静。镇内有 16 家小博物馆，廊桥、古莲池、通神御院等是标志景观。江苏水韵年卡可免票。」— 综合 XHS 小众古镇攻略",
+    xhsQuote: "「锦溪古镇商业化程度低，水质较清，青石板河道幽静。镇内有 16 家小博物馆，廊桥、古莲池、通神御院等是标志景观。江苏水韵年卡可免票。」— 综合 小红书 小众古镇攻略",
     xhsHeat: {
       heat: "低-中热（小众）",
       notes: "江南六大古镇候补 / 昆山境内 / 与周庄车程 15 分钟可连游",
@@ -591,7 +591,7 @@ const DESTINATIONS_SU = [
     highlight: "蚕丝之乡，1200 年古镇",
     tags: ["免费", "小众", "蚕丝"],
     imageQuery: "zhenze ancient town suzhou",
-    xhsQuote: "「震泽古镇比较小众，可以错峰去。有 1200 年历史，镇内有慈云寺塔（北宋）、师俭堂（国保）、文昌阁。蚕丝被是当地标志产业。」— 综合 XHS 小众古镇攻略",
+    xhsQuote: "「震泽古镇比较小众，可以错峰去。有 1200 年历史，镇内有慈云寺塔（北宋）、师俭堂（国保）、文昌阁。蚕丝被是当地标志产业。」— 综合 小红书 小众古镇攻略",
     xhsHeat: {
       heat: "低热",
       notes: "游客稀少 + 完全免费，深度游首选",
@@ -725,7 +725,7 @@ const DESTINATIONS_SU = [
     highlight: "苏州最文艺的街",
     tags: ["免费", "咖啡", "文艺"],
     imageQuery: "shiquan street suzhou",
-    xhsQuote: "「苏州十全街是文艺气息最浓的小街，网师园、沧浪亭都在附近。两旁精品咖啡、私房菜、酒吧、文创小店密集。」— 综合 XHS 苏州 CityWalk 攻略",
+    xhsQuote: "「苏州十全街是文艺气息最浓的小街，网师园、沧浪亭都在附近。两旁精品咖啡、私房菜、酒吧、文创小店密集。」— 综合 小红书 苏州 CityWalk 攻略",
     xhsHeat: {
       heat: "中热",
       notes: "苏州年轻人最爱的慢生活区 / 相比平江路山塘街商业化程度更低",
@@ -791,7 +791,7 @@ const DESTINATIONS_SU = [
     highlight: "复古菜场 + 宋代双塔",
     tags: ["免费", "网红市集", "宋代古塔"],
     imageQuery: "shuangta market suzhou",
-    xhsQuote: "「复古菜场美食文创兼具，市井与文艺相融。原为定慧寺菜场，2019 年重新设计后爆火，红砖墙、绿屋顶、马赛克地砖充满复古感。」— 综合多篇 XHS 苏州市集打卡笔记",
+    xhsQuote: "「复古菜场美食文创兼具，市井与文艺相融。原为定慧寺菜场，2019 年重新设计后爆火，红砖墙、绿屋顶、马赛克地砖充满复古感。」— 综合多篇 小红书 苏州市集打卡笔记",
     xhsHeat: {
       heat: "高热",
       notes: "网红打卡市集 / 好人面馆三虾面爆款 / 旁边宋代双塔免费",
@@ -826,7 +826,7 @@ const DESTINATIONS_SU = [
     highlight: "张继诗中千年古刹",
     tags: ["4A景区", "1500年历史", "文学"],
     imageQuery: "hanshan temple suzhou",
-    xhsQuote: "「姑苏城外寒山寺，夜半钟声到客船。」— 张继《枫桥夜泊》。XHS 游记普遍提到：除夕听钟声需提前数月抢票，素斋面性价比高；敲钟 3 次 ¥5",
+    xhsQuote: "「姑苏城外寒山寺，夜半钟声到客船。」— 张继《枫桥夜泊》。小红书 游记普遍提到：除夕听钟声需提前数月抢票，素斋面性价比高；敲钟 3 次 ¥5",
     xhsHeat: {
       heat: "中热（文学 IP 向）",
       notes: "1500 年古刹 + 张继诗 IP 加持 / 游客集中度一般 / 冷门评价两极",
@@ -925,7 +925,7 @@ const DESTINATIONS_SU = [
     highlight: "观前街由来 + 宋代木构",
     tags: ["1700年历史", "国保", "道观"],
     imageQuery: "xuanmiao temple suzhou",
-    xhsQuote: "「观前街因玄妙观而得名，三清殿是江南现存最大宋代木构殿宇（1179 年建），被列入国保。」— 综合 XHS 历史文化科普笔记",
+    xhsQuote: "「观前街因玄妙观而得名，三清殿是江南现存最大宋代木构殿宇（1179 年建），被列入国保。」— 综合 小红书 历史文化科普笔记",
     xhsHeat: {
       heat: "中低热",
       notes: "观前街核心地标 / 1700 年道观 / 国保三清殿",
@@ -993,7 +993,7 @@ const DESTINATIONS_SU = [
     highlight: "比本馆大 3 倍 + 儿童馆",
     tags: ["免费", "新馆", "亲子"],
     imageQuery: "suzhou museum west branch",
-    xhsQuote: "「苏博西馆比本馆大 3 倍，展品更全人更少。」— 综合 XHS 苏博打卡笔记 — 本馆约不上就去西馆是主流攻略建议",
+    xhsQuote: "「苏博西馆比本馆大 3 倍，展品更全人更少。」— 综合 小红书 苏博打卡笔记 — 本馆约不上就去西馆是主流攻略建议",
     xhsHeat: {
       heat: "高热（分流首选）",
       notes: "本馆约不上的首选替代 / 比本馆好约 / 10 个方盒子德国 GMP 设计",
@@ -1026,7 +1026,7 @@ const DESTINATIONS_SU = [
     highlight: "免费 + 不用预约 + 火车站旁",
     tags: ["免费", "便捷", "亲子"],
     imageQuery: "suzhou silk museum",
-    xhsQuote: "「紧邻苏州站的丝绸博物馆，4000 年丝绸历史全解读。现场还有桑蚕饲养、缫丝演示（季节性），互动性强。」— 综合 XHS 苏州博物馆攻略",
+    xhsQuote: "「紧邻苏州站的丝绸博物馆，4000 年丝绸历史全解读。现场还有桑蚕饲养、缫丝演示（季节性），互动性强。」— 综合 小红书 苏州博物馆攻略",
     xhsHeat: {
       heat: "低中热（亲子向）",
       notes: "免费免预约（罕见）/ 苏州站 6 号口 5 分钟 / 蚕宝宝互动",
@@ -1059,7 +1059,7 @@ const DESTINATIONS_SU = [
     highlight: "全国唯一昆曲博物馆 + 清代古戏台",
     tags: ["免费", "国保", "昆曲"],
     imageQuery: "kunqu opera museum suzhou",
-    xhsQuote: "「平江路里的古戏台，周末听昆曲免费。全晋会馆本身就是国保，建于清光绪年间，戏楼雕梁画栋、金碧辉煌。」— 综合 XHS 平江路串游笔记",
+    xhsQuote: "「平江路里的古戏台，周末听昆曲免费。全晋会馆本身就是国保，建于清光绪年间，戏楼雕梁画栋、金碧辉煌。」— 综合 小红书 平江路串游笔记",
     xhsHeat: {
       heat: "低中热（深度游）",
       notes: "全国唯一昆曲主题国家级博物馆 / 平江路中段 / 周末演出免费或低价",
@@ -1092,7 +1092,7 @@ const DESTINATIONS_SU = [
     highlight: "南宋四大碑 + 范仲淹创办",
     tags: ["国保", "古碑", "宋代"],
     imageQuery: "suzhou wen miao stele museum",
-    xhsQuote: "「苏州文庙的南宋四大碑是宋代科技巅峰之作。《平江图》是世界最早城市平面图之一，范仲淹任苏州知州时倡建。」— 综合 XHS 苏州古迹笔记",
+    xhsQuote: "「苏州文庙的南宋四大碑是宋代科技巅峰之作。《平江图》是世界最早城市平面图之一，范仲淹任苏州知州时倡建。」— 综合 小红书 苏州古迹笔记",
     xhsHeat: {
       heat: "低热（学者向）",
       notes: "文史爱好者专属 / 南宋四大碑（平江图/天文图/地理图/帝王绍运图）/ 范仲淹创办",
@@ -1125,7 +1125,7 @@ const DESTINATIONS_SU = [
     highlight: "紫禁城地砖产地 + 当代建筑",
     tags: ["免费", "小众", "刘家琨"],
     imageQuery: "suzhou imperial kiln brick museum",
-    xhsQuote: "「紫禁城的金砖就产自这里，刘家琨设计的当代建筑震撼。御窑金砖是明清两朝紫禁城专用地砖，『一两黄金一块砖』。」— 综合 XHS 当代建筑打卡笔记",
+    xhsQuote: "「紫禁城的金砖就产自这里，刘家琨设计的当代建筑震撼。御窑金砖是明清两朝紫禁城专用地砖，『一两黄金一块砖』。」— 综合 小红书 当代建筑打卡笔记",
     xhsHeat: {
       heat: "中热（建筑爱好者朝圣）",
       notes: "刘家琨 2016 年设计 / 主馆外墙由真正的御窑金砖砌成 / 当代建筑打卡顶流",
@@ -1160,7 +1160,7 @@ const DESTINATIONS_SU = [
     highlight: "吴中第一名胜 + 中国第一斜塔",
     tags: ["5A景区", "2500年历史", "必去"],
     imageQuery: "tiger hill suzhou huqiu",
-    xhsQuote: "「不到虎丘，枉到苏州。」— 苏东坡。XHS 攻略主流观点：前山塔、剑池游客多；后山竹林茶田清净，穿浅色衣服拍森系大片更出片",
+    xhsQuote: "「不到虎丘，枉到苏州。」— 苏东坡。小红书 攻略主流观点：前山塔、剑池游客多；后山竹林茶田清净，穿浅色衣服拍森系大片更出片",
     xhsHeat: {
       heat: "高热",
       notes: "2500 年历史 + 中国第一斜塔 / 苏东坡代言 / 5A 景区",
@@ -1226,7 +1226,7 @@ const DESTINATIONS_SU = [
     highlight: "苏州第一高峰 + 孙武隐居地",
     tags: ["4A景区", "森林氧吧", "兵法文化"],
     imageQuery: "qionglong mountain suzhou",
-    xhsQuote: "「苏州第一高峰，森林覆盖率 96%，孙武写兵法之地。」— 综合 XHS 苏州爬山笔记",
+    xhsQuote: "「苏州第一高峰，森林覆盖率 96%，孙武写兵法之地。」— 综合 小红书 苏州爬山笔记",
     xhsHeat: {
       heat: "低中热（自驾向）",
       notes: "苏州第一高峰 342 米 / 孙武隐居写兵法 / 公交麻烦自驾必选",
@@ -1259,7 +1259,7 @@ const DESTINATIONS_SU = [
     highlight: "1 元门票 + 西施馆娃宫",
     tags: ["低门票", "爬山", "西施"],
     imageQuery: "lingyan mountain suzhou",
-    xhsQuote: "「灵岩山门票仅 1 元，是苏州最便宜的古寺。相传吴王夫差为西施建馆娃宫在此山顶。」— 综合 XHS 苏州爬山笔记",
+    xhsQuote: "「灵岩山门票仅 1 元，是苏州最便宜的古寺。相传吴王夫差为西施建馆娃宫在此山顶。」— 综合 小红书 苏州爬山笔记",
     xhsHeat: {
       heat: "低中热",
       notes: "¥1 门票是苏州最便宜大寺 / 木渎镇西 / 印光大师道场",
@@ -1292,7 +1292,7 @@ const DESTINATIONS_SU = [
     highlight: "范成大隐居地 + 石湖串月",
     tags: ["免费", "范成大", "骑行"],
     imageQuery: "shi lake suzhou",
-    xhsQuote: "「石湖范成大隐居地，中秋串月是年度奇观。行春桥、越城桥、石湖串月是三大名景。」— 综合 XHS 苏州小众笔记",
+    xhsQuote: "「石湖范成大隐居地，中秋串月是年度奇观。行春桥、越城桥、石湖串月是三大名景。」— 综合 小红书 苏州小众笔记",
     xhsHeat: {
       heat: "低热",
       notes: "免费城市郊野公园 / 中秋串月奇观 / 骑行徒步首选",
@@ -1325,7 +1325,7 @@ const DESTINATIONS_SU = [
     highlight: "免费 + 爬山 + 动物园",
     tags: ["免费", "亲子", "动物园"],
     imageQuery: "shangfang mountain park suzhou",
-    xhsQuote: "「上方山国家森林公园，苏州人亲子首选。公园免费，附带的上方山国家森林公园动物园 ¥40，适合家庭周末。」— 综合 XHS 苏州周末遛娃攻略",
+    xhsQuote: "「上方山国家森林公园，苏州人亲子首选。公园免费，附带的上方山国家森林公园动物园 ¥40，适合家庭周末。」— 综合 小红书 苏州周末遛娃攻略",
     xhsHeat: {
       heat: "中热（本地亲子）",
       notes: "本地家庭周末首选 / 森林覆盖率 92% / 免费公园 + 收费动物园",
@@ -1358,7 +1358,7 @@ const DESTINATIONS_SU = [
     highlight: "免费登山 + 日落神位",
     tags: ["免费", "日落", "夜爬"],
     imageQuery: "yangshan mountain suzhou sunset",
-    xhsQuote: "「阳山免费登顶看日落，夜爬看苏州万家灯火。近年小红书爆火的日落拍照圣地。」— 综合 XHS 苏州日落机位笔记",
+    xhsQuote: "「阳山免费登顶看日落，夜爬看苏州万家灯火。近年小红书爆火的日落拍照圣地。」— 综合 小红书 苏州日落机位笔记",
     xhsHeat: {
       heat: "高热（日落打卡顶流）",
       notes: "免费登山 / 樱花节 3 月底 / 树山村民宿配套爆火",
@@ -1391,7 +1391,7 @@ const DESTINATIONS_SU = [
     highlight: "太湖最佳俯瞰点 + 缆车",
     tags: ["4A景区", "缆车", "太湖"],
     imageQuery: "yuyang mountain taihu",
-    xhsQuote: "「渔洋山缆车上山俯瞰太湖三桥，日落绝美。坐缆车上山 15 分钟，俯瞰太湖三桥和整个西山岛。」— 综合 XHS 太湖自驾打卡笔记",
+    xhsQuote: "「渔洋山缆车上山俯瞰太湖三桥，日落绝美。坐缆车上山 15 分钟，俯瞰太湖三桥和整个西山岛。」— 综合 小红书 太湖自驾打卡笔记",
     xhsHeat: {
       heat: "中热（自驾配套）",
       notes: "缆车 ¥80 / 4A 景区 / 太湖西山岛入口",
@@ -1492,7 +1492,7 @@ const DESTINATIONS_SU = [
     highlight: "大陆首家诚品 + 72 阶楼梯",
     tags: ["免费", "网红", "文艺"],
     imageQuery: "eslite bookstore suzhou",
-    xhsQuote: "「大陆首家诚品！大步梯必拍，逛累了二楼有露台看湖。」— 车车王国 @小红书 + 综合 XHS 苏州文艺打卡笔记",
+    xhsQuote: "「大陆首家诚品！大步梯必拍，逛累了二楼有露台看湖。」— 车车王国 @小红书 + 综合 小红书 苏州文艺打卡笔记",
     xhsHeat: {
       heat: "高热",
       notes: "大陆首家诚品 / 72 阶名句台阶 / 姚仁喜设计",
@@ -1525,7 +1525,7 @@ const DESTINATIONS_SU = [
     highlight: "湖景酒吧街 + 美术馆免费",
     tags: ["免费", "夜景", "美术馆"],
     imageQuery: "ligongdi suzhou",
-    xhsQuote: "「沿湖漫步超治愈，湖心亭是看音乐喷泉的绝佳位置。李公堤夜景绝美，百年长堤如水墨画般展开。」— 综合 XHS 金鸡湖攻略",
+    xhsQuote: "「沿湖漫步超治愈，湖心亭是看音乐喷泉的绝佳位置。李公堤夜景绝美，百年长堤如水墨画般展开。」— 综合 小红书 金鸡湖攻略",
     xhsHeat: {
       heat: "中高热（本地精品）",
       notes: "1400 米湖中长堤 / 3 期开发 / 苏州金鸡湖美术馆免费",
@@ -1591,7 +1591,7 @@ const DESTINATIONS_SU = [
     highlight: "128 米 + 云端治愈舱",
     tags: ["摩天轮", "情侣", "夜景"],
     imageQuery: "suzhou eye ferris wheel",
-    xhsQuote: "「128 米高的苏州之眼，云端治愈舱浪漫值拉满。缓慢转动一圈约 45 分钟。日落时分乘坐最美，能同时看到太阳西沉和东方之门亮灯。」— 综合 XHS 金鸡湖亲子情侣打卡笔记",
+    xhsQuote: "「128 米高的苏州之眼，云端治愈舱浪漫值拉满。缓慢转动一圈约 45 分钟。日落时分乘坐最美，能同时看到太阳西沉和东方之门亮灯。」— 综合 小红书 金鸡湖亲子情侣打卡笔记",
     xhsHeat: {
       heat: "中热（情侣向）",
       notes: "金鸡湖东岸 / 云端治愈舱 ¥180 / 网购便宜 ¥10-20",
@@ -1624,7 +1624,7 @@ const DESTINATIONS_SU = [
     highlight: "500 米 LED 天幕 + 科技夜景",
     tags: ["免费", "夜景", "LED天幕"],
     imageQuery: "yuanrong tianmu street suzhou",
-    xhsQuote: "「晚上 7 点后天幕亮起，360 度全景 LED 屏超震撼。全球第三大、亚洲第二大 LED 天幕。」— 综合 XHS 苏州夜景打卡笔记",
+    xhsQuote: "「晚上 7 点后天幕亮起，360 度全景 LED 屏超震撼。全球第三大、亚洲第二大 LED 天幕。」— 综合 小红书 苏州夜景打卡笔记",
     xhsHeat: {
       heat: "中低热",
       notes: "湖东商业区 LED 天幕 / 500 米长 / 每晚 19:00-22:00",
@@ -1659,7 +1659,7 @@ const DESTINATIONS_SU = [
     highlight: "太湖最大岛 + 碧螺春产地",
     tags: ["4A景区", "太湖", "自驾"],
     imageQuery: "xishan island taihu",
-    xhsQuote: "「西山岛环岛自驾兜风，缥缈峰太湖最高峰。石公山、林屋洞、明月湾古村、缥缈峰、碧螺春茶园。春天赏梅（梅园）、夏天赏荷、秋冬品蟹。」— 综合 XHS 太湖深度游笔记",
+    xhsQuote: "「西山岛环岛自驾兜风，缥缈峰太湖最高峰。石公山、林屋洞、明月湾古村、缥缈峰、碧螺春茶园。春天赏梅（梅园）、夏天赏荷、秋冬品蟹。」— 综合 小红书 太湖深度游笔记",
     xhsHeat: {
       heat: "高热（深度游）",
       notes: "太湖最大岛 + 碧螺春产地 / 4A 景区 / 两日一夜深度首选",
@@ -1692,7 +1692,7 @@ const DESTINATIONS_SU = [
     highlight: "雕花楼 + 明代古村",
     tags: ["4A景区", "太湖", "枇杷"],
     imageQuery: "dongshan peninsula taihu",
-    xhsQuote: "「雕花楼号称江南第一楼，东山白沙枇杷最甜。雕花楼整栋楼木雕、砖雕、石雕繁复精美，紫金庵罗汉塑像是宋代泥塑国宝。」— 综合 XHS 东山深度游笔记",
+    xhsQuote: "「雕花楼号称江南第一楼，东山白沙枇杷最甜。雕花楼整栋楼木雕、砖雕、石雕繁复精美，紫金庵罗汉塑像是宋代泥塑国宝。」— 综合 小红书 东山深度游笔记",
     xhsHeat: {
       heat: "中热（自驾 + 水果季节）",
       notes: "4A 半岛景区 / 5 月白沙枇杷季爆款 / 陆巷古村明代王鏊故里",
@@ -1758,7 +1758,7 @@ const DESTINATIONS_SU = [
     highlight: "5A 红色景区 + 芦苇荡",
     tags: ["5A景区", "红色旅游", "芦苇荡"],
     imageQuery: "shajiabang reed marsh",
-    xhsQuote: "「沙家浜 1800 亩芦苇荡乘船穿行，秋天芦花最美。」— 综合 XHS 苏州秋季打卡攻略",
+    xhsQuote: "「沙家浜 1800 亩芦苇荡乘船穿行，秋天芦花最美。」— 综合 小红书 苏州秋季打卡攻略",
     xhsHeat: {
       heat: "中热（秋季限定）",
       notes: "5A 红色景区 / 1800 亩芦苇荡 / 10-11 月芦花飞舞",
@@ -1791,7 +1791,7 @@ const DESTINATIONS_SU = [
     highlight: "5A 山水 + 兴福寺蕈油面",
     tags: ["5A景区", "爬山", "牡丹节"],
     imageQuery: "changshu yushan shanghu",
-    xhsQuote: "「常熟虞山兴福寺的蕈油面是网红必吃。尚湖 ¥60，虞山免费。」— 综合 XHS 常熟小众攻略",
+    xhsQuote: "「常熟虞山兴福寺的蕈油面是网红必吃。尚湖 ¥60，虞山免费。」— 综合 小红书 常熟小众攻略",
     xhsHeat: {
       heat: "中低热",
       notes: "5A 景区 / 4 月牡丹节 / 兴福寺 ¥5 蕈油面 ¥18",
@@ -1826,7 +1826,7 @@ const DESTINATIONS_SU = [
     highlight: "新中式仿古夜游街",
     tags: ["免费", "夜游", "新中式"],
     imageQuery: "xietang old street suzhou",
-    xhsQuote: "「斜塘老街白墙黛瓦小桥流水，夜晚灯光精致。白天一般，晚上氛围最好，适合工作日夜游。」— 综合 XHS 园区夜游笔记",
+    xhsQuote: "「斜塘老街白墙黛瓦小桥流水，夜晚灯光精致。白天一般，晚上氛围最好，适合工作日夜游。」— 综合 小红书 园区夜游笔记",
     xhsHeat: {
       heat: "低中热（新中式）",
       notes: "2018 年建成 / 园区仿古夜游街 / 业态现代化",
@@ -1859,7 +1859,7 @@ const DESTINATIONS_SU = [
     highlight: "苏州莫干山 + 精品民宿",
     tags: ["民宿", "梨花", "度假"],
     imageQuery: "shushan village suzhou",
-    xhsQuote: "「树山村苏州的莫干山，梨花季万亩花海。以『三宝』闻名：翠冠梨（夏季）、杨梅、云泉茶。春天万亩梨花花海 + 油菜花，是摄影爱好者的天堂。」— 综合 XHS 乡村民宿游笔记",
+    xhsQuote: "「树山村苏州的莫干山，梨花季万亩花海。以『三宝』闻名：翠冠梨（夏季）、杨梅、云泉茶。春天万亩梨花花海 + 油菜花，是摄影爱好者的天堂。」— 综合 小红书 乡村民宿游笔记",
     xhsHeat: {
       heat: "高热（精品民宿顶流）",
       notes: "苏州莫干山 / 精品民宿集群 / 春季梨花季爆款",
@@ -1925,7 +1925,7 @@ const DESTINATIONS_SU = [
     highlight: "免费 + 原生态 + 柳亚子故居",
     tags: ["免费", "小众", "柳亚子"],
     imageQuery: "lili ancient town suzhou",
-    xhsQuote: "「黎里静谧冷清，保留原始风貌和淳朴民风。完全免费开放，商业化极低，是近年小红书力推的『最清静水乡』。」— 综合 XHS 苏州小众古镇笔记",
+    xhsQuote: "「黎里静谧冷清，保留原始风貌和淳朴民风。完全免费开放，商业化极低，是近年小红书力推的『最清静水乡』。」— 综合 小红书 苏州小众古镇笔记",
     xhsHeat: {
       heat: "低中热（小众口碑）",
       notes: "完全免费 / 比周庄人少 100 倍 / 柳亚子故居",
@@ -1958,7 +1958,7 @@ const DESTINATIONS_SU = [
     highlight: "大陆唯一诚品生活旗舰",
     tags: ["免费", "生活美学", "综合体"],
     imageQuery: "eslite life suzhou",
-    xhsQuote: "「诚品生活苏州，大陆唯一一家诚品旗舰店。强调『生活美学』，每个店铺都有设计感。」— 综合 XHS 苏州文艺打卡笔记",
+    xhsQuote: "「诚品生活苏州，大陆唯一一家诚品旗舰店。强调『生活美学』，每个店铺都有设计感。」— 综合 小红书 苏州文艺打卡笔记",
     xhsHeat: {
       heat: "中热",
       notes: "大陆唯一诚品生活旗舰 / 姚仁喜设计 / 13.6 万平方米综合体",
