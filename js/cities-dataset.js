@@ -111,15 +111,78 @@ function buildSearchHotWords() {
   return map;
 }
 
-// 渲染 city-selector 按钮
+// B2 · 渲染 city-selector 为下拉菜单（10+ 城用横排会爆）
 function renderCitySelector(containerSel = '.city-selector') {
   if (typeof CITIES === 'undefined') return;
   const el = document.querySelector(containerSel);
   if (!el) return;
-  el.innerHTML = CITIES.map((c, i) =>
-    `<button class="city-btn${i === 0 ? ' active' : ''}" data-city="${c.key}" onclick="switchCity('${c.key}')">${c.emoji} ${c.name}</button>`
+  const initial = CITIES[0];
+  const itemsHTML = CITIES.map((c, i) =>
+    `<button class="city-dropdown-item${i === 0 ? ' active' : ''}" data-city="${c.key}" onclick="switchCity('${c.key}'); toggleCityDropdown(false)" type="button">
+       <span class="city-dropdown-emoji">${c.emoji}</span>
+       <span class="city-dropdown-name">${c.name}</span>
+       <span class="city-dropdown-check" aria-hidden="true">&#x2713;</span>
+     </button>`
   ).join('');
+  el.innerHTML = `
+    <div class="city-dropdown" id="city-dropdown">
+      <button class="city-dropdown-trigger" type="button"
+              onclick="toggleCityDropdown()" aria-haspopup="listbox" aria-expanded="false"
+              aria-label="切换城市">
+        <span class="city-dropdown-emoji" id="city-dropdown-current-emoji">${initial.emoji}</span>
+        <span class="city-dropdown-current" id="city-dropdown-current">${initial.name}</span>
+        <span class="city-dropdown-arrow" aria-hidden="true">&#x25BE;</span>
+      </button>
+      <div class="city-dropdown-menu" id="city-dropdown-menu" role="listbox">
+        ${itemsHTML}
+      </div>
+    </div>
+  `;
 }
+
+// 切换 dropdown 展开/收起；force 为 boolean 时强制设定
+function toggleCityDropdown(force) {
+  const dd = document.getElementById('city-dropdown');
+  if (!dd) return;
+  const trigger = dd.querySelector('.city-dropdown-trigger');
+  const isOpen = dd.classList.contains('open');
+  const next = (typeof force === 'boolean') ? force : !isOpen;
+  dd.classList.toggle('open', next);
+  if (trigger) trigger.setAttribute('aria-expanded', String(next));
+}
+
+// 外部点击收起
+document.addEventListener('click', (e) => {
+  const dd = document.getElementById('city-dropdown');
+  if (!dd) return;
+  if (!dd.contains(e.target) && dd.classList.contains('open')) {
+    toggleCityDropdown(false);
+  }
+});
+// Esc 收起
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const dd = document.getElementById('city-dropdown');
+    if (dd && dd.classList.contains('open')) toggleCityDropdown(false);
+  }
+});
+
+// 同步 trigger 显示（switchCity 后调用）
+function syncCityDropdownTrigger(cityKey) {
+  if (typeof CITIES === 'undefined') return;
+  const c = CITIES.find(c => c.key === cityKey);
+  if (!c) return;
+  const nm = document.getElementById('city-dropdown-current');
+  const em = document.getElementById('city-dropdown-current-emoji');
+  if (nm) nm.textContent = c.name;
+  if (em) em.textContent = c.emoji;
+  // toggle .active on items
+  document.querySelectorAll('.city-dropdown-item').forEach(it => {
+    it.classList.toggle('active', it.dataset.city === cityKey);
+  });
+}
+// 暴露给 app.js
+if (typeof window !== 'undefined') window.syncCityDropdownTrigger = syncCityDropdownTrigger;
 
 // 覆盖 app.js 的 CITY_DATA 和 SEARCH_HOT_WORDS（如果存在）
 (function installBridge() {

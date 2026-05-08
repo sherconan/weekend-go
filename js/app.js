@@ -50,6 +50,8 @@ function switchCity(city) {
 
   // Update UI
   document.querySelectorAll('.city-btn').forEach(b => b.classList.toggle('active', b.dataset.city === city));
+  // B2 · sync new city dropdown
+  if (typeof syncCityDropdownTrigger === 'function') syncCityDropdownTrigger(city);
   const badge = document.getElementById('hero-badge');
   if (badge) badge.innerHTML = cityInfo.badge;
   const desc = document.getElementById('hero-desc');
@@ -1026,6 +1028,29 @@ function closeSearch() {
   overlay.classList.remove('active');
   document.body.style.overflow = '';
   _searchHighlighted = -1;
+}
+
+// B1 · Hero 搜索框 → 打开 overlay 并把已输入字符带过去
+let _heroSearchActivating = false;
+function heroSearchActivate() {
+  if (_heroSearchActivating) return;
+  _heroSearchActivating = true;
+  const heroInp = document.getElementById('hero-search-input');
+  const seed = heroInp ? heroInp.value : '';
+  openSearch();
+  // wait for overlay focus to settle, then prefill + perform
+  setTimeout(() => {
+    const overlayInp = document.getElementById('search-input');
+    if (overlayInp) {
+      overlayInp.value = seed;
+      try {
+        overlayInp.setSelectionRange(seed.length, seed.length);
+      } catch(e){}
+      if (typeof performSearch === 'function') performSearch(seed);
+    }
+    if (heroInp) heroInp.value = '';
+    _heroSearchActivating = false;
+  }, 60);
 }
 
 function renderHotWords() {

@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v21 — nav layout fix + XHS prefix purge (2026-04-24)
-const CACHE_NAME = 'weekend-go-v21';
+// Weekend-Go Service Worker v22 — B1 hero 搜索框 + B2 城市选择器下拉 (2026-05-08)
+const CACHE_NAME = 'weekend-go-v22';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 
