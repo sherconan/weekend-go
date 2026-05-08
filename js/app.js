@@ -1053,11 +1053,49 @@ function heroSearchActivate() {
   }, 60);
 }
 
+// B4 · Recent searches (localStorage, FIFO 5)
+const RECENT_SEARCH_KEY = 'weekend-go-recent-searches';
+const RECENT_SEARCH_MAX = 5;
+function readRecentSearches() {
+  try {
+    const raw = localStorage.getItem(RECENT_SEARCH_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr.filter(s => typeof s === 'string' && s.trim()) : [];
+  } catch (e) { return []; }
+}
+function recordRecentSearch(q) {
+  q = (q || '').trim();
+  if (!q || q.length > 40) return;
+  let arr = readRecentSearches();
+  arr = arr.filter(x => x !== q);
+  arr.unshift(q);
+  arr = arr.slice(0, RECENT_SEARCH_MAX);
+  try { localStorage.setItem(RECENT_SEARCH_KEY, JSON.stringify(arr)); } catch(e){}
+}
+function clearRecentSearches() {
+  try { localStorage.removeItem(RECENT_SEARCH_KEY); } catch(e){}
+  renderHotWords();
+}
+function applyRecentSearch(q) {
+  const inp = document.getElementById('search-input');
+  if (inp) inp.value = q;
+  if (typeof performSearch === 'function') performSearch(q);
+}
+
 function renderHotWords() {
   const hotEl = document.getElementById('search-hot');
   if (!hotEl) return;
   const words = SEARCH_HOT_WORDS[currentCity] || SEARCH_HOT_WORDS.beijing;
+  const recent = readRecentSearches();
+  const recentBlock = recent.length ? `
+    <div class="search-recent-row">
+      <div class="search-recent-title">最近搜过 <button class="search-recent-clear" onclick="clearRecentSearches()" type="button">清空</button></div>
+      <div class="search-recent-chips">
+        ${recent.map(w => `<span class="search-recent-chip" onclick="applyRecentSearch(${JSON.stringify(w)})">&#x1F551; ${w}</span>`).join('')}
+      </div>
+    </div>` : '';
   hotEl.innerHTML = `
+    ${recentBlock}
     <div class="search-hot-title">热门搜索 · ${CITY_DATA[currentCity]?.label || '全部'}</div>
     ${words.map(w => `<span class="search-hot-chip" onclick="document.getElementById('search-input').value='${w}'; performSearch('${w}');">${w}</span>`).join('')}
   `;
@@ -1316,6 +1354,9 @@ let _searchResultsCache = [];
 function jumpToResult(idx) {
   const it = _searchResultsCache[idx];
   if (!it) return;
+  // B4 · 命中即记录用户当前 query
+  const _curInp = document.getElementById('search-input');
+  if (_curInp && typeof recordRecentSearch === 'function') recordRecentSearch(_curInp.value);
   closeSearch();
   if (it.type === 'legend') {
     const targetCity = it.city || 'beijing';
