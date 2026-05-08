@@ -25,3 +25,5 @@ top30-chatgpt-regen-queue.*-failed.json
 retry-queue-*.json
 retry-final-*.json
 codex-*.log
+retry-tiny-*.json
+codex-tiny-*.log
