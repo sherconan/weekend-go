@@ -2393,6 +2393,20 @@ function flipWorld() {
   const flipBtn = document.getElementById('world-flip-btn');
   const body = document.body;
 
+  // C1 · 按钮 spin + 全屏 flash
+  if (flipBtn) {
+    flipBtn.classList.remove('spinning');
+    void flipBtn.offsetWidth; // restart animation
+    flipBtn.classList.add('spinning');
+    setTimeout(() => flipBtn.classList.remove('spinning'), 650);
+  }
+  let flashEl = document.querySelector('.world-flip-flash');
+  if (flashEl) flashEl.remove();
+  flashEl = document.createElement('div');
+  flashEl.className = 'world-flip-flash';
+  document.body.appendChild(flashEl);
+  setTimeout(() => flashEl.remove(), 520);
+
   if (_nightMode) {
     // Entering night mode
     nightWorld.classList.add('is-visible');
