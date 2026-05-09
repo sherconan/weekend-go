@@ -1037,6 +1037,7 @@ function heroSearchActivate() {
   _heroSearchActivating = true;
   const heroInp = document.getElementById('hero-search-input');
   const seed = heroInp ? heroInp.value : '';
+  hideHeroRecent(true);
   openSearch();
   // wait for overlay focus to settle, then prefill + perform
   setTimeout(() => {
@@ -1051,6 +1052,50 @@ function heroSearchActivate() {
     if (heroInp) heroInp.value = '';
     _heroSearchActivating = false;
   }, 60);
+}
+
+// B4+B1 联动 · Hero search focus 显示 Recent mini dropdown（不立即开 overlay）
+function onHeroSearchFocus() {
+  const inp = document.getElementById('hero-search-input');
+  // 已有输入：直接打开 overlay 走主流程
+  if (inp && inp.value) { heroSearchActivate(); return; }
+  showHeroRecent();
+}
+function onHeroSearchBlur() {
+  // 200ms 延迟让 onmousedown 先触发 applyHeroRecent
+  setTimeout(() => hideHeroRecent(), 220);
+}
+function showHeroRecent() {
+  const dd = document.getElementById('hero-recent-dd');
+  if (!dd) return;
+  const recent = (typeof readRecentSearches === 'function') ? readRecentSearches() : [];
+  if (!recent.length) {
+    // 空状态：提示用户搜索后会出现历史
+    dd.innerHTML = `<div class="hero-recent-empty">暂无历史，输入关键词或按 ⌘K 打开高级搜索</div>`;
+  } else {
+    dd.innerHTML = `
+      <div class="hero-recent-title">
+        <span>最近搜过 · ${recent.length}</span>
+        <button class="hero-recent-clear" type="button" onmousedown="event.preventDefault(); clearRecentSearches(); showHeroRecent();">清空</button>
+      </div>` +
+      recent.map(w => `<button class="hero-recent-item" type="button" onmousedown="event.preventDefault(); applyHeroRecent(${JSON.stringify(w)})">
+        <span class="hero-recent-item-icon">&#x1F551;</span><span>${w}</span>
+      </button>`).join('');
+  }
+  dd.classList.add('open');
+  dd.setAttribute('aria-hidden', 'false');
+}
+function hideHeroRecent(immediate) {
+  const dd = document.getElementById('hero-recent-dd');
+  if (!dd) return;
+  dd.classList.remove('open');
+  dd.setAttribute('aria-hidden', 'true');
+}
+function applyHeroRecent(q) {
+  const inp = document.getElementById('hero-search-input');
+  if (inp) inp.value = q;
+  hideHeroRecent(true);
+  heroSearchActivate();
 }
 
 // B4 · Recent searches (localStorage, FIFO 5)
