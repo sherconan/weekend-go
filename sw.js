@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v25 — Recent cities 智能排序 (2026-05-09)
-const CACHE_NAME = 'weekend-go-v25';
+// Weekend-Go Service Worker v26 — 随便去哪儿 random btn (2026-05-09)
+const CACHE_NAME = 'weekend-go-v26';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 
