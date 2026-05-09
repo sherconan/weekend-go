@@ -263,6 +263,13 @@ a { text-decoration: none; color: inherit; }
   font-weight: 800;
   opacity: 0;
 }
+.city-dropdown-recent {
+  font-size: 11px;
+  opacity: 0.5;
+  flex-shrink: 0;
+  margin-right: -2px;
+}
+.city-dropdown-item:hover .city-dropdown-recent { opacity: 0.85; }
 .city-dropdown-item.active {
   background: rgba(76,175,80,0.10);
   color: var(--green-600);
