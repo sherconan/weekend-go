@@ -967,6 +967,11 @@ a { text-decoration: none; color: inherit; }
   text-shadow: 0 2px 8px rgba(0,0,0,0.35);
   letter-spacing: -0.02em;
   line-height: 1.2;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: left bottom;
+}
+.dest-card:hover .dest-card-cover-content .dest-card-name {
+  transform: scale(1.04);
 }
 
 .dest-card-cover-content .dest-card-subtitle {
