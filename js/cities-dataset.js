@@ -112,18 +112,54 @@ function buildSearchHotWords() {
 }
 
 // B2 · 渲染 city-selector 为下拉菜单（10+ 城用横排会爆）
+const RECENT_CITY_KEY = 'weekend-go-recent-cities';
+const RECENT_CITY_MAX = 3;
+function readRecentCities() {
+  try {
+    const raw = localStorage.getItem(RECENT_CITY_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr.filter(s => typeof s === 'string') : [];
+  } catch (e) { return []; }
+}
+function recordRecentCity(key) {
+  if (!key) return;
+  let arr = readRecentCities();
+  arr = arr.filter(x => x !== key);
+  arr.unshift(key);
+  arr = arr.slice(0, RECENT_CITY_MAX);
+  try { localStorage.setItem(RECENT_CITY_KEY, JSON.stringify(arr)); } catch(e){}
+}
+// 暴露给 app.js 在 switchCity 调用
+if (typeof window !== 'undefined') window.recordRecentCity = recordRecentCity;
+
+// 按"最近使用"上浮排序后再返回 cities 列表
+function getOrderedCities() {
+  if (typeof CITIES === 'undefined') return [];
+  const recent = readRecentCities();
+  if (!recent.length) return CITIES.slice();
+  const recentSet = new Set(recent);
+  const recentOrdered = recent.map(k => CITIES.find(c => c.key === k)).filter(Boolean);
+  const rest = CITIES.filter(c => !recentSet.has(c.key));
+  return [...recentOrdered, ...rest];
+}
+
 function renderCitySelector(containerSel = '.city-selector') {
   if (typeof CITIES === 'undefined') return;
   const el = document.querySelector(containerSel);
   if (!el) return;
-  const initial = CITIES[0];
-  const itemsHTML = CITIES.map((c, i) =>
-    `<button class="city-dropdown-item${i === 0 ? ' active' : ''}" data-city="${c.key}" onclick="switchCity('${c.key}'); toggleCityDropdown(false)" type="button">
+  const ordered = getOrderedCities();
+  const initial = ordered[0];
+  const recentSet = new Set(readRecentCities());
+  const itemsHTML = ordered.map((c, i) => {
+    const isRecent = recentSet.has(c.key);
+    const recentBadge = isRecent ? `<span class="city-dropdown-recent" title="最近访问">&#x1F551;</span>` : '';
+    return `<button class="city-dropdown-item${i === 0 ? ' active' : ''}" data-city="${c.key}" onclick="switchCity('${c.key}'); toggleCityDropdown(false)" type="button">
        <span class="city-dropdown-emoji">${c.emoji}</span>
        <span class="city-dropdown-name">${c.name}</span>
+       ${recentBadge}
        <span class="city-dropdown-check" aria-hidden="true">&#x2713;</span>
-     </button>`
-  ).join('');
+     </button>`;
+  }).join('');
   el.innerHTML = `
     <div class="city-dropdown" id="city-dropdown">
       <button class="city-dropdown-trigger" type="button"

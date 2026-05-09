@@ -50,8 +50,9 @@ function switchCity(city) {
 
   // Update UI
   document.querySelectorAll('.city-btn').forEach(b => b.classList.toggle('active', b.dataset.city === city));
-  // B2 · sync new city dropdown
+  // B2 · sync new city dropdown + record for recent-city sorting
   if (typeof syncCityDropdownTrigger === 'function') syncCityDropdownTrigger(city);
+  if (typeof recordRecentCity === 'function') recordRecentCity(city);
   const badge = document.getElementById('hero-badge');
   if (badge) badge.innerHTML = cityInfo.badge;
   const desc = document.getElementById('hero-desc');
