@@ -548,6 +548,30 @@ a { text-decoration: none; color: inherit; }
   font-size: 13px;
 }
 
+/* "随便去哪儿" 随机按钮 — ghost 风格 */
+.btn--ghost {
+  background: rgba(255,255,255,0.6);
+  color: #4a4f5a;
+  border: 1.5px dashed rgba(76,175,80,0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+.btn--ghost:hover {
+  background: rgba(76,175,80,0.08);
+  border-color: var(--green-600);
+  color: var(--green-600);
+  transform: translateY(-1px);
+}
+.btn--random.spinning .icon-dice { display: inline-block; animation: diceShake 0.4s ease; }
+@keyframes diceShake {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+}
+
 @media (min-width: 768px) {
   .hero { padding: 112px 0 56px; }
   .hero h1 { font-size: 56px; }

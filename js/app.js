@@ -1031,6 +1031,26 @@ function closeSearch() {
   _searchHighlighted = -1;
 }
 
+// "随便去哪儿" — 从当前城市的 ACTIVE_DESTINATIONS 随机选一个 + 打开 detail
+function randomDestination() {
+  if (typeof ACTIVE_DESTINATIONS === 'undefined' || !ACTIVE_DESTINATIONS.length) return;
+  // 偏向 rating ≥ 4.5 的（提高随机品质）
+  const pool = ACTIVE_DESTINATIONS.filter(d => (d.rating || 0) >= 4.5);
+  const arr = pool.length >= 5 ? pool : ACTIVE_DESTINATIONS;
+  const pick = arr[Math.floor(Math.random() * arr.length)];
+  if (!pick) return;
+  // 按钮 dice spin 动画
+  const btn = document.querySelector('.btn--random');
+  if (btn) {
+    btn.classList.add('spinning');
+    setTimeout(() => btn.classList.remove('spinning'), 450);
+  }
+  // 延迟 320ms 让用户看到动画再打开
+  setTimeout(() => {
+    if (typeof openDetail === 'function') openDetail(pick.id);
+  }, 320);
+}
+
 // B1 · Hero 搜索框 → 打开 overlay 并把已输入字符带过去
 let _heroSearchActivating = false;
 function heroSearchActivate() {
