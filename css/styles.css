@@ -3685,6 +3685,25 @@ body.night-mode .nav-logo {
   background: #2a2333;
   color: #fbc531;
 }
+.search-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.search-result-meta-chip {
+  font-size: 10.5px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #f5f7fa;
+  color: #5e6470;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.search-result-meta-chip.search-result-meta-hot {
+  background: #FFF3E0;
+  color: #E65100;
+}
 .search-result-tag--city {
   background: #f0fdf4;
   color: #2f855a;
