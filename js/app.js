@@ -1388,12 +1388,25 @@ function performSearch(q) {
     const thumb = it.image
       ? `<img class="search-result-thumb" src="${it.image}" loading="lazy" alt="${it.name}">`
       : `<div class="search-result-thumb" style="display:flex;align-items:center;justify-content:center;font-size:22px">${it.vibeIcon || '📍'}</div>`;
+    // 信息密度提升：加 distance / rating / heat micro chip
+    const metaChips = [];
+    if (it.type !== 'legend') {
+      if (it.distanceText) metaChips.push(`<span class="search-result-meta-chip">&#x1F4CD; ${it.distanceText}</span>`);
+      if (it.rating) metaChips.push(`<span class="search-result-meta-chip">&#x2B50; ${it.rating}</span>`);
+      const heat = (it.xhsHeat && typeof it.xhsHeat === 'object') ? it.xhsHeat.heat : it.xhsHeat;
+      if (heat && heat >= 60) metaChips.push(`<span class="search-result-meta-chip search-result-meta-hot">&#x1F525; ${heat}</span>`);
+    } else {
+      if (it.heat) metaChips.push(`<span class="search-result-meta-chip">&#x1F319; ${it.heat}</span>`);
+      if (it.vibe) metaChips.push(`<span class="search-result-meta-chip">${it.vibe}</span>`);
+    }
+    const metaRow = metaChips.length ? `<div class="search-result-meta">${metaChips.join('')}</div>` : '';
     return `
       <div class="search-result-item" data-idx="${i}" onclick="jumpToResult(${i})">
         ${thumb}
         <div class="search-result-body">
           <div class="search-result-title">${cityTag}${_highlight(it.name, q)}</div>
           <div class="search-result-sub">${_highlight(it.subtitle, q)}</div>
+          ${metaRow}
         </div>
       </div>`;
   }).join('');
