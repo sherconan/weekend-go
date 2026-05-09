@@ -1031,6 +1031,26 @@ function closeSearch() {
   _searchHighlighted = -1;
 }
 
+// Hero quick-filter chip — 直接 set duration 并跳转到结果区
+function heroQuickFilter(cat, val) {
+  if (!state || !state.filters || !state.filters[cat]) return;
+  // 单选模式（覆盖既有）
+  state.filters[cat] = [val];
+  document.querySelectorAll('.filter-tag').forEach(tag => {
+    if (tag.dataset.category === cat) {
+      tag.classList.toggle('active', tag.dataset.value === val);
+    }
+  });
+  document.querySelectorAll('.hero-qf-chip').forEach(c => {
+    c.classList.toggle('active', c.textContent.trim() === val);
+  });
+  if (typeof applyFilters === 'function') applyFilters();
+  // 自动展开 filter body 让用户能继续微调
+  const body = document.querySelector('.filter-body');
+  if (body && body.classList.contains('collapsed') && typeof toggleFilters === 'function') toggleFilters();
+  if (typeof scrollToSection === 'function') scrollToSection('filters');
+}
+
 // "随便去哪儿" — 从当前城市的 ACTIVE_DESTINATIONS 随机选一个 + 打开 detail
 function randomDestination() {
   if (typeof ACTIVE_DESTINATIONS === 'undefined' || !ACTIVE_DESTINATIONS.length) return;
