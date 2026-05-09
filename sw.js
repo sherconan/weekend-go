@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v23 — C1 翻牌动画 + B4 Recent searches (2026-05-08)
-const CACHE_NAME = 'weekend-go-v23';
+// Weekend-Go Service Worker v24 — Hero+Recent 联动 dropdown (2026-05-09)
+const CACHE_NAME = 'weekend-go-v24';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v3';
 const MAX_IMAGE_CACHE = 120;
 

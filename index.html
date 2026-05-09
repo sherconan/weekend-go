@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://sherconan.github.io/weekend-go/">
   <link rel="preconnect" href="https://sherconan.github.io">
   <link rel="dns-prefetch" href="https://sherconan.github.io">
-  <link rel="stylesheet" href="css/styles.css?v=20260508-c1b4">
+  <link rel="stylesheet" href="css/styles.css?v=20260509-herorecent">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x26F0;</text></svg>">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4CAF50">
@@ -101,14 +101,19 @@
       </div>
       <h1>这个周末，去哪儿好？</h1>
       <p id="hero-desc">不用翻遍小红书和攻略。告诉我们你的偏好，帮你找到最合适的目的地。</p>
-      <form class="hero-search" onsubmit="event.preventDefault();heroSearchActivate();" role="search" aria-label="搜索目的地">
-        <span class="hero-search-icon" aria-hidden="true">&#x1F50D;</span>
-        <input id="hero-search-input" class="hero-search-input" type="search"
-               placeholder="搜地点、传说、美食&hellip;试试 故宫 / 胡同 / 海"
-               oninput="heroSearchActivate()" onfocus="heroSearchActivate()"
-               autocomplete="off" inputmode="search">
-        <kbd class="hero-search-kbd">&#8984;K</kbd>
-      </form>
+      <div class="hero-search-wrap">
+        <form class="hero-search" onsubmit="event.preventDefault();heroSearchActivate();" role="search" aria-label="搜索目的地">
+          <span class="hero-search-icon" aria-hidden="true">&#x1F50D;</span>
+          <input id="hero-search-input" class="hero-search-input" type="search"
+                 placeholder="搜地点、传说、美食&hellip;试试 故宫 / 胡同 / 海"
+                 oninput="heroSearchActivate()"
+                 onfocus="onHeroSearchFocus()"
+                 onblur="onHeroSearchBlur()"
+                 autocomplete="off" inputmode="search">
+          <kbd class="hero-search-kbd">&#8984;K</kbd>
+        </form>
+        <div class="hero-recent-dropdown" id="hero-recent-dd" aria-hidden="true"></div>
+      </div>
       <div class="hero-actions">
         <button class="btn btn--primary" onclick="scrollToSection('filters')">
           &#x1F50D; 开始筛选
@@ -420,7 +425,7 @@
   <script src="js/images.js?v=20260419-suzhou"></script>
   <script src="js/stamp-designs.js"></script>
   <script src="js/stamp.js?v=20260419-p2-stamp-migration"></script>
-  <script src="js/app.js?v=20260508-b4recent"></script>
+  <script src="js/app.js?v=20260509-herorecent"></script>
   <script src="js/seasonal.js?v=1"></script>
   <script src="js/achievements.js?v=1"></script>
   <script src="js/recent.js?v=1"></script>
