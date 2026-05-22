@@ -327,8 +327,8 @@ function renderDestinations(destinations) {
         <div class="dest-card-desc">${dest.description}</div>
         ${heatBar}
         <div class="dest-card-tags">
-          ${dest.transport.slice(1).map(t => `<span class="dest-card-tag tag-transport">${transportIcons[t] || '\u{1F6A9}'} ${t}</span>`).join('')}
-          ${dest.themes.map(t => `<span class="dest-card-tag tag-theme">${themeIcons[t] || '\u{1F3AF}'} ${t}</span>`).join('')}
+          ${dest.transport.slice(1, 2).map(t => `<span class="dest-card-tag tag-transport">${transportIcons[t] || '\u{1F6A9}'} ${t}</span>`).join('')}
+          ${dest.themes.slice(0, 2).map(t => `<span class="dest-card-tag tag-theme">${themeIcons[t] || '\u{1F3AF}'} ${t}</span>`).join('')}
         </div>
         <div class="dest-card-footer">
           <div class="dest-card-footer-left">
