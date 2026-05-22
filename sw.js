@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v27 — codex image2 batch (2026-05-22)
-const CACHE_NAME = 'weekend-go-v27';
+// Weekend-Go Service Worker v28 — bust SW cache for data-beijing fix-quotes (2026-05-22)
+const CACHE_NAME = 'weekend-go-v28';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v7';
 const MAX_IMAGE_CACHE = 120;
 
