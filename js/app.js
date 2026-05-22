@@ -865,7 +865,7 @@ function scrollToSection(id) {
 // ========== PWA Service Worker + Install Prompt ==========
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').then((reg) => {
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then((reg) => {
       // Auto-reload when new SW takes over (v29+ posts SW_UPDATED message)
       navigator.serviceWorker.addEventListener('message', (e) => {
         if (e.data && e.data.type === 'SW_UPDATED') {
