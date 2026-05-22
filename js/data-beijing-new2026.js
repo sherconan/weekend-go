@@ -133,7 +133,7 @@ const DESTINATIONS_BJ_2026 = [
     highlight: "LED天幕·空中花园·北京首店",
     tags: ["THE BOX朝外","购物","美食","城内"],
     imageQuery: "THE BOX朝外 shopping food Beijing",
-    xhsQuote: "朝外大街凭空冒出来的"盒子"📦中庭那块巨型 LED 天幕加多层退台空中花园——2024 年北京商业最大的惊喜，还没开业小红书就炸了"
+    xhsQuote: "朝外大街凭空冒出来的「盒子」📦中庭那块巨型 LED 天幕加多层退台空中花园——2024 年北京商业最大的惊喜，还没开业小红书就炸了"
   },
   {
     id: 655,
@@ -295,7 +295,7 @@ const DESTINATIONS_BJ_2026 = [
     highlight: "花园商业·疗愈空间·精品咖啡",
     tags: ["友谊花园","拍照","美食","城内"],
     imageQuery: "友谊花园 photography food Beijing",
-    xhsQuote: "把花园搬进商业空间🌿或者说把店藏进花园里——植物和阳光重新定义了"逛街"，周末想放空的都市人全在这里"
+    xhsQuote: "把花园搬进商业空间🌿或者说把店藏进花园里——植物和阳光重新定义了「逛街」，周末想放空的都市人全在这里"
   },
   {
     id: 661,
@@ -403,7 +403,7 @@ const DESTINATIONS_BJ_2026 = [
     highlight: "深夜烧烤·小腰文化·望京夜生活",
     tags: ["望京小腰","美食","夜生活","城内"],
     imageQuery: "望京小腰 food nightlife Beijing",
-    xhsQuote: "在望京，"小腰"不是店名是一种生活方式🔥下班约几个人炭火烤腰子配冰啤——北京夜晚该有的样子全在这一条街"
+    xhsQuote: "在望京，「小腰」不是店名是一种生活方式🔥下班约几个人炭火烤腰子配冰啤——北京夜晚该有的样子全在这一条街"
   },
   {
     id: 665,
@@ -484,7 +484,7 @@ const DESTINATIONS_BJ_2026 = [
     highlight: "宇宙中心·国际美食·大学文化",
     tags: ["五道口","美食","购物","城内"],
     imageQuery: "五道口 food shopping Beijing",
-    xhsQuote: "被叫"宇宙中心"不是吹的🌏清华北大的学生、留学生、互联网人、居民全混在这几个路口——北京最密集的国际餐饮都挤在这"
+    xhsQuote: "被叫「宇宙中心」不是吹的🌏清华北大的学生、留学生、互联网人、居民全混在这几个路口——北京最密集的国际餐饮都挤在这"
   },
   {
     id: 668,
