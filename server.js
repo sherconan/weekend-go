@@ -1,7 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const Anthropic = require('@anthropic-ai/sdk');
+// Migrated 2026-05-22: Anthropic SDK → DeepSeek V4 PRO (OpenAI-compatible direct)
+const LLM_BASE = (process.env.LLM_BASE_URL || 'https://api.deepseek.com/v1').replace(/\/$/, '');
+const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-v4-pro';
+const LLM_KEY = process.env.LLM_API_KEY || process.env.SAGE_LLM_KEY || process.env.ANTHROPIC_API_KEY || '';
 
 const PORT = 3456;
 const ROOT = __dirname;
@@ -52,13 +55,11 @@ ${destinationSummary || '（目的地数据暂时不可用，请基于你对北�
 6. 回复用中文，保持轻松专业的语气
 7. 不要使用 markdown 标题（#），直接用加粗和换行组织内容`;
 
-// Initialize Anthropic client
-function getClient() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    throw new Error('ANTHROPIC_API_KEY environment variable is not set');
+// DeepSeek (OpenAI-compatible) — sage-jury stack
+function assertKey() {
+  if (!LLM_KEY) {
+    throw new Error('LLM_API_KEY (or SAGE_LLM_KEY / ANTHROPIC_API_KEY fallback) is not set');
   }
-  return new Anthropic({ apiKey });
 }
 
 // Serve static files
@@ -121,36 +122,66 @@ async function handleChat(req, res) {
   });
 
   try {
-    const client = getClient();
+    assertKey();
 
-    const stream = client.messages.stream({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 1024,
-      system: SYSTEM_PROMPT,
-      messages: messages,
+    const controller = new AbortController();
+    req.on('close', () => controller.abort());
+
+    const fullMessages = [
+      { role: 'system', content: SYSTEM_PROMPT },
+      ...messages,
+    ];
+
+    const upstream = await fetch(`${LLM_BASE}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${LLM_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: LLM_MODEL,
+        max_tokens: 1024,
+        stream: true,
+        messages: fullMessages,
+      }),
+      signal: controller.signal,
     });
 
-    stream.on('text', (text) => {
-      res.write(`data: ${JSON.stringify({ type: 'text', text })}\n\n`);
-    });
+    if (!upstream.ok || !upstream.body) {
+      const errTxt = await upstream.text().catch(() => '');
+      throw new Error(`LLM upstream ${upstream.status}: ${errTxt.slice(0, 200)}`);
+    }
 
-    stream.on('error', (err) => {
-      console.error('Stream error:', err.message);
-      res.write(`data: ${JSON.stringify({ type: 'error', error: err.message })}\n\n`);
-      res.end();
-    });
+    const reader = upstream.body.getReader();
+    const decoder = new TextDecoder('utf-8');
+    let buffer = '';
 
-    stream.on('end', () => {
-      res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
-      res.end();
-    });
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      let nlIdx;
+      while ((nlIdx = buffer.indexOf('\n')) >= 0) {
+        const line = buffer.slice(0, nlIdx).trim();
+        buffer = buffer.slice(nlIdx + 1);
+        if (!line.startsWith('data:')) continue;
+        const payload = line.slice(5).trim();
+        if (payload === '[DONE]') continue;
+        try {
+          const chunk = JSON.parse(payload);
+          const text = chunk?.choices?.[0]?.delta?.content;
+          if (text) res.write(`data: ${JSON.stringify({ type: 'text', text })}\n\n`);
+        } catch (_) { /* ignore parse blips */ }
+      }
+    }
 
-    // Handle client disconnect
-    req.on('close', () => {
-      stream.abort();
-    });
-
+    res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`);
+    res.end();
   } catch (e) {
+    if (e.name === 'AbortError') {
+      res.end();
+      return;
+    }
     console.error('Chat error:', e.message);
     res.write(`data: ${JSON.stringify({ type: 'error', error: e.message })}\n\n`);
     res.end();

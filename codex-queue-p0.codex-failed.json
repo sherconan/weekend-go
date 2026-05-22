@@ -1,0 +1,44 @@
+[
+  {
+    "id": "es-1604",
+    "name": "七星寨景区",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Qixingzhai stone pillar cliff walk, 一炷香+玉笔峰·恩施大峡谷顶流打卡区, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 绝壁栈道, 峰林, 摄影. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1604.webp"
+  },
+  {
+    "id": "es-1618",
+    "name": "神农架神农顶",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Shennongjia peak alpine meadow China, 华中屋脊·3106m 神农顶国家公园, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 华中屋脊, 原始森林, 高山草甸. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1618.webp"
+  },
+  {
+    "id": "es-1622",
+    "name": "张家界天门山",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianmen Mountain Zhangjiajie cable car, 天门洞+玻璃栈道·湘西第一神山, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 神山, 玻璃栈道, 天门洞. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1622.webp"
+  },
+  {
+    "id": "es-1602",
+    "name": "恩施女儿城",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Nverhcheng Tujia town night, 相亲会+非遗街·土家民俗小镇, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 美食, 夜景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1602.webp"
+  },
+  {
+    "id": "es-1605",
+    "name": "利川腾龙洞",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lichuan Tenglong Cave karst, 亚洲第一溶洞·激光秀+江源情表演, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溶洞, 激光秀, 地质奇观. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1605.webp"
+  },
+  {
+    "id": "cq-1500",
+    "name": "洪崖洞",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Hongyadong stilted buildings Chongqing night lantern, 千厮门吊脚楼夜景, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 夜景, 网红, 山城. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1500.webp"
+  }
+]
