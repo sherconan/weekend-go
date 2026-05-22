@@ -938,6 +938,22 @@ a { text-decoration: none; color: inherit; }
   );
 }
 
+/* DESIGN-REVIEW B3 (2026-04-19): dest-card 3-layer hover polish — Cover + Meta + Body
+   现存结构本身已分 3 层 (.dest-card-cover / .dest-card-meta / .dest-card-body)。
+   B3 增强 = hover 时分层视觉强化，不隐藏 desc/tags（避免移动端无 hover 损失信息）。 */
+.dest-card:hover .dest-card-meta {
+  border-bottom-color: var(--brand);
+  transition: border-bottom-color 0.3s ease;
+}
+.dest-card:hover .dest-card-desc {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+.dest-card:hover .dest-card-tag {
+  transform: translateY(-1px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @keyframes imgShimmer {
   0% { background-position: -200px 0; }
   100% { background-position: 200px 0; }
