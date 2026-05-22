@@ -865,7 +865,16 @@ function scrollToSection(id) {
 // ========== PWA Service Worker + Install Prompt ==========
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').then((reg) => {
+      // Auto-reload when new SW takes over (v29+ posts SW_UPDATED message)
+      navigator.serviceWorker.addEventListener('message', (e) => {
+        if (e.data && e.data.type === 'SW_UPDATED') {
+          if (!window.__sw_reloaded) { window.__sw_reloaded = true; location.reload(); }
+        }
+      });
+      // Check for updates every 5 min
+      setInterval(() => reg.update().catch(() => {}), 5 * 60 * 1000);
+    }).catch(() => {});
   });
 }
 

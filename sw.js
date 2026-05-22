@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v28 — bust SW cache for data-beijing fix-quotes (2026-05-22)
-const CACHE_NAME = 'weekend-go-v28';
+// Weekend-Go Service Worker v29 — nuclear cache reset + auto-reload clients (2026-05-22)
+const CACHE_NAME = 'weekend-go-v29';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v7';
 const MAX_IMAGE_CACHE = 120;
 
@@ -34,25 +34,30 @@ const OFFLINE_FALLBACK = '/offline.html';
 // Install: pre-cache core, tolerate individual fetch failures
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) =>
-      // addAll() fails if any single URL fails — use Promise.allSettled pattern
-      Promise.all(CORE_ASSETS.map((url) =>
-        fetch(url, { cache: 'reload' })
-          .then((r) => r.ok ? cache.put(url, r) : null)
-          .catch(() => null)
-      )).then(() => cache.add(OFFLINE_FALLBACK).catch(() => null))
-    )
+    // v29 nuclear: nuke ALL caches first (even keep set), then rebuild from network
+    caches.keys()
+      .then((keys) => Promise.all(keys.map((k) => caches.delete(k))))
+      .then(() => caches.open(CACHE_NAME))
+      .then((cache) =>
+        Promise.all(CORE_ASSETS.map((url) =>
+          fetch(url, { cache: 'reload' })
+            .then((r) => r.ok ? cache.put(url, r) : null)
+            .catch(() => null)
+        )).then(() => cache.add(OFFLINE_FALLBACK).catch(() => null))
+      )
   );
   self.skipWaiting();
 });
 
-// Activate: purge old caches
+// Activate: purge old caches + tell all clients to reload (one-shot per upgrade)
 self.addEventListener('activate', (event) => {
   const keep = new Set([CACHE_NAME, IMAGE_CACHE_NAME]);
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => !keep.has(k)).map((k) => caches.delete(k)))
-    ).then(() => self.clients.claim())
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((k) => !keep.has(k)).map((k) => caches.delete(k))))
+      .then(() => self.clients.claim())
+      .then(() => self.clients.matchAll({ type: 'window' }))
+      .then((clients) => clients.forEach((c) => c.postMessage({ type: 'SW_UPDATED', version: 'v29' })))
   );
 });
 
