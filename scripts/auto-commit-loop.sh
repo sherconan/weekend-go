@@ -11,22 +11,22 @@ while true; do
   LOOP=$((LOOP + 1))
   echo "=== loop $LOOP @ $(date +%H:%M:%S) ==="
 
-  # Collect modified + untracked webps from git status
-  CANDIDATES=$(git status --porcelain assets/images/ | awk '{print substr($0, 4)}' | grep '\.webp$' || true)
+  # Collect modified + untracked webps. Use -c core.quotepath=false to keep
+  # non-ASCII filenames as raw UTF-8 (avoid the \NNN octal escape decoding bug
+  # that lost 8 qd webps in Round 2 auto-commit).
+  CANDIDATES=$(git -c core.quotepath=false status --porcelain assets/images/ \
+                 | awk '{print substr($0, 4)}' \
+                 | grep '\.webp$' || true)
 
   COMMIT_LIST=()
   while IFS= read -r f; do
     [ -z "$f" ] && continue
-    # Strip quotes (git may quote non-ASCII filenames)
-    f="${f#\"}"; f="${f%\"}"
-    # Decode \xxx git-escaped octal sequences via printf
-    f_decoded=$(printf '%b' "$f")
-    [ ! -f "$f_decoded" ] && continue
-    sz=$(stat -f '%z' "$f_decoded" 2>/dev/null || echo 0)
-    mt=$(stat -f '%m' "$f_decoded" 2>/dev/null || echo 0)
+    [ ! -f "$f" ] && continue
+    sz=$(stat -f '%z' "$f" 2>/dev/null || echo 0)
+    mt=$(stat -f '%m' "$f" 2>/dev/null || echo 0)
     age=$(( $(date +%s) - mt ))
     if [ "$sz" -gt 150000 ] && [ "$age" -gt 20 ]; then
-      COMMIT_LIST+=("$f_decoded")
+      COMMIT_LIST+=("$f")
     fi
   done <<< "$CANDIDATES"
 
@@ -49,16 +49,16 @@ Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>" 2>&1 | tai
   if [ "$RUNNING" -eq 0 ] && [ "$LOOP" -gt 1 ]; then
     echo "[loop $LOOP] all chunks done — final commit pass"
     # final pass: commit anything settled with smaller threshold
-    REMAINING=$(git status --porcelain assets/images/ | awk '{print substr($0, 4)}' | grep '\.webp$' || true)
+    REMAINING=$(git -c core.quotepath=false status --porcelain assets/images/ \
+                  | awk '{print substr($0, 4)}' \
+                  | grep '\.webp$' || true)
     NF=0
     while IFS= read -r f; do
       [ -z "$f" ] && continue
-      f="${f#\"}"; f="${f%\"}"
-      f_decoded=$(printf '%b' "$f")
-      [ ! -f "$f_decoded" ] && continue
-      sz=$(stat -f '%z' "$f_decoded" 2>/dev/null || echo 0)
+      [ ! -f "$f" ] && continue
+      sz=$(stat -f '%z' "$f" 2>/dev/null || echo 0)
       if [ "$sz" -gt 150000 ]; then
-        git add "$f_decoded"
+        git add "$f"
         NF=$((NF + 1))
       fi
     done <<< "$REMAINING"
