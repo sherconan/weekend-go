@@ -1,6 +1,6 @@
 // Weekend-Go Service Worker v27 — codex image2 batch (2026-05-22)
 const CACHE_NAME = 'weekend-go-v27';
-const IMAGE_CACHE_NAME = 'weekend-go-images-v4';
+const IMAGE_CACHE_NAME = 'weekend-go-images-v5';
 const MAX_IMAGE_CACHE = 120;
 
 const CORE_ASSETS = [
