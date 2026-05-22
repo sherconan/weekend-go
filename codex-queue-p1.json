@@ -1,0 +1,289 @@
+[
+  {
+    "id": "su-1003",
+    "name": "狮子林",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou lion grove garden, 以假山闻名的禅意园林, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1003.webp"
+  },
+  {
+    "id": "su-1029",
+    "name": "苏州博物馆西馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou museum west branch, 2021 年新馆，展品更丰富, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1029.webp"
+  },
+  {
+    "id": "su-1030",
+    "name": "苏州丝绸博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou silk museum, 4000 年丝绸文化全解读, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1030.webp"
+  },
+  {
+    "id": "su-1031",
+    "name": "中国昆曲博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of kunqu opera museum suzhou, 平江路里的戏曲圣殿, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1031.webp"
+  },
+  {
+    "id": "su-1047",
+    "name": "苏州之眼摩天轮",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou eye ferris wheel, 128 米俯瞰金鸡湖, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1047.webp"
+  },
+  {
+    "id": "su-1048",
+    "name": "圆融天幕街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yuanrong tianmu street suzhou, 500 米 LED 天幕, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1048.webp"
+  },
+  {
+    "id": "su-1049",
+    "name": "太湖西山（金庭镇）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xishan island taihu, 太湖最大岛 + 碧螺春产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1049.webp"
+  },
+  {
+    "id": "su-1050",
+    "name": "太湖东山（洞庭东山）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of dongshan peninsula taihu, 雕花楼 + 白沙枇杷产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1050.webp"
+  },
+  {
+    "id": "su-1051",
+    "name": "阳澄湖（莲花岛）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yangcheng lake hairy crab, 中国大闸蟹之乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1051.webp"
+  },
+  {
+    "id": "su-1052",
+    "name": "沙家浜（常熟）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shajiabang reed marsh, 红色湿地 + 芦苇荡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1052.webp"
+  },
+  {
+    "id": "su-1053",
+    "name": "常熟虞山（尚湖）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of changshu yushan shanghu, 姜尚钓鱼的湖 + 古城墙, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1053.webp"
+  },
+  {
+    "id": "su-1054",
+    "name": "斜塘老街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xietang old street suzhou, 园区仿古夜游街, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1054.webp"
+  },
+  {
+    "id": "su-1055",
+    "name": "树山村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shushan village suzhou, 阳山下的网红小村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 赏花. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1055.webp"
+  },
+  {
+    "id": "su-1056",
+    "name": "明月湾古村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of mingyuewan ancient village taihu, 太湖中的 2500 年古村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1056.webp"
+  },
+  {
+    "id": "su-1057",
+    "name": "黎里古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of lili ancient town suzhou, 最原生态的江南水乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1057.webp"
+  },
+  {
+    "id": "su-1058",
+    "name": "诚品生活苏州",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of eslite life suzhou, 生活美学综合体, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1058.webp"
+  },
+  {
+    "id": "su-1059",
+    "name": "苏州松鹤楼（观前街总店）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of songhelou restaurant suzhou, 260 年苏帮菜老字号, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1059.webp"
+  },
+  {
+    "id": "cd-1300",
+    "name": "宽窄巷子",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Kuanzhai Alley traditional street, 三条老巷·成都慢生活名片, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 美食, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1300.webp"
+  },
+  {
+    "id": "cd-1302",
+    "name": "锦里古街",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Jinli Ancient Street night lanterns, 西蜀第一街·武侯祠旁, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 美食, 夜景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1302.webp"
+  },
+  {
+    "id": "cd-1304",
+    "name": "青城山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingcheng Mountain Taoist temple Chengdu, 道教四大名山·张天师道场, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 宗教, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1304.webp"
+  },
+  {
+    "id": "cd-1305",
+    "name": "武侯祠",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wuhou Shrine Chengdu Three Kingdoms, 中国唯一君臣合祀的祠庙, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 博物馆, 三国. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1305.webp"
+  },
+  {
+    "id": "cd-1307",
+    "name": "乐山大佛",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Leshan Giant Buddha Sichuan, 世界最大石刻佛像·71m 高, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 佛教, 世界遗产. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1307.webp"
+  },
+  {
+    "id": "cd-1308",
+    "name": "西岭雪山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xiling Snow Mountain ski resort Sichuan, 成都人的滑雪圣地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 滑雪, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1308.webp"
+  },
+  {
+    "id": "cd-1309",
+    "name": "杜甫草堂",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Du Fu Thatched Cottage Chengdu, 诗圣杜甫在成都的旧居, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 文学, 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1309.webp"
+  },
+  {
+    "id": "cd-1311",
+    "name": "人民公园",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Peoples Park Heming Teahouse, 成都人喝茶打麻将的真·日常, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 休闲, 茶文化, 市井. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1311.webp"
+  },
+  {
+    "id": "cd-1312",
+    "name": "浣花溪公园",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Huanhuaxi Park autumn ginkgo, 杜甫诗意栖居·城市最大文化湿地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 公园, 文学, 遛娃. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1312.webp"
+  },
+  {
+    "id": "cd-1313",
+    "name": "文殊院",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Wenshu Monastery ancient Buddhist temple, 川西第一禅林·1400 年唐代古刹, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 宗教, 素食, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1313.webp"
+  },
+  {
+    "id": "cd-1314",
+    "name": "大慈寺",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Daci Temple Taikooli red wall, 玄奘受戒之地·太古里禅意心脏, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 宗教, 文艺, 咖啡. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1314.webp"
+  },
+  {
+    "id": "cd-1315",
+    "name": "东郊记忆",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Eastern Suburb Memory industrial art park, 红砖工厂改造·成都 798, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文艺, 工业风, 展览. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1315.webp"
+  },
+  {
+    "id": "cd-1317",
+    "name": "黄龙溪古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Huanglongxi Ancient Town water village Chengdu, 1700 年川西水乡·火龙灯舞之乡, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 水乡, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1317.webp"
+  },
+  {
+    "id": "cd-1318",
+    "name": "洛带古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Luodai Ancient Town Hakka culture Chengdu, 中国西部客家第一镇, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 客家, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1318.webp"
+  },
+  {
+    "id": "cd-1319",
+    "name": "街子古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiezi Ancient Town Qingcheng backyard, 青城后花园·千年古镇 + 凤栖山, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 自然, 休闲. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1319.webp"
+  },
+  {
+    "id": "cd-1320",
+    "name": "平乐古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Pingle Ancient Town Sichuan water village bamboo, 茶马古道第一镇·川西水乡, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 水乡, 竹海. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1320.webp"
+  },
+  {
+    "id": "cd-1321",
+    "name": "安仁古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Anren Ancient Town Jianchuan Museum mansion, 民国公馆群·刘氏庄园·建川博物馆聚落, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1321.webp"
+  },
+  {
+    "id": "cd-1322",
+    "name": "三圣乡·花香荷韵",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Sansheng Township flower fields countryside, 五朵金花·城市近郊花田, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 花田, 乡村, 农家乐. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1322.webp"
+  },
+  {
+    "id": "cd-1323",
+    "name": "稻城亚丁",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Daocheng Yading three sacred mountains Sichuan, 蓝色星球最后一片净土·三神山, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 雪山, 高原, 徒步. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1323.webp"
+  },
+  {
+    "id": "cd-1324",
+    "name": "四姑娘山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Siguniang Mountain Sichuan Eastern Alps, 东方阿尔卑斯·4 座 6000m 姊妹峰, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 雪山, 徒步, 高原. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1324.webp"
+  },
+  {
+    "id": "cd-1326",
+    "name": "丹巴甲居藏寨",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Danba Jiaju Tibetan village pear blossom, 中国最美乡村·嘉绒藏族白色石楼, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 藏寨, 梨花, 高原. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1326.webp"
+  },
+  {
+    "id": "cd-1327",
+    "name": "阆中古城",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Langzhong Ancient City Sichuan four ancient cities, 中国四大古城·巴蜀春节发源地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古城, 风水, 春节. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1327.webp"
+  },
+  {
+    "id": "cd-1328",
+    "name": "蜀南竹海",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Shunan Bamboo Sea Sichuan Crouching Tiger Hidden Dragon, 《卧虎藏龙》取景地·500 平方公里翠竹海洋, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 竹海, 自然, 避暑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1328.webp"
+  },
+  {
+    "id": "cd-1329",
+    "name": "建设巷美食街",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Jianshe Alley food street local cuisine, 成都人深夜的灵魂·苍蝇馆子一条街, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 市井, 夜宵. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1329.webp"
+  }
+]
