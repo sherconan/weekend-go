@@ -4,9 +4,10 @@ html[data-theme="dark"] {
   --ink-700: #D5DAE0;
   --ink-500: #98A2B3;
   --ink-300: #667085;
-  --bg: #0F1416;
-  --surface: #1A2024;
-  --surface-2: #242B30;
+  /* DESIGN-REVIEW C2 (2026-04-19): night mode base #1A1E28 — cooler blue-purple, less greenish */
+  --bg: #1A1E28;
+  --surface: #232838;
+  --surface-2: #2D3344;
   --brand: #66BB6A;
   --brand-dark: #4CAF50;
   --action: #FF8A65;

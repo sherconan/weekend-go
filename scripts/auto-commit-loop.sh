@@ -68,21 +68,33 @@ Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>" 2>&1 | tai
 Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>" 2>&1 | tail -2
       git push origin main 2>&1 | tail -2
     fi
-    # SW + cachebust bump
-    echo "[loop $LOOP] final SW v26→v27 + IMAGE_CACHE v3→v4 + cachebust"
-    TODAY=$(date +%Y%m%d)
-    NEW_V="${TODAY}-codex-batch"
-    if grep -q "weekend-go-v26" sw.js; then
-      sed -i.bak 's/weekend-go-v26/weekend-go-v27/g; s/weekend-go-images-v3/weekend-go-images-v4/g' sw.js
+    # SW + IMAGE_CACHE auto-bump + cachebust (idempotent: always bumps to next version)
+    TODAY=$(date +%Y%m%d-%H%M)
+    NEW_V="codex-${TODAY}"
+    # Parse current IMAGE_CACHE version (e.g. v5) and bump +1
+    cur_img=$(grep -oE "weekend-go-images-v[0-9]+" sw.js | head -1 | grep -oE "v[0-9]+")
+    if [ -n "$cur_img" ]; then
+      next_n=$(( ${cur_img#v} + 1 ))
+      next_img="v${next_n}"
+      echo "[loop $LOOP] IMAGE_CACHE ${cur_img}→${next_img} + cachebust ${NEW_V}"
+      sed -i.bak "s/weekend-go-images-${cur_img}/weekend-go-images-${next_img}/g" sw.js
+      rm -f sw.js.bak
+    fi
+    # Parse current SW CACHE_NAME version (e.g. v27) and bump +1 only if first batch
+    cur_sw=$(grep -oE "weekend-go-v[0-9]+" sw.js | head -1 | grep -oE "v[0-9]+")
+    # only bump SW version if we're at v26 (first batch ever); otherwise IMAGE_CACHE bump alone is enough
+    if [ "$cur_sw" = "v26" ]; then
+      sed -i.bak 's/weekend-go-v26/weekend-go-v27/g' sw.js
       sed -i.bak "s|Service Worker v26 — .*|Service Worker v27 — codex image2 batch ($(date +%Y-%m-%d))|" sw.js
       rm -f sw.js.bak
     fi
+    # Always bump cachebust
     sed -i.bak "s|js/images.js?v=[^\"]*|js/images.js?v=${NEW_V}|" index.html
     sed -i.bak "s|js/app.js?v=[^\"]*|js/app.js?v=${NEW_V}|" index.html
     rm -f index.html.bak
     if ! git diff --quiet sw.js index.html; then
       git add sw.js index.html
-      git commit -m "chore(cache): SW v27 + IMAGE_CACHE v4 + cachebust ${NEW_V} (codex batch close)
+      git commit -m "chore(cache): IMAGE_CACHE bump + cachebust ${NEW_V} (codex batch close)
 
 Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>" 2>&1 | tail -2
       git push origin main 2>&1 | tail -2
