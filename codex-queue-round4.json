@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "es-1604",
+    "name": "七星寨景区",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Qixingzhai stone pillar cliff walk, 一炷香+玉笔峰·恩施大峡谷顶流打卡区, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 绝壁栈道, 峰林, 摄影. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1604.webp"
+  },
+  {
+    "id": "es-1618",
+    "name": "神农架神农顶",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Shennongjia peak alpine meadow China, 华中屋脊·3106m 神农顶国家公园, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 华中屋脊, 原始森林, 高山草甸. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1618.webp"
+  },
+  {
+    "id": "es-1622",
+    "name": "张家界天门山",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianmen Mountain Zhangjiajie cable car, 天门洞+玻璃栈道·湘西第一神山, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 神山, 玻璃栈道, 天门洞. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1622.webp"
+  },
+  {
+    "id": "es-1602",
+    "name": "恩施女儿城",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Nverhcheng Tujia town night, 相亲会+非遗街·土家民俗小镇, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 美食, 夜景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1602.webp"
+  },
+  {
+    "id": "es-1605",
+    "name": "利川腾龙洞",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lichuan Tenglong Cave karst, 亚洲第一溶洞·激光秀+江源情表演, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溶洞, 激光秀, 地质奇观. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1605.webp"
+  },
+  {
+    "id": "cq-1500",
+    "name": "洪崖洞",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Hongyadong stilted buildings Chongqing night lantern, 千厮门吊脚楼夜景, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 夜景, 网红, 山城. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1500.webp"
+  },
+  {
+    "id": "su-1029",
+    "name": "苏州博物馆西馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou museum west branch, 2021 年新馆，展品更丰富, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1029.webp"
+  },
+  {
+    "id": "su-1030",
+    "name": "苏州丝绸博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou silk museum, 4000 年丝绸文化全解读, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1030.webp"
+  },
+  {
+    "id": "su-1031",
+    "name": "中国昆曲博物馆",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of kunqu opera museum suzhou, 平江路里的戏曲圣殿, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1031.webp"
+  },
+  {
+    "id": "su-1047",
+    "name": "苏州之眼摩天轮",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of suzhou eye ferris wheel, 128 米俯瞰金鸡湖, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1047.webp"
+  },
+  {
+    "id": "su-1048",
+    "name": "圆融天幕街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yuanrong tianmu street suzhou, 500 米 LED 天幕, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1048.webp"
+  },
+  {
+    "id": "su-1049",
+    "name": "太湖西山（金庭镇）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xishan island taihu, 太湖最大岛 + 碧螺春产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 爬山. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1049.webp"
+  },
+  {
+    "id": "su-1050",
+    "name": "太湖东山（洞庭东山）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of dongshan peninsula taihu, 雕花楼 + 白沙枇杷产地, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1050.webp"
+  },
+  {
+    "id": "su-1051",
+    "name": "阳澄湖（莲花岛）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of yangcheng lake hairy crab, 中国大闸蟹之乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1051.webp"
+  },
+  {
+    "id": "su-1052",
+    "name": "沙家浜（常熟）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shajiabang reed marsh, 红色湿地 + 芦苇荡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 度假, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1052.webp"
+  },
+  {
+    "id": "su-1053",
+    "name": "常熟虞山（尚湖）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of changshu yushan shanghu, 姜尚钓鱼的湖 + 古城墙, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1053.webp"
+  },
+  {
+    "id": "su-1054",
+    "name": "斜塘老街",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of xietang old street suzhou, 园区仿古夜游街, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1054.webp"
+  },
+  {
+    "id": "su-1055",
+    "name": "树山村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of shushan village suzhou, 阳山下的网红小村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 度假, 赏花. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1055.webp"
+  },
+  {
+    "id": "su-1056",
+    "name": "明月湾古村",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of mingyuewan ancient village taihu, 太湖中的 2500 年古村, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1056.webp"
+  },
+  {
+    "id": "su-1057",
+    "name": "黎里古镇",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of lili ancient town suzhou, 最原生态的江南水乡, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1057.webp"
+  },
+  {
+    "id": "su-1058",
+    "name": "诚品生活苏州",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of eslite life suzhou, 生活美学综合体, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: CityWalk. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1058.webp"
+  },
+  {
+    "id": "su-1059",
+    "name": "苏州松鹤楼（观前街总店）",
+    "city": "suzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of songhelou restaurant suzhou, 260 年苏帮菜老字号, Suzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-su-1059.webp"
+  },
+  {
+    "id": "cd-1300",
+    "name": "宽窄巷子",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Kuanzhai Alley traditional street, 三条老巷·成都慢生活名片, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 美食, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1300.webp"
+  },
+  {
+    "id": "cd-1302",
+    "name": "锦里古街",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Jinli Ancient Street night lanterns, 西蜀第一街·武侯祠旁, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 美食, 夜景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1302.webp"
+  },
+  {
+    "id": "cd-1304",
+    "name": "青城山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingcheng Mountain Taoist temple Chengdu, 道教四大名山·张天师道场, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 宗教, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1304.webp"
+  },
+  {
+    "id": "cd-1305",
+    "name": "武侯祠",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wuhou Shrine Chengdu Three Kingdoms, 中国唯一君臣合祀的祠庙, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 博物馆, 三国. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1305.webp"
+  },
+  {
+    "id": "cd-1308",
+    "name": "西岭雪山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xiling Snow Mountain ski resort Sichuan, 成都人的滑雪圣地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 滑雪, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1308.webp"
+  },
+  {
+    "id": "cd-1309",
+    "name": "杜甫草堂",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Du Fu Thatched Cottage Chengdu, 诗圣杜甫在成都的旧居, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 文学, 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1309.webp"
+  },
+  {
+    "id": "cd-1311",
+    "name": "人民公园",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Peoples Park Heming Teahouse, 成都人喝茶打麻将的真·日常, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 休闲, 茶文化, 市井. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1311.webp"
+  },
+  {
+    "id": "cd-1312",
+    "name": "浣花溪公园",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Huanhuaxi Park autumn ginkgo, 杜甫诗意栖居·城市最大文化湿地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 公园, 文学, 遛娃. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1312.webp"
+  },
+  {
+    "id": "cd-1313",
+    "name": "文殊院",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Wenshu Monastery ancient Buddhist temple, 川西第一禅林·1400 年唐代古刹, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 宗教, 素食, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1313.webp"
+  },
+  {
+    "id": "cd-1314",
+    "name": "大慈寺",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Daci Temple Taikooli red wall, 玄奘受戒之地·太古里禅意心脏, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 宗教, 文艺, 咖啡. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1314.webp"
+  },
+  {
+    "id": "cd-1315",
+    "name": "东郊记忆",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Eastern Suburb Memory industrial art park, 红砖工厂改造·成都 798, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文艺, 工业风, 展览. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1315.webp"
+  },
+  {
+    "id": "cd-1317",
+    "name": "黄龙溪古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Huanglongxi Ancient Town water village Chengdu, 1700 年川西水乡·火龙灯舞之乡, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 水乡, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1317.webp"
+  },
+  {
+    "id": "cd-1318",
+    "name": "洛带古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Luodai Ancient Town Hakka culture Chengdu, 中国西部客家第一镇, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 客家, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1318.webp"
+  },
+  {
+    "id": "cd-1319",
+    "name": "街子古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiezi Ancient Town Qingcheng backyard, 青城后花园·千年古镇 + 凤栖山, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 自然, 休闲. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1319.webp"
+  },
+  {
+    "id": "cd-1320",
+    "name": "平乐古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Pingle Ancient Town Sichuan water village bamboo, 茶马古道第一镇·川西水乡, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 水乡, 竹海. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1320.webp"
+  },
+  {
+    "id": "cd-1321",
+    "name": "安仁古镇",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Anren Ancient Town Jianchuan Museum mansion, 民国公馆群·刘氏庄园·建川博物馆聚落, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 博物馆, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1321.webp"
+  },
+  {
+    "id": "cd-1322",
+    "name": "三圣乡·花香荷韵",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Sansheng Township flower fields countryside, 五朵金花·城市近郊花田, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 花田, 乡村, 农家乐. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1322.webp"
+  },
+  {
+    "id": "cd-1323",
+    "name": "稻城亚丁",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Daocheng Yading three sacred mountains Sichuan, 蓝色星球最后一片净土·三神山, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 雪山, 高原, 徒步. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1323.webp"
+  },
+  {
+    "id": "cd-1324",
+    "name": "四姑娘山",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Siguniang Mountain Sichuan Eastern Alps, 东方阿尔卑斯·4 座 6000m 姊妹峰, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 雪山, 徒步, 高原. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1324.webp"
+  },
+  {
+    "id": "cd-1326",
+    "name": "丹巴甲居藏寨",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Danba Jiaju Tibetan village pear blossom, 中国最美乡村·嘉绒藏族白色石楼, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 藏寨, 梨花, 高原. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1326.webp"
+  },
+  {
+    "id": "cd-1327",
+    "name": "阆中古城",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Langzhong Ancient City Sichuan four ancient cities, 中国四大古城·巴蜀春节发源地, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古城, 风水, 春节. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1327.webp"
+  },
+  {
+    "id": "cd-1328",
+    "name": "蜀南竹海",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Shunan Bamboo Sea Sichuan Crouching Tiger Hidden Dragon, 《卧虎藏龙》取景地·500 平方公里翠竹海洋, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 竹海, 自然, 避暑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1328.webp"
+  },
+  {
+    "id": "cd-1329",
+    "name": "建设巷美食街",
+    "city": "chengdu",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chengdu Jianshe Alley food street local cuisine, 成都人深夜的灵魂·苍蝇馆子一条街, chengdu China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 市井, 夜宵. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cd-1329.webp"
+  },
+  {
+    "id": "qd-1217",
+    "name": "中国海军博物馆",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of China Navy Museum Qingdao destroyer submarine, 亚洲最大·实舰潜艇直接登舰, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 军事, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-中国海军博物馆.webp"
+  },
+  {
+    "id": "qd-1219",
+    "name": "小麦岛公园",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Xiaomai Island Park grass sunset, 青岛版「济州岛」·网红草坡海景, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 散步, 摄影. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-小麦岛公园.webp"
+  },
+  {
+    "id": "qd-1221",
+    "name": "崂山巨峰",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laoshan Jufeng Peak sea of clouds Qingdao, 崂山主峰 1132.7m·海上第一名山, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 登山, 自然, 道教. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-崂山巨峰.webp"
+  },
+  {
+    "id": "qd-1225",
+    "name": "黄岛金沙滩",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Huangdao Golden Beach Jinshatan, 国家 4A·青岛最大沙滩 3500m, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 亲子, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-黄岛金沙滩.webp"
+  },
+  {
+    "id": "qd-1229",
+    "name": "蓬莱阁",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Penglai Pavilion Yantai Immortal Tower, 中国四大名楼·八仙过海起点, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 名楼, 海景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-蓬莱阁.webp"
+  },
+  {
+    "id": "qd-1206",
+    "name": "第一海水浴场",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao First Bathing Beach, 青岛市中心最便利的沙滩, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 亲子, 休闲. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-第一海水浴场.webp"
+  },
+  {
+    "id": "tj-1106",
+    "name": "独乐寺（蓟州）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Dule Temple Ji County ancient wooden architecture, 中国现存最古老木构建筑之一, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 寺庙, 古迹. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1106.webp"
+  },
+  {
+    "id": "tj-1107",
+    "name": "盘山（蓟州）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Panshan Mountain Ji County Tianjin, 京东第一山·乾隆 32 次巡幸, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 历史, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1107.webp"
+  },
+  {
+    "id": "tj-1108",
+    "name": "滨海航母主题公园",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Binhai Aircraft Carrier Theme Park, 真·基辅号航母改造的主题公园, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 军事, 亲子, 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1108.webp"
+  },
+  {
+    "id": "tj-1113",
+    "name": "国家海洋博物馆",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of National Maritime Museum of China Tianjin Binhai, 中国海洋版故宫·免费博物馆之光, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 亲子, 科普. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1113.webp"
+  },
+  {
+    "id": "tj-1115",
+    "name": "滨海文化中心（滨海图书馆）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Binhai Library the eye interior, BBC 评选世界最美图书馆·滨海之眼, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文艺, 建筑, 打卡. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1115.webp"
+  },
+  {
+    "id": "tj-1117",
+    "name": "南市食品街",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Nanshi food street traditional snacks, 天津三绝老字号全打卡, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 古街, 老城. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1117.webp"
+  },
+  {
+    "id": "hz-1404",
+    "name": "西溪湿地",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xixi Wetland Park Hangzhou, 三西合一·《非诚勿扰》取景地, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 自然, 湿地, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1404.webp"
+  },
+  {
+    "id": "hz-1405",
+    "name": "千岛湖",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qiandao Lake thousand islands Hangzhou, 1078 座岛屿·国家 5A 水上乐园, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海岛, 度假, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1405.webp"
+  },
+  {
+    "id": "hz-1409",
+    "name": "中国美术学院象山校区",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of China Academy Art Xiangshan Wang Shu, 王澍设计·最美大学之一, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 建筑, 文艺, 摄影. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1409.webp"
+  },
+  {
+    "id": "hz-1410",
+    "name": "飞来峰石窟",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Feilaifeng grottoes Hangzhou Buddhist carvings, 江南唯一大型石窟·345 龛造像, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 石窟, 历史, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1410.webp"
+  },
+  {
+    "id": "hz-1411",
+    "name": "九溪烟树",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiuxi eighteen streams Hangzhou forest hiking, 十里琅珰·九溪十八涧徒步, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 自然, 徒步, 茶山. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1411.webp"
+  },
+  {
+    "id": "hz-1412",
+    "name": "梅家坞茶文化村",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Meijiawu tea village Hangzhou Longjing, 周恩来五顾·万亩茶田小村, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 茶文化, 村落, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1412.webp"
+  },
+  {
+    "id": "es-1615",
+    "name": "宣恩狮子关水上浮桥",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xuan'en Shiziguan water bridge driving, 水上公路开车+伏流大瀑布, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 水上浮桥, 瀑布, 网红. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1615.webp"
+  },
+  {
+    "id": "es-1619",
+    "name": "神农架鹿院坪",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Luyuanping ancient village cliff valley, 古村落+四面环山·神农架最后秘境, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古村, 秘境, 徒步. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1619.webp"
+  },
+  {
+    "id": "es-1626",
+    "name": "凤凰古城",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Fenghuang Ancient Town Tuojiang River night, 沱江畔吊脚楼·沈从文故乡, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古城, 沱江, 文学地. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1626.webp"
+  },
+  {
+    "id": "es-1629",
+    "name": "恩施土家合渣宴",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Tujia Heza stew dinner, 土家第一菜·合渣+腊蹄子火锅·非遗美食, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 非遗, 土家文化. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1629.webp"
+  },
+  {
+    "id": "es-1606",
+    "name": "利川苏马荡",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lichuan Sumadang summer resort rhododendron, 海拔 1500m 避暑天堂·杜鹃花海, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 避暑, 森林, 杜鹃花. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1606.webp"
+  },
+  {
+    "id": "es-1616",
+    "name": "巴东神农溪",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Badong Shennongxi boat trackers, 长江支流漂流·纤夫文化活态展示, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 漂流, 长江支流, 纤夫文化. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1616.webp"
+  },
+  {
+    "id": "cq-1518",
+    "name": "武隆天生三桥",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wulong three natural bridges karst UNESCO, 世遗喀斯特石桥群, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 世遗, 喀斯特, 峡谷. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1518.webp"
+  },
+  {
+    "id": "cq-1501",
+    "name": "解放碑",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiefangbei monument Chongqing CBD, 山城最初的那座抗战胜利碑, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 市井, 购物. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1501.webp"
+  },
+  {
+    "id": "cq-1504",
+    "name": "鹅岭贰厂文创公园",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Tester II printing factory creative park, 老印钞厂改成的山城工业风地标, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文艺, 工业, 文创. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1504.webp"
+  },
+  {
+    "id": "cq-1506",
+    "name": "观音桥商圈+九街",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Guanyinqiao Jiujie nightlife, 江北不夜城的霓虹芯, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 夜生活, 购物, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1506.webp"
+  },
+  {
+    "id": "cq-1514",
+    "name": "缙云山国家级自然保护区",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Jinyun mountain nature reserve Taoist temple, 重庆主城的避暑氧吧, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 避暑, 森林. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1514.webp"
+  },
+  {
+    "id": "cq-1517",
+    "name": "潼南陈抟故里油菜花田",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tongnan rapeseed flower field golden March, 每年 3 月的金色海洋, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 赏花, 季节, 田园. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1517.webp"
+  },
+  {
+    "id": "qd-1208",
+    "name": "劈柴院",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Pichaiyuan food street night, 百年小吃街·江宁会馆旁, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 古街, 市井. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-劈柴院.webp"
+  },
+  {
+    "id": "qd-1209",
+    "name": "登州路啤酒街",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Dengzhou Road Beer Street night, 青啤厂门口的街区·原浆鲜啤, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 夜生活, 啤酒. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-登州路啤酒街.webp"
+  },
+  {
+    "id": "qd-1211",
+    "name": "红岛海鲜市场",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Hongdao seafood market clams, 青岛吃蛤蜊的正宗地, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 海边, 市场. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-红岛海鲜市场.webp"
+  },
+  {
+    "id": "qd-1212",
+    "name": "船歌鱼水饺总店",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Chuange fish dumpling restaurant, 青岛代表性海鲜水饺, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 美食, 海鲜, 老字号. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-船歌鱼水饺总店.webp"
+  },
+  {
+    "id": "qd-1213",
+    "name": "小鱼山公园",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Xiaoyushan Park Lanyue Pavilion overlook, 老城区 60m 山头·汇泉湾最佳俯瞰位, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 观景, 摄影, 登山. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-小鱼山公园.webp"
+  },
+  {
+    "id": "qd-1214",
+    "name": "青岛迎宾馆",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao German Governor Residence Yingbinguan, 德国总督楼旧址·欧洲古堡式建筑, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 建筑, 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-青岛迎宾馆.webp"
+  },
+  {
+    "id": "qd-1216",
+    "name": "江苏路基督教堂",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Jiangsu Road Protestant Church clock tower, 德式钟表楼·1910 年原装大钟, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 建筑, 摄影, 宗教. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-江苏路基督教堂.webp"
+  },
+  {
+    "id": "qd-1218",
+    "name": "鲁迅公园海滨木栈道",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Luxun Park seaside boardwalk red reef, 红礁黑石 + 海大正门·文艺散步线, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 文艺, 散步. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-鲁迅公园海滨木栈道.webp"
+  },
+  {
+    "id": "qd-1220",
+    "name": "胶州湾跨海大桥",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Jiaozhou Bay Bridge aerial, 全长 42.23km·世界最长跨海大桥, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 地标, 自驾, 观景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-胶州湾跨海大桥.webp"
+  },
+  {
+    "id": "qd-1222",
+    "name": "崂山北九水",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laoshan Beijiushui nine waters waterfall, 九曲溪流·'小九寨沟'称号, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溪流, 自然, 徒步. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-崂山北九水.webp"
+  },
+  {
+    "id": "qd-1223",
+    "name": "崂山仰口",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laoshan Yangkou mountain sea Taiping Palace, 崂山东线海景·太平宫 + 狮子峰, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 登山, 道教. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-崂山仰口.webp"
+  },
+  {
+    "id": "qd-1226",
+    "name": "黄岛银沙滩",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qingdao Huangdao Silver Beach Yinshatan, 金沙滩隔壁·安静版白沙海岸, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海边, 亲子, 安静. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-黄岛银沙滩.webp"
+  },
+  {
+    "id": "qd-1227",
+    "name": "灵山岛",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lingshan Island Qingdao ferry fishing, 北方第一高岛·513m 海上仙境, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海岛, 徒步, 渔村. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-灵山岛.webp"
+  },
+  {
+    "id": "qd-1228",
+    "name": "琅琊台",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Langya Terrace Qin Shi Huang Qingdao, 秦始皇登临地·东方第一台, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 海边, 博物馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-琅琊台.webp"
+  },
+  {
+    "id": "qd-1230",
+    "name": "长岛",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Changdao Island Yantai ferry Bohai, 山东唯一海岛县·渤海黄海分界, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海岛, 徒步, 海鲜. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-长岛.webp"
+  },
+  {
+    "id": "qd-1231",
+    "name": "养马岛",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Yangma Island Yantai coastal road, 烟台牟平·秦皇汉武的御马场, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海岛, 自驾, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-养马岛.webp"
+  },
+  {
+    "id": "qd-1232",
+    "name": "张裕酒文化博物馆",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Changyu Wine Culture Museum Yantai cellar, 1892 年·中国第一家葡萄酒厂, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 美食, 工业. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-张裕酒文化博物馆.webp"
+  },
+  {
+    "id": "qd-1224",
+    "name": "崂山华楼宫",
+    "city": "qingdao",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laoshan Hualou Temple Qingdao Taoist, 崂山北线道观·华楼峰奇石, qingdao China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 道教, 登山, 奇石. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-qd-崂山华楼宫.webp"
+  },
+  {
+    "id": "tj-1129",
+    "name": "天津大学北洋园校区",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin University Beiyangyuan campus ginkgo autumn, 中国第一所现代大学·北洋大学, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 校园, 历史, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1129.webp"
+  },
+  {
+    "id": "tj-1109",
+    "name": "梨木台风景区",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Limutai scenic area Tianjin primeval forest, 天津市最高峰·九山顶北麓, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 自然, 爬山, 避暑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1109.webp"
+  },
+  {
+    "id": "tj-1110",
+    "name": "九龙山国家森林公园",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiulongshan national forest park Ji County rock formation, 华北最大石英岩峰林, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 自然, 爬山, 亲子. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1110.webp"
+  },
+  {
+    "id": "tj-1111",
+    "name": "八仙山国家级自然保护区",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Baxian mountain nature reserve Tianjin waterfall, 京津冀唯一国家级森林保护区, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 自然, 徒步, 避暑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1111.webp"
+  },
+  {
+    "id": "tj-1112",
+    "name": "黄崖关长城",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Huangya Pass Great Wall Tianjin autumn, 戚继光督建·万里长城津门第一关, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 爬山, 古迹. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1112.webp"
+  },
+  {
+    "id": "tj-1114",
+    "name": "东疆湾沙滩景区",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Dongjiang Bay Beach Tianjin sunset, 京津冀第一个人造沙滩, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 海滩, 亲子, 度假. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1114.webp"
+  },
+  {
+    "id": "tj-1116",
+    "name": "大沽口炮台遗址博物馆",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Dagu Fort ruins museum Tianjin coastal defense, 海上国门·二次鸦片战争前线, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 博物馆, 军事. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1116.webp"
+  },
+  {
+    "id": "tj-1118",
+    "name": "鼓楼商业街",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Drum Tower old city street, 天津卫三宗宝之首·600 年卫城中心, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 历史, 老城. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1118.webp"
+  },
+  {
+    "id": "tj-1119",
+    "name": "劝业场（滨江道）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Quanyechang historic department store, 百年商场·东方百老汇, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 商圈, 建筑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1119.webp"
+  },
+  {
+    "id": "tj-1120",
+    "name": "杨柳青古镇（石家大院）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Yangliuqing ancient town Shi Family Courtyard, 年画之乡·华北第一宅, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 年画, 宅院. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1120.webp"
+  },
+  {
+    "id": "tj-1121",
+    "name": "霍元甲纪念馆",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Huo Yuanjia memorial hall Tianjin Jingwu, 精武宗师·小南河故居, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 名人故居, 武术. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1121.webp"
+  },
+  {
+    "id": "tj-1123",
+    "name": "天津广播电视塔（天塔）",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin TV tower Tianta night view, 世界第五·亚洲第二高塔, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 观光, 夜景, 建筑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1123.webp"
+  },
+  {
+    "id": "tj-1124",
+    "name": "解放北路金融街",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiefang North Road Tianjin historical bank buildings, 东方华尔街·百年金融建筑群, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 建筑, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1124.webp"
+  },
+  {
+    "id": "tj-1125",
+    "name": "泰安道五大院",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Taian Road Tianjin British concession historic buildings, 英租界外交官官邸·小众文艺街, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文艺, 建筑, 咖啡馆. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1125.webp"
+  },
+  {
+    "id": "tj-1126",
+    "name": "西开教堂",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xikai Cathedral Tianjin French Romanesque, 天津最大天主教堂·法式罗曼式双塔, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 建筑, 宗教, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1126.webp"
+  },
+  {
+    "id": "tj-1122",
+    "name": "独流老醋文化产业园",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Duliu vinegar cultural park Jinghai Tianjin, 北派老醋·400 年独流大醋传承, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 文化, 博物馆, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1122.webp"
+  },
+  {
+    "id": "tj-1127",
+    "name": "望海楼教堂",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wanghailou Church Tianjin Gothic cathedral haihe, 天津教案发生地·海河畔哥特式建筑, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 宗教, 建筑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1127.webp"
+  },
+  {
+    "id": "tj-1128",
+    "name": "天津邮政博物馆",
+    "city": "tianjin",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianjin Postal Museum historical building, 中国邮政发源地·大清邮政总局旧址, tianjin China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 博物馆, 历史, 冷门. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-tj-1128.webp"
+  },
+  {
+    "id": "hz-1413",
+    "name": "北山街·宝石山",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Baochu Pagoda Hangzhou West Lake sunrise, 民国别墅一条街·保俶塔俯瞰西湖, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 观景, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1413.webp"
+  },
+  {
+    "id": "hz-1414",
+    "name": "良渚古城遗址公园",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Liangzhu ancient city archaeological site, 五千年文明·世界文化遗产, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 考古, 历史, 研学. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1414.webp"
+  },
+  {
+    "id": "hz-1415",
+    "name": "中国美术学院民艺博物馆",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Kengo Kuma folk art museum Hangzhou tiles, 隈研吾设计·青瓦流云屋顶, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 建筑, 艺术, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1415.webp"
+  },
+  {
+    "id": "hz-1417",
+    "name": "盐官观潮景区",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qiantang River tidal bore Yanguan, 天下奇观·钱塘江潮起三丈, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 奇观, 自然, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1417.webp"
+  },
+  {
+    "id": "hz-1418",
+    "name": "鲁迅故里·三味书屋",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lu Xun former residence Shaoxing, 从百草园到三味书屋·先生的绍兴, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 文学, 古街. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1418.webp"
+  },
+  {
+    "id": "hz-1419",
+    "name": "沈园·陆游唐琬",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Shen Garden Shaoxing Lu You, 《钗头凤》千古情殇之地, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 园林, 爱情. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1419.webp"
+  },
+  {
+    "id": "hz-1420",
+    "name": "安昌古镇",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Anchang ancient town Shaoxing lunar new year, 社戏腊味·师爷故乡, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 美食, 民俗. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1420.webp"
+  },
+  {
+    "id": "hz-1421",
+    "name": "西塘古镇",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xitang ancient town rainy corridor, 碟中谍 3 取景·廊棚烟雨, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 水乡, 夜景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1421.webp"
+  },
+  {
+    "id": "hz-1422",
+    "name": "嘉兴南湖·红船",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Nanhu Red Boat Jiaxing revolution, 一大召开地·红色研学必打卡, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 红色, 历史, 研学. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1422.webp"
+  },
+  {
+    "id": "hz-1423",
+    "name": "龙门古镇",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Longmen ancient village Fuyang Sun Quan, 孙权故里·最完整明清宗族村落, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古村, 历史, 宗族. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1423.webp"
+  },
+  {
+    "id": "hz-1425",
+    "name": "建德大慈岩",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Dacilian cliff temple hanging Buddha, 中国最大天然立佛·悬空寺, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 山岳, 佛教, 奇观. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1425.webp"
+  },
+  {
+    "id": "hz-1426",
+    "name": "新叶古村",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xinye ancient village Jiande Ye clan, 700 年宗族耕读村·浙江第一古村, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古村, 宗族, 耕读. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1426.webp"
+  },
+  {
+    "id": "hz-1427",
+    "name": "临安天目山",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Tianmu Mountain ancient forest Lin'an, 大树王·亚洲最大金钱松, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 山岳, 森林, 避暑. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1427.webp"
+  },
+  {
+    "id": "hz-1428",
+    "name": "中国茶叶博物馆",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of China National Tea Museum Hangzhou Longjing, 全国唯一国家级茶主题博物馆, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 茶文化, 博物馆, 文艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1428.webp"
+  },
+  {
+    "id": "hz-1403",
+    "name": "宋城",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Songcheng Hangzhou song dynasty theme park, 给你一天，还你千年·大型宋文化主题区, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 主题乐园, 历史, 演艺. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1403.webp"
+  },
+  {
+    "id": "hz-1407",
+    "name": "南宋御街",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Hangzhou Nansong Imperial Street, 临安都城中轴·清河坊老字号, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古街, 历史, 美食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1407.webp"
+  },
+  {
+    "id": "hz-1408",
+    "name": "杭州雷峰塔",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Leifeng Pagoda Hangzhou West Lake, 白娘子传说·西湖南畔地标, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 观景, 传说. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1408.webp"
+  },
+  {
+    "id": "hz-1424",
+    "name": "桐庐瑶琳仙境",
+    "city": "hangzhou",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Yaolin Wonderland cave Tonglu stalactite, 华东最大溶洞·亿年钟乳, hangzhou China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溶洞, 奇观, 自然. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-hz-1424.webp"
+  },
+  {
+    "id": "es-1620",
+    "name": "三峡大瀑布",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Three Gorges Waterfall Yichang China, 华中第一瀑·瀑布后栈道穿越, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 瀑布, 三峡, 栈道穿越. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1620.webp"
+  },
+  {
+    "id": "es-1621",
+    "name": "巫山神女峰",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wushan Goddess Peak Three Gorges, 巫峡十二峰·长江三峡标志景观, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 三峡, 巫峡, 诗歌地. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1621.webp"
+  },
+  {
+    "id": "es-1625",
+    "name": "矮寨大桥",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Aizhai suspension bridge Xiangxi China, 世界第一悬索桥·矮寨公路奇观, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 桥梁, 公路奇观, 湘西. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1625.webp"
+  },
+  {
+    "id": "es-1601",
+    "name": "恩施土司城",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Tusi Castle Tujia wooden palace, 九进堂木构群·土家建筑艺术博物馆, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 土家文化, 古建. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1601.webp"
+  },
+  {
+    "id": "es-1603",
+    "name": "梭布垭石林",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Enshi Suobuya Stone Forest limestone, 青龙寺+戴冠石·喀斯特石林园, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 石林, 喀斯特, 摄影. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1603.webp"
+  },
+  {
+    "id": "es-1617",
+    "name": "巴东小神农架",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Badong Little Shennongjia forest meadow, 3000m 原始森林·神农架保护区恩施段, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 原始森林, 避暑, 高山草甸. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1617.webp"
+  },
+  {
+    "id": "es-1624",
+    "name": "张家界黄龙洞",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Huanglong Cave Zhangjiajie stalactites, 华中最大溶洞·3 亿年钟乳石奇观, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溶洞, 钟乳石, 地下河. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1624.webp"
+  },
+  {
+    "id": "es-1627",
+    "name": "重庆黔江濯水古镇",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Zhuoshui Ancient Town windbridge Qianjiang, 风雨廊桥+阿蓬江畔·土家商贸古镇, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 风雨桥, 阿蓬江. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1627.webp"
+  },
+  {
+    "id": "es-1607",
+    "name": "利川龙船调景区",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lichuan Dashuijing Li Family mansion, 《龙船调》故乡·大水井李氏庄园, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 民歌, 古庄园, 土家文化. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1607.webp"
+  },
+  {
+    "id": "es-1608",
+    "name": "利川佛宝山大峡谷",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Lichuan Fobaoshan canyon waterfall, 瀑布群+漂流·利川冷门避暑地, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 峡谷, 瀑布, 漂流. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1608.webp"
+  },
+  {
+    "id": "es-1609",
+    "name": "来凤仙佛寺",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laifeng Xianfo Temple cliff Buddha, 1700 年摩崖石刻·中国南方最古老摩崖造像, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 佛教, 摩崖石刻, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1609.webp"
+  },
+  {
+    "id": "es-1610",
+    "name": "酉水河风景区",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Laifeng Youshui River Tujia village, 来凤母亲河·土家摆手舞发源地, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 河道, 漂流, 土家民俗. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1610.webp"
+  },
+  {
+    "id": "es-1611",
+    "name": "咸丰唐崖土司城址",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xianfeng Tangya Tusi city site stone archway, 世界文化遗产·700 年土司城堡, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 世界遗产, 土司文化, 历史. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1611.webp"
+  },
+  {
+    "id": "es-1612",
+    "name": "建始野三峡",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jianshi Yesanxia river canyon cruise, 景阳峡+小三峡游船·野三河秘境, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 峡谷, 游船, 漂流. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1612.webp"
+  },
+  {
+    "id": "es-1613",
+    "name": "建始石门河",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jianshi Shimen River direct human fossil site, 建始直立人遗址·国家地质公园, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 地质公园, 古人类遗址, 峡谷. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1613.webp"
+  },
+  {
+    "id": "es-1614",
+    "name": "鹤峰屏山大峡谷",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Hefeng Pingshan Grand Canyon flying boat green water, 空中飞船·恩施最出片小众秘境, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 峡谷, 空中飞船, 小众秘境. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1614.webp"
+  },
+  {
+    "id": "es-1623",
+    "name": "张家界武陵源",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wulingyuan Zhangjiajie stone pillars Avatar, 《阿凡达》取景地·3000 石峰世界遗产, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 世界遗产, 石峰, 电影取景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1623.webp"
+  },
+  {
+    "id": "es-1628",
+    "name": "阿蓬江国家湿地公园",
+    "city": "enshi",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Apeng River rafting Qianjiang wetland, 神秘山水+漂流秘境·黔江冷门山谷, enshi China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 湿地公园, 漂流, 秘境. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-es-1628.webp"
+  },
+  {
+    "id": "cq-1519",
+    "name": "仙女山国家森林公园",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Xiannv mountain alpine grassland Wulong, 南国高山草原, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 草原, 避暑, 滑雪. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1519.webp"
+  },
+  {
+    "id": "cq-1520",
+    "name": "芙蓉洞",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Furong cave karst stalactite Wulong UNESCO, 中国三大喀斯特溶洞之一, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 溶洞, 地质, 世遗. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1520.webp"
+  },
+  {
+    "id": "cq-1523",
+    "name": "龚滩古镇",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Gongtan ancient town Wujiang river Tujia stilted, 乌江边的土家山城, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古镇, 土家, 峡谷. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1523.webp"
+  },
+  {
+    "id": "cq-1526",
+    "name": "云阳龙缸国家地质公园",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Yunyang Longgang sinkhole glass skywalk, 天下第一缸+悬挑玻璃廊桥, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 地质, 悬崖, 玻璃栈道. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1526.webp"
+  },
+  {
+    "id": "cq-1505",
+    "name": "山城步道（第三步道）",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Shancheng trail Third Hiking Route old town, 1900 米的上下山老街, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 山城, 徒步, 老街. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1505.webp"
+  },
+  {
+    "id": "cq-1507",
+    "name": "重庆大剧院（鹦鹉螺）",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Grand Theater nautilus architecture Jiangbei, 嘉陵江边的未来螺旋, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 建筑, 文化, 江景. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1507.webp"
+  },
+  {
+    "id": "cq-1512",
+    "name": "歌乐山森林公园",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Gele mountain forest park war relic, 抗战陪都西部门户, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 爬山, 森林, 抗战. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1512.webp"
+  },
+  {
+    "id": "cq-1513",
+    "name": "红岩村",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Hongyan village CCP Southern Bureau, 中共南方局的雾都办公地, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 革命, 免费. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1513.webp"
+  },
+  {
+    "id": "cq-1515",
+    "name": "金刀峡",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Jindao gorge karst canyon hike, 北碚最深山野的百米峡谷, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 峡谷, 徒步, 瀑布. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1515.webp"
+  },
+  {
+    "id": "cq-1521",
+    "name": "龙水峡地缝",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Longshui canyon karst slot Wulong waterfall, 喀斯特地缝+瀑布的魔幻秀, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 峡谷, 瀑布, 世遗. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1521.webp"
+  },
+  {
+    "id": "cq-1524",
+    "name": "酉阳桃花源",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Youyang Taohuayuan peach spring karst cave, 陶渊明笔下的现实版秘境, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 古村, 世外, 溶洞. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1524.webp"
+  },
+  {
+    "id": "cq-1525",
+    "name": "万州大瀑布群",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Wanzhou Daguapu waterfall Yangtze upper reach, 长江上游第一大瀑布, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 瀑布, 峡谷, 世遗. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1525.webp"
+  },
+  {
+    "id": "cq-1528",
+    "name": "江津四面山",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Jiangjin Simian mountain waterfall love ladder, 国家 5A 瀑布群 + 爱情圣地, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 瀑布, 森林, 爱情. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1528.webp"
+  },
+  {
+    "id": "cq-1509",
+    "name": "涂山寺",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Tushan temple Nanshan ancient Buddhist, 南山顶 1600 年古刹与抗战秘史, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 寺庙, 历史, 素食. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1509.webp"
+  },
+  {
+    "id": "cq-1510",
+    "name": "老君洞道观",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Chongqing Laojun Cave Taoist temple ancient, 山城最大的道家洞天, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 道教, 古建, 山林. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1510.webp"
+  },
+  {
+    "id": "cq-1522",
+    "name": "黔江小南海",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qianjiang Xiaonanhai earthquake lake Miao, 地震堰塞湖的高原镜面, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 湖泊, 少数民族, 地质. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1522.webp"
+  },
+  {
+    "id": "cq-1527",
+    "name": "合川钓鱼城",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Diaoyucheng fortress Song Mongol history, 南宋守城 36 年的「上帝折鞭处」, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 历史, 古城, 抗蒙. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1527.webp"
+  },
+  {
+    "id": "cq-1529",
+    "name": "綦江老瀛山",
+    "city": "chongqing",
+    "prompt": "Kawaii Ghibli-style landscape illustration of Qijiang Laoying mountain dinosaur footprint danxia, 古生物化石山+丹霞奇观, chongqing China. Soft pastel palette, warm lighting, hand-drawn anime style. Features: 丹霞, 化石, 地质. 16:9 widescreen horizontal travel poster format, no text, no watermark.",
+    "outPath": "assets/images/dest-cq-1529.webp"
+  }
+]
