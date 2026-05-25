@@ -1,10 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-// Migrated 2026-05-22: Anthropic SDK → DeepSeek V4 PRO (OpenAI-compatible direct)
-const LLM_BASE = (process.env.LLM_BASE_URL || 'https://api.deepseek.com/v1').replace(/\/$/, '');
+// Migrated 2026-05-22: Anthropic SDK → Bocha · DeepSeek V4 (OpenAI-compatible)
+const LLM_BASE = (process.env.LLM_BASE_URL || 'https://api.bochaai.com/v1').replace(/\/$/, '');
 const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-v4-pro';
-const LLM_KEY = process.env.LLM_API_KEY || process.env.SAGE_LLM_KEY || process.env.ANTHROPIC_API_KEY || '';
+const LLM_KEY = process.env.LLM_API_KEY || process.env.BOCHA_API_KEY || '';
 
 const PORT = 3456;
 const ROOT = __dirname;
