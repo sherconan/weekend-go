@@ -1,6 +1,6 @@
 // Weekend-Go Service Worker v29 — nuclear cache reset + auto-reload clients (2026-05-22)
 const CACHE_NAME = 'weekend-go-v29';
-const IMAGE_CACHE_NAME = 'weekend-go-images-v9';
+const IMAGE_CACHE_NAME = 'weekend-go-images-v10';
 const MAX_IMAGE_CACHE = 120;
 
 const CORE_ASSETS = [
