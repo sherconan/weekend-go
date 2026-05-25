@@ -308,7 +308,7 @@ function renderDestinations(destinations) {
         ${stampOverlay}
         <div class="dest-card-cover-overlay"></div>
         <div class="dest-card-cover-content">
-          <span class="dest-card-source">${dest.source}</span>
+          <span class="dest-card-source">${dest.source || dest.highlight || '\u{1F31F} 精选'}</span>
           <h3 class="dest-card-name">${dest.name}</h3>
           <p class="dest-card-subtitle">${dest.subtitle}</p>
         </div>
@@ -324,7 +324,7 @@ function renderDestinations(destinations) {
           <span class="dest-card-meta-item"><span class="dest-card-meta-icon">\u{23F1}</span> ${dest.duration[0]}</span>
           <span class="dest-card-meta-item"><span class="dest-card-meta-icon">\u{1F4B0}</span> ${dest.budgetText}</span>
         </div>
-        <div class="dest-card-desc">${dest.description}</div>
+        <div class="dest-card-desc">${dest.description || dest.subtitle || dest.highlight || ''}</div>
         ${heatBar}
         <div class="dest-card-tags">
           ${dest.transport.slice(1, 2).map(t => `<span class="dest-card-tag tag-transport">${transportIcons[t] || '\u{1F6A9}'} ${t}</span>`).join('')}
@@ -447,7 +447,7 @@ function openDetail(id) {
       ${heatBar}
 
       <div class="modal-intro">
-        <p>${dest.overview}</p>
+        <p>${dest.overview || dest.description || dest.subtitle || ''}</p>
       </div>
 
       <div class="modal-cards-row">
