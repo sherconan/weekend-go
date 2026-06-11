@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- E 双面徽章 · 盖章打卡 × 另一面：整枚徽章劈成昼/夜两个世界，同一座山横跨两面 -->
+  <defs>
+    <path id="arcTopE" d="M 144 512 A 368 368 0 0 1 880 512"/>
+    <path id="arcBottomE" d="M 84 512 A 428 428 0 0 0 940 512"/>
+    <clipPath id="dayE"><rect x="0" y="0" width="512" height="1024"/></clipPath>
+    <clipPath id="nightE"><rect x="512" y="0" width="512" height="1024"/></clipPath>
+    <clipPath id="discE"><circle cx="512" cy="512" r="330"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="#FAFBF8"/>
+  <!-- 外环：左昼绿 / 右夜navy -->
+  <path d="M 512 44 A 468 468 0 0 0 512 980 Z" fill="#4CAF50"/>
+  <path d="M 512 44 A 468 468 0 0 1 512 980 Z" fill="#1A1E28"/>
+  <!-- 内盘：左昼米白 / 右夜深蓝 -->
+  <path d="M 512 182 A 330 330 0 0 0 512 842 Z" fill="#FAFBF8"/>
+  <path d="M 512 182 A 330 330 0 0 1 512 842 Z" fill="#232838"/>
+  <!-- 齿孔虚线 -->
+  <circle cx="512" cy="512" r="352" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="3 26" stroke-linecap="round" opacity="0.8"/>
+  <!-- 环形文字 -->
+  <text font-family="'PingFang SC', sans-serif" font-size="86" font-weight="600" fill="#FFFFFF" letter-spacing="26">
+    <textPath href="#arcTopE" startOffset="50%" text-anchor="middle">周末去哪儿</textPath>
+  </text>
+  <text font-family="'PingFang SC', 'SF Pro Display', sans-serif" font-size="64" font-weight="600" fill="#FFFFFF" letter-spacing="14">
+    <textPath href="#arcBottomE" startOffset="50%" text-anchor="middle">WEEKEND GO</textPath>
+  </text>
+  <circle cx="113" cy="512" r="16" fill="#FFD54F"/>
+  <circle cx="911" cy="512" r="16" fill="#E8D5C4"/>
+  <!-- 内盘场景（整体按内盘圆裁切） -->
+  <g clip-path="url(#discE)">
+    <!-- 昼：太阳 / 夜：弯月+星 -->
+    <circle cx="358" cy="298" r="68" fill="#FFD54F"/>
+    <circle cx="672" cy="292" r="60" fill="#E8D5C4"/>
+    <circle cx="700" cy="272" r="50" fill="#232838"/>
+    <path d="M 756 350 L 763 369 L 782 376 L 763 383 L 756 402 L 749 383 L 730 376 L 749 369 Z" fill="#FFD54F"/>
+    <circle cx="610" cy="222" r="7" fill="#E8D5C4" opacity="0.9"/>
+    <!-- 山脉：横跨昼夜，同一座山两种颜色 -->
+    <g clip-path="url(#dayE)">
+      <path d="M 414 700 L 562 478 Q 588 440 614 478 L 762 700 Z" fill="#66BB6A"/>
+      <path d="M 196 700 L 372 446 Q 400 404 428 446 L 604 700 Z" fill="#4CAF50"/>
+    </g>
+    <g clip-path="url(#nightE)">
+      <path d="M 414 700 L 562 478 Q 588 440 614 478 L 762 700 Z" fill="#3A4663"/>
+      <path d="M 196 700 L 372 446 Q 400 404 428 446 L 604 700 Z" fill="#2E3A54"/>
+    </g>
+    <!-- 帐篷（昼） -->
+    <path d="M 260 700 L 324 600 L 388 700 Z" fill="#FF7043"/>
+    <path d="M 310 700 L 324 648 L 340 700 Z" fill="#FAFBF8" opacity="0.9"/>
+    <!-- 地面线 -->
+    <line x1="264" y1="700" x2="500" y2="700" stroke="#4CAF50" stroke-width="18" stroke-linecap="round"/>
+    <line x1="524" y1="700" x2="760" y2="700" stroke="#3A4663" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

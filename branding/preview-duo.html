@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>双面徽章 · 两个变体对比</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#FAFBF8; color:#1A2332; padding:36px 44px 48px;
+    font-family:"PingFang SC","Hiragino Sans GB",-apple-system,sans-serif;
+  }
+  h1 { font-size:24px; font-weight:800; margin-bottom:4px; }
+  .sub { color:#5A6B7B; font-size:13.5px; margin-bottom:24px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; max-width:980px; }
+  .card {
+    background:#fff; border:1px solid #E8ECF0; border-radius:20px;
+    padding:24px 22px; display:flex; flex-direction:column; gap:16px;
+  }
+  .name { font-size:16px; font-weight:700; }
+  .name small { color:#5A6B7B; font-weight:400; font-size:12.5px; margin-left:8px; }
+  .hero { display:flex; justify-content:center; }
+  .hero img { width:280px; height:280px; }
+  .sizes { display:flex; align-items:flex-end; gap:18px; justify-content:center; }
+  .sz { display:flex; flex-direction:column; align-items:center; gap:5px; }
+  .sz span { font-size:10.5px; color:#8E99A4; }
+  .circle { border-radius:50%; overflow:hidden; line-height:0; }
+  .darkstrip {
+    background:#1A1E28; border-radius:14px; padding:16px;
+    display:flex; gap:18px; align-items:center; justify-content:center;
+  }
+  .label { font-size:11px; color:#8E99A4; text-align:center; margin-top:-8px; }
+  .mock-wx {
+    background:#EDEDED; border-radius:12px; padding:12px 14px;
+    display:flex; align-items:center; gap:11px;
+  }
+  .mock-wx .av { width:46px; height:46px; border-radius:50%; overflow:hidden; line-height:0; }
+  .mock-wx img { width:46px; height:46px; }
+  .mock-wx .wxname { font-size:14.5px; font-weight:600; }
+  .mock-wx .wxdesc { font-size:11.5px; color:#999; margin-top:2px; }
+</style>
+</head>
+<body>
+  <h1>双面徽章 · 盖章打卡 × 另一面</h1>
+  <p class="sub">同一座山横跨昼夜：左边是周末白天的山 / 太阳 / 帐篷，右边是另一面的暗夜 / 弯月 / 星。小尺寸用无字简化版。</p>
+  <div class="grid">
+
+    <div class="card">
+      <div class="name">E1 整章分昼夜<small>外环也劈成 绿 × 夜</small></div>
+      <div class="hero"><img src="logo-e-duo-badge.svg"></div>
+      <div class="sizes">
+        <div class="sz"><div class="circle"><img src="logo-e-duo-badge.svg" width="96" height="96"></div><span>96 头像</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="48" height="48"><span>48 简化</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="32" height="32"><span>32 简化</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="20" height="20"><span>20</span></div>
+      </div>
+      <div class="darkstrip">
+        <img src="logo-e-duo-badge.svg" width="72" height="72">
+        <div class="circle"><img src="logo-e-duo-badge.svg" width="44" height="44"></div>
+        <img src="logo-e-duo-badge-small.svg" width="28" height="28">
+      </div>
+      <div class="label">深色环境</div>
+      <div class="mock-wx"><div class="av"><img src="logo-e-duo-badge.svg"></div><div><div class="wxname">周末去哪儿</div><div class="wxdesc">950+ 目的地 · 270 个都市传说</div></div></div>
+    </div>
+
+    <div class="card">
+      <div class="name">E2 绿环包昼夜<small>品牌绿环稳定，内盘分两面</small></div>
+      <div class="hero"><img src="logo-e2-duo-badge-greenring.svg"></div>
+      <div class="sizes">
+        <div class="sz"><div class="circle"><img src="logo-e2-duo-badge-greenring.svg" width="96" height="96"></div><span>96 头像</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="48" height="48"><span>48 简化</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="32" height="32"><span>32 简化</span></div>
+        <div class="sz"><img src="logo-e-duo-badge-small.svg" width="20" height="20"><span>20</span></div>
+      </div>
+      <div class="darkstrip">
+        <img src="logo-e2-duo-badge-greenring.svg" width="72" height="72">
+        <div class="circle"><img src="logo-e2-duo-badge-greenring.svg" width="44" height="44"></div>
+        <img src="logo-e-duo-badge-small.svg" width="28" height="28">
+      </div>
+      <div class="label">深色环境</div>
+      <div class="mock-wx"><div class="av"><img src="logo-e2-duo-badge-greenring.svg"></div><div><div class="wxname">周末去哪儿</div><div class="wxdesc">950+ 目的地 · 270 个都市传说</div></div></div>
+    </div>
+
+  </div>
+</body>
+</html>

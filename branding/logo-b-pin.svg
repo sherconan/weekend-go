@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- B 小太阳定位 Pin · 「去哪儿 = 目的地」+ kawaii 笑脸太阳 -->
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#5DADE2"/>
+    </linearGradient>
+    <clipPath id="clipB"><rect width="1024" height="1024" rx="230"/></clipPath>
+  </defs>
+  <g clip-path="url(#clipB)">
+    <rect width="1024" height="1024" fill="url(#bgB)"/>
+    <!-- 地面投影 -->
+    <ellipse cx="512" cy="906" rx="148" ry="30" fill="#1A2332" opacity="0.14"/>
+    <!-- Pin 本体 -->
+    <path d="M 512 896 C 512 896 254 588 254 418 A 258 258 0 1 1 770 418 C 770 588 512 896 512 896 Z" fill="#FFFFFF"/>
+    <!-- 太阳 -->
+    <circle cx="512" cy="416" r="152" fill="#FFD54F"/>
+    <!-- 腮红 -->
+    <circle cx="436" cy="448" r="22" fill="#FF8A65" opacity="0.85"/>
+    <circle cx="588" cy="448" r="22" fill="#FF8A65" opacity="0.85"/>
+    <!-- 眼睛 -->
+    <circle cx="458" cy="392" r="17" fill="#1A2332"/>
+    <circle cx="566" cy="392" r="17" fill="#1A2332"/>
+    <!-- 微笑 -->
+    <path d="M 452 452 Q 512 506 572 452" fill="none" stroke="#1A2332" stroke-width="19" stroke-linecap="round"/>
+  </g>
+</svg>

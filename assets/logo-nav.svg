@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- 导航栏用：双面徽章简化版，透明底圆形（无米白方底） -->
+  <defs>
+    <clipPath id="dayNV"><rect x="0" y="0" width="512" height="1024"/></clipPath>
+    <clipPath id="nightNV"><rect x="512" y="0" width="512" height="1024"/></clipPath>
+    <clipPath id="discNV"><circle cx="512" cy="512" r="392"/></clipPath>
+  </defs>
+  <path d="M 512 44 A 468 468 0 0 0 512 980 Z" fill="#4CAF50"/>
+  <path d="M 512 44 A 468 468 0 0 1 512 980 Z" fill="#1A1E28"/>
+  <path d="M 512 120 A 392 392 0 0 0 512 904 Z" fill="#FAFBF8"/>
+  <path d="M 512 120 A 392 392 0 0 1 512 904 Z" fill="#232838"/>
+  <g clip-path="url(#discNV)">
+    <circle cx="354" cy="330" r="92" fill="#FFD54F"/>
+    <circle cx="676" cy="322" r="84" fill="#E8D5C4"/>
+    <circle cx="714" cy="294" r="70" fill="#232838"/>
+    <g clip-path="url(#dayNV)">
+      <path d="M 158 760 L 470 372 Q 512 318 554 372 L 866 760 Z" fill="#4CAF50"/>
+    </g>
+    <g clip-path="url(#nightNV)">
+      <path d="M 158 760 L 470 372 Q 512 318 554 372 L 866 760 Z" fill="#3A4663"/>
+    </g>
+  </g>
+</svg>

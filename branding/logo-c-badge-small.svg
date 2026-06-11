@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- C 周末徽章 · 小尺寸简化版（≤64px 用）：去文字环，放大场景 -->
+  <rect width="1024" height="1024" rx="230" fill="#FAFBF8"/>
+  <circle cx="512" cy="512" r="468" fill="#4CAF50"/>
+  <circle cx="512" cy="512" r="392" fill="#FAFBF8"/>
+  <!-- 场景：太阳 + 双峰 -->
+  <circle cx="668" cy="368" r="86" fill="#FFD54F"/>
+  <path d="M 400 732 L 580 414 Q 606 366 632 414 L 812 732 Z" fill="#66BB6A"/>
+  <path d="M 180 732 L 386 358 Q 414 306 442 358 L 648 732 Z" fill="#4CAF50"/>
+  <line x1="190" y1="732" x2="834" y2="732" stroke="#4CAF50" stroke-width="24" stroke-linecap="round"/>
+</svg>
