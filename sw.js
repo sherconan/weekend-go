@@ -1,5 +1,5 @@
 // Weekend-Go Service Worker v30 — 首屏 Top3 + 城市状态同步 (2026-06-11)
-const CACHE_NAME = 'weekend-go-v31';
+const CACHE_NAME = 'weekend-go-v32';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v10';
 const MAX_IMAGE_CACHE = 120;
 

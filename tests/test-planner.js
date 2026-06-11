@@ -144,5 +144,22 @@ if (pm.error) {
   assert(play <= 1000, `联程游玩部分人均 ¥${play} 应 ≤ 1000（高铁费单列）`);
 }
 
+// 9. 行程文本（复制/分享）：单城含晚餐住宿行；多城换乘日不再崩溃且输出换乘行
+const singleText = P.buildPlanText(plan);
+assert(singleText.includes('不含住宿'), '复制文本预算行应注明不含住宿');
+assert(singleText.includes('🌙 住宿：'), '复制文本应含 Day1 住宿行');
+assert(singleText.includes('🍜 晚餐：'), '复制文本应含 Day1 晚餐行');
+if (!pm.error) {
+  let multiText = null;
+  let threw = false;
+  try { multiText = P.buildPlanText(pm); } catch (e) { threw = true; }
+  assert(!threw, '多城行程 buildPlanText 不应抛错（旧版换乘日 day.slots undefined 崩溃）');
+  if (multiText) {
+    assert(multiText.includes('【换乘】') && multiText.includes('🚄'), '多城复制文本应含换乘行');
+    assert((multiText.match(/【Day /g) || []).length === 3, '多城复制文本应含 3 个游玩日');
+    assert(multiText.includes('🌙 住宿：'), '多城复制文本应含住宿行');
+  }
+}
+
 console.log(`\nplanner tests: ${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);
