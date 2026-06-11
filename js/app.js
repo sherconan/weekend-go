@@ -761,12 +761,20 @@ function sendMessage() {
   sendToAPI(text, typing);
 }
 
+// Agent 后端：线上走 Vercel 公网函数；本机 3456（server.js）调试时走相对路径
+const CHAT_API = location.port === '3456'
+  ? '/api/chat'
+  : 'https://weekend-go-ebon.vercel.app/api/chat';
+
 async function sendToAPI(text, typingEl) {
   try {
-    const res = await fetch('/api/chat', {
+    const res = await fetch(CHAT_API, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messages: chatHistory }),
+      body: JSON.stringify({
+        messages: chatHistory.slice(-8),
+        city: typeof currentCity !== 'undefined' ? currentCity : 'beijing',
+      }),
     });
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -798,6 +806,9 @@ async function sendToAPI(text, typingEl) {
             fullText += event.text;
             bubble.innerHTML = formatChat(fullText);
             scrollChatToBottom();
+          } else if (event.type === 'cards' && Array.isArray(event.items)) {
+            renderChatCards(msgEl, event.items);
+            scrollChatToBottom();
           } else if (event.type === 'error') {
             throw new Error(event.error);
           }
@@ -823,6 +834,31 @@ async function sendToAPI(text, typingEl) {
 
 function formatChat(text) {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+}
+
+// Agent 推荐的目的地 → 聊天气泡下的可点击小卡（点击直达详情）
+function renderChatCards(msgEl, items) {
+  const esc = (t) => String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  let wrap = msgEl.querySelector('.chat-dest-cards');
+  if (!wrap) {
+    wrap = document.createElement('div');
+    wrap.className = 'chat-dest-cards';
+    msgEl.appendChild(wrap);
+  }
+  wrap.innerHTML = items.slice(0, 4).map((it) => `
+    <button type="button" class="chat-dest-card" data-id="${Number(it.id)}" data-city="${esc(it.city)}">
+      <span class="chat-dest-card-name">${esc(it.name)}</span>
+      <span class="chat-dest-card-meta">${esc(it.distanceText || '')}${it.rating ? ' · ⭐' + esc(it.rating) : ''}</span>
+      <span class="chat-dest-card-go">看详情 ›</span>
+    </button>`).join('');
+  wrap.querySelectorAll('.chat-dest-card').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = Number(btn.dataset.id);
+      const city = btn.dataset.city;
+      if (typeof currentCity !== 'undefined' && city && city !== currentCity && typeof switchCity === 'function') switchCity(city);
+      if (typeof openDetail === 'function') openDetail(id);
+    });
+  });
 }
 
 function scrollChatToBottom() {

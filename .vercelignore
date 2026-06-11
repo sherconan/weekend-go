@@ -1,0 +1,17 @@
+# 只部署 Agent 函数；静态站走 GitHub Pages
+assets/
+branding/
+tests/
+scripts/
+docs/
+miniprogram/
+node_modules/
+*.py
+*.md
+*.json.bak*
+codex-queue-*.json
+sw.js
+js/
+css/
+config/
+*.html

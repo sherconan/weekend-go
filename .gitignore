@@ -27,3 +27,4 @@ retry-final-*.json
 codex-*.log
 retry-tiny-*.json
 codex-tiny-*.log
+.vercel
