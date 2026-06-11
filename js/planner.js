@@ -76,12 +76,48 @@
 
   // ---------- Budget matching ----------
   const BUDGET_ORDER = ['200以下','200-500','500-1000','1000以上'];
+  // 用户档位 → 全程人均游玩花费上限（硬约束）
+  const BUDGET_CAP = { '200以下': 200, '200-500': 500, '500-1000': 1000, '1000以上': Infinity };
+  // 数据里存在两个旧档位写法，归一到标准档位再比较（否则会绕过预算过滤）
+  function normalizeBudget(b) {
+    if (b === '0-200') return '200以下';
+    if (b === '500以下') return '200-500';
+    return b;
+  }
   function budgetOk(dest, userBudget) {
-    const b = dest.budget || '200-500';
+    const b = normalizeBudget(dest.budget || '200-500');
     const ui = BUDGET_ORDER.indexOf(userBudget);
     const di = BUDGET_ORDER.indexOf(b);
     if (ui < 0 || di < 0) return true;
     return di <= ui; // dest budget <= user budget
+  }
+
+  // ---------- Per-destination cost estimate (¥/人) ----------
+  // budgetText 是该目的地一趟的人均花费口径：免费=0、区间取中值、单值取数，
+  // 没有 budgetText 时按档位代表值兜底
+  function destCost(dest) {
+    const t = String(dest.budgetText || '');
+    if (/免费/.test(t)) return 0;
+    const range = t.match(/(\d+)\s*[-–~]\s*(\d+)/);
+    if (range) return Math.round((Number(range[1]) + Number(range[2])) / 2);
+    const single = t.match(/(\d+)/);
+    if (single) return Number(single[1]);
+    return { '200以下': 100, '200-500': 300, '500-1000': 700, '1000以上': 1200 }[normalizeBudget(dest.budget)] || 150;
+  }
+
+  // 一天多个点共享交通和正餐：主花费点全额，顺路点按 30% 计增量
+  function dayCost(dests) {
+    if (!dests.length) return 0;
+    const costs = dests.map(destCost).sort((a, b) => b - a);
+    return Math.round(costs[0] + costs.slice(1).reduce((s, c) => s + c, 0) * 0.3);
+  }
+
+  // ---------- Stamina constraint ----------
+  // 爬山/徒步类一天最多排 1 个——两座山连爬不是真实玩法
+  const STRENUOUS_TAGS = ['爬山', '徒步', '登山', '攀岩', '探险'];
+  function isStrenuous(dest) {
+    const labels = [].concat(dest.themes || [], dest.tags || []);
+    return labels.some(l => STRENUOUS_TAGS.some(s => String(l).includes(s)));
   }
 
   // ---------- Duration parsing ----------
@@ -101,59 +137,68 @@
     const themeS = themeScore(dest, selectedFamilies);
     const rating = (dest.rating || 4.0) / 5.0;
     const distancePenalty = Math.min(1, (dest.distance || 0) / 200);
-    const budgetFit = budgetOk(dest, userBudget) ? 1 : 0.3;
-    // Weighted: theme 3x, rating 2x, budget 1x, distance penalty 0.5x
-    return themeS * 3 + rating * 2 + budgetFit * 1 - distancePenalty * 0.5;
+    // 花费不超过档位上限的一半不扣分（预算给到了就该用），超过一半才线性惩罚——
+    // 预算紧时偏好低价点，预算宽裕时按主题/评分排，避免"选500档却全排免费点"
+    const cap = BUDGET_CAP[userBudget];
+    const half = cap / 2;
+    const costFit = (cap && isFinite(cap))
+      ? 1 - Math.min(1, Math.max(0, destCost(dest) - half) / half)
+      : 1;
+    // Weighted: theme 3x, rating 2x, cost fit 1x, distance penalty 0.5x
+    return themeS * 3 + rating * 2 + costFit * 1 - distancePenalty * 0.5;
   }
 
-  // ---------- Greedy day allocation with distance awareness ----------
-  function allocateDays(candidates, numDays) {
-    // Per day budget: ~10 hours, 3-5 dests
-    const maxHoursPerDay = 10;
-    const minDestsPerDay = 3;
-    const maxDestsPerDay = 5;
+  // ---------- Day window constants ----------
+  // 一天的游玩窗口 09:00 → 20:00，点与点之间 30 分钟通勤/休整
+  const DAY_START = 9;
+  const DAY_END = 20;
+  const TRANSIT = 0.5;
 
+  // ---------- Greedy day allocation with distance awareness ----------
+  // 容量判断用与渲染层 assignTimeSlots 完全一致的时间轴，
+  // 杜绝"分配进来但渲染不出"的静默丢点；每天最多 1 个高体力项目
+  function allocateDays(candidates, numDays) {
+    const maxDestsPerDay = 5;
     const days = [];
     const used = new Set();
 
     for (let d = 0; d < numDays; d++) {
       const day = { dests: [], hours: 0 };
-      // Seed: pick the highest-scoring unused destination
-      const seed = candidates.find(c => !used.has(c.name));
+      let cursor = DAY_START;
+      let strenuousCount = 0;
+
+      // Seed: pick the highest-scoring unused destination that fits the day window
+      const seed = candidates.find(c => !used.has(c.name) && DAY_START + durationHours(c) <= DAY_END);
       if (!seed) break;
       day.dests.push(seed);
-      day.hours += durationHours(seed);
+      cursor = DAY_START + durationHours(seed);
       used.add(seed.name);
+      if (isStrenuous(seed)) strenuousCount++;
 
-      // Grow: greedily add nearest (by distance similarity) unused dest while budget allows
-      while (day.dests.length < maxDestsPerDay && day.hours < maxHoursPerDay) {
-        const remaining = candidates.filter(c => !used.has(c.name));
+      // Grow: greedily add nearest (by distance similarity) unused dest that
+      // still fits the remaining time window and the stamina budget
+      while (day.dests.length < maxDestsPerDay) {
+        const remaining = candidates.filter(c =>
+          !used.has(c.name) &&
+          cursor + TRANSIT + durationHours(c) <= DAY_END &&
+          !(isStrenuous(c) && strenuousCount >= 1)
+        );
         if (!remaining.length) break;
         // score by distance closeness + own score
+        const avgD = day.dests.reduce((s,x)=>s+(x.distance||0),0) / day.dests.length;
         const withDistScore = remaining.map(c => {
-          const avgD = day.dests.reduce((s,x)=>s+(x.distance||0),0) / day.dests.length;
           const dDiff = Math.abs((c.distance||0) - avgD);
-          return { c, proximity: 1 / (1 + dDiff/30), hoursCost: durationHours(c) };
+          return { c, proximity: 1 / (1 + dDiff/30) };
         });
         withDistScore.sort((a,b) => (b.c._score + b.proximity*2) - (a.c._score + a.proximity*2));
-        const next = withDistScore[0];
-        if (!next || day.hours + next.hoursCost > maxHoursPerDay) break;
-        day.dests.push(next.c);
-        day.hours += next.hoursCost;
-        used.add(next.c.name);
+        const next = withDistScore[0].c;
+        day.dests.push(next);
+        cursor += TRANSIT + durationHours(next);
+        used.add(next.name);
+        if (isStrenuous(next)) strenuousCount++;
       }
 
-      if (day.dests.length < minDestsPerDay) {
-        // pad with next best
-        while (day.dests.length < minDestsPerDay) {
-          const next = candidates.find(c => !used.has(c.name));
-          if (!next) break;
-          day.dests.push(next);
-          day.hours += durationHours(next);
-          used.add(next.name);
-          if (day.hours > maxHoursPerDay + 2) break;
-        }
-      }
+      day.hours = cursor - DAY_START;
       days.push(day);
     }
     return days;
@@ -161,11 +206,9 @@
 
   // ---------- Time-slot renderer ----------
   // Day window: 09:00 → 20:00; 30-min transit/meal between dests
-  const DAY_END = 20;
-  const TRANSIT = 0.5;
   function assignTimeSlots(dests) {
     const slots = [];
-    let cursor = 9;
+    let cursor = DAY_START;
     for (const d of dests) {
       const h = durationHours(d);
       const start = cursor;
@@ -191,7 +234,9 @@
       .filter(d => d._score > 1.0)
       .sort((a,b) => b._score - a._score);
     if (scored.length < 3) {
+      // 放宽主题命中要求兜底，但预算仍硬过滤——不能为了凑数塞超预算的点
       const relaxed = dests
+        .filter(d => budgetOk(d, userBudget))
         .map(d => Object.assign({}, d, { _score: scoreDest(d, selectedFamilies, userBudget) * 0.8 }))
         .sort((a,b) => b._score - a._score);
       for (const r of relaxed) {
@@ -214,27 +259,31 @@
     const all = loadCityDests(cityKey);
     if (!all.length) return { error: '该城市暂无数据' };
     const scored = scoreAndRank(all, selectedFamilies, userBudget);
-    if (scored.length < 3) return { error: '符合条件的目的地太少了，换个偏好试试？' };
+    if (scored.length < 3) return { error: '该预算下符合条件的目的地太少了，试试放宽预算或换个主题？' };
 
     const days = allocateDays(scored, numDays);
     if (!days.length) return { error: '无法组合出合理行程' };
+    enforceBudgetCap(days, BUDGET_CAP[userBudget]);
+
+    const dayOutputs = days.map((day, i) => {
+      const slots = assignTimeSlots(day.dests);
+      return {
+        idx: i + 1,
+        city: cityKey,
+        slots,
+        hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
+      };
+    });
+    attachOvernight(dayOutputs);
 
     return {
       cityKey,
       numDays,
       familyTags: selectedFamilies,
       userBudget,
-      days: days.map((day, i) => {
-        const slots = assignTimeSlots(day.dests);
-        return {
-          idx: i + 1,
-          city: cityKey,
-          slots,
-          hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
-        };
-      }),
-      totalBudget: estimateBudget(days, userBudget),
-      totalDests: days.reduce((s,d)=>s+assignTimeSlots(d.dests).length, 0),
+      days: dayOutputs,
+      totalBudget: estimateBudget(days),
+      totalDests: dayOutputs.reduce((s,d)=>s+d.slots.length, 0),
       createdAt: Date.now()
     };
   }
@@ -259,20 +308,24 @@
       remaining--;
     }
 
-    const allDays = [];
-    const transits = [];
-    let totalBudgetPerDay = 0;
-
+    // Pass 1: 每城分配游玩日，先收集再做全程预算收敛
+    const segments = [];
     for (let i = 0; i < order.length; i++) {
       const cKey = order[i];
       const cObj = byKey[cKey];
-      const daysCount = perCity[i];
-
       const dests = loadCityDests(cKey);
       if (dests.length < 2) return { error: `${cObj.name} 数据不足` };
       const scored = scoreAndRank(dests, selectedFamilies, userBudget);
-      const parts = allocateDays(scored, daysCount);
+      segments.push({ cKey, cObj, parts: allocateDays(scored, perCity[i]) });
+    }
+    const flatParts = segments.reduce((a, s) => a.concat(s.parts), []);
+    enforceBudgetCap(flatParts, BUDGET_CAP[userBudget]);
 
+    // Pass 2: 组装天卡 + 城际换乘
+    const allDays = [];
+    const transits = [];
+    for (let i = 0; i < segments.length; i++) {
+      const { cKey, cObj, parts } = segments[i];
       parts.forEach(day => {
         const slots = assignTimeSlots(day.dests);
         allDays.push({
@@ -283,12 +336,10 @@
           hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
         });
       });
-      totalBudgetPerDay += estimateBudget(parts, userBudget);
 
       // Transit to next city
-      if (i < order.length - 1) {
-        const nextKey = order[i + 1];
-        const nextObj = byKey[nextKey];
+      if (i < segments.length - 1) {
+        const nextObj = segments[i + 1].cObj;
         const km = Math.round(haversineKm(cObj.origin, nextObj.origin));
         const h = transitHours(km);
         const cost = transitCost(km);
@@ -296,13 +347,14 @@
         allDays.push({
           idx: -1,
           isTransit: true,
-          fromCity: cKey, toCity: nextKey,
+          fromCity: cKey, toCity: segments[i + 1].cKey,
           fromLabel: cObj.emoji + ' ' + cObj.name,
           toLabel: nextObj.emoji + ' ' + nextObj.name,
           km, hours: h, cost
         });
       }
     }
+    attachOvernight(allDays);
 
     const totalTransitCost = transits.reduce((s, t) => s + t.cost, 0);
     const totalTransitKm = transits.reduce((s, t) => s + t.km, 0);
@@ -322,7 +374,7 @@
       transit: { km: totalTransitKm, hours: totalTransitH, cost: totalTransitCost, hops: transits.length },
       transitsDetail: transits,
       days: allDays,
-      totalBudget: totalBudgetPerDay + totalTransitCost,
+      totalBudget: estimateBudget(flatParts) + totalTransitCost,
       totalDests,
       createdAt: Date.now()
     };
@@ -409,9 +461,70 @@
     };
   }
 
-  function estimateBudget(days, userBudget) {
-    const per = { '200以下': 150, '200-500': 350, '500-1000': 750, '1000以上': 1500 }[userBudget] || 400;
-    return per * days.length;
+  // 全程游玩花费 = 各天实际选点的花费之和（不再是"档位中值 × 天数"的拍脑袋数）
+  function estimateBudget(days) {
+    return days.reduce((s, day) => s + dayCost(day.dests), 0);
+  }
+
+  // ---------- Budget hard cap ----------
+  // 全程游玩花费必须落在用户档位内：超了就贪心移除"花费降幅最大"的顺路点，
+  // 每天至少保留 1 个主点
+  function enforceBudgetCap(days, cap) {
+    if (!cap || !isFinite(cap)) return days;
+    let total = estimateBudget(days);
+    while (total > cap) {
+      let best = null;
+      for (const day of days) {
+        if (day.dests.length <= 1) continue;
+        for (let i = 0; i < day.dests.length; i++) {
+          const trial = day.dests.slice(0, i).concat(day.dests.slice(i + 1));
+          const saving = dayCost(day.dests) - dayCost(trial);
+          if (!best || saving > best.saving) best = { day, i, saving };
+        }
+      }
+      if (!best || best.saving <= 0) break;
+      best.day.dests.splice(best.i, 1);
+      total = estimateBudget(days);
+    }
+    return days;
+  }
+
+  // ---------- Overnight: 晚餐 + 住宿建议 ----------
+  // 部分数据的 whereToStay/whereToEat 是"半日游目的地"这类占位标签而非真实建议，过滤掉
+  function usefulInfo(t) {
+    const s = String(t || '').trim();
+    return s.length >= 6 && !/目的地$/.test(s);
+  }
+  // 住宿文案必须真的在谈住宿（推荐了酒店/民宿/营地，或明确说无需住宿），否则按占位处理
+  function usefulStay(t) {
+    return usefulInfo(t) && /酒店|民宿|露营|营地|度假|帐篷|农家院|住宿|青旅|客栈/.test(String(t));
+  }
+  // 多日行程中除最后一天（返程日）外，每天结尾给出"就近过夜"建议：
+  // 取当天最后一个带可用 whereToStay / whereToEat 的目的地——在哪结束就住哪附近
+  function attachOvernight(dayOutputs) {
+    const realDays = dayOutputs.filter(d => !d.isTransit);
+    realDays.forEach((day, i) => {
+      if (i === realDays.length - 1) return;
+      if (!day.slots || !day.slots.length) return;
+      const lastDist = day.slots[day.slots.length - 1].dest.distance || 0;
+      for (let j = day.slots.length - 1; j >= 0; j--) {
+        const d = day.slots[j].dest;
+        // 只在"行程结束位置"附近找——一天最后在市区，就不该推荐 60km 外的郊区民宿
+        if (Math.abs((d.distance || 0) - lastDist) > 20) continue;
+        if (!day.stay && usefulStay(d.whereToStay)) day.stay = { near: d.name, text: String(d.whereToStay) };
+        if (!day.dinner && usefulInfo(d.whereToEat)) {
+          const first = String(d.whereToEat).split('\n')[0].replace(/^\s*\d+[\.、]\s*/, '');
+          day.dinner = { near: d.name, text: first.slice(0, 80) };
+        }
+        if (day.stay && day.dinner) break;
+      }
+      if (!day.stay) {
+        day.stay = lastDist <= 20
+          ? { near: '', text: '行程在市区结束，回家或就近选择城区酒店即可' }
+          : { near: '', text: '附近住宿信息暂缺，建议返回城区住宿' };
+      }
+    });
+    return dayOutputs;
   }
 
   // ---------- UI state ----------
@@ -602,7 +715,7 @@
       <div class="plan-summary">
         <div class="plan-summary-title">${summaryTitle}</div>
         <div class="plan-summary-meta">
-          <span>💰 预计人均 ¥${plan.totalBudget}${plan.isMultiCity ? '（含高铁 ¥'+plan.transit.cost+'）' : ''}</span>
+          <span>💰 预计人均 ¥${plan.totalBudget}${plan.isMultiCity ? '（含高铁 ¥'+plan.transit.cost+'）' : ''} · 不含住宿</span>
           <span>🎯 ${plan.familyTags.join(' · ') || '全主题'}</span>
           <span>🏷 ${plan.userBudget}</span>
           ${plan.isMultiCity ? `<span>🚄 ${plan.transit.km}km · ${plan.transit.hours}h${plan.transit.hops > 1 ? ' · '+plan.transit.hops+' 次换乘' : ''}</span>` : ''}
@@ -652,6 +765,17 @@
             </div>
           </a>
         `;
+      }
+      // 过夜日结尾：晚餐推荐 + 今晚住宿
+      if (day.dinner || day.stay) {
+        html += `<div style="background:linear-gradient(135deg,#FFF8E1 0%,#FFECB3 100%);border-radius:12px;padding:14px 16px;margin-top:12px;font-size:13px;color:#5D4037;line-height:1.6;">`;
+        if (day.dinner) {
+          html += `<div${day.stay ? ' style="margin-bottom:8px;"' : ''}><strong>🍜 晚餐推荐</strong>${day.dinner.near ? `（${day.dinner.near}附近）` : ''}：${day.dinner.text}</div>`;
+        }
+        if (day.stay) {
+          html += `<div><strong>🌙 今晚住宿</strong>${day.stay.near ? `（近${day.stay.near}）` : ''}<div style="white-space:pre-line;margin-top:4px;color:#6D4C41;">${day.stay.text}</div></div>`;
+        }
+        html += `</div>`;
       }
       html += `</div>`;
     }
@@ -883,7 +1007,7 @@
     ctx.fillStyle = '#344054';
     let y = 310;
     ctx.font = '28px "PingFang SC", sans-serif';
-    ctx.fillText(`💰 预计人均 ¥${plan.totalBudget}`, 60, y); y += 50;
+    ctx.fillText(`💰 预计人均 ¥${plan.totalBudget}（不含住宿）`, 60, y); y += 50;
     ctx.fillText(`🎯 ${plan.familyTags.join(' · ') || '全主题'}`, 60, y); y += 70;
 
     // Days
@@ -935,6 +1059,8 @@
         text += `  ${slot.startText}-${slot.endText} ${slot.dest.name}\n`;
         if (slot.dest.subtitle) text += `    ${slot.dest.subtitle}\n`;
       }
+      if (day.dinner) text += `  🍜 晚餐：${day.dinner.text}\n`;
+      if (day.stay) text += `  🌙 住宿：${day.stay.text.replace(/\n/g, ' / ')}\n`;
       text += '\n';
     }
     text += '生成自 sherconan.github.io/weekend-go/planner.html';
@@ -959,6 +1085,15 @@
     el.classList.add('show');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => el.classList.remove('show'), 1800);
+  }
+
+  // ---------- Test hook (node vm 单测用，浏览器同样挂上便于调试) ----------
+  if (typeof window !== 'undefined') {
+    window.__planner = {
+      generatePlan, allocateDays, assignTimeSlots, scoreAndRank, budgetOk,
+      durationHours, destCost, dayCost, isStrenuous, estimateBudget,
+      enforceBudgetCap, attachOvernight, loadCityDests
+    };
   }
 
   // ---------- Init ----------
