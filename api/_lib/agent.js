@@ -73,7 +73,8 @@ async function callLLM(messages, key, withTools) {
       tools: withTools ? TOOLS : undefined,
       tool_choice: withTools ? 'auto' : undefined,
       temperature: 0.7,
-      max_tokens: withTools ? 500 : 700,
+      // deepseek-v4-pro 是推理模型：reasoning 也占 max_tokens，给足余量否则正文被挤空
+      max_tokens: withTools ? 900 : 1500,
     }),
   });
   if (!res.ok) {
@@ -116,7 +117,7 @@ function extractCards(finalText, seenDests, city) {
 }
 
 // 主入口。send(event) 负责把 {type,...} 发给客户端。返回 usage 统计。
-async function runAgent({ messages, city, key, month, send, maxRounds = 4 }) {
+async function runAgent({ messages, city, key, month, send, maxRounds = 3 }) {
   const m = month || (new Date().getMonth() + 1);
   const c = normCity(city);
   const convo = [{ role: 'system', content: systemPrompt(c, m) }, ...messages];
@@ -148,8 +149,14 @@ async function runAgent({ messages, city, key, month, send, maxRounds = 4 }) {
     }
 
     // 无工具调用 = 最终回答
-    const finalText = String(msg.content || '').trim();
-    if (!finalText) throw new Error('LLM 返回空回答');
+    let finalText = String(msg.content || '').trim();
+    if (!finalText) {
+      // 推理 token 偶发挤空正文：补一轮"直接给答案"，仍空才报错
+      convo.push({ role: 'user', content: '请直接输出最终推荐文本（不要思考过程，不要调用工具）。' });
+      const retry = await callLLM(convo, key, false);
+      finalText = String((retry.message || {}).content || '').trim();
+      if (!finalText) throw new Error('LLM 返回空回答');
+    }
     // 分句下发，保留打字机体验
     const chunks = finalText.match(/[^。！？\n]+[。！？\n]?/g) || [finalText];
     for (const ch of chunks) send({ type: 'text', text: ch });

@@ -826,10 +826,13 @@ async function sendToAPI(text, typingEl) {
       }
     }
 
-    // Save assistant response to history
-    if (fullText) {
-      chatHistory.push({ role: 'assistant', content: fullText });
+    // 流结束但没有正文（如服务端超时被杀、只发了状态事件）→ 走兜底
+    if (!fullText) {
+      msgEl.remove();
+      throw new Error('stream ended without content');
     }
+    // Save assistant response to history
+    chatHistory.push({ role: 'assistant', content: fullText });
 
   } catch (err) {
     console.warn('AI API failed, falling back to keyword matching:', err.message);
