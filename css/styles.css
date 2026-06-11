@@ -3999,11 +3999,12 @@ body.night-mode .nav-logo {
   font-weight: 800;
   color: var(--text-primary);
 }
-.top3-note {
+.top3-note,
+.hero p.top3-note { /* 提高权重，盖过 .hero p 的居中 */
   font-size: 12px;
   color: var(--text-muted);
   margin: 0 0 12px;
-  text-align: left; /* 盖过 .hero p 的居中 */
+  text-align: left;
   max-width: none;
 }
 .top3-shuffle {
