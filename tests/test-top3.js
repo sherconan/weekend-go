@@ -98,10 +98,19 @@ assert(t.destSeasonScore({ ...base, name: offKw + '场', bestSeason: '5-10月' }
 assert(t.destSeasonScore({ ...base, bestSeason: '四季皆宜' }) === 1.2, '明确四季皆宜(1.2)应高于缺字段中性(1)');
 const outOfRange = t.MONTH >= 5 && t.MONTH <= 10 ? '11-2月' : '5-10月';
 assert(t.destSeasonScore({ ...base, bestSeason: outOfRange }) === 0.3, '明确反季(0.3)应低于缺字段中性(1)');
-// 真实回归：五大道（缺 bestSeason、无季节关键词）不再是 0 分
+// 数据库里的真实区间写法必须全部按区间语义打分（曾静默降级为单月/0.2 分）
+assert(t.seasonScore('5 月-10 月') === t.seasonScore('5-10月'), '带空格区间应与紧凑区间同分');
+assert(t.seasonScore('5月-10月') === (M >= 5 && M <= 10 ? 3 : 0.3), '首数字带月的区间写法');
+assert(t.seasonScore('5月中旬-10月底') === (M >= 5 && M <= 10 ? 3 : 0.3), '带修饰词（中旬/底）的区间写法');
+assert(t.seasonScore('10月底-11月中旬') === (M >= 10 && M <= 11 ? 3 : 0.3), '秋叶季窗口写法');
+assert(t.seasonScore('12月-次年3月') === (M >= 12 || M <= 3 ? 3 : 0.3), '跨年带"次年"的区间写法');
+assert(t.seasonScore('3月底至4月中') === (M >= 3 && M <= 4 ? 3 : 0.3), '"至"连接符 + 修饰词');
+// 真实回归：五大道（2026-06 已补"四季皆宜"开头的 bestSeason）按 1.2 分参与排序
 const wudadao = TJ.find(d => d.name === '五大道');
-assert(wudadao && !String(wudadao.bestSeason || '').trim(), '前提：五大道确实缺 bestSeason');
-assert(t.destSeasonScore(wudadao) === 1, '五大道按中性 1 分参与排序（修复前为 0）');
+assert(wudadao && /四季/.test(String(wudadao.bestSeason || '')), '前提：五大道已补四季皆宜类 bestSeason');
+assert(t.destSeasonScore(wudadao) === 1.2, '五大道按四季皆宜 1.2 分参与排序');
+// 天津数据债清零：30 张全部具备 bestSeason
+assert(TJ.every(d => String(d.bestSeason || '').trim().length > 0), '天津 30 张卡 bestSeason 全覆盖');
 
 // 9. 每日轮换：同日稳定、跨日变化、头部池约束
 t._setPage(0);

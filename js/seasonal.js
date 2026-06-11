@@ -27,10 +27,11 @@
   // Score how well a bestSeason string matches current month
   function seasonScore(bestSeason) {
     if (!bestSeason) return 0;
-    const bs = String(bestSeason);
+    // 剥空格："5 月-10 月" 与 "5-10月" 等价，否则区间匹配会静默漏掉带空格的数据
+    const bs = String(bestSeason).replace(/\s+/g, '');
 
-    // Explicit month range like "5-10月"
-    const rangeMatch = bs.match(/(\d+)\s*[-~到至]\s*(\d+)\s*月/);
+    // Explicit month range，覆盖全库真实写法："5-10月" / "5月-10月" / "10月底-11月中旬" / "12月-次年3月"
+    const rangeMatch = bs.match(/(\d+)月?[底中初旬上下]{0,2}[-~到至](?:次年)?(\d+)月/);
     if (rangeMatch) {
       const lo = parseInt(rangeMatch[1], 10);
       const hi = parseInt(rangeMatch[2], 10);

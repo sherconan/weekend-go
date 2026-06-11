@@ -42,6 +42,7 @@ const DESTINATIONS_TJ = [
       "小洋楼",
       "慢生活"
     ],
+    "bestSeason": "四季皆宜，3-4月大理道海棠、秋季梧桐最佳",
     "image": "assets/images/dest-tj-1100.webp",
     "imageQuery": "Tianjin Five Great Avenues historical buildings"
   },
@@ -86,6 +87,7 @@ const DESTINATIONS_TJ = [
       "老字号",
       "海河"
     ],
+    "bestSeason": "四季皆宜，春秋最舒适",
     "image": "assets/images/dest-tj-1101.webp",
     "imageQuery": "Tianjin Ancient Culture Street night lanterns"
   },
@@ -130,6 +132,7 @@ const DESTINATIONS_TJ = [
       "异域",
       "海河北岸"
     ],
+    "bestSeason": "四季皆宜，春夏秋的夜晚最热闹",
     "image": "assets/images/dest-tj-1102.webp",
     "imageQuery": "Tianjin Italian Style Street evening"
   },
@@ -174,6 +177,7 @@ const DESTINATIONS_TJ = [
       "海河",
       "打卡"
     ],
+    "bestSeason": "四季皆宜，夜晚景色最佳",
     "image": "assets/images/dest-tj-1103.webp",
     "imageQuery": "Tianjin Eye Ferris wheel sunset"
   },
@@ -218,6 +222,7 @@ const DESTINATIONS_TJ = [
       "瓷器",
       "奇观"
     ],
+    "bestSeason": "四季皆宜，全年开放",
     "image": "assets/images/dest-tj-1104.webp",
     "imageQuery": "Tianjin Porcelain House"
   },
@@ -262,6 +267,7 @@ const DESTINATIONS_TJ = [
       "海河",
       "灯光"
     ],
+    "bestSeason": "4-10月，冬季停航（约11月至次年3月）",
     "image": "assets/images/dest-tj-1105.webp",
     "imageQuery": "Tianjin Haihe river night cruise"
   },
@@ -306,6 +312,7 @@ const DESTINATIONS_TJ = [
       "辽代",
       "木构"
     ],
+    "bestSeason": "四季皆宜，春秋最美、正月庙会最热闹",
     "image": "assets/images/dest-tj-1106.webp",
     "imageQuery": "Dule Temple Ji County ancient wooden architecture"
   },
@@ -351,6 +358,7 @@ const DESTINATIONS_TJ = [
       "乾隆",
       "徒步"
     ],
+    "bestSeason": "4-11月最佳，10月底-11月中红叶季",
     "image": "assets/images/dest-tj-1107.webp",
     "imageQuery": "Panshan Mountain Ji County Tianjin"
   },
@@ -396,6 +404,7 @@ const DESTINATIONS_TJ = [
       "军事",
       "亲子"
     ],
+    "bestSeason": "四季皆宜",
     "image": "assets/images/dest-tj-1108.webp",
     "imageQuery": "Tianjin Binhai Aircraft Carrier Theme Park"
   },
