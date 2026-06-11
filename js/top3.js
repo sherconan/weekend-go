@@ -29,10 +29,12 @@
   }
 
   // 与 seasonal.js 同语义：bestSeason 字符串 × 当前月份 → 0~3 分
+  // 区间正则覆盖数据里的全部真实写法（2026-06 全库普查 153 条区间）：
+  //   "5-10月" / "5月-10月" / "5 月-10 月" / "10月底-11月中旬" / "12月-次年3月" / "3月底至4月中"
   function seasonScore(bestSeason) {
-    const bs = s(bestSeason);
+    const bs = s(bestSeason).replace(/\s+/g, '');
     if (!bs) return 0;
-    const range = bs.match(/(\d+)\s*[-~到至]\s*(\d+)\s*月/);
+    const range = bs.match(/(\d+)月?[底中初旬上下]{0,2}[-~到至](?:次年)?(\d+)月/);
     if (range) {
       const lo = parseInt(range[1], 10);
       const hi = parseInt(range[2], 10);
