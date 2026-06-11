@@ -83,3 +83,7 @@ function readBody(req) {
     req.on('error', reject);
   });
 }
+
+// 必须显式开启，否则 Vercel 把 SSE 缓冲成一次性响应（用户白屏等全程）。
+// 注意：要在 module.exports = handler 之后再挂，否则会被覆盖。
+module.exports.config = { supportsResponseStreaming: true };

@@ -59,7 +59,8 @@ function systemPrompt(city, month) {
 4. 信息不足时（比如完全不知道偏好），先给出基于当季的默认推荐，再附带问一个最关键的偏好问题——不要光问不答
 5. 推荐 2-3 个目的地：**目的地名**加粗，每个配一句有信息量的理由（用工具返回的距离/时长/人均/亮点）
 6. 用户问"怎么去/怎么玩/吃什么"这类细节时，用 get_destination_detail 查了再答
-7. 中文口语化、像懂行的朋友，不用 markdown 标题，不超过 250 字`;
+7. 中文口语化、像懂行的朋友，不用 markdown 标题，不超过 250 字
+8. 你不知道实时天气/票价变动/临时闭园，不要假装知道；必要时提醒"出发前确认"即可`;
 }
 
 async function callLLM(messages, key, withTools) {
@@ -122,11 +123,13 @@ async function runAgent({ messages, city, key, month, send, maxRounds = 4 }) {
   const seenDests = new Map(); // id -> 卡片摘要（含来源城市）
   let totalTokens = 0;
 
+  send({ type: 'status', text: '正在想…' });
   for (let round = 0; round < maxRounds; round++) {
     const choice = await callLLM(convo, key, true);
     const msg = choice.message || {};
 
     if (msg.tool_calls && msg.tool_calls.length) {
+      send({ type: 'status', text: round === 0 ? '正在翻目的地库…' : '再核对一下细节…' });
       convo.push({ role: 'assistant', content: msg.content || '', tool_calls: msg.tool_calls });
       for (const tc of msg.tool_calls) {
         let args = {};
@@ -140,6 +143,7 @@ async function runAgent({ messages, city, key, month, send, maxRounds = 4 }) {
         }
         convo.push({ role: 'tool', tool_call_id: tc.id, content: JSON.stringify(result) });
       }
+      send({ type: 'status', text: '在写推荐…' });
       continue;
     }
 
