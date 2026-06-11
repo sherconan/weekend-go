@@ -22,7 +22,7 @@
   <meta name="author" content="weekend-go">
   <link rel="preconnect" href="https://sherconan.github.io">
   <link rel="dns-prefetch" href="https://sherconan.github.io">
-  <link rel="stylesheet" href="css/styles.css?v=20260522-b3-hover">
+  <link rel="stylesheet" href="css/styles.css?v=20260611-top3">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x26F0;</text></svg>">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4CAF50">
@@ -112,6 +112,15 @@
       </div>
       <h1>这个周末，去哪儿好？</h1>
       <p id="hero-desc">不用翻遍小红书和攻略。告诉我们你的偏好，帮你找到最合适的目的地。</p>
+      <!-- 本周末 Top 3 · 首屏直接给答案（js/top3.js 渲染） -->
+      <div class="top3-section" id="top3-section">
+        <div class="top3-header">
+          <span class="top3-title" id="top3-title">☀️ 本周末 · 为你挑了 3 个</span>
+          <button class="top3-shuffle" type="button" onclick="shuffleTop3()">🔄 换一批</button>
+        </div>
+        <p class="top3-note" id="top3-note"></p>
+        <div class="top3-cards" id="top3-cards"></div>
+      </div>
       <div class="hero-search-wrap">
         <form class="hero-search" onsubmit="event.preventDefault();heroSearchActivate();" role="search" aria-label="搜索目的地">
           <span class="hero-search-icon" aria-hidden="true">&#x1F50D;</span>
@@ -126,15 +135,15 @@
         <div class="hero-recent-dropdown" id="hero-recent-dd" aria-hidden="true"></div>
       </div>
       <div class="hero-actions">
-        <button class="btn btn--primary" onclick="scrollToSection('filters')">
+        <button class="btn btn--secondary" onclick="scrollToSection('filters')">
           &#x1F50D; 开始筛选
         </button>
-        <a class="btn btn--secondary" href="planner.html" style="background:linear-gradient(135deg,#FF7043,#F4511E);color:white;border:none;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:4px;">
-          &#x1F5FA; 一键生成行程
-        </a>
         <button class="btn btn--ghost btn--random" onclick="randomDestination()" title="懒得选了，给我一个！">
           &#x1F3B2; 随便去哪儿
         </button>
+        <a class="btn btn--ghost" href="planner.html" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:4px;">
+          &#x1F5FA; 行程规划器
+        </a>
       </div>
       <div class="hero-quick-filters" role="group" aria-label="时长快筛">
         <span class="hero-qf-lbl">几天?</span>
@@ -434,6 +443,8 @@
   <script src="js/data-qingdao.js?v=20260419-clean" onerror="this.remove()"></script>
   <script src="js/data-chengdu.js?v=20260419-8cities" onerror="this.remove()"></script>
   <script src="js/data-hangzhou.js?v=20260419-8cities" onerror="this.remove()"></script>
+  <script src="js/data-chongqing.js?v=20260611-load" onerror="this.remove()"></script>
+  <script src="js/data-enshi.js?v=20260611-load" onerror="this.remove()"></script>
   <script src="js/data-shared-cross-city.js?v=20260419-p2b" onerror="this.remove()"></script>
   <script src="js/data-legends-shenzhen.js" onerror="this.remove()"></script>
   <script src="js/data-legends-weihai.js" onerror="this.remove()"></script>
@@ -445,11 +456,12 @@
   <script src="js/xhs-data.js"></script>
   <script src="js/xhs-voices.js"></script>
   <script src="js/visuals.js"></script>
-  <script src="js/cities-dataset.js?v=20260509-recentcity"></script>
+  <script src="js/cities-dataset.js?v=20260611-cq-es"></script>
   <script src="js/images.js?v=codex-20260525-2152"></script>
   <script src="js/stamp-designs.js"></script>
   <script src="js/stamp.js?v=20260419-p2-stamp-migration"></script>
-  <script src="js/app.js?v=codex-20260525-2152"></script>
+  <script src="js/app.js?v=20260611-top3"></script>
+  <script src="js/top3.js?v=20260611-top3"></script>
   <script src="js/seasonal.js?v=1"></script>
   <script src="js/achievements.js?v=1"></script>
   <script src="js/recent.js?v=1"></script>

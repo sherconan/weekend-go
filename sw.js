@@ -1,5 +1,5 @@
-// Weekend-Go Service Worker v29 — nuclear cache reset + auto-reload clients (2026-05-22)
-const CACHE_NAME = 'weekend-go-v29';
+// Weekend-Go Service Worker v30 — 首屏 Top3 + 城市状态同步 (2026-06-11)
+const CACHE_NAME = 'weekend-go-v30';
 const IMAGE_CACHE_NAME = 'weekend-go-images-v10';
 const MAX_IMAGE_CACHE = 120;
 
@@ -24,7 +24,7 @@ const CORE_ASSETS = [
   '/js/xhs-data.js', '/js/xhs-voices.js',
   '/js/visuals.js', '/js/images.js',
   '/js/stamp-designs.js', '/js/stamp.js',
-  '/js/legends.js', '/js/app.js',
+  '/js/legends.js', '/js/app.js', '/js/top3.js',
   '/js/planner.js', '/js/dest.js', '/js/compare.js', '/js/seasonal.js', '/js/theme.js', '/js/achievements.js', '/js/recent.js',
   '/manifest.json'
 ];
