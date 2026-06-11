@@ -54,7 +54,8 @@ function switchCity(city) {
   if (typeof syncCityDropdownTrigger === 'function') syncCityDropdownTrigger(city);
   if (typeof recordRecentCity === 'function') recordRecentCity(city);
   const badge = document.getElementById('hero-badge');
-  if (badge) badge.innerHTML = cityInfo.badge;
+  // 徽标里的「X季版」跟随当前月份（数据里写死了春季版）
+  if (badge) badge.innerHTML = typeof seasonEditionBadge === 'function' ? seasonEditionBadge(cityInfo.badge) : cityInfo.badge;
   const desc = document.getElementById('hero-desc');
   if (desc) desc.textContent = cityInfo.desc;
 
@@ -70,6 +71,8 @@ function switchCity(city) {
   // Reset filters and re-render
   clearFilters();
   updateCollectionProgress();
+  // 首屏「本周末 Top 3」跟随城市
+  if (typeof renderTop3 === 'function') renderTop3();
 }
 
 // ========== State ==========
@@ -96,9 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
   bindFilterEvents();
   bindChatEvents();
   bindCompareEvents();
-  applyFilters(); // renders destinations and updates filter count accurately
+  // 恢复上次浏览的城市（与城市下拉「最近使用」同源），
+  // 修复：下拉显示天津、内容却是北京的状态不同步
+  let initialCity = currentCity;
+  try {
+    const recent = JSON.parse(localStorage.getItem('weekend-go-recent-cities') || '[]');
+    if (Array.isArray(recent) && recent[0] && CITY_DATA[recent[0]]) initialCity = recent[0];
+  } catch (e) {}
+  switchCity(initialCity); // 内部完成 applyFilters / 统计 / 徽标 / Top3 渲染
   initScrollAnimations();
-  updateCollectionProgress();
 });
 
 // ========== Filtering ==========
@@ -450,48 +459,48 @@ function openDetail(id) {
         <p>${dest.overview || dest.description || dest.subtitle || ''}</p>
       </div>
 
-      <div class="modal-cards-row">
-        <div class="modal-info-card">
+      ${(dest.whatToDo || dest.whereToEat) ? `<div class="modal-cards-row">
+        ${dest.whatToDo ? `<div class="modal-info-card">
           <div class="modal-info-card-header" style="background: linear-gradient(135deg, #E8F5E9, #C8E6C9)">
             <span class="modal-info-card-icon">&#x1F3AF;</span>
             <h4>推荐怎么玩</h4>
           </div>
           <div class="modal-info-card-body">${fmt(dest.whatToDo)}</div>
-        </div>
+        </div>` : ''}
 
-        <div class="modal-info-card">
+        ${dest.whereToEat ? `<div class="modal-info-card">
           <div class="modal-info-card-header" style="background: linear-gradient(135deg, #FFF3E0, #FFE0B2)">
             <span class="modal-info-card-icon">&#x1F37D;</span>
             <h4>必吃美食</h4>
           </div>
           <div class="modal-info-card-body">${fmt(dest.whereToEat)}</div>
-        </div>
-      </div>
+        </div>` : ''}
+      </div>` : ''}
 
-      <div class="modal-detail-sections">
-        <details class="modal-details" open>
+      ${(dest.howToGet || dest.whereToStay || dest.tips) ? `<div class="modal-detail-sections">
+        ${dest.howToGet ? `<details class="modal-details" open>
           <summary>&#x1F697; 交通攻略</summary>
           <div class="modal-details-body">${fmt(dest.howToGet)}</div>
-        </details>
+        </details>` : ''}
 
-        <details class="modal-details">
+        ${dest.whereToStay ? `<details class="modal-details">
           <summary>&#x1F3E8; 住宿推荐</summary>
           <div class="modal-details-body">${fmt(dest.whereToStay)}</div>
-        </details>
+        </details>` : ''}
 
-        <details class="modal-details">
+        ${dest.tips ? `<details class="modal-details">
           <summary>&#x1F4A1; 出行贴士</summary>
           <div class="modal-details-body">${fmt(dest.tips)}</div>
-        </details>
-      </div>
+        </details>` : ''}
+      </div>` : ''}
 
-      <div class="modal-highlight">
+      ${dest.highlight ? `<div class="modal-highlight">
         <span class="modal-highlight-icon">&#x2728;</span>
         <div>
           <strong>${dest.highlight}</strong>
-          <span class="modal-highlight-season">${dest.bestSeason}</span>
+          ${dest.bestSeason ? `<span class="modal-highlight-season">${dest.bestSeason}</span>` : ''}
         </div>
-      </div>
+      </div>` : ''}
 
       ${(() => {
         const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name) : [];
@@ -537,9 +546,6 @@ function openDetail(id) {
       </button>
       <a class="btn btn--secondary" href="dest.html?id=${dest.id}&city=${typeof currentCity !== 'undefined' ? currentCity : ''}" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
         &#x1F5D7; 独立页
-      </a>
-      <a class="btn btn--secondary" href="compare.html?ids=${dest.id}" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
-        &#x2696;&#xFE0F; 对比
       </a>
     </div>
   `;
@@ -1063,9 +1069,11 @@ function heroQuickFilter(cat, val) {
 // "随便去哪儿" — 从当前城市的 ACTIVE_DESTINATIONS 随机选一个 + 打开 detail
 function randomDestination() {
   if (typeof ACTIVE_DESTINATIONS === 'undefined' || !ACTIVE_DESTINATIONS.length) return;
-  // 偏向 rating ≥ 4.5 的（提高随机品质）
-  const pool = ACTIVE_DESTINATIONS.filter(d => (d.rating || 0) >= 4.5);
-  const arr = pool.length >= 5 ? pool : ACTIVE_DESTINATIONS;
+  // 只从内容扎实的池子里抽（空壳详情不进随机），再偏向 rating ≥ 4.5
+  const quality = typeof getQualityPool === 'function' ? getQualityPool() : [];
+  const base = quality.length >= 5 ? quality : ACTIVE_DESTINATIONS;
+  const pool = base.filter(d => (d.rating || 0) >= 4.5);
+  const arr = pool.length >= 5 ? pool : base;
   const pick = arr[Math.floor(Math.random() * arr.length)];
   if (!pick) return;
   // 按钮 dice spin 动画

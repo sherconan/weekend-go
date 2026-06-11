@@ -3980,3 +3980,127 @@ body.night-mode .nav-logo {
   .search-input { font-size: 16px; }
   .search-results { max-height: none; }
 }
+
+/* ===== 本周末 Top 3（首屏答案模块，js/top3.js 渲染） ===== */
+.top3-section {
+  max-width: 920px;
+  margin: 26px auto 4px;
+  text-align: left;
+}
+.top3-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+.top3-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.top3-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+  text-align: left; /* 盖过 .hero p 的居中 */
+  max-width: none;
+}
+.top3-shuffle {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.top3-shuffle:hover {
+  color: var(--coral);
+  border-color: var(--coral);
+}
+.top3-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.top3-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.03);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.top3-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.top3-card:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+.top3-card-cover {
+  height: 118px;
+  position: relative;
+}
+.top3-rank {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(26, 35, 50, 0.78);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+.top3-card-body {
+  padding: 12px 14px 14px;
+}
+.top3-card-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.top3-card-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top3-card-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+.top3-card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.top3-chip {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--coral-hover);
+  background: var(--coral-light);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+@media (max-width: 768px) {
+  .top3-cards { grid-template-columns: 1fr; }
+  .top3-card-cover { height: 132px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .top3-card { transition: none; }
+  .top3-card:hover { transform: none; }
+}
