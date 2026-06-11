@@ -804,7 +804,15 @@ async function sendToAPI(text, typingEl) {
           const event = JSON.parse(json);
           if (event.type === 'text') {
             fullText += event.text;
+            bubble.classList.remove('skeleton');
             bubble.innerHTML = formatChat(fullText);
+            scrollChatToBottom();
+          } else if (event.type === 'status' && !fullText) {
+            // 等待期进度（查库/写推荐），有正文后忽略
+            bubble.classList.remove('skeleton');
+            bubble.style.width = '';
+            bubble.style.height = '';
+            bubble.innerHTML = '<em style="color:var(--text-muted);">' + formatChat(event.text) + '</em>';
             scrollChatToBottom();
           } else if (event.type === 'cards' && Array.isArray(event.items)) {
             renderChatCards(msgEl, event.items);
