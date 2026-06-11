@@ -115,13 +115,7 @@ a { text-decoration: none; color: inherit; }
 .nav-logo-icon {
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--green-500), var(--blue-500));
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 16px;
+  display: block;
 }
 
 .nav-actions {
