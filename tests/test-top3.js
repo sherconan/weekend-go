@@ -85,5 +85,43 @@ t._setPage(0);
 // 7. 已打卡惩罚
 assert(Math.abs((t.scoreDest(full, false) - t.scoreDest(full, true)) - 3) < 1e-9, '已打卡应 -3 分');
 
+// 8. 当季打分公平性（destSeasonScore）
+const curSeason = t.seasonName(t.MONTH);
+const kwBySeason = { '春': '赏花', '夏': '海滩', '秋': '红叶', '冬': '滑雪' };
+const curKw = kwBySeason[curSeason];
+const offKw = Object.entries(kwBySeason).find(([k]) => k !== curSeason)[1];
+const base = { name: 'X', subtitle: '', themes: [], tags: [] };
+assert(t.destSeasonScore({ ...base }) === 1, '无 bestSeason 且无关键词 = 中性 1 分（不再吃 0）');
+assert(t.destSeasonScore({ ...base, name: curKw + '公园' }) === 2, `无字段但含当季关键词(${curKw}) = 2 分`);
+assert(t.destSeasonScore({ ...base, name: offKw + '场' }) === 0.4, `无字段但只含反季关键词(${offKw}) = 0.4 分`);
+assert(t.destSeasonScore({ ...base, name: offKw + '场', bestSeason: '5-10月' }) === t.seasonScore('5-10月'), '明确 bestSeason 优先于关键词推断');
+assert(t.destSeasonScore({ ...base, bestSeason: '四季皆宜' }) === 1.2, '明确四季皆宜(1.2)应高于缺字段中性(1)');
+const outOfRange = t.MONTH >= 5 && t.MONTH <= 10 ? '11-2月' : '5-10月';
+assert(t.destSeasonScore({ ...base, bestSeason: outOfRange }) === 0.3, '明确反季(0.3)应低于缺字段中性(1)');
+// 真实回归：五大道（缺 bestSeason、无季节关键词）不再是 0 分
+const wudadao = TJ.find(d => d.name === '五大道');
+assert(wudadao && !String(wudadao.bestSeason || '').trim(), '前提：五大道确实缺 bestSeason');
+assert(t.destSeasonScore(wudadao) === 1, '五大道按中性 1 分参与排序（修复前为 0）');
+
+// 9. 每日轮换：同日稳定、跨日变化、头部池约束
+t._setPage(0);
+t._setDateKey('20260611');
+const dayA1 = t.pickTop3().map(d => d.id);
+const dayA2 = t.pickTop3().map(d => d.id);
+assert(String(dayA1) === String(dayA2), '同一天两次打开应得到同一批');
+const rankedIds = t.rankedPool().slice(0, t.HEAD_POOL).map(d => d.id);
+assert(dayA1.every(id => rankedIds.includes(id)), '当日 Top3 必须全部来自排名前 12 的头部池');
+const order = t.buildOrder();
+assert(order.length === t.rankedPool().length, '轮换序列应覆盖全部推荐池（换一批可一直翻）');
+const headSet = new Set(order.slice(0, t.HEAD_POOL).map(d => d.id));
+assert(rankedIds.every(id => headSet.has(id)) && headSet.size === rankedIds.length, '序列前 12 应是头部池的洗牌排列');
+const firsts = new Set();
+for (const dk of ['20260611', '20260612', '20260613', '20260614', '20260618', '20260625']) {
+  t._setDateKey(dk);
+  firsts.add(t.pickTop3()[0].id);
+}
+assert(firsts.size >= 2, `跨 6 天 Top1 应出现变化（实际 ${firsts.size} 种）`);
+t._setDateKey(null);
+
 console.log(`\ntop3 tests: ${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);
