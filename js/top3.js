@@ -172,6 +172,11 @@
     const start = (_page * 3) % list.length;
     const out = [];
     for (let i = 0; i < n; i++) out.push(list[(start + i) % list.length]);
+    // 标题承诺"当季为你挑"——只要池子里有当季卡，每批至少保 1 张
+    if (n === 3 && !out.some((d) => destSeasonScore(d) >= 2)) {
+      const inSeason = list.find((d) => destSeasonScore(d) >= 2 && out.indexOf(d) === -1);
+      if (inSeason) out[n - 1] = inSeason;
+    }
     return out;
   }
 
