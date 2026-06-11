@@ -50,6 +50,34 @@
     return 0.2;
   }
 
+  // ---- 当季打分公平性：没写 bestSeason 的卡不再吃 0 分 ----
+  // 从卡片已有的真实字段（名称/副标题/主题/标签）推断季节信号；推断不出 = 中性 1 分。
+  // 语义排序：明确当季(3) > 关键词当季(2) > 四季皆宜(1.2) > 无信号(1) > 关键词反季(0.4) > 明确反季(0.3)
+  const SEASON_KEYWORDS = {
+    '春': /赏花|花海|樱花|桃花|海棠|杏花|梨花|踏青|郁金香/,
+    '夏': /海滩|沙滩|海岛|海水浴|戏水|玩水|漂流|避暑|瀑布|峡谷|溶洞|露营|荷花|向日葵/,
+    '秋': /红叶|银杏|秋叶|秋色|芦苇|稻田/,
+    '冬': /滑雪|冰雪|雾凇|冰灯|滑冰|温泉/
+  };
+  function derivedSeasonScore(d) {
+    const text = [d.name, d.subtitle, d.highlight,
+      Array.isArray(d.themes) ? d.themes.join(' ') : '',
+      Array.isArray(d.tags) ? d.tags.join(' ') : ''].filter(Boolean).join(' ');
+    const cur = seasonName(MONTH);
+    if (SEASON_KEYWORDS[cur] && SEASON_KEYWORDS[cur].test(text)) return 2;
+    for (const k in SEASON_KEYWORDS) {
+      if (k !== cur && SEASON_KEYWORDS[k].test(text)) return 0.4;
+    }
+    return 1;
+  }
+  function destSeasonScore(d) {
+    const bs = s(d.bestSeason);
+    if (!bs) return derivedSeasonScore(d);
+    // 明确写了"四季皆宜"的不应排在缺字段的卡后面
+    if (/四季|全年|皆宜|皆可/.test(bs)) return 1.2;
+    return seasonScore(bs);
+  }
+
   // 周末可行性：半日/一日 > 两日一夜 > 三日两夜
   function weekendScore(d) {
     const dur = Array.isArray(d.duration) ? d.duration : [];
@@ -64,8 +92,11 @@
     return tier === 'high' ? 1 : tier === 'mid' ? 0.6 : 0.3;
   }
 
+  // 权重依据（经验值，量纲对齐后各因子的满分贡献）：
+  //   当季 ≤6.6（核心卖点："本周末"的时令感） > 周末可行 ≤3.2 > 口碑 ≤3（rating×0.6）> 热度 ≤1（只做平手裁决）
+  //   已打卡 -3 ≈ 让出一个量级，但不至于把打过卡的全压到池底
   function scoreDest(d, visited) {
-    let score = seasonScore(d.bestSeason) * 2.2
+    let score = destSeasonScore(d) * 2.2
       + weekendScore(d) * 1.6
       + (d.rating || 0) * 0.6
       + heatScore(d);
@@ -92,8 +123,50 @@
 
   let _page = 0;
 
-  function pickTop3(ranked) {
-    const list = ranked || rankedPool();
+  // ---- 每日轮换：同一天打开是同一批（稳定可复现），跨天自动换 ----
+  // 头部池 = 排名前 12 的卡，按「城市+日期」种子洗牌后放在最前；其余按分数顺延。
+  // 这样 Top1 不再永远是同一张，但任何一天给出的 3 张都来自最优池。
+  const HEAD_POOL = 12;
+  let _dateKeyOverride = null; // 测试注入
+  function dateKey() {
+    if (_dateKeyOverride) return _dateKeyOverride;
+    const d = new Date();
+    return '' + d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0');
+  }
+  function hashStr(str) {
+    let h = 2166136261;
+    for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      let t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  function seededShuffle(arr, seed) {
+    const a = arr.slice();
+    const rnd = mulberry32(seed);
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(rnd() * (i + 1));
+      const tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+  function buildOrder() {
+    const ranked = rankedPool();
+    if (!ranked.length) return [];
+    let city = 'beijing';
+    try { if (typeof currentCity !== 'undefined' && currentCity) city = currentCity; } catch (e) {}
+    const head = ranked.slice(0, Math.min(HEAD_POOL, ranked.length));
+    const rest = ranked.slice(head.length);
+    return seededShuffle(head, hashStr(city + '|' + dateKey())).concat(rest);
+  }
+
+  function pickTop3(order) {
+    const list = order || buildOrder();
     if (!list.length) return [];
     const n = Math.min(3, list.length);
     const start = (_page * 3) % list.length;
@@ -104,7 +177,7 @@
 
   function reasonChips(d) {
     const chips = [];
-    if (seasonScore(d.bestSeason) >= 2) chips.push('☀️ 正当季');
+    if (destSeasonScore(d) >= 2) chips.push('☀️ 正当季');
     if (!(typeof isVisited === 'function' && isVisited(d.id))) chips.push('🆕 还没去过');
     if (d.xhsHeat && d.xhsHeat.tier === 'high') chips.push('🔥 小红书热');
     return chips.slice(0, 3);
@@ -142,14 +215,14 @@
     const wrap = document.getElementById('top3-section');
     const grid = document.getElementById('top3-cards');
     if (!wrap || !grid) return;
-    const ranked = rankedPool();
-    if (!ranked.length) { grid.innerHTML = ''; wrap.style.display = 'none'; return; }
+    const order = buildOrder();
+    if (!order.length) { grid.innerHTML = ''; wrap.style.display = 'none'; return; }
     wrap.style.display = '';
-    grid.innerHTML = pickTop3(ranked).map((d, i) => cardHTML(d, i + 1)).join('');
+    grid.innerHTML = pickTop3(order).map((d, i) => cardHTML(d, i + 1)).join('');
     const title = document.getElementById('top3-title');
     if (title) title.textContent = `☀️ 本周末 · ${MONTH}月当季为你挑了 3 个`;
     const note = document.getElementById('top3-note');
-    if (note) note.textContent = `从 ${ranked.length} 个内容完整的目的地里选 · 点卡片直接看怎么玩怎么去`;
+    if (note) note.textContent = `从 ${order.length} 个内容完整的目的地里选，每天换一轮 · 点卡片直接看怎么玩怎么去`;
   }
 
   function shuffleTop3() {
@@ -163,7 +236,12 @@
     window.getQualityPool = getQualityPool;
     window.seasonEditionBadge = seasonEditionBadge;
     // 测试钩子
-    window.__top3 = { isSolid, seasonScore, weekendScore, scoreDest, pickTop3, rankedPool, MONTH, _setPage: (p) => { _page = p; } };
+    window.__top3 = {
+      isSolid, seasonScore, weekendScore, scoreDest, pickTop3, rankedPool, MONTH,
+      destSeasonScore, derivedSeasonScore, seasonName, buildOrder, HEAD_POOL,
+      _setPage: (p) => { _page = p; },
+      _setDateKey: (k) => { _dateKeyOverride = k; }
+    };
   }
   if (typeof document !== 'undefined' && document.addEventListener) {
     document.addEventListener('DOMContentLoaded', renderTop3);
