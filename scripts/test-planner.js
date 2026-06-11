@@ -20,7 +20,7 @@ let plSrc = fs.readFileSync('js/planner.js','utf-8');
 // Replace IIFE with exposure
 plSrc = plSrc.replace(/\(function\(\)\{/, '(function(){')
   .replace(/if \(document\.readyState === 'loading'\)[\s\S]*?init\(\);\s*\}/, '')
-  .replace(/\}\)\(\);\s*$/, '\nmodule.exports={generatePlan,generateMultiCityPlan,generateNCityPlan,planTSP,loadCityDests,scoreDest,durationHours,allocateDays,assignTimeSlots,THEME_FAMILIES,budgetOk,haversineKm};\n})();');
+  .replace(/\}\)\(\);\s*$/, '\nmodule.exports={generatePlan,generateNCityPlan,planTSP,loadCityDests,scoreDest,durationHours,allocateDays,assignTimeSlots,THEME_FAMILIES,budgetOk,haversineKm};\n})();');
 // Strip document references inside exposed fns
 const browserGuard = `
 var document = { readyState:'complete', addEventListener:()=>{}, getElementById:()=>({style:{},addEventListener:()=>{},innerHTML:'',querySelectorAll:()=>[],insertAdjacentHTML:()=>{},scrollIntoView:()=>{}}), querySelectorAll:()=>[], createElement:()=>({getContext:()=>({}),width:0,height:0,toBlob:()=>{}}), body:{appendChild:()=>{},removeChild:()=>{}} };

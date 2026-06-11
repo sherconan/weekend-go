@@ -380,87 +380,6 @@
     };
   }
 
-  function generateMultiCityPlan(cityA, cityB, numDays, selectedFamilies, userBudget) {
-    const cities = g('CITIES') || [];
-    const ca = cities.find(c => c.key === cityA);
-    const cb = cities.find(c => c.key === cityB);
-    if (!ca || !cb) return { error: '城市数据未找到' };
-
-    const destsA = loadCityDests(cityA);
-    const destsB = loadCityDests(cityB);
-    if (destsA.length < 2 || destsB.length < 2) return { error: '两城数据不足组合行程' };
-
-    const rankA = scoreAndRank(destsA, selectedFamilies, userBudget);
-    const rankB = scoreAndRank(destsB, selectedFamilies, userBudget);
-
-    // Split days: roughly half/half, with cityA getting floor(numDays/2) + 1 if odd
-    const daysA = Math.ceil(numDays / 2);
-    const daysB = numDays - daysA;
-
-    const partA = allocateDays(rankA, daysA);
-    const partB = allocateDays(rankB, daysB);
-
-    // Transit metadata
-    const transitKm = Math.round(haversineKm(ca.origin, cb.origin));
-    const transitBudget = transitCost(transitKm);
-    const transitH = transitHours(transitKm);
-
-    const allDays = [];
-    partA.forEach((day, i) => {
-      const slots = assignTimeSlots(day.dests);
-      allDays.push({
-        idx: allDays.length + 1,
-        city: cityA,
-        cityLabel: ca.emoji + ' ' + ca.name,
-        slots,
-        hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
-      });
-    });
-    // Insert transit marker between A and B
-    if (partB.length) {
-      allDays.push({
-        idx: -1, // marker
-        isTransit: true,
-        fromCity: cityA,
-        toCity: cityB,
-        fromLabel: ca.emoji + ' ' + ca.name,
-        toLabel: cb.emoji + ' ' + cb.name,
-        km: transitKm,
-        hours: transitH,
-        cost: transitBudget
-      });
-      partB.forEach((day, i) => {
-        const slots = assignTimeSlots(day.dests);
-        allDays.push({
-          idx: allDays.filter(d => !d.isTransit).length + 1,
-          city: cityB,
-          cityLabel: cb.emoji + ' ' + cb.name,
-          slots,
-          hours: slots.length ? (slots[slots.length-1].end - slots[0].start) : 0
-        });
-      });
-    }
-
-    const budgetAB = estimateBudget(partA, userBudget) + estimateBudget(partB, userBudget);
-    const totalDests = allDays
-      .filter(d => !d.isTransit)
-      .reduce((s,d) => s + d.slots.length, 0);
-
-    return {
-      cityKey: cityA,
-      cityKey2: cityB,
-      isMultiCity: true,
-      numDays,
-      familyTags: selectedFamilies,
-      userBudget,
-      transit: { km: transitKm, hours: transitH, cost: transitBudget, fromLabel: ca.emoji+' '+ca.name, toLabel: cb.emoji+' '+cb.name },
-      days: allDays,
-      totalBudget: budgetAB + transitBudget,
-      totalDests,
-      createdAt: Date.now()
-    };
-  }
-
   // 全程游玩花费 = 各天实际选点的花费之和（不再是"档位中值 × 天数"的拍脑袋数）
   function estimateBudget(days) {
     return days.reduce((s, day) => s + dayCost(day.dests), 0);
@@ -1012,6 +931,15 @@
 
     // Days
     for (const day of plan.days) {
+      if (day.isTransit) {
+        // 换乘日没有 slots，画一行高铁信息
+        if (y > H - 200) break;
+        ctx.fillStyle = '#00695C';
+        ctx.font = 'bold 28px "PingFang SC", sans-serif';
+        ctx.fillText(`🚄 ${day.fromLabel} → ${day.toLabel} · ${day.hours}h · ¥${day.cost}`, 60, y);
+        y += 64;
+        continue;
+      }
       ctx.fillStyle = '#FF7043';
       ctx.font = 'bold 42px "PingFang SC", sans-serif';
       ctx.fillText(`Day ${day.idx}`, 60, y); y += 56;
@@ -1048,13 +976,18 @@
     }, 'image/png');
   }
 
-  function copyPlanText(plan) {
+  // 行程纯文本（复制/分享用）——换乘日没有 slots，单独成行
+  function buildPlanText(plan) {
     const cities = g('CITIES') || [];
     const city = cities.find(c => c.key === plan.cityKey);
     let text = `🗺 ${city ? city.name : plan.cityKey} ${plan.numDays}日行程（周末去哪儿）\n`;
-    text += `💰 预计人均 ¥${plan.totalBudget}  🎯 ${plan.familyTags.join(' · ') || '全主题'}\n\n`;
+    text += `💰 预计人均 ¥${plan.totalBudget}（不含住宿）  🎯 ${plan.familyTags.join(' · ') || '全主题'}\n\n`;
     for (const day of plan.days) {
-      text += `【Day ${day.idx}】约 ${day.hours}小时\n`;
+      if (day.isTransit) {
+        text += `【换乘】🚄 ${day.fromLabel} → ${day.toLabel} · 高铁约 ${day.hours}h · ¥${day.cost}\n\n`;
+        continue;
+      }
+      text += `【Day ${day.idx}】${day.cityLabel ? day.cityLabel + ' · ' : ''}约 ${day.hours}小时\n`;
       for (const slot of day.slots) {
         text += `  ${slot.startText}-${slot.endText} ${slot.dest.name}\n`;
         if (slot.dest.subtitle) text += `    ${slot.dest.subtitle}\n`;
@@ -1064,6 +997,11 @@
       text += '\n';
     }
     text += '生成自 sherconan.github.io/weekend-go/planner.html';
+    return text;
+  }
+
+  function copyPlanText(plan) {
+    const text = buildPlanText(plan);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(() => toast('✓ 已复制到剪贴板'));
     } else {
@@ -1092,7 +1030,7 @@
     window.__planner = {
       generatePlan, allocateDays, assignTimeSlots, scoreAndRank, budgetOk,
       durationHours, destCost, dayCost, isStrenuous, estimateBudget,
-      enforceBudgetCap, attachOvernight, loadCityDests
+      enforceBudgetCap, attachOvernight, loadCityDests, buildPlanText
     };
   }
 
