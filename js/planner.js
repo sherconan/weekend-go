@@ -1002,16 +1002,20 @@
 
   function copyPlanText(plan) {
     const text = buildPlanText(plan);
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(() => toast('✓ 已复制到剪贴板'));
-    } else {
+    const fallback = () => {
       const ta = document.createElement('textarea');
       ta.value = text;
       document.body.appendChild(ta);
       ta.select();
-      document.execCommand('copy');
+      const ok = document.execCommand('copy');
       document.body.removeChild(ta);
-      toast('✓ 已复制');
+      toast(ok ? '✓ 已复制' : '复制失败，请长按文本手动复制');
+    };
+    if (navigator.clipboard) {
+      // 剪贴板权限被拒时（部分 webview/隐私模式）静默失败很伤，降级到 execCommand
+      navigator.clipboard.writeText(text).then(() => toast('✓ 已复制到剪贴板')).catch(fallback);
+    } else {
+      fallback();
     }
   }
 
