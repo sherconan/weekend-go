@@ -39,6 +39,12 @@
     .section{background:var(--surface);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:var(--shadow-sm);}
     .section h2{font-size:17px;font-weight:700;margin-bottom:12px;padding-left:10px;border-left:3px solid var(--action);}
     .section p, .section .body{color:var(--ink-700);font-size:14px;white-space:pre-wrap;}
+    /* 条目排版（js/format-content.js 输出）：覆盖 pre-wrap，条目内自然换行 */
+    .section .body .content-item{display:flex;align-items:flex-start;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);white-space:normal;}
+    .section .body .content-item:last-child{border-bottom:none;}
+    .section .body .content-item-num{flex-shrink:0;width:19px;height:19px;margin-top:2px;border-radius:50%;background:#FFF3E0;color:var(--action);font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;}
+    .section .body .content-item--bullet::before{content:'•';color:var(--action);font-weight:700;margin-top:1px;}
+    .section .body .content-item-text{flex:1;min-width:0;}
     .description{font-size:16px;color:var(--ink-900);line-height:1.7;font-weight:500;font-style:italic;border-left:3px solid var(--brand);padding:4px 16px;background:var(--surface-2);border-radius:8px;margin-bottom:16px;}
 
     .kv{display:grid;grid-template-columns:100px 1fr;gap:8px 12px;font-size:14px;}
@@ -112,6 +118,7 @@
 <script src="js/data-legends-chongqing.js" onerror="this.remove()"></script>
 <script src="js/data-legends-enshi.js" onerror="this.remove()"></script>
 
-<script src="js/dest.js?v=2"></script>
+<script src="js/format-content.js?v=20260612-fmt"></script>
+<script src="js/dest.js?v=20260612-fmt"></script>
 </body>
 </html>

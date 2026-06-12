@@ -1686,12 +1686,61 @@ a { text-decoration: none; color: inherit; }
 }
 
 .modal-info-card-body .content-item {
-  padding: 4px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 7px 0;
   border-bottom: 1px solid var(--border-light);
+  line-height: 1.6;
 }
 
 .modal-info-card-body .content-item:last-child {
   border-bottom: none;
+}
+
+.content-item-num {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--coral-light);
+  color: var(--coral-hover);
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-item--bullet::before {
+  content: '•';
+  color: var(--coral);
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.content-item-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 没有完整笔记数据的城市：单条小红书语录兜底 */
+.xhs-quote-single {
+  background: var(--coral-light);
+  border-left: 3px solid var(--coral);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.xhs-quote-single .xhs-quote-src {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 .modal-detail-sections {

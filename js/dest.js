@@ -149,6 +149,12 @@
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
+  // 先转义再交给共享排版（编号串/顿号枚举/换行 → 条目），脚本缺失时退回纯转义
+  function fmtBody(s) {
+    const safe = escapeHtml(s);
+    return typeof formatDestContent === 'function' ? formatDestContent(safe, { preEscaped: true }) : safe;
+  }
+
   function render(result) {
     const loadingEl = document.getElementById('loading');
     if (loadingEl) loadingEl.remove();
@@ -213,13 +219,13 @@
 
         ${d.highlight ? `<div class="section"><h2>✨ 看点</h2><div class="body">${escapeHtml(d.highlight)}</div></div>` : ''}
 
-        ${d.whatToDo ? `<div class="section"><h2>🎯 必做清单</h2><div class="body">${escapeHtml(d.whatToDo)}</div></div>` : ''}
+        ${d.whatToDo ? `<div class="section"><h2>🎯 必做清单</h2><div class="body">${fmtBody(d.whatToDo)}</div></div>` : ''}
 
-        ${d.whereToEat ? `<div class="section"><h2>🍜 吃什么</h2><div class="body">${escapeHtml(d.whereToEat)}</div></div>` : ''}
+        ${d.whereToEat ? `<div class="section"><h2>🍜 吃什么</h2><div class="body">${fmtBody(d.whereToEat)}</div></div>` : ''}
 
-        ${d.whereToStay ? `<div class="section"><h2>🏨 住哪里</h2><div class="body">${escapeHtml(d.whereToStay)}</div></div>` : ''}
+        ${d.whereToStay ? `<div class="section"><h2>🏨 住哪里</h2><div class="body">${fmtBody(d.whereToStay)}</div></div>` : ''}
 
-        ${d.howToGet ? `<div class="section"><h2>🚆 怎么去</h2><div class="body">${escapeHtml(d.howToGet)}</div></div>` : ''}
+        ${d.howToGet ? `<div class="section"><h2>🚆 怎么去</h2><div class="body">${fmtBody(d.howToGet)}</div></div>` : ''}
 
         ${d.tips ? `<div class="section"><h2>💡 实用 tips</h2><div class="body">${escapeHtml(d.tips)}</div></div>` : ''}
 
