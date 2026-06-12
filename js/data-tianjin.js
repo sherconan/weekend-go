@@ -43,6 +43,7 @@ const DESTINATIONS_TJ = [
       "慢生活"
     ],
     "bestSeason": "四季皆宜，3-4月大理道海棠、秋季梧桐最佳",
+    "howToGet": "地铁：1 号线小白楼站 B1 口步行约 600 米，或营口道站步行约 800 米\n公交：观光 2 路、904、908 路等可达\n自驾：导航「民园广场」，路侧车位紧张，建议停民园广场地下停车场",
     "image": "assets/images/dest-tj-1100.webp",
     "imageQuery": "Tianjin Five Great Avenues historical buildings"
   },
@@ -88,6 +89,7 @@ const DESTINATIONS_TJ = [
       "海河"
     ],
     "bestSeason": "四季皆宜，春秋最舒适",
+    "howToGet": "地铁：2 号线东南角站 B 口步行约 400 米\n公交：观光 2 路东北角站下即到，904、905 路北城街站下\n自驾：节假日周边车位紧张，建议地铁前往",
     "image": "assets/images/dest-tj-1101.webp",
     "imageQuery": "Tianjin Ancient Culture Street night lanterns"
   },
@@ -133,6 +135,7 @@ const DESTINATIONS_TJ = [
       "海河北岸"
     ],
     "bestSeason": "四季皆宜，春夏秋的夜晚最热闹",
+    "howToGet": "地铁：2 号线建国道站步行约 300 米\n步行：天津站过解放桥沿胜利路步行约 15 分钟即到\n公交：5 路、8 路、27 路等意式风情区站下",
     "image": "assets/images/dest-tj-1102.webp",
     "imageQuery": "Tianjin Italian Style Street evening"
   },
@@ -178,6 +181,7 @@ const DESTINATIONS_TJ = [
       "打卡"
     ],
     "bestSeason": "四季皆宜，夜晚景色最佳",
+    "howToGet": "地铁：1 号线西北角站步行约 20 分钟，或换乘 861 路直达\n公交：天津站乘 802 路河北五马路站下，沿五马路向海河步行约 10 分钟\n公交：观光 2 路、612、632 路等多线可达",
     "image": "assets/images/dest-tj-1103.webp",
     "imageQuery": "Tianjin Eye Ferris wheel sunset"
   },
@@ -223,6 +227,7 @@ const DESTINATIONS_TJ = [
       "奇观"
     ],
     "bestSeason": "四季皆宜，全年开放",
+    "howToGet": "地铁：3 号线和平路站步行约 500 米\n公交：1、619、632、904 路等百货大楼站下即到\n步行：滨江道商业街步行约 5 分钟，可与西开教堂、五大道串联",
     "image": "assets/images/dest-tj-1104.webp",
     "imageQuery": "Tianjin Porcelain House"
   },
@@ -268,6 +273,7 @@ const DESTINATIONS_TJ = [
       "灯光"
     ],
     "bestSeason": "4-10月，冬季停航（约11月至次年3月）",
+    "howToGet": "天津站码头：地铁 3 号线津湾广场站 B 口出，过解放桥即到（天津站前广场解放桥旁）\n意风区码头：地铁 2 号线建国道站步行约 500 米（步行街与平安街交汇处）\n提示：夜航最美，建议提前线上购票",
     "image": "assets/images/dest-tj-1105.webp",
     "imageQuery": "Tianjin Haihe river night cruise"
   },
@@ -313,6 +319,7 @@ const DESTINATIONS_TJ = [
       "木构"
     ],
     "bestSeason": "四季皆宜，春秋最美、正月庙会最热闹",
+    "howToGet": "火车：天津站乘市郊列车至蓟州站，转旅游 12/13 路古街西口站下步行约 5 分钟\n大巴：河北客运站乘蓟州班车（约 30 元）至蓟州汽车站转乘\n自驾：津蓟高速蓟州出口下导航「独乐寺」，约 1.5 小时",
     "image": "assets/images/dest-tj-1106.webp",
     "imageQuery": "Dule Temple Ji County ancient wooden architecture"
   },
@@ -359,6 +366,7 @@ const DESTINATIONS_TJ = [
       "徒步"
     ],
     "bestSeason": "4-11月最佳，10月底-11月中红叶季",
+    "howToGet": "自驾：津蓟高速蓟州出口转盘山大道直达景区，约 2 小时；北京方向京平高速盘山出口下直达\n火车：天津站乘市郊列车至蓟州站，转公交 11 路直达盘山\n大巴：河北客运站乘蓟州班车，蓟州汽车站转景区直通车",
     "image": "assets/images/dest-tj-1107.webp",
     "imageQuery": "Panshan Mountain Ji County Tianjin"
   },
@@ -405,6 +413,7 @@ const DESTINATIONS_TJ = [
       "亲子"
     ],
     "bestSeason": "四季皆宜",
+    "howToGet": "公交专线：地铁 9 号线东海路站转 127 航母专线直达园区\n周末班线：462 路航母班线周六日及节假日 8:00/9:00 天津站发车直达\n自驾：津滨高速滨海新区出口转南海路直行约 20 公里，或导航「泰达航母主题公园」",
     "image": "assets/images/dest-tj-1108.webp",
     "imageQuery": "Tianjin Binhai Aircraft Carrier Theme Park"
   },
