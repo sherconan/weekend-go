@@ -1725,6 +1725,14 @@ a { text-decoration: none; color: inherit; }
   min-width: 0;
 }
 
+/* 板块空态：模块恒定存在，内容缺失时的统一占位 */
+.content-empty {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 10px 0;
+}
+
 /* 没有完整笔记数据的城市：单条小红书语录兜底 */
 .xhs-quote-single {
   background: var(--coral-light);

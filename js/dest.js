@@ -155,6 +155,12 @@
     return typeof formatDestContent === 'function' ? formatDestContent(safe, { preEscaped: true }) : safe;
   }
 
+  // 板块骨架恒定：与详情弹窗同一原则，内容缺失显示空态而不是隐藏模块
+  function fmtBodyOr(s, label) {
+    const t = String(s == null ? '' : s).trim();
+    return t ? fmtBody(t) : '<div class="content-empty">📝 ' + label + '还在完善中，欢迎打卡后补充</div>';
+  }
+
   function render(result) {
     const loadingEl = document.getElementById('loading');
     if (loadingEl) loadingEl.remove();
@@ -219,13 +225,15 @@
 
         ${d.highlight ? `<div class="section"><h2>✨ 看点</h2><div class="body">${escapeHtml(d.highlight)}</div></div>` : ''}
 
-        ${d.whatToDo ? `<div class="section"><h2>🎯 必做清单</h2><div class="body">${fmtBody(d.whatToDo)}</div></div>` : ''}
+        <div class="section"><h2>🎯 必做清单</h2><div class="body">${fmtBodyOr(d.whatToDo, '玩法攻略')}</div></div>
 
-        ${d.whereToEat ? `<div class="section"><h2>🍜 吃什么</h2><div class="body">${fmtBody(d.whereToEat)}</div></div>` : ''}
+        <div class="section"><h2>🍜 吃什么</h2><div class="body">${fmtBodyOr(d.whereToEat, '美食推荐')}</div></div>
 
-        ${d.whereToStay ? `<div class="section"><h2>🏨 住哪里</h2><div class="body">${fmtBody(d.whereToStay)}</div></div>` : ''}
+        <div class="section"><h2>🏨 住哪里</h2><div class="body">${fmtBodyOr(d.whereToStay, '住宿信息')}</div></div>
 
-        ${d.howToGet ? `<div class="section"><h2>🚆 怎么去</h2><div class="body">${fmtBody(d.howToGet)}</div></div>` : ''}
+        <div class="section"><h2>🚆 怎么去</h2><div class="body">${fmtBodyOr(d.howToGet, '交通信息')}</div></div>
+
+        <div class="section"><h2>💡 出行贴士</h2><div class="body">${fmtBodyOr(d.tips, '出行贴士')}</div></div>
 
         ${d.tips ? `<div class="section"><h2>💡 实用 tips</h2><div class="body">${escapeHtml(d.tips)}</div></div>` : ''}
 
