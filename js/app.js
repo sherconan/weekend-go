@@ -416,10 +416,15 @@ function openDetail(id) {
       <div class="modal-heat-info">${xhs.notes} 篇笔记 &middot; ${xhs.trending}</div>
     </div>` : '';
 
-  // 排版：换行 / 编号分号串 / 顿号枚举 三种数据写法统一成卡片条目（js/format-content.js）
+  // 排版：换行/编号串/圈数字/交通前缀/分号多方案/顿号枚举 统一成卡片条目（js/format-content.js）
   const fmt = (text) => typeof formatDestContent === 'function'
     ? formatDestContent(text)
     : (text ? `<p>${text}</p>` : '');
+  // 板块骨架恒定：内容缺失显示统一空态，而不是整个模块消失
+  const fmtOr = (text, label) => {
+    const t = String(text == null ? '' : text).trim();
+    return t ? fmt(t) : `<div class="content-empty">&#x1F4DD; ${label}还在完善中，欢迎打卡后补充</div>`;
+  };
 
   const modalVisited = typeof isVisited === 'function' && isVisited(dest.id);
   const modalStampImg = modalVisited && typeof getStampDataURL === 'function' ? getStampDataURL(dest) : null;
@@ -454,40 +459,40 @@ function openDetail(id) {
         <p>${dest.overview || dest.description || dest.subtitle || ''}</p>
       </div>
 
-      ${(dest.whatToDo || dest.whereToEat) ? `<div class="modal-cards-row">
-        ${dest.whatToDo ? `<div class="modal-info-card">
+      <div class="modal-cards-row">
+        <div class="modal-info-card">
           <div class="modal-info-card-header" style="background: linear-gradient(135deg, #E8F5E9, #C8E6C9)">
             <span class="modal-info-card-icon">&#x1F3AF;</span>
             <h4>推荐怎么玩</h4>
           </div>
-          <div class="modal-info-card-body">${fmt(dest.whatToDo)}</div>
-        </div>` : ''}
+          <div class="modal-info-card-body">${fmtOr(dest.whatToDo, '玩法攻略')}</div>
+        </div>
 
-        ${dest.whereToEat ? `<div class="modal-info-card">
+        <div class="modal-info-card">
           <div class="modal-info-card-header" style="background: linear-gradient(135deg, #FFF3E0, #FFE0B2)">
             <span class="modal-info-card-icon">&#x1F37D;</span>
             <h4>必吃美食</h4>
           </div>
-          <div class="modal-info-card-body">${fmt(dest.whereToEat)}</div>
-        </div>` : ''}
-      </div>` : ''}
+          <div class="modal-info-card-body">${fmtOr(dest.whereToEat, '美食推荐')}</div>
+        </div>
+      </div>
 
-      ${(dest.howToGet || dest.whereToStay || dest.tips) ? `<div class="modal-detail-sections">
-        ${dest.howToGet ? `<details class="modal-details" open>
+      <div class="modal-detail-sections">
+        <details class="modal-details"${dest.howToGet ? ' open' : ''}>
           <summary>&#x1F697; 交通攻略</summary>
-          <div class="modal-details-body">${fmt(dest.howToGet)}</div>
-        </details>` : ''}
+          <div class="modal-details-body">${fmtOr(dest.howToGet, '交通信息')}</div>
+        </details>
 
-        ${dest.whereToStay ? `<details class="modal-details">
+        <details class="modal-details">
           <summary>&#x1F3E8; 住宿推荐</summary>
-          <div class="modal-details-body">${fmt(dest.whereToStay)}</div>
-        </details>` : ''}
+          <div class="modal-details-body">${fmtOr(dest.whereToStay, '住宿信息')}</div>
+        </details>
 
-        ${dest.tips ? `<details class="modal-details">
+        <details class="modal-details">
           <summary>&#x1F4A1; 出行贴士</summary>
-          <div class="modal-details-body">${fmt(dest.tips)}</div>
-        </details>` : ''}
-      </div>` : ''}
+          <div class="modal-details-body">${fmtOr(dest.tips, '出行贴士')}</div>
+        </details>
+      </div>
 
       ${dest.highlight ? `<div class="modal-highlight">
         <span class="modal-highlight-icon">&#x2728;</span>
@@ -500,9 +505,18 @@ function openDetail(id) {
       ${(() => {
         const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name) : [];
         if (!voices.length) {
-          // 完整笔记数据目前只采集了北京；其他城市用卡片自带的真实小红书语录兜底
+          // 完整笔记数据目前只采集了北京；其他城市用卡片自带的真实小红书语录兜底；
+          // 连语录都没有时板块也要在——显示采集中空态（板块骨架恒定原则）
           const quote = String(dest.xhsQuote || '').trim();
-          if (!quote) return '';
+          if (!quote) return `
+        <div class="modal-xhs-voices">
+          <div class="modal-xhs-voices-header">
+            <span class="modal-xhs-voices-icon">&#x1F4D6;</span>
+            <h4>来自小红书的真实分享</h4>
+            <span class="modal-xhs-voices-count">采集中</span>
+          </div>
+          <div class="content-empty">&#x1F4DD; 这个目的地的小红书笔记还在采集中</div>
+        </div>`;
           return `
         <div class="modal-xhs-voices">
           <div class="modal-xhs-voices-header">
