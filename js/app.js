@@ -503,7 +503,7 @@ function openDetail(id) {
       </div>` : ''}
 
       ${(() => {
-        const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name) : [];
+        const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name, typeof currentCity !== 'undefined' ? currentCity : '') : [];
         if (!voices.length) {
           // 完整笔记数据目前只采集了北京；其他城市用卡片自带的真实小红书语录兜底；
           // 连语录都没有时板块也要在——显示采集中空态（板块骨架恒定原则）
