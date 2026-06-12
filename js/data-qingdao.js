@@ -4,6 +4,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1203,
     "name": "青岛啤酒博物馆",
+    "howToGet": "地铁：2 号线利津路站 C 口步行约 600 米\n步行：台东步行街步行约 15 分钟，门口即登州路啤酒街\n自驾：登州路车位少，建议停台东商圈停车场步行前往",
     "subtitle": "中国 No.1 啤酒品牌的 120 年",
     "distance": 4,
     "distanceText": "4km",
@@ -49,6 +50,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1204,
     "name": "五四广场",
+    "howToGet": "地铁：2/3 号线五四广场站 C 口步行约 380 米\n步行：与奥帆中心隔湾相望，沿海边木栈道步行约 15 分钟可达\n自驾：导航「五四广场地下停车场」",
     "subtitle": "青岛新城地标·五月的风",
     "distance": 7,
     "distanceText": "7km",
@@ -94,6 +96,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1205,
     "name": "奥帆中心",
+    "howToGet": "地铁：2 号线浮山所站 D 口步行约 800 米，或五四广场站沿海步行约 15 分钟\n自驾：导航「奥帆中心」，场内有收费停车场",
     "subtitle": "2008 奥运帆船赛场·情人坝夜景",
     "distance": 8,
     "distanceText": "8km",
@@ -139,6 +142,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1206,
     "name": "第一海水浴场",
+    "howToGet": "地铁：3 号线汇泉广场站 C 口出即到\n公交：6、26、31、304 路等海水浴场站下\n提示：沿滨海木栈道步行可串联小鱼山、八大关",
     "subtitle": "青岛市中心最便利的沙滩",
     "distance": 3,
     "distanceText": "3km",
@@ -184,6 +188,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1207,
     "name": "信号山公园",
+    "howToGet": "地铁：3 号线人民会堂站 B 口步行约 900 米\n公交：1、217、220、225 路等青医附院站下，沿龙山路上行约 5 分钟\n提示：与大学路、基督教堂顺路，适合串老城线",
     "subtitle": "俯瞰青岛红瓦绿树最佳机位",
     "distance": 2,
     "distanceText": "2km",
@@ -229,6 +234,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1208,
     "name": "劈柴院",
+    "howToGet": "地铁：1 号线中山路站步行约 500 米，或 1/3 号线青岛站步行约 800 米\n位置：中山路与江宁路交口，紧邻中山路商业街\n提示：可与栈桥、天主教堂串成老城半日线",
     "subtitle": "百年小吃街·江宁会馆旁",
     "distance": 1,
     "distanceText": "1km",
@@ -274,6 +280,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1209,
     "name": "登州路啤酒街",
+    "howToGet": "地铁：2 号线利津路站步行约 700 米\n步行：青岛啤酒博物馆门口即是；台东步行街步行约 15 分钟\n提示：晚上最热闹，袋装散啤是特色",
     "subtitle": "青啤厂门口的街区·原浆鲜啤",
     "distance": 4,
     "distanceText": "4km",
@@ -319,6 +326,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1210,
     "name": "台东步行街",
+    "howToGet": "地铁：2 号线台东站出站即到\n步行：登州路啤酒街、青岛啤酒博物馆步行约 15 分钟\n自驾：商圈车位紧张，建议地铁前往",
     "subtitle": "青岛最大夜市·LED 霓虹楼",
     "distance": 3,
     "distanceText": "3km",
@@ -364,6 +372,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1211,
     "name": "红岛海鲜市场",
+    "howToGet": "自驾：导航「西大洋南码头海鲜市场」（红岛渔港），市区出发约 50 分钟\n地铁：8 号线红岛站下车后打车约 15 分钟\n提示：早晨 6-7 点渔船靠岸最新鲜，5-6 月蛤蜊节最热闹",
     "subtitle": "青岛吃蛤蜊的正宗地",
     "distance": 35,
     "distanceText": "35km",
@@ -410,6 +419,7 @@ const DESTINATIONS_QD = [
   {
     "id": 1212,
     "name": "船歌鱼水饺总店",
+    "howToGet": "位置：市南区闽江二路（云霄路美食街旁）\n地铁：2 号线燕儿岛路站步行可达\n提示：饭点排队较久，建议错峰或提前取号",
     "subtitle": "青岛代表性海鲜水饺",
     "distance": 5,
     "distanceText": "5km",

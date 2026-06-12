@@ -60,10 +60,15 @@ const expectSolid = ALL.filter(d =>
 );
 const pool = sandbox.getQualityPool();
 assert(pool.length === expectSolid.length, `推荐池数量 ${pool.length} 应等于独立统计 ${expectSolid.length}`);
-assert(pool.length < ALL.length, `空壳卡（${ALL.length - pool.length} 条）应被排除出推荐池`);
-const binhai = ALL.find(d => (d.name || '').includes('滨海图书馆') && !d.whatToDo);
-assert(binhai && !t.isSolid(binhai), '线上空白详情的真实案例（跨城版滨海图书馆）应被判为空壳');
-assert(!pool.some(d => d.id === (binhai && binhai.id)), '空壳滨海图书馆不应出现在推荐池');
+// 2026-06-12 数据补齐后：跨城滨海图书馆已有玩法+交通，应为 solid 并可进推荐池
+const binhai = ALL.find(d => (d.name || '').includes('滨海图书馆') && d.id === 5004);
+assert(binhai && t.isSolid(binhai), '跨城滨海图书馆补齐内容后应判为 solid');
+assert(pool.some(d => d.id === 5004), '补齐后的滨海图书馆应进入推荐池');
+// 排除逻辑本身用合成空壳验证（whatToDo 为空 = 不进池）
+vm.runInContext('ACTIVE_DESTINATIONS = ACTIVE_DESTINATIONS.concat([{ id: 999001, name: "合成空壳", whatToDo: "", whereToEat: "某店", rating: 5 }]);', ctx);
+const pool2 = sandbox.getQualityPool();
+assert(!pool2.some(d => d.id === 999001) && pool2.length === pool.length, '空壳卡仍被排除出推荐池（合成验证）');
+vm.runInContext('ACTIVE_DESTINATIONS = ACTIVE_DESTINATIONS.filter(d => d.id !== 999001);', ctx);
 
 // 5. 排序：分数单调不增
 const ranked = t.rankedPool();
