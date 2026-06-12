@@ -1,0 +1,327 @@
+[
+ {
+  "id": 1100,
+  "name": "五大道",
+  "city": "tianjin"
+ },
+ {
+  "id": 1101,
+  "name": "古文化街",
+  "city": "tianjin"
+ },
+ {
+  "id": 1102,
+  "name": "意式风情区",
+  "city": "tianjin"
+ },
+ {
+  "id": 1103,
+  "name": "天津之眼",
+  "city": "tianjin"
+ },
+ {
+  "id": 1104,
+  "name": "瓷房子",
+  "city": "tianjin"
+ },
+ {
+  "id": 1105,
+  "name": "海河游船",
+  "city": "tianjin"
+ },
+ {
+  "id": 1106,
+  "name": "独乐寺（蓟州）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1107,
+  "name": "盘山（蓟州）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1108,
+  "name": "滨海航母主题公园",
+  "city": "tianjin"
+ },
+ {
+  "id": 1109,
+  "name": "梨木台风景区",
+  "city": "tianjin"
+ },
+ {
+  "id": 1110,
+  "name": "九龙山国家森林公园",
+  "city": "tianjin"
+ },
+ {
+  "id": 1111,
+  "name": "八仙山国家级自然保护区",
+  "city": "tianjin"
+ },
+ {
+  "id": 1112,
+  "name": "黄崖关长城",
+  "city": "tianjin"
+ },
+ {
+  "id": 1113,
+  "name": "国家海洋博物馆",
+  "city": "tianjin"
+ },
+ {
+  "id": 1114,
+  "name": "东疆湾沙滩景区",
+  "city": "tianjin"
+ },
+ {
+  "id": 1115,
+  "name": "滨海文化中心（滨海图书馆）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1116,
+  "name": "大沽口炮台遗址博物馆",
+  "city": "tianjin"
+ },
+ {
+  "id": 1117,
+  "name": "南市食品街",
+  "city": "tianjin"
+ },
+ {
+  "id": 1118,
+  "name": "鼓楼商业街",
+  "city": "tianjin"
+ },
+ {
+  "id": 1119,
+  "name": "劝业场（滨江道）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1120,
+  "name": "杨柳青古镇（石家大院）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1121,
+  "name": "霍元甲纪念馆",
+  "city": "tianjin"
+ },
+ {
+  "id": 1122,
+  "name": "独流老醋文化产业园",
+  "city": "tianjin"
+ },
+ {
+  "id": 1123,
+  "name": "天津广播电视塔（天塔）",
+  "city": "tianjin"
+ },
+ {
+  "id": 1124,
+  "name": "解放北路金融街",
+  "city": "tianjin"
+ },
+ {
+  "id": 1125,
+  "name": "泰安道五大院",
+  "city": "tianjin"
+ },
+ {
+  "id": 1126,
+  "name": "西开教堂",
+  "city": "tianjin"
+ },
+ {
+  "id": 1127,
+  "name": "望海楼教堂",
+  "city": "tianjin"
+ },
+ {
+  "id": 1128,
+  "name": "天津邮政博物馆",
+  "city": "tianjin"
+ },
+ {
+  "id": 1129,
+  "name": "天津大学北洋园校区",
+  "city": "tianjin"
+ },
+ {
+  "id": 1203,
+  "name": "青岛啤酒博物馆",
+  "city": "qingdao"
+ },
+ {
+  "id": 1204,
+  "name": "五四广场",
+  "city": "qingdao"
+ },
+ {
+  "id": 1205,
+  "name": "奥帆中心",
+  "city": "qingdao"
+ },
+ {
+  "id": 1206,
+  "name": "第一海水浴场",
+  "city": "qingdao"
+ },
+ {
+  "id": 1207,
+  "name": "信号山公园",
+  "city": "qingdao"
+ },
+ {
+  "id": 1208,
+  "name": "劈柴院",
+  "city": "qingdao"
+ },
+ {
+  "id": 1209,
+  "name": "登州路啤酒街",
+  "city": "qingdao"
+ },
+ {
+  "id": 1210,
+  "name": "台东步行街",
+  "city": "qingdao"
+ },
+ {
+  "id": 1211,
+  "name": "红岛海鲜市场",
+  "city": "qingdao"
+ },
+ {
+  "id": 1212,
+  "name": "船歌鱼水饺总店",
+  "city": "qingdao"
+ },
+ {
+  "id": 1213,
+  "name": "小鱼山公园",
+  "city": "qingdao"
+ },
+ {
+  "id": 1214,
+  "name": "青岛迎宾馆",
+  "city": "qingdao"
+ },
+ {
+  "id": 1215,
+  "name": "浙江路天主教堂",
+  "city": "qingdao"
+ },
+ {
+  "id": 1216,
+  "name": "江苏路基督教堂",
+  "city": "qingdao"
+ },
+ {
+  "id": 1217,
+  "name": "中国海军博物馆",
+  "city": "qingdao"
+ },
+ {
+  "id": 1218,
+  "name": "鲁迅公园海滨木栈道",
+  "city": "qingdao"
+ },
+ {
+  "id": 1219,
+  "name": "小麦岛公园",
+  "city": "qingdao"
+ },
+ {
+  "id": 1220,
+  "name": "胶州湾跨海大桥",
+  "city": "qingdao"
+ },
+ {
+  "id": 1221,
+  "name": "崂山巨峰",
+  "city": "qingdao"
+ },
+ {
+  "id": 1222,
+  "name": "崂山北九水",
+  "city": "qingdao"
+ },
+ {
+  "id": 1223,
+  "name": "崂山仰口",
+  "city": "qingdao"
+ },
+ {
+  "id": 1224,
+  "name": "崂山华楼宫",
+  "city": "qingdao"
+ },
+ {
+  "id": 1225,
+  "name": "黄岛金沙滩",
+  "city": "qingdao"
+ },
+ {
+  "id": 1226,
+  "name": "黄岛银沙滩",
+  "city": "qingdao"
+ },
+ {
+  "id": 1227,
+  "name": "灵山岛",
+  "city": "qingdao"
+ },
+ {
+  "id": 1228,
+  "name": "琅琊台",
+  "city": "qingdao"
+ },
+ {
+  "id": 1229,
+  "name": "蓬莱阁",
+  "city": "qingdao"
+ },
+ {
+  "id": 1230,
+  "name": "长岛",
+  "city": "qingdao"
+ },
+ {
+  "id": 1231,
+  "name": "养马岛",
+  "city": "qingdao"
+ },
+ {
+  "id": 1232,
+  "name": "张裕酒文化博物馆",
+  "city": "qingdao"
+ },
+ {
+  "id": 5001,
+  "name": "栈桥",
+  "city": "qingdao"
+ },
+ {
+  "id": 5002,
+  "name": "崂山",
+  "city": "qingdao"
+ },
+ {
+  "id": 5003,
+  "name": "八大关",
+  "city": "qingdao"
+ },
+ {
+  "id": 5004,
+  "name": "天津滨海图书馆",
+  "city": "tianjin"
+ },
+ {
+  "id": 5005,
+  "name": "泰山",
+  "city": "shared"
+ }
+]

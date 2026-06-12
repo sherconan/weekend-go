@@ -5375,6 +5375,15 @@ const XHS_VOICES = {
 
 };
 
-function getXhsVoices(name) {
+function getXhsVoices(name, city) {
+  // 多城笔记库（js/xhs-voices-extra.js，键 "city|名"）优先；北京老库按名回落
+  if (typeof XHS_VOICES_EXTRA !== 'undefined') {
+    if (city && Array.isArray(XHS_VOICES_EXTRA[city + '|' + name]) && XHS_VOICES_EXTRA[city + '|' + name].length) {
+      return XHS_VOICES_EXTRA[city + '|' + name];
+    }
+    if (Array.isArray(XHS_VOICES_EXTRA['shared|' + name]) && XHS_VOICES_EXTRA['shared|' + name].length) {
+      return XHS_VOICES_EXTRA['shared|' + name];
+    }
+  }
   return XHS_VOICES[name] || [];
 }
