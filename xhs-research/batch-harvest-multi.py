@@ -72,10 +72,16 @@ def main():
     pw_cookies = [{'name': k, 'value': v, 'domain': '.xiaohongshu.com', 'path': '/'} for k, v in ck.items()]
     ok = fail = skip = 0
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(user_agent=UA, viewport={'width': 1440, 'height': 900})
-        ctx.add_cookies(pw_cookies)
-        page = ctx.new_page()
+        def fresh_page(old_browser=None):
+            if old_browser:
+                try: old_browser.close()
+                except Exception: pass
+            b = p.chromium.launch(headless=True)
+            c = b.new_context(user_agent=UA, viewport={'width': 1440, 'height': 900})
+            c.add_cookies(pw_cookies)
+            return b, c.new_page()
+
+        browser, page = fresh_page()
         for idx, item in enumerate(queue):
             name, city = item['name'], item.get('city', '')
             slug = slugify(f"{city}-{name}")
@@ -86,16 +92,44 @@ def main():
                 continue
             try:
                 feeds = harvest_one(page, name, city)
-                payload = {'id': item.get('id'), 'name': name, 'city': city, 'feeds': feeds}
-                with open(path, 'w') as fp:
-                    json.dump(payload, fp, ensure_ascii=False, indent=2)
-                ok += 1
-                log(f"[{idx+1}/{total}] OK {name} feeds={len(feeds)}")
             except Exception as e:
+                msg = str(e)
+                # 浏览器/页面崩溃：重建后对当前卡重试一次，不让一次崩溃废掉整批
+                if 'closed' in msg or 'crashed' in msg.lower():
+                    log(f"[{idx+1}/{total}] 浏览器崩溃，重建后重试 {name}")
+                    browser, page = fresh_page(browser)
+                    try:
+                        feeds = harvest_one(page, name, city)
+                    except Exception as e2:
+                        fail += 1
+                        log(f"[{idx+1}/{total}] FAIL {name}: {str(e2)[:80]}")
+                        time.sleep(2.5)
+                        continue
+                else:
+                    fail += 1
+                    log(f"[{idx+1}/{total}] FAIL {name}: {msg[:80]}")
+                    time.sleep(2.5)
+                    continue
+            if not feeds:
+                # 空结果 = 大概率被限流返空；不落盘（避免污染幂等缓存），连续 5 次直接停批
                 fail += 1
-                log(f"[{idx+1}/{total}] FAIL {name}: {str(e)[:80]}")
+                log(f"[{idx+1}/{total}] EMPTY {name}（疑似限流，不缓存）")
+                empty_streak = getattr(main, '_streak', 0) + 1
+                main._streak = empty_streak
+                if empty_streak >= 5:
+                    log("连续 5 张空结果，判定限流，停批冷却后再续跑")
+                    break
+                time.sleep(8)
+                continue
+            main._streak = 0
+            payload = {'id': item.get('id'), 'name': name, 'city': city, 'feeds': feeds}
+            with open(path, 'w') as fp:
+                json.dump(payload, fp, ensure_ascii=False, indent=2)
+            ok += 1
+            log(f"[{idx+1}/{total}] OK {name} feeds={len(feeds)}")
             time.sleep(2.5 + (idx % 3))  # 2.5-4.5s 节流
-        browser.close()
+        try: browser.close()
+        except Exception: pass
     log(f"DONE ok={ok} fail={fail} skip={skip}")
 
 
