@@ -416,15 +416,10 @@ function openDetail(id) {
       <div class="modal-heat-info">${xhs.notes} 篇笔记 &middot; ${xhs.trending}</div>
     </div>` : '';
 
-  // Format content with line breaks
-  const fmt = (text) => text ? text.split('\n').map(line => {
-    line = line.trim();
-    if (!line) return '';
-    if (/^\d+[\.\、]/.test(line)) {
-      return `<div class="content-item">${line}</div>`;
-    }
-    return `<p>${line}</p>`;
-  }).join('') : '';
+  // 排版：换行 / 编号分号串 / 顿号枚举 三种数据写法统一成卡片条目（js/format-content.js）
+  const fmt = (text) => typeof formatDestContent === 'function'
+    ? formatDestContent(text)
+    : (text ? `<p>${text}</p>` : '');
 
   const modalVisited = typeof isVisited === 'function' && isVisited(dest.id);
   const modalStampImg = modalVisited && typeof getStampDataURL === 'function' ? getStampDataURL(dest) : null;
@@ -504,7 +499,20 @@ function openDetail(id) {
 
       ${(() => {
         const voices = typeof getXhsVoices === 'function' ? getXhsVoices(dest.name) : [];
-        if (!voices.length) return '';
+        if (!voices.length) {
+          // 完整笔记数据目前只采集了北京；其他城市用卡片自带的真实小红书语录兜底
+          const quote = String(dest.xhsQuote || '').trim();
+          if (!quote) return '';
+          return `
+        <div class="modal-xhs-voices">
+          <div class="modal-xhs-voices-header">
+            <span class="modal-xhs-voices-icon">&#x1F4D6;</span>
+            <h4>来自小红书的真实分享</h4>
+            <span class="modal-xhs-voices-count">精选</span>
+          </div>
+          <div class="xhs-quote-single">${quote}<span class="xhs-quote-src">—— 小红书博主</span></div>
+        </div>`;
+        }
         return `
         <div class="modal-xhs-voices">
           <div class="modal-xhs-voices-header">
