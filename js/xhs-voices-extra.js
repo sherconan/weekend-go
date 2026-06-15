@@ -1262,6 +1262,26 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/69db3b35000000001b02167c"
   }
  ],
+ "beijing|上方山国家森林公园": [
+  {
+   "title": "📍上方山公园｜超全攻略附路线图",
+   "author": "小麦妈遛娃记",
+   "likes": 102,
+   "url": "https://www.xiaohongshu.com/explore/69d31a400000000022000327"
+  },
+  {
+   "title": "🏞️北京周末探秘｜上方山+云水洞一日游",
+   "author": "雪夜江城",
+   "likes": 90,
+   "url": "https://www.xiaohongshu.com/explore/68c28412000000001d00c04c"
+  },
+  {
+   "title": "北京上方山｜京郊吸氧天花板✨人少景美",
+   "author": "豫东宋志",
+   "likes": 54,
+   "url": "https://www.xiaohongshu.com/explore/69f9ef49000000003803510d"
+  }
+ ],
  "beijing|丫髻山": [
   {
    "title": "✨北京小众秘境 | 平谷丫髻山超全攻略！",
@@ -1442,6 +1462,86 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/6a00907a000000003701c128"
   }
  ],
+ "beijing|唐山南湖公园": [
+  {
+   "title": "带娃放弃唐山宴，结果南湖公园里迷失一天",
+   "author": "goodfoodmood",
+   "likes": 710,
+   "url": "https://www.xiaohongshu.com/explore/69d124d3000000002200d357"
+  },
+  {
+   "title": "唐山南湖新入口！再也不用绕远路啦✨",
+   "author": "河北锟翔",
+   "likes": 229,
+   "url": "https://www.xiaohongshu.com/explore/69d6200e000000001a032427"
+  },
+  {
+   "title": "南湖公园 最有审美的公园 实拍",
+   "author": "yutong",
+   "likes": 147,
+   "url": "https://www.xiaohongshu.com/explore/6a16b882000000000800106f"
+  }
+ ],
+ "beijing|喇叭沟原始森林": [
+  {
+   "title": "喇叭沟原始森林重装露营",
+   "author": "冰拿铁",
+   "likes": 370,
+   "url": "https://www.xiaohongshu.com/explore/68bd8927000000001d035d32"
+  },
+  {
+   "title": "喇叭沟原始森林公园之一日游攻略",
+   "author": "ZzzBaboon",
+   "likes": 131,
+   "url": "https://www.xiaohongshu.com/explore/68294bc9000000002301c90e"
+  },
+  {
+   "title": "5.3实况🧗‍♂️喇叭沟门杜鹃飞雪 13公里环线",
+   "author": "🤐单单",
+   "likes": 34,
+   "url": "https://www.xiaohongshu.com/explore/69f72315000000003601efe8"
+  }
+ ],
+ "beijing|圣莲山": [
+  {
+   "title": "我推荐的一个京郊人少景美登山地",
+   "author": "亲子户外旅游攻略",
+   "likes": 83,
+   "url": "https://www.xiaohongshu.com/explore/684a88bb000000002001e8e6"
+  },
+  {
+   "title": "北京小五岳❗️ 圣莲山景区爬山徒步路线攻略",
+   "author": "山竹的旅行",
+   "likes": 75,
+   "url": "https://www.xiaohongshu.com/explore/69f2ca12000000003502a7e3"
+  },
+  {
+   "title": "北京圣莲山游玩攻略｜京西小五岳太好拍啦✨",
+   "author": "圣莲山推荐官",
+   "likes": 30,
+   "url": "https://www.xiaohongshu.com/explore/69db61fe000000001a032f14"
+  }
+ ],
+ "beijing|坝上围场御道口": [
+  {
+   "title": "御道口-乌兰布统怎么玩，一篇笔记让你避坑‼️",
+   "author": "橙汁汽水",
+   "likes": 733,
+   "url": "https://www.xiaohongshu.com/explore/6899735500000000250293b6"
+  },
+  {
+   "title": "一路向北，在木兰围场遇见绝美秋色！",
+   "author": "悠悠和小茉莉",
+   "likes": 415,
+   "url": "https://www.xiaohongshu.com/explore/68d52f06000000001301da12"
+  },
+  {
+   "title": "御道口+塞罕坝｜周末北京往返🚗草变黄之前冲",
+   "author": "娜娜子SAYHI",
+   "likes": 157,
+   "url": "https://www.xiaohongshu.com/explore/689b1abe000000001d0056ed"
+  }
+ ],
  "beijing|大兴野生动物园": [
   {
    "title": "北野保姆级攻略🦒｜投喂+乘车+路线",
@@ -1602,6 +1702,26 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/69db6d660000000023025543"
   }
  ],
+ "beijing|幽谷神潭": [
+  {
+   "title": "京郊爬山天花板✨幽谷神潭｜带狗带娃带老人",
+   "author": "木林森",
+   "likes": 10,
+   "url": "https://www.xiaohongshu.com/explore/69f897f9000000001a034ca9"
+  },
+  {
+   "title": "幽谷神潭旅游攻略！北京周边赏秋必去之地🍂",
+   "author": "汶汶的种草机🌿",
+   "likes": 9,
+   "url": "https://www.xiaohongshu.com/explore/670b456a000000001600f749"
+  },
+  {
+   "title": "幽谷神潭",
+   "author": "Carol🐠",
+   "likes": 7,
+   "url": "https://www.xiaohongshu.com/explore/68568dfa000000002201f3dc"
+  }
+ ],
  "beijing|延庆万亩杏花": [
   {
    "title": "偶遇百亩杏花休闲骑行休闲步道",
@@ -1660,6 +1780,26 @@ const XHS_VOICES_EXTRA = {
    "author": "小鱼的旅行箱",
    "likes": 105,
    "url": "https://www.xiaohongshu.com/explore/6a240399000000003600047d"
+  }
+ ],
+ "beijing|延庆硅化木地质公园": [
+  {
+   "title": "京郊｜百里画廊好看，但先避个雷",
+   "author": "Yana向前冲！",
+   "likes": 618,
+   "url": "https://www.xiaohongshu.com/explore/687d162d0000000024008c28"
+  },
+  {
+   "title": "北京旅行｜深山中的化石瑰宝：硅化木公园",
+   "author": "小盒饭",
+   "likes": 22,
+   "url": "https://www.xiaohongshu.com/explore/62aaaf10000000000102a467"
+  },
+  {
+   "title": "藏匿于京郊的小众地质公园，娃的天然课堂",
+   "author": "慵懒的风",
+   "likes": 10,
+   "url": "https://www.xiaohongshu.com/explore/686337310000000012016803"
   }
  ],
  "beijing|延庆野鸭湖湿地": [
@@ -1962,6 +2102,26 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/6a1a8b22000000003501f13b"
   }
  ],
+ "beijing|春晖园温泉": [
+  {
+   "title": "🦆春晖园私汤+撸虎！🐯北京顺义遛娃王炸局",
+   "author": "双胞胎兄弟浩瀚",
+   "likes": 86,
+   "url": "https://www.xiaohongshu.com/explore/696a1bfc000000000e03c0fb"
+  },
+  {
+   "title": "春晖园温泉酒店里的草坪咖啡【White Water】",
+   "author": "铁牛司令",
+   "likes": 64,
+   "url": "https://www.xiaohongshu.com/explore/6a0015980000000007023c73"
+  },
+  {
+   "title": "被问爆的春晖园亲子露营|附超详细攻略",
+   "author": "七野的鹿",
+   "likes": 17,
+   "url": "https://www.xiaohongshu.com/explore/68182042000000002300e8de"
+  }
+ ],
  "beijing|松山自然保护区": [
   {
    "title": "开车一个半小时‖延庆松山国家森林公园沿线",
@@ -2142,6 +2302,26 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/6a0bdaf4000000003701f5aa"
   }
  ],
+ "beijing|灵山天池": [
+  {
+   "title": "东灵山最优路线攻略（保姆级版）",
+   "author": "小土豆妈妈",
+   "likes": 2103,
+   "url": "https://www.xiaohongshu.com/explore/6878af9b000000000b02f734"
+  },
+  {
+   "title": "东灵山攻略｜精简易懂✅",
+   "author": "北子户外领队",
+   "likes": 221,
+   "url": "https://www.xiaohongshu.com/explore/6a0bdaf4000000003701f5aa"
+  },
+  {
+   "title": "登顶北京最高峰2303m｜东灵山徒步攻略 ⛰️",
+   "author": "卡拉猪",
+   "likes": 204,
+   "url": "https://www.xiaohongshu.com/explore/6a22a4340000000015025ef3"
+  }
+ ],
  "beijing|灵水举人村": [
   {
    "title": "这就是你们吹爆的京西古村？",
@@ -2242,6 +2422,26 @@ const XHS_VOICES_EXTRA = {
    "url": "https://www.xiaohongshu.com/explore/69e8745e000000001f00642a"
   }
  ],
+ "beijing|石景山游乐园": [
+  {
+   "title": "石景山游乐园通票游玩攻略 （更新）",
+   "author": "行简",
+   "likes": 151,
+   "url": "https://www.xiaohongshu.com/explore/699569b6000000001a032b8f"
+  },
+  {
+   "title": "石景山游乐园︳夏季低幼宝宝游玩攻略",
+   "author": "开心不贪玩",
+   "likes": 58,
+   "url": "https://www.xiaohongshu.com/explore/685796c1000000001203e84f"
+  },
+  {
+   "title": "北京石景山游乐园 差评！！！",
+   "author": "布丁",
+   "likes": 24,
+   "url": "https://www.xiaohongshu.com/explore/698fb8500000000015020a98"
+  }
+ ],
  "beijing|神堂峪": [
   {
    "title": "北京蕞长山古避暑木栈道！我替你们去过了！",
@@ -2260,6 +2460,26 @@ const XHS_VOICES_EXTRA = {
    "author": "猫猫爱旅行",
    "likes": 287,
    "url": "https://www.xiaohongshu.com/explore/6844e9f50000000022034b4e"
+  }
+ ],
+ "beijing|秦皇岛山海关": [
+  {
+   "title": "都说了不要让J人做攻略😡😌！秦皇岛",
+   "author": "江风伴月赴山野",
+   "likes": 3539,
+   "url": "https://www.xiaohongshu.com/explore/694bbb28000000001f005fbb"
+  },
+  {
+   "title": "答案来了❗秦皇岛旅游有必要专门去山海关吗",
+   "author": "Anna in 沪",
+   "likes": 983,
+   "url": "https://www.xiaohongshu.com/explore/698aec8c000000001a01d6b0"
+  },
+  {
+   "title": "听劝！秦皇岛就按这条线玩，真的不绕路！",
+   "author": "你今天瘦了吗",
+   "likes": 150,
+   "url": "https://www.xiaohongshu.com/explore/69fd9af30000000022024ccc"
   }
  ],
  "beijing|翠湖湿地公园": [
@@ -2340,6 +2560,26 @@ const XHS_VOICES_EXTRA = {
    "author": "承承爱旅行",
    "likes": 62,
    "url": "https://www.xiaohongshu.com/explore/69e19d70000000002200fa76"
+  }
+ ],
+ "beijing|银山塔林": [
+  {
+   "title": "北京爬山｜银山塔林新手1h路线+山脚咖啡✨",
+   "author": "ZZZxi",
+   "likes": 952,
+   "url": "https://www.xiaohongshu.com/explore/69aee34b000000001a025194"
+  },
+  {
+   "title": "北京昌平湖门村银山塔林徒步路线详细攻略",
+   "author": "涨仙瓶",
+   "likes": 560,
+   "url": "https://www.xiaohongshu.com/explore/69c5c32a000000001f00107f"
+  },
+  {
+   "title": "北京银山塔林🍃|3条徒步路线选择",
+   "author": "Lena在路上",
+   "likes": 173,
+   "url": "https://www.xiaohongshu.com/explore/69e2086a000000002301045f"
   }
  ],
  "beijing|门头沟双龙峡": [
